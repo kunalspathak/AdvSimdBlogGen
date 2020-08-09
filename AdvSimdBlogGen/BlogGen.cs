@@ -25,17 +25,47 @@ namespace AdvSimdBlogGen
         public static void Main(string[] args)
         {
             string dirName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string csprojPath = Path.Combine(dirName, "..", "..", "..");
+            string genCsProjPath = Path.Combine(dirName, "..", "..", "..");
+            string generatedCsProjPath = Path.Combine(dirName, "..", "..", "..", "..", "AdvSimdGenerated");
             PopulateMethods();
             GenerateBlogContents();
-            WriteGeneratedCodeToFile(Path.Combine(csprojPath, "..", "AdvSimdGenerated", "AdvSimdGenerated.cs"));
+            WriteGeneratedCodeToFile(Path.Combine(generatedCsProjPath, "AdvSimdGenerated.cs"));
+            SplitGeneratedBlog();
+            PrintVarsAndMethodNames();
             Console.WriteLine("done");
         }
 
         internal static void SplitGeneratedBlog()
         {
-            Console.WriteLine("Press enter to split the generated blog.");
+            string dirName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string blogFileName = "2018-01-01-Test";
+            string blogFileFullPath = Path.Combine(dirName, blogFileName + ".md");
+            Console.WriteLine($"Press enter to split the '{blogFileFullPath}' blog.");
             Console.ReadLine();
+            string[] blogContents = File.ReadAllLines(blogFileFullPath);
+            StringBuilder blogBuilder = new StringBuilder();
+            int partId = 1;
+            foreach (string line in blogContents)
+            {
+                string blogLine = line;
+                if ("START---END" == blogLine)
+                {
+                    blogLine = "---";
+                    if (blogBuilder.Length > 0)
+                    {
+                        string fileName = $"{blogFileName}-Part{partId++}.md";
+                        File.WriteAllText(Path.Combine(dirName, fileName), blogBuilder.ToString());
+                        blogBuilder.Clear();
+                    }
+                }
+                blogBuilder.AppendLine(blogLine);
+            }
+            // leftover
+            if (blogBuilder.Length > 0)
+            {
+                string fileName = $"{blogFileName}-Part{partId++}.md";
+                File.WriteAllText(Path.Combine(dirName, fileName), blogBuilder.ToString());
+            }
         }
 
         internal static void PrintVarsAndMethodNames()
