@@ -12,7 +12,7 @@ namespace AdvSimdBlogGen
 @"Console.WriteLine(
 @""```
 
----
+START---END
 layout: post
 title: Hardware Intrinsics APIs for ARM64 - Part {0}
 subtitle: With examples
@@ -38,54 +38,15 @@ using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics;
 using System.Runtime.Intrinsics.Arm;
 
-public class AdvSimdMethods
+public partial class AdvSimdMethods
 {{
 {0}
 
-public static unsafe void Main(string[] args)
+public static unsafe void Run()
 {{
-  string apiResult;
 {1}
-{2}
 }}
 }}";
-        private static string varInitializer =
-@"
-
-var Vector64short_0 = Vector64.Create((short)11, 12, 13, 14);
-var Vector64double_0 = Vector64.Create((double)11.5);
-var Vector64float_0 = Vector64.Create((float)11.5f, 12.5f);
-var Vector64float_1 = Vector64.Create((float)21.5f, 22.5f);
-var Vector64byte_0 = Vector64.Create((byte)11, 12, 13, 14, 15, 16, 17, 18);
-var Vector64byte_1 = Vector64.Create((byte)21, 22, 23, 24, 25, 26, 27, 28);
-var Vector64byte_2 = Vector64.Create((byte)31, 32, 33, 34, 35, 36, 37, 38);
-var Vector128ushort_0 = Vector128.Create((ushort)11, 12, 13, 14, 15, 16, 17, 18);
-var Vector128byte_0 = Vector128.Create((byte)11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26);
-var Vector128byte_1 = Vector128.Create((byte)21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36);
-var Vector128ushort_1 = Vector128.Create((ushort)11, 12, 13, 14, 15, 16, 17, 18);
-var Vector64ushort_0 = Vector64.Create((ushort)11, 12, 13, 14);
-var Vector64long_0 = Vector64.Create((long)11);
-var Vector64int_0 = Vector64.Create((int)11, 12);
-var Vector64long_1 = Vector64.Create((long)11);
-var Vector64double_1 = Vector64.Create((double)11.5);
-byte byte_0 = 0;
-var Vector128short_0 = Vector128.Create((short)11, 12, 13, 14, 15, 16, 17, 18);
-var Vector64float_2 = Vector64.Create((float)11.5f, 12.5f);
-var Vector64double_2 = Vector64.Create((double)11);
-byte byte_1 = 1;
-var Vector128double_0 = Vector128.Create((double)11.5, 12.5);
-var Vector64short_1 = Vector64.Create((short)21, 22, 23, 24);
-var Vector64short_2 = Vector64.Create((short)31, 32, 33, 34);
-var Vector128int_0 = Vector128.Create((int)11, 12, 13, 14);
-var Vector128short_1 = Vector128.Create((short)21, 22, 23, 24, 25, 26, 27, 28);
-var Vector64sbyte_0 = Vector64.Create((sbyte)11, 12, 13, 14, 15, 16, 17, 18);
-var Vector128float_0 = Vector128.Create((float)11.5f, 12.5f, 13.5f, 14.5f);
-var Vector64int_1 = Vector64.Create((int)21, 22);
-
-int[] intArray = new int[] {11, 12};
-byte[] byteArray = new byte[] {11, 12, 13, 14, 15, 16, 17, 18};
-
-";
         private static string methodAttribute = "[MethodImpl(MethodImplOptions.NoInlining)]";
         private static string argValuePrintTemplate = "// {0} = {1}";
         private static string methodDefPrintTemplate =
@@ -131,6 +92,7 @@ private static {2} {1}
   {0};
 }}
 ";
+        private static string LogInCsvTemplate = "LogInCsv({0});";
         private static string sectionSep =
 @"```
 ------------------------------------------------";

@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics;
 using System.Runtime.Intrinsics.Arm;
 
-public class AdvSimdMethods
+public partial class AdvSimdMethods
 {
 
 private static  Vector64<ushort> Dummy_AbsTest(Vector64<short> value)
@@ -4328,49 +4328,12 @@ private static  Vector64<byte> ZipLowTest(Vector64<byte> left, Vector64<byte> ri
 
 
 
-public static unsafe void Main(string[] args)
+public static unsafe void Run()
 {
-  string apiResult;
-
-
-var Vector64short_0 = Vector64.Create((short)11, 12, 13, 14);
-var Vector64double_0 = Vector64.Create((double)11.5);
-var Vector64float_0 = Vector64.Create((float)11.5f, 12.5f);
-var Vector64float_1 = Vector64.Create((float)21.5f, 22.5f);
-var Vector64byte_0 = Vector64.Create((byte)11, 12, 13, 14, 15, 16, 17, 18);
-var Vector64byte_1 = Vector64.Create((byte)21, 22, 23, 24, 25, 26, 27, 28);
-var Vector64byte_2 = Vector64.Create((byte)31, 32, 33, 34, 35, 36, 37, 38);
-var Vector128ushort_0 = Vector128.Create((ushort)11, 12, 13, 14, 15, 16, 17, 18);
-var Vector128byte_0 = Vector128.Create((byte)11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26);
-var Vector128byte_1 = Vector128.Create((byte)21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36);
-var Vector128ushort_1 = Vector128.Create((ushort)11, 12, 13, 14, 15, 16, 17, 18);
-var Vector64ushort_0 = Vector64.Create((ushort)11, 12, 13, 14);
-var Vector64long_0 = Vector64.Create((long)11);
-var Vector64int_0 = Vector64.Create((int)11, 12);
-var Vector64long_1 = Vector64.Create((long)11);
-var Vector64double_1 = Vector64.Create((double)11.5);
-byte byte_0 = 0;
-var Vector128short_0 = Vector128.Create((short)11, 12, 13, 14, 15, 16, 17, 18);
-var Vector64float_2 = Vector64.Create((float)11.5f, 12.5f);
-var Vector64double_2 = Vector64.Create((double)11);
-byte byte_1 = 1;
-var Vector128double_0 = Vector128.Create((double)11.5, 12.5);
-var Vector64short_1 = Vector64.Create((short)21, 22, 23, 24);
-var Vector64short_2 = Vector64.Create((short)31, 32, 33, 34);
-var Vector128int_0 = Vector128.Create((int)11, 12, 13, 14);
-var Vector128short_1 = Vector128.Create((short)21, 22, 23, 24, 25, 26, 27, 28);
-var Vector64sbyte_0 = Vector64.Create((sbyte)11, 12, 13, 14, 15, 16, 17, 18);
-var Vector128float_0 = Vector128.Create((float)11.5f, 12.5f, 13.5f, 14.5f);
-var Vector64int_1 = Vector64.Create((int)21, 22);
-
-int[] intArray = new int[] {11, 12};
-byte[] byteArray = new byte[] {11, 12, 13, 14, 15, 16, 17, 18};
-
-
 Console.WriteLine(
 @"```
 
----
+START---END
 layout: post
 title: Hardware Intrinsics APIs for ARM64 - Part 1
 subtitle: With examples
@@ -4448,6 +4411,7 @@ AbsTest(Vector64short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("Abs", "Performs 'Abs' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4507,6 +4471,7 @@ AbsSaturateTest(Vector64short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsSaturate", "Performs 'AbsSaturate' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4562,6 +4527,7 @@ AbsScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsScalar", "Performs 'AbsScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4618,6 +4584,7 @@ AbsoluteCompareGreaterThanTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteCompareGreaterThan", "Performs 'AbsoluteCompareGreaterThan' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4674,6 +4641,7 @@ AbsoluteCompareGreaterThanOrEqualTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteCompareGreaterThanOrEqual", "Performs 'AbsoluteCompareGreaterThanOrEqual' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4730,6 +4698,7 @@ AbsoluteCompareLessThanTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteCompareLessThan", "Performs 'AbsoluteCompareLessThan' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4786,6 +4755,7 @@ AbsoluteCompareLessThanOrEqualTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteCompareLessThanOrEqual", "Performs 'AbsoluteCompareLessThanOrEqual' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4854,6 +4824,7 @@ AbsoluteDifferenceTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteDifference", "Performs 'AbsoluteDifference' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4918,6 +4889,7 @@ AbsoluteDifferenceAddTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteDifferenceAdd", "Performs 'AbsoluteDifferenceAdd' operation", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4975,6 +4947,7 @@ AbsoluteDifferenceWideningLowerTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteDifferenceWideningLower", "Performs 'AbsoluteDifferenceWideningLower' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5033,6 +5006,7 @@ AbsoluteDifferenceWideningLowerAndAddTest(Vector128ushort_0, Vector64byte_0, Vec
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteDifferenceWideningLowerAndAdd", "Performs 'AbsoluteDifferenceWideningLowerAndAdd' operation", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5090,6 +5064,7 @@ AbsoluteDifferenceWideningUpperTest(Vector128byte_0, Vector128byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteDifferenceWideningUpper", "Performs 'AbsoluteDifferenceWideningUpper' operation", Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5148,6 +5123,7 @@ AbsoluteDifferenceWideningUpperAndAddTest(Vector128ushort_0, Vector128byte_0, Ve
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteDifferenceWideningUpperAndAdd", "Performs 'AbsoluteDifferenceWideningUpperAndAdd' operation", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5218,6 +5194,7 @@ AddTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("Add", "Performs 'Add' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5275,6 +5252,7 @@ AddHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AddHighNarrowingLower", "Performs 'AddHighNarrowingLower' operation", Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5333,6 +5311,7 @@ AddHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AddHighNarrowingUpper", "Performs 'AddHighNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5403,6 +5382,7 @@ AddPairwiseTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AddPairwise", "Performs 'AddPairwise' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5463,6 +5443,7 @@ AddPairwiseWideningTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("AddPairwiseWidening", "Performs 'AddPairwiseWidening' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5524,6 +5505,7 @@ AddPairwiseWideningAndAddTest(Vector64ushort_0, Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("AddPairwiseWideningAndAdd", "Performs 'AddPairwiseWideningAndAdd' operation", Vector64ushort_0, Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5577,6 +5559,7 @@ AddPairwiseWideningAndAddScalarTest(Vector64long_0, Vector64int_0);
    apiResult = "TODO";
 }
 
+LogInCsv("AddPairwiseWideningAndAddScalar", "Performs 'AddPairwiseWideningAndAddScalar' operation", Vector64long_0, Vector64int_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5629,6 +5612,7 @@ AddPairwiseWideningScalarTest(Vector64int_0);
    apiResult = "TODO";
 }
 
+LogInCsv("AddPairwiseWideningScalar", "Performs 'AddPairwiseWideningScalar' operation", Vector64int_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5686,6 +5670,7 @@ AddRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AddRoundedHighNarrowingLower", "Performs 'AddRoundedHighNarrowingLower' operation", Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5744,6 +5729,7 @@ AddRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ush
    apiResult = "TODO";
 }
 
+LogInCsv("AddRoundedHighNarrowingUpper", "Performs 'AddRoundedHighNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5825,6 +5811,7 @@ AddSaturateTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AddSaturate", "Performs 'AddSaturate' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5894,6 +5881,7 @@ AddSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AddSaturateScalar", "Performs 'AddSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5949,6 +5937,7 @@ AddScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AddScalar", "Performs 'AddScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6012,6 +6001,7 @@ AddWideningLowerTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AddWideningLower", "Performs 'AddWideningLower' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6075,6 +6065,7 @@ AddWideningUpperTest(Vector128byte_0, Vector128byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AddWideningUpper", "Performs 'AddWideningUpper' operation", Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6146,6 +6137,7 @@ AndTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("And", "Performs 'And' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6217,6 +6209,7 @@ BitwiseClearTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("BitwiseClear", "Performs 'BitwiseClear' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6289,6 +6282,7 @@ BitwiseSelectTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
    apiResult = "TODO";
 }
 
+LogInCsv("BitwiseSelect", "Performs 'BitwiseSelect' operation", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6344,6 +6338,7 @@ CeilingTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("Ceiling", "Performs 'Ceiling' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6396,6 +6391,7 @@ CeilingScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("CeilingScalar", "Performs 'CeilingScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6466,6 +6462,7 @@ CompareEqualTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareEqual", "Performs 'CompareEqual' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6536,6 +6533,7 @@ CompareGreaterThanTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareGreaterThan", "Performs 'CompareGreaterThan' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6606,6 +6604,7 @@ CompareGreaterThanOrEqualTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareGreaterThanOrEqual", "Performs 'CompareGreaterThanOrEqual' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6676,6 +6675,7 @@ CompareLessThanTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareLessThan", "Performs 'CompareLessThan' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6746,6 +6746,7 @@ CompareLessThanOrEqualTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareLessThanOrEqual", "Performs 'CompareLessThanOrEqual' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6816,6 +6817,7 @@ CompareTestTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareTest", "Performs 'CompareTest' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6868,6 +6870,7 @@ ConvertToInt32RoundAwayFromZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt32RoundAwayFromZero", "Performs 'ConvertToInt32RoundAwayFromZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6914,6 +6917,7 @@ ConvertToInt32RoundAwayFromZeroScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt32RoundAwayFromZeroScalar", "Performs 'ConvertToInt32RoundAwayFromZeroScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6966,6 +6970,7 @@ ConvertToInt32RoundToEvenTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt32RoundToEven", "Performs 'ConvertToInt32RoundToEven' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7012,6 +7017,7 @@ ConvertToInt32RoundToEvenScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt32RoundToEvenScalar", "Performs 'ConvertToInt32RoundToEvenScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7064,6 +7070,7 @@ ConvertToInt32RoundToNegativeInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt32RoundToNegativeInfinity", "Performs 'ConvertToInt32RoundToNegativeInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7110,6 +7117,7 @@ ConvertToInt32RoundToNegativeInfinityScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt32RoundToNegativeInfinityScalar", "Performs 'ConvertToInt32RoundToNegativeInfinityScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7162,6 +7170,7 @@ ConvertToInt32RoundToPositiveInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt32RoundToPositiveInfinity", "Performs 'ConvertToInt32RoundToPositiveInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7208,6 +7217,7 @@ ConvertToInt32RoundToPositiveInfinityScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt32RoundToPositiveInfinityScalar", "Performs 'ConvertToInt32RoundToPositiveInfinityScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7260,6 +7270,7 @@ ConvertToInt32RoundToZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt32RoundToZero", "Performs 'ConvertToInt32RoundToZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7306,6 +7317,7 @@ ConvertToInt32RoundToZeroScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt32RoundToZeroScalar", "Performs 'ConvertToInt32RoundToZeroScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7360,6 +7372,7 @@ ConvertToSingleTest(Vector64int_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToSingle", "Performs 'ConvertToSingle' operation", Vector64int_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7412,6 +7425,7 @@ ConvertToSingleScalarTest(Vector64int_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToSingleScalar", "Performs 'ConvertToSingleScalar' operation", Vector64int_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7464,6 +7478,7 @@ ConvertToUInt32RoundAwayFromZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt32RoundAwayFromZero", "Performs 'ConvertToUInt32RoundAwayFromZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7510,6 +7525,7 @@ ConvertToUInt32RoundAwayFromZeroScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt32RoundAwayFromZeroScalar", "Performs 'ConvertToUInt32RoundAwayFromZeroScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7562,6 +7578,7 @@ ConvertToUInt32RoundToEvenTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt32RoundToEven", "Performs 'ConvertToUInt32RoundToEven' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7608,6 +7625,7 @@ ConvertToUInt32RoundToEvenScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt32RoundToEvenScalar", "Performs 'ConvertToUInt32RoundToEvenScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7660,6 +7678,7 @@ ConvertToUInt32RoundToNegativeInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt32RoundToNegativeInfinity", "Performs 'ConvertToUInt32RoundToNegativeInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7706,6 +7725,7 @@ ConvertToUInt32RoundToNegativeInfinityScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt32RoundToNegativeInfinityScalar", "Performs 'ConvertToUInt32RoundToNegativeInfinityScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7758,6 +7778,7 @@ ConvertToUInt32RoundToPositiveInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt32RoundToPositiveInfinity", "Performs 'ConvertToUInt32RoundToPositiveInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7804,6 +7825,7 @@ ConvertToUInt32RoundToPositiveInfinityScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt32RoundToPositiveInfinityScalar", "Performs 'ConvertToUInt32RoundToPositiveInfinityScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7856,11 +7878,12 @@ ConvertToUInt32RoundToZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt32RoundToZero", "Performs 'ConvertToUInt32RoundToZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 Console.WriteLine(
 @"```
 
----
+START---END
 layout: post
 title: Hardware Intrinsics APIs for ARM64 - Part 2
 subtitle: With examples
@@ -7922,6 +7945,7 @@ ConvertToUInt32RoundToZeroScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt32RoundToZeroScalar", "Performs 'ConvertToUInt32RoundToZeroScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7975,6 +7999,7 @@ DivideScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("DivideScalar", "Performs 'DivideScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8040,6 +8065,7 @@ DuplicateSelectedScalarToVector64Test(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("DuplicateSelectedScalarToVector64", "Performs 'DuplicateSelectedScalarToVector64' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8110,6 +8136,7 @@ DuplicateSelectedScalarToVector128Test(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("DuplicateSelectedScalarToVector128", "Performs 'DuplicateSelectedScalarToVector128' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8167,6 +8194,7 @@ DuplicateToVector64Test(byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("DuplicateToVector64", "Performs 'DuplicateToVector64' operation", byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8229,6 +8257,7 @@ DuplicateToVector128Test(byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("DuplicateToVector128", "Performs 'DuplicateToVector128' operation", byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8297,6 +8326,7 @@ ExtractTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("Extract", "Performs 'Extract' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8353,6 +8383,7 @@ ExtractNarrowingLowerTest(Vector128ushort_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ExtractNarrowingLower", "Performs 'ExtractNarrowingLower' operation", Vector128ushort_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8409,6 +8440,7 @@ ExtractNarrowingSaturateLowerTest(Vector128ushort_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ExtractNarrowingSaturateLower", "Performs 'ExtractNarrowingSaturateLower' operation", Vector128ushort_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8462,6 +8494,7 @@ ExtractNarrowingSaturateUnsignedLowerTest(Vector128short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ExtractNarrowingSaturateUnsignedLower", "Performs 'ExtractNarrowingSaturateUnsignedLower' operation", Vector128short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8516,6 +8549,7 @@ ExtractNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ExtractNarrowingSaturateUnsignedUpper", "Performs 'ExtractNarrowingSaturateUnsignedUpper' operation", Vector64byte_0, Vector128short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8573,6 +8607,7 @@ ExtractNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ExtractNarrowingSaturateUpper", "Performs 'ExtractNarrowingSaturateUpper' operation", Vector64byte_0, Vector128ushort_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8630,6 +8665,7 @@ ExtractNarrowingUpperTest(Vector64byte_0, Vector128ushort_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ExtractNarrowingUpper", "Performs 'ExtractNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8689,6 +8725,7 @@ ExtractVector64Test(Vector64byte_0, Vector64byte_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ExtractVector64", "Performs 'ExtractVector64' operation", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8751,6 +8788,7 @@ ExtractVector128Test(Vector128byte_0, Vector128byte_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ExtractVector128", "Performs 'ExtractVector128' operation", Vector128byte_0, Vector128byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8806,6 +8844,7 @@ FloorTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("Floor", "Performs 'Floor' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8858,6 +8897,7 @@ FloorScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("FloorScalar", "Performs 'FloorScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8921,6 +8961,7 @@ FusedAddHalvingTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("FusedAddHalving", "Performs 'FusedAddHalving' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8984,6 +9025,7 @@ FusedAddRoundedHalvingTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("FusedAddRoundedHalving", "Performs 'FusedAddRoundedHalving' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9041,6 +9083,7 @@ FusedMultiplyAddTest(Vector64float_0, Vector64float_1, Vector64float_2);
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplyAdd", "Performs 'FusedMultiplyAdd' operation", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9095,6 +9138,7 @@ FusedMultiplyAddNegatedScalarTest(Vector64double_0, Vector64double_1, Vector64do
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplyAddNegatedScalar", "Performs 'FusedMultiplyAddNegatedScalar' operation", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9149,6 +9193,7 @@ FusedMultiplyAddScalarTest(Vector64double_0, Vector64double_1, Vector64double_2)
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplyAddScalar", "Performs 'FusedMultiplyAddScalar' operation", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9206,6 +9251,7 @@ FusedMultiplySubtractTest(Vector64float_0, Vector64float_1, Vector64float_2);
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplySubtract", "Performs 'FusedMultiplySubtract' operation", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9260,6 +9306,7 @@ FusedMultiplySubtractNegatedScalarTest(Vector64double_0, Vector64double_1, Vecto
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplySubtractNegatedScalar", "Performs 'FusedMultiplySubtractNegatedScalar' operation", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9314,6 +9361,7 @@ FusedMultiplySubtractScalarTest(Vector64double_0, Vector64double_1, Vector64doub
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplySubtractScalar", "Performs 'FusedMultiplySubtractScalar' operation", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9377,6 +9425,7 @@ FusedSubtractHalvingTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("FusedSubtractHalving", "Performs 'FusedSubtractHalving' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9446,6 +9495,7 @@ InsertTest(Vector64byte_0, byte_0, byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("Insert", "Performs 'Insert' operation", Vector64byte_0, byte_0, byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9501,6 +9551,7 @@ InsertScalarTest(Vector128double_0, byte_0, Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("InsertScalar", "Performs 'InsertScalar' operation", Vector128double_0, byte_0, Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9557,6 +9608,7 @@ LeadingSignCountTest(Vector64short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("LeadingSignCount", "Performs 'LeadingSignCount' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9619,6 +9671,7 @@ LeadingZeroCountTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("LeadingZeroCount", "Performs 'LeadingZeroCount' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -9691,6 +9744,7 @@ LoadAndInsertScalarTest(Vector64byte_0, byte_0, bytePtr_0);
 }
 
 }
+LogInCsv("LoadAndInsertScalar", "Performs 'LoadAndInsertScalar' operation", Vector64byte_0, byte_0, "<address>", apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -9751,6 +9805,7 @@ LoadAndReplicateToVector64Test(bytePtr_0);
 }
 
 }
+LogInCsv("LoadAndReplicateToVector64", "Performs 'LoadAndReplicateToVector64' operation", "<address>", apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -9816,6 +9871,7 @@ LoadAndReplicateToVector128Test(bytePtr_0);
 }
 
 }
+LogInCsv("LoadAndReplicateToVector128", "Performs 'LoadAndReplicateToVector128' operation", "<address>", apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -9879,6 +9935,7 @@ LoadVector64Test(bytePtr_0);
 }
 
 }
+LogInCsv("LoadVector64", "Performs 'LoadVector64' operation", "<address>", apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -9942,6 +9999,7 @@ LoadVector128Test(bytePtr_0);
 }
 
 }
+LogInCsv("LoadVector128", "Performs 'LoadVector128' operation", "<address>", apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10010,6 +10068,7 @@ MaxTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("Max", "Performs 'Max' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10066,6 +10125,7 @@ MaxNumberTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MaxNumber", "Performs 'MaxNumber' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10119,6 +10179,7 @@ MaxNumberScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MaxNumberScalar", "Performs 'MaxNumberScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10187,6 +10248,7 @@ MaxPairwiseTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MaxPairwise", "Performs 'MaxPairwise' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10255,6 +10317,7 @@ MinTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("Min", "Performs 'Min' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10311,6 +10374,7 @@ MinNumberTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MinNumber", "Performs 'MinNumber' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10364,6 +10428,7 @@ MinNumberScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MinNumberScalar", "Performs 'MinNumberScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10432,6 +10497,7 @@ MinPairwiseTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MinPairwise", "Performs 'MinPairwise' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10500,6 +10566,7 @@ MultiplyTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("Multiply", "Performs 'Multiply' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10564,6 +10631,7 @@ MultiplyAddTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyAdd", "Performs 'MultiplyAdd' operation", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10624,6 +10692,7 @@ MultiplyAddByScalarTest(Vector64short_0, Vector64short_1, Vector64short_2);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyAddByScalar", "Performs 'MultiplyAddByScalar' operation", Vector64short_0, Vector64short_1, Vector64short_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10693,6 +10762,7 @@ MultiplyAddBySelectedScalarTest(Vector64short_0, Vector64short_1, Vector64short_
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyAddBySelectedScalar", "Performs 'MultiplyAddBySelectedScalar' operation", Vector64short_0, Vector64short_1, Vector64short_2, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10757,6 +10827,7 @@ MultiplyByScalarTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyByScalar", "Performs 'MultiplyByScalar' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10832,6 +10903,7 @@ MultiplyBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyBySelectedScalar", "Performs 'MultiplyBySelectedScalar' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10892,6 +10964,7 @@ MultiplyBySelectedScalarWideningLowerTest(Vector64short_0, Vector64short_1, byte
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyBySelectedScalarWideningLower", "Performs 'MultiplyBySelectedScalarWideningLower' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10953,6 +11026,7 @@ MultiplyBySelectedScalarWideningLowerAndAddTest(Vector128int_0, Vector64short_0,
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyBySelectedScalarWideningLowerAndAdd", "Performs 'MultiplyBySelectedScalarWideningLowerAndAdd' operation", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11014,6 +11088,7 @@ MultiplyBySelectedScalarWideningLowerAndSubtractTest(Vector128int_0, Vector64sho
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyBySelectedScalarWideningLowerAndSubtract", "Performs 'MultiplyBySelectedScalarWideningLowerAndSubtract' operation", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11074,6 +11149,7 @@ MultiplyBySelectedScalarWideningUpperTest(Vector128short_0, Vector64short_0, byt
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyBySelectedScalarWideningUpper", "Performs 'MultiplyBySelectedScalarWideningUpper' operation", Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11135,6 +11211,7 @@ MultiplyBySelectedScalarWideningUpperAndAddTest(Vector128int_0, Vector128short_0
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyBySelectedScalarWideningUpperAndAdd", "Performs 'MultiplyBySelectedScalarWideningUpperAndAdd' operation", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11196,6 +11273,7 @@ MultiplyBySelectedScalarWideningUpperAndSubtractTest(Vector128int_0, Vector128sh
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyBySelectedScalarWideningUpperAndSubtract", "Performs 'MultiplyBySelectedScalarWideningUpperAndSubtract' operation", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11251,6 +11329,7 @@ MultiplyDoublingByScalarSaturateHighTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingByScalarSaturateHigh", "Performs 'MultiplyDoublingByScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11311,6 +11390,7 @@ MultiplyDoublingBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingBySelectedScalarSaturateHigh", "Performs 'MultiplyDoublingBySelectedScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11366,6 +11446,7 @@ MultiplyDoublingSaturateHighTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingSaturateHigh", "Performs 'MultiplyDoublingSaturateHigh' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11420,6 +11501,7 @@ MultiplyDoublingWideningLowerAndAddSaturateTest(Vector128int_0, Vector64short_0,
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningLowerAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerAndAddSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11474,11 +11556,12 @@ MultiplyDoublingWideningLowerAndSubtractSaturateTest(Vector128int_0, Vector64sho
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningLowerAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerAndSubtractSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 Console.WriteLine(
 @"```
 
----
+START---END
 layout: post
 title: Hardware Intrinsics APIs for ARM64 - Part 3
 subtitle: With examples
@@ -11548,6 +11631,7 @@ MultiplyDoublingWideningLowerByScalarAndAddSaturateTest(Vector128int_0, Vector64
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningLowerByScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerByScalarAndAddSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11602,6 +11686,7 @@ MultiplyDoublingWideningLowerByScalarAndSubtractSaturateTest(Vector128int_0, Vec
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerByScalarAndSubtractSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11659,6 +11744,7 @@ MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturateTest(Vector128int_0, 
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11716,6 +11802,7 @@ MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturateTest(Vector128in
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11769,6 +11856,7 @@ MultiplyDoublingWideningSaturateLowerTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningSaturateLower", "Performs 'MultiplyDoublingWideningSaturateLower' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11822,6 +11910,7 @@ MultiplyDoublingWideningSaturateLowerByScalarTest(Vector64short_0, Vector64short
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningSaturateLowerByScalar", "Performs 'MultiplyDoublingWideningSaturateLowerByScalar' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11878,6 +11967,7 @@ MultiplyDoublingWideningSaturateLowerBySelectedScalarTest(Vector64short_0, Vecto
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningSaturateLowerBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateLowerBySelectedScalar' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11931,6 +12021,7 @@ MultiplyDoublingWideningSaturateUpperTest(Vector128short_0, Vector128short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningSaturateUpper", "Performs 'MultiplyDoublingWideningSaturateUpper' operation", Vector128short_0, Vector128short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11984,6 +12075,7 @@ MultiplyDoublingWideningSaturateUpperByScalarTest(Vector128short_0, Vector64shor
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningSaturateUpperByScalar", "Performs 'MultiplyDoublingWideningSaturateUpperByScalar' operation", Vector128short_0, Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12040,6 +12132,7 @@ MultiplyDoublingWideningSaturateUpperBySelectedScalarTest(Vector128short_0, Vect
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningSaturateUpperBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateUpperBySelectedScalar' operation", Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12094,6 +12187,7 @@ MultiplyDoublingWideningUpperAndAddSaturateTest(Vector128int_0, Vector128short_0
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningUpperAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperAndAddSaturate' operation", Vector128int_0, Vector128short_0, Vector128short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12148,6 +12242,7 @@ MultiplyDoublingWideningUpperAndSubtractSaturateTest(Vector128int_0, Vector128sh
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningUpperAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperAndSubtractSaturate' operation", Vector128int_0, Vector128short_0, Vector128short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12202,6 +12297,7 @@ MultiplyDoublingWideningUpperByScalarAndAddSaturateTest(Vector128int_0, Vector12
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningUpperByScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperByScalarAndAddSaturate' operation", Vector128int_0, Vector128short_0, Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12256,6 +12352,7 @@ MultiplyDoublingWideningUpperByScalarAndSubtractSaturateTest(Vector128int_0, Vec
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperByScalarAndSubtractSaturate' operation", Vector128int_0, Vector128short_0, Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12313,6 +12410,7 @@ MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturateTest(Vector128int_0, 
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate' operation", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12370,6 +12468,7 @@ MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128in
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate' operation", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12425,6 +12524,7 @@ MultiplyRoundedDoublingByScalarSaturateHighTest(Vector64short_0, Vector64short_1
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyRoundedDoublingByScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingByScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12485,6 +12585,7 @@ MultiplyRoundedDoublingBySelectedScalarSaturateHighTest(Vector64short_0, Vector6
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingBySelectedScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12540,6 +12641,7 @@ MultiplyRoundedDoublingSaturateHighTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyRoundedDoublingSaturateHigh", "Performs 'MultiplyRoundedDoublingSaturateHigh' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12593,6 +12695,7 @@ MultiplyScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyScalar", "Performs 'MultiplyScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12650,6 +12753,7 @@ MultiplyScalarBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyScalarBySelectedScalar", "Performs 'MultiplyScalarBySelectedScalar' operation", Vector64float_0, Vector64float_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12714,6 +12818,7 @@ MultiplySubtractTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplySubtract", "Performs 'MultiplySubtract' operation", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12774,6 +12879,7 @@ MultiplySubtractByScalarTest(Vector64short_0, Vector64short_1, Vector64short_2);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplySubtractByScalar", "Performs 'MultiplySubtractByScalar' operation", Vector64short_0, Vector64short_1, Vector64short_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12843,6 +12949,7 @@ MultiplySubtractBySelectedScalarTest(Vector64short_0, Vector64short_1, Vector64s
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplySubtractBySelectedScalar", "Performs 'MultiplySubtractBySelectedScalar' operation", Vector64short_0, Vector64short_1, Vector64short_2, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12900,6 +13007,7 @@ MultiplyWideningLowerTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyWideningLower", "Performs 'MultiplyWideningLower' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12958,6 +13066,7 @@ MultiplyWideningLowerAndAddTest(Vector128ushort_0, Vector64byte_0, Vector64byte_
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyWideningLowerAndAdd", "Performs 'MultiplyWideningLowerAndAdd' operation", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13016,6 +13125,7 @@ MultiplyWideningLowerAndSubtractTest(Vector128ushort_0, Vector64byte_0, Vector64
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyWideningLowerAndSubtract", "Performs 'MultiplyWideningLowerAndSubtract' operation", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13073,6 +13183,7 @@ MultiplyWideningUpperTest(Vector128byte_0, Vector128byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyWideningUpper", "Performs 'MultiplyWideningUpper' operation", Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13131,6 +13242,7 @@ MultiplyWideningUpperAndAddTest(Vector128ushort_0, Vector128byte_0, Vector128byt
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyWideningUpperAndAdd", "Performs 'MultiplyWideningUpperAndAdd' operation", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13189,6 +13301,7 @@ MultiplyWideningUpperAndSubtractTest(Vector128ushort_0, Vector128byte_0, Vector1
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyWideningUpperAndSubtract", "Performs 'MultiplyWideningUpperAndSubtract' operation", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13251,6 +13364,7 @@ NegateTest(Vector64short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("Negate", "Performs 'Negate' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13310,6 +13424,7 @@ NegateSaturateTest(Vector64short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("NegateSaturate", "Performs 'NegateSaturate' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13365,6 +13480,7 @@ NegateScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("NegateScalar", "Performs 'NegateScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13435,6 +13551,7 @@ NotTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("Not", "Performs 'Not' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13506,6 +13623,7 @@ OrTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("Or", "Performs 'Or' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13577,6 +13695,7 @@ OrNotTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("OrNot", "Performs 'OrNot' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13632,6 +13751,7 @@ PolynomialMultiplyTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("PolynomialMultiply", "Performs 'PolynomialMultiply' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13685,6 +13805,7 @@ PolynomialMultiplyWideningLowerTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("PolynomialMultiplyWideningLower", "Performs 'PolynomialMultiplyWideningLower' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13738,6 +13859,7 @@ PolynomialMultiplyWideningUpperTest(Vector128byte_0, Vector128byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("PolynomialMultiplyWideningUpper", "Performs 'PolynomialMultiplyWideningUpper' operation", Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13792,6 +13914,7 @@ PopCountTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("PopCount", "Performs 'PopCount' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13849,6 +13972,7 @@ ReciprocalEstimateTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ReciprocalEstimate", "Performs 'ReciprocalEstimate' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13906,6 +14030,7 @@ ReciprocalSquareRootEstimateTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ReciprocalSquareRootEstimate", "Performs 'ReciprocalSquareRootEstimate' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13962,6 +14087,7 @@ ReciprocalSquareRootStepTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ReciprocalSquareRootStep", "Performs 'ReciprocalSquareRootStep' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14018,6 +14144,7 @@ ReciprocalStepTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ReciprocalStep", "Performs 'ReciprocalStep' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14076,6 +14203,7 @@ ReverseElement16Test(Vector64int_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ReverseElement16", "Performs 'ReverseElement16' operation", Vector64int_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14130,6 +14258,7 @@ ReverseElement32Test(Vector64long_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ReverseElement32", "Performs 'ReverseElement32' operation", Vector64long_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14192,6 +14321,7 @@ ReverseElement8Test(Vector64short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ReverseElement8", "Performs 'ReverseElement8' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14247,6 +14377,7 @@ RoundAwayFromZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("RoundAwayFromZero", "Performs 'RoundAwayFromZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14299,6 +14430,7 @@ RoundAwayFromZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("RoundAwayFromZeroScalar", "Performs 'RoundAwayFromZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14354,6 +14486,7 @@ RoundToNearestTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("RoundToNearest", "Performs 'RoundToNearest' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14406,6 +14539,7 @@ RoundToNearestScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("RoundToNearestScalar", "Performs 'RoundToNearestScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14461,6 +14595,7 @@ RoundToNegativeInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("RoundToNegativeInfinity", "Performs 'RoundToNegativeInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14513,6 +14648,7 @@ RoundToNegativeInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("RoundToNegativeInfinityScalar", "Performs 'RoundToNegativeInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14568,6 +14704,7 @@ RoundToPositiveInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("RoundToPositiveInfinity", "Performs 'RoundToPositiveInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14620,6 +14757,7 @@ RoundToPositiveInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("RoundToPositiveInfinityScalar", "Performs 'RoundToPositiveInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14675,6 +14813,7 @@ RoundToZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("RoundToZero", "Performs 'RoundToZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14727,6 +14866,7 @@ RoundToZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("RoundToZeroScalar", "Performs 'RoundToZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14785,6 +14925,7 @@ ShiftArithmeticTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftArithmetic", "Performs 'ShiftArithmetic' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14843,6 +14984,7 @@ ShiftArithmeticRoundedTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftArithmeticRounded", "Performs 'ShiftArithmeticRounded' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14901,11 +15043,12 @@ ShiftArithmeticRoundedSaturateTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftArithmeticRoundedSaturate", "Performs 'ShiftArithmeticRoundedSaturate' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 Console.WriteLine(
 @"```
 
----
+START---END
 layout: post
 title: Hardware Intrinsics APIs for ARM64 - Part 4
 subtitle: With examples
@@ -14978,6 +15121,7 @@ ShiftArithmeticRoundedSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftArithmeticRoundedSaturateScalar", "Performs 'ShiftArithmeticRoundedSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15025,6 +15169,7 @@ ShiftArithmeticRoundedScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftArithmeticRoundedScalar", "Performs 'ShiftArithmeticRoundedScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15083,6 +15228,7 @@ ShiftArithmeticSaturateTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftArithmeticSaturate", "Performs 'ShiftArithmeticSaturate' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15140,6 +15286,7 @@ ShiftArithmeticSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftArithmeticSaturateScalar", "Performs 'ShiftArithmeticSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15187,6 +15334,7 @@ ShiftArithmeticScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftArithmeticScalar", "Performs 'ShiftArithmeticScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15253,6 +15401,7 @@ ShiftLeftAndInsertTest(Vector64byte_0, Vector64byte_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLeftAndInsert", "Performs 'ShiftLeftAndInsert' operation", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15307,6 +15456,7 @@ ShiftLeftAndInsertScalarTest(Vector64long_0, Vector64long_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLeftAndInsertScalar", "Performs 'ShiftLeftAndInsertScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15371,6 +15521,7 @@ ShiftLeftLogicalTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLeftLogical", "Performs 'ShiftLeftLogical' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15436,6 +15587,7 @@ ShiftLeftLogicalSaturateTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLeftLogicalSaturate", "Performs 'ShiftLeftLogicalSaturate' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15497,6 +15649,7 @@ ShiftLeftLogicalSaturateScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLeftLogicalSaturateScalar", "Performs 'ShiftLeftLogicalSaturateScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15555,6 +15708,7 @@ ShiftLeftLogicalSaturateUnsignedTest(Vector64short_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLeftLogicalSaturateUnsigned", "Performs 'ShiftLeftLogicalSaturateUnsigned' operation", Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15612,6 +15766,7 @@ ShiftLeftLogicalSaturateUnsignedScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLeftLogicalSaturateUnsignedScalar", "Performs 'ShiftLeftLogicalSaturateUnsignedScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15665,6 +15820,7 @@ ShiftLeftLogicalScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLeftLogicalScalar", "Performs 'ShiftLeftLogicalScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15722,6 +15878,7 @@ ShiftLeftLogicalWideningLowerTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLeftLogicalWideningLower", "Performs 'ShiftLeftLogicalWideningLower' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15779,6 +15936,7 @@ ShiftLeftLogicalWideningUpperTest(Vector128byte_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLeftLogicalWideningUpper", "Performs 'ShiftLeftLogicalWideningUpper' operation", Vector128byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15844,6 +16002,7 @@ ShiftLogicalTest(Vector64byte_0, Vector64sbyte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLogical", "Performs 'ShiftLogical' operation", Vector64byte_0, Vector64sbyte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15909,6 +16068,7 @@ ShiftLogicalRoundedTest(Vector64byte_0, Vector64sbyte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLogicalRounded", "Performs 'ShiftLogicalRounded' operation", Vector64byte_0, Vector64sbyte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15974,6 +16134,7 @@ ShiftLogicalRoundedSaturateTest(Vector64byte_0, Vector64sbyte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLogicalRoundedSaturate", "Performs 'ShiftLogicalRoundedSaturate' operation", Vector64byte_0, Vector64sbyte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16035,6 +16196,7 @@ ShiftLogicalRoundedSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLogicalRoundedSaturateScalar", "Performs 'ShiftLogicalRoundedSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16088,6 +16250,7 @@ ShiftLogicalRoundedScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLogicalRoundedScalar", "Performs 'ShiftLogicalRoundedScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16153,6 +16316,7 @@ ShiftLogicalSaturateTest(Vector64byte_0, Vector64sbyte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLogicalSaturate", "Performs 'ShiftLogicalSaturate' operation", Vector64byte_0, Vector64sbyte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16214,6 +16378,7 @@ ShiftLogicalSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLogicalSaturateScalar", "Performs 'ShiftLogicalSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16267,6 +16432,7 @@ ShiftLogicalScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftLogicalScalar", "Performs 'ShiftLogicalScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16333,6 +16499,7 @@ ShiftRightAndInsertTest(Vector64byte_0, Vector64byte_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightAndInsert", "Performs 'ShiftRightAndInsert' operation", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16387,6 +16554,7 @@ ShiftRightAndInsertScalarTest(Vector64long_0, Vector64long_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightAndInsertScalar", "Performs 'ShiftRightAndInsertScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16445,6 +16613,7 @@ ShiftRightArithmeticTest(Vector64short_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmetic", "Performs 'ShiftRightArithmetic' operation", Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16504,6 +16673,7 @@ ShiftRightArithmeticAddTest(Vector64short_0, Vector64short_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticAdd", "Performs 'ShiftRightArithmeticAdd' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16552,6 +16722,7 @@ ShiftRightArithmeticAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticAddScalar", "Performs 'ShiftRightArithmeticAddScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16606,6 +16777,7 @@ ShiftRightArithmeticNarrowingSaturateLowerTest(Vector128int_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticNarrowingSaturateLower", "Performs 'ShiftRightArithmeticNarrowingSaturateLower' operation", Vector128int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16660,6 +16832,7 @@ ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0)
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticNarrowingSaturateUnsignedLower", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedLower' operation", Vector128short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16715,6 +16888,7 @@ ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedUpper' operation", Vector64byte_0, Vector128short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16770,6 +16944,7 @@ ShiftRightArithmeticNarrowingSaturateUpperTest(Vector64short_0, Vector128int_0, 
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticNarrowingSaturateUpper", "Performs 'ShiftRightArithmeticNarrowingSaturateUpper' operation", Vector64short_0, Vector128int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16828,6 +17003,7 @@ ShiftRightArithmeticRoundedTest(Vector64short_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticRounded", "Performs 'ShiftRightArithmeticRounded' operation", Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16887,6 +17063,7 @@ ShiftRightArithmeticRoundedAddTest(Vector64short_0, Vector64short_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticRoundedAdd", "Performs 'ShiftRightArithmeticRoundedAdd' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16935,6 +17112,7 @@ ShiftRightArithmeticRoundedAddScalarTest(Vector64long_0, Vector64long_1, byte_0)
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticRoundedAddScalar", "Performs 'ShiftRightArithmeticRoundedAddScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16989,6 +17167,7 @@ ShiftRightArithmeticRoundedNarrowingSaturateLowerTest(Vector128int_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateLower", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateLower' operation", Vector128int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17043,6 +17222,7 @@ ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128short_0, 
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower' operation", Vector128short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17098,6 +17278,7 @@ ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Ve
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper' operation", Vector64byte_0, Vector128short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17153,6 +17334,7 @@ ShiftRightArithmeticRoundedNarrowingSaturateUpperTest(Vector64short_0, Vector128
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateUpper", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUpper' operation", Vector64short_0, Vector128int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17200,6 +17382,7 @@ ShiftRightArithmeticRoundedScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticRoundedScalar", "Performs 'ShiftRightArithmeticRoundedScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17247,6 +17430,7 @@ ShiftRightArithmeticScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticScalar", "Performs 'ShiftRightArithmeticScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17312,6 +17496,7 @@ ShiftRightLogicalTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogical", "Performs 'ShiftRightLogical' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17378,6 +17563,7 @@ ShiftRightLogicalAddTest(Vector64byte_0, Vector64byte_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalAdd", "Performs 'ShiftRightLogicalAdd' operation", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17432,6 +17618,7 @@ ShiftRightLogicalAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalAddScalar", "Performs 'ShiftRightLogicalAddScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17489,6 +17676,7 @@ ShiftRightLogicalNarrowingLowerTest(Vector128ushort_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalNarrowingLower", "Performs 'ShiftRightLogicalNarrowingLower' operation", Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17546,6 +17734,7 @@ ShiftRightLogicalNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalNarrowingSaturateLower", "Performs 'ShiftRightLogicalNarrowingSaturateLower' operation", Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17604,6 +17793,7 @@ ShiftRightLogicalNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0, b
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalNarrowingSaturateUpper", "Performs 'ShiftRightLogicalNarrowingSaturateUpper' operation", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17662,6 +17852,7 @@ ShiftRightLogicalNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalNarrowingUpper", "Performs 'ShiftRightLogicalNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17727,6 +17918,7 @@ ShiftRightLogicalRoundedTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalRounded", "Performs 'ShiftRightLogicalRounded' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17793,6 +17985,7 @@ ShiftRightLogicalRoundedAddTest(Vector64byte_0, Vector64byte_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalRoundedAdd", "Performs 'ShiftRightLogicalRoundedAdd' operation", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17847,6 +18040,7 @@ ShiftRightLogicalRoundedAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalRoundedAddScalar", "Performs 'ShiftRightLogicalRoundedAddScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17904,6 +18098,7 @@ ShiftRightLogicalRoundedNarrowingLowerTest(Vector128ushort_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalRoundedNarrowingLower", "Performs 'ShiftRightLogicalRoundedNarrowingLower' operation", Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17961,6 +18156,7 @@ ShiftRightLogicalRoundedNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalRoundedNarrowingSaturateLower", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateLower' operation", Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18019,6 +18215,7 @@ ShiftRightLogicalRoundedNarrowingSaturateUpperTest(Vector64byte_0, Vector128usho
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalRoundedNarrowingSaturateUpper", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateUpper' operation", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18077,6 +18274,7 @@ ShiftRightLogicalRoundedNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, by
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalRoundedNarrowingUpper", "Performs 'ShiftRightLogicalRoundedNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18130,6 +18328,7 @@ ShiftRightLogicalRoundedScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalRoundedScalar", "Performs 'ShiftRightLogicalRoundedScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18183,6 +18382,7 @@ ShiftRightLogicalScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalScalar", "Performs 'ShiftRightLogicalScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18236,6 +18436,7 @@ SignExtendWideningLowerTest(Vector64short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("SignExtendWideningLower", "Performs 'SignExtendWideningLower' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18289,6 +18490,7 @@ SignExtendWideningUpperTest(Vector128short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("SignExtendWideningUpper", "Performs 'SignExtendWideningUpper' operation", Vector128short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18341,11 +18543,12 @@ SqrtScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("SqrtScalar", "Performs 'SqrtScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 Console.WriteLine(
 @"```
 
----
+START---END
 layout: post
 title: Hardware Intrinsics APIs for ARM64 - Part 5
 subtitle: With examples
@@ -18434,6 +18637,7 @@ StoreTest(bytePtr_0, Vector64byte_0);
 }
 
 }
+LogInCsv("Store", "Performs 'Store' operation", "<address>", Vector64byte_0);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -18505,6 +18709,7 @@ StoreSelectedScalarTest(bytePtr_0, Vector64byte_0, byte_0);
 }
 
 }
+LogInCsv("StoreSelectedScalar", "Performs 'StoreSelectedScalar' operation", "<address>", Vector64byte_0, byte_0);
 // ----------------------------------------------------------------
 
 try {
@@ -18575,6 +18780,7 @@ SubtractTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("Subtract", "Performs 'Subtract' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18632,6 +18838,7 @@ SubtractHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
    apiResult = "TODO";
 }
 
+LogInCsv("SubtractHighNarrowingLower", "Performs 'SubtractHighNarrowingLower' operation", Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18690,6 +18897,7 @@ SubtractHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushor
    apiResult = "TODO";
 }
 
+LogInCsv("SubtractHighNarrowingUpper", "Performs 'SubtractHighNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18747,6 +18955,7 @@ SubtractRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
    apiResult = "TODO";
 }
 
+LogInCsv("SubtractRoundedHighNarrowingLower", "Performs 'SubtractRoundedHighNarrowingLower' operation", Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18805,6 +19014,7 @@ SubtractRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector1
    apiResult = "TODO";
 }
 
+LogInCsv("SubtractRoundedHighNarrowingUpper", "Performs 'SubtractRoundedHighNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18870,6 +19080,7 @@ SubtractSaturateTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("SubtractSaturate", "Performs 'SubtractSaturate' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18931,6 +19142,7 @@ SubtractSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
+LogInCsv("SubtractSaturateScalar", "Performs 'SubtractSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18986,6 +19198,7 @@ SubtractScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("SubtractScalar", "Performs 'SubtractScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19049,6 +19262,7 @@ SubtractWideningLowerTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("SubtractWideningLower", "Performs 'SubtractWideningLower' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19112,6 +19326,7 @@ SubtractWideningUpperTest(Vector128byte_0, Vector128byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("SubtractWideningUpper", "Performs 'SubtractWideningUpper' operation", Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19169,6 +19384,7 @@ VectorTableLookupTest(Vector128byte_0, Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("VectorTableLookup", "Performs 'VectorTableLookup' operation", Vector128byte_0, Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19227,6 +19443,7 @@ VectorTableLookupExtensionTest(Vector64byte_0, Vector128byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("VectorTableLookupExtension", "Performs 'VectorTableLookupExtension' operation", Vector64byte_0, Vector128byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19298,6 +19515,7 @@ XorTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("Xor", "Performs 'Xor' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19354,6 +19572,7 @@ ZeroExtendWideningLowerTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ZeroExtendWideningLower", "Performs 'ZeroExtendWideningLower' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19410,6 +19629,7 @@ ZeroExtendWideningUpperTest(Vector128byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ZeroExtendWideningUpper", "Performs 'ZeroExtendWideningUpper' operation", Vector128byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19464,6 +19684,7 @@ AbsSaturateScalarTest(Vector64short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsSaturateScalar", "Performs 'AbsSaturateScalar' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19517,6 +19738,7 @@ AbsoluteCompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteCompareGreaterThanScalar", "Performs 'AbsoluteCompareGreaterThanScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19570,6 +19792,7 @@ AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteCompareGreaterThanOrEqualScalar", "Performs 'AbsoluteCompareGreaterThanOrEqualScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19623,6 +19846,7 @@ AbsoluteCompareLessThanScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteCompareLessThanScalar", "Performs 'AbsoluteCompareLessThanScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19676,6 +19900,7 @@ AbsoluteCompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteCompareLessThanOrEqualScalar", "Performs 'AbsoluteCompareLessThanOrEqualScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19729,6 +19954,7 @@ AbsoluteDifferenceScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("AbsoluteDifferenceScalar", "Performs 'AbsoluteDifferenceScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19789,6 +20015,7 @@ AddAcrossTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("AddAcross", "Performs 'AddAcross' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19849,6 +20076,7 @@ AddAcrossWideningTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("AddAcrossWidening", "Performs 'AddAcrossWidening' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19903,6 +20131,7 @@ AddPairwiseScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("AddPairwiseScalar", "Performs 'AddPairwiseScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19958,6 +20187,7 @@ CompareEqualScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareEqualScalar", "Performs 'CompareEqualScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20013,6 +20243,7 @@ CompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareGreaterThanScalar", "Performs 'CompareGreaterThanScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20068,6 +20299,7 @@ CompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareGreaterThanOrEqualScalar", "Performs 'CompareGreaterThanOrEqualScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20123,6 +20355,7 @@ CompareLessThanScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareLessThanScalar", "Performs 'CompareLessThanScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20178,6 +20411,7 @@ CompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareLessThanOrEqualScalar", "Performs 'CompareLessThanOrEqualScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20232,6 +20466,7 @@ CompareTestScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("CompareTestScalar", "Performs 'CompareTestScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20285,6 +20520,7 @@ ConvertToDoubleTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToDouble", "Performs 'ConvertToDouble' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20337,6 +20573,7 @@ ConvertToDoubleScalarTest(Vector64long_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToDoubleScalar", "Performs 'ConvertToDoubleScalar' operation", Vector64long_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20383,6 +20620,7 @@ ConvertToDoubleUpperTest(Vector128float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToDoubleUpper", "Performs 'ConvertToDoubleUpper' operation", Vector128float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20429,6 +20667,7 @@ ConvertToInt64RoundAwayFromZeroTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt64RoundAwayFromZero", "Performs 'ConvertToInt64RoundAwayFromZero' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20475,6 +20714,7 @@ ConvertToInt64RoundAwayFromZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt64RoundAwayFromZeroScalar", "Performs 'ConvertToInt64RoundAwayFromZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20521,6 +20761,7 @@ ConvertToInt64RoundToEvenTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt64RoundToEven", "Performs 'ConvertToInt64RoundToEven' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20567,6 +20808,7 @@ ConvertToInt64RoundToEvenScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt64RoundToEvenScalar", "Performs 'ConvertToInt64RoundToEvenScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20613,6 +20855,7 @@ ConvertToInt64RoundToNegativeInfinityTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt64RoundToNegativeInfinity", "Performs 'ConvertToInt64RoundToNegativeInfinity' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20659,6 +20902,7 @@ ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToInt64RoundToNegativeInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20705,6 +20949,7 @@ ConvertToInt64RoundToPositiveInfinityTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt64RoundToPositiveInfinity", "Performs 'ConvertToInt64RoundToPositiveInfinity' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20751,6 +20996,7 @@ ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToInt64RoundToPositiveInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20797,6 +21043,7 @@ ConvertToInt64RoundToZeroTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt64RoundToZero", "Performs 'ConvertToInt64RoundToZero' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20843,6 +21090,7 @@ ConvertToInt64RoundToZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToInt64RoundToZeroScalar", "Performs 'ConvertToInt64RoundToZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20889,6 +21137,7 @@ ConvertToSingleLowerTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToSingleLower", "Performs 'ConvertToSingleLower' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20935,6 +21184,7 @@ ConvertToSingleRoundToOddLowerTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToSingleRoundToOddLower", "Performs 'ConvertToSingleRoundToOddLower' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20982,6 +21232,7 @@ ConvertToSingleRoundToOddUpperTest(Vector64float_0, Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToSingleRoundToOddUpper", "Performs 'ConvertToSingleRoundToOddUpper' operation", Vector64float_0, Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21029,6 +21280,7 @@ ConvertToSingleUpperTest(Vector64float_0, Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToSingleUpper", "Performs 'ConvertToSingleUpper' operation", Vector64float_0, Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21075,6 +21327,7 @@ ConvertToUInt64RoundAwayFromZeroTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt64RoundAwayFromZero", "Performs 'ConvertToUInt64RoundAwayFromZero' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21121,6 +21374,7 @@ ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt64RoundAwayFromZeroScalar", "Performs 'ConvertToUInt64RoundAwayFromZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21167,6 +21421,7 @@ ConvertToUInt64RoundToEvenTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt64RoundToEven", "Performs 'ConvertToUInt64RoundToEven' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21213,6 +21468,7 @@ ConvertToUInt64RoundToEvenScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt64RoundToEvenScalar", "Performs 'ConvertToUInt64RoundToEvenScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21259,6 +21515,7 @@ ConvertToUInt64RoundToNegativeInfinityTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt64RoundToNegativeInfinity", "Performs 'ConvertToUInt64RoundToNegativeInfinity' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21305,6 +21562,7 @@ ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToUInt64RoundToNegativeInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21351,6 +21609,7 @@ ConvertToUInt64RoundToPositiveInfinityTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt64RoundToPositiveInfinity", "Performs 'ConvertToUInt64RoundToPositiveInfinity' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21397,6 +21656,7 @@ ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToUInt64RoundToPositiveInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21443,6 +21703,7 @@ ConvertToUInt64RoundToZeroTest(Vector128double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt64RoundToZero", "Performs 'ConvertToUInt64RoundToZero' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21489,6 +21750,7 @@ ConvertToUInt64RoundToZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ConvertToUInt64RoundToZeroScalar", "Performs 'ConvertToUInt64RoundToZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21543,11 +21805,12 @@ DivideTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("Divide", "Performs 'Divide' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 Console.WriteLine(
 @"```
 
----
+START---END
 layout: post
 title: Hardware Intrinsics APIs for ARM64 - Part 6
 subtitle: With examples
@@ -21619,6 +21882,7 @@ ExtractNarrowingSaturateScalarTest(Vector64ushort_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ExtractNarrowingSaturateScalar", "Performs 'ExtractNarrowingSaturateScalar' operation", Vector64ushort_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21672,6 +21936,7 @@ ExtractNarrowingSaturateUnsignedScalarTest(Vector64short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ExtractNarrowingSaturateUnsignedScalar", "Performs 'ExtractNarrowingSaturateUnsignedScalar' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21727,6 +21992,7 @@ FusedMultiplyAddByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplyAddByScalar", "Performs 'FusedMultiplyAddByScalar' operation", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21785,6 +22051,7 @@ FusedMultiplyAddBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64f
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplyAddBySelectedScalar", "Performs 'FusedMultiplyAddBySelectedScalar' operation", Vector64float_0, Vector64float_1, Vector64float_2, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21841,6 +22108,7 @@ FusedMultiplyAddScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, V
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplyAddScalarBySelectedScalar", "Performs 'FusedMultiplyAddScalarBySelectedScalar' operation", Vector64double_0, Vector64double_1, Vector128double_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21896,6 +22164,7 @@ FusedMultiplySubtractByScalarTest(Vector64float_0, Vector64float_1, Vector64floa
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplySubtractByScalar", "Performs 'FusedMultiplySubtractByScalar' operation", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21954,6 +22223,7 @@ FusedMultiplySubtractBySelectedScalarTest(Vector64float_0, Vector64float_1, Vect
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplySubtractBySelectedScalar", "Performs 'FusedMultiplySubtractBySelectedScalar' operation", Vector64float_0, Vector64float_1, Vector64float_2, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22010,6 +22280,7 @@ FusedMultiplySubtractScalarBySelectedScalarTest(Vector64double_0, Vector64double
    apiResult = "TODO";
 }
 
+LogInCsv("FusedMultiplySubtractScalarBySelectedScalar", "Performs 'FusedMultiplySubtractScalarBySelectedScalar' operation", Vector64double_0, Vector64double_1, Vector128double_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22094,6 +22365,7 @@ InsertSelectedScalarTest(Vector64byte_0, byte_0, Vector64byte_1, byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("InsertSelectedScalar", "Performs 'InsertSelectedScalar' operation", Vector64byte_0, byte_0, Vector64byte_1, byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22155,6 +22427,7 @@ MaxAcrossTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MaxAcross", "Performs 'MaxAcross' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22201,6 +22474,7 @@ MaxNumberAcrossTest(Vector128float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MaxNumberAcross", "Performs 'MaxNumberAcross' operation", Vector128float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22255,6 +22529,7 @@ MaxNumberPairwiseTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MaxNumberPairwise", "Performs 'MaxNumberPairwise' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22307,6 +22582,7 @@ MaxNumberPairwiseScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MaxNumberPairwiseScalar", "Performs 'MaxNumberPairwiseScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22359,6 +22635,7 @@ MaxPairwiseScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MaxPairwiseScalar", "Performs 'MaxPairwiseScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22412,6 +22689,7 @@ MaxScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MaxScalar", "Performs 'MaxScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22473,6 +22751,7 @@ MinAcrossTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MinAcross", "Performs 'MinAcross' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22519,6 +22798,7 @@ MinNumberAcrossTest(Vector128float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MinNumberAcross", "Performs 'MinNumberAcross' operation", Vector128float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22573,6 +22853,7 @@ MinNumberPairwiseTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MinNumberPairwise", "Performs 'MinNumberPairwise' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22625,6 +22906,7 @@ MinNumberPairwiseScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MinNumberPairwiseScalar", "Performs 'MinNumberPairwiseScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22677,6 +22959,7 @@ MinPairwiseScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MinPairwiseScalar", "Performs 'MinPairwiseScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22730,6 +23013,7 @@ MinScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MinScalar", "Performs 'MinScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22783,6 +23067,7 @@ MultiplyDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingSaturateHighScalar", "Performs 'MultiplyDoublingSaturateHighScalar' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22839,6 +23124,7 @@ MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyDoublingScalarBySelectedScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22893,6 +23179,7 @@ MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64int_0, Vector64short_0,
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningAndAddSaturateScalar", "Performs 'MultiplyDoublingWideningAndAddSaturateScalar' operation", Vector64int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22947,6 +23234,7 @@ MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64int_0, Vector64sho
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningAndSubtractSaturateScalar", "Performs 'MultiplyDoublingWideningAndSubtractSaturateScalar' operation", Vector64int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23000,6 +23288,7 @@ MultiplyDoublingWideningSaturateScalarTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningSaturateScalar", "Performs 'MultiplyDoublingWideningSaturateScalar' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23056,6 +23345,7 @@ MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64short_0, Vect
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningSaturateScalarBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateScalarBySelectedScalar' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23113,6 +23403,7 @@ MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64int_0, 
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate' operation", Vector64int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23170,6 +23461,7 @@ MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64in
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate' operation", Vector64int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23224,6 +23516,7 @@ MultiplyExtendedTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyExtended", "Performs 'MultiplyExtended' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23271,6 +23564,7 @@ MultiplyExtendedByScalarTest(Vector128double_0, Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyExtendedByScalar", "Performs 'MultiplyExtendedByScalar' operation", Vector128double_0, Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23328,6 +23622,7 @@ MultiplyExtendedBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyExtendedBySelectedScalar", "Performs 'MultiplyExtendedBySelectedScalar' operation", Vector64float_0, Vector64float_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23381,6 +23676,7 @@ MultiplyExtendedScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyExtendedScalar", "Performs 'MultiplyExtendedScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23436,6 +23732,7 @@ MultiplyExtendedScalarBySelectedScalarTest(Vector64double_0, Vector128double_0, 
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyExtendedScalarBySelectedScalar", "Performs 'MultiplyExtendedScalarBySelectedScalar' operation", Vector64double_0, Vector128double_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23489,6 +23786,7 @@ MultiplyRoundedDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyRoundedDoublingSaturateHighScalar", "Performs 'MultiplyRoundedDoublingSaturateHighScalar' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23545,6 +23843,7 @@ MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, V
    apiResult = "TODO";
 }
 
+LogInCsv("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23599,6 +23898,7 @@ NegateSaturateScalarTest(Vector64short_0);
    apiResult = "TODO";
 }
 
+LogInCsv("NegateSaturateScalar", "Performs 'NegateSaturateScalar' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23651,6 +23951,7 @@ ReciprocalEstimateScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ReciprocalEstimateScalar", "Performs 'ReciprocalEstimateScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23703,6 +24004,7 @@ ReciprocalExponentScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ReciprocalExponentScalar", "Performs 'ReciprocalExponentScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23755,6 +24057,7 @@ ReciprocalSquareRootEstimateScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ReciprocalSquareRootEstimateScalar", "Performs 'ReciprocalSquareRootEstimateScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23808,6 +24111,7 @@ ReciprocalSquareRootStepScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ReciprocalSquareRootStepScalar", "Performs 'ReciprocalSquareRootStepScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23861,6 +24165,7 @@ ReciprocalStepScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ReciprocalStepScalar", "Performs 'ReciprocalStepScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23915,6 +24220,7 @@ ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64int_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateScalar' operation", Vector64int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23969,6 +24275,7 @@ ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0)
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedScalar' operation", Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24023,6 +24330,7 @@ ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64int_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateScalar' operation", Vector64int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24077,6 +24385,7 @@ ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64short_0, 
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar' operation", Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24134,6 +24443,7 @@ ShiftRightLogicalNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalNarrowingSaturateScalar", "Performs 'ShiftRightLogicalNarrowingSaturateScalar' operation", Vector64ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24191,6 +24501,7 @@ ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ShiftRightLogicalRoundedNarrowingSaturateScalar", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateScalar' operation", Vector64ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24244,6 +24555,7 @@ SqrtTest(Vector64float_0);
    apiResult = "TODO";
 }
 
+LogInCsv("Sqrt", "Performs 'Sqrt' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -24318,6 +24630,7 @@ StorePairTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
 }
 
 }
+LogInCsv("StorePair", "Performs 'StorePair' operation", "<address>", Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -24392,6 +24705,7 @@ StorePairNonTemporalTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
 }
 
 }
+LogInCsv("StorePairNonTemporal", "Performs 'StorePairNonTemporal' operation", "<address>", Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 fixed (int* intPtr_0 = intArray)
 {
@@ -24449,6 +24763,7 @@ StorePairScalarTest(intPtr_0, Vector64int_0, Vector64int_1);
 }
 
 }
+LogInCsv("StorePairScalar", "Performs 'StorePairScalar' operation", "<address>", Vector64int_0, Vector64int_1);
 // ----------------------------------------------------------------
 fixed (int* intPtr_0 = intArray)
 {
@@ -24506,6 +24821,7 @@ StorePairScalarNonTemporalTest(intPtr_0, Vector64int_0, Vector64int_1);
 }
 
 }
+LogInCsv("StorePairScalarNonTemporal", "Performs 'StorePairScalarNonTemporal' operation", "<address>", Vector64int_0, Vector64int_1);
 // ----------------------------------------------------------------
 
 try {
@@ -24560,6 +24876,7 @@ ReverseElementBitsTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
+LogInCsv("ReverseElementBits", "Performs 'ReverseElementBits' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24628,6 +24945,7 @@ TransposeEvenTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("TransposeEven", "Performs 'TransposeEven' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24696,6 +25014,7 @@ TransposeOddTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("TransposeOdd", "Performs 'TransposeOdd' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24764,6 +25083,7 @@ UnzipEvenTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("UnzipEven", "Performs 'UnzipEven' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24832,6 +25152,7 @@ UnzipOddTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("UnzipOdd", "Performs 'UnzipOdd' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24900,6 +25221,7 @@ ZipHighTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ZipHigh", "Performs 'ZipHigh' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24968,6 +25290,7 @@ ZipLowTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
+LogInCsv("ZipLow", "Performs 'ZipLow' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 }

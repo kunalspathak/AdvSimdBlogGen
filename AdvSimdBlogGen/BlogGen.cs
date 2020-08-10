@@ -21,6 +21,7 @@ namespace AdvSimdBlogGen
         private static Dictionary<string, string> globalTocBuilder = new Dictionary<string, string>();
         private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>> advSimdMethods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>>();
         private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>> arm64Methods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>>();
+        private static bool shouldGenerateCsv = true;
 
         public static void Main(string[] args)
         {
@@ -107,7 +108,7 @@ namespace AdvSimdBlogGen
 
         private static void WriteGeneratedCodeToFile(string fileName)
         {
-            string classContents = string.Format(classTemplate, methodDefBuilder.ToString(), varInitializer, methodCallBuilder.ToString());
+            string classContents = string.Format(classTemplate, methodDefBuilder.ToString(), methodCallBuilder.ToString());
             foreach(var tocContents in globalTocBuilder)
             {
                 classContents = classContents.Replace(tocContents.Key, tocContents.Value);
@@ -299,6 +300,12 @@ namespace AdvSimdBlogGen
                 {
                     methodCallBuilder.AppendLine("}");
                 }
+            }
+            if (shouldGenerateCsv)
+            {
+                argsValueToPrint.Insert(0, "\"Performs '" + methodName + "' operation\"");
+                argsValueToPrint.Insert(0, "\"" + methodName + "\"");
+                methodCallBuilder.AppendLine(string.Format(LogInCsvTemplate, string.Join(", ", argsValueToPrint)));
             }
             methodCallBuilder.AppendLine("// ----------------------------------------------------------------");
             count++;

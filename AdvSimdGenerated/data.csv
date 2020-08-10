@@ -1,0 +1,360 @@
+Abs|Performs 'Abs' operation|<11, 12, 13, 14>|<11, 12, 13, 14>
+AbsSaturate|Performs 'AbsSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14>
+AbsScalar|Performs 'AbsScalar' operation|<11.5>|<11.5>
+AbsoluteCompareGreaterThan|Performs 'AbsoluteCompareGreaterThan' operation|<11.5, 12.5>|<21.5, 22.5>|<0, 0>
+AbsoluteCompareGreaterThanOrEqual|Performs 'AbsoluteCompareGreaterThanOrEqual' operation|<11.5, 12.5>|<21.5, 22.5>|<0, 0>
+AbsoluteCompareLessThan|Performs 'AbsoluteCompareLessThan' operation|<11.5, 12.5>|<21.5, 22.5>|<NaN, NaN>
+AbsoluteCompareLessThanOrEqual|Performs 'AbsoluteCompareLessThanOrEqual' operation|<11.5, 12.5>|<21.5, 22.5>|<NaN, NaN>
+AbsoluteDifference|Performs 'AbsoluteDifference' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<10, 10, 10, 10, 10, 10, 10, 10>
+AbsoluteDifferenceAdd|Performs 'AbsoluteDifferenceAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<31, 32, 33, 34, 35, 36, 37, 38>|<21, 22, 23, 24, 25, 26, 27, 28>
+AbsoluteDifferenceWideningLower|Performs 'AbsoluteDifferenceWideningLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<10, 10, 10, 10, 10, 10, 10, 10>
+AbsoluteDifferenceWideningLowerAndAdd|Performs 'AbsoluteDifferenceWideningLowerAndAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<21, 22, 23, 24, 25, 26, 27, 28>
+AbsoluteDifferenceWideningUpper|Performs 'AbsoluteDifferenceWideningUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36>|<10, 10, 10, 10, 10, 10, 10, 10>
+AbsoluteDifferenceWideningUpperAndAdd|Performs 'AbsoluteDifferenceWideningUpperAndAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36>|<21, 22, 23, 24, 25, 26, 27, 28>
+Add|Performs 'Add' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<32, 34, 36, 38, 40, 42, 44, 46>
+AddHighNarrowingLower|Performs 'AddHighNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<0, 0, 0, 0, 0, 0, 0, 0>
+AddHighNarrowingUpper|Performs 'AddHighNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 0, 0, 0, 0, 0, 0, 0, 0>
+AddPairwise|Performs 'AddPairwise' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<23, 27, 31, 35, 43, 47, 51, 55>
+AddPairwiseWidening|Performs 'AddPairwiseWidening' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<23, 27, 31, 35>
+AddPairwiseWideningAndAdd|Performs 'AddPairwiseWideningAndAdd' operation|<11, 12, 13, 14>|<11, 12, 13, 14, 15, 16, 17, 18>|<34, 39, 44, 49>
+AddPairwiseWideningAndAddScalar|Performs 'AddPairwiseWideningAndAddScalar' operation|<11>|<11, 12>|<34>
+AddPairwiseWideningScalar|Performs 'AddPairwiseWideningScalar' operation|<11, 12>|<23>
+AddRoundedHighNarrowingLower|Performs 'AddRoundedHighNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<0, 0, 0, 0, 0, 0, 0, 0>
+AddRoundedHighNarrowingUpper|Performs 'AddRoundedHighNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 0, 0, 0, 0, 0, 0, 0, 0>
+AddSaturate|Performs 'AddSaturate' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<32, 34, 36, 38, 40, 42, 44, 46>
+AddSaturateScalar|Performs 'AddSaturateScalar' operation|<11>|<11>|<22>
+AddScalar|Performs 'AddScalar' operation|<11.5>|<11.5>|<23>
+AddWideningLower|Performs 'AddWideningLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<32, 34, 36, 38, 40, 42, 44, 46>
+AddWideningUpper|Performs 'AddWideningUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36>|<48, 50, 52, 54, 56, 58, 60, 62>
+And|Performs 'And' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<1, 4, 5, 8, 9, 16, 17, 16>
+BitwiseClear|Performs 'BitwiseClear' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<10, 8, 8, 6, 6, 0, 0, 2>
+BitwiseSelect|Performs 'BitwiseSelect' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<31, 32, 33, 34, 35, 36, 37, 38>|<21, 36, 37, 40, 41, 52, 53, 52>
+Ceiling|Performs 'Ceiling' operation|<11.5, 12.5>|<12, 13>
+CeilingScalar|Performs 'CeilingScalar' operation|<11.5>|<12>
+CompareEqual|Performs 'CompareEqual' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<0, 0, 0, 0, 0, 0, 0, 0>
+CompareGreaterThan|Performs 'CompareGreaterThan' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<0, 0, 0, 0, 0, 0, 0, 0>
+CompareGreaterThanOrEqual|Performs 'CompareGreaterThanOrEqual' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<0, 0, 0, 0, 0, 0, 0, 0>
+CompareLessThan|Performs 'CompareLessThan' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<255, 255, 255, 255, 255, 255, 255, 255>
+CompareLessThanOrEqual|Performs 'CompareLessThanOrEqual' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<255, 255, 255, 255, 255, 255, 255, 255>
+CompareTest|Performs 'CompareTest' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<255, 255, 255, 255, 255, 255, 255, 255>
+ConvertToInt32RoundAwayFromZero|Performs 'ConvertToInt32RoundAwayFromZero' operation|<11.5, 12.5>|<12, 13>
+ConvertToInt32RoundAwayFromZeroScalar|Performs 'ConvertToInt32RoundAwayFromZeroScalar' operation|<11.5, 12.5>|<12, 0>
+ConvertToInt32RoundToEven|Performs 'ConvertToInt32RoundToEven' operation|<11.5, 12.5>|<12, 12>
+ConvertToInt32RoundToEvenScalar|Performs 'ConvertToInt32RoundToEvenScalar' operation|<11.5, 12.5>|<12, 0>
+ConvertToInt32RoundToNegativeInfinity|Performs 'ConvertToInt32RoundToNegativeInfinity' operation|<11.5, 12.5>|<11, 12>
+ConvertToInt32RoundToNegativeInfinityScalar|Performs 'ConvertToInt32RoundToNegativeInfinityScalar' operation|<11.5, 12.5>|<11, 0>
+ConvertToInt32RoundToPositiveInfinity|Performs 'ConvertToInt32RoundToPositiveInfinity' operation|<11.5, 12.5>|<12, 13>
+ConvertToInt32RoundToPositiveInfinityScalar|Performs 'ConvertToInt32RoundToPositiveInfinityScalar' operation|<11.5, 12.5>|<12, 0>
+ConvertToInt32RoundToZero|Performs 'ConvertToInt32RoundToZero' operation|<11.5, 12.5>|<11, 12>
+ConvertToInt32RoundToZeroScalar|Performs 'ConvertToInt32RoundToZeroScalar' operation|<11.5, 12.5>|<11, 0>
+ConvertToSingle|Performs 'ConvertToSingle' operation|<11, 12>|<11, 12>
+ConvertToSingleScalar|Performs 'ConvertToSingleScalar' operation|<11, 12>|<11, 0>
+ConvertToUInt32RoundAwayFromZero|Performs 'ConvertToUInt32RoundAwayFromZero' operation|<11.5, 12.5>|<12, 13>
+ConvertToUInt32RoundAwayFromZeroScalar|Performs 'ConvertToUInt32RoundAwayFromZeroScalar' operation|<11.5, 12.5>|<12, 0>
+ConvertToUInt32RoundToEven|Performs 'ConvertToUInt32RoundToEven' operation|<11.5, 12.5>|<12, 12>
+ConvertToUInt32RoundToEvenScalar|Performs 'ConvertToUInt32RoundToEvenScalar' operation|<11.5, 12.5>|<12, 0>
+ConvertToUInt32RoundToNegativeInfinity|Performs 'ConvertToUInt32RoundToNegativeInfinity' operation|<11.5, 12.5>|<11, 12>
+ConvertToUInt32RoundToNegativeInfinityScalar|Performs 'ConvertToUInt32RoundToNegativeInfinityScalar' operation|<11.5, 12.5>|<11, 0>
+ConvertToUInt32RoundToPositiveInfinity|Performs 'ConvertToUInt32RoundToPositiveInfinity' operation|<11.5, 12.5>|<12, 13>
+ConvertToUInt32RoundToPositiveInfinityScalar|Performs 'ConvertToUInt32RoundToPositiveInfinityScalar' operation|<11.5, 12.5>|<12, 0>
+ConvertToUInt32RoundToZero|Performs 'ConvertToUInt32RoundToZero' operation|<11.5, 12.5>|<11, 12>
+ConvertToUInt32RoundToZeroScalar|Performs 'ConvertToUInt32RoundToZeroScalar' operation|<11.5, 12.5>|<11, 0>
+DivideScalar|Performs 'DivideScalar' operation|<11.5>|<11.5>|<1>
+DuplicateSelectedScalarToVector64|Performs 'DuplicateSelectedScalarToVector64' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|<11, 11, 11, 11, 11, 11, 11, 11>
+DuplicateSelectedScalarToVector128|Performs 'DuplicateSelectedScalarToVector128' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|<11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11>
+DuplicateToVector64|Performs 'DuplicateToVector64' operation|0|<0, 0, 0, 0, 0, 0, 0, 0>
+DuplicateToVector128|Performs 'DuplicateToVector128' operation|0|<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>
+Extract|Performs 'Extract' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|11
+ExtractNarrowingLower|Performs 'ExtractNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>
+ExtractNarrowingSaturateLower|Performs 'ExtractNarrowingSaturateLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>
+ExtractNarrowingSaturateUnsignedLower|Performs 'ExtractNarrowingSaturateUnsignedLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>
+ExtractNarrowingSaturateUnsignedUpper|Performs 'ExtractNarrowingSaturateUnsignedUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 11, 12, 13, 14, 15, 16, 17, 18>
+ExtractNarrowingSaturateUpper|Performs 'ExtractNarrowingSaturateUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 11, 12, 13, 14, 15, 16, 17, 18>
+ExtractNarrowingUpper|Performs 'ExtractNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 11, 12, 13, 14, 15, 16, 17, 18>
+ExtractVector64|Performs 'ExtractVector64' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|0|<11, 12, 13, 14, 15, 16, 17, 18>
+ExtractVector128|Performs 'ExtractVector128' operation|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36>|0|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>
+Floor|Performs 'Floor' operation|<11.5, 12.5>|<11, 12>
+FloorScalar|Performs 'FloorScalar' operation|<11.5>|<11>
+FusedAddHalving|Performs 'FusedAddHalving' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<16, 17, 18, 19, 20, 21, 22, 23>
+FusedAddRoundedHalving|Performs 'FusedAddRoundedHalving' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<16, 17, 18, 19, 20, 21, 22, 23>
+FusedMultiplyAdd|Performs 'FusedMultiplyAdd' operation|<11.5, 12.5>|<21.5, 22.5>|<11.5, 12.5>|<258.75, 293.75>
+FusedMultiplyAddNegatedScalar|Performs 'FusedMultiplyAddNegatedScalar' operation|<11.5>|<11.5>|<11>|<-138>
+FusedMultiplyAddScalar|Performs 'FusedMultiplyAddScalar' operation|<11.5>|<11.5>|<11>|<138>
+FusedMultiplySubtract|Performs 'FusedMultiplySubtract' operation|<11.5, 12.5>|<21.5, 22.5>|<11.5, 12.5>|<-235.75, -268.75>
+FusedMultiplySubtractNegatedScalar|Performs 'FusedMultiplySubtractNegatedScalar' operation|<11.5>|<11.5>|<11>|<115>
+FusedMultiplySubtractScalar|Performs 'FusedMultiplySubtractScalar' operation|<11.5>|<11.5>|<11>|<-115>
+FusedSubtractHalving|Performs 'FusedSubtractHalving' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<251, 251, 251, 251, 251, 251, 251, 251>
+Insert|Performs 'Insert' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|1|<1, 12, 13, 14, 15, 16, 17, 18>
+InsertScalar|Performs 'InsertScalar' operation|<11.5, 12.5>|0|<11.5>|<11.5, 12.5>
+LeadingSignCount|Performs 'LeadingSignCount' operation|<11, 12, 13, 14>|<11, 11, 11, 11>
+LeadingZeroCount|Performs 'LeadingZeroCount' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<4, 4, 4, 4, 4, 3, 3, 3>
+LoadAndInsertScalar|Performs 'LoadAndInsertScalar' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|<address>|<11, 12, 13, 14, 15, 16, 17, 18>
+LoadAndReplicateToVector64|Performs 'LoadAndReplicateToVector64' operation|<address>|<11, 11, 11, 11, 11, 11, 11, 11>
+LoadAndReplicateToVector128|Performs 'LoadAndReplicateToVector128' operation|<address>|<11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11>
+LoadVector64|Performs 'LoadVector64' operation|<address>|<11, 12, 13, 14, 15, 16, 17, 18>
+LoadVector128|Performs 'LoadVector128' operation|<address>|<11, 12, 13, 14, 15, 16, 17, 18, 0, 0, 0, 0, 0, 0, 0, 0>
+Max|Performs 'Max' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<21, 22, 23, 24, 25, 26, 27, 28>
+MaxNumber|Performs 'MaxNumber' operation|<11.5, 12.5>|<21.5, 22.5>|<21.5, 22.5>
+MaxNumberScalar|Performs 'MaxNumberScalar' operation|<11.5>|<11.5>|<11.5>
+MaxPairwise|Performs 'MaxPairwise' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<12, 14, 16, 18, 22, 24, 26, 28>
+Min|Performs 'Min' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<11, 12, 13, 14, 15, 16, 17, 18>
+MinNumber|Performs 'MinNumber' operation|<11.5, 12.5>|<21.5, 22.5>|<11.5, 12.5>
+MinNumberScalar|Performs 'MinNumberScalar' operation|<11.5>|<11.5>|<11.5>
+MinPairwise|Performs 'MinPairwise' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<11, 13, 15, 17, 21, 23, 25, 27>
+Multiply|Performs 'Multiply' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<231, 8, 43, 80, 119, 160, 203, 248>
+MultiplyAdd|Performs 'MultiplyAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<31, 32, 33, 34, 35, 36, 37, 38>|<150, 204, 4, 62, 122, 184, 248, 58>
+MultiplyAddByScalar|Performs 'MultiplyAddByScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<31, 32, 33, 34>|<662, 694, 726, 758>
+MultiplyAddBySelectedScalar|Performs 'MultiplyAddBySelectedScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<31, 32, 33, 34>|0|<662, 694, 726, 758>
+MultiplyByScalar|Performs 'MultiplyByScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<231, 252, 273, 294>
+MultiplyBySelectedScalar|Performs 'MultiplyBySelectedScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<231, 252, 273, 294>
+MultiplyBySelectedScalarWideningLower|Performs 'MultiplyBySelectedScalarWideningLower' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<231, 252, 273, 294>
+MultiplyBySelectedScalarWideningLowerAndAdd|Performs 'MultiplyBySelectedScalarWideningLowerAndAdd' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<242, 264, 286, 308>
+MultiplyBySelectedScalarWideningLowerAndSubtract|Performs 'MultiplyBySelectedScalarWideningLowerAndSubtract' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<-220, -240, -260, -280>
+MultiplyBySelectedScalarWideningUpper|Performs 'MultiplyBySelectedScalarWideningUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14>|0|<165, 176, 187, 198>
+MultiplyBySelectedScalarWideningUpperAndAdd|Performs 'MultiplyBySelectedScalarWideningUpperAndAdd' operation|<11, 12, 13, 14>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14>|0|<176, 188, 200, 212>
+MultiplyBySelectedScalarWideningUpperAndSubtract|Performs 'MultiplyBySelectedScalarWideningUpperAndSubtract' operation|<11, 12, 13, 14>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14>|0|<-154, -164, -174, -184>
+MultiplyDoublingByScalarSaturateHigh|Performs 'MultiplyDoublingByScalarSaturateHigh' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<0, 0, 0, 0>
+MultiplyDoublingBySelectedScalarSaturateHigh|Performs 'MultiplyDoublingBySelectedScalarSaturateHigh' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<0, 0, 0, 0>
+MultiplyDoublingSaturateHigh|Performs 'MultiplyDoublingSaturateHigh' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<0, 0, 0, 0>
+MultiplyDoublingWideningLowerAndAddSaturate|Performs 'MultiplyDoublingWideningLowerAndAddSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|<21, 22, 23, 24>|<473, 540, 611, 686>
+MultiplyDoublingWideningLowerAndSubtractSaturate|Performs 'MultiplyDoublingWideningLowerAndSubtractSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|<21, 22, 23, 24>|<-451, -516, -585, -658>
+MultiplyDoublingWideningLowerByScalarAndAddSaturate|Performs 'MultiplyDoublingWideningLowerByScalarAndAddSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|<21, 22, 23, 24>|<473, 516, 559, 602>
+MultiplyDoublingWideningLowerByScalarAndSubtractSaturate|Performs 'MultiplyDoublingWideningLowerByScalarAndSubtractSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|<21, 22, 23, 24>|<-451, -492, -533, -574>
+MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate|Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<473, 516, 559, 602>
+MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate|Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<-451, -492, -533, -574>
+MultiplyDoublingWideningSaturateLower|Performs 'MultiplyDoublingWideningSaturateLower' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<462, 528, 598, 672>
+MultiplyDoublingWideningSaturateLowerByScalar|Performs 'MultiplyDoublingWideningSaturateLowerByScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<462, 504, 546, 588>
+MultiplyDoublingWideningSaturateLowerBySelectedScalar|Performs 'MultiplyDoublingWideningSaturateLowerBySelectedScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<462, 504, 546, 588>
+MultiplyDoublingWideningSaturateUpper|Performs 'MultiplyDoublingWideningSaturateUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<750, 832, 918, 1008>
+MultiplyDoublingWideningSaturateUpperByScalar|Performs 'MultiplyDoublingWideningSaturateUpperByScalar' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14>|<330, 352, 374, 396>
+MultiplyDoublingWideningSaturateUpperBySelectedScalar|Performs 'MultiplyDoublingWideningSaturateUpperBySelectedScalar' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14>|0|<330, 352, 374, 396>
+MultiplyDoublingWideningUpperAndAddSaturate|Performs 'MultiplyDoublingWideningUpperAndAddSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<761, 844, 931, 1022>
+MultiplyDoublingWideningUpperAndSubtractSaturate|Performs 'MultiplyDoublingWideningUpperAndSubtractSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<-739, -820, -905, -994>
+MultiplyDoublingWideningUpperByScalarAndAddSaturate|Performs 'MultiplyDoublingWideningUpperByScalarAndAddSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14>|<341, 364, 387, 410>
+MultiplyDoublingWideningUpperByScalarAndSubtractSaturate|Performs 'MultiplyDoublingWideningUpperByScalarAndSubtractSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14>|<-319, -340, -361, -382>
+MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate|Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14>|0|<341, 364, 387, 410>
+MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate|Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate' operation|<11, 12, 13, 14>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14>|0|<-319, -340, -361, -382>
+MultiplyRoundedDoublingByScalarSaturateHigh|Performs 'MultiplyRoundedDoublingByScalarSaturateHigh' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<0, 0, 0, 0>
+MultiplyRoundedDoublingBySelectedScalarSaturateHigh|Performs 'MultiplyRoundedDoublingBySelectedScalarSaturateHigh' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<0, 0, 0, 0>
+MultiplyRoundedDoublingSaturateHigh|Performs 'MultiplyRoundedDoublingSaturateHigh' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<0, 0, 0, 0>
+MultiplyScalar|Performs 'MultiplyScalar' operation|<11.5>|<11.5>|<132.25>
+MultiplyScalarBySelectedScalar|Performs 'MultiplyScalarBySelectedScalar' operation|<11.5, 12.5>|<21.5, 22.5>|0|<247.25, 0>
+MultiplySubtract|Performs 'MultiplySubtract' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<31, 32, 33, 34, 35, 36, 37, 38>|<128, 76, 22, 222, 164, 104, 42, 234>
+MultiplySubtractByScalar|Performs 'MultiplySubtractByScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<31, 32, 33, 34>|<-640, -670, -700, -730>
+MultiplySubtractBySelectedScalar|Performs 'MultiplySubtractBySelectedScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<31, 32, 33, 34>|0|<-640, -670, -700, -730>
+MultiplyWideningLower|Performs 'MultiplyWideningLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<231, 264, 299, 336, 375, 416, 459, 504>
+MultiplyWideningLowerAndAdd|Performs 'MultiplyWideningLowerAndAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<242, 276, 312, 350, 390, 432, 476, 522>
+MultiplyWideningLowerAndSubtract|Performs 'MultiplyWideningLowerAndSubtract' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<65316, 65284, 65250, 65214, 65176, 65136, 65094, 65050>
+MultiplyWideningUpper|Performs 'MultiplyWideningUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36>|<551, 600, 651, 704, 759, 816, 875, 936>
+MultiplyWideningUpperAndAdd|Performs 'MultiplyWideningUpperAndAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36>|<562, 612, 664, 718, 774, 832, 892, 954>
+MultiplyWideningUpperAndSubtract|Performs 'MultiplyWideningUpperAndSubtract' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36>|<64996, 64948, 64898, 64846, 64792, 64736, 64678, 64618>
+Negate|Performs 'Negate' operation|<11, 12, 13, 14>|<-11, -12, -13, -14>
+NegateSaturate|Performs 'NegateSaturate' operation|<11, 12, 13, 14>|<-11, -12, -13, -14>
+NegateScalar|Performs 'NegateScalar' operation|<11.5>|<-11.5>
+Not|Performs 'Not' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<244, 243, 242, 241, 240, 239, 238, 237>
+Or|Performs 'Or' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<31, 30, 31, 30, 31, 26, 27, 30>
+OrNot|Performs 'OrNot' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<235, 237, 237, 239, 239, 245, 245, 243>
+PolynomialMultiply|Performs 'PolynomialMultiply' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<151, 232, 243, 144, 135, 160, 171, 248>
+PolynomialMultiplyWideningLower|Performs 'PolynomialMultiplyWideningLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<151, 232, 243, 144, 135, 416, 427, 504>
+PolynomialMultiplyWideningUpper|Performs 'PolynomialMultiplyWideningUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36>|<503, 408, 403, 704, 759, 816, 779, 808>
+PopCount|Performs 'PopCount' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<3, 2, 3, 3, 4, 1, 2, 2>
+ReciprocalEstimate|Performs 'ReciprocalEstimate' operation|<11.5, 12.5>|<0.08691406, 0.079833984>
+ReciprocalSquareRootEstimate|Performs 'ReciprocalSquareRootEstimate' operation|<11.5, 12.5>|<0.29492188, 0.28222656>
+ReciprocalSquareRootStep|Performs 'ReciprocalSquareRootStep' operation|<11.5, 12.5>|<21.5, 22.5>|<-122.125, -139.125>
+ReciprocalStep|Performs 'ReciprocalStep' operation|<11.5, 12.5>|<21.5, 22.5>|<-245.25, -279.25>
+ReverseElement16|Performs 'ReverseElement16' operation|<11, 12>|<720896, 786432>
+ReverseElement32|Performs 'ReverseElement32' operation|<11>|<47244640256>
+ReverseElement8|Performs 'ReverseElement8' operation|<11, 12, 13, 14>|<2816, 3072, 3328, 3584>
+RoundAwayFromZero|Performs 'RoundAwayFromZero' operation|<11.5, 12.5>|<12, 13>
+RoundAwayFromZeroScalar|Performs 'RoundAwayFromZeroScalar' operation|<11.5>|<12>
+RoundToNearest|Performs 'RoundToNearest' operation|<11.5, 12.5>|<12, 12>
+RoundToNearestScalar|Performs 'RoundToNearestScalar' operation|<11.5>|<12>
+RoundToNegativeInfinity|Performs 'RoundToNegativeInfinity' operation|<11.5, 12.5>|<11, 12>
+RoundToNegativeInfinityScalar|Performs 'RoundToNegativeInfinityScalar' operation|<11.5>|<11>
+RoundToPositiveInfinity|Performs 'RoundToPositiveInfinity' operation|<11.5, 12.5>|<12, 13>
+RoundToPositiveInfinityScalar|Performs 'RoundToPositiveInfinityScalar' operation|<11.5>|<12>
+RoundToZero|Performs 'RoundToZero' operation|<11.5, 12.5>|<11, 12>
+RoundToZeroScalar|Performs 'RoundToZeroScalar' operation|<11.5>|<11>
+ShiftArithmetic|Performs 'ShiftArithmetic' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<0, 0, 0, 0>
+ShiftArithmeticRounded|Performs 'ShiftArithmeticRounded' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<0, 0, 0, 0>
+ShiftArithmeticRoundedSaturate|Performs 'ShiftArithmeticRoundedSaturate' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<32767, 32767, 32767, 32767>
+ShiftArithmeticRoundedSaturateScalar|Performs 'ShiftArithmeticRoundedSaturateScalar' operation|<11>|<11>|<22528>
+ShiftArithmeticRoundedScalar|Performs 'ShiftArithmeticRoundedScalar' operation|<11>|<11>|<22528>
+ShiftArithmeticSaturate|Performs 'ShiftArithmeticSaturate' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<32767, 32767, 32767, 32767>
+ShiftArithmeticSaturateScalar|Performs 'ShiftArithmeticSaturateScalar' operation|<11>|<11>|<22528>
+ShiftArithmeticScalar|Performs 'ShiftArithmeticScalar' operation|<11>|<11>|<22528>
+ShiftLeftAndInsert|Performs 'ShiftLeftAndInsert' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|0|<21, 22, 23, 24, 25, 26, 27, 28>
+ShiftLeftAndInsertScalar|Performs 'ShiftLeftAndInsertScalar' operation|<11>|<11>|0|<11>
+ShiftLeftLogical|Performs 'ShiftLeftLogical' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|<11, 12, 13, 14, 15, 16, 17, 18>
+ShiftLeftLogicalSaturate|Performs 'ShiftLeftLogicalSaturate' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|<11, 12, 13, 14, 15, 16, 17, 18>
+ShiftLeftLogicalSaturateScalar|Performs 'ShiftLeftLogicalSaturateScalar' operation|<11>|0|<11>
+ShiftLeftLogicalSaturateUnsigned|Performs 'ShiftLeftLogicalSaturateUnsigned' operation|<11, 12, 13, 14>|0|<11, 12, 13, 14>
+ShiftLeftLogicalSaturateUnsignedScalar|Performs 'ShiftLeftLogicalSaturateUnsignedScalar' operation|<11>|0|<11>
+ShiftLeftLogicalScalar|Performs 'ShiftLeftLogicalScalar' operation|<11>|0|<11>
+ShiftLeftLogicalWideningLower|Performs 'ShiftLeftLogicalWideningLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|<11, 12, 13, 14, 15, 16, 17, 18>
+ShiftLeftLogicalWideningUpper|Performs 'ShiftLeftLogicalWideningUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|0|<19, 20, 21, 22, 23, 24, 25, 26>
+ShiftLogical|Performs 'ShiftLogical' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<0, 0, 0, 0, 0, 0, 0, 0>
+ShiftLogicalRounded|Performs 'ShiftLogicalRounded' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<0, 0, 0, 0, 0, 0, 0, 0>
+ShiftLogicalRoundedSaturate|Performs 'ShiftLogicalRoundedSaturate' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<255, 255, 255, 255, 255, 255, 255, 255>
+ShiftLogicalRoundedSaturateScalar|Performs 'ShiftLogicalRoundedSaturateScalar' operation|<11>|<11>|<22528>
+ShiftLogicalRoundedScalar|Performs 'ShiftLogicalRoundedScalar' operation|<11>|<11>|<22528>
+ShiftLogicalSaturate|Performs 'ShiftLogicalSaturate' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<255, 255, 255, 255, 255, 255, 255, 255>
+ShiftLogicalSaturateScalar|Performs 'ShiftLogicalSaturateScalar' operation|<11>|<11>|<22528>
+ShiftLogicalScalar|Performs 'ShiftLogicalScalar' operation|<11>|<11>|<22528>
+ShiftRightAndInsert|Performs 'ShiftRightAndInsert' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|0|TODO
+ShiftRightAndInsertScalar|Performs 'ShiftRightAndInsertScalar' operation|<11>|<11>|0|TODO
+ShiftRightArithmetic|Performs 'ShiftRightArithmetic' operation|<11, 12, 13, 14>|0|TODO
+ShiftRightArithmeticAdd|Performs 'ShiftRightArithmeticAdd' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|TODO
+ShiftRightArithmeticAddScalar|Performs 'ShiftRightArithmeticAddScalar' operation|<11>|<11>|0|TODO
+ShiftRightArithmeticNarrowingSaturateLower|Performs 'ShiftRightArithmeticNarrowingSaturateLower' operation|<11, 12, 13, 14>|0|TODO
+ShiftRightArithmeticNarrowingSaturateUnsignedLower|Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightArithmeticNarrowingSaturateUnsignedUpper|Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightArithmeticNarrowingSaturateUpper|Performs 'ShiftRightArithmeticNarrowingSaturateUpper' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|0|TODO
+ShiftRightArithmeticRounded|Performs 'ShiftRightArithmeticRounded' operation|<11, 12, 13, 14>|0|TODO
+ShiftRightArithmeticRoundedAdd|Performs 'ShiftRightArithmeticRoundedAdd' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|TODO
+ShiftRightArithmeticRoundedAddScalar|Performs 'ShiftRightArithmeticRoundedAddScalar' operation|<11>|<11>|0|TODO
+ShiftRightArithmeticRoundedNarrowingSaturateLower|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateLower' operation|<11, 12, 13, 14>|0|TODO
+ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightArithmeticRoundedNarrowingSaturateUpper|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUpper' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|0|TODO
+ShiftRightArithmeticRoundedScalar|Performs 'ShiftRightArithmeticRoundedScalar' operation|<11>|0|TODO
+ShiftRightArithmeticScalar|Performs 'ShiftRightArithmeticScalar' operation|<11>|0|TODO
+ShiftRightLogical|Performs 'ShiftRightLogical' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightLogicalAdd|Performs 'ShiftRightLogicalAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|0|TODO
+ShiftRightLogicalAddScalar|Performs 'ShiftRightLogicalAddScalar' operation|<11>|<11>|0|TODO
+ShiftRightLogicalNarrowingLower|Performs 'ShiftRightLogicalNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightLogicalNarrowingSaturateLower|Performs 'ShiftRightLogicalNarrowingSaturateLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightLogicalNarrowingSaturateUpper|Performs 'ShiftRightLogicalNarrowingSaturateUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightLogicalNarrowingUpper|Performs 'ShiftRightLogicalNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightLogicalRounded|Performs 'ShiftRightLogicalRounded' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightLogicalRoundedAdd|Performs 'ShiftRightLogicalRoundedAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|0|TODO
+ShiftRightLogicalRoundedAddScalar|Performs 'ShiftRightLogicalRoundedAddScalar' operation|<11>|<11>|0|TODO
+ShiftRightLogicalRoundedNarrowingLower|Performs 'ShiftRightLogicalRoundedNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightLogicalRoundedNarrowingSaturateLower|Performs 'ShiftRightLogicalRoundedNarrowingSaturateLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightLogicalRoundedNarrowingSaturateUpper|Performs 'ShiftRightLogicalRoundedNarrowingSaturateUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightLogicalRoundedNarrowingUpper|Performs 'ShiftRightLogicalRoundedNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO
+ShiftRightLogicalRoundedScalar|Performs 'ShiftRightLogicalRoundedScalar' operation|<11>|0|TODO
+ShiftRightLogicalScalar|Performs 'ShiftRightLogicalScalar' operation|<11>|0|TODO
+SignExtendWideningLower|Performs 'SignExtendWideningLower' operation|<11, 12, 13, 14>|<11, 12, 13, 14>
+SignExtendWideningUpper|Performs 'SignExtendWideningUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<15, 16, 17, 18>
+SqrtScalar|Performs 'SqrtScalar' operation|<11.5>|<3.391164991562634>
+Store|Performs 'Store' operation|<address>|<11, 12, 13, 14, 15, 16, 17, 18>
+StoreSelectedScalar|Performs 'StoreSelectedScalar' operation|<address>|<11, 12, 13, 14, 15, 16, 17, 18>|0
+Subtract|Performs 'Subtract' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<246, 246, 246, 246, 246, 246, 246, 246>
+SubtractHighNarrowingLower|Performs 'SubtractHighNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<0, 0, 0, 0, 0, 0, 0, 0>
+SubtractHighNarrowingUpper|Performs 'SubtractHighNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 0, 0, 0, 0, 0, 0, 0, 0>
+SubtractRoundedHighNarrowingLower|Performs 'SubtractRoundedHighNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<0, 0, 0, 0, 0, 0, 0, 0>
+SubtractRoundedHighNarrowingUpper|Performs 'SubtractRoundedHighNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 0, 0, 0, 0, 0, 0, 0, 0>
+SubtractSaturate|Performs 'SubtractSaturate' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<0, 0, 0, 0, 0, 0, 0, 0>
+SubtractSaturateScalar|Performs 'SubtractSaturateScalar' operation|<11>|<11>|<0>
+SubtractScalar|Performs 'SubtractScalar' operation|<11.5>|<11.5>|<0>
+SubtractWideningLower|Performs 'SubtractWideningLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<65526, 65526, 65526, 65526, 65526, 65526, 65526, 65526>
+SubtractWideningUpper|Performs 'SubtractWideningUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36>|<65526, 65526, 65526, 65526, 65526, 65526, 65526, 65526>
+VectorTableLookup|Performs 'VectorTableLookup' operation|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<11, 12, 13, 14, 15, 16, 17, 18>|<22, 23, 24, 25, 26, 0, 0, 0>
+VectorTableLookupExtension|Performs 'VectorTableLookupExtension' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<21, 22, 23, 24, 25, 26, 27, 28>|<11, 12, 13, 14, 15, 16, 17, 18>
+Xor|Performs 'Xor' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<30, 26, 26, 22, 22, 10, 10, 14>
+ZeroExtendWideningLower|Performs 'ZeroExtendWideningLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>
+ZeroExtendWideningUpper|Performs 'ZeroExtendWideningUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26>|<19, 20, 21, 22, 23, 24, 25, 26>
+AbsSaturateScalar|Performs 'AbsSaturateScalar' operation|<11, 12, 13, 14>|<11, 0, 0, 0>
+AbsoluteCompareGreaterThanScalar|Performs 'AbsoluteCompareGreaterThanScalar' operation|<11.5>|<11.5>|<0>
+AbsoluteCompareGreaterThanOrEqualScalar|Performs 'AbsoluteCompareGreaterThanOrEqualScalar' operation|<11.5>|<11.5>|<NaN>
+AbsoluteCompareLessThanScalar|Performs 'AbsoluteCompareLessThanScalar' operation|<11.5>|<11.5>|<0>
+AbsoluteCompareLessThanOrEqualScalar|Performs 'AbsoluteCompareLessThanOrEqualScalar' operation|<11.5>|<11.5>|<NaN>
+AbsoluteDifferenceScalar|Performs 'AbsoluteDifferenceScalar' operation|<11.5>|<11.5>|<0>
+AddAcross|Performs 'AddAcross' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<116, 0, 0, 0, 0, 0, 0, 0>
+AddAcrossWidening|Performs 'AddAcrossWidening' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<116, 0, 0, 0>
+AddPairwiseScalar|Performs 'AddPairwiseScalar' operation|<11.5, 12.5>|<24, 0>
+CompareEqualScalar|Performs 'CompareEqualScalar' operation|<11.5>|<11.5>|<NaN>
+CompareGreaterThanScalar|Performs 'CompareGreaterThanScalar' operation|<11.5>|<11.5>|<0>
+CompareGreaterThanOrEqualScalar|Performs 'CompareGreaterThanOrEqualScalar' operation|<11.5>|<11.5>|<NaN>
+CompareLessThanScalar|Performs 'CompareLessThanScalar' operation|<11.5>|<11.5>|<0>
+CompareLessThanOrEqualScalar|Performs 'CompareLessThanOrEqualScalar' operation|<11.5>|<11.5>|<NaN>
+CompareTestScalar|Performs 'CompareTestScalar' operation|<11.5>|<11.5>|<NaN>
+ConvertToDouble|Performs 'ConvertToDouble' operation|<11.5, 12.5>|<11.5, 12.5>
+ConvertToDoubleScalar|Performs 'ConvertToDoubleScalar' operation|<11>|<11>
+ConvertToDoubleUpper|Performs 'ConvertToDoubleUpper' operation|<11.5, 12.5, 13.5, 14.5>|<13.5, 14.5>
+ConvertToInt64RoundAwayFromZero|Performs 'ConvertToInt64RoundAwayFromZero' operation|<11.5, 12.5>|<12, 13>
+ConvertToInt64RoundAwayFromZeroScalar|Performs 'ConvertToInt64RoundAwayFromZeroScalar' operation|<11.5>|<12>
+ConvertToInt64RoundToEven|Performs 'ConvertToInt64RoundToEven' operation|<11.5, 12.5>|<12, 12>
+ConvertToInt64RoundToEvenScalar|Performs 'ConvertToInt64RoundToEvenScalar' operation|<11.5>|<12>
+ConvertToInt64RoundToNegativeInfinity|Performs 'ConvertToInt64RoundToNegativeInfinity' operation|<11.5, 12.5>|<11, 12>
+ConvertToInt64RoundToNegativeInfinityScalar|Performs 'ConvertToInt64RoundToNegativeInfinityScalar' operation|<11.5>|<11>
+ConvertToInt64RoundToPositiveInfinity|Performs 'ConvertToInt64RoundToPositiveInfinity' operation|<11.5, 12.5>|<12, 13>
+ConvertToInt64RoundToPositiveInfinityScalar|Performs 'ConvertToInt64RoundToPositiveInfinityScalar' operation|<11.5>|<12>
+ConvertToInt64RoundToZero|Performs 'ConvertToInt64RoundToZero' operation|<11.5, 12.5>|<11, 12>
+ConvertToInt64RoundToZeroScalar|Performs 'ConvertToInt64RoundToZeroScalar' operation|<11.5>|<11>
+ConvertToSingleLower|Performs 'ConvertToSingleLower' operation|<11.5, 12.5>|<11.5, 12.5>
+ConvertToSingleRoundToOddLower|Performs 'ConvertToSingleRoundToOddLower' operation|<11.5, 12.5>|<11.5, 12.5>
+ConvertToSingleRoundToOddUpper|Performs 'ConvertToSingleRoundToOddUpper' operation|<11.5, 12.5>|<11.5, 12.5>|<11.5, 12.5, 11.5, 12.5>
+ConvertToSingleUpper|Performs 'ConvertToSingleUpper' operation|<11.5, 12.5>|<11.5, 12.5>|<11.5, 12.5, 11.5, 12.5>
+ConvertToUInt64RoundAwayFromZero|Performs 'ConvertToUInt64RoundAwayFromZero' operation|<11.5, 12.5>|<12, 13>
+ConvertToUInt64RoundAwayFromZeroScalar|Performs 'ConvertToUInt64RoundAwayFromZeroScalar' operation|<11.5>|<12>
+ConvertToUInt64RoundToEven|Performs 'ConvertToUInt64RoundToEven' operation|<11.5, 12.5>|<12, 12>
+ConvertToUInt64RoundToEvenScalar|Performs 'ConvertToUInt64RoundToEvenScalar' operation|<11.5>|<12>
+ConvertToUInt64RoundToNegativeInfinity|Performs 'ConvertToUInt64RoundToNegativeInfinity' operation|<11.5, 12.5>|<11, 12>
+ConvertToUInt64RoundToNegativeInfinityScalar|Performs 'ConvertToUInt64RoundToNegativeInfinityScalar' operation|<11.5>|<11>
+ConvertToUInt64RoundToPositiveInfinity|Performs 'ConvertToUInt64RoundToPositiveInfinity' operation|<11.5, 12.5>|<12, 13>
+ConvertToUInt64RoundToPositiveInfinityScalar|Performs 'ConvertToUInt64RoundToPositiveInfinityScalar' operation|<11.5>|<12>
+ConvertToUInt64RoundToZero|Performs 'ConvertToUInt64RoundToZero' operation|<11.5, 12.5>|<11, 12>
+ConvertToUInt64RoundToZeroScalar|Performs 'ConvertToUInt64RoundToZeroScalar' operation|<11.5>|<11>
+Divide|Performs 'Divide' operation|<11.5, 12.5>|<21.5, 22.5>|<0.53488374, 0.5555556>
+ExtractNarrowingSaturateScalar|Performs 'ExtractNarrowingSaturateScalar' operation|<11, 12, 13, 14>|<11, 0, 0, 0, 0, 0, 0, 0>
+ExtractNarrowingSaturateUnsignedScalar|Performs 'ExtractNarrowingSaturateUnsignedScalar' operation|<11, 12, 13, 14>|<11, 0, 0, 0, 0, 0, 0, 0>
+FusedMultiplyAddByScalar|Performs 'FusedMultiplyAddByScalar' operation|<11.5, 12.5>|<21.5, 22.5>|<11.5, 12.5>|<258.75, 271.25>
+FusedMultiplyAddBySelectedScalar|Performs 'FusedMultiplyAddBySelectedScalar' operation|<11.5, 12.5>|<21.5, 22.5>|<11.5, 12.5>|0|<258.75, 271.25>
+FusedMultiplyAddScalarBySelectedScalar|Performs 'FusedMultiplyAddScalarBySelectedScalar' operation|<11.5>|<11.5>|<11.5, 12.5>|0|<143.75>
+FusedMultiplySubtractByScalar|Performs 'FusedMultiplySubtractByScalar' operation|<11.5, 12.5>|<21.5, 22.5>|<11.5, 12.5>|<-235.75, -246.25>
+FusedMultiplySubtractBySelectedScalar|Performs 'FusedMultiplySubtractBySelectedScalar' operation|<11.5, 12.5>|<21.5, 22.5>|<11.5, 12.5>|0|<-235.75, -246.25>
+FusedMultiplySubtractScalarBySelectedScalar|Performs 'FusedMultiplySubtractScalarBySelectedScalar' operation|<11.5>|<11.5>|<11.5, 12.5>|0|<-120.75>
+InsertSelectedScalar|Performs 'InsertSelectedScalar' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|<21, 22, 23, 24, 25, 26, 27, 28>|1|<22, 12, 13, 14, 15, 16, 17, 18>
+MaxAcross|Performs 'MaxAcross' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<18, 0, 0, 0, 0, 0, 0, 0>
+MaxNumberAcross|Performs 'MaxNumberAcross' operation|<11.5, 12.5, 13.5, 14.5>|<14.5, 0>
+MaxNumberPairwise|Performs 'MaxNumberPairwise' operation|<11.5, 12.5>|<21.5, 22.5>|<12.5, 22.5>
+MaxNumberPairwiseScalar|Performs 'MaxNumberPairwiseScalar' operation|<11.5, 12.5>|<12.5, 0>
+MaxPairwiseScalar|Performs 'MaxPairwiseScalar' operation|<11.5, 12.5>|<12.5, 0>
+MaxScalar|Performs 'MaxScalar' operation|<11.5>|<11.5>|<11.5>
+MinAcross|Performs 'MinAcross' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 0, 0, 0, 0, 0, 0, 0>
+MinNumberAcross|Performs 'MinNumberAcross' operation|<11.5, 12.5, 13.5, 14.5>|<11.5, 0>
+MinNumberPairwise|Performs 'MinNumberPairwise' operation|<11.5, 12.5>|<21.5, 22.5>|<11.5, 21.5>
+MinNumberPairwiseScalar|Performs 'MinNumberPairwiseScalar' operation|<11.5, 12.5>|<11.5, 0>
+MinPairwiseScalar|Performs 'MinPairwiseScalar' operation|<11.5, 12.5>|<11.5, 0>
+MinScalar|Performs 'MinScalar' operation|<11.5>|<11.5>|<11.5>
+MultiplyDoublingSaturateHighScalar|Performs 'MultiplyDoublingSaturateHighScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<0, 0, 0, 0>
+MultiplyDoublingScalarBySelectedScalarSaturateHigh|Performs 'MultiplyDoublingScalarBySelectedScalarSaturateHigh' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<0, 0, 0, 0>
+MultiplyDoublingWideningAndAddSaturateScalar|Performs 'MultiplyDoublingWideningAndAddSaturateScalar' operation|<11, 12>|<11, 12, 13, 14>|<21, 22, 23, 24>|<473, 0>
+MultiplyDoublingWideningAndSubtractSaturateScalar|Performs 'MultiplyDoublingWideningAndSubtractSaturateScalar' operation|<11, 12>|<11, 12, 13, 14>|<21, 22, 23, 24>|<-451, 0>
+MultiplyDoublingWideningSaturateScalar|Performs 'MultiplyDoublingWideningSaturateScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<462, 0>
+MultiplyDoublingWideningSaturateScalarBySelectedScalar|Performs 'MultiplyDoublingWideningSaturateScalarBySelectedScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<462, 0>
+MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate|Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate' operation|<11, 12>|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<473, 0>
+MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate|Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate' operation|<11, 12>|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<-451, 0>
+MultiplyExtended|Performs 'MultiplyExtended' operation|<11.5, 12.5>|<21.5, 22.5>|<247.25, 281.25>
+MultiplyExtendedByScalar|Performs 'MultiplyExtendedByScalar' operation|<11.5, 12.5>|<11.5>|<132.25, 143.75>
+MultiplyExtendedBySelectedScalar|Performs 'MultiplyExtendedBySelectedScalar' operation|<11.5, 12.5>|<21.5, 22.5>|0|<247.25, 268.75>
+MultiplyExtendedScalar|Performs 'MultiplyExtendedScalar' operation|<11.5>|<11.5>|<132.25>
+MultiplyExtendedScalarBySelectedScalar|Performs 'MultiplyExtendedScalarBySelectedScalar' operation|<11.5>|<11.5, 12.5>|0|<132.25>
+MultiplyRoundedDoublingSaturateHighScalar|Performs 'MultiplyRoundedDoublingSaturateHighScalar' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|<0, 0, 0, 0>
+MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh|Performs 'MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|<0, 0, 0, 0>
+NegateSaturateScalar|Performs 'NegateSaturateScalar' operation|<11, 12, 13, 14>|<-11, 0, 0, 0>
+ReciprocalEstimateScalar|Performs 'ReciprocalEstimateScalar' operation|<11.5>|<0.0869140625>
+ReciprocalExponentScalar|Performs 'ReciprocalExponentScalar' operation|<11.5>|<0.25>
+ReciprocalSquareRootEstimateScalar|Performs 'ReciprocalSquareRootEstimateScalar' operation|<11.5>|<0.294921875>
+ReciprocalSquareRootStepScalar|Performs 'ReciprocalSquareRootStepScalar' operation|<11.5>|<11.5>|<-64.625>
+ReciprocalStepScalar|Performs 'ReciprocalStepScalar' operation|<11.5>|<11.5>|<-130.25>
+ShiftRightArithmeticNarrowingSaturateScalar|Performs 'ShiftRightArithmeticNarrowingSaturateScalar' operation|<11, 12>|0|TODO
+ShiftRightArithmeticNarrowingSaturateUnsignedScalar|Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedScalar' operation|<11, 12, 13, 14>|0|TODO
+ShiftRightArithmeticRoundedNarrowingSaturateScalar|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateScalar' operation|<11, 12>|0|TODO
+ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar' operation|<11, 12, 13, 14>|0|TODO
+ShiftRightLogicalNarrowingSaturateScalar|Performs 'ShiftRightLogicalNarrowingSaturateScalar' operation|<11, 12, 13, 14>|0|TODO
+ShiftRightLogicalRoundedNarrowingSaturateScalar|Performs 'ShiftRightLogicalRoundedNarrowingSaturateScalar' operation|<11, 12, 13, 14>|0|TODO
+Sqrt|Performs 'Sqrt' operation|<11.5, 12.5>|<3.391165, 3.535534>
+StorePair|Performs 'StorePair' operation|<address>|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>
+StorePairNonTemporal|Performs 'StorePairNonTemporal' operation|<address>|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>
+StorePairScalar|Performs 'StorePairScalar' operation|<address>|<11, 12>|<21, 22>
+StorePairScalarNonTemporal|Performs 'StorePairScalarNonTemporal' operation|<address>|<11, 12>|<21, 22>
+ReverseElementBits|Performs 'ReverseElementBits' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<208, 48, 176, 112, 240, 8, 136, 72>
+TransposeEven|Performs 'TransposeEven' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<11, 21, 13, 23, 15, 25, 17, 27>
+TransposeOdd|Performs 'TransposeOdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<12, 22, 14, 24, 16, 26, 18, 28>
+UnzipEven|Performs 'UnzipEven' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<11, 13, 15, 17, 21, 23, 25, 27>
+UnzipOdd|Performs 'UnzipOdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<12, 14, 16, 18, 22, 24, 26, 28>
+ZipHigh|Performs 'ZipHigh' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<15, 25, 16, 26, 17, 27, 18, 28>
+ZipLow|Performs 'ZipLow' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|<11, 21, 12, 22, 13, 23, 14, 24>

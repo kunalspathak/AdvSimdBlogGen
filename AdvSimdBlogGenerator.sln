@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30222.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvSimdBlogGen", "AdvSimdBlogGen\AdvSimdBlogGen.csproj", "{2B225340-7F7C-45A0-BF4F-BF985D42CF1D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvSimdRef", "AdvSimdGenerated\AdvSimdRef.csproj", "{7ECBEB4A-6AED-493E-A3D2-1CB0926D26D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvSimdGenerated", "AdvSimdGenerated\AdvSimdGenerated.csproj", "{71F23D32-FC30-41BD-9222-64A4A060137C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{2B225340-7F7C-45A0-BF4F-BF985D42CF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B225340-7F7C-45A0-BF4F-BF985D42CF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B225340-7F7C-45A0-BF4F-BF985D42CF1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7ECBEB4A-6AED-493E-A3D2-1CB0926D26D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7ECBEB4A-6AED-493E-A3D2-1CB0926D26D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7ECBEB4A-6AED-493E-A3D2-1CB0926D26D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7ECBEB4A-6AED-493E-A3D2-1CB0926D26D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F23D32-FC30-41BD-9222-64A4A060137C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F23D32-FC30-41BD-9222-64A4A060137C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F23D32-FC30-41BD-9222-64A4A060137C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F23D32-FC30-41BD-9222-64A4A060137C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
