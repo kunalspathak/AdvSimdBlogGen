@@ -23,6 +23,7 @@ namespace AdvSimdBlogGen
         private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>> advSimdMethods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>>();
         private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>> arm64Methods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>>();
         private static bool shouldGenerateCsv = false;
+        private static bool shouldReadFromCsv = true;
 
         public static void Main(string[] args)
         {
@@ -192,7 +193,7 @@ namespace AdvSimdBlogGen
 
             // method call
             List<string> args = new List<string>();
-            List<string> argsValueToPrint = new List<string>() { $"\"Performs '{methodName}' operation.\"" };
+            List<string> argsValueToPrint = new List<string>();
             StringBuilder argsValuePrintBuilder = new StringBuilder();
             Dictionary<string, int> argsTracker = new Dictionary<string, int>();
             int argCount = 1;
@@ -271,6 +272,16 @@ namespace AdvSimdBlogGen
                     methodCallBuilder.AppendLine("fixed (int* intPtr_0 = intArray)");
                     methodCallBuilder.AppendLine("{");
                 }
+            }
+
+            if (shouldReadFromCsv)
+            {
+                argsValueToPrint = argsValueToPrint.Select((av, index) => "GetValue(\"" + methodName + "\", " + av + ".ToString(), " + (index+1) + ")").ToList();
+                argsValueToPrint.Insert(0, $"GetValue(\"{methodName}\", \"Performs '{methodName}' operation.\", 0)");
+            }
+            else
+            {
+                argsValueToPrint.Insert(0, $"\"Performs '{methodName}' operation.\"");
             }
 
             // Print method definition and result

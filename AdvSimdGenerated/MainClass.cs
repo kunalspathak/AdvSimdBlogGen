@@ -100,7 +100,7 @@ public partial class AdvSimdMethods
     /// <returns></returns>
     private static string GetValue(string methodName, string defaultValue, int index)
     {
-        if (csvValues.TryGetValue("", out List<string> methodValues))
+        if (csvValues.TryGetValue(methodName, out List<string> methodValues))
         {
             if (methodValues.Count > index)
             {

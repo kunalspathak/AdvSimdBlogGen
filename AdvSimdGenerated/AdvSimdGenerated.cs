@@ -4402,7 +4402,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Abs' operation.", Vector64short_0, apiResult);
+", GetValue("Abs", "Performs 'Abs' operation.", 0), GetValue("Abs", Vector64short_0.ToString(), 1), GetValue("Abs", apiResult.ToString(), 2));
 
 try {
 AbsTest(Vector64short_0);
@@ -4461,7 +4461,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsSaturate' operation.", Vector64short_0, apiResult);
+", GetValue("AbsSaturate", "Performs 'AbsSaturate' operation.", 0), GetValue("AbsSaturate", Vector64short_0.ToString(), 1), GetValue("AbsSaturate", apiResult.ToString(), 2));
 
 try {
 AbsSaturateTest(Vector64short_0);
@@ -4516,7 +4516,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsScalar' operation.", Vector64double_0, apiResult);
+", GetValue("AbsScalar", "Performs 'AbsScalar' operation.", 0), GetValue("AbsScalar", Vector64double_0.ToString(), 1), GetValue("AbsScalar", apiResult.ToString(), 2));
 
 try {
 AbsScalarTest(Vector64double_0);
@@ -4572,7 +4572,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteCompareGreaterThan' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("AbsoluteCompareGreaterThan", "Performs 'AbsoluteCompareGreaterThan' operation.", 0), GetValue("AbsoluteCompareGreaterThan", Vector64float_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThan", Vector64float_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThan", apiResult.ToString(), 3));
 
 try {
 AbsoluteCompareGreaterThanTest(Vector64float_0, Vector64float_1);
@@ -4628,7 +4628,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteCompareGreaterThanOrEqual' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("AbsoluteCompareGreaterThanOrEqual", "Performs 'AbsoluteCompareGreaterThanOrEqual' operation.", 0), GetValue("AbsoluteCompareGreaterThanOrEqual", Vector64float_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThanOrEqual", Vector64float_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThanOrEqual", apiResult.ToString(), 3));
 
 try {
 AbsoluteCompareGreaterThanOrEqualTest(Vector64float_0, Vector64float_1);
@@ -4684,7 +4684,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteCompareLessThan' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("AbsoluteCompareLessThan", "Performs 'AbsoluteCompareLessThan' operation.", 0), GetValue("AbsoluteCompareLessThan", Vector64float_0.ToString(), 1), GetValue("AbsoluteCompareLessThan", Vector64float_1.ToString(), 2), GetValue("AbsoluteCompareLessThan", apiResult.ToString(), 3));
 
 try {
 AbsoluteCompareLessThanTest(Vector64float_0, Vector64float_1);
@@ -4740,7 +4740,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteCompareLessThanOrEqual' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("AbsoluteCompareLessThanOrEqual", "Performs 'AbsoluteCompareLessThanOrEqual' operation.", 0), GetValue("AbsoluteCompareLessThanOrEqual", Vector64float_0.ToString(), 1), GetValue("AbsoluteCompareLessThanOrEqual", Vector64float_1.ToString(), 2), GetValue("AbsoluteCompareLessThanOrEqual", apiResult.ToString(), 3));
 
 try {
 AbsoluteCompareLessThanOrEqualTest(Vector64float_0, Vector64float_1);
@@ -4808,7 +4808,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteDifference' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("AbsoluteDifference", "Performs 'AbsoluteDifference' operation.", 0), GetValue("AbsoluteDifference", Vector64byte_0.ToString(), 1), GetValue("AbsoluteDifference", Vector64byte_1.ToString(), 2), GetValue("AbsoluteDifference", apiResult.ToString(), 3));
 
 try {
 AbsoluteDifferenceTest(Vector64byte_0, Vector64byte_1);
@@ -4872,7 +4872,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteDifferenceAdd' operation.", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
+", GetValue("AbsoluteDifferenceAdd", "Performs 'AbsoluteDifferenceAdd' operation.", 0), GetValue("AbsoluteDifferenceAdd", Vector64byte_0.ToString(), 1), GetValue("AbsoluteDifferenceAdd", Vector64byte_1.ToString(), 2), GetValue("AbsoluteDifferenceAdd", Vector64byte_2.ToString(), 3), GetValue("AbsoluteDifferenceAdd", apiResult.ToString(), 4));
 
 try {
 AbsoluteDifferenceAddTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
@@ -4929,7 +4929,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteDifferenceWideningLower' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("AbsoluteDifferenceWideningLower", "Performs 'AbsoluteDifferenceWideningLower' operation.", 0), GetValue("AbsoluteDifferenceWideningLower", Vector64byte_0.ToString(), 1), GetValue("AbsoluteDifferenceWideningLower", Vector64byte_1.ToString(), 2), GetValue("AbsoluteDifferenceWideningLower", apiResult.ToString(), 3));
 
 try {
 AbsoluteDifferenceWideningLowerTest(Vector64byte_0, Vector64byte_1);
@@ -4987,7 +4987,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteDifferenceWideningLowerAndAdd' operation.", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("AbsoluteDifferenceWideningLowerAndAdd", "Performs 'AbsoluteDifferenceWideningLowerAndAdd' operation.", 0), GetValue("AbsoluteDifferenceWideningLowerAndAdd", Vector128ushort_0.ToString(), 1), GetValue("AbsoluteDifferenceWideningLowerAndAdd", Vector64byte_0.ToString(), 2), GetValue("AbsoluteDifferenceWideningLowerAndAdd", Vector64byte_1.ToString(), 3), GetValue("AbsoluteDifferenceWideningLowerAndAdd", apiResult.ToString(), 4));
 
 try {
 AbsoluteDifferenceWideningLowerAndAddTest(Vector128ushort_0, Vector64byte_0, Vector64byte_1);
@@ -5044,7 +5044,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteDifferenceWideningUpper' operation.", Vector128byte_0, Vector128byte_1, apiResult);
+", GetValue("AbsoluteDifferenceWideningUpper", "Performs 'AbsoluteDifferenceWideningUpper' operation.", 0), GetValue("AbsoluteDifferenceWideningUpper", Vector128byte_0.ToString(), 1), GetValue("AbsoluteDifferenceWideningUpper", Vector128byte_1.ToString(), 2), GetValue("AbsoluteDifferenceWideningUpper", apiResult.ToString(), 3));
 
 try {
 AbsoluteDifferenceWideningUpperTest(Vector128byte_0, Vector128byte_1);
@@ -5102,7 +5102,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteDifferenceWideningUpperAndAdd' operation.", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
+", GetValue("AbsoluteDifferenceWideningUpperAndAdd", "Performs 'AbsoluteDifferenceWideningUpperAndAdd' operation.", 0), GetValue("AbsoluteDifferenceWideningUpperAndAdd", Vector128ushort_0.ToString(), 1), GetValue("AbsoluteDifferenceWideningUpperAndAdd", Vector128byte_0.ToString(), 2), GetValue("AbsoluteDifferenceWideningUpperAndAdd", Vector128byte_1.ToString(), 3), GetValue("AbsoluteDifferenceWideningUpperAndAdd", apiResult.ToString(), 4));
 
 try {
 AbsoluteDifferenceWideningUpperAndAddTest(Vector128ushort_0, Vector128byte_0, Vector128byte_1);
@@ -5172,7 +5172,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Add' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("Add", "Performs 'Add' operation.", 0), GetValue("Add", Vector64byte_0.ToString(), 1), GetValue("Add", Vector64byte_1.ToString(), 2), GetValue("Add", apiResult.ToString(), 3));
 
 try {
 AddTest(Vector64byte_0, Vector64byte_1);
@@ -5229,7 +5229,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddHighNarrowingLower' operation.", Vector128ushort_0, Vector128ushort_1, apiResult);
+", GetValue("AddHighNarrowingLower", "Performs 'AddHighNarrowingLower' operation.", 0), GetValue("AddHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("AddHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("AddHighNarrowingLower", apiResult.ToString(), 3));
 
 try {
 AddHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
@@ -5287,7 +5287,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddHighNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
+", GetValue("AddHighNarrowingUpper", "Performs 'AddHighNarrowingUpper' operation.", 0), GetValue("AddHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("AddHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("AddHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("AddHighNarrowingUpper", apiResult.ToString(), 4));
 
 try {
 AddHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
@@ -5357,7 +5357,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddPairwise' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("AddPairwise", "Performs 'AddPairwise' operation.", 0), GetValue("AddPairwise", Vector64byte_0.ToString(), 1), GetValue("AddPairwise", Vector64byte_1.ToString(), 2), GetValue("AddPairwise", apiResult.ToString(), 3));
 
 try {
 AddPairwiseTest(Vector64byte_0, Vector64byte_1);
@@ -5417,7 +5417,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddPairwiseWidening' operation.", Vector64byte_0, apiResult);
+", GetValue("AddPairwiseWidening", "Performs 'AddPairwiseWidening' operation.", 0), GetValue("AddPairwiseWidening", Vector64byte_0.ToString(), 1), GetValue("AddPairwiseWidening", apiResult.ToString(), 2));
 
 try {
 AddPairwiseWideningTest(Vector64byte_0);
@@ -5478,7 +5478,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddPairwiseWideningAndAdd' operation.", Vector64ushort_0, Vector64byte_0, apiResult);
+", GetValue("AddPairwiseWideningAndAdd", "Performs 'AddPairwiseWideningAndAdd' operation.", 0), GetValue("AddPairwiseWideningAndAdd", Vector64ushort_0.ToString(), 1), GetValue("AddPairwiseWideningAndAdd", Vector64byte_0.ToString(), 2), GetValue("AddPairwiseWideningAndAdd", apiResult.ToString(), 3));
 
 try {
 AddPairwiseWideningAndAddTest(Vector64ushort_0, Vector64byte_0);
@@ -5531,7 +5531,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddPairwiseWideningAndAddScalar' operation.", Vector64long_0, Vector64int_0, apiResult);
+", GetValue("AddPairwiseWideningAndAddScalar", "Performs 'AddPairwiseWideningAndAddScalar' operation.", 0), GetValue("AddPairwiseWideningAndAddScalar", Vector64long_0.ToString(), 1), GetValue("AddPairwiseWideningAndAddScalar", Vector64int_0.ToString(), 2), GetValue("AddPairwiseWideningAndAddScalar", apiResult.ToString(), 3));
 
 try {
 AddPairwiseWideningAndAddScalarTest(Vector64long_0, Vector64int_0);
@@ -5583,7 +5583,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddPairwiseWideningScalar' operation.", Vector64int_0, apiResult);
+", GetValue("AddPairwiseWideningScalar", "Performs 'AddPairwiseWideningScalar' operation.", 0), GetValue("AddPairwiseWideningScalar", Vector64int_0.ToString(), 1), GetValue("AddPairwiseWideningScalar", apiResult.ToString(), 2));
 
 try {
 AddPairwiseWideningScalarTest(Vector64int_0);
@@ -5640,7 +5640,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddRoundedHighNarrowingLower' operation.", Vector128ushort_0, Vector128ushort_1, apiResult);
+", GetValue("AddRoundedHighNarrowingLower", "Performs 'AddRoundedHighNarrowingLower' operation.", 0), GetValue("AddRoundedHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("AddRoundedHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("AddRoundedHighNarrowingLower", apiResult.ToString(), 3));
 
 try {
 AddRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
@@ -5698,7 +5698,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddRoundedHighNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
+", GetValue("AddRoundedHighNarrowingUpper", "Performs 'AddRoundedHighNarrowingUpper' operation.", 0), GetValue("AddRoundedHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("AddRoundedHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("AddRoundedHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("AddRoundedHighNarrowingUpper", apiResult.ToString(), 4));
 
 try {
 AddRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
@@ -5779,7 +5779,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddSaturate' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("AddSaturate", "Performs 'AddSaturate' operation.", 0), GetValue("AddSaturate", Vector64byte_0.ToString(), 1), GetValue("AddSaturate", Vector64byte_1.ToString(), 2), GetValue("AddSaturate", apiResult.ToString(), 3));
 
 try {
 AddSaturateTest(Vector64byte_0, Vector64byte_1);
@@ -5848,7 +5848,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
+", GetValue("AddSaturateScalar", "Performs 'AddSaturateScalar' operation.", 0), GetValue("AddSaturateScalar", Vector64long_0.ToString(), 1), GetValue("AddSaturateScalar", Vector64long_1.ToString(), 2), GetValue("AddSaturateScalar", apiResult.ToString(), 3));
 
 try {
 AddSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -5903,7 +5903,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("AddScalar", "Performs 'AddScalar' operation.", 0), GetValue("AddScalar", Vector64double_0.ToString(), 1), GetValue("AddScalar", Vector64double_1.ToString(), 2), GetValue("AddScalar", apiResult.ToString(), 3));
 
 try {
 AddScalarTest(Vector64double_0, Vector64double_1);
@@ -5966,7 +5966,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddWideningLower' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("AddWideningLower", "Performs 'AddWideningLower' operation.", 0), GetValue("AddWideningLower", Vector64byte_0.ToString(), 1), GetValue("AddWideningLower", Vector64byte_1.ToString(), 2), GetValue("AddWideningLower", apiResult.ToString(), 3));
 
 try {
 AddWideningLowerTest(Vector64byte_0, Vector64byte_1);
@@ -6029,7 +6029,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddWideningUpper' operation.", Vector128byte_0, Vector128byte_1, apiResult);
+", GetValue("AddWideningUpper", "Performs 'AddWideningUpper' operation.", 0), GetValue("AddWideningUpper", Vector128byte_0.ToString(), 1), GetValue("AddWideningUpper", Vector128byte_1.ToString(), 2), GetValue("AddWideningUpper", apiResult.ToString(), 3));
 
 try {
 AddWideningUpperTest(Vector128byte_0, Vector128byte_1);
@@ -6100,7 +6100,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'And' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("And", "Performs 'And' operation.", 0), GetValue("And", Vector64byte_0.ToString(), 1), GetValue("And", Vector64byte_1.ToString(), 2), GetValue("And", apiResult.ToString(), 3));
 
 try {
 AndTest(Vector64byte_0, Vector64byte_1);
@@ -6171,7 +6171,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'BitwiseClear' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("BitwiseClear", "Performs 'BitwiseClear' operation.", 0), GetValue("BitwiseClear", Vector64byte_0.ToString(), 1), GetValue("BitwiseClear", Vector64byte_1.ToString(), 2), GetValue("BitwiseClear", apiResult.ToString(), 3));
 
 try {
 BitwiseClearTest(Vector64byte_0, Vector64byte_1);
@@ -6243,7 +6243,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'BitwiseSelect' operation.", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
+", GetValue("BitwiseSelect", "Performs 'BitwiseSelect' operation.", 0), GetValue("BitwiseSelect", Vector64byte_0.ToString(), 1), GetValue("BitwiseSelect", Vector64byte_1.ToString(), 2), GetValue("BitwiseSelect", Vector64byte_2.ToString(), 3), GetValue("BitwiseSelect", apiResult.ToString(), 4));
 
 try {
 BitwiseSelectTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
@@ -6298,7 +6298,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Ceiling' operation.", Vector64float_0, apiResult);
+", GetValue("Ceiling", "Performs 'Ceiling' operation.", 0), GetValue("Ceiling", Vector64float_0.ToString(), 1), GetValue("Ceiling", apiResult.ToString(), 2));
 
 try {
 CeilingTest(Vector64float_0);
@@ -6350,7 +6350,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CeilingScalar' operation.", Vector64double_0, apiResult);
+", GetValue("CeilingScalar", "Performs 'CeilingScalar' operation.", 0), GetValue("CeilingScalar", Vector64double_0.ToString(), 1), GetValue("CeilingScalar", apiResult.ToString(), 2));
 
 try {
 CeilingScalarTest(Vector64double_0);
@@ -6420,7 +6420,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareEqual' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("CompareEqual", "Performs 'CompareEqual' operation.", 0), GetValue("CompareEqual", Vector64byte_0.ToString(), 1), GetValue("CompareEqual", Vector64byte_1.ToString(), 2), GetValue("CompareEqual", apiResult.ToString(), 3));
 
 try {
 CompareEqualTest(Vector64byte_0, Vector64byte_1);
@@ -6490,7 +6490,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareGreaterThan' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("CompareGreaterThan", "Performs 'CompareGreaterThan' operation.", 0), GetValue("CompareGreaterThan", Vector64byte_0.ToString(), 1), GetValue("CompareGreaterThan", Vector64byte_1.ToString(), 2), GetValue("CompareGreaterThan", apiResult.ToString(), 3));
 
 try {
 CompareGreaterThanTest(Vector64byte_0, Vector64byte_1);
@@ -6560,7 +6560,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareGreaterThanOrEqual' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("CompareGreaterThanOrEqual", "Performs 'CompareGreaterThanOrEqual' operation.", 0), GetValue("CompareGreaterThanOrEqual", Vector64byte_0.ToString(), 1), GetValue("CompareGreaterThanOrEqual", Vector64byte_1.ToString(), 2), GetValue("CompareGreaterThanOrEqual", apiResult.ToString(), 3));
 
 try {
 CompareGreaterThanOrEqualTest(Vector64byte_0, Vector64byte_1);
@@ -6630,7 +6630,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareLessThan' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("CompareLessThan", "Performs 'CompareLessThan' operation.", 0), GetValue("CompareLessThan", Vector64byte_0.ToString(), 1), GetValue("CompareLessThan", Vector64byte_1.ToString(), 2), GetValue("CompareLessThan", apiResult.ToString(), 3));
 
 try {
 CompareLessThanTest(Vector64byte_0, Vector64byte_1);
@@ -6700,7 +6700,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareLessThanOrEqual' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("CompareLessThanOrEqual", "Performs 'CompareLessThanOrEqual' operation.", 0), GetValue("CompareLessThanOrEqual", Vector64byte_0.ToString(), 1), GetValue("CompareLessThanOrEqual", Vector64byte_1.ToString(), 2), GetValue("CompareLessThanOrEqual", apiResult.ToString(), 3));
 
 try {
 CompareLessThanOrEqualTest(Vector64byte_0, Vector64byte_1);
@@ -6770,7 +6770,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareTest' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("CompareTest", "Performs 'CompareTest' operation.", 0), GetValue("CompareTest", Vector64byte_0.ToString(), 1), GetValue("CompareTest", Vector64byte_1.ToString(), 2), GetValue("CompareTest", apiResult.ToString(), 3));
 
 try {
 CompareTestTest(Vector64byte_0, Vector64byte_1);
@@ -6822,7 +6822,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt32RoundAwayFromZero' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToInt32RoundAwayFromZero", "Performs 'ConvertToInt32RoundAwayFromZero' operation.", 0), GetValue("ConvertToInt32RoundAwayFromZero", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundAwayFromZero", apiResult.ToString(), 2));
 
 try {
 ConvertToInt32RoundAwayFromZeroTest(Vector64float_0);
@@ -6868,7 +6868,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt32RoundAwayFromZeroScalar' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToInt32RoundAwayFromZeroScalar", "Performs 'ConvertToInt32RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToInt32RoundAwayFromZeroScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundAwayFromZeroScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToInt32RoundAwayFromZeroScalarTest(Vector64float_0);
@@ -6920,7 +6920,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt32RoundToEven' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToInt32RoundToEven", "Performs 'ConvertToInt32RoundToEven' operation.", 0), GetValue("ConvertToInt32RoundToEven", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToEven", apiResult.ToString(), 2));
 
 try {
 ConvertToInt32RoundToEvenTest(Vector64float_0);
@@ -6966,7 +6966,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt32RoundToEvenScalar' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToInt32RoundToEvenScalar", "Performs 'ConvertToInt32RoundToEvenScalar' operation.", 0), GetValue("ConvertToInt32RoundToEvenScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToEvenScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToInt32RoundToEvenScalarTest(Vector64float_0);
@@ -7018,7 +7018,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt32RoundToNegativeInfinity' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToInt32RoundToNegativeInfinity", "Performs 'ConvertToInt32RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToInt32RoundToNegativeInfinity", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToNegativeInfinity", apiResult.ToString(), 2));
 
 try {
 ConvertToInt32RoundToNegativeInfinityTest(Vector64float_0);
@@ -7064,7 +7064,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt32RoundToNegativeInfinityScalar' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToInt32RoundToNegativeInfinityScalar", "Performs 'ConvertToInt32RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToInt32RoundToNegativeInfinityScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToInt32RoundToNegativeInfinityScalarTest(Vector64float_0);
@@ -7116,7 +7116,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt32RoundToPositiveInfinity' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToInt32RoundToPositiveInfinity", "Performs 'ConvertToInt32RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToInt32RoundToPositiveInfinity", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToPositiveInfinity", apiResult.ToString(), 2));
 
 try {
 ConvertToInt32RoundToPositiveInfinityTest(Vector64float_0);
@@ -7162,7 +7162,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt32RoundToPositiveInfinityScalar' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToInt32RoundToPositiveInfinityScalar", "Performs 'ConvertToInt32RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToInt32RoundToPositiveInfinityScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToInt32RoundToPositiveInfinityScalarTest(Vector64float_0);
@@ -7214,7 +7214,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt32RoundToZero' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToInt32RoundToZero", "Performs 'ConvertToInt32RoundToZero' operation.", 0), GetValue("ConvertToInt32RoundToZero", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToZero", apiResult.ToString(), 2));
 
 try {
 ConvertToInt32RoundToZeroTest(Vector64float_0);
@@ -7260,7 +7260,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt32RoundToZeroScalar' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToInt32RoundToZeroScalar", "Performs 'ConvertToInt32RoundToZeroScalar' operation.", 0), GetValue("ConvertToInt32RoundToZeroScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToZeroScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToInt32RoundToZeroScalarTest(Vector64float_0);
@@ -7314,7 +7314,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToSingle' operation.", Vector64int_0, apiResult);
+", GetValue("ConvertToSingle", "Performs 'ConvertToSingle' operation.", 0), GetValue("ConvertToSingle", Vector64int_0.ToString(), 1), GetValue("ConvertToSingle", apiResult.ToString(), 2));
 
 try {
 ConvertToSingleTest(Vector64int_0);
@@ -7366,7 +7366,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToSingleScalar' operation.", Vector64int_0, apiResult);
+", GetValue("ConvertToSingleScalar", "Performs 'ConvertToSingleScalar' operation.", 0), GetValue("ConvertToSingleScalar", Vector64int_0.ToString(), 1), GetValue("ConvertToSingleScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToSingleScalarTest(Vector64int_0);
@@ -7418,7 +7418,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt32RoundAwayFromZero' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToUInt32RoundAwayFromZero", "Performs 'ConvertToUInt32RoundAwayFromZero' operation.", 0), GetValue("ConvertToUInt32RoundAwayFromZero", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundAwayFromZero", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt32RoundAwayFromZeroTest(Vector64float_0);
@@ -7464,7 +7464,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt32RoundAwayFromZeroScalar' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToUInt32RoundAwayFromZeroScalar", "Performs 'ConvertToUInt32RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToUInt32RoundAwayFromZeroScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundAwayFromZeroScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt32RoundAwayFromZeroScalarTest(Vector64float_0);
@@ -7516,7 +7516,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt32RoundToEven' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToUInt32RoundToEven", "Performs 'ConvertToUInt32RoundToEven' operation.", 0), GetValue("ConvertToUInt32RoundToEven", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToEven", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt32RoundToEvenTest(Vector64float_0);
@@ -7562,7 +7562,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt32RoundToEvenScalar' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToUInt32RoundToEvenScalar", "Performs 'ConvertToUInt32RoundToEvenScalar' operation.", 0), GetValue("ConvertToUInt32RoundToEvenScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToEvenScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt32RoundToEvenScalarTest(Vector64float_0);
@@ -7614,7 +7614,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt32RoundToNegativeInfinity' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToUInt32RoundToNegativeInfinity", "Performs 'ConvertToUInt32RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToUInt32RoundToNegativeInfinity", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToNegativeInfinity", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt32RoundToNegativeInfinityTest(Vector64float_0);
@@ -7660,7 +7660,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt32RoundToNegativeInfinityScalar' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToUInt32RoundToNegativeInfinityScalar", "Performs 'ConvertToUInt32RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToUInt32RoundToNegativeInfinityScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt32RoundToNegativeInfinityScalarTest(Vector64float_0);
@@ -7712,7 +7712,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt32RoundToPositiveInfinity' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToUInt32RoundToPositiveInfinity", "Performs 'ConvertToUInt32RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToUInt32RoundToPositiveInfinity", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToPositiveInfinity", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt32RoundToPositiveInfinityTest(Vector64float_0);
@@ -7758,7 +7758,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt32RoundToPositiveInfinityScalar' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToUInt32RoundToPositiveInfinityScalar", "Performs 'ConvertToUInt32RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToUInt32RoundToPositiveInfinityScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt32RoundToPositiveInfinityScalarTest(Vector64float_0);
@@ -7810,7 +7810,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt32RoundToZero' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToUInt32RoundToZero", "Performs 'ConvertToUInt32RoundToZero' operation.", 0), GetValue("ConvertToUInt32RoundToZero", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToZero", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt32RoundToZeroTest(Vector64float_0);
@@ -7876,7 +7876,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt32RoundToZeroScalar' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToUInt32RoundToZeroScalar", "Performs 'ConvertToUInt32RoundToZeroScalar' operation.", 0), GetValue("ConvertToUInt32RoundToZeroScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToZeroScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt32RoundToZeroScalarTest(Vector64float_0);
@@ -7929,7 +7929,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'DivideScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("DivideScalar", "Performs 'DivideScalar' operation.", 0), GetValue("DivideScalar", Vector64double_0.ToString(), 1), GetValue("DivideScalar", Vector64double_1.ToString(), 2), GetValue("DivideScalar", apiResult.ToString(), 3));
 
 try {
 DivideScalarTest(Vector64double_0, Vector64double_1);
@@ -7994,7 +7994,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'DuplicateSelectedScalarToVector64' operation.", Vector64byte_0, byte_0, apiResult);
+", GetValue("DuplicateSelectedScalarToVector64", "Performs 'DuplicateSelectedScalarToVector64' operation.", 0), GetValue("DuplicateSelectedScalarToVector64", Vector64byte_0.ToString(), 1), GetValue("DuplicateSelectedScalarToVector64", byte_0.ToString(), 2), GetValue("DuplicateSelectedScalarToVector64", apiResult.ToString(), 3));
 
 try {
 DuplicateSelectedScalarToVector64Test(Vector64byte_0, byte_0);
@@ -8064,7 +8064,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'DuplicateSelectedScalarToVector128' operation.", Vector64byte_0, byte_0, apiResult);
+", GetValue("DuplicateSelectedScalarToVector128", "Performs 'DuplicateSelectedScalarToVector128' operation.", 0), GetValue("DuplicateSelectedScalarToVector128", Vector64byte_0.ToString(), 1), GetValue("DuplicateSelectedScalarToVector128", byte_0.ToString(), 2), GetValue("DuplicateSelectedScalarToVector128", apiResult.ToString(), 3));
 
 try {
 DuplicateSelectedScalarToVector128Test(Vector64byte_0, byte_0);
@@ -8121,7 +8121,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'DuplicateToVector64' operation.", byte_0, apiResult);
+", GetValue("DuplicateToVector64", "Performs 'DuplicateToVector64' operation.", 0), GetValue("DuplicateToVector64", byte_0.ToString(), 1), GetValue("DuplicateToVector64", apiResult.ToString(), 2));
 
 try {
 DuplicateToVector64Test(byte_0);
@@ -8183,7 +8183,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'DuplicateToVector128' operation.", byte_0, apiResult);
+", GetValue("DuplicateToVector128", "Performs 'DuplicateToVector128' operation.", 0), GetValue("DuplicateToVector128", byte_0.ToString(), 1), GetValue("DuplicateToVector128", apiResult.ToString(), 2));
 
 try {
 DuplicateToVector128Test(byte_0);
@@ -8251,7 +8251,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Extract' operation.", Vector64byte_0, byte_0, apiResult);
+", GetValue("Extract", "Performs 'Extract' operation.", 0), GetValue("Extract", Vector64byte_0.ToString(), 1), GetValue("Extract", byte_0.ToString(), 2), GetValue("Extract", apiResult.ToString(), 3));
 
 try {
 ExtractTest(Vector64byte_0, byte_0);
@@ -8307,7 +8307,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ExtractNarrowingLower' operation.", Vector128ushort_0, apiResult);
+", GetValue("ExtractNarrowingLower", "Performs 'ExtractNarrowingLower' operation.", 0), GetValue("ExtractNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("ExtractNarrowingLower", apiResult.ToString(), 2));
 
 try {
 ExtractNarrowingLowerTest(Vector128ushort_0);
@@ -8363,7 +8363,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ExtractNarrowingSaturateLower' operation.", Vector128ushort_0, apiResult);
+", GetValue("ExtractNarrowingSaturateLower", "Performs 'ExtractNarrowingSaturateLower' operation.", 0), GetValue("ExtractNarrowingSaturateLower", Vector128ushort_0.ToString(), 1), GetValue("ExtractNarrowingSaturateLower", apiResult.ToString(), 2));
 
 try {
 ExtractNarrowingSaturateLowerTest(Vector128ushort_0);
@@ -8416,7 +8416,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ExtractNarrowingSaturateUnsignedLower' operation.", Vector128short_0, apiResult);
+", GetValue("ExtractNarrowingSaturateUnsignedLower", "Performs 'ExtractNarrowingSaturateUnsignedLower' operation.", 0), GetValue("ExtractNarrowingSaturateUnsignedLower", Vector128short_0.ToString(), 1), GetValue("ExtractNarrowingSaturateUnsignedLower", apiResult.ToString(), 2));
 
 try {
 ExtractNarrowingSaturateUnsignedLowerTest(Vector128short_0);
@@ -8470,7 +8470,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ExtractNarrowingSaturateUnsignedUpper' operation.", Vector64byte_0, Vector128short_0, apiResult);
+", GetValue("ExtractNarrowingSaturateUnsignedUpper", "Performs 'ExtractNarrowingSaturateUnsignedUpper' operation.", 0), GetValue("ExtractNarrowingSaturateUnsignedUpper", Vector64byte_0.ToString(), 1), GetValue("ExtractNarrowingSaturateUnsignedUpper", Vector128short_0.ToString(), 2), GetValue("ExtractNarrowingSaturateUnsignedUpper", apiResult.ToString(), 3));
 
 try {
 ExtractNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0);
@@ -8527,7 +8527,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ExtractNarrowingSaturateUpper' operation.", Vector64byte_0, Vector128ushort_0, apiResult);
+", GetValue("ExtractNarrowingSaturateUpper", "Performs 'ExtractNarrowingSaturateUpper' operation.", 0), GetValue("ExtractNarrowingSaturateUpper", Vector64byte_0.ToString(), 1), GetValue("ExtractNarrowingSaturateUpper", Vector128ushort_0.ToString(), 2), GetValue("ExtractNarrowingSaturateUpper", apiResult.ToString(), 3));
 
 try {
 ExtractNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0);
@@ -8584,7 +8584,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ExtractNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, apiResult);
+", GetValue("ExtractNarrowingUpper", "Performs 'ExtractNarrowingUpper' operation.", 0), GetValue("ExtractNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("ExtractNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("ExtractNarrowingUpper", apiResult.ToString(), 3));
 
 try {
 ExtractNarrowingUpperTest(Vector64byte_0, Vector128ushort_0);
@@ -8643,7 +8643,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ExtractVector64' operation.", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
+", GetValue("ExtractVector64", "Performs 'ExtractVector64' operation.", 0), GetValue("ExtractVector64", Vector64byte_0.ToString(), 1), GetValue("ExtractVector64", Vector64byte_1.ToString(), 2), GetValue("ExtractVector64", byte_0.ToString(), 3), GetValue("ExtractVector64", apiResult.ToString(), 4));
 
 try {
 ExtractVector64Test(Vector64byte_0, Vector64byte_1, byte_0);
@@ -8705,7 +8705,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ExtractVector128' operation.", Vector128byte_0, Vector128byte_1, byte_0, apiResult);
+", GetValue("ExtractVector128", "Performs 'ExtractVector128' operation.", 0), GetValue("ExtractVector128", Vector128byte_0.ToString(), 1), GetValue("ExtractVector128", Vector128byte_1.ToString(), 2), GetValue("ExtractVector128", byte_0.ToString(), 3), GetValue("ExtractVector128", apiResult.ToString(), 4));
 
 try {
 ExtractVector128Test(Vector128byte_0, Vector128byte_1, byte_0);
@@ -8760,7 +8760,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Floor' operation.", Vector64float_0, apiResult);
+", GetValue("Floor", "Performs 'Floor' operation.", 0), GetValue("Floor", Vector64float_0.ToString(), 1), GetValue("Floor", apiResult.ToString(), 2));
 
 try {
 FloorTest(Vector64float_0);
@@ -8812,7 +8812,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FloorScalar' operation.", Vector64double_0, apiResult);
+", GetValue("FloorScalar", "Performs 'FloorScalar' operation.", 0), GetValue("FloorScalar", Vector64double_0.ToString(), 1), GetValue("FloorScalar", apiResult.ToString(), 2));
 
 try {
 FloorScalarTest(Vector64double_0);
@@ -8875,7 +8875,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedAddHalving' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("FusedAddHalving", "Performs 'FusedAddHalving' operation.", 0), GetValue("FusedAddHalving", Vector64byte_0.ToString(), 1), GetValue("FusedAddHalving", Vector64byte_1.ToString(), 2), GetValue("FusedAddHalving", apiResult.ToString(), 3));
 
 try {
 FusedAddHalvingTest(Vector64byte_0, Vector64byte_1);
@@ -8938,7 +8938,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedAddRoundedHalving' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("FusedAddRoundedHalving", "Performs 'FusedAddRoundedHalving' operation.", 0), GetValue("FusedAddRoundedHalving", Vector64byte_0.ToString(), 1), GetValue("FusedAddRoundedHalving", Vector64byte_1.ToString(), 2), GetValue("FusedAddRoundedHalving", apiResult.ToString(), 3));
 
 try {
 FusedAddRoundedHalvingTest(Vector64byte_0, Vector64byte_1);
@@ -8995,7 +8995,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplyAdd' operation.", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
+", GetValue("FusedMultiplyAdd", "Performs 'FusedMultiplyAdd' operation.", 0), GetValue("FusedMultiplyAdd", Vector64float_0.ToString(), 1), GetValue("FusedMultiplyAdd", Vector64float_1.ToString(), 2), GetValue("FusedMultiplyAdd", Vector64float_2.ToString(), 3), GetValue("FusedMultiplyAdd", apiResult.ToString(), 4));
 
 try {
 FusedMultiplyAddTest(Vector64float_0, Vector64float_1, Vector64float_2);
@@ -9049,7 +9049,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplyAddNegatedScalar' operation.", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
+", GetValue("FusedMultiplyAddNegatedScalar", "Performs 'FusedMultiplyAddNegatedScalar' operation.", 0), GetValue("FusedMultiplyAddNegatedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplyAddNegatedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplyAddNegatedScalar", Vector64double_2.ToString(), 3), GetValue("FusedMultiplyAddNegatedScalar", apiResult.ToString(), 4));
 
 try {
 FusedMultiplyAddNegatedScalarTest(Vector64double_0, Vector64double_1, Vector64double_2);
@@ -9103,7 +9103,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplyAddScalar' operation.", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
+", GetValue("FusedMultiplyAddScalar", "Performs 'FusedMultiplyAddScalar' operation.", 0), GetValue("FusedMultiplyAddScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplyAddScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplyAddScalar", Vector64double_2.ToString(), 3), GetValue("FusedMultiplyAddScalar", apiResult.ToString(), 4));
 
 try {
 FusedMultiplyAddScalarTest(Vector64double_0, Vector64double_1, Vector64double_2);
@@ -9160,7 +9160,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplySubtract' operation.", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
+", GetValue("FusedMultiplySubtract", "Performs 'FusedMultiplySubtract' operation.", 0), GetValue("FusedMultiplySubtract", Vector64float_0.ToString(), 1), GetValue("FusedMultiplySubtract", Vector64float_1.ToString(), 2), GetValue("FusedMultiplySubtract", Vector64float_2.ToString(), 3), GetValue("FusedMultiplySubtract", apiResult.ToString(), 4));
 
 try {
 FusedMultiplySubtractTest(Vector64float_0, Vector64float_1, Vector64float_2);
@@ -9214,7 +9214,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplySubtractNegatedScalar' operation.", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
+", GetValue("FusedMultiplySubtractNegatedScalar", "Performs 'FusedMultiplySubtractNegatedScalar' operation.", 0), GetValue("FusedMultiplySubtractNegatedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplySubtractNegatedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplySubtractNegatedScalar", Vector64double_2.ToString(), 3), GetValue("FusedMultiplySubtractNegatedScalar", apiResult.ToString(), 4));
 
 try {
 FusedMultiplySubtractNegatedScalarTest(Vector64double_0, Vector64double_1, Vector64double_2);
@@ -9268,7 +9268,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplySubtractScalar' operation.", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
+", GetValue("FusedMultiplySubtractScalar", "Performs 'FusedMultiplySubtractScalar' operation.", 0), GetValue("FusedMultiplySubtractScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplySubtractScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplySubtractScalar", Vector64double_2.ToString(), 3), GetValue("FusedMultiplySubtractScalar", apiResult.ToString(), 4));
 
 try {
 FusedMultiplySubtractScalarTest(Vector64double_0, Vector64double_1, Vector64double_2);
@@ -9331,7 +9331,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedSubtractHalving' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("FusedSubtractHalving", "Performs 'FusedSubtractHalving' operation.", 0), GetValue("FusedSubtractHalving", Vector64byte_0.ToString(), 1), GetValue("FusedSubtractHalving", Vector64byte_1.ToString(), 2), GetValue("FusedSubtractHalving", apiResult.ToString(), 3));
 
 try {
 FusedSubtractHalvingTest(Vector64byte_0, Vector64byte_1);
@@ -9400,7 +9400,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Insert' operation.", Vector64byte_0, byte_0, byte_1, apiResult);
+", GetValue("Insert", "Performs 'Insert' operation.", 0), GetValue("Insert", Vector64byte_0.ToString(), 1), GetValue("Insert", byte_0.ToString(), 2), GetValue("Insert", byte_1.ToString(), 3), GetValue("Insert", apiResult.ToString(), 4));
 
 try {
 InsertTest(Vector64byte_0, byte_0, byte_1);
@@ -9455,7 +9455,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'InsertScalar' operation.", Vector128double_0, byte_0, Vector64double_0, apiResult);
+", GetValue("InsertScalar", "Performs 'InsertScalar' operation.", 0), GetValue("InsertScalar", Vector128double_0.ToString(), 1), GetValue("InsertScalar", byte_0.ToString(), 2), GetValue("InsertScalar", Vector64double_0.ToString(), 3), GetValue("InsertScalar", apiResult.ToString(), 4));
 
 try {
 InsertScalarTest(Vector128double_0, byte_0, Vector64double_0);
@@ -9511,7 +9511,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'LeadingSignCount' operation.", Vector64short_0, apiResult);
+", GetValue("LeadingSignCount", "Performs 'LeadingSignCount' operation.", 0), GetValue("LeadingSignCount", Vector64short_0.ToString(), 1), GetValue("LeadingSignCount", apiResult.ToString(), 2));
 
 try {
 LeadingSignCountTest(Vector64short_0);
@@ -9573,7 +9573,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'LeadingZeroCount' operation.", Vector64byte_0, apiResult);
+", GetValue("LeadingZeroCount", "Performs 'LeadingZeroCount' operation.", 0), GetValue("LeadingZeroCount", Vector64byte_0.ToString(), 1), GetValue("LeadingZeroCount", apiResult.ToString(), 2));
 
 try {
 LeadingZeroCountTest(Vector64byte_0);
@@ -9644,7 +9644,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'LoadAndInsertScalar' operation.", Vector64byte_0, byte_0, "<address>", apiResult);
+", GetValue("LoadAndInsertScalar", "Performs 'LoadAndInsertScalar' operation.", 0), GetValue("LoadAndInsertScalar", Vector64byte_0.ToString(), 1), GetValue("LoadAndInsertScalar", byte_0.ToString(), 2), GetValue("LoadAndInsertScalar", "<address>".ToString(), 3), GetValue("LoadAndInsertScalar", apiResult.ToString(), 4));
 
 try {
 LoadAndInsertScalarTest(Vector64byte_0, byte_0, bytePtr_0);
@@ -9704,7 +9704,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'LoadAndReplicateToVector64' operation.", "<address>", apiResult);
+", GetValue("LoadAndReplicateToVector64", "Performs 'LoadAndReplicateToVector64' operation.", 0), GetValue("LoadAndReplicateToVector64", "<address>".ToString(), 1), GetValue("LoadAndReplicateToVector64", apiResult.ToString(), 2));
 
 try {
 LoadAndReplicateToVector64Test(bytePtr_0);
@@ -9769,7 +9769,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'LoadAndReplicateToVector128' operation.", "<address>", apiResult);
+", GetValue("LoadAndReplicateToVector128", "Performs 'LoadAndReplicateToVector128' operation.", 0), GetValue("LoadAndReplicateToVector128", "<address>".ToString(), 1), GetValue("LoadAndReplicateToVector128", apiResult.ToString(), 2));
 
 try {
 LoadAndReplicateToVector128Test(bytePtr_0);
@@ -9832,7 +9832,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'LoadVector64' operation.", "<address>", apiResult);
+", GetValue("LoadVector64", "Performs 'LoadVector64' operation.", 0), GetValue("LoadVector64", "<address>".ToString(), 1), GetValue("LoadVector64", apiResult.ToString(), 2));
 
 try {
 LoadVector64Test(bytePtr_0);
@@ -9895,7 +9895,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'LoadVector128' operation.", "<address>", apiResult);
+", GetValue("LoadVector128", "Performs 'LoadVector128' operation.", 0), GetValue("LoadVector128", "<address>".ToString(), 1), GetValue("LoadVector128", apiResult.ToString(), 2));
 
 try {
 LoadVector128Test(bytePtr_0);
@@ -9964,7 +9964,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Max' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("Max", "Performs 'Max' operation.", 0), GetValue("Max", Vector64byte_0.ToString(), 1), GetValue("Max", Vector64byte_1.ToString(), 2), GetValue("Max", apiResult.ToString(), 3));
 
 try {
 MaxTest(Vector64byte_0, Vector64byte_1);
@@ -10020,7 +10020,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MaxNumber' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("MaxNumber", "Performs 'MaxNumber' operation.", 0), GetValue("MaxNumber", Vector64float_0.ToString(), 1), GetValue("MaxNumber", Vector64float_1.ToString(), 2), GetValue("MaxNumber", apiResult.ToString(), 3));
 
 try {
 MaxNumberTest(Vector64float_0, Vector64float_1);
@@ -10073,7 +10073,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MaxNumberScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("MaxNumberScalar", "Performs 'MaxNumberScalar' operation.", 0), GetValue("MaxNumberScalar", Vector64double_0.ToString(), 1), GetValue("MaxNumberScalar", Vector64double_1.ToString(), 2), GetValue("MaxNumberScalar", apiResult.ToString(), 3));
 
 try {
 MaxNumberScalarTest(Vector64double_0, Vector64double_1);
@@ -10141,7 +10141,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MaxPairwise' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("MaxPairwise", "Performs 'MaxPairwise' operation.", 0), GetValue("MaxPairwise", Vector64byte_0.ToString(), 1), GetValue("MaxPairwise", Vector64byte_1.ToString(), 2), GetValue("MaxPairwise", apiResult.ToString(), 3));
 
 try {
 MaxPairwiseTest(Vector64byte_0, Vector64byte_1);
@@ -10209,7 +10209,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Min' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("Min", "Performs 'Min' operation.", 0), GetValue("Min", Vector64byte_0.ToString(), 1), GetValue("Min", Vector64byte_1.ToString(), 2), GetValue("Min", apiResult.ToString(), 3));
 
 try {
 MinTest(Vector64byte_0, Vector64byte_1);
@@ -10265,7 +10265,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MinNumber' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("MinNumber", "Performs 'MinNumber' operation.", 0), GetValue("MinNumber", Vector64float_0.ToString(), 1), GetValue("MinNumber", Vector64float_1.ToString(), 2), GetValue("MinNumber", apiResult.ToString(), 3));
 
 try {
 MinNumberTest(Vector64float_0, Vector64float_1);
@@ -10318,7 +10318,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MinNumberScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("MinNumberScalar", "Performs 'MinNumberScalar' operation.", 0), GetValue("MinNumberScalar", Vector64double_0.ToString(), 1), GetValue("MinNumberScalar", Vector64double_1.ToString(), 2), GetValue("MinNumberScalar", apiResult.ToString(), 3));
 
 try {
 MinNumberScalarTest(Vector64double_0, Vector64double_1);
@@ -10386,7 +10386,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MinPairwise' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("MinPairwise", "Performs 'MinPairwise' operation.", 0), GetValue("MinPairwise", Vector64byte_0.ToString(), 1), GetValue("MinPairwise", Vector64byte_1.ToString(), 2), GetValue("MinPairwise", apiResult.ToString(), 3));
 
 try {
 MinPairwiseTest(Vector64byte_0, Vector64byte_1);
@@ -10454,7 +10454,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Multiply' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("Multiply", "Performs 'Multiply' operation.", 0), GetValue("Multiply", Vector64byte_0.ToString(), 1), GetValue("Multiply", Vector64byte_1.ToString(), 2), GetValue("Multiply", apiResult.ToString(), 3));
 
 try {
 MultiplyTest(Vector64byte_0, Vector64byte_1);
@@ -10518,7 +10518,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyAdd' operation.", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
+", GetValue("MultiplyAdd", "Performs 'MultiplyAdd' operation.", 0), GetValue("MultiplyAdd", Vector64byte_0.ToString(), 1), GetValue("MultiplyAdd", Vector64byte_1.ToString(), 2), GetValue("MultiplyAdd", Vector64byte_2.ToString(), 3), GetValue("MultiplyAdd", apiResult.ToString(), 4));
 
 try {
 MultiplyAddTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
@@ -10578,7 +10578,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyAddByScalar' operation.", Vector64short_0, Vector64short_1, Vector64short_2, apiResult);
+", GetValue("MultiplyAddByScalar", "Performs 'MultiplyAddByScalar' operation.", 0), GetValue("MultiplyAddByScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyAddByScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyAddByScalar", Vector64short_2.ToString(), 3), GetValue("MultiplyAddByScalar", apiResult.ToString(), 4));
 
 try {
 MultiplyAddByScalarTest(Vector64short_0, Vector64short_1, Vector64short_2);
@@ -10647,7 +10647,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyAddBySelectedScalar' operation.", Vector64short_0, Vector64short_1, Vector64short_2, byte_0, apiResult);
+", GetValue("MultiplyAddBySelectedScalar", "Performs 'MultiplyAddBySelectedScalar' operation.", 0), GetValue("MultiplyAddBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyAddBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyAddBySelectedScalar", Vector64short_2.ToString(), 3), GetValue("MultiplyAddBySelectedScalar", byte_0.ToString(), 4), GetValue("MultiplyAddBySelectedScalar", apiResult.ToString(), 5));
 
 try {
 MultiplyAddBySelectedScalarTest(Vector64short_0, Vector64short_1, Vector64short_2, byte_0);
@@ -10711,7 +10711,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyByScalar' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyByScalar", "Performs 'MultiplyByScalar' operation.", 0), GetValue("MultiplyByScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyByScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyByScalar", apiResult.ToString(), 3));
 
 try {
 MultiplyByScalarTest(Vector64short_0, Vector64short_1);
@@ -10786,7 +10786,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyBySelectedScalar' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyBySelectedScalar", "Performs 'MultiplyBySelectedScalar' operation.", 0), GetValue("MultiplyBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyBySelectedScalar", apiResult.ToString(), 4));
 
 try {
 MultiplyBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
@@ -10846,7 +10846,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyBySelectedScalarWideningLower' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyBySelectedScalarWideningLower", "Performs 'MultiplyBySelectedScalarWideningLower' operation.", 0), GetValue("MultiplyBySelectedScalarWideningLower", Vector64short_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningLower", Vector64short_1.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningLower", byte_0.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningLower", apiResult.ToString(), 4));
 
 try {
 MultiplyBySelectedScalarWideningLowerTest(Vector64short_0, Vector64short_1, byte_0);
@@ -10907,7 +10907,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyBySelectedScalarWideningLowerAndAdd' operation.", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", "Performs 'MultiplyBySelectedScalarWideningLowerAndAdd' operation.", 0), GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", Vector128int_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", Vector64short_0.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", Vector64short_1.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", byte_0.ToString(), 4), GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", apiResult.ToString(), 5));
 
 try {
 MultiplyBySelectedScalarWideningLowerAndAddTest(Vector128int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -10968,7 +10968,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyBySelectedScalarWideningLowerAndSubtract' operation.", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", "Performs 'MultiplyBySelectedScalarWideningLowerAndSubtract' operation.", 0), GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", Vector128int_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", Vector64short_0.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", Vector64short_1.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", byte_0.ToString(), 4), GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", apiResult.ToString(), 5));
 
 try {
 MultiplyBySelectedScalarWideningLowerAndSubtractTest(Vector128int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -11028,7 +11028,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyBySelectedScalarWideningUpper' operation.", Vector128short_0, Vector64short_0, byte_0, apiResult);
+", GetValue("MultiplyBySelectedScalarWideningUpper", "Performs 'MultiplyBySelectedScalarWideningUpper' operation.", 0), GetValue("MultiplyBySelectedScalarWideningUpper", Vector128short_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningUpper", Vector64short_0.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningUpper", byte_0.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningUpper", apiResult.ToString(), 4));
 
 try {
 MultiplyBySelectedScalarWideningUpperTest(Vector128short_0, Vector64short_0, byte_0);
@@ -11089,7 +11089,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyBySelectedScalarWideningUpperAndAdd' operation.", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
+", GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", "Performs 'MultiplyBySelectedScalarWideningUpperAndAdd' operation.", 0), GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", Vector128int_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", Vector128short_0.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", Vector64short_0.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", byte_0.ToString(), 4), GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", apiResult.ToString(), 5));
 
 try {
 MultiplyBySelectedScalarWideningUpperAndAddTest(Vector128int_0, Vector128short_0, Vector64short_0, byte_0);
@@ -11150,7 +11150,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyBySelectedScalarWideningUpperAndSubtract' operation.", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
+", GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", "Performs 'MultiplyBySelectedScalarWideningUpperAndSubtract' operation.", 0), GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", Vector128int_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", Vector128short_0.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", Vector64short_0.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", byte_0.ToString(), 4), GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", apiResult.ToString(), 5));
 
 try {
 MultiplyBySelectedScalarWideningUpperAndSubtractTest(Vector128int_0, Vector128short_0, Vector64short_0, byte_0);
@@ -11205,7 +11205,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingByScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingByScalarSaturateHigh", "Performs 'MultiplyDoublingByScalarSaturateHigh' operation.", 0), GetValue("MultiplyDoublingByScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingByScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingByScalarSaturateHigh", apiResult.ToString(), 3));
 
 try {
 MultiplyDoublingByScalarSaturateHighTest(Vector64short_0, Vector64short_1);
@@ -11265,7 +11265,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingBySelectedScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyDoublingBySelectedScalarSaturateHigh", "Performs 'MultiplyDoublingBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyDoublingBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyDoublingBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
@@ -11320,7 +11320,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingSaturateHigh' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingSaturateHigh", "Performs 'MultiplyDoublingSaturateHigh' operation.", 0), GetValue("MultiplyDoublingSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingSaturateHigh", apiResult.ToString(), 3));
 
 try {
 MultiplyDoublingSaturateHighTest(Vector64short_0, Vector64short_1);
@@ -11374,7 +11374,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningLowerAndAddSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingWideningLowerAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerAndAddSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerAndAddSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerAndAddSaturate", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningLowerAndAddSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1);
@@ -11428,7 +11428,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningLowerAndSubtractSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingWideningLowerAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerAndSubtractSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerAndSubtractSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerAndSubtractSaturate", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningLowerAndSubtractSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1);
@@ -11502,7 +11502,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningLowerByScalarAndAddSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingWideningLowerByScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerByScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerByScalarAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerByScalarAndAddSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerByScalarAndAddSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerByScalarAndAddSaturate", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningLowerByScalarAndAddSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1);
@@ -11556,7 +11556,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningLowerByScalarAndSubtractSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerByScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningLowerByScalarAndSubtractSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1);
@@ -11613,7 +11613,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", apiResult.ToString(), 5));
 
 try {
 MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -11670,7 +11670,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", apiResult.ToString(), 5));
 
 try {
 MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -11723,7 +11723,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningSaturateLower' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingWideningSaturateLower", "Performs 'MultiplyDoublingWideningSaturateLower' operation.", 0), GetValue("MultiplyDoublingWideningSaturateLower", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateLower", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateLower", apiResult.ToString(), 3));
 
 try {
 MultiplyDoublingWideningSaturateLowerTest(Vector64short_0, Vector64short_1);
@@ -11776,7 +11776,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningSaturateLowerByScalar' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingWideningSaturateLowerByScalar", "Performs 'MultiplyDoublingWideningSaturateLowerByScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateLowerByScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateLowerByScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateLowerByScalar", apiResult.ToString(), 3));
 
 try {
 MultiplyDoublingWideningSaturateLowerByScalarTest(Vector64short_0, Vector64short_1);
@@ -11832,7 +11832,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningSaturateLowerBySelectedScalar' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyDoublingWideningSaturateLowerBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateLowerBySelectedScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateLowerBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateLowerBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateLowerBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyDoublingWideningSaturateLowerBySelectedScalar", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningSaturateLowerBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
@@ -11885,7 +11885,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningSaturateUpper' operation.", Vector128short_0, Vector128short_1, apiResult);
+", GetValue("MultiplyDoublingWideningSaturateUpper", "Performs 'MultiplyDoublingWideningSaturateUpper' operation.", 0), GetValue("MultiplyDoublingWideningSaturateUpper", Vector128short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateUpper", Vector128short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateUpper", apiResult.ToString(), 3));
 
 try {
 MultiplyDoublingWideningSaturateUpperTest(Vector128short_0, Vector128short_1);
@@ -11938,7 +11938,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningSaturateUpperByScalar' operation.", Vector128short_0, Vector64short_0, apiResult);
+", GetValue("MultiplyDoublingWideningSaturateUpperByScalar", "Performs 'MultiplyDoublingWideningSaturateUpperByScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateUpperByScalar", Vector128short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateUpperByScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateUpperByScalar", apiResult.ToString(), 3));
 
 try {
 MultiplyDoublingWideningSaturateUpperByScalarTest(Vector128short_0, Vector64short_0);
@@ -11994,7 +11994,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningSaturateUpperBySelectedScalar' operation.", Vector128short_0, Vector64short_0, byte_0, apiResult);
+", GetValue("MultiplyDoublingWideningSaturateUpperBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateUpperBySelectedScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateUpperBySelectedScalar", Vector128short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateUpperBySelectedScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateUpperBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyDoublingWideningSaturateUpperBySelectedScalar", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningSaturateUpperBySelectedScalarTest(Vector128short_0, Vector64short_0, byte_0);
@@ -12048,7 +12048,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningUpperAndAddSaturate' operation.", Vector128int_0, Vector128short_0, Vector128short_1, apiResult);
+", GetValue("MultiplyDoublingWideningUpperAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperAndAddSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperAndAddSaturate", Vector128short_1.ToString(), 3), GetValue("MultiplyDoublingWideningUpperAndAddSaturate", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningUpperAndAddSaturateTest(Vector128int_0, Vector128short_0, Vector128short_1);
@@ -12102,7 +12102,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningUpperAndSubtractSaturate' operation.", Vector128int_0, Vector128short_0, Vector128short_1, apiResult);
+", GetValue("MultiplyDoublingWideningUpperAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperAndSubtractSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperAndSubtractSaturate", Vector128short_1.ToString(), 3), GetValue("MultiplyDoublingWideningUpperAndSubtractSaturate", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningUpperAndSubtractSaturateTest(Vector128int_0, Vector128short_0, Vector128short_1);
@@ -12156,7 +12156,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningUpperByScalarAndAddSaturate' operation.", Vector128int_0, Vector128short_0, Vector64short_0, apiResult);
+", GetValue("MultiplyDoublingWideningUpperByScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperByScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperByScalarAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperByScalarAndAddSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperByScalarAndAddSaturate", Vector64short_0.ToString(), 3), GetValue("MultiplyDoublingWideningUpperByScalarAndAddSaturate", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningUpperByScalarAndAddSaturateTest(Vector128int_0, Vector128short_0, Vector64short_0);
@@ -12210,7 +12210,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningUpperByScalarAndSubtractSaturate' operation.", Vector128int_0, Vector128short_0, Vector64short_0, apiResult);
+", GetValue("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperByScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", Vector64short_0.ToString(), 3), GetValue("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningUpperByScalarAndSubtractSaturateTest(Vector128int_0, Vector128short_0, Vector64short_0);
@@ -12267,7 +12267,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate' operation.", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
+", GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", Vector64short_0.ToString(), 3), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", apiResult.ToString(), 5));
 
 try {
 MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturateTest(Vector128int_0, Vector128short_0, Vector64short_0, byte_0);
@@ -12324,7 +12324,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate' operation.", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
+", GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", Vector64short_0.ToString(), 3), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", apiResult.ToString(), 5));
 
 try {
 MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128int_0, Vector128short_0, Vector64short_0, byte_0);
@@ -12379,7 +12379,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyRoundedDoublingByScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyRoundedDoublingByScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingByScalarSaturateHigh' operation.", 0), GetValue("MultiplyRoundedDoublingByScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingByScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingByScalarSaturateHigh", apiResult.ToString(), 3));
 
 try {
 MultiplyRoundedDoublingByScalarSaturateHighTest(Vector64short_0, Vector64short_1);
@@ -12439,7 +12439,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyRoundedDoublingBySelectedScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
 
 try {
 MultiplyRoundedDoublingBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
@@ -12494,7 +12494,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyRoundedDoublingSaturateHigh' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyRoundedDoublingSaturateHigh", "Performs 'MultiplyRoundedDoublingSaturateHigh' operation.", 0), GetValue("MultiplyRoundedDoublingSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingSaturateHigh", apiResult.ToString(), 3));
 
 try {
 MultiplyRoundedDoublingSaturateHighTest(Vector64short_0, Vector64short_1);
@@ -12547,7 +12547,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("MultiplyScalar", "Performs 'MultiplyScalar' operation.", 0), GetValue("MultiplyScalar", Vector64double_0.ToString(), 1), GetValue("MultiplyScalar", Vector64double_1.ToString(), 2), GetValue("MultiplyScalar", apiResult.ToString(), 3));
 
 try {
 MultiplyScalarTest(Vector64double_0, Vector64double_1);
@@ -12604,7 +12604,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyScalarBySelectedScalar' operation.", Vector64float_0, Vector64float_1, byte_0, apiResult);
+", GetValue("MultiplyScalarBySelectedScalar", "Performs 'MultiplyScalarBySelectedScalar' operation.", 0), GetValue("MultiplyScalarBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("MultiplyScalarBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("MultiplyScalarBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyScalarBySelectedScalar", apiResult.ToString(), 4));
 
 try {
 MultiplyScalarBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
@@ -12668,7 +12668,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplySubtract' operation.", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
+", GetValue("MultiplySubtract", "Performs 'MultiplySubtract' operation.", 0), GetValue("MultiplySubtract", Vector64byte_0.ToString(), 1), GetValue("MultiplySubtract", Vector64byte_1.ToString(), 2), GetValue("MultiplySubtract", Vector64byte_2.ToString(), 3), GetValue("MultiplySubtract", apiResult.ToString(), 4));
 
 try {
 MultiplySubtractTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
@@ -12728,7 +12728,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplySubtractByScalar' operation.", Vector64short_0, Vector64short_1, Vector64short_2, apiResult);
+", GetValue("MultiplySubtractByScalar", "Performs 'MultiplySubtractByScalar' operation.", 0), GetValue("MultiplySubtractByScalar", Vector64short_0.ToString(), 1), GetValue("MultiplySubtractByScalar", Vector64short_1.ToString(), 2), GetValue("MultiplySubtractByScalar", Vector64short_2.ToString(), 3), GetValue("MultiplySubtractByScalar", apiResult.ToString(), 4));
 
 try {
 MultiplySubtractByScalarTest(Vector64short_0, Vector64short_1, Vector64short_2);
@@ -12797,7 +12797,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplySubtractBySelectedScalar' operation.", Vector64short_0, Vector64short_1, Vector64short_2, byte_0, apiResult);
+", GetValue("MultiplySubtractBySelectedScalar", "Performs 'MultiplySubtractBySelectedScalar' operation.", 0), GetValue("MultiplySubtractBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplySubtractBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplySubtractBySelectedScalar", Vector64short_2.ToString(), 3), GetValue("MultiplySubtractBySelectedScalar", byte_0.ToString(), 4), GetValue("MultiplySubtractBySelectedScalar", apiResult.ToString(), 5));
 
 try {
 MultiplySubtractBySelectedScalarTest(Vector64short_0, Vector64short_1, Vector64short_2, byte_0);
@@ -12854,7 +12854,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyWideningLower' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("MultiplyWideningLower", "Performs 'MultiplyWideningLower' operation.", 0), GetValue("MultiplyWideningLower", Vector64byte_0.ToString(), 1), GetValue("MultiplyWideningLower", Vector64byte_1.ToString(), 2), GetValue("MultiplyWideningLower", apiResult.ToString(), 3));
 
 try {
 MultiplyWideningLowerTest(Vector64byte_0, Vector64byte_1);
@@ -12912,7 +12912,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyWideningLowerAndAdd' operation.", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("MultiplyWideningLowerAndAdd", "Performs 'MultiplyWideningLowerAndAdd' operation.", 0), GetValue("MultiplyWideningLowerAndAdd", Vector128ushort_0.ToString(), 1), GetValue("MultiplyWideningLowerAndAdd", Vector64byte_0.ToString(), 2), GetValue("MultiplyWideningLowerAndAdd", Vector64byte_1.ToString(), 3), GetValue("MultiplyWideningLowerAndAdd", apiResult.ToString(), 4));
 
 try {
 MultiplyWideningLowerAndAddTest(Vector128ushort_0, Vector64byte_0, Vector64byte_1);
@@ -12970,7 +12970,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyWideningLowerAndSubtract' operation.", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("MultiplyWideningLowerAndSubtract", "Performs 'MultiplyWideningLowerAndSubtract' operation.", 0), GetValue("MultiplyWideningLowerAndSubtract", Vector128ushort_0.ToString(), 1), GetValue("MultiplyWideningLowerAndSubtract", Vector64byte_0.ToString(), 2), GetValue("MultiplyWideningLowerAndSubtract", Vector64byte_1.ToString(), 3), GetValue("MultiplyWideningLowerAndSubtract", apiResult.ToString(), 4));
 
 try {
 MultiplyWideningLowerAndSubtractTest(Vector128ushort_0, Vector64byte_0, Vector64byte_1);
@@ -13027,7 +13027,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyWideningUpper' operation.", Vector128byte_0, Vector128byte_1, apiResult);
+", GetValue("MultiplyWideningUpper", "Performs 'MultiplyWideningUpper' operation.", 0), GetValue("MultiplyWideningUpper", Vector128byte_0.ToString(), 1), GetValue("MultiplyWideningUpper", Vector128byte_1.ToString(), 2), GetValue("MultiplyWideningUpper", apiResult.ToString(), 3));
 
 try {
 MultiplyWideningUpperTest(Vector128byte_0, Vector128byte_1);
@@ -13085,7 +13085,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyWideningUpperAndAdd' operation.", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
+", GetValue("MultiplyWideningUpperAndAdd", "Performs 'MultiplyWideningUpperAndAdd' operation.", 0), GetValue("MultiplyWideningUpperAndAdd", Vector128ushort_0.ToString(), 1), GetValue("MultiplyWideningUpperAndAdd", Vector128byte_0.ToString(), 2), GetValue("MultiplyWideningUpperAndAdd", Vector128byte_1.ToString(), 3), GetValue("MultiplyWideningUpperAndAdd", apiResult.ToString(), 4));
 
 try {
 MultiplyWideningUpperAndAddTest(Vector128ushort_0, Vector128byte_0, Vector128byte_1);
@@ -13143,7 +13143,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyWideningUpperAndSubtract' operation.", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
+", GetValue("MultiplyWideningUpperAndSubtract", "Performs 'MultiplyWideningUpperAndSubtract' operation.", 0), GetValue("MultiplyWideningUpperAndSubtract", Vector128ushort_0.ToString(), 1), GetValue("MultiplyWideningUpperAndSubtract", Vector128byte_0.ToString(), 2), GetValue("MultiplyWideningUpperAndSubtract", Vector128byte_1.ToString(), 3), GetValue("MultiplyWideningUpperAndSubtract", apiResult.ToString(), 4));
 
 try {
 MultiplyWideningUpperAndSubtractTest(Vector128ushort_0, Vector128byte_0, Vector128byte_1);
@@ -13205,7 +13205,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Negate' operation.", Vector64short_0, apiResult);
+", GetValue("Negate", "Performs 'Negate' operation.", 0), GetValue("Negate", Vector64short_0.ToString(), 1), GetValue("Negate", apiResult.ToString(), 2));
 
 try {
 NegateTest(Vector64short_0);
@@ -13264,7 +13264,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'NegateSaturate' operation.", Vector64short_0, apiResult);
+", GetValue("NegateSaturate", "Performs 'NegateSaturate' operation.", 0), GetValue("NegateSaturate", Vector64short_0.ToString(), 1), GetValue("NegateSaturate", apiResult.ToString(), 2));
 
 try {
 NegateSaturateTest(Vector64short_0);
@@ -13319,7 +13319,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'NegateScalar' operation.", Vector64double_0, apiResult);
+", GetValue("NegateScalar", "Performs 'NegateScalar' operation.", 0), GetValue("NegateScalar", Vector64double_0.ToString(), 1), GetValue("NegateScalar", apiResult.ToString(), 2));
 
 try {
 NegateScalarTest(Vector64double_0);
@@ -13389,7 +13389,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Not' operation.", Vector64byte_0, apiResult);
+", GetValue("Not", "Performs 'Not' operation.", 0), GetValue("Not", Vector64byte_0.ToString(), 1), GetValue("Not", apiResult.ToString(), 2));
 
 try {
 NotTest(Vector64byte_0);
@@ -13460,7 +13460,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Or' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("Or", "Performs 'Or' operation.", 0), GetValue("Or", Vector64byte_0.ToString(), 1), GetValue("Or", Vector64byte_1.ToString(), 2), GetValue("Or", apiResult.ToString(), 3));
 
 try {
 OrTest(Vector64byte_0, Vector64byte_1);
@@ -13531,7 +13531,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'OrNot' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("OrNot", "Performs 'OrNot' operation.", 0), GetValue("OrNot", Vector64byte_0.ToString(), 1), GetValue("OrNot", Vector64byte_1.ToString(), 2), GetValue("OrNot", apiResult.ToString(), 3));
 
 try {
 OrNotTest(Vector64byte_0, Vector64byte_1);
@@ -13586,7 +13586,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'PolynomialMultiply' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("PolynomialMultiply", "Performs 'PolynomialMultiply' operation.", 0), GetValue("PolynomialMultiply", Vector64byte_0.ToString(), 1), GetValue("PolynomialMultiply", Vector64byte_1.ToString(), 2), GetValue("PolynomialMultiply", apiResult.ToString(), 3));
 
 try {
 PolynomialMultiplyTest(Vector64byte_0, Vector64byte_1);
@@ -13639,7 +13639,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'PolynomialMultiplyWideningLower' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("PolynomialMultiplyWideningLower", "Performs 'PolynomialMultiplyWideningLower' operation.", 0), GetValue("PolynomialMultiplyWideningLower", Vector64byte_0.ToString(), 1), GetValue("PolynomialMultiplyWideningLower", Vector64byte_1.ToString(), 2), GetValue("PolynomialMultiplyWideningLower", apiResult.ToString(), 3));
 
 try {
 PolynomialMultiplyWideningLowerTest(Vector64byte_0, Vector64byte_1);
@@ -13692,7 +13692,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'PolynomialMultiplyWideningUpper' operation.", Vector128byte_0, Vector128byte_1, apiResult);
+", GetValue("PolynomialMultiplyWideningUpper", "Performs 'PolynomialMultiplyWideningUpper' operation.", 0), GetValue("PolynomialMultiplyWideningUpper", Vector128byte_0.ToString(), 1), GetValue("PolynomialMultiplyWideningUpper", Vector128byte_1.ToString(), 2), GetValue("PolynomialMultiplyWideningUpper", apiResult.ToString(), 3));
 
 try {
 PolynomialMultiplyWideningUpperTest(Vector128byte_0, Vector128byte_1);
@@ -13746,7 +13746,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'PopCount' operation.", Vector64byte_0, apiResult);
+", GetValue("PopCount", "Performs 'PopCount' operation.", 0), GetValue("PopCount", Vector64byte_0.ToString(), 1), GetValue("PopCount", apiResult.ToString(), 2));
 
 try {
 PopCountTest(Vector64byte_0);
@@ -13803,7 +13803,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReciprocalEstimate' operation.", Vector64float_0, apiResult);
+", GetValue("ReciprocalEstimate", "Performs 'ReciprocalEstimate' operation.", 0), GetValue("ReciprocalEstimate", Vector64float_0.ToString(), 1), GetValue("ReciprocalEstimate", apiResult.ToString(), 2));
 
 try {
 ReciprocalEstimateTest(Vector64float_0);
@@ -13860,7 +13860,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReciprocalSquareRootEstimate' operation.", Vector64float_0, apiResult);
+", GetValue("ReciprocalSquareRootEstimate", "Performs 'ReciprocalSquareRootEstimate' operation.", 0), GetValue("ReciprocalSquareRootEstimate", Vector64float_0.ToString(), 1), GetValue("ReciprocalSquareRootEstimate", apiResult.ToString(), 2));
 
 try {
 ReciprocalSquareRootEstimateTest(Vector64float_0);
@@ -13916,7 +13916,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReciprocalSquareRootStep' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("ReciprocalSquareRootStep", "Performs 'ReciprocalSquareRootStep' operation.", 0), GetValue("ReciprocalSquareRootStep", Vector64float_0.ToString(), 1), GetValue("ReciprocalSquareRootStep", Vector64float_1.ToString(), 2), GetValue("ReciprocalSquareRootStep", apiResult.ToString(), 3));
 
 try {
 ReciprocalSquareRootStepTest(Vector64float_0, Vector64float_1);
@@ -13972,7 +13972,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReciprocalStep' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("ReciprocalStep", "Performs 'ReciprocalStep' operation.", 0), GetValue("ReciprocalStep", Vector64float_0.ToString(), 1), GetValue("ReciprocalStep", Vector64float_1.ToString(), 2), GetValue("ReciprocalStep", apiResult.ToString(), 3));
 
 try {
 ReciprocalStepTest(Vector64float_0, Vector64float_1);
@@ -14030,7 +14030,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReverseElement16' operation.", Vector64int_0, apiResult);
+", GetValue("ReverseElement16", "Performs 'ReverseElement16' operation.", 0), GetValue("ReverseElement16", Vector64int_0.ToString(), 1), GetValue("ReverseElement16", apiResult.ToString(), 2));
 
 try {
 ReverseElement16Test(Vector64int_0);
@@ -14084,7 +14084,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReverseElement32' operation.", Vector64long_0, apiResult);
+", GetValue("ReverseElement32", "Performs 'ReverseElement32' operation.", 0), GetValue("ReverseElement32", Vector64long_0.ToString(), 1), GetValue("ReverseElement32", apiResult.ToString(), 2));
 
 try {
 ReverseElement32Test(Vector64long_0);
@@ -14146,7 +14146,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReverseElement8' operation.", Vector64short_0, apiResult);
+", GetValue("ReverseElement8", "Performs 'ReverseElement8' operation.", 0), GetValue("ReverseElement8", Vector64short_0.ToString(), 1), GetValue("ReverseElement8", apiResult.ToString(), 2));
 
 try {
 ReverseElement8Test(Vector64short_0);
@@ -14201,7 +14201,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'RoundAwayFromZero' operation.", Vector64float_0, apiResult);
+", GetValue("RoundAwayFromZero", "Performs 'RoundAwayFromZero' operation.", 0), GetValue("RoundAwayFromZero", Vector64float_0.ToString(), 1), GetValue("RoundAwayFromZero", apiResult.ToString(), 2));
 
 try {
 RoundAwayFromZeroTest(Vector64float_0);
@@ -14253,7 +14253,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'RoundAwayFromZeroScalar' operation.", Vector64double_0, apiResult);
+", GetValue("RoundAwayFromZeroScalar", "Performs 'RoundAwayFromZeroScalar' operation.", 0), GetValue("RoundAwayFromZeroScalar", Vector64double_0.ToString(), 1), GetValue("RoundAwayFromZeroScalar", apiResult.ToString(), 2));
 
 try {
 RoundAwayFromZeroScalarTest(Vector64double_0);
@@ -14308,7 +14308,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'RoundToNearest' operation.", Vector64float_0, apiResult);
+", GetValue("RoundToNearest", "Performs 'RoundToNearest' operation.", 0), GetValue("RoundToNearest", Vector64float_0.ToString(), 1), GetValue("RoundToNearest", apiResult.ToString(), 2));
 
 try {
 RoundToNearestTest(Vector64float_0);
@@ -14360,7 +14360,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'RoundToNearestScalar' operation.", Vector64double_0, apiResult);
+", GetValue("RoundToNearestScalar", "Performs 'RoundToNearestScalar' operation.", 0), GetValue("RoundToNearestScalar", Vector64double_0.ToString(), 1), GetValue("RoundToNearestScalar", apiResult.ToString(), 2));
 
 try {
 RoundToNearestScalarTest(Vector64double_0);
@@ -14415,7 +14415,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'RoundToNegativeInfinity' operation.", Vector64float_0, apiResult);
+", GetValue("RoundToNegativeInfinity", "Performs 'RoundToNegativeInfinity' operation.", 0), GetValue("RoundToNegativeInfinity", Vector64float_0.ToString(), 1), GetValue("RoundToNegativeInfinity", apiResult.ToString(), 2));
 
 try {
 RoundToNegativeInfinityTest(Vector64float_0);
@@ -14467,7 +14467,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'RoundToNegativeInfinityScalar' operation.", Vector64double_0, apiResult);
+", GetValue("RoundToNegativeInfinityScalar", "Performs 'RoundToNegativeInfinityScalar' operation.", 0), GetValue("RoundToNegativeInfinityScalar", Vector64double_0.ToString(), 1), GetValue("RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
 
 try {
 RoundToNegativeInfinityScalarTest(Vector64double_0);
@@ -14522,7 +14522,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'RoundToPositiveInfinity' operation.", Vector64float_0, apiResult);
+", GetValue("RoundToPositiveInfinity", "Performs 'RoundToPositiveInfinity' operation.", 0), GetValue("RoundToPositiveInfinity", Vector64float_0.ToString(), 1), GetValue("RoundToPositiveInfinity", apiResult.ToString(), 2));
 
 try {
 RoundToPositiveInfinityTest(Vector64float_0);
@@ -14574,7 +14574,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'RoundToPositiveInfinityScalar' operation.", Vector64double_0, apiResult);
+", GetValue("RoundToPositiveInfinityScalar", "Performs 'RoundToPositiveInfinityScalar' operation.", 0), GetValue("RoundToPositiveInfinityScalar", Vector64double_0.ToString(), 1), GetValue("RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
 
 try {
 RoundToPositiveInfinityScalarTest(Vector64double_0);
@@ -14629,7 +14629,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'RoundToZero' operation.", Vector64float_0, apiResult);
+", GetValue("RoundToZero", "Performs 'RoundToZero' operation.", 0), GetValue("RoundToZero", Vector64float_0.ToString(), 1), GetValue("RoundToZero", apiResult.ToString(), 2));
 
 try {
 RoundToZeroTest(Vector64float_0);
@@ -14681,7 +14681,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'RoundToZeroScalar' operation.", Vector64double_0, apiResult);
+", GetValue("RoundToZeroScalar", "Performs 'RoundToZeroScalar' operation.", 0), GetValue("RoundToZeroScalar", Vector64double_0.ToString(), 1), GetValue("RoundToZeroScalar", apiResult.ToString(), 2));
 
 try {
 RoundToZeroScalarTest(Vector64double_0);
@@ -14739,7 +14739,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftArithmetic' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("ShiftArithmetic", "Performs 'ShiftArithmetic' operation.", 0), GetValue("ShiftArithmetic", Vector64short_0.ToString(), 1), GetValue("ShiftArithmetic", Vector64short_1.ToString(), 2), GetValue("ShiftArithmetic", apiResult.ToString(), 3));
 
 try {
 ShiftArithmeticTest(Vector64short_0, Vector64short_1);
@@ -14797,7 +14797,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftArithmeticRounded' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("ShiftArithmeticRounded", "Performs 'ShiftArithmeticRounded' operation.", 0), GetValue("ShiftArithmeticRounded", Vector64short_0.ToString(), 1), GetValue("ShiftArithmeticRounded", Vector64short_1.ToString(), 2), GetValue("ShiftArithmeticRounded", apiResult.ToString(), 3));
 
 try {
 ShiftArithmeticRoundedTest(Vector64short_0, Vector64short_1);
@@ -14855,7 +14855,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftArithmeticRoundedSaturate' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("ShiftArithmeticRoundedSaturate", "Performs 'ShiftArithmeticRoundedSaturate' operation.", 0), GetValue("ShiftArithmeticRoundedSaturate", Vector64short_0.ToString(), 1), GetValue("ShiftArithmeticRoundedSaturate", Vector64short_1.ToString(), 2), GetValue("ShiftArithmeticRoundedSaturate", apiResult.ToString(), 3));
 
 try {
 ShiftArithmeticRoundedSaturateTest(Vector64short_0, Vector64short_1);
@@ -14932,7 +14932,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftArithmeticRoundedSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
+", GetValue("ShiftArithmeticRoundedSaturateScalar", "Performs 'ShiftArithmeticRoundedSaturateScalar' operation.", 0), GetValue("ShiftArithmeticRoundedSaturateScalar", Vector64long_0.ToString(), 1), GetValue("ShiftArithmeticRoundedSaturateScalar", Vector64long_1.ToString(), 2), GetValue("ShiftArithmeticRoundedSaturateScalar", apiResult.ToString(), 3));
 
 try {
 ShiftArithmeticRoundedSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -14979,7 +14979,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftArithmeticRoundedScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
+", GetValue("ShiftArithmeticRoundedScalar", "Performs 'ShiftArithmeticRoundedScalar' operation.", 0), GetValue("ShiftArithmeticRoundedScalar", Vector64long_0.ToString(), 1), GetValue("ShiftArithmeticRoundedScalar", Vector64long_1.ToString(), 2), GetValue("ShiftArithmeticRoundedScalar", apiResult.ToString(), 3));
 
 try {
 ShiftArithmeticRoundedScalarTest(Vector64long_0, Vector64long_1);
@@ -15037,7 +15037,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftArithmeticSaturate' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("ShiftArithmeticSaturate", "Performs 'ShiftArithmeticSaturate' operation.", 0), GetValue("ShiftArithmeticSaturate", Vector64short_0.ToString(), 1), GetValue("ShiftArithmeticSaturate", Vector64short_1.ToString(), 2), GetValue("ShiftArithmeticSaturate", apiResult.ToString(), 3));
 
 try {
 ShiftArithmeticSaturateTest(Vector64short_0, Vector64short_1);
@@ -15094,7 +15094,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftArithmeticSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
+", GetValue("ShiftArithmeticSaturateScalar", "Performs 'ShiftArithmeticSaturateScalar' operation.", 0), GetValue("ShiftArithmeticSaturateScalar", Vector64long_0.ToString(), 1), GetValue("ShiftArithmeticSaturateScalar", Vector64long_1.ToString(), 2), GetValue("ShiftArithmeticSaturateScalar", apiResult.ToString(), 3));
 
 try {
 ShiftArithmeticSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -15141,7 +15141,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftArithmeticScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
+", GetValue("ShiftArithmeticScalar", "Performs 'ShiftArithmeticScalar' operation.", 0), GetValue("ShiftArithmeticScalar", Vector64long_0.ToString(), 1), GetValue("ShiftArithmeticScalar", Vector64long_1.ToString(), 2), GetValue("ShiftArithmeticScalar", apiResult.ToString(), 3));
 
 try {
 ShiftArithmeticScalarTest(Vector64long_0, Vector64long_1);
@@ -15207,7 +15207,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLeftAndInsert' operation.", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
+", GetValue("ShiftLeftAndInsert", "Performs 'ShiftLeftAndInsert' operation.", 0), GetValue("ShiftLeftAndInsert", Vector64byte_0.ToString(), 1), GetValue("ShiftLeftAndInsert", Vector64byte_1.ToString(), 2), GetValue("ShiftLeftAndInsert", byte_0.ToString(), 3), GetValue("ShiftLeftAndInsert", apiResult.ToString(), 4));
 
 try {
 ShiftLeftAndInsertTest(Vector64byte_0, Vector64byte_1, byte_0);
@@ -15261,7 +15261,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLeftAndInsertScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", GetValue("ShiftLeftAndInsertScalar", "Performs 'ShiftLeftAndInsertScalar' operation.", 0), GetValue("ShiftLeftAndInsertScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLeftAndInsertScalar", Vector64long_1.ToString(), 2), GetValue("ShiftLeftAndInsertScalar", byte_0.ToString(), 3), GetValue("ShiftLeftAndInsertScalar", apiResult.ToString(), 4));
 
 try {
 ShiftLeftAndInsertScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -15325,7 +15325,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLeftLogical' operation.", Vector64byte_0, byte_0, apiResult);
+", GetValue("ShiftLeftLogical", "Performs 'ShiftLeftLogical' operation.", 0), GetValue("ShiftLeftLogical", Vector64byte_0.ToString(), 1), GetValue("ShiftLeftLogical", byte_0.ToString(), 2), GetValue("ShiftLeftLogical", apiResult.ToString(), 3));
 
 try {
 ShiftLeftLogicalTest(Vector64byte_0, byte_0);
@@ -15390,7 +15390,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLeftLogicalSaturate' operation.", Vector64byte_0, byte_0, apiResult);
+", GetValue("ShiftLeftLogicalSaturate", "Performs 'ShiftLeftLogicalSaturate' operation.", 0), GetValue("ShiftLeftLogicalSaturate", Vector64byte_0.ToString(), 1), GetValue("ShiftLeftLogicalSaturate", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalSaturate", apiResult.ToString(), 3));
 
 try {
 ShiftLeftLogicalSaturateTest(Vector64byte_0, byte_0);
@@ -15451,7 +15451,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLeftLogicalSaturateScalar' operation.", Vector64long_0, byte_0, apiResult);
+", GetValue("ShiftLeftLogicalSaturateScalar", "Performs 'ShiftLeftLogicalSaturateScalar' operation.", 0), GetValue("ShiftLeftLogicalSaturateScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLeftLogicalSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalSaturateScalar", apiResult.ToString(), 3));
 
 try {
 ShiftLeftLogicalSaturateScalarTest(Vector64long_0, byte_0);
@@ -15509,7 +15509,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLeftLogicalSaturateUnsigned' operation.", Vector64short_0, byte_0, apiResult);
+", GetValue("ShiftLeftLogicalSaturateUnsigned", "Performs 'ShiftLeftLogicalSaturateUnsigned' operation.", 0), GetValue("ShiftLeftLogicalSaturateUnsigned", Vector64short_0.ToString(), 1), GetValue("ShiftLeftLogicalSaturateUnsigned", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalSaturateUnsigned", apiResult.ToString(), 3));
 
 try {
 ShiftLeftLogicalSaturateUnsignedTest(Vector64short_0, byte_0);
@@ -15566,7 +15566,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLeftLogicalSaturateUnsignedScalar' operation.", Vector64long_0, byte_0, apiResult);
+", GetValue("ShiftLeftLogicalSaturateUnsignedScalar", "Performs 'ShiftLeftLogicalSaturateUnsignedScalar' operation.", 0), GetValue("ShiftLeftLogicalSaturateUnsignedScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLeftLogicalSaturateUnsignedScalar", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalSaturateUnsignedScalar", apiResult.ToString(), 3));
 
 try {
 ShiftLeftLogicalSaturateUnsignedScalarTest(Vector64long_0, byte_0);
@@ -15619,7 +15619,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLeftLogicalScalar' operation.", Vector64long_0, byte_0, apiResult);
+", GetValue("ShiftLeftLogicalScalar", "Performs 'ShiftLeftLogicalScalar' operation.", 0), GetValue("ShiftLeftLogicalScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLeftLogicalScalar", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalScalar", apiResult.ToString(), 3));
 
 try {
 ShiftLeftLogicalScalarTest(Vector64long_0, byte_0);
@@ -15676,7 +15676,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLeftLogicalWideningLower' operation.", Vector64byte_0, byte_0, apiResult);
+", GetValue("ShiftLeftLogicalWideningLower", "Performs 'ShiftLeftLogicalWideningLower' operation.", 0), GetValue("ShiftLeftLogicalWideningLower", Vector64byte_0.ToString(), 1), GetValue("ShiftLeftLogicalWideningLower", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalWideningLower", apiResult.ToString(), 3));
 
 try {
 ShiftLeftLogicalWideningLowerTest(Vector64byte_0, byte_0);
@@ -15733,7 +15733,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLeftLogicalWideningUpper' operation.", Vector128byte_0, byte_0, apiResult);
+", GetValue("ShiftLeftLogicalWideningUpper", "Performs 'ShiftLeftLogicalWideningUpper' operation.", 0), GetValue("ShiftLeftLogicalWideningUpper", Vector128byte_0.ToString(), 1), GetValue("ShiftLeftLogicalWideningUpper", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalWideningUpper", apiResult.ToString(), 3));
 
 try {
 ShiftLeftLogicalWideningUpperTest(Vector128byte_0, byte_0);
@@ -15798,7 +15798,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLogical' operation.", Vector64byte_0, Vector64sbyte_0, apiResult);
+", GetValue("ShiftLogical", "Performs 'ShiftLogical' operation.", 0), GetValue("ShiftLogical", Vector64byte_0.ToString(), 1), GetValue("ShiftLogical", Vector64sbyte_0.ToString(), 2), GetValue("ShiftLogical", apiResult.ToString(), 3));
 
 try {
 ShiftLogicalTest(Vector64byte_0, Vector64sbyte_0);
@@ -15863,7 +15863,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLogicalRounded' operation.", Vector64byte_0, Vector64sbyte_0, apiResult);
+", GetValue("ShiftLogicalRounded", "Performs 'ShiftLogicalRounded' operation.", 0), GetValue("ShiftLogicalRounded", Vector64byte_0.ToString(), 1), GetValue("ShiftLogicalRounded", Vector64sbyte_0.ToString(), 2), GetValue("ShiftLogicalRounded", apiResult.ToString(), 3));
 
 try {
 ShiftLogicalRoundedTest(Vector64byte_0, Vector64sbyte_0);
@@ -15928,7 +15928,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLogicalRoundedSaturate' operation.", Vector64byte_0, Vector64sbyte_0, apiResult);
+", GetValue("ShiftLogicalRoundedSaturate", "Performs 'ShiftLogicalRoundedSaturate' operation.", 0), GetValue("ShiftLogicalRoundedSaturate", Vector64byte_0.ToString(), 1), GetValue("ShiftLogicalRoundedSaturate", Vector64sbyte_0.ToString(), 2), GetValue("ShiftLogicalRoundedSaturate", apiResult.ToString(), 3));
 
 try {
 ShiftLogicalRoundedSaturateTest(Vector64byte_0, Vector64sbyte_0);
@@ -15989,7 +15989,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLogicalRoundedSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
+", GetValue("ShiftLogicalRoundedSaturateScalar", "Performs 'ShiftLogicalRoundedSaturateScalar' operation.", 0), GetValue("ShiftLogicalRoundedSaturateScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLogicalRoundedSaturateScalar", Vector64long_1.ToString(), 2), GetValue("ShiftLogicalRoundedSaturateScalar", apiResult.ToString(), 3));
 
 try {
 ShiftLogicalRoundedSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -16042,7 +16042,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLogicalRoundedScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
+", GetValue("ShiftLogicalRoundedScalar", "Performs 'ShiftLogicalRoundedScalar' operation.", 0), GetValue("ShiftLogicalRoundedScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLogicalRoundedScalar", Vector64long_1.ToString(), 2), GetValue("ShiftLogicalRoundedScalar", apiResult.ToString(), 3));
 
 try {
 ShiftLogicalRoundedScalarTest(Vector64long_0, Vector64long_1);
@@ -16107,7 +16107,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLogicalSaturate' operation.", Vector64byte_0, Vector64sbyte_0, apiResult);
+", GetValue("ShiftLogicalSaturate", "Performs 'ShiftLogicalSaturate' operation.", 0), GetValue("ShiftLogicalSaturate", Vector64byte_0.ToString(), 1), GetValue("ShiftLogicalSaturate", Vector64sbyte_0.ToString(), 2), GetValue("ShiftLogicalSaturate", apiResult.ToString(), 3));
 
 try {
 ShiftLogicalSaturateTest(Vector64byte_0, Vector64sbyte_0);
@@ -16168,7 +16168,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLogicalSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
+", GetValue("ShiftLogicalSaturateScalar", "Performs 'ShiftLogicalSaturateScalar' operation.", 0), GetValue("ShiftLogicalSaturateScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLogicalSaturateScalar", Vector64long_1.ToString(), 2), GetValue("ShiftLogicalSaturateScalar", apiResult.ToString(), 3));
 
 try {
 ShiftLogicalSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -16221,7 +16221,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftLogicalScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
+", GetValue("ShiftLogicalScalar", "Performs 'ShiftLogicalScalar' operation.", 0), GetValue("ShiftLogicalScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLogicalScalar", Vector64long_1.ToString(), 2), GetValue("ShiftLogicalScalar", apiResult.ToString(), 3));
 
 try {
 ShiftLogicalScalarTest(Vector64long_0, Vector64long_1);
@@ -16287,7 +16287,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightAndInsert' operation.", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
+", GetValue("ShiftRightAndInsert", "Performs 'ShiftRightAndInsert' operation.", 0), GetValue("ShiftRightAndInsert", Vector64byte_0.ToString(), 1), GetValue("ShiftRightAndInsert", Vector64byte_1.ToString(), 2), GetValue("ShiftRightAndInsert", byte_0.ToString(), 3), GetValue("ShiftRightAndInsert", apiResult.ToString(), 4));
 
 try {
 ShiftRightAndInsertTest(Vector64byte_0, Vector64byte_1, byte_0);
@@ -16341,7 +16341,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightAndInsertScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", GetValue("ShiftRightAndInsertScalar", "Performs 'ShiftRightAndInsertScalar' operation.", 0), GetValue("ShiftRightAndInsertScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightAndInsertScalar", Vector64long_1.ToString(), 2), GetValue("ShiftRightAndInsertScalar", byte_0.ToString(), 3), GetValue("ShiftRightAndInsertScalar", apiResult.ToString(), 4));
 
 try {
 ShiftRightAndInsertScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -16399,7 +16399,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmetic' operation.", Vector64short_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmetic", "Performs 'ShiftRightArithmetic' operation.", 0), GetValue("ShiftRightArithmetic", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmetic", byte_0.ToString(), 2), GetValue("ShiftRightArithmetic", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticTest(Vector64short_0, byte_0);
@@ -16458,7 +16458,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticAdd' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticAdd", "Performs 'ShiftRightArithmeticAdd' operation.", 0), GetValue("ShiftRightArithmeticAdd", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticAdd", Vector64short_1.ToString(), 2), GetValue("ShiftRightArithmeticAdd", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticAdd", apiResult.ToString(), 4));
 
 try {
 ShiftRightArithmeticAddTest(Vector64short_0, Vector64short_1, byte_0);
@@ -16506,7 +16506,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticAddScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticAddScalar", "Performs 'ShiftRightArithmeticAddScalar' operation.", 0), GetValue("ShiftRightArithmeticAddScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightArithmeticAddScalar", Vector64long_1.ToString(), 2), GetValue("ShiftRightArithmeticAddScalar", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticAddScalar", apiResult.ToString(), 4));
 
 try {
 ShiftRightArithmeticAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -16560,7 +16560,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticNarrowingSaturateLower' operation.", Vector128int_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticNarrowingSaturateLower", "Performs 'ShiftRightArithmeticNarrowingSaturateLower' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateLower", Vector128int_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateLower", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateLower", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticNarrowingSaturateLowerTest(Vector128int_0, byte_0);
@@ -16614,7 +16614,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedLower' operation.", Vector128short_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedLower", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedLower' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedLower", Vector128short_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedLower", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedLower", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0);
@@ -16669,7 +16669,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedUpper' operation.", Vector64byte_0, Vector128short_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedUpper' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", Vector128short_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", apiResult.ToString(), 4));
 
 try {
 ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0, byte_0);
@@ -16724,7 +16724,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticNarrowingSaturateUpper' operation.", Vector64short_0, Vector128int_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticNarrowingSaturateUpper", "Performs 'ShiftRightArithmeticNarrowingSaturateUpper' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateUpper", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateUpper", Vector128int_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateUpper", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticNarrowingSaturateUpper", apiResult.ToString(), 4));
 
 try {
 ShiftRightArithmeticNarrowingSaturateUpperTest(Vector64short_0, Vector128int_0, byte_0);
@@ -16782,7 +16782,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticRounded' operation.", Vector64short_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticRounded", "Performs 'ShiftRightArithmeticRounded' operation.", 0), GetValue("ShiftRightArithmeticRounded", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticRounded", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRounded", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticRoundedTest(Vector64short_0, byte_0);
@@ -16841,7 +16841,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticRoundedAdd' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticRoundedAdd", "Performs 'ShiftRightArithmeticRoundedAdd' operation.", 0), GetValue("ShiftRightArithmeticRoundedAdd", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedAdd", Vector64short_1.ToString(), 2), GetValue("ShiftRightArithmeticRoundedAdd", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticRoundedAdd", apiResult.ToString(), 4));
 
 try {
 ShiftRightArithmeticRoundedAddTest(Vector64short_0, Vector64short_1, byte_0);
@@ -16889,7 +16889,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticRoundedAddScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticRoundedAddScalar", "Performs 'ShiftRightArithmeticRoundedAddScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedAddScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedAddScalar", Vector64long_1.ToString(), 2), GetValue("ShiftRightArithmeticRoundedAddScalar", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticRoundedAddScalar", apiResult.ToString(), 4));
 
 try {
 ShiftRightArithmeticRoundedAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -16943,7 +16943,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateLower' operation.", Vector128int_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateLower", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateLower' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateLower", Vector128int_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateLower", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateLower", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateLowerTest(Vector128int_0, byte_0);
@@ -16997,7 +16997,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower' operation.", Vector128short_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower", Vector128short_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0);
@@ -17052,7 +17052,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper' operation.", Vector64byte_0, Vector128short_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", Vector128short_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", apiResult.ToString(), 4));
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0, byte_0);
@@ -17107,7 +17107,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUpper' operation.", Vector64short_0, Vector128int_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUpper", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUpper' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUpper", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUpper", Vector128int_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUpper", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUpper", apiResult.ToString(), 4));
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateUpperTest(Vector64short_0, Vector128int_0, byte_0);
@@ -17154,7 +17154,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticRoundedScalar' operation.", Vector64long_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticRoundedScalar", "Performs 'ShiftRightArithmeticRoundedScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedScalar", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticRoundedScalarTest(Vector64long_0, byte_0);
@@ -17201,7 +17201,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticScalar' operation.", Vector64long_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticScalar", "Performs 'ShiftRightArithmeticScalar' operation.", 0), GetValue("ShiftRightArithmeticScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightArithmeticScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticScalar", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticScalarTest(Vector64long_0, byte_0);
@@ -17266,7 +17266,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogical' operation.", Vector64byte_0, byte_0, apiResult);
+", GetValue("ShiftRightLogical", "Performs 'ShiftRightLogical' operation.", 0), GetValue("ShiftRightLogical", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogical", byte_0.ToString(), 2), GetValue("ShiftRightLogical", apiResult.ToString(), 3));
 
 try {
 ShiftRightLogicalTest(Vector64byte_0, byte_0);
@@ -17332,7 +17332,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalAdd' operation.", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
+", GetValue("ShiftRightLogicalAdd", "Performs 'ShiftRightLogicalAdd' operation.", 0), GetValue("ShiftRightLogicalAdd", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalAdd", Vector64byte_1.ToString(), 2), GetValue("ShiftRightLogicalAdd", byte_0.ToString(), 3), GetValue("ShiftRightLogicalAdd", apiResult.ToString(), 4));
 
 try {
 ShiftRightLogicalAddTest(Vector64byte_0, Vector64byte_1, byte_0);
@@ -17386,7 +17386,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalAddScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", GetValue("ShiftRightLogicalAddScalar", "Performs 'ShiftRightLogicalAddScalar' operation.", 0), GetValue("ShiftRightLogicalAddScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightLogicalAddScalar", Vector64long_1.ToString(), 2), GetValue("ShiftRightLogicalAddScalar", byte_0.ToString(), 3), GetValue("ShiftRightLogicalAddScalar", apiResult.ToString(), 4));
 
 try {
 ShiftRightLogicalAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -17443,7 +17443,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalNarrowingLower' operation.", Vector128ushort_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalNarrowingLower", "Performs 'ShiftRightLogicalNarrowingLower' operation.", 0), GetValue("ShiftRightLogicalNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingLower", byte_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingLower", apiResult.ToString(), 3));
 
 try {
 ShiftRightLogicalNarrowingLowerTest(Vector128ushort_0, byte_0);
@@ -17500,7 +17500,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalNarrowingSaturateLower' operation.", Vector128ushort_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalNarrowingSaturateLower", "Performs 'ShiftRightLogicalNarrowingSaturateLower' operation.", 0), GetValue("ShiftRightLogicalNarrowingSaturateLower", Vector128ushort_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingSaturateLower", byte_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingSaturateLower", apiResult.ToString(), 3));
 
 try {
 ShiftRightLogicalNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
@@ -17558,7 +17558,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalNarrowingSaturateUpper' operation.", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalNarrowingSaturateUpper", "Performs 'ShiftRightLogicalNarrowingSaturateUpper' operation.", 0), GetValue("ShiftRightLogicalNarrowingSaturateUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingSaturateUpper", Vector128ushort_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingSaturateUpper", byte_0.ToString(), 3), GetValue("ShiftRightLogicalNarrowingSaturateUpper", apiResult.ToString(), 4));
 
 try {
 ShiftRightLogicalNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
@@ -17616,7 +17616,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalNarrowingUpper", "Performs 'ShiftRightLogicalNarrowingUpper' operation.", 0), GetValue("ShiftRightLogicalNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingUpper", byte_0.ToString(), 3), GetValue("ShiftRightLogicalNarrowingUpper", apiResult.ToString(), 4));
 
 try {
 ShiftRightLogicalNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
@@ -17681,7 +17681,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalRounded' operation.", Vector64byte_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalRounded", "Performs 'ShiftRightLogicalRounded' operation.", 0), GetValue("ShiftRightLogicalRounded", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalRounded", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRounded", apiResult.ToString(), 3));
 
 try {
 ShiftRightLogicalRoundedTest(Vector64byte_0, byte_0);
@@ -17747,7 +17747,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalRoundedAdd' operation.", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
+", GetValue("ShiftRightLogicalRoundedAdd", "Performs 'ShiftRightLogicalRoundedAdd' operation.", 0), GetValue("ShiftRightLogicalRoundedAdd", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedAdd", Vector64byte_1.ToString(), 2), GetValue("ShiftRightLogicalRoundedAdd", byte_0.ToString(), 3), GetValue("ShiftRightLogicalRoundedAdd", apiResult.ToString(), 4));
 
 try {
 ShiftRightLogicalRoundedAddTest(Vector64byte_0, Vector64byte_1, byte_0);
@@ -17801,7 +17801,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalRoundedAddScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", GetValue("ShiftRightLogicalRoundedAddScalar", "Performs 'ShiftRightLogicalRoundedAddScalar' operation.", 0), GetValue("ShiftRightLogicalRoundedAddScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedAddScalar", Vector64long_1.ToString(), 2), GetValue("ShiftRightLogicalRoundedAddScalar", byte_0.ToString(), 3), GetValue("ShiftRightLogicalRoundedAddScalar", apiResult.ToString(), 4));
 
 try {
 ShiftRightLogicalRoundedAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -17858,7 +17858,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalRoundedNarrowingLower' operation.", Vector128ushort_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalRoundedNarrowingLower", "Performs 'ShiftRightLogicalRoundedNarrowingLower' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingLower", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingLower", apiResult.ToString(), 3));
 
 try {
 ShiftRightLogicalRoundedNarrowingLowerTest(Vector128ushort_0, byte_0);
@@ -17915,7 +17915,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateLower' operation.", Vector128ushort_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalRoundedNarrowingSaturateLower", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateLower' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingSaturateLower", Vector128ushort_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingSaturateLower", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingSaturateLower", apiResult.ToString(), 3));
 
 try {
 ShiftRightLogicalRoundedNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
@@ -17973,7 +17973,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateUpper' operation.", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalRoundedNarrowingSaturateUpper", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateUpper' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingSaturateUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingSaturateUpper", Vector128ushort_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingSaturateUpper", byte_0.ToString(), 3), GetValue("ShiftRightLogicalRoundedNarrowingSaturateUpper", apiResult.ToString(), 4));
 
 try {
 ShiftRightLogicalRoundedNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
@@ -18031,7 +18031,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalRoundedNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalRoundedNarrowingUpper", "Performs 'ShiftRightLogicalRoundedNarrowingUpper' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingUpper", byte_0.ToString(), 3), GetValue("ShiftRightLogicalRoundedNarrowingUpper", apiResult.ToString(), 4));
 
 try {
 ShiftRightLogicalRoundedNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
@@ -18084,7 +18084,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalRoundedScalar' operation.", Vector64long_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalRoundedScalar", "Performs 'ShiftRightLogicalRoundedScalar' operation.", 0), GetValue("ShiftRightLogicalRoundedScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedScalar", apiResult.ToString(), 3));
 
 try {
 ShiftRightLogicalRoundedScalarTest(Vector64long_0, byte_0);
@@ -18137,7 +18137,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalScalar' operation.", Vector64long_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalScalar", "Performs 'ShiftRightLogicalScalar' operation.", 0), GetValue("ShiftRightLogicalScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightLogicalScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalScalar", apiResult.ToString(), 3));
 
 try {
 ShiftRightLogicalScalarTest(Vector64long_0, byte_0);
@@ -18190,7 +18190,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SignExtendWideningLower' operation.", Vector64short_0, apiResult);
+", GetValue("SignExtendWideningLower", "Performs 'SignExtendWideningLower' operation.", 0), GetValue("SignExtendWideningLower", Vector64short_0.ToString(), 1), GetValue("SignExtendWideningLower", apiResult.ToString(), 2));
 
 try {
 SignExtendWideningLowerTest(Vector64short_0);
@@ -18243,7 +18243,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SignExtendWideningUpper' operation.", Vector128short_0, apiResult);
+", GetValue("SignExtendWideningUpper", "Performs 'SignExtendWideningUpper' operation.", 0), GetValue("SignExtendWideningUpper", Vector128short_0.ToString(), 1), GetValue("SignExtendWideningUpper", apiResult.ToString(), 2));
 
 try {
 SignExtendWideningUpperTest(Vector128short_0);
@@ -18295,7 +18295,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SqrtScalar' operation.", Vector64double_0, apiResult);
+", GetValue("SqrtScalar", "Performs 'SqrtScalar' operation.", 0), GetValue("SqrtScalar", Vector64double_0.ToString(), 1), GetValue("SqrtScalar", apiResult.ToString(), 2));
 
 try {
 SqrtScalarTest(Vector64double_0);
@@ -18387,7 +18387,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Store' operation.", "<address>", Vector64byte_0);
+", GetValue("Store", "Performs 'Store' operation.", 0), GetValue("Store", "<address>".ToString(), 1), GetValue("Store", Vector64byte_0.ToString(), 2));
 
 try {
 StoreTest(bytePtr_0, Vector64byte_0);
@@ -18458,7 +18458,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'StoreSelectedScalar' operation.", "<address>", Vector64byte_0, byte_0);
+", GetValue("StoreSelectedScalar", "Performs 'StoreSelectedScalar' operation.", 0), GetValue("StoreSelectedScalar", "<address>".ToString(), 1), GetValue("StoreSelectedScalar", Vector64byte_0.ToString(), 2), GetValue("StoreSelectedScalar", byte_0.ToString(), 3));
 
 try {
 StoreSelectedScalarTest(bytePtr_0, Vector64byte_0, byte_0);
@@ -18529,7 +18529,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Subtract' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("Subtract", "Performs 'Subtract' operation.", 0), GetValue("Subtract", Vector64byte_0.ToString(), 1), GetValue("Subtract", Vector64byte_1.ToString(), 2), GetValue("Subtract", apiResult.ToString(), 3));
 
 try {
 SubtractTest(Vector64byte_0, Vector64byte_1);
@@ -18586,7 +18586,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SubtractHighNarrowingLower' operation.", Vector128ushort_0, Vector128ushort_1, apiResult);
+", GetValue("SubtractHighNarrowingLower", "Performs 'SubtractHighNarrowingLower' operation.", 0), GetValue("SubtractHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("SubtractHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("SubtractHighNarrowingLower", apiResult.ToString(), 3));
 
 try {
 SubtractHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
@@ -18644,7 +18644,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SubtractHighNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
+", GetValue("SubtractHighNarrowingUpper", "Performs 'SubtractHighNarrowingUpper' operation.", 0), GetValue("SubtractHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("SubtractHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("SubtractHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("SubtractHighNarrowingUpper", apiResult.ToString(), 4));
 
 try {
 SubtractHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
@@ -18701,7 +18701,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SubtractRoundedHighNarrowingLower' operation.", Vector128ushort_0, Vector128ushort_1, apiResult);
+", GetValue("SubtractRoundedHighNarrowingLower", "Performs 'SubtractRoundedHighNarrowingLower' operation.", 0), GetValue("SubtractRoundedHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("SubtractRoundedHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("SubtractRoundedHighNarrowingLower", apiResult.ToString(), 3));
 
 try {
 SubtractRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
@@ -18759,7 +18759,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SubtractRoundedHighNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
+", GetValue("SubtractRoundedHighNarrowingUpper", "Performs 'SubtractRoundedHighNarrowingUpper' operation.", 0), GetValue("SubtractRoundedHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("SubtractRoundedHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("SubtractRoundedHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("SubtractRoundedHighNarrowingUpper", apiResult.ToString(), 4));
 
 try {
 SubtractRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
@@ -18824,7 +18824,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SubtractSaturate' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("SubtractSaturate", "Performs 'SubtractSaturate' operation.", 0), GetValue("SubtractSaturate", Vector64byte_0.ToString(), 1), GetValue("SubtractSaturate", Vector64byte_1.ToString(), 2), GetValue("SubtractSaturate", apiResult.ToString(), 3));
 
 try {
 SubtractSaturateTest(Vector64byte_0, Vector64byte_1);
@@ -18885,7 +18885,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SubtractSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
+", GetValue("SubtractSaturateScalar", "Performs 'SubtractSaturateScalar' operation.", 0), GetValue("SubtractSaturateScalar", Vector64long_0.ToString(), 1), GetValue("SubtractSaturateScalar", Vector64long_1.ToString(), 2), GetValue("SubtractSaturateScalar", apiResult.ToString(), 3));
 
 try {
 SubtractSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -18940,7 +18940,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SubtractScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("SubtractScalar", "Performs 'SubtractScalar' operation.", 0), GetValue("SubtractScalar", Vector64double_0.ToString(), 1), GetValue("SubtractScalar", Vector64double_1.ToString(), 2), GetValue("SubtractScalar", apiResult.ToString(), 3));
 
 try {
 SubtractScalarTest(Vector64double_0, Vector64double_1);
@@ -19003,7 +19003,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SubtractWideningLower' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("SubtractWideningLower", "Performs 'SubtractWideningLower' operation.", 0), GetValue("SubtractWideningLower", Vector64byte_0.ToString(), 1), GetValue("SubtractWideningLower", Vector64byte_1.ToString(), 2), GetValue("SubtractWideningLower", apiResult.ToString(), 3));
 
 try {
 SubtractWideningLowerTest(Vector64byte_0, Vector64byte_1);
@@ -19066,7 +19066,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'SubtractWideningUpper' operation.", Vector128byte_0, Vector128byte_1, apiResult);
+", GetValue("SubtractWideningUpper", "Performs 'SubtractWideningUpper' operation.", 0), GetValue("SubtractWideningUpper", Vector128byte_0.ToString(), 1), GetValue("SubtractWideningUpper", Vector128byte_1.ToString(), 2), GetValue("SubtractWideningUpper", apiResult.ToString(), 3));
 
 try {
 SubtractWideningUpperTest(Vector128byte_0, Vector128byte_1);
@@ -19123,7 +19123,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'VectorTableLookup' operation.", Vector128byte_0, Vector64byte_0, apiResult);
+", GetValue("VectorTableLookup", "Performs 'VectorTableLookup' operation.", 0), GetValue("VectorTableLookup", Vector128byte_0.ToString(), 1), GetValue("VectorTableLookup", Vector64byte_0.ToString(), 2), GetValue("VectorTableLookup", apiResult.ToString(), 3));
 
 try {
 VectorTableLookupTest(Vector128byte_0, Vector64byte_0);
@@ -19181,7 +19181,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'VectorTableLookupExtension' operation.", Vector64byte_0, Vector128byte_0, Vector64byte_1, apiResult);
+", GetValue("VectorTableLookupExtension", "Performs 'VectorTableLookupExtension' operation.", 0), GetValue("VectorTableLookupExtension", Vector64byte_0.ToString(), 1), GetValue("VectorTableLookupExtension", Vector128byte_0.ToString(), 2), GetValue("VectorTableLookupExtension", Vector64byte_1.ToString(), 3), GetValue("VectorTableLookupExtension", apiResult.ToString(), 4));
 
 try {
 VectorTableLookupExtensionTest(Vector64byte_0, Vector128byte_0, Vector64byte_1);
@@ -19252,7 +19252,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Xor' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("Xor", "Performs 'Xor' operation.", 0), GetValue("Xor", Vector64byte_0.ToString(), 1), GetValue("Xor", Vector64byte_1.ToString(), 2), GetValue("Xor", apiResult.ToString(), 3));
 
 try {
 XorTest(Vector64byte_0, Vector64byte_1);
@@ -19308,7 +19308,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ZeroExtendWideningLower' operation.", Vector64byte_0, apiResult);
+", GetValue("ZeroExtendWideningLower", "Performs 'ZeroExtendWideningLower' operation.", 0), GetValue("ZeroExtendWideningLower", Vector64byte_0.ToString(), 1), GetValue("ZeroExtendWideningLower", apiResult.ToString(), 2));
 
 try {
 ZeroExtendWideningLowerTest(Vector64byte_0);
@@ -19364,7 +19364,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ZeroExtendWideningUpper' operation.", Vector128byte_0, apiResult);
+", GetValue("ZeroExtendWideningUpper", "Performs 'ZeroExtendWideningUpper' operation.", 0), GetValue("ZeroExtendWideningUpper", Vector128byte_0.ToString(), 1), GetValue("ZeroExtendWideningUpper", apiResult.ToString(), 2));
 
 try {
 ZeroExtendWideningUpperTest(Vector128byte_0);
@@ -19418,7 +19418,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsSaturateScalar' operation.", Vector64short_0, apiResult);
+", GetValue("AbsSaturateScalar", "Performs 'AbsSaturateScalar' operation.", 0), GetValue("AbsSaturateScalar", Vector64short_0.ToString(), 1), GetValue("AbsSaturateScalar", apiResult.ToString(), 2));
 
 try {
 AbsSaturateScalarTest(Vector64short_0);
@@ -19471,7 +19471,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteCompareGreaterThanScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("AbsoluteCompareGreaterThanScalar", "Performs 'AbsoluteCompareGreaterThanScalar' operation.", 0), GetValue("AbsoluteCompareGreaterThanScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThanScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThanScalar", apiResult.ToString(), 3));
 
 try {
 AbsoluteCompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
@@ -19524,7 +19524,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteCompareGreaterThanOrEqualScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("AbsoluteCompareGreaterThanOrEqualScalar", "Performs 'AbsoluteCompareGreaterThanOrEqualScalar' operation.", 0), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", apiResult.ToString(), 3));
 
 try {
 AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -19577,7 +19577,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteCompareLessThanScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("AbsoluteCompareLessThanScalar", "Performs 'AbsoluteCompareLessThanScalar' operation.", 0), GetValue("AbsoluteCompareLessThanScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareLessThanScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareLessThanScalar", apiResult.ToString(), 3));
 
 try {
 AbsoluteCompareLessThanScalarTest(Vector64double_0, Vector64double_1);
@@ -19630,7 +19630,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteCompareLessThanOrEqualScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("AbsoluteCompareLessThanOrEqualScalar", "Performs 'AbsoluteCompareLessThanOrEqualScalar' operation.", 0), GetValue("AbsoluteCompareLessThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareLessThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareLessThanOrEqualScalar", apiResult.ToString(), 3));
 
 try {
 AbsoluteCompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -19683,7 +19683,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AbsoluteDifferenceScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("AbsoluteDifferenceScalar", "Performs 'AbsoluteDifferenceScalar' operation.", 0), GetValue("AbsoluteDifferenceScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteDifferenceScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteDifferenceScalar", apiResult.ToString(), 3));
 
 try {
 AbsoluteDifferenceScalarTest(Vector64double_0, Vector64double_1);
@@ -19743,7 +19743,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddAcross' operation.", Vector64byte_0, apiResult);
+", GetValue("AddAcross", "Performs 'AddAcross' operation.", 0), GetValue("AddAcross", Vector64byte_0.ToString(), 1), GetValue("AddAcross", apiResult.ToString(), 2));
 
 try {
 AddAcrossTest(Vector64byte_0);
@@ -19803,7 +19803,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddAcrossWidening' operation.", Vector64byte_0, apiResult);
+", GetValue("AddAcrossWidening", "Performs 'AddAcrossWidening' operation.", 0), GetValue("AddAcrossWidening", Vector64byte_0.ToString(), 1), GetValue("AddAcrossWidening", apiResult.ToString(), 2));
 
 try {
 AddAcrossWideningTest(Vector64byte_0);
@@ -19857,7 +19857,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'AddPairwiseScalar' operation.", Vector64float_0, apiResult);
+", GetValue("AddPairwiseScalar", "Performs 'AddPairwiseScalar' operation.", 0), GetValue("AddPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("AddPairwiseScalar", apiResult.ToString(), 2));
 
 try {
 AddPairwiseScalarTest(Vector64float_0);
@@ -19912,7 +19912,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareEqualScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("CompareEqualScalar", "Performs 'CompareEqualScalar' operation.", 0), GetValue("CompareEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareEqualScalar", apiResult.ToString(), 3));
 
 try {
 CompareEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -19967,7 +19967,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareGreaterThanScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("CompareGreaterThanScalar", "Performs 'CompareGreaterThanScalar' operation.", 0), GetValue("CompareGreaterThanScalar", Vector64double_0.ToString(), 1), GetValue("CompareGreaterThanScalar", Vector64double_1.ToString(), 2), GetValue("CompareGreaterThanScalar", apiResult.ToString(), 3));
 
 try {
 CompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
@@ -20022,7 +20022,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareGreaterThanOrEqualScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("CompareGreaterThanOrEqualScalar", "Performs 'CompareGreaterThanOrEqualScalar' operation.", 0), GetValue("CompareGreaterThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareGreaterThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareGreaterThanOrEqualScalar", apiResult.ToString(), 3));
 
 try {
 CompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -20077,7 +20077,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareLessThanScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("CompareLessThanScalar", "Performs 'CompareLessThanScalar' operation.", 0), GetValue("CompareLessThanScalar", Vector64double_0.ToString(), 1), GetValue("CompareLessThanScalar", Vector64double_1.ToString(), 2), GetValue("CompareLessThanScalar", apiResult.ToString(), 3));
 
 try {
 CompareLessThanScalarTest(Vector64double_0, Vector64double_1);
@@ -20132,7 +20132,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareLessThanOrEqualScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("CompareLessThanOrEqualScalar", "Performs 'CompareLessThanOrEqualScalar' operation.", 0), GetValue("CompareLessThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareLessThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareLessThanOrEqualScalar", apiResult.ToString(), 3));
 
 try {
 CompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -20186,7 +20186,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'CompareTestScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("CompareTestScalar", "Performs 'CompareTestScalar' operation.", 0), GetValue("CompareTestScalar", Vector64double_0.ToString(), 1), GetValue("CompareTestScalar", Vector64double_1.ToString(), 2), GetValue("CompareTestScalar", apiResult.ToString(), 3));
 
 try {
 CompareTestScalarTest(Vector64double_0, Vector64double_1);
@@ -20239,7 +20239,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToDouble' operation.", Vector64float_0, apiResult);
+", GetValue("ConvertToDouble", "Performs 'ConvertToDouble' operation.", 0), GetValue("ConvertToDouble", Vector64float_0.ToString(), 1), GetValue("ConvertToDouble", apiResult.ToString(), 2));
 
 try {
 ConvertToDoubleTest(Vector64float_0);
@@ -20291,7 +20291,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToDoubleScalar' operation.", Vector64long_0, apiResult);
+", GetValue("ConvertToDoubleScalar", "Performs 'ConvertToDoubleScalar' operation.", 0), GetValue("ConvertToDoubleScalar", Vector64long_0.ToString(), 1), GetValue("ConvertToDoubleScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToDoubleScalarTest(Vector64long_0);
@@ -20337,7 +20337,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToDoubleUpper' operation.", Vector128float_0, apiResult);
+", GetValue("ConvertToDoubleUpper", "Performs 'ConvertToDoubleUpper' operation.", 0), GetValue("ConvertToDoubleUpper", Vector128float_0.ToString(), 1), GetValue("ConvertToDoubleUpper", apiResult.ToString(), 2));
 
 try {
 ConvertToDoubleUpperTest(Vector128float_0);
@@ -20383,7 +20383,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt64RoundAwayFromZero' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToInt64RoundAwayFromZero", "Performs 'ConvertToInt64RoundAwayFromZero' operation.", 0), GetValue("ConvertToInt64RoundAwayFromZero", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundAwayFromZero", apiResult.ToString(), 2));
 
 try {
 ConvertToInt64RoundAwayFromZeroTest(Vector128double_0);
@@ -20429,7 +20429,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt64RoundAwayFromZeroScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ConvertToInt64RoundAwayFromZeroScalar", "Performs 'ConvertToInt64RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToInt64RoundAwayFromZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundAwayFromZeroScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToInt64RoundAwayFromZeroScalarTest(Vector64double_0);
@@ -20475,7 +20475,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt64RoundToEven' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToInt64RoundToEven", "Performs 'ConvertToInt64RoundToEven' operation.", 0), GetValue("ConvertToInt64RoundToEven", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToEven", apiResult.ToString(), 2));
 
 try {
 ConvertToInt64RoundToEvenTest(Vector128double_0);
@@ -20521,7 +20521,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt64RoundToEvenScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ConvertToInt64RoundToEvenScalar", "Performs 'ConvertToInt64RoundToEvenScalar' operation.", 0), GetValue("ConvertToInt64RoundToEvenScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToEvenScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToInt64RoundToEvenScalarTest(Vector64double_0);
@@ -20567,7 +20567,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt64RoundToNegativeInfinity' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToInt64RoundToNegativeInfinity", "Performs 'ConvertToInt64RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToInt64RoundToNegativeInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToNegativeInfinity", apiResult.ToString(), 2));
 
 try {
 ConvertToInt64RoundToNegativeInfinityTest(Vector128double_0);
@@ -20613,7 +20613,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt64RoundToNegativeInfinityScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ConvertToInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToInt64RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToInt64RoundToNegativeInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
@@ -20659,7 +20659,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt64RoundToPositiveInfinity' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToInt64RoundToPositiveInfinity", "Performs 'ConvertToInt64RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToInt64RoundToPositiveInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToPositiveInfinity", apiResult.ToString(), 2));
 
 try {
 ConvertToInt64RoundToPositiveInfinityTest(Vector128double_0);
@@ -20705,7 +20705,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt64RoundToPositiveInfinityScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ConvertToInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToInt64RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToInt64RoundToPositiveInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
@@ -20751,7 +20751,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt64RoundToZero' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToInt64RoundToZero", "Performs 'ConvertToInt64RoundToZero' operation.", 0), GetValue("ConvertToInt64RoundToZero", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToZero", apiResult.ToString(), 2));
 
 try {
 ConvertToInt64RoundToZeroTest(Vector128double_0);
@@ -20797,7 +20797,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToInt64RoundToZeroScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ConvertToInt64RoundToZeroScalar", "Performs 'ConvertToInt64RoundToZeroScalar' operation.", 0), GetValue("ConvertToInt64RoundToZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToZeroScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToInt64RoundToZeroScalarTest(Vector64double_0);
@@ -20843,7 +20843,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToSingleLower' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToSingleLower", "Performs 'ConvertToSingleLower' operation.", 0), GetValue("ConvertToSingleLower", Vector128double_0.ToString(), 1), GetValue("ConvertToSingleLower", apiResult.ToString(), 2));
 
 try {
 ConvertToSingleLowerTest(Vector128double_0);
@@ -20889,7 +20889,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToSingleRoundToOddLower' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToSingleRoundToOddLower", "Performs 'ConvertToSingleRoundToOddLower' operation.", 0), GetValue("ConvertToSingleRoundToOddLower", Vector128double_0.ToString(), 1), GetValue("ConvertToSingleRoundToOddLower", apiResult.ToString(), 2));
 
 try {
 ConvertToSingleRoundToOddLowerTest(Vector128double_0);
@@ -20936,7 +20936,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToSingleRoundToOddUpper' operation.", Vector64float_0, Vector128double_0, apiResult);
+", GetValue("ConvertToSingleRoundToOddUpper", "Performs 'ConvertToSingleRoundToOddUpper' operation.", 0), GetValue("ConvertToSingleRoundToOddUpper", Vector64float_0.ToString(), 1), GetValue("ConvertToSingleRoundToOddUpper", Vector128double_0.ToString(), 2), GetValue("ConvertToSingleRoundToOddUpper", apiResult.ToString(), 3));
 
 try {
 ConvertToSingleRoundToOddUpperTest(Vector64float_0, Vector128double_0);
@@ -20983,7 +20983,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToSingleUpper' operation.", Vector64float_0, Vector128double_0, apiResult);
+", GetValue("ConvertToSingleUpper", "Performs 'ConvertToSingleUpper' operation.", 0), GetValue("ConvertToSingleUpper", Vector64float_0.ToString(), 1), GetValue("ConvertToSingleUpper", Vector128double_0.ToString(), 2), GetValue("ConvertToSingleUpper", apiResult.ToString(), 3));
 
 try {
 ConvertToSingleUpperTest(Vector64float_0, Vector128double_0);
@@ -21029,7 +21029,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt64RoundAwayFromZero' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToUInt64RoundAwayFromZero", "Performs 'ConvertToUInt64RoundAwayFromZero' operation.", 0), GetValue("ConvertToUInt64RoundAwayFromZero", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundAwayFromZero", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt64RoundAwayFromZeroTest(Vector128double_0);
@@ -21075,7 +21075,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt64RoundAwayFromZeroScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ConvertToUInt64RoundAwayFromZeroScalar", "Performs 'ConvertToUInt64RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToUInt64RoundAwayFromZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundAwayFromZeroScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64double_0);
@@ -21121,7 +21121,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt64RoundToEven' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToUInt64RoundToEven", "Performs 'ConvertToUInt64RoundToEven' operation.", 0), GetValue("ConvertToUInt64RoundToEven", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToEven", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt64RoundToEvenTest(Vector128double_0);
@@ -21167,7 +21167,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt64RoundToEvenScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ConvertToUInt64RoundToEvenScalar", "Performs 'ConvertToUInt64RoundToEvenScalar' operation.", 0), GetValue("ConvertToUInt64RoundToEvenScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToEvenScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt64RoundToEvenScalarTest(Vector64double_0);
@@ -21213,7 +21213,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt64RoundToNegativeInfinity' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToUInt64RoundToNegativeInfinity", "Performs 'ConvertToUInt64RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToUInt64RoundToNegativeInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToNegativeInfinity", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt64RoundToNegativeInfinityTest(Vector128double_0);
@@ -21259,7 +21259,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt64RoundToNegativeInfinityScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToUInt64RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
@@ -21305,7 +21305,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt64RoundToPositiveInfinity' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToUInt64RoundToPositiveInfinity", "Performs 'ConvertToUInt64RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToUInt64RoundToPositiveInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToPositiveInfinity", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt64RoundToPositiveInfinityTest(Vector128double_0);
@@ -21351,7 +21351,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt64RoundToPositiveInfinityScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToUInt64RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
@@ -21397,7 +21397,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt64RoundToZero' operation.", Vector128double_0, apiResult);
+", GetValue("ConvertToUInt64RoundToZero", "Performs 'ConvertToUInt64RoundToZero' operation.", 0), GetValue("ConvertToUInt64RoundToZero", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToZero", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt64RoundToZeroTest(Vector128double_0);
@@ -21443,7 +21443,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ConvertToUInt64RoundToZeroScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ConvertToUInt64RoundToZeroScalar", "Performs 'ConvertToUInt64RoundToZeroScalar' operation.", 0), GetValue("ConvertToUInt64RoundToZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToZeroScalar", apiResult.ToString(), 2));
 
 try {
 ConvertToUInt64RoundToZeroScalarTest(Vector64double_0);
@@ -21497,7 +21497,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Divide' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("Divide", "Performs 'Divide' operation.", 0), GetValue("Divide", Vector64float_0.ToString(), 1), GetValue("Divide", Vector64float_1.ToString(), 2), GetValue("Divide", apiResult.ToString(), 3));
 
 try {
 DivideTest(Vector64float_0, Vector64float_1);
@@ -21573,7 +21573,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ExtractNarrowingSaturateScalar' operation.", Vector64ushort_0, apiResult);
+", GetValue("ExtractNarrowingSaturateScalar", "Performs 'ExtractNarrowingSaturateScalar' operation.", 0), GetValue("ExtractNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ExtractNarrowingSaturateScalar", apiResult.ToString(), 2));
 
 try {
 ExtractNarrowingSaturateScalarTest(Vector64ushort_0);
@@ -21626,7 +21626,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ExtractNarrowingSaturateUnsignedScalar' operation.", Vector64short_0, apiResult);
+", GetValue("ExtractNarrowingSaturateUnsignedScalar", "Performs 'ExtractNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ExtractNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ExtractNarrowingSaturateUnsignedScalar", apiResult.ToString(), 2));
 
 try {
 ExtractNarrowingSaturateUnsignedScalarTest(Vector64short_0);
@@ -21681,7 +21681,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplyAddByScalar' operation.", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
+", GetValue("FusedMultiplyAddByScalar", "Performs 'FusedMultiplyAddByScalar' operation.", 0), GetValue("FusedMultiplyAddByScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplyAddByScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplyAddByScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplyAddByScalar", apiResult.ToString(), 4));
 
 try {
 FusedMultiplyAddByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
@@ -21739,7 +21739,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplyAddBySelectedScalar' operation.", Vector64float_0, Vector64float_1, Vector64float_2, byte_0, apiResult);
+", GetValue("FusedMultiplyAddBySelectedScalar", "Performs 'FusedMultiplyAddBySelectedScalar' operation.", 0), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplyAddBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplyAddBySelectedScalar", apiResult.ToString(), 5));
 
 try {
 FusedMultiplyAddBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
@@ -21795,7 +21795,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplyAddScalarBySelectedScalar' operation.", Vector64double_0, Vector64double_1, Vector128double_0, byte_0, apiResult);
+", GetValue("FusedMultiplyAddScalarBySelectedScalar", "Performs 'FusedMultiplyAddScalarBySelectedScalar' operation.", 0), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector128double_0.ToString(), 3), GetValue("FusedMultiplyAddScalarBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplyAddScalarBySelectedScalar", apiResult.ToString(), 5));
 
 try {
 FusedMultiplyAddScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
@@ -21850,7 +21850,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplySubtractByScalar' operation.", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
+", GetValue("FusedMultiplySubtractByScalar", "Performs 'FusedMultiplySubtractByScalar' operation.", 0), GetValue("FusedMultiplySubtractByScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplySubtractByScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplySubtractByScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplySubtractByScalar", apiResult.ToString(), 4));
 
 try {
 FusedMultiplySubtractByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
@@ -21908,7 +21908,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplySubtractBySelectedScalar' operation.", Vector64float_0, Vector64float_1, Vector64float_2, byte_0, apiResult);
+", GetValue("FusedMultiplySubtractBySelectedScalar", "Performs 'FusedMultiplySubtractBySelectedScalar' operation.", 0), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplySubtractBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplySubtractBySelectedScalar", apiResult.ToString(), 5));
 
 try {
 FusedMultiplySubtractBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
@@ -21964,7 +21964,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'FusedMultiplySubtractScalarBySelectedScalar' operation.", Vector64double_0, Vector64double_1, Vector128double_0, byte_0, apiResult);
+", GetValue("FusedMultiplySubtractScalarBySelectedScalar", "Performs 'FusedMultiplySubtractScalarBySelectedScalar' operation.", 0), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector128double_0.ToString(), 3), GetValue("FusedMultiplySubtractScalarBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplySubtractScalarBySelectedScalar", apiResult.ToString(), 5));
 
 try {
 FusedMultiplySubtractScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
@@ -22048,7 +22048,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'InsertSelectedScalar' operation.", Vector64byte_0, byte_0, Vector64byte_1, byte_1, apiResult);
+", GetValue("InsertSelectedScalar", "Performs 'InsertSelectedScalar' operation.", 0), GetValue("InsertSelectedScalar", Vector64byte_0.ToString(), 1), GetValue("InsertSelectedScalar", byte_0.ToString(), 2), GetValue("InsertSelectedScalar", Vector64byte_1.ToString(), 3), GetValue("InsertSelectedScalar", byte_1.ToString(), 4), GetValue("InsertSelectedScalar", apiResult.ToString(), 5));
 
 try {
 InsertSelectedScalarTest(Vector64byte_0, byte_0, Vector64byte_1, byte_1);
@@ -22109,7 +22109,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MaxAcross' operation.", Vector64byte_0, apiResult);
+", GetValue("MaxAcross", "Performs 'MaxAcross' operation.", 0), GetValue("MaxAcross", Vector64byte_0.ToString(), 1), GetValue("MaxAcross", apiResult.ToString(), 2));
 
 try {
 MaxAcrossTest(Vector64byte_0);
@@ -22155,7 +22155,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MaxNumberAcross' operation.", Vector128float_0, apiResult);
+", GetValue("MaxNumberAcross", "Performs 'MaxNumberAcross' operation.", 0), GetValue("MaxNumberAcross", Vector128float_0.ToString(), 1), GetValue("MaxNumberAcross", apiResult.ToString(), 2));
 
 try {
 MaxNumberAcrossTest(Vector128float_0);
@@ -22209,7 +22209,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MaxNumberPairwise' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("MaxNumberPairwise", "Performs 'MaxNumberPairwise' operation.", 0), GetValue("MaxNumberPairwise", Vector64float_0.ToString(), 1), GetValue("MaxNumberPairwise", Vector64float_1.ToString(), 2), GetValue("MaxNumberPairwise", apiResult.ToString(), 3));
 
 try {
 MaxNumberPairwiseTest(Vector64float_0, Vector64float_1);
@@ -22261,7 +22261,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MaxNumberPairwiseScalar' operation.", Vector64float_0, apiResult);
+", GetValue("MaxNumberPairwiseScalar", "Performs 'MaxNumberPairwiseScalar' operation.", 0), GetValue("MaxNumberPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MaxNumberPairwiseScalar", apiResult.ToString(), 2));
 
 try {
 MaxNumberPairwiseScalarTest(Vector64float_0);
@@ -22313,7 +22313,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MaxPairwiseScalar' operation.", Vector64float_0, apiResult);
+", GetValue("MaxPairwiseScalar", "Performs 'MaxPairwiseScalar' operation.", 0), GetValue("MaxPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MaxPairwiseScalar", apiResult.ToString(), 2));
 
 try {
 MaxPairwiseScalarTest(Vector64float_0);
@@ -22366,7 +22366,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MaxScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("MaxScalar", "Performs 'MaxScalar' operation.", 0), GetValue("MaxScalar", Vector64double_0.ToString(), 1), GetValue("MaxScalar", Vector64double_1.ToString(), 2), GetValue("MaxScalar", apiResult.ToString(), 3));
 
 try {
 MaxScalarTest(Vector64double_0, Vector64double_1);
@@ -22427,7 +22427,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MinAcross' operation.", Vector64byte_0, apiResult);
+", GetValue("MinAcross", "Performs 'MinAcross' operation.", 0), GetValue("MinAcross", Vector64byte_0.ToString(), 1), GetValue("MinAcross", apiResult.ToString(), 2));
 
 try {
 MinAcrossTest(Vector64byte_0);
@@ -22473,7 +22473,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MinNumberAcross' operation.", Vector128float_0, apiResult);
+", GetValue("MinNumberAcross", "Performs 'MinNumberAcross' operation.", 0), GetValue("MinNumberAcross", Vector128float_0.ToString(), 1), GetValue("MinNumberAcross", apiResult.ToString(), 2));
 
 try {
 MinNumberAcrossTest(Vector128float_0);
@@ -22527,7 +22527,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MinNumberPairwise' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("MinNumberPairwise", "Performs 'MinNumberPairwise' operation.", 0), GetValue("MinNumberPairwise", Vector64float_0.ToString(), 1), GetValue("MinNumberPairwise", Vector64float_1.ToString(), 2), GetValue("MinNumberPairwise", apiResult.ToString(), 3));
 
 try {
 MinNumberPairwiseTest(Vector64float_0, Vector64float_1);
@@ -22579,7 +22579,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MinNumberPairwiseScalar' operation.", Vector64float_0, apiResult);
+", GetValue("MinNumberPairwiseScalar", "Performs 'MinNumberPairwiseScalar' operation.", 0), GetValue("MinNumberPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MinNumberPairwiseScalar", apiResult.ToString(), 2));
 
 try {
 MinNumberPairwiseScalarTest(Vector64float_0);
@@ -22631,7 +22631,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MinPairwiseScalar' operation.", Vector64float_0, apiResult);
+", GetValue("MinPairwiseScalar", "Performs 'MinPairwiseScalar' operation.", 0), GetValue("MinPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MinPairwiseScalar", apiResult.ToString(), 2));
 
 try {
 MinPairwiseScalarTest(Vector64float_0);
@@ -22684,7 +22684,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MinScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("MinScalar", "Performs 'MinScalar' operation.", 0), GetValue("MinScalar", Vector64double_0.ToString(), 1), GetValue("MinScalar", Vector64double_1.ToString(), 2), GetValue("MinScalar", apiResult.ToString(), 3));
 
 try {
 MinScalarTest(Vector64double_0, Vector64double_1);
@@ -22737,7 +22737,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingSaturateHighScalar' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingSaturateHighScalar", "Performs 'MultiplyDoublingSaturateHighScalar' operation.", 0), GetValue("MultiplyDoublingSaturateHighScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingSaturateHighScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingSaturateHighScalar", apiResult.ToString(), 3));
 
 try {
 MultiplyDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
@@ -22793,7 +22793,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingScalarBySelectedScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyDoublingScalarBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
@@ -22847,7 +22847,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningAndAddSaturateScalar' operation.", Vector64int_0, Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingWideningAndAddSaturateScalar", "Performs 'MultiplyDoublingWideningAndAddSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
@@ -22901,7 +22901,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningAndSubtractSaturateScalar' operation.", Vector64int_0, Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", "Performs 'MultiplyDoublingWideningAndSubtractSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
@@ -22954,7 +22954,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningSaturateScalar' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyDoublingWideningSaturateScalar", "Performs 'MultiplyDoublingWideningSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateScalar", apiResult.ToString(), 3));
 
 try {
 MultiplyDoublingWideningSaturateScalarTest(Vector64short_0, Vector64short_1);
@@ -23010,7 +23010,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningSaturateScalarBySelectedScalar' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateScalarBySelectedScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", apiResult.ToString(), 4));
 
 try {
 MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
@@ -23067,7 +23067,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate' operation.", Vector64int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", apiResult.ToString(), 5));
 
 try {
 MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -23124,7 +23124,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate' operation.", Vector64int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", apiResult.ToString(), 5));
 
 try {
 MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -23178,7 +23178,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyExtended' operation.", Vector64float_0, Vector64float_1, apiResult);
+", GetValue("MultiplyExtended", "Performs 'MultiplyExtended' operation.", 0), GetValue("MultiplyExtended", Vector64float_0.ToString(), 1), GetValue("MultiplyExtended", Vector64float_1.ToString(), 2), GetValue("MultiplyExtended", apiResult.ToString(), 3));
 
 try {
 MultiplyExtendedTest(Vector64float_0, Vector64float_1);
@@ -23225,7 +23225,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyExtendedByScalar' operation.", Vector128double_0, Vector64double_0, apiResult);
+", GetValue("MultiplyExtendedByScalar", "Performs 'MultiplyExtendedByScalar' operation.", 0), GetValue("MultiplyExtendedByScalar", Vector128double_0.ToString(), 1), GetValue("MultiplyExtendedByScalar", Vector64double_0.ToString(), 2), GetValue("MultiplyExtendedByScalar", apiResult.ToString(), 3));
 
 try {
 MultiplyExtendedByScalarTest(Vector128double_0, Vector64double_0);
@@ -23282,7 +23282,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyExtendedBySelectedScalar' operation.", Vector64float_0, Vector64float_1, byte_0, apiResult);
+", GetValue("MultiplyExtendedBySelectedScalar", "Performs 'MultiplyExtendedBySelectedScalar' operation.", 0), GetValue("MultiplyExtendedBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("MultiplyExtendedBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("MultiplyExtendedBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyExtendedBySelectedScalar", apiResult.ToString(), 4));
 
 try {
 MultiplyExtendedBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
@@ -23335,7 +23335,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyExtendedScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("MultiplyExtendedScalar", "Performs 'MultiplyExtendedScalar' operation.", 0), GetValue("MultiplyExtendedScalar", Vector64double_0.ToString(), 1), GetValue("MultiplyExtendedScalar", Vector64double_1.ToString(), 2), GetValue("MultiplyExtendedScalar", apiResult.ToString(), 3));
 
 try {
 MultiplyExtendedScalarTest(Vector64double_0, Vector64double_1);
@@ -23390,7 +23390,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyExtendedScalarBySelectedScalar' operation.", Vector64double_0, Vector128double_0, byte_0, apiResult);
+", GetValue("MultiplyExtendedScalarBySelectedScalar", "Performs 'MultiplyExtendedScalarBySelectedScalar' operation.", 0), GetValue("MultiplyExtendedScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("MultiplyExtendedScalarBySelectedScalar", Vector128double_0.ToString(), 2), GetValue("MultiplyExtendedScalarBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyExtendedScalarBySelectedScalar", apiResult.ToString(), 4));
 
 try {
 MultiplyExtendedScalarBySelectedScalarTest(Vector64double_0, Vector128double_0, byte_0);
@@ -23443,7 +23443,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyRoundedDoublingSaturateHighScalar' operation.", Vector64short_0, Vector64short_1, apiResult);
+", GetValue("MultiplyRoundedDoublingSaturateHighScalar", "Performs 'MultiplyRoundedDoublingSaturateHighScalar' operation.", 0), GetValue("MultiplyRoundedDoublingSaturateHighScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingSaturateHighScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingSaturateHighScalar", apiResult.ToString(), 3));
 
 try {
 MultiplyRoundedDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
@@ -23499,7 +23499,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
 
 try {
 MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
@@ -23553,7 +23553,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'NegateSaturateScalar' operation.", Vector64short_0, apiResult);
+", GetValue("NegateSaturateScalar", "Performs 'NegateSaturateScalar' operation.", 0), GetValue("NegateSaturateScalar", Vector64short_0.ToString(), 1), GetValue("NegateSaturateScalar", apiResult.ToString(), 2));
 
 try {
 NegateSaturateScalarTest(Vector64short_0);
@@ -23605,7 +23605,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReciprocalEstimateScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ReciprocalEstimateScalar", "Performs 'ReciprocalEstimateScalar' operation.", 0), GetValue("ReciprocalEstimateScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalEstimateScalar", apiResult.ToString(), 2));
 
 try {
 ReciprocalEstimateScalarTest(Vector64double_0);
@@ -23657,7 +23657,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReciprocalExponentScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ReciprocalExponentScalar", "Performs 'ReciprocalExponentScalar' operation.", 0), GetValue("ReciprocalExponentScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalExponentScalar", apiResult.ToString(), 2));
 
 try {
 ReciprocalExponentScalarTest(Vector64double_0);
@@ -23709,7 +23709,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReciprocalSquareRootEstimateScalar' operation.", Vector64double_0, apiResult);
+", GetValue("ReciprocalSquareRootEstimateScalar", "Performs 'ReciprocalSquareRootEstimateScalar' operation.", 0), GetValue("ReciprocalSquareRootEstimateScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalSquareRootEstimateScalar", apiResult.ToString(), 2));
 
 try {
 ReciprocalSquareRootEstimateScalarTest(Vector64double_0);
@@ -23762,7 +23762,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReciprocalSquareRootStepScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("ReciprocalSquareRootStepScalar", "Performs 'ReciprocalSquareRootStepScalar' operation.", 0), GetValue("ReciprocalSquareRootStepScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalSquareRootStepScalar", Vector64double_1.ToString(), 2), GetValue("ReciprocalSquareRootStepScalar", apiResult.ToString(), 3));
 
 try {
 ReciprocalSquareRootStepScalarTest(Vector64double_0, Vector64double_1);
@@ -23815,7 +23815,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReciprocalStepScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
+", GetValue("ReciprocalStepScalar", "Performs 'ReciprocalStepScalar' operation.", 0), GetValue("ReciprocalStepScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalStepScalar", Vector64double_1.ToString(), 2), GetValue("ReciprocalStepScalar", apiResult.ToString(), 3));
 
 try {
 ReciprocalStepScalarTest(Vector64double_0, Vector64double_1);
@@ -23869,7 +23869,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticNarrowingSaturateScalar' operation.", Vector64int_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", Vector64int_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64int_0, byte_0);
@@ -23923,7 +23923,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedScalar' operation.", Vector64short_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
@@ -23977,7 +23977,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateScalar' operation.", Vector64int_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", Vector64int_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64int_0, byte_0);
@@ -24031,7 +24031,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar' operation.", Vector64short_0, byte_0, apiResult);
+", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", apiResult.ToString(), 3));
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
@@ -24088,7 +24088,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalNarrowingSaturateScalar' operation.", Vector64ushort_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalNarrowingSaturateScalar", "Performs 'ShiftRightLogicalNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightLogicalNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingSaturateScalar", apiResult.ToString(), 3));
 
 try {
 ShiftRightLogicalNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
@@ -24145,7 +24145,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateScalar' operation.", Vector64ushort_0, byte_0, apiResult);
+", GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", apiResult.ToString(), 3));
 
 try {
 ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
@@ -24198,7 +24198,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'Sqrt' operation.", Vector64float_0, apiResult);
+", GetValue("Sqrt", "Performs 'Sqrt' operation.", 0), GetValue("Sqrt", Vector64float_0.ToString(), 1), GetValue("Sqrt", apiResult.ToString(), 2));
 
 try {
 SqrtTest(Vector64float_0);
@@ -24271,7 +24271,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'StorePair' operation.", "<address>", Vector64byte_0, Vector64byte_1);
+", GetValue("StorePair", "Performs 'StorePair' operation.", 0), GetValue("StorePair", "<address>".ToString(), 1), GetValue("StorePair", Vector64byte_0.ToString(), 2), GetValue("StorePair", Vector64byte_1.ToString(), 3));
 
 try {
 StorePairTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
@@ -24345,7 +24345,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'StorePairNonTemporal' operation.", "<address>", Vector64byte_0, Vector64byte_1);
+", GetValue("StorePairNonTemporal", "Performs 'StorePairNonTemporal' operation.", 0), GetValue("StorePairNonTemporal", "<address>".ToString(), 1), GetValue("StorePairNonTemporal", Vector64byte_0.ToString(), 2), GetValue("StorePairNonTemporal", Vector64byte_1.ToString(), 3));
 
 try {
 StorePairNonTemporalTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
@@ -24402,7 +24402,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'StorePairScalar' operation.", "<address>", Vector64int_0, Vector64int_1);
+", GetValue("StorePairScalar", "Performs 'StorePairScalar' operation.", 0), GetValue("StorePairScalar", "<address>".ToString(), 1), GetValue("StorePairScalar", Vector64int_0.ToString(), 2), GetValue("StorePairScalar", Vector64int_1.ToString(), 3));
 
 try {
 StorePairScalarTest(intPtr_0, Vector64int_0, Vector64int_1);
@@ -24459,7 +24459,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'StorePairScalarNonTemporal' operation.", "<address>", Vector64int_0, Vector64int_1);
+", GetValue("StorePairScalarNonTemporal", "Performs 'StorePairScalarNonTemporal' operation.", 0), GetValue("StorePairScalarNonTemporal", "<address>".ToString(), 1), GetValue("StorePairScalarNonTemporal", Vector64int_0.ToString(), 2), GetValue("StorePairScalarNonTemporal", Vector64int_1.ToString(), 3));
 
 try {
 StorePairScalarNonTemporalTest(intPtr_0, Vector64int_0, Vector64int_1);
@@ -24514,7 +24514,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ReverseElementBits' operation.", Vector64byte_0, apiResult);
+", GetValue("ReverseElementBits", "Performs 'ReverseElementBits' operation.", 0), GetValue("ReverseElementBits", Vector64byte_0.ToString(), 1), GetValue("ReverseElementBits", apiResult.ToString(), 2));
 
 try {
 ReverseElementBitsTest(Vector64byte_0);
@@ -24582,7 +24582,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'TransposeEven' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("TransposeEven", "Performs 'TransposeEven' operation.", 0), GetValue("TransposeEven", Vector64byte_0.ToString(), 1), GetValue("TransposeEven", Vector64byte_1.ToString(), 2), GetValue("TransposeEven", apiResult.ToString(), 3));
 
 try {
 TransposeEvenTest(Vector64byte_0, Vector64byte_1);
@@ -24650,7 +24650,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'TransposeOdd' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("TransposeOdd", "Performs 'TransposeOdd' operation.", 0), GetValue("TransposeOdd", Vector64byte_0.ToString(), 1), GetValue("TransposeOdd", Vector64byte_1.ToString(), 2), GetValue("TransposeOdd", apiResult.ToString(), 3));
 
 try {
 TransposeOddTest(Vector64byte_0, Vector64byte_1);
@@ -24718,7 +24718,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'UnzipEven' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("UnzipEven", "Performs 'UnzipEven' operation.", 0), GetValue("UnzipEven", Vector64byte_0.ToString(), 1), GetValue("UnzipEven", Vector64byte_1.ToString(), 2), GetValue("UnzipEven", apiResult.ToString(), 3));
 
 try {
 UnzipEvenTest(Vector64byte_0, Vector64byte_1);
@@ -24786,7 +24786,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'UnzipOdd' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("UnzipOdd", "Performs 'UnzipOdd' operation.", 0), GetValue("UnzipOdd", Vector64byte_0.ToString(), 1), GetValue("UnzipOdd", Vector64byte_1.ToString(), 2), GetValue("UnzipOdd", apiResult.ToString(), 3));
 
 try {
 UnzipOddTest(Vector64byte_0, Vector64byte_1);
@@ -24854,7 +24854,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ZipHigh' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("ZipHigh", "Performs 'ZipHigh' operation.", 0), GetValue("ZipHigh", Vector64byte_0.ToString(), 1), GetValue("ZipHigh", Vector64byte_1.ToString(), 2), GetValue("ZipHigh", apiResult.ToString(), 3));
 
 try {
 ZipHighTest(Vector64byte_0, Vector64byte_1);
@@ -24922,7 +24922,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "Performs 'ZipLow' operation.", Vector64byte_0, Vector64byte_1, apiResult);
+", GetValue("ZipLow", "Performs 'ZipLow' operation.", 0), GetValue("ZipLow", Vector64byte_0.ToString(), 1), GetValue("ZipLow", Vector64byte_1.ToString(), 2), GetValue("ZipLow", apiResult.ToString(), 3));
 
 try {
 ZipLowTest(Vector64byte_0, Vector64byte_1);
