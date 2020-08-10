@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Resources;
 using System.Text;
 
 namespace AdvSimdBlogGen
@@ -21,7 +22,7 @@ namespace AdvSimdBlogGen
         private static Dictionary<string, string> globalTocBuilder = new Dictionary<string, string>();
         private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>> advSimdMethods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>>();
         private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>> arm64Methods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>>();
-        private static bool shouldGenerateCsv = true;
+        private static bool shouldGenerateCsv = false;
 
         public static void Main(string[] args)
         {
@@ -31,7 +32,7 @@ namespace AdvSimdBlogGen
             PopulateMethods();
             GenerateBlogContents();
             WriteGeneratedCodeToFile(Path.Combine(generatedCsProjPath, "AdvSimdGenerated.cs"));
-            SplitGeneratedBlog();
+            //SplitGeneratedBlog();
             PrintVarsAndMethodNames();
             Console.WriteLine("done");
         }
@@ -191,10 +192,10 @@ namespace AdvSimdBlogGen
 
             // method call
             List<string> args = new List<string>();
-            List<string> argsValueToPrint = new List<string>();
+            List<string> argsValueToPrint = new List<string>() { $"\"Performs '{methodName}' operation.\"" };
             StringBuilder argsValuePrintBuilder = new StringBuilder();
             Dictionary<string, int> argsTracker = new Dictionary<string, int>();
-            int argCount = 0;
+            int argCount = 1;
             bool isUnsafe = false;
             bool isVoid = signature.StartsWith("void ");
             bool isBytePtr = false, isIntPtr = false;

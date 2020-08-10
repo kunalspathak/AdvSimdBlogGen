@@ -4367,15 +4367,15 @@ Console.WriteLine(
 
 `Vector64<ushort> Abs(Vector64<short> value)`
 
-Performs 'Abs' operation.
+{0}
 
 ```csharp
 private Vector64<ushort> AbsTest(Vector64<short> value)
 {{
   return AdvSimd.Abs(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -4402,7 +4402,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, apiResult);
+", "Performs 'Abs' operation.", Vector64short_0, apiResult);
 
 try {
 AbsTest(Vector64short_0);
@@ -4411,7 +4411,6 @@ AbsTest(Vector64short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("Abs", "Performs 'Abs' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4430,15 +4429,15 @@ Console.WriteLine(
 
 `Vector64<short> AbsSaturate(Vector64<short> value)`
 
-Performs 'AbsSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<short> AbsSaturateTest(Vector64<short> value)
 {{
   return AdvSimd.AbsSaturate(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -4462,7 +4461,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, apiResult);
+", "Performs 'AbsSaturate' operation.", Vector64short_0, apiResult);
 
 try {
 AbsSaturateTest(Vector64short_0);
@@ -4471,7 +4470,6 @@ AbsSaturateTest(Vector64short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsSaturate", "Performs 'AbsSaturate' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4490,15 +4488,15 @@ Console.WriteLine(
 
 `Vector64<double> AbsScalar(Vector64<double> value)`
 
-Performs 'AbsScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> AbsScalarTest(Vector64<double> value)
 {{
   return AdvSimd.AbsScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -4518,7 +4516,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'AbsScalar' operation.", Vector64double_0, apiResult);
 
 try {
 AbsScalarTest(Vector64double_0);
@@ -4527,7 +4525,6 @@ AbsScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsScalar", "Performs 'AbsScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4546,16 +4543,16 @@ Console.WriteLine(
 
 `Vector64<float> AbsoluteCompareGreaterThan(Vector64<float> left, Vector64<float> right)`
 
-Performs 'AbsoluteCompareGreaterThan' operation.
+{0}
 
 ```csharp
 private Vector64<float> AbsoluteCompareGreaterThanTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.AbsoluteCompareGreaterThan(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -4575,7 +4572,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'AbsoluteCompareGreaterThan' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 AbsoluteCompareGreaterThanTest(Vector64float_0, Vector64float_1);
@@ -4584,7 +4581,6 @@ AbsoluteCompareGreaterThanTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteCompareGreaterThan", "Performs 'AbsoluteCompareGreaterThan' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4603,16 +4599,16 @@ Console.WriteLine(
 
 `Vector64<float> AbsoluteCompareGreaterThanOrEqual(Vector64<float> left, Vector64<float> right)`
 
-Performs 'AbsoluteCompareGreaterThanOrEqual' operation.
+{0}
 
 ```csharp
 private Vector64<float> AbsoluteCompareGreaterThanOrEqualTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.AbsoluteCompareGreaterThanOrEqual(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -4632,7 +4628,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'AbsoluteCompareGreaterThanOrEqual' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 AbsoluteCompareGreaterThanOrEqualTest(Vector64float_0, Vector64float_1);
@@ -4641,7 +4637,6 @@ AbsoluteCompareGreaterThanOrEqualTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteCompareGreaterThanOrEqual", "Performs 'AbsoluteCompareGreaterThanOrEqual' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4660,16 +4655,16 @@ Console.WriteLine(
 
 `Vector64<float> AbsoluteCompareLessThan(Vector64<float> left, Vector64<float> right)`
 
-Performs 'AbsoluteCompareLessThan' operation.
+{0}
 
 ```csharp
 private Vector64<float> AbsoluteCompareLessThanTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.AbsoluteCompareLessThan(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -4689,7 +4684,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'AbsoluteCompareLessThan' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 AbsoluteCompareLessThanTest(Vector64float_0, Vector64float_1);
@@ -4698,7 +4693,6 @@ AbsoluteCompareLessThanTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteCompareLessThan", "Performs 'AbsoluteCompareLessThan' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4717,16 +4711,16 @@ Console.WriteLine(
 
 `Vector64<float> AbsoluteCompareLessThanOrEqual(Vector64<float> left, Vector64<float> right)`
 
-Performs 'AbsoluteCompareLessThanOrEqual' operation.
+{0}
 
 ```csharp
 private Vector64<float> AbsoluteCompareLessThanOrEqualTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.AbsoluteCompareLessThanOrEqual(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -4746,7 +4740,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'AbsoluteCompareLessThanOrEqual' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 AbsoluteCompareLessThanOrEqualTest(Vector64float_0, Vector64float_1);
@@ -4755,7 +4749,6 @@ AbsoluteCompareLessThanOrEqualTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteCompareLessThanOrEqual", "Performs 'AbsoluteCompareLessThanOrEqual' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4774,16 +4767,16 @@ Console.WriteLine(
 
 `Vector64<byte> AbsoluteDifference(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'AbsoluteDifference' operation.
+{0}
 
 ```csharp
 private Vector64<byte> AbsoluteDifferenceTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.AbsoluteDifference(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -4815,7 +4808,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'AbsoluteDifference' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 AbsoluteDifferenceTest(Vector64byte_0, Vector64byte_1);
@@ -4824,7 +4817,6 @@ AbsoluteDifferenceTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteDifference", "Performs 'AbsoluteDifference' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4843,17 +4835,17 @@ Console.WriteLine(
 
 `Vector64<byte> AbsoluteDifferenceAdd(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'AbsoluteDifferenceAdd' operation.
+{0}
 
 ```csharp
 private Vector64<byte> AbsoluteDifferenceAddTest(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.AbsoluteDifferenceAdd(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -4880,7 +4872,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
+", "Performs 'AbsoluteDifferenceAdd' operation.", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 
 try {
 AbsoluteDifferenceAddTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
@@ -4889,7 +4881,6 @@ AbsoluteDifferenceAddTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteDifferenceAdd", "Performs 'AbsoluteDifferenceAdd' operation", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4908,16 +4899,16 @@ Console.WriteLine(
 
 `Vector128<ushort> AbsoluteDifferenceWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'AbsoluteDifferenceWideningLower' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> AbsoluteDifferenceWideningLowerTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.AbsoluteDifferenceWideningLower(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -4938,7 +4929,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'AbsoluteDifferenceWideningLower' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 AbsoluteDifferenceWideningLowerTest(Vector64byte_0, Vector64byte_1);
@@ -4947,7 +4938,6 @@ AbsoluteDifferenceWideningLowerTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteDifferenceWideningLower", "Performs 'AbsoluteDifferenceWideningLower' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -4966,17 +4956,17 @@ Console.WriteLine(
 
 `Vector128<ushort> AbsoluteDifferenceWideningLowerAndAdd(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'AbsoluteDifferenceWideningLowerAndAdd' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> AbsoluteDifferenceWideningLowerAndAddTest(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.AbsoluteDifferenceWideningLowerAndAdd(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -4997,7 +4987,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'AbsoluteDifferenceWideningLowerAndAdd' operation.", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 AbsoluteDifferenceWideningLowerAndAddTest(Vector128ushort_0, Vector64byte_0, Vector64byte_1);
@@ -5006,7 +4996,6 @@ AbsoluteDifferenceWideningLowerAndAddTest(Vector128ushort_0, Vector64byte_0, Vec
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteDifferenceWideningLowerAndAdd", "Performs 'AbsoluteDifferenceWideningLowerAndAdd' operation", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5025,16 +5014,16 @@ Console.WriteLine(
 
 `Vector128<ushort> AbsoluteDifferenceWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
-Performs 'AbsoluteDifferenceWideningUpper' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> AbsoluteDifferenceWideningUpperTest(Vector128<byte> left, Vector128<byte> right)
 {{
   return AdvSimd.AbsoluteDifferenceWideningUpper(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -5055,7 +5044,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128byte_0, Vector128byte_1, apiResult);
+", "Performs 'AbsoluteDifferenceWideningUpper' operation.", Vector128byte_0, Vector128byte_1, apiResult);
 
 try {
 AbsoluteDifferenceWideningUpperTest(Vector128byte_0, Vector128byte_1);
@@ -5064,7 +5053,6 @@ AbsoluteDifferenceWideningUpperTest(Vector128byte_0, Vector128byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteDifferenceWideningUpper", "Performs 'AbsoluteDifferenceWideningUpper' operation", Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5083,17 +5071,17 @@ Console.WriteLine(
 
 `Vector128<ushort> AbsoluteDifferenceWideningUpperAndAdd(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)`
 
-Performs 'AbsoluteDifferenceWideningUpperAndAdd' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> AbsoluteDifferenceWideningUpperAndAddTest(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)
 {{
   return AdvSimd.AbsoluteDifferenceWideningUpperAndAdd(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -5114,7 +5102,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
+", "Performs 'AbsoluteDifferenceWideningUpperAndAdd' operation.", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
 
 try {
 AbsoluteDifferenceWideningUpperAndAddTest(Vector128ushort_0, Vector128byte_0, Vector128byte_1);
@@ -5123,7 +5111,6 @@ AbsoluteDifferenceWideningUpperAndAddTest(Vector128ushort_0, Vector128byte_0, Ve
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteDifferenceWideningUpperAndAdd", "Performs 'AbsoluteDifferenceWideningUpperAndAdd' operation", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5142,16 +5129,16 @@ Console.WriteLine(
 
 `Vector64<byte> Add(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'Add' operation.
+{0}
 
 ```csharp
 private Vector64<byte> AddTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Add(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -5185,7 +5172,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'Add' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 AddTest(Vector64byte_0, Vector64byte_1);
@@ -5194,7 +5181,6 @@ AddTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("Add", "Performs 'Add' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5213,16 +5199,16 @@ Console.WriteLine(
 
 `Vector64<byte> AddHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
 
-Performs 'AddHighNarrowingLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> AddHighNarrowingLowerTest(Vector128<ushort> left, Vector128<ushort> right)
 {{
   return AdvSimd.AddHighNarrowingLower(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -5243,7 +5229,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, Vector128ushort_1, apiResult);
+", "Performs 'AddHighNarrowingLower' operation.", Vector128ushort_0, Vector128ushort_1, apiResult);
 
 try {
 AddHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
@@ -5252,7 +5238,6 @@ AddHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AddHighNarrowingLower", "Performs 'AddHighNarrowingLower' operation", Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5271,17 +5256,17 @@ Console.WriteLine(
 
 `Vector128<byte> AddHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
 
-Performs 'AddHighNarrowingUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> AddHighNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)
 {{
   return AdvSimd.AddHighNarrowingUpper(lower, left, right);
 }}
-// lower = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// lower = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -5302,7 +5287,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
+", "Performs 'AddHighNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 
 try {
 AddHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
@@ -5311,7 +5296,6 @@ AddHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AddHighNarrowingUpper", "Performs 'AddHighNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5330,16 +5314,16 @@ Console.WriteLine(
 
 `Vector64<byte> AddPairwise(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'AddPairwise' operation.
+{0}
 
 ```csharp
 private Vector64<byte> AddPairwiseTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.AddPairwise(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -5373,7 +5357,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'AddPairwise' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 AddPairwiseTest(Vector64byte_0, Vector64byte_1);
@@ -5382,7 +5366,6 @@ AddPairwiseTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AddPairwise", "Performs 'AddPairwise' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5401,15 +5384,15 @@ Console.WriteLine(
 
 `Vector64<ushort> AddPairwiseWidening(Vector64<byte> value)`
 
-Performs 'AddPairwiseWidening' operation.
+{0}
 
 ```csharp
 private Vector64<ushort> AddPairwiseWideningTest(Vector64<byte> value)
 {{
   return AdvSimd.AddPairwiseWidening(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -5434,7 +5417,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, apiResult);
+", "Performs 'AddPairwiseWidening' operation.", Vector64byte_0, apiResult);
 
 try {
 AddPairwiseWideningTest(Vector64byte_0);
@@ -5443,7 +5426,6 @@ AddPairwiseWideningTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("AddPairwiseWidening", "Performs 'AddPairwiseWidening' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5462,16 +5444,16 @@ Console.WriteLine(
 
 `Vector64<ushort> AddPairwiseWideningAndAdd(Vector64<ushort> addend, Vector64<byte> value)`
 
-Performs 'AddPairwiseWideningAndAdd' operation.
+{0}
 
 ```csharp
 private Vector64<ushort> AddPairwiseWideningAndAddTest(Vector64<ushort> addend, Vector64<byte> value)
 {{
   return AdvSimd.AddPairwiseWideningAndAdd(addend, value);
 }}
-// addend = {0}
-// value = {1}
-// Result = {2}
+// addend = {1}
+// value = {2}
+// Result = {3}
 
 ```
 
@@ -5496,7 +5478,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64ushort_0, Vector64byte_0, apiResult);
+", "Performs 'AddPairwiseWideningAndAdd' operation.", Vector64ushort_0, Vector64byte_0, apiResult);
 
 try {
 AddPairwiseWideningAndAddTest(Vector64ushort_0, Vector64byte_0);
@@ -5505,7 +5487,6 @@ AddPairwiseWideningAndAddTest(Vector64ushort_0, Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("AddPairwiseWideningAndAdd", "Performs 'AddPairwiseWideningAndAdd' operation", Vector64ushort_0, Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5524,16 +5505,16 @@ Console.WriteLine(
 
 `Vector64<long> AddPairwiseWideningAndAddScalar(Vector64<long> addend, Vector64<int> value)`
 
-Performs 'AddPairwiseWideningAndAddScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> AddPairwiseWideningAndAddScalarTest(Vector64<long> addend, Vector64<int> value)
 {{
   return AdvSimd.AddPairwiseWideningAndAddScalar(addend, value);
 }}
-// addend = {0}
-// value = {1}
-// Result = {2}
+// addend = {1}
+// value = {2}
+// Result = {3}
 
 ```
 
@@ -5550,7 +5531,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64int_0, apiResult);
+", "Performs 'AddPairwiseWideningAndAddScalar' operation.", Vector64long_0, Vector64int_0, apiResult);
 
 try {
 AddPairwiseWideningAndAddScalarTest(Vector64long_0, Vector64int_0);
@@ -5559,7 +5540,6 @@ AddPairwiseWideningAndAddScalarTest(Vector64long_0, Vector64int_0);
    apiResult = "TODO";
 }
 
-LogInCsv("AddPairwiseWideningAndAddScalar", "Performs 'AddPairwiseWideningAndAddScalar' operation", Vector64long_0, Vector64int_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5578,15 +5558,15 @@ Console.WriteLine(
 
 `Vector64<long> AddPairwiseWideningScalar(Vector64<int> value)`
 
-Performs 'AddPairwiseWideningScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> AddPairwiseWideningScalarTest(Vector64<int> value)
 {{
   return AdvSimd.AddPairwiseWideningScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -5603,7 +5583,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64int_0, apiResult);
+", "Performs 'AddPairwiseWideningScalar' operation.", Vector64int_0, apiResult);
 
 try {
 AddPairwiseWideningScalarTest(Vector64int_0);
@@ -5612,7 +5592,6 @@ AddPairwiseWideningScalarTest(Vector64int_0);
    apiResult = "TODO";
 }
 
-LogInCsv("AddPairwiseWideningScalar", "Performs 'AddPairwiseWideningScalar' operation", Vector64int_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5631,16 +5610,16 @@ Console.WriteLine(
 
 `Vector64<byte> AddRoundedHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
 
-Performs 'AddRoundedHighNarrowingLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> AddRoundedHighNarrowingLowerTest(Vector128<ushort> left, Vector128<ushort> right)
 {{
   return AdvSimd.AddRoundedHighNarrowingLower(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -5661,7 +5640,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, Vector128ushort_1, apiResult);
+", "Performs 'AddRoundedHighNarrowingLower' operation.", Vector128ushort_0, Vector128ushort_1, apiResult);
 
 try {
 AddRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
@@ -5670,7 +5649,6 @@ AddRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AddRoundedHighNarrowingLower", "Performs 'AddRoundedHighNarrowingLower' operation", Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5689,17 +5667,17 @@ Console.WriteLine(
 
 `Vector128<byte> AddRoundedHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
 
-Performs 'AddRoundedHighNarrowingUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> AddRoundedHighNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)
 {{
   return AdvSimd.AddRoundedHighNarrowingUpper(lower, left, right);
 }}
-// lower = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// lower = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -5720,7 +5698,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
+", "Performs 'AddRoundedHighNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 
 try {
 AddRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
@@ -5729,7 +5707,6 @@ AddRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ush
    apiResult = "TODO";
 }
 
-LogInCsv("AddRoundedHighNarrowingUpper", "Performs 'AddRoundedHighNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5748,16 +5725,16 @@ Console.WriteLine(
 
 `Vector64<byte> AddSaturate(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'AddSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<byte> AddSaturateTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.AddSaturate(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -5802,7 +5779,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'AddSaturate' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 AddSaturateTest(Vector64byte_0, Vector64byte_1);
@@ -5811,7 +5788,6 @@ AddSaturateTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AddSaturate", "Performs 'AddSaturate' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5830,16 +5806,16 @@ Console.WriteLine(
 
 `Vector64<long> AddSaturateScalar(Vector64<long> left, Vector64<long> right)`
 
-Performs 'AddSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> AddSaturateScalarTest(Vector64<long> left, Vector64<long> right)
 {{
   return AdvSimd.AddSaturateScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -5872,7 +5848,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, apiResult);
+", "Performs 'AddSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
 
 try {
 AddSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -5881,7 +5857,6 @@ AddSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AddSaturateScalar", "Performs 'AddSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5900,16 +5875,16 @@ Console.WriteLine(
 
 `Vector64<double> AddScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'AddScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> AddScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.AddScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -5928,7 +5903,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'AddScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 AddScalarTest(Vector64double_0, Vector64double_1);
@@ -5937,7 +5912,6 @@ AddScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AddScalar", "Performs 'AddScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -5956,16 +5930,16 @@ Console.WriteLine(
 
 `Vector128<ushort> AddWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'AddWideningLower' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> AddWideningLowerTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.AddWideningLower(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -5992,7 +5966,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'AddWideningLower' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 AddWideningLowerTest(Vector64byte_0, Vector64byte_1);
@@ -6001,7 +5975,6 @@ AddWideningLowerTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AddWideningLower", "Performs 'AddWideningLower' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6020,16 +5993,16 @@ Console.WriteLine(
 
 `Vector128<ushort> AddWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
-Performs 'AddWideningUpper' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> AddWideningUpperTest(Vector128<byte> left, Vector128<byte> right)
 {{
   return AdvSimd.AddWideningUpper(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -6056,7 +6029,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128byte_0, Vector128byte_1, apiResult);
+", "Performs 'AddWideningUpper' operation.", Vector128byte_0, Vector128byte_1, apiResult);
 
 try {
 AddWideningUpperTest(Vector128byte_0, Vector128byte_1);
@@ -6065,7 +6038,6 @@ AddWideningUpperTest(Vector128byte_0, Vector128byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AddWideningUpper", "Performs 'AddWideningUpper' operation", Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6084,16 +6056,16 @@ Console.WriteLine(
 
 `Vector64<byte> And(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'And' operation.
+{0}
 
 ```csharp
 private Vector64<byte> AndTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.And(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -6128,7 +6100,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'And' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 AndTest(Vector64byte_0, Vector64byte_1);
@@ -6137,7 +6109,6 @@ AndTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("And", "Performs 'And' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6156,16 +6127,16 @@ Console.WriteLine(
 
 `Vector64<byte> BitwiseClear(Vector64<byte> value, Vector64<byte> mask)`
 
-Performs 'BitwiseClear' operation.
+{0}
 
 ```csharp
 private Vector64<byte> BitwiseClearTest(Vector64<byte> value, Vector64<byte> mask)
 {{
   return AdvSimd.BitwiseClear(value, mask);
 }}
-// value = {0}
-// mask = {1}
-// Result = {2}
+// value = {1}
+// mask = {2}
+// Result = {3}
 
 ```
 
@@ -6200,7 +6171,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'BitwiseClear' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 BitwiseClearTest(Vector64byte_0, Vector64byte_1);
@@ -6209,7 +6180,6 @@ BitwiseClearTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("BitwiseClear", "Performs 'BitwiseClear' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6228,17 +6198,17 @@ Console.WriteLine(
 
 `Vector64<byte> BitwiseSelect(Vector64<byte> select, Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'BitwiseSelect' operation.
+{0}
 
 ```csharp
 private Vector64<byte> BitwiseSelectTest(Vector64<byte> select, Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.BitwiseSelect(select, left, right);
 }}
-// select = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// select = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -6273,7 +6243,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
+", "Performs 'BitwiseSelect' operation.", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 
 try {
 BitwiseSelectTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
@@ -6282,7 +6252,6 @@ BitwiseSelectTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
    apiResult = "TODO";
 }
 
-LogInCsv("BitwiseSelect", "Performs 'BitwiseSelect' operation", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6301,15 +6270,15 @@ Console.WriteLine(
 
 `Vector64<float> Ceiling(Vector64<float> value)`
 
-Performs 'Ceiling' operation.
+{0}
 
 ```csharp
 private Vector64<float> CeilingTest(Vector64<float> value)
 {{
   return AdvSimd.Ceiling(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -6329,7 +6298,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'Ceiling' operation.", Vector64float_0, apiResult);
 
 try {
 CeilingTest(Vector64float_0);
@@ -6338,7 +6307,6 @@ CeilingTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("Ceiling", "Performs 'Ceiling' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6357,15 +6325,15 @@ Console.WriteLine(
 
 `Vector64<double> CeilingScalar(Vector64<double> value)`
 
-Performs 'CeilingScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> CeilingScalarTest(Vector64<double> value)
 {{
   return AdvSimd.CeilingScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -6382,7 +6350,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'CeilingScalar' operation.", Vector64double_0, apiResult);
 
 try {
 CeilingScalarTest(Vector64double_0);
@@ -6391,7 +6359,6 @@ CeilingScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("CeilingScalar", "Performs 'CeilingScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6410,16 +6377,16 @@ Console.WriteLine(
 
 `Vector64<byte> CompareEqual(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'CompareEqual' operation.
+{0}
 
 ```csharp
 private Vector64<byte> CompareEqualTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.CompareEqual(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -6453,7 +6420,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'CompareEqual' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 CompareEqualTest(Vector64byte_0, Vector64byte_1);
@@ -6462,7 +6429,6 @@ CompareEqualTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareEqual", "Performs 'CompareEqual' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6481,16 +6447,16 @@ Console.WriteLine(
 
 `Vector64<byte> CompareGreaterThan(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'CompareGreaterThan' operation.
+{0}
 
 ```csharp
 private Vector64<byte> CompareGreaterThanTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.CompareGreaterThan(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -6524,7 +6490,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'CompareGreaterThan' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 CompareGreaterThanTest(Vector64byte_0, Vector64byte_1);
@@ -6533,7 +6499,6 @@ CompareGreaterThanTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareGreaterThan", "Performs 'CompareGreaterThan' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6552,16 +6517,16 @@ Console.WriteLine(
 
 `Vector64<byte> CompareGreaterThanOrEqual(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'CompareGreaterThanOrEqual' operation.
+{0}
 
 ```csharp
 private Vector64<byte> CompareGreaterThanOrEqualTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.CompareGreaterThanOrEqual(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -6595,7 +6560,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'CompareGreaterThanOrEqual' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 CompareGreaterThanOrEqualTest(Vector64byte_0, Vector64byte_1);
@@ -6604,7 +6569,6 @@ CompareGreaterThanOrEqualTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareGreaterThanOrEqual", "Performs 'CompareGreaterThanOrEqual' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6623,16 +6587,16 @@ Console.WriteLine(
 
 `Vector64<byte> CompareLessThan(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'CompareLessThan' operation.
+{0}
 
 ```csharp
 private Vector64<byte> CompareLessThanTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.CompareLessThan(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -6666,7 +6630,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'CompareLessThan' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 CompareLessThanTest(Vector64byte_0, Vector64byte_1);
@@ -6675,7 +6639,6 @@ CompareLessThanTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareLessThan", "Performs 'CompareLessThan' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6694,16 +6657,16 @@ Console.WriteLine(
 
 `Vector64<byte> CompareLessThanOrEqual(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'CompareLessThanOrEqual' operation.
+{0}
 
 ```csharp
 private Vector64<byte> CompareLessThanOrEqualTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.CompareLessThanOrEqual(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -6737,7 +6700,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'CompareLessThanOrEqual' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 CompareLessThanOrEqualTest(Vector64byte_0, Vector64byte_1);
@@ -6746,7 +6709,6 @@ CompareLessThanOrEqualTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareLessThanOrEqual", "Performs 'CompareLessThanOrEqual' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6765,16 +6727,16 @@ Console.WriteLine(
 
 `Vector64<byte> CompareTest(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'CompareTest' operation.
+{0}
 
 ```csharp
 private Vector64<byte> CompareTestTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.CompareTest(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -6808,7 +6770,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'CompareTest' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 CompareTestTest(Vector64byte_0, Vector64byte_1);
@@ -6817,7 +6779,6 @@ CompareTestTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareTest", "Performs 'CompareTest' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6836,15 +6797,15 @@ Console.WriteLine(
 
 `Vector64<int> ConvertToInt32RoundAwayFromZero(Vector64<float> value)`
 
-Performs 'ConvertToInt32RoundAwayFromZero' operation.
+{0}
 
 ```csharp
 private Vector64<int> ConvertToInt32RoundAwayFromZeroTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToInt32RoundAwayFromZero(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -6861,7 +6822,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToInt32RoundAwayFromZero' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToInt32RoundAwayFromZeroTest(Vector64float_0);
@@ -6870,7 +6831,6 @@ ConvertToInt32RoundAwayFromZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt32RoundAwayFromZero", "Performs 'ConvertToInt32RoundAwayFromZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6889,15 +6849,15 @@ Console.WriteLine(
 
 `Vector64<int> ConvertToInt32RoundAwayFromZeroScalar(Vector64<float> value)`
 
-Performs 'ConvertToInt32RoundAwayFromZeroScalar' operation.
+{0}
 
 ```csharp
 private Vector64<int> ConvertToInt32RoundAwayFromZeroScalarTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToInt32RoundAwayFromZeroScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -6908,7 +6868,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToInt32RoundAwayFromZeroScalar' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToInt32RoundAwayFromZeroScalarTest(Vector64float_0);
@@ -6917,7 +6877,6 @@ ConvertToInt32RoundAwayFromZeroScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt32RoundAwayFromZeroScalar", "Performs 'ConvertToInt32RoundAwayFromZeroScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6936,15 +6895,15 @@ Console.WriteLine(
 
 `Vector64<int> ConvertToInt32RoundToEven(Vector64<float> value)`
 
-Performs 'ConvertToInt32RoundToEven' operation.
+{0}
 
 ```csharp
 private Vector64<int> ConvertToInt32RoundToEvenTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToInt32RoundToEven(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -6961,7 +6920,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToInt32RoundToEven' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToInt32RoundToEvenTest(Vector64float_0);
@@ -6970,7 +6929,6 @@ ConvertToInt32RoundToEvenTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt32RoundToEven", "Performs 'ConvertToInt32RoundToEven' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -6989,15 +6947,15 @@ Console.WriteLine(
 
 `Vector64<int> ConvertToInt32RoundToEvenScalar(Vector64<float> value)`
 
-Performs 'ConvertToInt32RoundToEvenScalar' operation.
+{0}
 
 ```csharp
 private Vector64<int> ConvertToInt32RoundToEvenScalarTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToInt32RoundToEvenScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7008,7 +6966,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToInt32RoundToEvenScalar' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToInt32RoundToEvenScalarTest(Vector64float_0);
@@ -7017,7 +6975,6 @@ ConvertToInt32RoundToEvenScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt32RoundToEvenScalar", "Performs 'ConvertToInt32RoundToEvenScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7036,15 +6993,15 @@ Console.WriteLine(
 
 `Vector64<int> ConvertToInt32RoundToNegativeInfinity(Vector64<float> value)`
 
-Performs 'ConvertToInt32RoundToNegativeInfinity' operation.
+{0}
 
 ```csharp
 private Vector64<int> ConvertToInt32RoundToNegativeInfinityTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToInt32RoundToNegativeInfinity(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7061,7 +7018,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToInt32RoundToNegativeInfinity' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToInt32RoundToNegativeInfinityTest(Vector64float_0);
@@ -7070,7 +7027,6 @@ ConvertToInt32RoundToNegativeInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt32RoundToNegativeInfinity", "Performs 'ConvertToInt32RoundToNegativeInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7089,15 +7045,15 @@ Console.WriteLine(
 
 `Vector64<int> ConvertToInt32RoundToNegativeInfinityScalar(Vector64<float> value)`
 
-Performs 'ConvertToInt32RoundToNegativeInfinityScalar' operation.
+{0}
 
 ```csharp
 private Vector64<int> ConvertToInt32RoundToNegativeInfinityScalarTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToInt32RoundToNegativeInfinityScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7108,7 +7064,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToInt32RoundToNegativeInfinityScalar' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToInt32RoundToNegativeInfinityScalarTest(Vector64float_0);
@@ -7117,7 +7073,6 @@ ConvertToInt32RoundToNegativeInfinityScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt32RoundToNegativeInfinityScalar", "Performs 'ConvertToInt32RoundToNegativeInfinityScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7136,15 +7091,15 @@ Console.WriteLine(
 
 `Vector64<int> ConvertToInt32RoundToPositiveInfinity(Vector64<float> value)`
 
-Performs 'ConvertToInt32RoundToPositiveInfinity' operation.
+{0}
 
 ```csharp
 private Vector64<int> ConvertToInt32RoundToPositiveInfinityTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToInt32RoundToPositiveInfinity(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7161,7 +7116,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToInt32RoundToPositiveInfinity' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToInt32RoundToPositiveInfinityTest(Vector64float_0);
@@ -7170,7 +7125,6 @@ ConvertToInt32RoundToPositiveInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt32RoundToPositiveInfinity", "Performs 'ConvertToInt32RoundToPositiveInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7189,15 +7143,15 @@ Console.WriteLine(
 
 `Vector64<int> ConvertToInt32RoundToPositiveInfinityScalar(Vector64<float> value)`
 
-Performs 'ConvertToInt32RoundToPositiveInfinityScalar' operation.
+{0}
 
 ```csharp
 private Vector64<int> ConvertToInt32RoundToPositiveInfinityScalarTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToInt32RoundToPositiveInfinityScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7208,7 +7162,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToInt32RoundToPositiveInfinityScalar' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToInt32RoundToPositiveInfinityScalarTest(Vector64float_0);
@@ -7217,7 +7171,6 @@ ConvertToInt32RoundToPositiveInfinityScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt32RoundToPositiveInfinityScalar", "Performs 'ConvertToInt32RoundToPositiveInfinityScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7236,15 +7189,15 @@ Console.WriteLine(
 
 `Vector64<int> ConvertToInt32RoundToZero(Vector64<float> value)`
 
-Performs 'ConvertToInt32RoundToZero' operation.
+{0}
 
 ```csharp
 private Vector64<int> ConvertToInt32RoundToZeroTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToInt32RoundToZero(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7261,7 +7214,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToInt32RoundToZero' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToInt32RoundToZeroTest(Vector64float_0);
@@ -7270,7 +7223,6 @@ ConvertToInt32RoundToZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt32RoundToZero", "Performs 'ConvertToInt32RoundToZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7289,15 +7241,15 @@ Console.WriteLine(
 
 `Vector64<int> ConvertToInt32RoundToZeroScalar(Vector64<float> value)`
 
-Performs 'ConvertToInt32RoundToZeroScalar' operation.
+{0}
 
 ```csharp
 private Vector64<int> ConvertToInt32RoundToZeroScalarTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToInt32RoundToZeroScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7308,7 +7260,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToInt32RoundToZeroScalar' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToInt32RoundToZeroScalarTest(Vector64float_0);
@@ -7317,7 +7269,6 @@ ConvertToInt32RoundToZeroScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt32RoundToZeroScalar", "Performs 'ConvertToInt32RoundToZeroScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7336,15 +7287,15 @@ Console.WriteLine(
 
 `Vector64<float> ConvertToSingle(Vector64<int> value)`
 
-Performs 'ConvertToSingle' operation.
+{0}
 
 ```csharp
 private Vector64<float> ConvertToSingleTest(Vector64<int> value)
 {{
   return AdvSimd.ConvertToSingle(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7363,7 +7314,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64int_0, apiResult);
+", "Performs 'ConvertToSingle' operation.", Vector64int_0, apiResult);
 
 try {
 ConvertToSingleTest(Vector64int_0);
@@ -7372,7 +7323,6 @@ ConvertToSingleTest(Vector64int_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToSingle", "Performs 'ConvertToSingle' operation", Vector64int_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7391,15 +7341,15 @@ Console.WriteLine(
 
 `Vector64<float> ConvertToSingleScalar(Vector64<int> value)`
 
-Performs 'ConvertToSingleScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> ConvertToSingleScalarTest(Vector64<int> value)
 {{
   return AdvSimd.ConvertToSingleScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7416,7 +7366,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64int_0, apiResult);
+", "Performs 'ConvertToSingleScalar' operation.", Vector64int_0, apiResult);
 
 try {
 ConvertToSingleScalarTest(Vector64int_0);
@@ -7425,7 +7375,6 @@ ConvertToSingleScalarTest(Vector64int_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToSingleScalar", "Performs 'ConvertToSingleScalar' operation", Vector64int_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7444,15 +7393,15 @@ Console.WriteLine(
 
 `Vector64<uint> ConvertToUInt32RoundAwayFromZero(Vector64<float> value)`
 
-Performs 'ConvertToUInt32RoundAwayFromZero' operation.
+{0}
 
 ```csharp
 private Vector64<uint> ConvertToUInt32RoundAwayFromZeroTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToUInt32RoundAwayFromZero(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7469,7 +7418,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToUInt32RoundAwayFromZero' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToUInt32RoundAwayFromZeroTest(Vector64float_0);
@@ -7478,7 +7427,6 @@ ConvertToUInt32RoundAwayFromZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt32RoundAwayFromZero", "Performs 'ConvertToUInt32RoundAwayFromZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7497,15 +7445,15 @@ Console.WriteLine(
 
 `Vector64<uint> ConvertToUInt32RoundAwayFromZeroScalar(Vector64<float> value)`
 
-Performs 'ConvertToUInt32RoundAwayFromZeroScalar' operation.
+{0}
 
 ```csharp
 private Vector64<uint> ConvertToUInt32RoundAwayFromZeroScalarTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToUInt32RoundAwayFromZeroScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7516,7 +7464,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToUInt32RoundAwayFromZeroScalar' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToUInt32RoundAwayFromZeroScalarTest(Vector64float_0);
@@ -7525,7 +7473,6 @@ ConvertToUInt32RoundAwayFromZeroScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt32RoundAwayFromZeroScalar", "Performs 'ConvertToUInt32RoundAwayFromZeroScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7544,15 +7491,15 @@ Console.WriteLine(
 
 `Vector64<uint> ConvertToUInt32RoundToEven(Vector64<float> value)`
 
-Performs 'ConvertToUInt32RoundToEven' operation.
+{0}
 
 ```csharp
 private Vector64<uint> ConvertToUInt32RoundToEvenTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToUInt32RoundToEven(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7569,7 +7516,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToUInt32RoundToEven' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToUInt32RoundToEvenTest(Vector64float_0);
@@ -7578,7 +7525,6 @@ ConvertToUInt32RoundToEvenTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt32RoundToEven", "Performs 'ConvertToUInt32RoundToEven' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7597,15 +7543,15 @@ Console.WriteLine(
 
 `Vector64<uint> ConvertToUInt32RoundToEvenScalar(Vector64<float> value)`
 
-Performs 'ConvertToUInt32RoundToEvenScalar' operation.
+{0}
 
 ```csharp
 private Vector64<uint> ConvertToUInt32RoundToEvenScalarTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToUInt32RoundToEvenScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7616,7 +7562,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToUInt32RoundToEvenScalar' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToUInt32RoundToEvenScalarTest(Vector64float_0);
@@ -7625,7 +7571,6 @@ ConvertToUInt32RoundToEvenScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt32RoundToEvenScalar", "Performs 'ConvertToUInt32RoundToEvenScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7644,15 +7589,15 @@ Console.WriteLine(
 
 `Vector64<uint> ConvertToUInt32RoundToNegativeInfinity(Vector64<float> value)`
 
-Performs 'ConvertToUInt32RoundToNegativeInfinity' operation.
+{0}
 
 ```csharp
 private Vector64<uint> ConvertToUInt32RoundToNegativeInfinityTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToUInt32RoundToNegativeInfinity(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7669,7 +7614,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToUInt32RoundToNegativeInfinity' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToUInt32RoundToNegativeInfinityTest(Vector64float_0);
@@ -7678,7 +7623,6 @@ ConvertToUInt32RoundToNegativeInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt32RoundToNegativeInfinity", "Performs 'ConvertToUInt32RoundToNegativeInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7697,15 +7641,15 @@ Console.WriteLine(
 
 `Vector64<uint> ConvertToUInt32RoundToNegativeInfinityScalar(Vector64<float> value)`
 
-Performs 'ConvertToUInt32RoundToNegativeInfinityScalar' operation.
+{0}
 
 ```csharp
 private Vector64<uint> ConvertToUInt32RoundToNegativeInfinityScalarTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToUInt32RoundToNegativeInfinityScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7716,7 +7660,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToUInt32RoundToNegativeInfinityScalar' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToUInt32RoundToNegativeInfinityScalarTest(Vector64float_0);
@@ -7725,7 +7669,6 @@ ConvertToUInt32RoundToNegativeInfinityScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt32RoundToNegativeInfinityScalar", "Performs 'ConvertToUInt32RoundToNegativeInfinityScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7744,15 +7687,15 @@ Console.WriteLine(
 
 `Vector64<uint> ConvertToUInt32RoundToPositiveInfinity(Vector64<float> value)`
 
-Performs 'ConvertToUInt32RoundToPositiveInfinity' operation.
+{0}
 
 ```csharp
 private Vector64<uint> ConvertToUInt32RoundToPositiveInfinityTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToUInt32RoundToPositiveInfinity(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7769,7 +7712,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToUInt32RoundToPositiveInfinity' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToUInt32RoundToPositiveInfinityTest(Vector64float_0);
@@ -7778,7 +7721,6 @@ ConvertToUInt32RoundToPositiveInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt32RoundToPositiveInfinity", "Performs 'ConvertToUInt32RoundToPositiveInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7797,15 +7739,15 @@ Console.WriteLine(
 
 `Vector64<uint> ConvertToUInt32RoundToPositiveInfinityScalar(Vector64<float> value)`
 
-Performs 'ConvertToUInt32RoundToPositiveInfinityScalar' operation.
+{0}
 
 ```csharp
 private Vector64<uint> ConvertToUInt32RoundToPositiveInfinityScalarTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToUInt32RoundToPositiveInfinityScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7816,7 +7758,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToUInt32RoundToPositiveInfinityScalar' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToUInt32RoundToPositiveInfinityScalarTest(Vector64float_0);
@@ -7825,7 +7767,6 @@ ConvertToUInt32RoundToPositiveInfinityScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt32RoundToPositiveInfinityScalar", "Performs 'ConvertToUInt32RoundToPositiveInfinityScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7844,15 +7785,15 @@ Console.WriteLine(
 
 `Vector64<uint> ConvertToUInt32RoundToZero(Vector64<float> value)`
 
-Performs 'ConvertToUInt32RoundToZero' operation.
+{0}
 
 ```csharp
 private Vector64<uint> ConvertToUInt32RoundToZeroTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToUInt32RoundToZero(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7869,7 +7810,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToUInt32RoundToZero' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToUInt32RoundToZeroTest(Vector64float_0);
@@ -7878,7 +7819,6 @@ ConvertToUInt32RoundToZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt32RoundToZero", "Performs 'ConvertToUInt32RoundToZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 Console.WriteLine(
 @"```
@@ -7917,15 +7857,15 @@ Console.WriteLine(
 
 `Vector64<uint> ConvertToUInt32RoundToZeroScalar(Vector64<float> value)`
 
-Performs 'ConvertToUInt32RoundToZeroScalar' operation.
+{0}
 
 ```csharp
 private Vector64<uint> ConvertToUInt32RoundToZeroScalarTest(Vector64<float> value)
 {{
   return AdvSimd.ConvertToUInt32RoundToZeroScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -7936,7 +7876,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToUInt32RoundToZeroScalar' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToUInt32RoundToZeroScalarTest(Vector64float_0);
@@ -7945,7 +7885,6 @@ ConvertToUInt32RoundToZeroScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt32RoundToZeroScalar", "Performs 'ConvertToUInt32RoundToZeroScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -7964,16 +7903,16 @@ Console.WriteLine(
 
 `Vector64<double> DivideScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'DivideScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> DivideScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.DivideScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -7990,7 +7929,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'DivideScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 DivideScalarTest(Vector64double_0, Vector64double_1);
@@ -7999,7 +7938,6 @@ DivideScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("DivideScalar", "Performs 'DivideScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8018,16 +7956,16 @@ Console.WriteLine(
 
 `Vector64<byte> DuplicateSelectedScalarToVector64(Vector64<byte> value, byte index)`
 
-Performs 'DuplicateSelectedScalarToVector64' operation.
+{0}
 
 ```csharp
 private Vector64<byte> DuplicateSelectedScalarToVector64Test(Vector64<byte> value, byte index)
 {{
   return AdvSimd.DuplicateSelectedScalarToVector64(value, index);
 }}
-// value = {0}
-// index = {1}
-// Result = {2}
+// value = {1}
+// index = {2}
+// Result = {3}
 
 ```
 
@@ -8056,7 +7994,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, apiResult);
+", "Performs 'DuplicateSelectedScalarToVector64' operation.", Vector64byte_0, byte_0, apiResult);
 
 try {
 DuplicateSelectedScalarToVector64Test(Vector64byte_0, byte_0);
@@ -8065,7 +8003,6 @@ DuplicateSelectedScalarToVector64Test(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("DuplicateSelectedScalarToVector64", "Performs 'DuplicateSelectedScalarToVector64' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8084,16 +8021,16 @@ Console.WriteLine(
 
 `Vector128<byte> DuplicateSelectedScalarToVector128(Vector64<byte> value, byte index)`
 
-Performs 'DuplicateSelectedScalarToVector128' operation.
+{0}
 
 ```csharp
 private Vector128<byte> DuplicateSelectedScalarToVector128Test(Vector64<byte> value, byte index)
 {{
   return AdvSimd.DuplicateSelectedScalarToVector128(value, index);
 }}
-// value = {0}
-// index = {1}
-// Result = {2}
+// value = {1}
+// index = {2}
+// Result = {3}
 
 ```
 
@@ -8127,7 +8064,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, apiResult);
+", "Performs 'DuplicateSelectedScalarToVector128' operation.", Vector64byte_0, byte_0, apiResult);
 
 try {
 DuplicateSelectedScalarToVector128Test(Vector64byte_0, byte_0);
@@ -8136,7 +8073,6 @@ DuplicateSelectedScalarToVector128Test(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("DuplicateSelectedScalarToVector128", "Performs 'DuplicateSelectedScalarToVector128' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8155,15 +8091,15 @@ Console.WriteLine(
 
 `Vector64<byte> DuplicateToVector64(byte value)`
 
-Performs 'DuplicateToVector64' operation.
+{0}
 
 ```csharp
 private Vector64<byte> DuplicateToVector64Test(byte value)
 {{
   return AdvSimd.DuplicateToVector64(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -8185,7 +8121,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", byte_0, apiResult);
+", "Performs 'DuplicateToVector64' operation.", byte_0, apiResult);
 
 try {
 DuplicateToVector64Test(byte_0);
@@ -8194,7 +8130,6 @@ DuplicateToVector64Test(byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("DuplicateToVector64", "Performs 'DuplicateToVector64' operation", byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8213,15 +8148,15 @@ Console.WriteLine(
 
 `Vector128<byte> DuplicateToVector128(byte value)`
 
-Performs 'DuplicateToVector128' operation.
+{0}
 
 ```csharp
 private Vector128<byte> DuplicateToVector128Test(byte value)
 {{
   return AdvSimd.DuplicateToVector128(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -8248,7 +8183,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", byte_0, apiResult);
+", "Performs 'DuplicateToVector128' operation.", byte_0, apiResult);
 
 try {
 DuplicateToVector128Test(byte_0);
@@ -8257,7 +8192,6 @@ DuplicateToVector128Test(byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("DuplicateToVector128", "Performs 'DuplicateToVector128' operation", byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8276,16 +8210,16 @@ Console.WriteLine(
 
 `byte Extract(Vector64<byte> vector, byte index)`
 
-Performs 'Extract' operation.
+{0}
 
 ```csharp
 private byte ExtractTest(Vector64<byte> vector, byte index)
 {{
   return AdvSimd.Extract(vector, index);
 }}
-// vector = {0}
-// index = {1}
-// Result = {2}
+// vector = {1}
+// index = {2}
+// Result = {3}
 
 ```
 
@@ -8317,7 +8251,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, apiResult);
+", "Performs 'Extract' operation.", Vector64byte_0, byte_0, apiResult);
 
 try {
 ExtractTest(Vector64byte_0, byte_0);
@@ -8326,7 +8260,6 @@ ExtractTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("Extract", "Performs 'Extract' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8345,15 +8278,15 @@ Console.WriteLine(
 
 `Vector64<byte> ExtractNarrowingLower(Vector128<ushort> value)`
 
-Performs 'ExtractNarrowingLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ExtractNarrowingLowerTest(Vector128<ushort> value)
 {{
   return AdvSimd.ExtractNarrowingLower(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -8374,7 +8307,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, apiResult);
+", "Performs 'ExtractNarrowingLower' operation.", Vector128ushort_0, apiResult);
 
 try {
 ExtractNarrowingLowerTest(Vector128ushort_0);
@@ -8383,7 +8316,6 @@ ExtractNarrowingLowerTest(Vector128ushort_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ExtractNarrowingLower", "Performs 'ExtractNarrowingLower' operation", Vector128ushort_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8402,15 +8334,15 @@ Console.WriteLine(
 
 `Vector64<byte> ExtractNarrowingSaturateLower(Vector128<ushort> value)`
 
-Performs 'ExtractNarrowingSaturateLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ExtractNarrowingSaturateLowerTest(Vector128<ushort> value)
 {{
   return AdvSimd.ExtractNarrowingSaturateLower(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -8431,7 +8363,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, apiResult);
+", "Performs 'ExtractNarrowingSaturateLower' operation.", Vector128ushort_0, apiResult);
 
 try {
 ExtractNarrowingSaturateLowerTest(Vector128ushort_0);
@@ -8440,7 +8372,6 @@ ExtractNarrowingSaturateLowerTest(Vector128ushort_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ExtractNarrowingSaturateLower", "Performs 'ExtractNarrowingSaturateLower' operation", Vector128ushort_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8459,15 +8390,15 @@ Console.WriteLine(
 
 `Vector64<byte> ExtractNarrowingSaturateUnsignedLower(Vector128<short> value)`
 
-Performs 'ExtractNarrowingSaturateUnsignedLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ExtractNarrowingSaturateUnsignedLowerTest(Vector128<short> value)
 {{
   return AdvSimd.ExtractNarrowingSaturateUnsignedLower(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -8485,7 +8416,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128short_0, apiResult);
+", "Performs 'ExtractNarrowingSaturateUnsignedLower' operation.", Vector128short_0, apiResult);
 
 try {
 ExtractNarrowingSaturateUnsignedLowerTest(Vector128short_0);
@@ -8494,7 +8425,6 @@ ExtractNarrowingSaturateUnsignedLowerTest(Vector128short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ExtractNarrowingSaturateUnsignedLower", "Performs 'ExtractNarrowingSaturateUnsignedLower' operation", Vector128short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8513,16 +8443,16 @@ Console.WriteLine(
 
 `Vector128<byte> ExtractNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value)`
 
-Performs 'ExtractNarrowingSaturateUnsignedUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> ExtractNarrowingSaturateUnsignedUpperTest(Vector64<byte> lower, Vector128<short> value)
 {{
   return AdvSimd.ExtractNarrowingSaturateUnsignedUpper(lower, value);
 }}
-// lower = {0}
-// value = {1}
-// Result = {2}
+// lower = {1}
+// value = {2}
+// Result = {3}
 
 ```
 
@@ -8540,7 +8470,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128short_0, apiResult);
+", "Performs 'ExtractNarrowingSaturateUnsignedUpper' operation.", Vector64byte_0, Vector128short_0, apiResult);
 
 try {
 ExtractNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0);
@@ -8549,7 +8479,6 @@ ExtractNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ExtractNarrowingSaturateUnsignedUpper", "Performs 'ExtractNarrowingSaturateUnsignedUpper' operation", Vector64byte_0, Vector128short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8568,16 +8497,16 @@ Console.WriteLine(
 
 `Vector128<byte> ExtractNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value)`
 
-Performs 'ExtractNarrowingSaturateUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> ExtractNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value)
 {{
   return AdvSimd.ExtractNarrowingSaturateUpper(lower, value);
 }}
-// lower = {0}
-// value = {1}
-// Result = {2}
+// lower = {1}
+// value = {2}
+// Result = {3}
 
 ```
 
@@ -8598,7 +8527,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128ushort_0, apiResult);
+", "Performs 'ExtractNarrowingSaturateUpper' operation.", Vector64byte_0, Vector128ushort_0, apiResult);
 
 try {
 ExtractNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0);
@@ -8607,7 +8536,6 @@ ExtractNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ExtractNarrowingSaturateUpper", "Performs 'ExtractNarrowingSaturateUpper' operation", Vector64byte_0, Vector128ushort_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8626,16 +8554,16 @@ Console.WriteLine(
 
 `Vector128<byte> ExtractNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value)`
 
-Performs 'ExtractNarrowingUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> ExtractNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> value)
 {{
   return AdvSimd.ExtractNarrowingUpper(lower, value);
 }}
-// lower = {0}
-// value = {1}
-// Result = {2}
+// lower = {1}
+// value = {2}
+// Result = {3}
 
 ```
 
@@ -8656,7 +8584,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128ushort_0, apiResult);
+", "Performs 'ExtractNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, apiResult);
 
 try {
 ExtractNarrowingUpperTest(Vector64byte_0, Vector128ushort_0);
@@ -8665,7 +8593,6 @@ ExtractNarrowingUpperTest(Vector64byte_0, Vector128ushort_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ExtractNarrowingUpper", "Performs 'ExtractNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8684,17 +8611,17 @@ Console.WriteLine(
 
 `Vector64<byte> ExtractVector64(Vector64<byte> upper, Vector64<byte> lower, byte index)`
 
-Performs 'ExtractVector64' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower, byte index)
 {{
   return AdvSimd.ExtractVector64(upper, lower, index);
 }}
-// upper = {0}
-// lower = {1}
-// index = {2}
-// Result = {3}
+// upper = {1}
+// lower = {2}
+// index = {3}
+// Result = {4}
 
 ```
 
@@ -8716,7 +8643,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
+", "Performs 'ExtractVector64' operation.", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 
 try {
 ExtractVector64Test(Vector64byte_0, Vector64byte_1, byte_0);
@@ -8725,7 +8652,6 @@ ExtractVector64Test(Vector64byte_0, Vector64byte_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ExtractVector64", "Performs 'ExtractVector64' operation", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8744,17 +8670,17 @@ Console.WriteLine(
 
 `Vector128<byte> ExtractVector128(Vector128<byte> upper, Vector128<byte> lower, byte index)`
 
-Performs 'ExtractVector128' operation.
+{0}
 
 ```csharp
 private Vector128<byte> ExtractVector128Test(Vector128<byte> upper, Vector128<byte> lower, byte index)
 {{
   return AdvSimd.ExtractVector128(upper, lower, index);
 }}
-// upper = {0}
-// lower = {1}
-// index = {2}
-// Result = {3}
+// upper = {1}
+// lower = {2}
+// index = {3}
+// Result = {4}
 
 ```
 
@@ -8779,7 +8705,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128byte_0, Vector128byte_1, byte_0, apiResult);
+", "Performs 'ExtractVector128' operation.", Vector128byte_0, Vector128byte_1, byte_0, apiResult);
 
 try {
 ExtractVector128Test(Vector128byte_0, Vector128byte_1, byte_0);
@@ -8788,7 +8714,6 @@ ExtractVector128Test(Vector128byte_0, Vector128byte_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ExtractVector128", "Performs 'ExtractVector128' operation", Vector128byte_0, Vector128byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8807,15 +8732,15 @@ Console.WriteLine(
 
 `Vector64<float> Floor(Vector64<float> value)`
 
-Performs 'Floor' operation.
+{0}
 
 ```csharp
 private Vector64<float> FloorTest(Vector64<float> value)
 {{
   return AdvSimd.Floor(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -8835,7 +8760,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'Floor' operation.", Vector64float_0, apiResult);
 
 try {
 FloorTest(Vector64float_0);
@@ -8844,7 +8769,6 @@ FloorTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("Floor", "Performs 'Floor' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8863,15 +8787,15 @@ Console.WriteLine(
 
 `Vector64<double> FloorScalar(Vector64<double> value)`
 
-Performs 'FloorScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> FloorScalarTest(Vector64<double> value)
 {{
   return AdvSimd.FloorScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -8888,7 +8812,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'FloorScalar' operation.", Vector64double_0, apiResult);
 
 try {
 FloorScalarTest(Vector64double_0);
@@ -8897,7 +8821,6 @@ FloorScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("FloorScalar", "Performs 'FloorScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8916,16 +8839,16 @@ Console.WriteLine(
 
 `Vector64<byte> FusedAddHalving(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'FusedAddHalving' operation.
+{0}
 
 ```csharp
 private Vector64<byte> FusedAddHalvingTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.FusedAddHalving(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -8952,7 +8875,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'FusedAddHalving' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 FusedAddHalvingTest(Vector64byte_0, Vector64byte_1);
@@ -8961,7 +8884,6 @@ FusedAddHalvingTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("FusedAddHalving", "Performs 'FusedAddHalving' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -8980,16 +8902,16 @@ Console.WriteLine(
 
 `Vector64<byte> FusedAddRoundedHalving(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'FusedAddRoundedHalving' operation.
+{0}
 
 ```csharp
 private Vector64<byte> FusedAddRoundedHalvingTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.FusedAddRoundedHalving(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -9016,7 +8938,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'FusedAddRoundedHalving' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 FusedAddRoundedHalvingTest(Vector64byte_0, Vector64byte_1);
@@ -9025,7 +8947,6 @@ FusedAddRoundedHalvingTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("FusedAddRoundedHalving", "Performs 'FusedAddRoundedHalving' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9044,17 +8965,17 @@ Console.WriteLine(
 
 `Vector64<float> FusedMultiplyAdd(Vector64<float> addend, Vector64<float> left, Vector64<float> right)`
 
-Performs 'FusedMultiplyAdd' operation.
+{0}
 
 ```csharp
 private Vector64<float> FusedMultiplyAddTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.FusedMultiplyAdd(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -9074,7 +8995,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
+", "Performs 'FusedMultiplyAdd' operation.", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 
 try {
 FusedMultiplyAddTest(Vector64float_0, Vector64float_1, Vector64float_2);
@@ -9083,7 +9004,6 @@ FusedMultiplyAddTest(Vector64float_0, Vector64float_1, Vector64float_2);
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplyAdd", "Performs 'FusedMultiplyAdd' operation", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9102,17 +9022,17 @@ Console.WriteLine(
 
 `Vector64<double> FusedMultiplyAddNegatedScalar(Vector64<double> addend, Vector64<double> left, Vector64<double> right)`
 
-Performs 'FusedMultiplyAddNegatedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> FusedMultiplyAddNegatedScalarTest(Vector64<double> addend, Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.FusedMultiplyAddNegatedScalar(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -9129,7 +9049,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
+", "Performs 'FusedMultiplyAddNegatedScalar' operation.", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 
 try {
 FusedMultiplyAddNegatedScalarTest(Vector64double_0, Vector64double_1, Vector64double_2);
@@ -9138,7 +9058,6 @@ FusedMultiplyAddNegatedScalarTest(Vector64double_0, Vector64double_1, Vector64do
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplyAddNegatedScalar", "Performs 'FusedMultiplyAddNegatedScalar' operation", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9157,17 +9076,17 @@ Console.WriteLine(
 
 `Vector64<double> FusedMultiplyAddScalar(Vector64<double> addend, Vector64<double> left, Vector64<double> right)`
 
-Performs 'FusedMultiplyAddScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> FusedMultiplyAddScalarTest(Vector64<double> addend, Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.FusedMultiplyAddScalar(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -9184,7 +9103,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
+", "Performs 'FusedMultiplyAddScalar' operation.", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 
 try {
 FusedMultiplyAddScalarTest(Vector64double_0, Vector64double_1, Vector64double_2);
@@ -9193,7 +9112,6 @@ FusedMultiplyAddScalarTest(Vector64double_0, Vector64double_1, Vector64double_2)
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplyAddScalar", "Performs 'FusedMultiplyAddScalar' operation", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9212,17 +9130,17 @@ Console.WriteLine(
 
 `Vector64<float> FusedMultiplySubtract(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`
 
-Performs 'FusedMultiplySubtract' operation.
+{0}
 
 ```csharp
 private Vector64<float> FusedMultiplySubtractTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.FusedMultiplySubtract(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -9242,7 +9160,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
+", "Performs 'FusedMultiplySubtract' operation.", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 
 try {
 FusedMultiplySubtractTest(Vector64float_0, Vector64float_1, Vector64float_2);
@@ -9251,7 +9169,6 @@ FusedMultiplySubtractTest(Vector64float_0, Vector64float_1, Vector64float_2);
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplySubtract", "Performs 'FusedMultiplySubtract' operation", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9270,17 +9187,17 @@ Console.WriteLine(
 
 `Vector64<double> FusedMultiplySubtractNegatedScalar(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)`
 
-Performs 'FusedMultiplySubtractNegatedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> FusedMultiplySubtractNegatedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.FusedMultiplySubtractNegatedScalar(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -9297,7 +9214,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
+", "Performs 'FusedMultiplySubtractNegatedScalar' operation.", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 
 try {
 FusedMultiplySubtractNegatedScalarTest(Vector64double_0, Vector64double_1, Vector64double_2);
@@ -9306,7 +9223,6 @@ FusedMultiplySubtractNegatedScalarTest(Vector64double_0, Vector64double_1, Vecto
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplySubtractNegatedScalar", "Performs 'FusedMultiplySubtractNegatedScalar' operation", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9325,17 +9241,17 @@ Console.WriteLine(
 
 `Vector64<double> FusedMultiplySubtractScalar(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)`
 
-Performs 'FusedMultiplySubtractScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> FusedMultiplySubtractScalarTest(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.FusedMultiplySubtractScalar(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -9352,7 +9268,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
+", "Performs 'FusedMultiplySubtractScalar' operation.", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 
 try {
 FusedMultiplySubtractScalarTest(Vector64double_0, Vector64double_1, Vector64double_2);
@@ -9361,7 +9277,6 @@ FusedMultiplySubtractScalarTest(Vector64double_0, Vector64double_1, Vector64doub
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplySubtractScalar", "Performs 'FusedMultiplySubtractScalar' operation", Vector64double_0, Vector64double_1, Vector64double_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9380,16 +9295,16 @@ Console.WriteLine(
 
 `Vector64<byte> FusedSubtractHalving(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'FusedSubtractHalving' operation.
+{0}
 
 ```csharp
 private Vector64<byte> FusedSubtractHalvingTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.FusedSubtractHalving(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -9416,7 +9331,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'FusedSubtractHalving' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 FusedSubtractHalvingTest(Vector64byte_0, Vector64byte_1);
@@ -9425,7 +9340,6 @@ FusedSubtractHalvingTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("FusedSubtractHalving", "Performs 'FusedSubtractHalving' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9444,17 +9358,17 @@ Console.WriteLine(
 
 `Vector64<byte> Insert(Vector64<byte> vector, byte index, byte data)`
 
-Performs 'Insert' operation.
+{0}
 
 ```csharp
 private Vector64<byte> InsertTest(Vector64<byte> vector, byte index, byte data)
 {{
   return AdvSimd.Insert(vector, index, data);
 }}
-// vector = {0}
-// index = {1}
-// data = {2}
-// Result = {3}
+// vector = {1}
+// index = {2}
+// data = {3}
+// Result = {4}
 
 ```
 
@@ -9486,7 +9400,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, byte_1, apiResult);
+", "Performs 'Insert' operation.", Vector64byte_0, byte_0, byte_1, apiResult);
 
 try {
 InsertTest(Vector64byte_0, byte_0, byte_1);
@@ -9495,7 +9409,6 @@ InsertTest(Vector64byte_0, byte_0, byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("Insert", "Performs 'Insert' operation", Vector64byte_0, byte_0, byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9514,17 +9427,17 @@ Console.WriteLine(
 
 `Vector128<double> InsertScalar(Vector128<double> result, byte resultIndex, Vector64<double> value)`
 
-Performs 'InsertScalar' operation.
+{0}
 
 ```csharp
 private Vector128<double> InsertScalarTest(Vector128<double> result, byte resultIndex, Vector64<double> value)
 {{
   return AdvSimd.InsertScalar(result, resultIndex, value);
 }}
-// result = {0}
-// resultIndex = {1}
-// value = {2}
-// Result = {3}
+// result = {1}
+// resultIndex = {2}
+// value = {3}
+// Result = {4}
 
 ```
 
@@ -9542,7 +9455,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, byte_0, Vector64double_0, apiResult);
+", "Performs 'InsertScalar' operation.", Vector128double_0, byte_0, Vector64double_0, apiResult);
 
 try {
 InsertScalarTest(Vector128double_0, byte_0, Vector64double_0);
@@ -9551,7 +9464,6 @@ InsertScalarTest(Vector128double_0, byte_0, Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("InsertScalar", "Performs 'InsertScalar' operation", Vector128double_0, byte_0, Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9570,15 +9482,15 @@ Console.WriteLine(
 
 `Vector64<short> LeadingSignCount(Vector64<short> value)`
 
-Performs 'LeadingSignCount' operation.
+{0}
 
 ```csharp
 private Vector64<short> LeadingSignCountTest(Vector64<short> value)
 {{
   return AdvSimd.LeadingSignCount(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -9599,7 +9511,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, apiResult);
+", "Performs 'LeadingSignCount' operation.", Vector64short_0, apiResult);
 
 try {
 LeadingSignCountTest(Vector64short_0);
@@ -9608,7 +9520,6 @@ LeadingSignCountTest(Vector64short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("LeadingSignCount", "Performs 'LeadingSignCount' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -9627,15 +9538,15 @@ Console.WriteLine(
 
 `Vector64<byte> LeadingZeroCount(Vector64<byte> value)`
 
-Performs 'LeadingZeroCount' operation.
+{0}
 
 ```csharp
 private Vector64<byte> LeadingZeroCountTest(Vector64<byte> value)
 {{
   return AdvSimd.LeadingZeroCount(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -9662,7 +9573,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, apiResult);
+", "Performs 'LeadingZeroCount' operation.", Vector64byte_0, apiResult);
 
 try {
 LeadingZeroCountTest(Vector64byte_0);
@@ -9671,7 +9582,6 @@ LeadingZeroCountTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("LeadingZeroCount", "Performs 'LeadingZeroCount' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -9692,17 +9602,17 @@ Console.WriteLine(
 
 `Vector64<byte> LoadAndInsertScalar(Vector64<byte> value, byte index, byte* address)`
 
-Performs 'LoadAndInsertScalar' operation.
+{0}
 
 ```csharp
 private Vector64<byte> LoadAndInsertScalarTest(Vector64<byte> value, byte index, byte* address)
 {{
   return AdvSimd.LoadAndInsertScalar(value, index, address);
 }}
-// value = {0}
-// index = {1}
-// address = {2}
-// Result = {3}
+// value = {1}
+// index = {2}
+// address = {3}
+// Result = {4}
 
 ```
 
@@ -9734,7 +9644,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, "<address>", apiResult);
+", "Performs 'LoadAndInsertScalar' operation.", Vector64byte_0, byte_0, "<address>", apiResult);
 
 try {
 LoadAndInsertScalarTest(Vector64byte_0, byte_0, bytePtr_0);
@@ -9744,7 +9654,6 @@ LoadAndInsertScalarTest(Vector64byte_0, byte_0, bytePtr_0);
 }
 
 }
-LogInCsv("LoadAndInsertScalar", "Performs 'LoadAndInsertScalar' operation", Vector64byte_0, byte_0, "<address>", apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -9765,15 +9674,15 @@ Console.WriteLine(
 
 `Vector64<byte> LoadAndReplicateToVector64(byte* address)`
 
-Performs 'LoadAndReplicateToVector64' operation.
+{0}
 
 ```csharp
 private Vector64<byte> LoadAndReplicateToVector64Test(byte* address)
 {{
   return AdvSimd.LoadAndReplicateToVector64(address);
 }}
-// address = {0}
-// Result = {1}
+// address = {1}
+// Result = {2}
 
 ```
 
@@ -9795,7 +9704,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "<address>", apiResult);
+", "Performs 'LoadAndReplicateToVector64' operation.", "<address>", apiResult);
 
 try {
 LoadAndReplicateToVector64Test(bytePtr_0);
@@ -9805,7 +9714,6 @@ LoadAndReplicateToVector64Test(bytePtr_0);
 }
 
 }
-LogInCsv("LoadAndReplicateToVector64", "Performs 'LoadAndReplicateToVector64' operation", "<address>", apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -9826,15 +9734,15 @@ Console.WriteLine(
 
 `Vector128<byte> LoadAndReplicateToVector128(byte* address)`
 
-Performs 'LoadAndReplicateToVector128' operation.
+{0}
 
 ```csharp
 private Vector128<byte> LoadAndReplicateToVector128Test(byte* address)
 {{
   return AdvSimd.LoadAndReplicateToVector128(address);
 }}
-// address = {0}
-// Result = {1}
+// address = {1}
+// Result = {2}
 
 ```
 
@@ -9861,7 +9769,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "<address>", apiResult);
+", "Performs 'LoadAndReplicateToVector128' operation.", "<address>", apiResult);
 
 try {
 LoadAndReplicateToVector128Test(bytePtr_0);
@@ -9871,7 +9779,6 @@ LoadAndReplicateToVector128Test(bytePtr_0);
 }
 
 }
-LogInCsv("LoadAndReplicateToVector128", "Performs 'LoadAndReplicateToVector128' operation", "<address>", apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -9892,15 +9799,15 @@ Console.WriteLine(
 
 `Vector64<byte> LoadVector64(byte* address)`
 
-Performs 'LoadVector64' operation.
+{0}
 
 ```csharp
 private Vector64<byte> LoadVector64Test(byte* address)
 {{
   return AdvSimd.LoadVector64(address);
 }}
-// address = {0}
-// Result = {1}
+// address = {1}
+// Result = {2}
 
 ```
 
@@ -9925,7 +9832,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "<address>", apiResult);
+", "Performs 'LoadVector64' operation.", "<address>", apiResult);
 
 try {
 LoadVector64Test(bytePtr_0);
@@ -9935,7 +9842,6 @@ LoadVector64Test(bytePtr_0);
 }
 
 }
-LogInCsv("LoadVector64", "Performs 'LoadVector64' operation", "<address>", apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -9956,15 +9862,15 @@ Console.WriteLine(
 
 `Vector128<byte> LoadVector128(byte* address)`
 
-Performs 'LoadVector128' operation.
+{0}
 
 ```csharp
 private Vector128<byte> LoadVector128Test(byte* address)
 {{
   return AdvSimd.LoadVector128(address);
 }}
-// address = {0}
-// Result = {1}
+// address = {1}
+// Result = {2}
 
 ```
 
@@ -9989,7 +9895,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "<address>", apiResult);
+", "Performs 'LoadVector128' operation.", "<address>", apiResult);
 
 try {
 LoadVector128Test(bytePtr_0);
@@ -9999,7 +9905,6 @@ LoadVector128Test(bytePtr_0);
 }
 
 }
-LogInCsv("LoadVector128", "Performs 'LoadVector128' operation", "<address>", apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10018,16 +9923,16 @@ Console.WriteLine(
 
 `Vector64<byte> Max(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'Max' operation.
+{0}
 
 ```csharp
 private Vector64<byte> MaxTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Max(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -10059,7 +9964,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'Max' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 MaxTest(Vector64byte_0, Vector64byte_1);
@@ -10068,7 +9973,6 @@ MaxTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("Max", "Performs 'Max' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10087,16 +9991,16 @@ Console.WriteLine(
 
 `Vector64<float> MaxNumber(Vector64<float> left, Vector64<float> right)`
 
-Performs 'MaxNumber' operation.
+{0}
 
 ```csharp
 private Vector64<float> MaxNumberTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.MaxNumber(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -10116,7 +10020,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'MaxNumber' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 MaxNumberTest(Vector64float_0, Vector64float_1);
@@ -10125,7 +10029,6 @@ MaxNumberTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MaxNumber", "Performs 'MaxNumber' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10144,16 +10047,16 @@ Console.WriteLine(
 
 `Vector64<double> MaxNumberScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'MaxNumberScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> MaxNumberScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.MaxNumberScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -10170,7 +10073,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'MaxNumberScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 MaxNumberScalarTest(Vector64double_0, Vector64double_1);
@@ -10179,7 +10082,6 @@ MaxNumberScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MaxNumberScalar", "Performs 'MaxNumberScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10198,16 +10100,16 @@ Console.WriteLine(
 
 `Vector64<byte> MaxPairwise(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'MaxPairwise' operation.
+{0}
 
 ```csharp
 private Vector64<byte> MaxPairwiseTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.MaxPairwise(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -10239,7 +10141,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'MaxPairwise' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 MaxPairwiseTest(Vector64byte_0, Vector64byte_1);
@@ -10248,7 +10150,6 @@ MaxPairwiseTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MaxPairwise", "Performs 'MaxPairwise' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10267,16 +10168,16 @@ Console.WriteLine(
 
 `Vector64<byte> Min(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'Min' operation.
+{0}
 
 ```csharp
 private Vector64<byte> MinTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Min(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -10308,7 +10209,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'Min' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 MinTest(Vector64byte_0, Vector64byte_1);
@@ -10317,7 +10218,6 @@ MinTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("Min", "Performs 'Min' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10336,16 +10236,16 @@ Console.WriteLine(
 
 `Vector64<float> MinNumber(Vector64<float> left, Vector64<float> right)`
 
-Performs 'MinNumber' operation.
+{0}
 
 ```csharp
 private Vector64<float> MinNumberTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.MinNumber(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -10365,7 +10265,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'MinNumber' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 MinNumberTest(Vector64float_0, Vector64float_1);
@@ -10374,7 +10274,6 @@ MinNumberTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MinNumber", "Performs 'MinNumber' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10393,16 +10292,16 @@ Console.WriteLine(
 
 `Vector64<double> MinNumberScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'MinNumberScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> MinNumberScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.MinNumberScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -10419,7 +10318,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'MinNumberScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 MinNumberScalarTest(Vector64double_0, Vector64double_1);
@@ -10428,7 +10327,6 @@ MinNumberScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MinNumberScalar", "Performs 'MinNumberScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10447,16 +10345,16 @@ Console.WriteLine(
 
 `Vector64<byte> MinPairwise(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'MinPairwise' operation.
+{0}
 
 ```csharp
 private Vector64<byte> MinPairwiseTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.MinPairwise(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -10488,7 +10386,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'MinPairwise' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 MinPairwiseTest(Vector64byte_0, Vector64byte_1);
@@ -10497,7 +10395,6 @@ MinPairwiseTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MinPairwise", "Performs 'MinPairwise' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10516,16 +10413,16 @@ Console.WriteLine(
 
 `Vector64<byte> Multiply(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'Multiply' operation.
+{0}
 
 ```csharp
 private Vector64<byte> MultiplyTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Multiply(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -10557,7 +10454,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'Multiply' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 MultiplyTest(Vector64byte_0, Vector64byte_1);
@@ -10566,7 +10463,6 @@ MultiplyTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("Multiply", "Performs 'Multiply' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10585,17 +10481,17 @@ Console.WriteLine(
 
 `Vector64<byte> MultiplyAdd(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'MultiplyAdd' operation.
+{0}
 
 ```csharp
 private Vector64<byte> MultiplyAddTest(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.MultiplyAdd(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -10622,7 +10518,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
+", "Performs 'MultiplyAdd' operation.", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 
 try {
 MultiplyAddTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
@@ -10631,7 +10527,6 @@ MultiplyAddTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyAdd", "Performs 'MultiplyAdd' operation", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10650,17 +10545,17 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyAddByScalar(Vector64<short> addend, Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyAddByScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyAddByScalarTest(Vector64<short> addend, Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyAddByScalar(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -10683,7 +10578,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, Vector64short_2, apiResult);
+", "Performs 'MultiplyAddByScalar' operation.", Vector64short_0, Vector64short_1, Vector64short_2, apiResult);
 
 try {
 MultiplyAddByScalarTest(Vector64short_0, Vector64short_1, Vector64short_2);
@@ -10692,7 +10587,6 @@ MultiplyAddByScalarTest(Vector64short_0, Vector64short_1, Vector64short_2);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyAddByScalar", "Performs 'MultiplyAddByScalar' operation", Vector64short_0, Vector64short_1, Vector64short_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10711,18 +10605,18 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyAddBySelectedScalar(Vector64<short> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyAddBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyAddBySelectedScalarTest(Vector64<short> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyAddBySelectedScalar(addend, left, right, rightIndex);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -10753,7 +10647,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, Vector64short_2, byte_0, apiResult);
+", "Performs 'MultiplyAddBySelectedScalar' operation.", Vector64short_0, Vector64short_1, Vector64short_2, byte_0, apiResult);
 
 try {
 MultiplyAddBySelectedScalarTest(Vector64short_0, Vector64short_1, Vector64short_2, byte_0);
@@ -10762,7 +10656,6 @@ MultiplyAddBySelectedScalarTest(Vector64short_0, Vector64short_1, Vector64short_
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyAddBySelectedScalar", "Performs 'MultiplyAddBySelectedScalar' operation", Vector64short_0, Vector64short_1, Vector64short_2, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10781,16 +10674,16 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyByScalar(Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyByScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyByScalarTest(Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyByScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -10818,7 +10711,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyByScalar' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyByScalarTest(Vector64short_0, Vector64short_1);
@@ -10827,7 +10720,6 @@ MultiplyByScalarTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyByScalar", "Performs 'MultiplyByScalar' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10846,17 +10738,17 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyBySelectedScalar(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -10894,7 +10786,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyBySelectedScalar' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
@@ -10903,7 +10795,6 @@ MultiplyBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyBySelectedScalar", "Performs 'MultiplyBySelectedScalar' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10922,17 +10813,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyBySelectedScalarWideningLower(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyBySelectedScalarWideningLower' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningLowerTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyBySelectedScalarWideningLower(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -10955,7 +10846,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyBySelectedScalarWideningLower' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyBySelectedScalarWideningLowerTest(Vector64short_0, Vector64short_1, byte_0);
@@ -10964,7 +10855,6 @@ MultiplyBySelectedScalarWideningLowerTest(Vector64short_0, Vector64short_1, byte
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyBySelectedScalarWideningLower", "Performs 'MultiplyBySelectedScalarWideningLower' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -10983,18 +10873,18 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyBySelectedScalarWideningLowerAndAdd(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyBySelectedScalarWideningLowerAndAdd' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningLowerAndAddTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyBySelectedScalarWideningLowerAndAdd(addend, left, right, rightIndex);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -11017,7 +10907,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyBySelectedScalarWideningLowerAndAdd' operation.", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyBySelectedScalarWideningLowerAndAddTest(Vector128int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -11026,7 +10916,6 @@ MultiplyBySelectedScalarWideningLowerAndAddTest(Vector128int_0, Vector64short_0,
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyBySelectedScalarWideningLowerAndAdd", "Performs 'MultiplyBySelectedScalarWideningLowerAndAdd' operation", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11045,18 +10934,18 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyBySelectedScalarWideningLowerAndSubtract(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyBySelectedScalarWideningLowerAndSubtract' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningLowerAndSubtractTest(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyBySelectedScalarWideningLowerAndSubtract(minuend, left, right, rightIndex);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -11079,7 +10968,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyBySelectedScalarWideningLowerAndSubtract' operation.", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyBySelectedScalarWideningLowerAndSubtractTest(Vector128int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -11088,7 +10977,6 @@ MultiplyBySelectedScalarWideningLowerAndSubtractTest(Vector128int_0, Vector64sho
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyBySelectedScalarWideningLowerAndSubtract", "Performs 'MultiplyBySelectedScalarWideningLowerAndSubtract' operation", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11107,17 +10995,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyBySelectedScalarWideningUpper(Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyBySelectedScalarWideningUpper' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningUpperTest(Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyBySelectedScalarWideningUpper(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -11140,7 +11028,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128short_0, Vector64short_0, byte_0, apiResult);
+", "Performs 'MultiplyBySelectedScalarWideningUpper' operation.", Vector128short_0, Vector64short_0, byte_0, apiResult);
 
 try {
 MultiplyBySelectedScalarWideningUpperTest(Vector128short_0, Vector64short_0, byte_0);
@@ -11149,7 +11037,6 @@ MultiplyBySelectedScalarWideningUpperTest(Vector128short_0, Vector64short_0, byt
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyBySelectedScalarWideningUpper", "Performs 'MultiplyBySelectedScalarWideningUpper' operation", Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11168,18 +11055,18 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyBySelectedScalarWideningUpperAndAdd(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyBySelectedScalarWideningUpperAndAdd' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningUpperAndAddTest(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyBySelectedScalarWideningUpperAndAdd(addend, left, right, rightIndex);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -11202,7 +11089,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
+", "Performs 'MultiplyBySelectedScalarWideningUpperAndAdd' operation.", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 
 try {
 MultiplyBySelectedScalarWideningUpperAndAddTest(Vector128int_0, Vector128short_0, Vector64short_0, byte_0);
@@ -11211,7 +11098,6 @@ MultiplyBySelectedScalarWideningUpperAndAddTest(Vector128int_0, Vector128short_0
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyBySelectedScalarWideningUpperAndAdd", "Performs 'MultiplyBySelectedScalarWideningUpperAndAdd' operation", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11230,18 +11116,18 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyBySelectedScalarWideningUpperAndSubtract(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyBySelectedScalarWideningUpperAndSubtract' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningUpperAndSubtractTest(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyBySelectedScalarWideningUpperAndSubtract(minuend, left, right, rightIndex);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -11264,7 +11150,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
+", "Performs 'MultiplyBySelectedScalarWideningUpperAndSubtract' operation.", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 
 try {
 MultiplyBySelectedScalarWideningUpperAndSubtractTest(Vector128int_0, Vector128short_0, Vector64short_0, byte_0);
@@ -11273,7 +11159,6 @@ MultiplyBySelectedScalarWideningUpperAndSubtractTest(Vector128int_0, Vector128sh
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyBySelectedScalarWideningUpperAndSubtract", "Performs 'MultiplyBySelectedScalarWideningUpperAndSubtract' operation", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11292,16 +11177,16 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyDoublingByScalarSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingByScalarSaturateHigh' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyDoublingByScalarSaturateHighTest(Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingByScalarSaturateHigh(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -11320,7 +11205,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingByScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingByScalarSaturateHighTest(Vector64short_0, Vector64short_1);
@@ -11329,7 +11214,6 @@ MultiplyDoublingByScalarSaturateHighTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingByScalarSaturateHigh", "Performs 'MultiplyDoublingByScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11348,17 +11232,17 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyDoublingBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingBySelectedScalarSaturateHigh' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyDoublingBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyDoublingBySelectedScalarSaturateHigh(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -11381,7 +11265,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyDoublingBySelectedScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyDoublingBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
@@ -11390,7 +11274,6 @@ MultiplyDoublingBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingBySelectedScalarSaturateHigh", "Performs 'MultiplyDoublingBySelectedScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11409,16 +11292,16 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyDoublingSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingSaturateHigh' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyDoublingSaturateHighTest(Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingSaturateHigh(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -11437,7 +11320,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingSaturateHigh' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingSaturateHighTest(Vector64short_0, Vector64short_1);
@@ -11446,7 +11329,6 @@ MultiplyDoublingSaturateHighTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingSaturateHigh", "Performs 'MultiplyDoublingSaturateHigh' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11465,17 +11347,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningLowerAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningLowerAndAddSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningLowerAndAddSaturateTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningLowerAndAddSaturate(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -11492,7 +11374,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningLowerAndAddSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingWideningLowerAndAddSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1);
@@ -11501,7 +11383,6 @@ MultiplyDoublingWideningLowerAndAddSaturateTest(Vector128int_0, Vector64short_0,
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningLowerAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerAndAddSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11520,17 +11401,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningLowerAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningLowerAndSubtractSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningLowerAndSubtractSaturateTest(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningLowerAndSubtractSaturate(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -11547,7 +11428,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningLowerAndSubtractSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingWideningLowerAndSubtractSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1);
@@ -11556,7 +11437,6 @@ MultiplyDoublingWideningLowerAndSubtractSaturateTest(Vector128int_0, Vector64sho
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningLowerAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerAndSubtractSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 Console.WriteLine(
 @"```
@@ -11595,17 +11475,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningLowerByScalarAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningLowerByScalarAndAddSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningLowerByScalarAndAddSaturateTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningLowerByScalarAndAddSaturate(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -11622,7 +11502,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningLowerByScalarAndAddSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingWideningLowerByScalarAndAddSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1);
@@ -11631,7 +11511,6 @@ MultiplyDoublingWideningLowerByScalarAndAddSaturateTest(Vector128int_0, Vector64
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningLowerByScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerByScalarAndAddSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11650,17 +11529,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningLowerByScalarAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningLowerByScalarAndSubtractSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningLowerByScalarAndSubtractSaturateTest(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningLowerByScalarAndSubtractSaturate(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -11677,7 +11556,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningLowerByScalarAndSubtractSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingWideningLowerByScalarAndSubtractSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1);
@@ -11686,7 +11565,6 @@ MultiplyDoublingWideningLowerByScalarAndSubtractSaturateTest(Vector128int_0, Vec
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerByScalarAndSubtractSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11705,18 +11583,18 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturateTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -11735,7 +11613,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -11744,7 +11622,6 @@ MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturateTest(Vector128int_0, 
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11763,18 +11640,18 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturateTest(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -11793,7 +11670,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate' operation.", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -11802,7 +11679,6 @@ MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturateTest(Vector128in
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate' operation", Vector128int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11821,16 +11697,16 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningSaturateLower(Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningSaturateLower' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningSaturateLowerTest(Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningSaturateLower(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -11847,7 +11723,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningSaturateLower' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingWideningSaturateLowerTest(Vector64short_0, Vector64short_1);
@@ -11856,7 +11732,6 @@ MultiplyDoublingWideningSaturateLowerTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningSaturateLower", "Performs 'MultiplyDoublingWideningSaturateLower' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11875,16 +11750,16 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningSaturateLowerByScalar(Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningSaturateLowerByScalar' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningSaturateLowerByScalarTest(Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningSaturateLowerByScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -11901,7 +11776,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningSaturateLowerByScalar' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingWideningSaturateLowerByScalarTest(Vector64short_0, Vector64short_1);
@@ -11910,7 +11785,6 @@ MultiplyDoublingWideningSaturateLowerByScalarTest(Vector64short_0, Vector64short
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningSaturateLowerByScalar", "Performs 'MultiplyDoublingWideningSaturateLowerByScalar' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11929,17 +11803,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningSaturateLowerBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingWideningSaturateLowerBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningSaturateLowerBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyDoublingWideningSaturateLowerBySelectedScalar(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -11958,7 +11832,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyDoublingWideningSaturateLowerBySelectedScalar' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyDoublingWideningSaturateLowerBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
@@ -11967,7 +11841,6 @@ MultiplyDoublingWideningSaturateLowerBySelectedScalarTest(Vector64short_0, Vecto
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningSaturateLowerBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateLowerBySelectedScalar' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -11986,16 +11859,16 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningSaturateUpper(Vector128<short> left, Vector128<short> right)`
 
-Performs 'MultiplyDoublingWideningSaturateUpper' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningSaturateUpperTest(Vector128<short> left, Vector128<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningSaturateUpper(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -12012,7 +11885,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128short_0, Vector128short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningSaturateUpper' operation.", Vector128short_0, Vector128short_1, apiResult);
 
 try {
 MultiplyDoublingWideningSaturateUpperTest(Vector128short_0, Vector128short_1);
@@ -12021,7 +11894,6 @@ MultiplyDoublingWideningSaturateUpperTest(Vector128short_0, Vector128short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningSaturateUpper", "Performs 'MultiplyDoublingWideningSaturateUpper' operation", Vector128short_0, Vector128short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12040,16 +11912,16 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningSaturateUpperByScalar(Vector128<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningSaturateUpperByScalar' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningSaturateUpperByScalarTest(Vector128<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningSaturateUpperByScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -12066,7 +11938,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128short_0, Vector64short_0, apiResult);
+", "Performs 'MultiplyDoublingWideningSaturateUpperByScalar' operation.", Vector128short_0, Vector64short_0, apiResult);
 
 try {
 MultiplyDoublingWideningSaturateUpperByScalarTest(Vector128short_0, Vector64short_0);
@@ -12075,7 +11947,6 @@ MultiplyDoublingWideningSaturateUpperByScalarTest(Vector128short_0, Vector64shor
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningSaturateUpperByScalar", "Performs 'MultiplyDoublingWideningSaturateUpperByScalar' operation", Vector128short_0, Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12094,17 +11965,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningSaturateUpperBySelectedScalar(Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingWideningSaturateUpperBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningSaturateUpperBySelectedScalarTest(Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyDoublingWideningSaturateUpperBySelectedScalar(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -12123,7 +11994,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128short_0, Vector64short_0, byte_0, apiResult);
+", "Performs 'MultiplyDoublingWideningSaturateUpperBySelectedScalar' operation.", Vector128short_0, Vector64short_0, byte_0, apiResult);
 
 try {
 MultiplyDoublingWideningSaturateUpperBySelectedScalarTest(Vector128short_0, Vector64short_0, byte_0);
@@ -12132,7 +12003,6 @@ MultiplyDoublingWideningSaturateUpperBySelectedScalarTest(Vector128short_0, Vect
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningSaturateUpperBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateUpperBySelectedScalar' operation", Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12151,17 +12021,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningUpperAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector128<short> right)`
 
-Performs 'MultiplyDoublingWideningUpperAndAddSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningUpperAndAddSaturateTest(Vector128<int> addend, Vector128<short> left, Vector128<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningUpperAndAddSaturate(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -12178,7 +12048,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector128short_0, Vector128short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningUpperAndAddSaturate' operation.", Vector128int_0, Vector128short_0, Vector128short_1, apiResult);
 
 try {
 MultiplyDoublingWideningUpperAndAddSaturateTest(Vector128int_0, Vector128short_0, Vector128short_1);
@@ -12187,7 +12057,6 @@ MultiplyDoublingWideningUpperAndAddSaturateTest(Vector128int_0, Vector128short_0
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningUpperAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperAndAddSaturate' operation", Vector128int_0, Vector128short_0, Vector128short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12206,17 +12075,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningUpperAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector128<short> right)`
 
-Performs 'MultiplyDoublingWideningUpperAndSubtractSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningUpperAndSubtractSaturateTest(Vector128<int> minuend, Vector128<short> left, Vector128<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningUpperAndSubtractSaturate(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -12233,7 +12102,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector128short_0, Vector128short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningUpperAndSubtractSaturate' operation.", Vector128int_0, Vector128short_0, Vector128short_1, apiResult);
 
 try {
 MultiplyDoublingWideningUpperAndSubtractSaturateTest(Vector128int_0, Vector128short_0, Vector128short_1);
@@ -12242,7 +12111,6 @@ MultiplyDoublingWideningUpperAndSubtractSaturateTest(Vector128int_0, Vector128sh
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningUpperAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperAndSubtractSaturate' operation", Vector128int_0, Vector128short_0, Vector128short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12261,17 +12129,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningUpperByScalarAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningUpperByScalarAndAddSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningUpperByScalarAndAddSaturateTest(Vector128<int> addend, Vector128<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningUpperByScalarAndAddSaturate(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -12288,7 +12156,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector128short_0, Vector64short_0, apiResult);
+", "Performs 'MultiplyDoublingWideningUpperByScalarAndAddSaturate' operation.", Vector128int_0, Vector128short_0, Vector64short_0, apiResult);
 
 try {
 MultiplyDoublingWideningUpperByScalarAndAddSaturateTest(Vector128int_0, Vector128short_0, Vector64short_0);
@@ -12297,7 +12165,6 @@ MultiplyDoublingWideningUpperByScalarAndAddSaturateTest(Vector128int_0, Vector12
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningUpperByScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperByScalarAndAddSaturate' operation", Vector128int_0, Vector128short_0, Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12316,17 +12183,17 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningUpperByScalarAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningUpperByScalarAndSubtractSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningUpperByScalarAndSubtractSaturateTest(Vector128<int> minuend, Vector128<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyDoublingWideningUpperByScalarAndSubtractSaturate(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -12343,7 +12210,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector128short_0, Vector64short_0, apiResult);
+", "Performs 'MultiplyDoublingWideningUpperByScalarAndSubtractSaturate' operation.", Vector128int_0, Vector128short_0, Vector64short_0, apiResult);
 
 try {
 MultiplyDoublingWideningUpperByScalarAndSubtractSaturateTest(Vector128int_0, Vector128short_0, Vector64short_0);
@@ -12352,7 +12219,6 @@ MultiplyDoublingWideningUpperByScalarAndSubtractSaturateTest(Vector128int_0, Vec
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperByScalarAndSubtractSaturate' operation", Vector128int_0, Vector128short_0, Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12371,18 +12237,18 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturateTest(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -12401,7 +12267,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
+", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate' operation.", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 
 try {
 MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturateTest(Vector128int_0, Vector128short_0, Vector64short_0, byte_0);
@@ -12410,7 +12276,6 @@ MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturateTest(Vector128int_0, 
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate' operation", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12429,18 +12294,18 @@ Console.WriteLine(
 
 `Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate' operation.
+{0}
 
 ```csharp
 private Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -12459,7 +12324,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
+", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate' operation.", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 
 try {
 MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128int_0, Vector128short_0, Vector64short_0, byte_0);
@@ -12468,7 +12333,6 @@ MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128in
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate' operation", Vector128int_0, Vector128short_0, Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12487,16 +12351,16 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyRoundedDoublingByScalarSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyRoundedDoublingByScalarSaturateHigh' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyRoundedDoublingByScalarSaturateHighTest(Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyRoundedDoublingByScalarSaturateHigh(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -12515,7 +12379,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyRoundedDoublingByScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyRoundedDoublingByScalarSaturateHighTest(Vector64short_0, Vector64short_1);
@@ -12524,7 +12388,6 @@ MultiplyRoundedDoublingByScalarSaturateHighTest(Vector64short_0, Vector64short_1
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyRoundedDoublingByScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingByScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12543,17 +12406,17 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyRoundedDoublingBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyRoundedDoublingBySelectedScalarSaturateHigh' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyRoundedDoublingBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyRoundedDoublingBySelectedScalarSaturateHigh(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -12576,7 +12439,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyRoundedDoublingBySelectedScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyRoundedDoublingBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
@@ -12585,7 +12448,6 @@ MultiplyRoundedDoublingBySelectedScalarSaturateHighTest(Vector64short_0, Vector6
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingBySelectedScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12604,16 +12466,16 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyRoundedDoublingSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyRoundedDoublingSaturateHigh' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyRoundedDoublingSaturateHighTest(Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplyRoundedDoublingSaturateHigh(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -12632,7 +12494,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyRoundedDoublingSaturateHigh' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyRoundedDoublingSaturateHighTest(Vector64short_0, Vector64short_1);
@@ -12641,7 +12503,6 @@ MultiplyRoundedDoublingSaturateHighTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyRoundedDoublingSaturateHigh", "Performs 'MultiplyRoundedDoublingSaturateHigh' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12660,16 +12521,16 @@ Console.WriteLine(
 
 `Vector64<double> MultiplyScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'MultiplyScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> MultiplyScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.MultiplyScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -12686,7 +12547,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'MultiplyScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 MultiplyScalarTest(Vector64double_0, Vector64double_1);
@@ -12695,7 +12556,6 @@ MultiplyScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyScalar", "Performs 'MultiplyScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12714,17 +12574,17 @@ Console.WriteLine(
 
 `Vector64<float> MultiplyScalarBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`
 
-Performs 'MultiplyScalarBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> MultiplyScalarBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
 {{
   return AdvSimd.MultiplyScalarBySelectedScalar(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -12744,7 +12604,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, byte_0, apiResult);
+", "Performs 'MultiplyScalarBySelectedScalar' operation.", Vector64float_0, Vector64float_1, byte_0, apiResult);
 
 try {
 MultiplyScalarBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
@@ -12753,7 +12613,6 @@ MultiplyScalarBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyScalarBySelectedScalar", "Performs 'MultiplyScalarBySelectedScalar' operation", Vector64float_0, Vector64float_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12772,17 +12631,17 @@ Console.WriteLine(
 
 `Vector64<byte> MultiplySubtract(Vector64<byte> minuend, Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'MultiplySubtract' operation.
+{0}
 
 ```csharp
 private Vector64<byte> MultiplySubtractTest(Vector64<byte> minuend, Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.MultiplySubtract(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -12809,7 +12668,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
+", "Performs 'MultiplySubtract' operation.", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 
 try {
 MultiplySubtractTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
@@ -12818,7 +12677,6 @@ MultiplySubtractTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplySubtract", "Performs 'MultiplySubtract' operation", Vector64byte_0, Vector64byte_1, Vector64byte_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12837,17 +12695,17 @@ Console.WriteLine(
 
 `Vector64<short> MultiplySubtractByScalar(Vector64<short> minuend, Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplySubtractByScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplySubtractByScalarTest(Vector64<short> minuend, Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.MultiplySubtractByScalar(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -12870,7 +12728,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, Vector64short_2, apiResult);
+", "Performs 'MultiplySubtractByScalar' operation.", Vector64short_0, Vector64short_1, Vector64short_2, apiResult);
 
 try {
 MultiplySubtractByScalarTest(Vector64short_0, Vector64short_1, Vector64short_2);
@@ -12879,7 +12737,6 @@ MultiplySubtractByScalarTest(Vector64short_0, Vector64short_1, Vector64short_2);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplySubtractByScalar", "Performs 'MultiplySubtractByScalar' operation", Vector64short_0, Vector64short_1, Vector64short_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12898,18 +12755,18 @@ Console.WriteLine(
 
 `Vector64<short> MultiplySubtractBySelectedScalar(Vector64<short> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplySubtractBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplySubtractBySelectedScalarTest(Vector64<short> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.MultiplySubtractBySelectedScalar(minuend, left, right, rightIndex);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -12940,7 +12797,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, Vector64short_2, byte_0, apiResult);
+", "Performs 'MultiplySubtractBySelectedScalar' operation.", Vector64short_0, Vector64short_1, Vector64short_2, byte_0, apiResult);
 
 try {
 MultiplySubtractBySelectedScalarTest(Vector64short_0, Vector64short_1, Vector64short_2, byte_0);
@@ -12949,7 +12806,6 @@ MultiplySubtractBySelectedScalarTest(Vector64short_0, Vector64short_1, Vector64s
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplySubtractBySelectedScalar", "Performs 'MultiplySubtractBySelectedScalar' operation", Vector64short_0, Vector64short_1, Vector64short_2, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -12968,16 +12824,16 @@ Console.WriteLine(
 
 `Vector128<ushort> MultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'MultiplyWideningLower' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> MultiplyWideningLowerTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.MultiplyWideningLower(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -12998,7 +12854,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'MultiplyWideningLower' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 MultiplyWideningLowerTest(Vector64byte_0, Vector64byte_1);
@@ -13007,7 +12863,6 @@ MultiplyWideningLowerTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyWideningLower", "Performs 'MultiplyWideningLower' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13026,17 +12881,17 @@ Console.WriteLine(
 
 `Vector128<ushort> MultiplyWideningLowerAndAdd(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'MultiplyWideningLowerAndAdd' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> MultiplyWideningLowerAndAddTest(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.MultiplyWideningLowerAndAdd(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -13057,7 +12912,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'MultiplyWideningLowerAndAdd' operation.", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 MultiplyWideningLowerAndAddTest(Vector128ushort_0, Vector64byte_0, Vector64byte_1);
@@ -13066,7 +12921,6 @@ MultiplyWideningLowerAndAddTest(Vector128ushort_0, Vector64byte_0, Vector64byte_
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyWideningLowerAndAdd", "Performs 'MultiplyWideningLowerAndAdd' operation", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13085,17 +12939,17 @@ Console.WriteLine(
 
 `Vector128<ushort> MultiplyWideningLowerAndSubtract(Vector128<ushort> minuend, Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'MultiplyWideningLowerAndSubtract' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> MultiplyWideningLowerAndSubtractTest(Vector128<ushort> minuend, Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.MultiplyWideningLowerAndSubtract(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -13116,7 +12970,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'MultiplyWideningLowerAndSubtract' operation.", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 MultiplyWideningLowerAndSubtractTest(Vector128ushort_0, Vector64byte_0, Vector64byte_1);
@@ -13125,7 +12979,6 @@ MultiplyWideningLowerAndSubtractTest(Vector128ushort_0, Vector64byte_0, Vector64
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyWideningLowerAndSubtract", "Performs 'MultiplyWideningLowerAndSubtract' operation", Vector128ushort_0, Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13144,16 +12997,16 @@ Console.WriteLine(
 
 `Vector128<ushort> MultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
-Performs 'MultiplyWideningUpper' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> MultiplyWideningUpperTest(Vector128<byte> left, Vector128<byte> right)
 {{
   return AdvSimd.MultiplyWideningUpper(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -13174,7 +13027,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128byte_0, Vector128byte_1, apiResult);
+", "Performs 'MultiplyWideningUpper' operation.", Vector128byte_0, Vector128byte_1, apiResult);
 
 try {
 MultiplyWideningUpperTest(Vector128byte_0, Vector128byte_1);
@@ -13183,7 +13036,6 @@ MultiplyWideningUpperTest(Vector128byte_0, Vector128byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyWideningUpper", "Performs 'MultiplyWideningUpper' operation", Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13202,17 +13054,17 @@ Console.WriteLine(
 
 `Vector128<ushort> MultiplyWideningUpperAndAdd(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)`
 
-Performs 'MultiplyWideningUpperAndAdd' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> MultiplyWideningUpperAndAddTest(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)
 {{
   return AdvSimd.MultiplyWideningUpperAndAdd(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -13233,7 +13085,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
+", "Performs 'MultiplyWideningUpperAndAdd' operation.", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
 
 try {
 MultiplyWideningUpperAndAddTest(Vector128ushort_0, Vector128byte_0, Vector128byte_1);
@@ -13242,7 +13094,6 @@ MultiplyWideningUpperAndAddTest(Vector128ushort_0, Vector128byte_0, Vector128byt
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyWideningUpperAndAdd", "Performs 'MultiplyWideningUpperAndAdd' operation", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13261,17 +13112,17 @@ Console.WriteLine(
 
 `Vector128<ushort> MultiplyWideningUpperAndSubtract(Vector128<ushort> minuend, Vector128<byte> left, Vector128<byte> right)`
 
-Performs 'MultiplyWideningUpperAndSubtract' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> MultiplyWideningUpperAndSubtractTest(Vector128<ushort> minuend, Vector128<byte> left, Vector128<byte> right)
 {{
   return AdvSimd.MultiplyWideningUpperAndSubtract(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -13292,7 +13143,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
+", "Performs 'MultiplyWideningUpperAndSubtract' operation.", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
 
 try {
 MultiplyWideningUpperAndSubtractTest(Vector128ushort_0, Vector128byte_0, Vector128byte_1);
@@ -13301,7 +13152,6 @@ MultiplyWideningUpperAndSubtractTest(Vector128ushort_0, Vector128byte_0, Vector1
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyWideningUpperAndSubtract", "Performs 'MultiplyWideningUpperAndSubtract' operation", Vector128ushort_0, Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13320,15 +13170,15 @@ Console.WriteLine(
 
 `Vector64<short> Negate(Vector64<short> value)`
 
-Performs 'Negate' operation.
+{0}
 
 ```csharp
 private Vector64<short> NegateTest(Vector64<short> value)
 {{
   return AdvSimd.Negate(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -13355,7 +13205,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, apiResult);
+", "Performs 'Negate' operation.", Vector64short_0, apiResult);
 
 try {
 NegateTest(Vector64short_0);
@@ -13364,7 +13214,6 @@ NegateTest(Vector64short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("Negate", "Performs 'Negate' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13383,15 +13232,15 @@ Console.WriteLine(
 
 `Vector64<short> NegateSaturate(Vector64<short> value)`
 
-Performs 'NegateSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<short> NegateSaturateTest(Vector64<short> value)
 {{
   return AdvSimd.NegateSaturate(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -13415,7 +13264,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, apiResult);
+", "Performs 'NegateSaturate' operation.", Vector64short_0, apiResult);
 
 try {
 NegateSaturateTest(Vector64short_0);
@@ -13424,7 +13273,6 @@ NegateSaturateTest(Vector64short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("NegateSaturate", "Performs 'NegateSaturate' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13443,15 +13291,15 @@ Console.WriteLine(
 
 `Vector64<double> NegateScalar(Vector64<double> value)`
 
-Performs 'NegateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> NegateScalarTest(Vector64<double> value)
 {{
   return AdvSimd.NegateScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -13471,7 +13319,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'NegateScalar' operation.", Vector64double_0, apiResult);
 
 try {
 NegateScalarTest(Vector64double_0);
@@ -13480,7 +13328,6 @@ NegateScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("NegateScalar", "Performs 'NegateScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13499,15 +13346,15 @@ Console.WriteLine(
 
 `Vector64<byte> Not(Vector64<byte> value)`
 
-Performs 'Not' operation.
+{0}
 
 ```csharp
 private Vector64<byte> NotTest(Vector64<byte> value)
 {{
   return AdvSimd.Not(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -13542,7 +13389,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, apiResult);
+", "Performs 'Not' operation.", Vector64byte_0, apiResult);
 
 try {
 NotTest(Vector64byte_0);
@@ -13551,7 +13398,6 @@ NotTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("Not", "Performs 'Not' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13570,16 +13416,16 @@ Console.WriteLine(
 
 `Vector64<byte> Or(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'Or' operation.
+{0}
 
 ```csharp
 private Vector64<byte> OrTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Or(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -13614,7 +13460,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'Or' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 OrTest(Vector64byte_0, Vector64byte_1);
@@ -13623,7 +13469,6 @@ OrTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("Or", "Performs 'Or' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13642,16 +13487,16 @@ Console.WriteLine(
 
 `Vector64<byte> OrNot(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'OrNot' operation.
+{0}
 
 ```csharp
 private Vector64<byte> OrNotTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.OrNot(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -13686,7 +13531,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'OrNot' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 OrNotTest(Vector64byte_0, Vector64byte_1);
@@ -13695,7 +13540,6 @@ OrNotTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("OrNot", "Performs 'OrNot' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13714,16 +13558,16 @@ Console.WriteLine(
 
 `Vector64<byte> PolynomialMultiply(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'PolynomialMultiply' operation.
+{0}
 
 ```csharp
 private Vector64<byte> PolynomialMultiplyTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.PolynomialMultiply(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -13742,7 +13586,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'PolynomialMultiply' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 PolynomialMultiplyTest(Vector64byte_0, Vector64byte_1);
@@ -13751,7 +13595,6 @@ PolynomialMultiplyTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("PolynomialMultiply", "Performs 'PolynomialMultiply' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13770,16 +13613,16 @@ Console.WriteLine(
 
 `Vector128<ushort> PolynomialMultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'PolynomialMultiplyWideningLower' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> PolynomialMultiplyWideningLowerTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.PolynomialMultiplyWideningLower(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -13796,7 +13639,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'PolynomialMultiplyWideningLower' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 PolynomialMultiplyWideningLowerTest(Vector64byte_0, Vector64byte_1);
@@ -13805,7 +13648,6 @@ PolynomialMultiplyWideningLowerTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("PolynomialMultiplyWideningLower", "Performs 'PolynomialMultiplyWideningLower' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13824,16 +13666,16 @@ Console.WriteLine(
 
 `Vector128<ushort> PolynomialMultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
-Performs 'PolynomialMultiplyWideningUpper' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> PolynomialMultiplyWideningUpperTest(Vector128<byte> left, Vector128<byte> right)
 {{
   return AdvSimd.PolynomialMultiplyWideningUpper(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -13850,7 +13692,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128byte_0, Vector128byte_1, apiResult);
+", "Performs 'PolynomialMultiplyWideningUpper' operation.", Vector128byte_0, Vector128byte_1, apiResult);
 
 try {
 PolynomialMultiplyWideningUpperTest(Vector128byte_0, Vector128byte_1);
@@ -13859,7 +13701,6 @@ PolynomialMultiplyWideningUpperTest(Vector128byte_0, Vector128byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("PolynomialMultiplyWideningUpper", "Performs 'PolynomialMultiplyWideningUpper' operation", Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13878,15 +13719,15 @@ Console.WriteLine(
 
 `Vector64<byte> PopCount(Vector64<byte> value)`
 
-Performs 'PopCount' operation.
+{0}
 
 ```csharp
 private Vector64<byte> PopCountTest(Vector64<byte> value)
 {{
   return AdvSimd.PopCount(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -13905,7 +13746,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, apiResult);
+", "Performs 'PopCount' operation.", Vector64byte_0, apiResult);
 
 try {
 PopCountTest(Vector64byte_0);
@@ -13914,7 +13755,6 @@ PopCountTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("PopCount", "Performs 'PopCount' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13933,15 +13773,15 @@ Console.WriteLine(
 
 `Vector64<float> ReciprocalEstimate(Vector64<float> value)`
 
-Performs 'ReciprocalEstimate' operation.
+{0}
 
 ```csharp
 private Vector64<float> ReciprocalEstimateTest(Vector64<float> value)
 {{
   return AdvSimd.ReciprocalEstimate(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -13963,7 +13803,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ReciprocalEstimate' operation.", Vector64float_0, apiResult);
 
 try {
 ReciprocalEstimateTest(Vector64float_0);
@@ -13972,7 +13812,6 @@ ReciprocalEstimateTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ReciprocalEstimate", "Performs 'ReciprocalEstimate' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -13991,15 +13830,15 @@ Console.WriteLine(
 
 `Vector64<float> ReciprocalSquareRootEstimate(Vector64<float> value)`
 
-Performs 'ReciprocalSquareRootEstimate' operation.
+{0}
 
 ```csharp
 private Vector64<float> ReciprocalSquareRootEstimateTest(Vector64<float> value)
 {{
   return AdvSimd.ReciprocalSquareRootEstimate(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14021,7 +13860,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ReciprocalSquareRootEstimate' operation.", Vector64float_0, apiResult);
 
 try {
 ReciprocalSquareRootEstimateTest(Vector64float_0);
@@ -14030,7 +13869,6 @@ ReciprocalSquareRootEstimateTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ReciprocalSquareRootEstimate", "Performs 'ReciprocalSquareRootEstimate' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14049,16 +13887,16 @@ Console.WriteLine(
 
 `Vector64<float> ReciprocalSquareRootStep(Vector64<float> left, Vector64<float> right)`
 
-Performs 'ReciprocalSquareRootStep' operation.
+{0}
 
 ```csharp
 private Vector64<float> ReciprocalSquareRootStepTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.ReciprocalSquareRootStep(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -14078,7 +13916,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'ReciprocalSquareRootStep' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 ReciprocalSquareRootStepTest(Vector64float_0, Vector64float_1);
@@ -14087,7 +13925,6 @@ ReciprocalSquareRootStepTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ReciprocalSquareRootStep", "Performs 'ReciprocalSquareRootStep' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14106,16 +13943,16 @@ Console.WriteLine(
 
 `Vector64<float> ReciprocalStep(Vector64<float> left, Vector64<float> right)`
 
-Performs 'ReciprocalStep' operation.
+{0}
 
 ```csharp
 private Vector64<float> ReciprocalStepTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.ReciprocalStep(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -14135,7 +13972,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'ReciprocalStep' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 ReciprocalStepTest(Vector64float_0, Vector64float_1);
@@ -14144,7 +13981,6 @@ ReciprocalStepTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ReciprocalStep", "Performs 'ReciprocalStep' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14163,15 +13999,15 @@ Console.WriteLine(
 
 `Vector64<int> ReverseElement16(Vector64<int> value)`
 
-Performs 'ReverseElement16' operation.
+{0}
 
 ```csharp
 private Vector64<int> ReverseElement16Test(Vector64<int> value)
 {{
   return AdvSimd.ReverseElement16(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14194,7 +14030,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64int_0, apiResult);
+", "Performs 'ReverseElement16' operation.", Vector64int_0, apiResult);
 
 try {
 ReverseElement16Test(Vector64int_0);
@@ -14203,7 +14039,6 @@ ReverseElement16Test(Vector64int_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ReverseElement16", "Performs 'ReverseElement16' operation", Vector64int_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14222,15 +14057,15 @@ Console.WriteLine(
 
 `Vector64<long> ReverseElement32(Vector64<long> value)`
 
-Performs 'ReverseElement32' operation.
+{0}
 
 ```csharp
 private Vector64<long> ReverseElement32Test(Vector64<long> value)
 {{
   return AdvSimd.ReverseElement32(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14249,7 +14084,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, apiResult);
+", "Performs 'ReverseElement32' operation.", Vector64long_0, apiResult);
 
 try {
 ReverseElement32Test(Vector64long_0);
@@ -14258,7 +14093,6 @@ ReverseElement32Test(Vector64long_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ReverseElement32", "Performs 'ReverseElement32' operation", Vector64long_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14277,15 +14111,15 @@ Console.WriteLine(
 
 `Vector64<short> ReverseElement8(Vector64<short> value)`
 
-Performs 'ReverseElement8' operation.
+{0}
 
 ```csharp
 private Vector64<short> ReverseElement8Test(Vector64<short> value)
 {{
   return AdvSimd.ReverseElement8(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14312,7 +14146,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, apiResult);
+", "Performs 'ReverseElement8' operation.", Vector64short_0, apiResult);
 
 try {
 ReverseElement8Test(Vector64short_0);
@@ -14321,7 +14155,6 @@ ReverseElement8Test(Vector64short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ReverseElement8", "Performs 'ReverseElement8' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14340,15 +14173,15 @@ Console.WriteLine(
 
 `Vector64<float> RoundAwayFromZero(Vector64<float> value)`
 
-Performs 'RoundAwayFromZero' operation.
+{0}
 
 ```csharp
 private Vector64<float> RoundAwayFromZeroTest(Vector64<float> value)
 {{
   return AdvSimd.RoundAwayFromZero(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14368,7 +14201,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'RoundAwayFromZero' operation.", Vector64float_0, apiResult);
 
 try {
 RoundAwayFromZeroTest(Vector64float_0);
@@ -14377,7 +14210,6 @@ RoundAwayFromZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("RoundAwayFromZero", "Performs 'RoundAwayFromZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14396,15 +14228,15 @@ Console.WriteLine(
 
 `Vector64<double> RoundAwayFromZeroScalar(Vector64<double> value)`
 
-Performs 'RoundAwayFromZeroScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> RoundAwayFromZeroScalarTest(Vector64<double> value)
 {{
   return AdvSimd.RoundAwayFromZeroScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14421,7 +14253,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'RoundAwayFromZeroScalar' operation.", Vector64double_0, apiResult);
 
 try {
 RoundAwayFromZeroScalarTest(Vector64double_0);
@@ -14430,7 +14262,6 @@ RoundAwayFromZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("RoundAwayFromZeroScalar", "Performs 'RoundAwayFromZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14449,15 +14280,15 @@ Console.WriteLine(
 
 `Vector64<float> RoundToNearest(Vector64<float> value)`
 
-Performs 'RoundToNearest' operation.
+{0}
 
 ```csharp
 private Vector64<float> RoundToNearestTest(Vector64<float> value)
 {{
   return AdvSimd.RoundToNearest(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14477,7 +14308,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'RoundToNearest' operation.", Vector64float_0, apiResult);
 
 try {
 RoundToNearestTest(Vector64float_0);
@@ -14486,7 +14317,6 @@ RoundToNearestTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("RoundToNearest", "Performs 'RoundToNearest' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14505,15 +14335,15 @@ Console.WriteLine(
 
 `Vector64<double> RoundToNearestScalar(Vector64<double> value)`
 
-Performs 'RoundToNearestScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> RoundToNearestScalarTest(Vector64<double> value)
 {{
   return AdvSimd.RoundToNearestScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14530,7 +14360,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'RoundToNearestScalar' operation.", Vector64double_0, apiResult);
 
 try {
 RoundToNearestScalarTest(Vector64double_0);
@@ -14539,7 +14369,6 @@ RoundToNearestScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("RoundToNearestScalar", "Performs 'RoundToNearestScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14558,15 +14387,15 @@ Console.WriteLine(
 
 `Vector64<float> RoundToNegativeInfinity(Vector64<float> value)`
 
-Performs 'RoundToNegativeInfinity' operation.
+{0}
 
 ```csharp
 private Vector64<float> RoundToNegativeInfinityTest(Vector64<float> value)
 {{
   return AdvSimd.RoundToNegativeInfinity(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14586,7 +14415,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'RoundToNegativeInfinity' operation.", Vector64float_0, apiResult);
 
 try {
 RoundToNegativeInfinityTest(Vector64float_0);
@@ -14595,7 +14424,6 @@ RoundToNegativeInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("RoundToNegativeInfinity", "Performs 'RoundToNegativeInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14614,15 +14442,15 @@ Console.WriteLine(
 
 `Vector64<double> RoundToNegativeInfinityScalar(Vector64<double> value)`
 
-Performs 'RoundToNegativeInfinityScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> RoundToNegativeInfinityScalarTest(Vector64<double> value)
 {{
   return AdvSimd.RoundToNegativeInfinityScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14639,7 +14467,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'RoundToNegativeInfinityScalar' operation.", Vector64double_0, apiResult);
 
 try {
 RoundToNegativeInfinityScalarTest(Vector64double_0);
@@ -14648,7 +14476,6 @@ RoundToNegativeInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("RoundToNegativeInfinityScalar", "Performs 'RoundToNegativeInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14667,15 +14494,15 @@ Console.WriteLine(
 
 `Vector64<float> RoundToPositiveInfinity(Vector64<float> value)`
 
-Performs 'RoundToPositiveInfinity' operation.
+{0}
 
 ```csharp
 private Vector64<float> RoundToPositiveInfinityTest(Vector64<float> value)
 {{
   return AdvSimd.RoundToPositiveInfinity(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14695,7 +14522,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'RoundToPositiveInfinity' operation.", Vector64float_0, apiResult);
 
 try {
 RoundToPositiveInfinityTest(Vector64float_0);
@@ -14704,7 +14531,6 @@ RoundToPositiveInfinityTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("RoundToPositiveInfinity", "Performs 'RoundToPositiveInfinity' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14723,15 +14549,15 @@ Console.WriteLine(
 
 `Vector64<double> RoundToPositiveInfinityScalar(Vector64<double> value)`
 
-Performs 'RoundToPositiveInfinityScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> RoundToPositiveInfinityScalarTest(Vector64<double> value)
 {{
   return AdvSimd.RoundToPositiveInfinityScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14748,7 +14574,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'RoundToPositiveInfinityScalar' operation.", Vector64double_0, apiResult);
 
 try {
 RoundToPositiveInfinityScalarTest(Vector64double_0);
@@ -14757,7 +14583,6 @@ RoundToPositiveInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("RoundToPositiveInfinityScalar", "Performs 'RoundToPositiveInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14776,15 +14601,15 @@ Console.WriteLine(
 
 `Vector64<float> RoundToZero(Vector64<float> value)`
 
-Performs 'RoundToZero' operation.
+{0}
 
 ```csharp
 private Vector64<float> RoundToZeroTest(Vector64<float> value)
 {{
   return AdvSimd.RoundToZero(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14804,7 +14629,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'RoundToZero' operation.", Vector64float_0, apiResult);
 
 try {
 RoundToZeroTest(Vector64float_0);
@@ -14813,7 +14638,6 @@ RoundToZeroTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("RoundToZero", "Performs 'RoundToZero' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14832,15 +14656,15 @@ Console.WriteLine(
 
 `Vector64<double> RoundToZeroScalar(Vector64<double> value)`
 
-Performs 'RoundToZeroScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> RoundToZeroScalarTest(Vector64<double> value)
 {{
   return AdvSimd.RoundToZeroScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -14857,7 +14681,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'RoundToZeroScalar' operation.", Vector64double_0, apiResult);
 
 try {
 RoundToZeroScalarTest(Vector64double_0);
@@ -14866,7 +14690,6 @@ RoundToZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("RoundToZeroScalar", "Performs 'RoundToZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14885,16 +14708,16 @@ Console.WriteLine(
 
 `Vector64<short> ShiftArithmetic(Vector64<short> value, Vector64<short> count)`
 
-Performs 'ShiftArithmetic' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftArithmeticTest(Vector64<short> value, Vector64<short> count)
 {{
   return AdvSimd.ShiftArithmetic(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -14916,7 +14739,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'ShiftArithmetic' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 ShiftArithmeticTest(Vector64short_0, Vector64short_1);
@@ -14925,7 +14748,6 @@ ShiftArithmeticTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftArithmetic", "Performs 'ShiftArithmetic' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -14944,16 +14766,16 @@ Console.WriteLine(
 
 `Vector64<short> ShiftArithmeticRounded(Vector64<short> value, Vector64<short> count)`
 
-Performs 'ShiftArithmeticRounded' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftArithmeticRoundedTest(Vector64<short> value, Vector64<short> count)
 {{
   return AdvSimd.ShiftArithmeticRounded(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -14975,7 +14797,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'ShiftArithmeticRounded' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 ShiftArithmeticRoundedTest(Vector64short_0, Vector64short_1);
@@ -14984,7 +14806,6 @@ ShiftArithmeticRoundedTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftArithmeticRounded", "Performs 'ShiftArithmeticRounded' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15003,16 +14824,16 @@ Console.WriteLine(
 
 `Vector64<short> ShiftArithmeticRoundedSaturate(Vector64<short> value, Vector64<short> count)`
 
-Performs 'ShiftArithmeticRoundedSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftArithmeticRoundedSaturateTest(Vector64<short> value, Vector64<short> count)
 {{
   return AdvSimd.ShiftArithmeticRoundedSaturate(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15034,7 +14855,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'ShiftArithmeticRoundedSaturate' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 ShiftArithmeticRoundedSaturateTest(Vector64short_0, Vector64short_1);
@@ -15043,7 +14864,6 @@ ShiftArithmeticRoundedSaturateTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftArithmeticRoundedSaturate", "Performs 'ShiftArithmeticRoundedSaturate' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 Console.WriteLine(
 @"```
@@ -15082,16 +14902,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftArithmeticRoundedSaturateScalar(Vector64<long> value, Vector64<long> count)`
 
-Performs 'ShiftArithmeticRoundedSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftArithmeticRoundedSaturateScalarTest(Vector64<long> value, Vector64<long> count)
 {{
   return AdvSimd.ShiftArithmeticRoundedSaturateScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15112,7 +14932,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, apiResult);
+", "Performs 'ShiftArithmeticRoundedSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
 
 try {
 ShiftArithmeticRoundedSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -15121,7 +14941,6 @@ ShiftArithmeticRoundedSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftArithmeticRoundedSaturateScalar", "Performs 'ShiftArithmeticRoundedSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15140,16 +14959,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftArithmeticRoundedScalar(Vector64<long> value, Vector64<long> count)`
 
-Performs 'ShiftArithmeticRoundedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftArithmeticRoundedScalarTest(Vector64<long> value, Vector64<long> count)
 {{
   return AdvSimd.ShiftArithmeticRoundedScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15160,7 +14979,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, apiResult);
+", "Performs 'ShiftArithmeticRoundedScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
 
 try {
 ShiftArithmeticRoundedScalarTest(Vector64long_0, Vector64long_1);
@@ -15169,7 +14988,6 @@ ShiftArithmeticRoundedScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftArithmeticRoundedScalar", "Performs 'ShiftArithmeticRoundedScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15188,16 +15006,16 @@ Console.WriteLine(
 
 `Vector64<short> ShiftArithmeticSaturate(Vector64<short> value, Vector64<short> count)`
 
-Performs 'ShiftArithmeticSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftArithmeticSaturateTest(Vector64<short> value, Vector64<short> count)
 {{
   return AdvSimd.ShiftArithmeticSaturate(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15219,7 +15037,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'ShiftArithmeticSaturate' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 ShiftArithmeticSaturateTest(Vector64short_0, Vector64short_1);
@@ -15228,7 +15046,6 @@ ShiftArithmeticSaturateTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftArithmeticSaturate", "Performs 'ShiftArithmeticSaturate' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15247,16 +15064,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftArithmeticSaturateScalar(Vector64<long> value, Vector64<long> count)`
 
-Performs 'ShiftArithmeticSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftArithmeticSaturateScalarTest(Vector64<long> value, Vector64<long> count)
 {{
   return AdvSimd.ShiftArithmeticSaturateScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15277,7 +15094,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, apiResult);
+", "Performs 'ShiftArithmeticSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
 
 try {
 ShiftArithmeticSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -15286,7 +15103,6 @@ ShiftArithmeticSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftArithmeticSaturateScalar", "Performs 'ShiftArithmeticSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15305,16 +15121,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftArithmeticScalar(Vector64<long> value, Vector64<long> count)`
 
-Performs 'ShiftArithmeticScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftArithmeticScalarTest(Vector64<long> value, Vector64<long> count)
 {{
   return AdvSimd.ShiftArithmeticScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15325,7 +15141,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, apiResult);
+", "Performs 'ShiftArithmeticScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
 
 try {
 ShiftArithmeticScalarTest(Vector64long_0, Vector64long_1);
@@ -15334,7 +15150,6 @@ ShiftArithmeticScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftArithmeticScalar", "Performs 'ShiftArithmeticScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15353,17 +15168,17 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftLeftAndInsert(Vector64<byte> left, Vector64<byte> right, byte shift)`
 
-Performs 'ShiftLeftAndInsert' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftLeftAndInsertTest(Vector64<byte> left, Vector64<byte> right, byte shift)
 {{
   return AdvSimd.ShiftLeftAndInsert(left, right, shift);
 }}
-// left = {0}
-// right = {1}
-// shift = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// shift = {3}
+// Result = {4}
 
 ```
 
@@ -15392,7 +15207,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
+", "Performs 'ShiftLeftAndInsert' operation.", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 
 try {
 ShiftLeftAndInsertTest(Vector64byte_0, Vector64byte_1, byte_0);
@@ -15401,7 +15216,6 @@ ShiftLeftAndInsertTest(Vector64byte_0, Vector64byte_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLeftAndInsert", "Performs 'ShiftLeftAndInsert' operation", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15420,17 +15234,17 @@ Console.WriteLine(
 
 `Vector64<long> ShiftLeftAndInsertScalar(Vector64<long> left, Vector64<long> right, byte shift)`
 
-Performs 'ShiftLeftAndInsertScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftLeftAndInsertScalarTest(Vector64<long> left, Vector64<long> right, byte shift)
 {{
   return AdvSimd.ShiftLeftAndInsertScalar(left, right, shift);
 }}
-// left = {0}
-// right = {1}
-// shift = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// shift = {3}
+// Result = {4}
 
 ```
 
@@ -15447,7 +15261,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", "Performs 'ShiftLeftAndInsertScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
 
 try {
 ShiftLeftAndInsertScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -15456,7 +15270,6 @@ ShiftLeftAndInsertScalarTest(Vector64long_0, Vector64long_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLeftAndInsertScalar", "Performs 'ShiftLeftAndInsertScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15475,16 +15288,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftLeftLogical(Vector64<byte> value, byte count)`
 
-Performs 'ShiftLeftLogical' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftLeftLogicalTest(Vector64<byte> value, byte count)
 {{
   return AdvSimd.ShiftLeftLogical(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15512,7 +15325,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, apiResult);
+", "Performs 'ShiftLeftLogical' operation.", Vector64byte_0, byte_0, apiResult);
 
 try {
 ShiftLeftLogicalTest(Vector64byte_0, byte_0);
@@ -15521,7 +15334,6 @@ ShiftLeftLogicalTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLeftLogical", "Performs 'ShiftLeftLogical' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15540,16 +15352,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftLeftLogicalSaturate(Vector64<byte> value, byte count)`
 
-Performs 'ShiftLeftLogicalSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftLeftLogicalSaturateTest(Vector64<byte> value, byte count)
 {{
   return AdvSimd.ShiftLeftLogicalSaturate(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15578,7 +15390,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, apiResult);
+", "Performs 'ShiftLeftLogicalSaturate' operation.", Vector64byte_0, byte_0, apiResult);
 
 try {
 ShiftLeftLogicalSaturateTest(Vector64byte_0, byte_0);
@@ -15587,7 +15399,6 @@ ShiftLeftLogicalSaturateTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLeftLogicalSaturate", "Performs 'ShiftLeftLogicalSaturate' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15606,16 +15417,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftLeftLogicalSaturateScalar(Vector64<long> value, byte count)`
 
-Performs 'ShiftLeftLogicalSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftLeftLogicalSaturateScalarTest(Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftLeftLogicalSaturateScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15640,7 +15451,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, byte_0, apiResult);
+", "Performs 'ShiftLeftLogicalSaturateScalar' operation.", Vector64long_0, byte_0, apiResult);
 
 try {
 ShiftLeftLogicalSaturateScalarTest(Vector64long_0, byte_0);
@@ -15649,7 +15460,6 @@ ShiftLeftLogicalSaturateScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLeftLogicalSaturateScalar", "Performs 'ShiftLeftLogicalSaturateScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15668,16 +15478,16 @@ Console.WriteLine(
 
 `Vector64<ushort> ShiftLeftLogicalSaturateUnsigned(Vector64<short> value, byte count)`
 
-Performs 'ShiftLeftLogicalSaturateUnsigned' operation.
+{0}
 
 ```csharp
 private Vector64<ushort> ShiftLeftLogicalSaturateUnsignedTest(Vector64<short> value, byte count)
 {{
   return AdvSimd.ShiftLeftLogicalSaturateUnsigned(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15699,7 +15509,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, byte_0, apiResult);
+", "Performs 'ShiftLeftLogicalSaturateUnsigned' operation.", Vector64short_0, byte_0, apiResult);
 
 try {
 ShiftLeftLogicalSaturateUnsignedTest(Vector64short_0, byte_0);
@@ -15708,7 +15518,6 @@ ShiftLeftLogicalSaturateUnsignedTest(Vector64short_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLeftLogicalSaturateUnsigned", "Performs 'ShiftLeftLogicalSaturateUnsigned' operation", Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15727,16 +15536,16 @@ Console.WriteLine(
 
 `Vector64<ulong> ShiftLeftLogicalSaturateUnsignedScalar(Vector64<long> value, byte count)`
 
-Performs 'ShiftLeftLogicalSaturateUnsignedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<ulong> ShiftLeftLogicalSaturateUnsignedScalarTest(Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftLeftLogicalSaturateUnsignedScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15757,7 +15566,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, byte_0, apiResult);
+", "Performs 'ShiftLeftLogicalSaturateUnsignedScalar' operation.", Vector64long_0, byte_0, apiResult);
 
 try {
 ShiftLeftLogicalSaturateUnsignedScalarTest(Vector64long_0, byte_0);
@@ -15766,7 +15575,6 @@ ShiftLeftLogicalSaturateUnsignedScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLeftLogicalSaturateUnsignedScalar", "Performs 'ShiftLeftLogicalSaturateUnsignedScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15785,16 +15593,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftLeftLogicalScalar(Vector64<long> value, byte count)`
 
-Performs 'ShiftLeftLogicalScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftLeftLogicalScalarTest(Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftLeftLogicalScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15811,7 +15619,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, byte_0, apiResult);
+", "Performs 'ShiftLeftLogicalScalar' operation.", Vector64long_0, byte_0, apiResult);
 
 try {
 ShiftLeftLogicalScalarTest(Vector64long_0, byte_0);
@@ -15820,7 +15628,6 @@ ShiftLeftLogicalScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLeftLogicalScalar", "Performs 'ShiftLeftLogicalScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15839,16 +15646,16 @@ Console.WriteLine(
 
 `Vector128<ushort> ShiftLeftLogicalWideningLower(Vector64<byte> value, byte count)`
 
-Performs 'ShiftLeftLogicalWideningLower' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> ShiftLeftLogicalWideningLowerTest(Vector64<byte> value, byte count)
 {{
   return AdvSimd.ShiftLeftLogicalWideningLower(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15869,7 +15676,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, apiResult);
+", "Performs 'ShiftLeftLogicalWideningLower' operation.", Vector64byte_0, byte_0, apiResult);
 
 try {
 ShiftLeftLogicalWideningLowerTest(Vector64byte_0, byte_0);
@@ -15878,7 +15685,6 @@ ShiftLeftLogicalWideningLowerTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLeftLogicalWideningLower", "Performs 'ShiftLeftLogicalWideningLower' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15897,16 +15703,16 @@ Console.WriteLine(
 
 `Vector128<ushort> ShiftLeftLogicalWideningUpper(Vector128<byte> value, byte count)`
 
-Performs 'ShiftLeftLogicalWideningUpper' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> ShiftLeftLogicalWideningUpperTest(Vector128<byte> value, byte count)
 {{
   return AdvSimd.ShiftLeftLogicalWideningUpper(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15927,7 +15733,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128byte_0, byte_0, apiResult);
+", "Performs 'ShiftLeftLogicalWideningUpper' operation.", Vector128byte_0, byte_0, apiResult);
 
 try {
 ShiftLeftLogicalWideningUpperTest(Vector128byte_0, byte_0);
@@ -15936,7 +15742,6 @@ ShiftLeftLogicalWideningUpperTest(Vector128byte_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLeftLogicalWideningUpper", "Performs 'ShiftLeftLogicalWideningUpper' operation", Vector128byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -15955,16 +15760,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftLogical(Vector64<byte> value, Vector64<sbyte> count)`
 
-Performs 'ShiftLogical' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftLogicalTest(Vector64<byte> value, Vector64<sbyte> count)
 {{
   return AdvSimd.ShiftLogical(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -15993,7 +15798,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64sbyte_0, apiResult);
+", "Performs 'ShiftLogical' operation.", Vector64byte_0, Vector64sbyte_0, apiResult);
 
 try {
 ShiftLogicalTest(Vector64byte_0, Vector64sbyte_0);
@@ -16002,7 +15807,6 @@ ShiftLogicalTest(Vector64byte_0, Vector64sbyte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLogical", "Performs 'ShiftLogical' operation", Vector64byte_0, Vector64sbyte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16021,16 +15825,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftLogicalRounded(Vector64<byte> value, Vector64<sbyte> count)`
 
-Performs 'ShiftLogicalRounded' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftLogicalRoundedTest(Vector64<byte> value, Vector64<sbyte> count)
 {{
   return AdvSimd.ShiftLogicalRounded(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16059,7 +15863,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64sbyte_0, apiResult);
+", "Performs 'ShiftLogicalRounded' operation.", Vector64byte_0, Vector64sbyte_0, apiResult);
 
 try {
 ShiftLogicalRoundedTest(Vector64byte_0, Vector64sbyte_0);
@@ -16068,7 +15872,6 @@ ShiftLogicalRoundedTest(Vector64byte_0, Vector64sbyte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLogicalRounded", "Performs 'ShiftLogicalRounded' operation", Vector64byte_0, Vector64sbyte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16087,16 +15890,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftLogicalRoundedSaturate(Vector64<byte> value, Vector64<sbyte> count)`
 
-Performs 'ShiftLogicalRoundedSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftLogicalRoundedSaturateTest(Vector64<byte> value, Vector64<sbyte> count)
 {{
   return AdvSimd.ShiftLogicalRoundedSaturate(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16125,7 +15928,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64sbyte_0, apiResult);
+", "Performs 'ShiftLogicalRoundedSaturate' operation.", Vector64byte_0, Vector64sbyte_0, apiResult);
 
 try {
 ShiftLogicalRoundedSaturateTest(Vector64byte_0, Vector64sbyte_0);
@@ -16134,7 +15937,6 @@ ShiftLogicalRoundedSaturateTest(Vector64byte_0, Vector64sbyte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLogicalRoundedSaturate", "Performs 'ShiftLogicalRoundedSaturate' operation", Vector64byte_0, Vector64sbyte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16153,16 +15955,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftLogicalRoundedSaturateScalar(Vector64<long> value, Vector64<long> count)`
 
-Performs 'ShiftLogicalRoundedSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftLogicalRoundedSaturateScalarTest(Vector64<long> value, Vector64<long> count)
 {{
   return AdvSimd.ShiftLogicalRoundedSaturateScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16187,7 +15989,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, apiResult);
+", "Performs 'ShiftLogicalRoundedSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
 
 try {
 ShiftLogicalRoundedSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -16196,7 +15998,6 @@ ShiftLogicalRoundedSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLogicalRoundedSaturateScalar", "Performs 'ShiftLogicalRoundedSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16215,16 +16016,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftLogicalRoundedScalar(Vector64<long> value, Vector64<long> count)`
 
-Performs 'ShiftLogicalRoundedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftLogicalRoundedScalarTest(Vector64<long> value, Vector64<long> count)
 {{
   return AdvSimd.ShiftLogicalRoundedScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16241,7 +16042,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, apiResult);
+", "Performs 'ShiftLogicalRoundedScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
 
 try {
 ShiftLogicalRoundedScalarTest(Vector64long_0, Vector64long_1);
@@ -16250,7 +16051,6 @@ ShiftLogicalRoundedScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLogicalRoundedScalar", "Performs 'ShiftLogicalRoundedScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16269,16 +16069,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftLogicalSaturate(Vector64<byte> value, Vector64<sbyte> count)`
 
-Performs 'ShiftLogicalSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftLogicalSaturateTest(Vector64<byte> value, Vector64<sbyte> count)
 {{
   return AdvSimd.ShiftLogicalSaturate(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16307,7 +16107,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64sbyte_0, apiResult);
+", "Performs 'ShiftLogicalSaturate' operation.", Vector64byte_0, Vector64sbyte_0, apiResult);
 
 try {
 ShiftLogicalSaturateTest(Vector64byte_0, Vector64sbyte_0);
@@ -16316,7 +16116,6 @@ ShiftLogicalSaturateTest(Vector64byte_0, Vector64sbyte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLogicalSaturate", "Performs 'ShiftLogicalSaturate' operation", Vector64byte_0, Vector64sbyte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16335,16 +16134,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftLogicalSaturateScalar(Vector64<long> value, Vector64<long> count)`
 
-Performs 'ShiftLogicalSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftLogicalSaturateScalarTest(Vector64<long> value, Vector64<long> count)
 {{
   return AdvSimd.ShiftLogicalSaturateScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16369,7 +16168,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, apiResult);
+", "Performs 'ShiftLogicalSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
 
 try {
 ShiftLogicalSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -16378,7 +16177,6 @@ ShiftLogicalSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLogicalSaturateScalar", "Performs 'ShiftLogicalSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16397,16 +16195,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftLogicalScalar(Vector64<long> value, Vector64<long> count)`
 
-Performs 'ShiftLogicalScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftLogicalScalarTest(Vector64<long> value, Vector64<long> count)
 {{
   return AdvSimd.ShiftLogicalScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16423,7 +16221,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, apiResult);
+", "Performs 'ShiftLogicalScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
 
 try {
 ShiftLogicalScalarTest(Vector64long_0, Vector64long_1);
@@ -16432,7 +16230,6 @@ ShiftLogicalScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftLogicalScalar", "Performs 'ShiftLogicalScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16451,17 +16248,17 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightAndInsert(Vector64<byte> left, Vector64<byte> right, byte shift)`
 
-Performs 'ShiftRightAndInsert' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightAndInsertTest(Vector64<byte> left, Vector64<byte> right, byte shift)
 {{
   return AdvSimd.ShiftRightAndInsert(left, right, shift);
 }}
-// left = {0}
-// right = {1}
-// shift = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// shift = {3}
+// Result = {4}
 
 ```
 
@@ -16490,7 +16287,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
+", "Performs 'ShiftRightAndInsert' operation.", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 
 try {
 ShiftRightAndInsertTest(Vector64byte_0, Vector64byte_1, byte_0);
@@ -16499,7 +16296,6 @@ ShiftRightAndInsertTest(Vector64byte_0, Vector64byte_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightAndInsert", "Performs 'ShiftRightAndInsert' operation", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16518,17 +16314,17 @@ Console.WriteLine(
 
 `Vector64<long> ShiftRightAndInsertScalar(Vector64<long> left, Vector64<long> right, byte shift)`
 
-Performs 'ShiftRightAndInsertScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftRightAndInsertScalarTest(Vector64<long> left, Vector64<long> right, byte shift)
 {{
   return AdvSimd.ShiftRightAndInsertScalar(left, right, shift);
 }}
-// left = {0}
-// right = {1}
-// shift = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// shift = {3}
+// Result = {4}
 
 ```
 
@@ -16545,7 +16341,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", "Performs 'ShiftRightAndInsertScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
 
 try {
 ShiftRightAndInsertScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -16554,7 +16350,6 @@ ShiftRightAndInsertScalarTest(Vector64long_0, Vector64long_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightAndInsertScalar", "Performs 'ShiftRightAndInsertScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16573,16 +16368,16 @@ Console.WriteLine(
 
 `Vector64<short> ShiftRightArithmetic(Vector64<short> value, byte count)`
 
-Performs 'ShiftRightArithmetic' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftRightArithmeticTest(Vector64<short> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmetic(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16604,7 +16399,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmetic' operation.", Vector64short_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticTest(Vector64short_0, byte_0);
@@ -16613,7 +16408,6 @@ ShiftRightArithmeticTest(Vector64short_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmetic", "Performs 'ShiftRightArithmetic' operation", Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16632,17 +16426,17 @@ Console.WriteLine(
 
 `Vector64<short> ShiftRightArithmeticAdd(Vector64<short> addend, Vector64<short> value, byte count)`
 
-Performs 'ShiftRightArithmeticAdd' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftRightArithmeticAddTest(Vector64<short> addend, Vector64<short> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticAdd(addend, value, count);
 }}
-// addend = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// addend = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -16664,7 +16458,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticAdd' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticAddTest(Vector64short_0, Vector64short_1, byte_0);
@@ -16673,7 +16467,6 @@ ShiftRightArithmeticAddTest(Vector64short_0, Vector64short_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticAdd", "Performs 'ShiftRightArithmeticAdd' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16692,17 +16485,17 @@ Console.WriteLine(
 
 `Vector64<long> ShiftRightArithmeticAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
-Performs 'ShiftRightArithmeticAddScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftRightArithmeticAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticAddScalar(addend, value, count);
 }}
-// addend = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// addend = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -16713,7 +16506,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticAddScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -16722,7 +16515,6 @@ ShiftRightArithmeticAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticAddScalar", "Performs 'ShiftRightArithmeticAddScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16741,16 +16533,16 @@ Console.WriteLine(
 
 `Vector64<short> ShiftRightArithmeticNarrowingSaturateLower(Vector128<int> value, byte count)`
 
-Performs 'ShiftRightArithmeticNarrowingSaturateLower' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftRightArithmeticNarrowingSaturateLowerTest(Vector128<int> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticNarrowingSaturateLower(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16768,7 +16560,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticNarrowingSaturateLower' operation.", Vector128int_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticNarrowingSaturateLowerTest(Vector128int_0, byte_0);
@@ -16777,7 +16569,6 @@ ShiftRightArithmeticNarrowingSaturateLowerTest(Vector128int_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticNarrowingSaturateLower", "Performs 'ShiftRightArithmeticNarrowingSaturateLower' operation", Vector128int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16796,16 +16587,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedLower(Vector128<short> value, byte count)`
 
-Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedLower(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16823,7 +16614,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128short_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedLower' operation.", Vector128short_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0);
@@ -16832,7 +16623,6 @@ ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0)
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticNarrowingSaturateUnsignedLower", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedLower' operation", Vector128short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16851,17 +16641,17 @@ Console.WriteLine(
 
 `Vector128<byte> ShiftRightArithmeticNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`
 
-Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64<byte> lower, Vector128<short> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedUpper(lower, value, count);
 }}
-// lower = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// lower = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -16879,7 +16669,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128short_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedUpper' operation.", Vector64byte_0, Vector128short_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0, byte_0);
@@ -16888,7 +16678,6 @@ ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedUpper' operation", Vector64byte_0, Vector128short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16907,17 +16696,17 @@ Console.WriteLine(
 
 `Vector128<short> ShiftRightArithmeticNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`
 
-Performs 'ShiftRightArithmeticNarrowingSaturateUpper' operation.
+{0}
 
 ```csharp
 private Vector128<short> ShiftRightArithmeticNarrowingSaturateUpperTest(Vector64<short> lower, Vector128<int> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticNarrowingSaturateUpper(lower, value, count);
 }}
-// lower = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// lower = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -16935,7 +16724,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector128int_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticNarrowingSaturateUpper' operation.", Vector64short_0, Vector128int_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticNarrowingSaturateUpperTest(Vector64short_0, Vector128int_0, byte_0);
@@ -16944,7 +16733,6 @@ ShiftRightArithmeticNarrowingSaturateUpperTest(Vector64short_0, Vector128int_0, 
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticNarrowingSaturateUpper", "Performs 'ShiftRightArithmeticNarrowingSaturateUpper' operation", Vector64short_0, Vector128int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -16963,16 +16751,16 @@ Console.WriteLine(
 
 `Vector64<short> ShiftRightArithmeticRounded(Vector64<short> value, byte count)`
 
-Performs 'ShiftRightArithmeticRounded' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftRightArithmeticRoundedTest(Vector64<short> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticRounded(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -16994,7 +16782,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticRounded' operation.", Vector64short_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticRoundedTest(Vector64short_0, byte_0);
@@ -17003,7 +16791,6 @@ ShiftRightArithmeticRoundedTest(Vector64short_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticRounded", "Performs 'ShiftRightArithmeticRounded' operation", Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17022,17 +16809,17 @@ Console.WriteLine(
 
 `Vector64<short> ShiftRightArithmeticRoundedAdd(Vector64<short> addend, Vector64<short> value, byte count)`
 
-Performs 'ShiftRightArithmeticRoundedAdd' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftRightArithmeticRoundedAddTest(Vector64<short> addend, Vector64<short> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticRoundedAdd(addend, value, count);
 }}
-// addend = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// addend = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -17054,7 +16841,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticRoundedAdd' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticRoundedAddTest(Vector64short_0, Vector64short_1, byte_0);
@@ -17063,7 +16850,6 @@ ShiftRightArithmeticRoundedAddTest(Vector64short_0, Vector64short_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticRoundedAdd", "Performs 'ShiftRightArithmeticRoundedAdd' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17082,17 +16868,17 @@ Console.WriteLine(
 
 `Vector64<long> ShiftRightArithmeticRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
-Performs 'ShiftRightArithmeticRoundedAddScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftRightArithmeticRoundedAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticRoundedAddScalar(addend, value, count);
 }}
-// addend = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// addend = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -17103,7 +16889,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticRoundedAddScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticRoundedAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -17112,7 +16898,6 @@ ShiftRightArithmeticRoundedAddScalarTest(Vector64long_0, Vector64long_1, byte_0)
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticRoundedAddScalar", "Performs 'ShiftRightArithmeticRoundedAddScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17131,16 +16916,16 @@ Console.WriteLine(
 
 `Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateLower(Vector128<int> value, byte count)`
 
-Performs 'ShiftRightArithmeticRoundedNarrowingSaturateLower' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateLowerTest(Vector128<int> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateLower(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -17158,7 +16943,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128int_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateLower' operation.", Vector128int_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateLowerTest(Vector128int_0, byte_0);
@@ -17167,7 +16952,6 @@ ShiftRightArithmeticRoundedNarrowingSaturateLowerTest(Vector128int_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateLower", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateLower' operation", Vector128int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17186,16 +16970,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(Vector128<short> value, byte count)`
 
-Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -17213,7 +16997,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128short_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower' operation.", Vector128short_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0);
@@ -17222,7 +17006,6 @@ ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128short_0, 
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower' operation", Vector128short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17241,17 +17024,17 @@ Console.WriteLine(
 
 `Vector128<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`
 
-Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpperTest(Vector64<byte> lower, Vector128<short> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(lower, value, count);
 }}
-// lower = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// lower = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -17269,7 +17052,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128short_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper' operation.", Vector64byte_0, Vector128short_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0, byte_0);
@@ -17278,7 +17061,6 @@ ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Ve
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper' operation", Vector64byte_0, Vector128short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17297,17 +17079,17 @@ Console.WriteLine(
 
 `Vector128<short> ShiftRightArithmeticRoundedNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`
 
-Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUpper' operation.
+{0}
 
 ```csharp
 private Vector128<short> ShiftRightArithmeticRoundedNarrowingSaturateUpperTest(Vector64<short> lower, Vector128<int> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUpper(lower, value, count);
 }}
-// lower = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// lower = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -17325,7 +17107,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector128int_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUpper' operation.", Vector64short_0, Vector128int_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateUpperTest(Vector64short_0, Vector128int_0, byte_0);
@@ -17334,7 +17116,6 @@ ShiftRightArithmeticRoundedNarrowingSaturateUpperTest(Vector64short_0, Vector128
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateUpper", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUpper' operation", Vector64short_0, Vector128int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17353,16 +17134,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftRightArithmeticRoundedScalar(Vector64<long> value, byte count)`
 
-Performs 'ShiftRightArithmeticRoundedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftRightArithmeticRoundedScalarTest(Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticRoundedScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -17373,7 +17154,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticRoundedScalar' operation.", Vector64long_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticRoundedScalarTest(Vector64long_0, byte_0);
@@ -17382,7 +17163,6 @@ ShiftRightArithmeticRoundedScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticRoundedScalar", "Performs 'ShiftRightArithmeticRoundedScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17401,16 +17181,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftRightArithmeticScalar(Vector64<long> value, byte count)`
 
-Performs 'ShiftRightArithmeticScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftRightArithmeticScalarTest(Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftRightArithmeticScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -17421,7 +17201,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticScalar' operation.", Vector64long_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticScalarTest(Vector64long_0, byte_0);
@@ -17430,7 +17210,6 @@ ShiftRightArithmeticScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticScalar", "Performs 'ShiftRightArithmeticScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17449,16 +17228,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightLogical(Vector64<byte> value, byte count)`
 
-Performs 'ShiftRightLogical' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightLogicalTest(Vector64<byte> value, byte count)
 {{
   return AdvSimd.ShiftRightLogical(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -17487,7 +17266,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogical' operation.", Vector64byte_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalTest(Vector64byte_0, byte_0);
@@ -17496,7 +17275,6 @@ ShiftRightLogicalTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogical", "Performs 'ShiftRightLogical' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17515,17 +17293,17 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightLogicalAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`
 
-Performs 'ShiftRightLogicalAdd' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightLogicalAddTest(Vector64<byte> addend, Vector64<byte> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalAdd(addend, value, count);
 }}
-// addend = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// addend = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -17554,7 +17332,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalAdd' operation.", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 
 try {
 ShiftRightLogicalAddTest(Vector64byte_0, Vector64byte_1, byte_0);
@@ -17563,7 +17341,6 @@ ShiftRightLogicalAddTest(Vector64byte_0, Vector64byte_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalAdd", "Performs 'ShiftRightLogicalAdd' operation", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17582,17 +17359,17 @@ Console.WriteLine(
 
 `Vector64<long> ShiftRightLogicalAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
-Performs 'ShiftRightLogicalAddScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftRightLogicalAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalAddScalar(addend, value, count);
 }}
-// addend = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// addend = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -17609,7 +17386,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalAddScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
 
 try {
 ShiftRightLogicalAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -17618,7 +17395,6 @@ ShiftRightLogicalAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalAddScalar", "Performs 'ShiftRightLogicalAddScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17637,16 +17413,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightLogicalNarrowingLower(Vector128<ushort> value, byte count)`
 
-Performs 'ShiftRightLogicalNarrowingLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightLogicalNarrowingLowerTest(Vector128<ushort> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalNarrowingLower(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -17667,7 +17443,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalNarrowingLower' operation.", Vector128ushort_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalNarrowingLowerTest(Vector128ushort_0, byte_0);
@@ -17676,7 +17452,6 @@ ShiftRightLogicalNarrowingLowerTest(Vector128ushort_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalNarrowingLower", "Performs 'ShiftRightLogicalNarrowingLower' operation", Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17695,16 +17470,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightLogicalNarrowingSaturateLower(Vector128<ushort> value, byte count)`
 
-Performs 'ShiftRightLogicalNarrowingSaturateLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightLogicalNarrowingSaturateLowerTest(Vector128<ushort> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalNarrowingSaturateLower(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -17725,7 +17500,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalNarrowingSaturateLower' operation.", Vector128ushort_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
@@ -17734,7 +17509,6 @@ ShiftRightLogicalNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalNarrowingSaturateLower", "Performs 'ShiftRightLogicalNarrowingSaturateLower' operation", Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17753,17 +17527,17 @@ Console.WriteLine(
 
 `Vector128<byte> ShiftRightLogicalNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
-Performs 'ShiftRightLogicalNarrowingSaturateUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> ShiftRightLogicalNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalNarrowingSaturateUpper(lower, value, count);
 }}
-// lower = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// lower = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -17784,7 +17558,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalNarrowingSaturateUpper' operation.", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
@@ -17793,7 +17567,6 @@ ShiftRightLogicalNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0, b
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalNarrowingSaturateUpper", "Performs 'ShiftRightLogicalNarrowingSaturateUpper' operation", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17812,17 +17585,17 @@ Console.WriteLine(
 
 `Vector128<byte> ShiftRightLogicalNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
-Performs 'ShiftRightLogicalNarrowingUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> ShiftRightLogicalNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalNarrowingUpper(lower, value, count);
 }}
-// lower = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// lower = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -17843,7 +17616,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
@@ -17852,7 +17625,6 @@ ShiftRightLogicalNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalNarrowingUpper", "Performs 'ShiftRightLogicalNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17871,16 +17643,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightLogicalRounded(Vector64<byte> value, byte count)`
 
-Performs 'ShiftRightLogicalRounded' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedTest(Vector64<byte> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalRounded(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -17909,7 +17681,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalRounded' operation.", Vector64byte_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalRoundedTest(Vector64byte_0, byte_0);
@@ -17918,7 +17690,6 @@ ShiftRightLogicalRoundedTest(Vector64byte_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalRounded", "Performs 'ShiftRightLogicalRounded' operation", Vector64byte_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -17937,17 +17708,17 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightLogicalRoundedAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`
 
-Performs 'ShiftRightLogicalRoundedAdd' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedAddTest(Vector64<byte> addend, Vector64<byte> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalRoundedAdd(addend, value, count);
 }}
-// addend = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// addend = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -17976,7 +17747,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalRoundedAdd' operation.", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 
 try {
 ShiftRightLogicalRoundedAddTest(Vector64byte_0, Vector64byte_1, byte_0);
@@ -17985,7 +17756,6 @@ ShiftRightLogicalRoundedAddTest(Vector64byte_0, Vector64byte_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalRoundedAdd", "Performs 'ShiftRightLogicalRoundedAdd' operation", Vector64byte_0, Vector64byte_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18004,17 +17774,17 @@ Console.WriteLine(
 
 `Vector64<long> ShiftRightLogicalRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
-Performs 'ShiftRightLogicalRoundedAddScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftRightLogicalRoundedAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalRoundedAddScalar(addend, value, count);
 }}
-// addend = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// addend = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -18031,7 +17801,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalRoundedAddScalar' operation.", Vector64long_0, Vector64long_1, byte_0, apiResult);
 
 try {
 ShiftRightLogicalRoundedAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
@@ -18040,7 +17810,6 @@ ShiftRightLogicalRoundedAddScalarTest(Vector64long_0, Vector64long_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalRoundedAddScalar", "Performs 'ShiftRightLogicalRoundedAddScalar' operation", Vector64long_0, Vector64long_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18059,16 +17828,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingLower(Vector128<ushort> value, byte count)`
 
-Performs 'ShiftRightLogicalRoundedNarrowingLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedNarrowingLowerTest(Vector128<ushort> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalRoundedNarrowingLower(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -18089,7 +17858,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalRoundedNarrowingLower' operation.", Vector128ushort_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalRoundedNarrowingLowerTest(Vector128ushort_0, byte_0);
@@ -18098,7 +17867,6 @@ ShiftRightLogicalRoundedNarrowingLowerTest(Vector128ushort_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalRoundedNarrowingLower", "Performs 'ShiftRightLogicalRoundedNarrowingLower' operation", Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18117,16 +17885,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateLower(Vector128<ushort> value, byte count)`
 
-Performs 'ShiftRightLogicalRoundedNarrowingSaturateLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateLowerTest(Vector128<ushort> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateLower(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -18147,7 +17915,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateLower' operation.", Vector128ushort_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalRoundedNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
@@ -18156,7 +17924,6 @@ ShiftRightLogicalRoundedNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalRoundedNarrowingSaturateLower", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateLower' operation", Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18175,17 +17942,17 @@ Console.WriteLine(
 
 `Vector128<byte> ShiftRightLogicalRoundedNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
-Performs 'ShiftRightLogicalRoundedNarrowingSaturateUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> ShiftRightLogicalRoundedNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(lower, value, count);
 }}
-// lower = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// lower = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -18206,7 +17973,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateUpper' operation.", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalRoundedNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
@@ -18215,7 +17982,6 @@ ShiftRightLogicalRoundedNarrowingSaturateUpperTest(Vector64byte_0, Vector128usho
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalRoundedNarrowingSaturateUpper", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateUpper' operation", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18234,17 +18000,17 @@ Console.WriteLine(
 
 `Vector128<byte> ShiftRightLogicalRoundedNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
-Performs 'ShiftRightLogicalRoundedNarrowingUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> ShiftRightLogicalRoundedNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalRoundedNarrowingUpper(lower, value, count);
 }}
-// lower = {0}
-// value = {1}
-// count = {2}
-// Result = {3}
+// lower = {1}
+// value = {2}
+// count = {3}
+// Result = {4}
 
 ```
 
@@ -18265,7 +18031,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalRoundedNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalRoundedNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
@@ -18274,7 +18040,6 @@ ShiftRightLogicalRoundedNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, by
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalRoundedNarrowingUpper", "Performs 'ShiftRightLogicalRoundedNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18293,16 +18058,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftRightLogicalRoundedScalar(Vector64<long> value, byte count)`
 
-Performs 'ShiftRightLogicalRoundedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftRightLogicalRoundedScalarTest(Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalRoundedScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -18319,7 +18084,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalRoundedScalar' operation.", Vector64long_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalRoundedScalarTest(Vector64long_0, byte_0);
@@ -18328,7 +18093,6 @@ ShiftRightLogicalRoundedScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalRoundedScalar", "Performs 'ShiftRightLogicalRoundedScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18347,16 +18111,16 @@ Console.WriteLine(
 
 `Vector64<long> ShiftRightLogicalScalar(Vector64<long> value, byte count)`
 
-Performs 'ShiftRightLogicalScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ShiftRightLogicalScalarTest(Vector64<long> value, byte count)
 {{
   return AdvSimd.ShiftRightLogicalScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -18373,7 +18137,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalScalar' operation.", Vector64long_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalScalarTest(Vector64long_0, byte_0);
@@ -18382,7 +18146,6 @@ ShiftRightLogicalScalarTest(Vector64long_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalScalar", "Performs 'ShiftRightLogicalScalar' operation", Vector64long_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18401,15 +18164,15 @@ Console.WriteLine(
 
 `Vector128<int> SignExtendWideningLower(Vector64<short> value)`
 
-Performs 'SignExtendWideningLower' operation.
+{0}
 
 ```csharp
 private Vector128<int> SignExtendWideningLowerTest(Vector64<short> value)
 {{
   return AdvSimd.SignExtendWideningLower(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -18427,7 +18190,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, apiResult);
+", "Performs 'SignExtendWideningLower' operation.", Vector64short_0, apiResult);
 
 try {
 SignExtendWideningLowerTest(Vector64short_0);
@@ -18436,7 +18199,6 @@ SignExtendWideningLowerTest(Vector64short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("SignExtendWideningLower", "Performs 'SignExtendWideningLower' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18455,15 +18217,15 @@ Console.WriteLine(
 
 `Vector128<int> SignExtendWideningUpper(Vector128<short> value)`
 
-Performs 'SignExtendWideningUpper' operation.
+{0}
 
 ```csharp
 private Vector128<int> SignExtendWideningUpperTest(Vector128<short> value)
 {{
   return AdvSimd.SignExtendWideningUpper(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -18481,7 +18243,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128short_0, apiResult);
+", "Performs 'SignExtendWideningUpper' operation.", Vector128short_0, apiResult);
 
 try {
 SignExtendWideningUpperTest(Vector128short_0);
@@ -18490,7 +18252,6 @@ SignExtendWideningUpperTest(Vector128short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("SignExtendWideningUpper", "Performs 'SignExtendWideningUpper' operation", Vector128short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18509,15 +18270,15 @@ Console.WriteLine(
 
 `Vector64<double> SqrtScalar(Vector64<double> value)`
 
-Performs 'SqrtScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> SqrtScalarTest(Vector64<double> value)
 {{
   return AdvSimd.SqrtScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -18534,7 +18295,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'SqrtScalar' operation.", Vector64double_0, apiResult);
 
 try {
 SqrtScalarTest(Vector64double_0);
@@ -18543,7 +18304,6 @@ SqrtScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("SqrtScalar", "Performs 'SqrtScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 Console.WriteLine(
 @"```
@@ -18584,15 +18344,15 @@ Console.WriteLine(
 
 `void Store(byte* address, Vector64<byte> source)`
 
-Performs 'Store' operation.
+{0}
 
 ```csharp
 private void StoreTest(byte* address, Vector64<byte> source)
 {{
   AdvSimd.Store(address, source);
 }}
-// address = {0}
-// source = {1}
+// address = {1}
+// source = {2}
 
 ```
 
@@ -18627,7 +18387,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "<address>", Vector64byte_0);
+", "Performs 'Store' operation.", "<address>", Vector64byte_0);
 
 try {
 StoreTest(bytePtr_0, Vector64byte_0);
@@ -18637,7 +18397,6 @@ StoreTest(bytePtr_0, Vector64byte_0);
 }
 
 }
-LogInCsv("Store", "Performs 'Store' operation", "<address>", Vector64byte_0);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -18658,16 +18417,16 @@ Console.WriteLine(
 
 `void StoreSelectedScalar(byte* address, Vector64<byte> value, byte index)`
 
-Performs 'StoreSelectedScalar' operation.
+{0}
 
 ```csharp
 private void StoreSelectedScalarTest(byte* address, Vector64<byte> value, byte index)
 {{
   AdvSimd.StoreSelectedScalar(address, value, index);
 }}
-// address = {0}
-// value = {1}
-// index = {2}
+// address = {1}
+// value = {2}
+// index = {3}
 
 ```
 
@@ -18699,7 +18458,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "<address>", Vector64byte_0, byte_0);
+", "Performs 'StoreSelectedScalar' operation.", "<address>", Vector64byte_0, byte_0);
 
 try {
 StoreSelectedScalarTest(bytePtr_0, Vector64byte_0, byte_0);
@@ -18709,7 +18468,6 @@ StoreSelectedScalarTest(bytePtr_0, Vector64byte_0, byte_0);
 }
 
 }
-LogInCsv("StoreSelectedScalar", "Performs 'StoreSelectedScalar' operation", "<address>", Vector64byte_0, byte_0);
 // ----------------------------------------------------------------
 
 try {
@@ -18728,16 +18486,16 @@ Console.WriteLine(
 
 `Vector64<byte> Subtract(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'Subtract' operation.
+{0}
 
 ```csharp
 private Vector64<byte> SubtractTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Subtract(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -18771,7 +18529,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'Subtract' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 SubtractTest(Vector64byte_0, Vector64byte_1);
@@ -18780,7 +18538,6 @@ SubtractTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("Subtract", "Performs 'Subtract' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18799,16 +18556,16 @@ Console.WriteLine(
 
 `Vector64<byte> SubtractHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
 
-Performs 'SubtractHighNarrowingLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> SubtractHighNarrowingLowerTest(Vector128<ushort> left, Vector128<ushort> right)
 {{
   return AdvSimd.SubtractHighNarrowingLower(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -18829,7 +18586,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, Vector128ushort_1, apiResult);
+", "Performs 'SubtractHighNarrowingLower' operation.", Vector128ushort_0, Vector128ushort_1, apiResult);
 
 try {
 SubtractHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
@@ -18838,7 +18595,6 @@ SubtractHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
    apiResult = "TODO";
 }
 
-LogInCsv("SubtractHighNarrowingLower", "Performs 'SubtractHighNarrowingLower' operation", Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18857,17 +18613,17 @@ Console.WriteLine(
 
 `Vector128<byte> SubtractHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
 
-Performs 'SubtractHighNarrowingUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> SubtractHighNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)
 {{
   return AdvSimd.SubtractHighNarrowingUpper(lower, left, right);
 }}
-// lower = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// lower = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -18888,7 +18644,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
+", "Performs 'SubtractHighNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 
 try {
 SubtractHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
@@ -18897,7 +18653,6 @@ SubtractHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushor
    apiResult = "TODO";
 }
 
-LogInCsv("SubtractHighNarrowingUpper", "Performs 'SubtractHighNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18916,16 +18671,16 @@ Console.WriteLine(
 
 `Vector64<byte> SubtractRoundedHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
 
-Performs 'SubtractRoundedHighNarrowingLower' operation.
+{0}
 
 ```csharp
 private Vector64<byte> SubtractRoundedHighNarrowingLowerTest(Vector128<ushort> left, Vector128<ushort> right)
 {{
   return AdvSimd.SubtractRoundedHighNarrowingLower(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -18946,7 +18701,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128ushort_0, Vector128ushort_1, apiResult);
+", "Performs 'SubtractRoundedHighNarrowingLower' operation.", Vector128ushort_0, Vector128ushort_1, apiResult);
 
 try {
 SubtractRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
@@ -18955,7 +18710,6 @@ SubtractRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
    apiResult = "TODO";
 }
 
-LogInCsv("SubtractRoundedHighNarrowingLower", "Performs 'SubtractRoundedHighNarrowingLower' operation", Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -18974,17 +18728,17 @@ Console.WriteLine(
 
 `Vector128<byte> SubtractRoundedHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
 
-Performs 'SubtractRoundedHighNarrowingUpper' operation.
+{0}
 
 ```csharp
 private Vector128<byte> SubtractRoundedHighNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)
 {{
   return AdvSimd.SubtractRoundedHighNarrowingUpper(lower, left, right);
 }}
-// lower = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// lower = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -19005,7 +18759,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
+", "Performs 'SubtractRoundedHighNarrowingUpper' operation.", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 
 try {
 SubtractRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
@@ -19014,7 +18768,6 @@ SubtractRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector1
    apiResult = "TODO";
 }
 
-LogInCsv("SubtractRoundedHighNarrowingUpper", "Performs 'SubtractRoundedHighNarrowingUpper' operation", Vector64byte_0, Vector128ushort_0, Vector128ushort_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19033,16 +18786,16 @@ Console.WriteLine(
 
 `Vector64<byte> SubtractSaturate(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'SubtractSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<byte> SubtractSaturateTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.SubtractSaturate(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19071,7 +18824,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'SubtractSaturate' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 SubtractSaturateTest(Vector64byte_0, Vector64byte_1);
@@ -19080,7 +18833,6 @@ SubtractSaturateTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("SubtractSaturate", "Performs 'SubtractSaturate' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19099,16 +18851,16 @@ Console.WriteLine(
 
 `Vector64<long> SubtractSaturateScalar(Vector64<long> left, Vector64<long> right)`
 
-Performs 'SubtractSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> SubtractSaturateScalarTest(Vector64<long> left, Vector64<long> right)
 {{
   return AdvSimd.SubtractSaturateScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19133,7 +18885,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, Vector64long_1, apiResult);
+", "Performs 'SubtractSaturateScalar' operation.", Vector64long_0, Vector64long_1, apiResult);
 
 try {
 SubtractSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -19142,7 +18894,6 @@ SubtractSaturateScalarTest(Vector64long_0, Vector64long_1);
    apiResult = "TODO";
 }
 
-LogInCsv("SubtractSaturateScalar", "Performs 'SubtractSaturateScalar' operation", Vector64long_0, Vector64long_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19161,16 +18912,16 @@ Console.WriteLine(
 
 `Vector64<double> SubtractScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'SubtractScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> SubtractScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.SubtractScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19189,7 +18940,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'SubtractScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 SubtractScalarTest(Vector64double_0, Vector64double_1);
@@ -19198,7 +18949,6 @@ SubtractScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("SubtractScalar", "Performs 'SubtractScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19217,16 +18967,16 @@ Console.WriteLine(
 
 `Vector128<ushort> SubtractWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'SubtractWideningLower' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> SubtractWideningLowerTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.SubtractWideningLower(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19253,7 +19003,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'SubtractWideningLower' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 SubtractWideningLowerTest(Vector64byte_0, Vector64byte_1);
@@ -19262,7 +19012,6 @@ SubtractWideningLowerTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("SubtractWideningLower", "Performs 'SubtractWideningLower' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19281,16 +19030,16 @@ Console.WriteLine(
 
 `Vector128<ushort> SubtractWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
-Performs 'SubtractWideningUpper' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> SubtractWideningUpperTest(Vector128<byte> left, Vector128<byte> right)
 {{
   return AdvSimd.SubtractWideningUpper(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19317,7 +19066,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128byte_0, Vector128byte_1, apiResult);
+", "Performs 'SubtractWideningUpper' operation.", Vector128byte_0, Vector128byte_1, apiResult);
 
 try {
 SubtractWideningUpperTest(Vector128byte_0, Vector128byte_1);
@@ -19326,7 +19075,6 @@ SubtractWideningUpperTest(Vector128byte_0, Vector128byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("SubtractWideningUpper", "Performs 'SubtractWideningUpper' operation", Vector128byte_0, Vector128byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19345,16 +19093,16 @@ Console.WriteLine(
 
 `Vector64<byte> VectorTableLookup(Vector128<byte> table, Vector64<byte> byteIndexes)`
 
-Performs 'VectorTableLookup' operation.
+{0}
 
 ```csharp
 private Vector64<byte> VectorTableLookupTest(Vector128<byte> table, Vector64<byte> byteIndexes)
 {{
   return AdvSimd.VectorTableLookup(table, byteIndexes);
 }}
-// table = {0}
-// byteIndexes = {1}
-// Result = {2}
+// table = {1}
+// byteIndexes = {2}
+// Result = {3}
 
 ```
 
@@ -19375,7 +19123,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128byte_0, Vector64byte_0, apiResult);
+", "Performs 'VectorTableLookup' operation.", Vector128byte_0, Vector64byte_0, apiResult);
 
 try {
 VectorTableLookupTest(Vector128byte_0, Vector64byte_0);
@@ -19384,7 +19132,6 @@ VectorTableLookupTest(Vector128byte_0, Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("VectorTableLookup", "Performs 'VectorTableLookup' operation", Vector128byte_0, Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19403,17 +19150,17 @@ Console.WriteLine(
 
 `Vector64<byte> VectorTableLookupExtension(Vector64<byte> defaultValues, Vector128<byte> table, Vector64<byte> byteIndexes)`
 
-Performs 'VectorTableLookupExtension' operation.
+{0}
 
 ```csharp
 private Vector64<byte> VectorTableLookupExtensionTest(Vector64<byte> defaultValues, Vector128<byte> table, Vector64<byte> byteIndexes)
 {{
   return AdvSimd.VectorTableLookupExtension(defaultValues, table, byteIndexes);
 }}
-// defaultValues = {0}
-// table = {1}
-// byteIndexes = {2}
-// Result = {3}
+// defaultValues = {1}
+// table = {2}
+// byteIndexes = {3}
+// Result = {4}
 
 ```
 
@@ -19434,7 +19181,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector128byte_0, Vector64byte_1, apiResult);
+", "Performs 'VectorTableLookupExtension' operation.", Vector64byte_0, Vector128byte_0, Vector64byte_1, apiResult);
 
 try {
 VectorTableLookupExtensionTest(Vector64byte_0, Vector128byte_0, Vector64byte_1);
@@ -19443,7 +19190,6 @@ VectorTableLookupExtensionTest(Vector64byte_0, Vector128byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("VectorTableLookupExtension", "Performs 'VectorTableLookupExtension' operation", Vector64byte_0, Vector128byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19462,16 +19208,16 @@ Console.WriteLine(
 
 `Vector64<byte> Xor(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'Xor' operation.
+{0}
 
 ```csharp
 private Vector64<byte> XorTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Xor(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19506,7 +19252,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'Xor' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 XorTest(Vector64byte_0, Vector64byte_1);
@@ -19515,7 +19261,6 @@ XorTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("Xor", "Performs 'Xor' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19534,15 +19279,15 @@ Console.WriteLine(
 
 `Vector128<ushort> ZeroExtendWideningLower(Vector64<byte> value)`
 
-Performs 'ZeroExtendWideningLower' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> ZeroExtendWideningLowerTest(Vector64<byte> value)
 {{
   return AdvSimd.ZeroExtendWideningLower(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -19563,7 +19308,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, apiResult);
+", "Performs 'ZeroExtendWideningLower' operation.", Vector64byte_0, apiResult);
 
 try {
 ZeroExtendWideningLowerTest(Vector64byte_0);
@@ -19572,7 +19317,6 @@ ZeroExtendWideningLowerTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ZeroExtendWideningLower", "Performs 'ZeroExtendWideningLower' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19591,15 +19335,15 @@ Console.WriteLine(
 
 `Vector128<ushort> ZeroExtendWideningUpper(Vector128<byte> value)`
 
-Performs 'ZeroExtendWideningUpper' operation.
+{0}
 
 ```csharp
 private Vector128<ushort> ZeroExtendWideningUpperTest(Vector128<byte> value)
 {{
   return AdvSimd.ZeroExtendWideningUpper(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -19620,7 +19364,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128byte_0, apiResult);
+", "Performs 'ZeroExtendWideningUpper' operation.", Vector128byte_0, apiResult);
 
 try {
 ZeroExtendWideningUpperTest(Vector128byte_0);
@@ -19629,7 +19373,6 @@ ZeroExtendWideningUpperTest(Vector128byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ZeroExtendWideningUpper", "Performs 'ZeroExtendWideningUpper' operation", Vector128byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19648,15 +19391,15 @@ Console.WriteLine(
 
 `Vector64<short> AbsSaturateScalar(Vector64<short> value)`
 
-Performs 'AbsSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> AbsSaturateScalarTest(Vector64<short> value)
 {{
   return AdvSimd.Arm64.AbsSaturateScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -19675,7 +19418,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, apiResult);
+", "Performs 'AbsSaturateScalar' operation.", Vector64short_0, apiResult);
 
 try {
 AbsSaturateScalarTest(Vector64short_0);
@@ -19684,7 +19427,6 @@ AbsSaturateScalarTest(Vector64short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsSaturateScalar", "Performs 'AbsSaturateScalar' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19703,16 +19445,16 @@ Console.WriteLine(
 
 `Vector64<double> AbsoluteCompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'AbsoluteCompareGreaterThanScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> AbsoluteCompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.AbsoluteCompareGreaterThanScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19729,7 +19471,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'AbsoluteCompareGreaterThanScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 AbsoluteCompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
@@ -19738,7 +19480,6 @@ AbsoluteCompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteCompareGreaterThanScalar", "Performs 'AbsoluteCompareGreaterThanScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19757,16 +19498,16 @@ Console.WriteLine(
 
 `Vector64<double> AbsoluteCompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'AbsoluteCompareGreaterThanOrEqualScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.AbsoluteCompareGreaterThanOrEqualScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19783,7 +19524,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'AbsoluteCompareGreaterThanOrEqualScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -19792,7 +19533,6 @@ AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteCompareGreaterThanOrEqualScalar", "Performs 'AbsoluteCompareGreaterThanOrEqualScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19811,16 +19551,16 @@ Console.WriteLine(
 
 `Vector64<double> AbsoluteCompareLessThanScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'AbsoluteCompareLessThanScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> AbsoluteCompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.AbsoluteCompareLessThanScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19837,7 +19577,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'AbsoluteCompareLessThanScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 AbsoluteCompareLessThanScalarTest(Vector64double_0, Vector64double_1);
@@ -19846,7 +19586,6 @@ AbsoluteCompareLessThanScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteCompareLessThanScalar", "Performs 'AbsoluteCompareLessThanScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19865,16 +19604,16 @@ Console.WriteLine(
 
 `Vector64<double> AbsoluteCompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'AbsoluteCompareLessThanOrEqualScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> AbsoluteCompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.AbsoluteCompareLessThanOrEqualScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19891,7 +19630,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'AbsoluteCompareLessThanOrEqualScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 AbsoluteCompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -19900,7 +19639,6 @@ AbsoluteCompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteCompareLessThanOrEqualScalar", "Performs 'AbsoluteCompareLessThanOrEqualScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19919,16 +19657,16 @@ Console.WriteLine(
 
 `Vector64<double> AbsoluteDifferenceScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'AbsoluteDifferenceScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> AbsoluteDifferenceScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.AbsoluteDifferenceScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -19945,7 +19683,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'AbsoluteDifferenceScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 AbsoluteDifferenceScalarTest(Vector64double_0, Vector64double_1);
@@ -19954,7 +19692,6 @@ AbsoluteDifferenceScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("AbsoluteDifferenceScalar", "Performs 'AbsoluteDifferenceScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -19973,15 +19710,15 @@ Console.WriteLine(
 
 `Vector64<byte> AddAcross(Vector64<byte> value)`
 
-Performs 'AddAcross' operation.
+{0}
 
 ```csharp
 private Vector64<byte> AddAcrossTest(Vector64<byte> value)
 {{
   return AdvSimd.Arm64.AddAcross(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20006,7 +19743,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, apiResult);
+", "Performs 'AddAcross' operation.", Vector64byte_0, apiResult);
 
 try {
 AddAcrossTest(Vector64byte_0);
@@ -20015,7 +19752,6 @@ AddAcrossTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("AddAcross", "Performs 'AddAcross' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20034,15 +19770,15 @@ Console.WriteLine(
 
 `Vector64<ushort> AddAcrossWidening(Vector64<byte> value)`
 
-Performs 'AddAcrossWidening' operation.
+{0}
 
 ```csharp
 private Vector64<ushort> AddAcrossWideningTest(Vector64<byte> value)
 {{
   return AdvSimd.Arm64.AddAcrossWidening(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20067,7 +19803,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, apiResult);
+", "Performs 'AddAcrossWidening' operation.", Vector64byte_0, apiResult);
 
 try {
 AddAcrossWideningTest(Vector64byte_0);
@@ -20076,7 +19812,6 @@ AddAcrossWideningTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("AddAcrossWidening", "Performs 'AddAcrossWidening' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20095,15 +19830,15 @@ Console.WriteLine(
 
 `Vector64<float> AddPairwiseScalar(Vector64<float> value)`
 
-Performs 'AddPairwiseScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> AddPairwiseScalarTest(Vector64<float> value)
 {{
   return AdvSimd.Arm64.AddPairwiseScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20122,7 +19857,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'AddPairwiseScalar' operation.", Vector64float_0, apiResult);
 
 try {
 AddPairwiseScalarTest(Vector64float_0);
@@ -20131,7 +19866,6 @@ AddPairwiseScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("AddPairwiseScalar", "Performs 'AddPairwiseScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20150,16 +19884,16 @@ Console.WriteLine(
 
 `Vector64<double> CompareEqualScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'CompareEqualScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> CompareEqualScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.CompareEqualScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -20178,7 +19912,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'CompareEqualScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 CompareEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -20187,7 +19921,6 @@ CompareEqualScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareEqualScalar", "Performs 'CompareEqualScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20206,16 +19939,16 @@ Console.WriteLine(
 
 `Vector64<double> CompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'CompareGreaterThanScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> CompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.CompareGreaterThanScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -20234,7 +19967,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'CompareGreaterThanScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 CompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
@@ -20243,7 +19976,6 @@ CompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareGreaterThanScalar", "Performs 'CompareGreaterThanScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20262,16 +19994,16 @@ Console.WriteLine(
 
 `Vector64<double> CompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'CompareGreaterThanOrEqualScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> CompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.CompareGreaterThanOrEqualScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -20290,7 +20022,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'CompareGreaterThanOrEqualScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 CompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -20299,7 +20031,6 @@ CompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareGreaterThanOrEqualScalar", "Performs 'CompareGreaterThanOrEqualScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20318,16 +20049,16 @@ Console.WriteLine(
 
 `Vector64<double> CompareLessThanScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'CompareLessThanScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> CompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.CompareLessThanScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -20346,7 +20077,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'CompareLessThanScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 CompareLessThanScalarTest(Vector64double_0, Vector64double_1);
@@ -20355,7 +20086,6 @@ CompareLessThanScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareLessThanScalar", "Performs 'CompareLessThanScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20374,16 +20104,16 @@ Console.WriteLine(
 
 `Vector64<double> CompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'CompareLessThanOrEqualScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> CompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.CompareLessThanOrEqualScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -20402,7 +20132,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'CompareLessThanOrEqualScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 CompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -20411,7 +20141,6 @@ CompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareLessThanOrEqualScalar", "Performs 'CompareLessThanOrEqualScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20430,16 +20159,16 @@ Console.WriteLine(
 
 `Vector64<double> CompareTestScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'CompareTestScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> CompareTestScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.CompareTestScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -20457,7 +20186,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'CompareTestScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 CompareTestScalarTest(Vector64double_0, Vector64double_1);
@@ -20466,7 +20195,6 @@ CompareTestScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("CompareTestScalar", "Performs 'CompareTestScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20485,15 +20213,15 @@ Console.WriteLine(
 
 `Vector128<double> ConvertToDouble(Vector64<float> value)`
 
-Performs 'ConvertToDouble' operation.
+{0}
 
 ```csharp
 private Vector128<double> ConvertToDoubleTest(Vector64<float> value)
 {{
   return AdvSimd.Arm64.ConvertToDouble(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20511,7 +20239,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'ConvertToDouble' operation.", Vector64float_0, apiResult);
 
 try {
 ConvertToDoubleTest(Vector64float_0);
@@ -20520,7 +20248,6 @@ ConvertToDoubleTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToDouble", "Performs 'ConvertToDouble' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20539,15 +20266,15 @@ Console.WriteLine(
 
 `Vector64<double> ConvertToDoubleScalar(Vector64<long> value)`
 
-Performs 'ConvertToDoubleScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> ConvertToDoubleScalarTest(Vector64<long> value)
 {{
   return AdvSimd.Arm64.ConvertToDoubleScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20564,7 +20291,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64long_0, apiResult);
+", "Performs 'ConvertToDoubleScalar' operation.", Vector64long_0, apiResult);
 
 try {
 ConvertToDoubleScalarTest(Vector64long_0);
@@ -20573,7 +20300,6 @@ ConvertToDoubleScalarTest(Vector64long_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToDoubleScalar", "Performs 'ConvertToDoubleScalar' operation", Vector64long_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20592,15 +20318,15 @@ Console.WriteLine(
 
 `Vector128<double> ConvertToDoubleUpper(Vector128<float> value)`
 
-Performs 'ConvertToDoubleUpper' operation.
+{0}
 
 ```csharp
 private Vector128<double> ConvertToDoubleUpperTest(Vector128<float> value)
 {{
   return AdvSimd.Arm64.ConvertToDoubleUpper(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20611,7 +20337,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128float_0, apiResult);
+", "Performs 'ConvertToDoubleUpper' operation.", Vector128float_0, apiResult);
 
 try {
 ConvertToDoubleUpperTest(Vector128float_0);
@@ -20620,7 +20346,6 @@ ConvertToDoubleUpperTest(Vector128float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToDoubleUpper", "Performs 'ConvertToDoubleUpper' operation", Vector128float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20639,15 +20364,15 @@ Console.WriteLine(
 
 `Vector128<long> ConvertToInt64RoundAwayFromZero(Vector128<double> value)`
 
-Performs 'ConvertToInt64RoundAwayFromZero' operation.
+{0}
 
 ```csharp
 private Vector128<long> ConvertToInt64RoundAwayFromZeroTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZero(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20658,7 +20383,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToInt64RoundAwayFromZero' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToInt64RoundAwayFromZeroTest(Vector128double_0);
@@ -20667,7 +20392,6 @@ ConvertToInt64RoundAwayFromZeroTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt64RoundAwayFromZero", "Performs 'ConvertToInt64RoundAwayFromZero' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20686,15 +20410,15 @@ Console.WriteLine(
 
 `Vector64<long> ConvertToInt64RoundAwayFromZeroScalar(Vector64<double> value)`
 
-Performs 'ConvertToInt64RoundAwayFromZeroScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ConvertToInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZeroScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20705,7 +20429,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ConvertToInt64RoundAwayFromZeroScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ConvertToInt64RoundAwayFromZeroScalarTest(Vector64double_0);
@@ -20714,7 +20438,6 @@ ConvertToInt64RoundAwayFromZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt64RoundAwayFromZeroScalar", "Performs 'ConvertToInt64RoundAwayFromZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20733,15 +20456,15 @@ Console.WriteLine(
 
 `Vector128<long> ConvertToInt64RoundToEven(Vector128<double> value)`
 
-Performs 'ConvertToInt64RoundToEven' operation.
+{0}
 
 ```csharp
 private Vector128<long> ConvertToInt64RoundToEvenTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToInt64RoundToEven(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20752,7 +20475,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToInt64RoundToEven' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToInt64RoundToEvenTest(Vector128double_0);
@@ -20761,7 +20484,6 @@ ConvertToInt64RoundToEvenTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt64RoundToEven", "Performs 'ConvertToInt64RoundToEven' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20780,15 +20502,15 @@ Console.WriteLine(
 
 `Vector64<long> ConvertToInt64RoundToEvenScalar(Vector64<double> value)`
 
-Performs 'ConvertToInt64RoundToEvenScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ConvertToInt64RoundToEvenScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ConvertToInt64RoundToEvenScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20799,7 +20521,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ConvertToInt64RoundToEvenScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ConvertToInt64RoundToEvenScalarTest(Vector64double_0);
@@ -20808,7 +20530,6 @@ ConvertToInt64RoundToEvenScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt64RoundToEvenScalar", "Performs 'ConvertToInt64RoundToEvenScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20827,15 +20548,15 @@ Console.WriteLine(
 
 `Vector128<long> ConvertToInt64RoundToNegativeInfinity(Vector128<double> value)`
 
-Performs 'ConvertToInt64RoundToNegativeInfinity' operation.
+{0}
 
 ```csharp
 private Vector128<long> ConvertToInt64RoundToNegativeInfinityTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinity(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20846,7 +20567,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToInt64RoundToNegativeInfinity' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToInt64RoundToNegativeInfinityTest(Vector128double_0);
@@ -20855,7 +20576,6 @@ ConvertToInt64RoundToNegativeInfinityTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt64RoundToNegativeInfinity", "Performs 'ConvertToInt64RoundToNegativeInfinity' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20874,15 +20594,15 @@ Console.WriteLine(
 
 `Vector64<long> ConvertToInt64RoundToNegativeInfinityScalar(Vector64<double> value)`
 
-Performs 'ConvertToInt64RoundToNegativeInfinityScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinityScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20893,7 +20613,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ConvertToInt64RoundToNegativeInfinityScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
@@ -20902,7 +20622,6 @@ ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToInt64RoundToNegativeInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20921,15 +20640,15 @@ Console.WriteLine(
 
 `Vector128<long> ConvertToInt64RoundToPositiveInfinity(Vector128<double> value)`
 
-Performs 'ConvertToInt64RoundToPositiveInfinity' operation.
+{0}
 
 ```csharp
 private Vector128<long> ConvertToInt64RoundToPositiveInfinityTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinity(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20940,7 +20659,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToInt64RoundToPositiveInfinity' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToInt64RoundToPositiveInfinityTest(Vector128double_0);
@@ -20949,7 +20668,6 @@ ConvertToInt64RoundToPositiveInfinityTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt64RoundToPositiveInfinity", "Performs 'ConvertToInt64RoundToPositiveInfinity' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -20968,15 +20686,15 @@ Console.WriteLine(
 
 `Vector64<long> ConvertToInt64RoundToPositiveInfinityScalar(Vector64<double> value)`
 
-Performs 'ConvertToInt64RoundToPositiveInfinityScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinityScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -20987,7 +20705,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ConvertToInt64RoundToPositiveInfinityScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
@@ -20996,7 +20714,6 @@ ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToInt64RoundToPositiveInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21015,15 +20732,15 @@ Console.WriteLine(
 
 `Vector128<long> ConvertToInt64RoundToZero(Vector128<double> value)`
 
-Performs 'ConvertToInt64RoundToZero' operation.
+{0}
 
 ```csharp
 private Vector128<long> ConvertToInt64RoundToZeroTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToInt64RoundToZero(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21034,7 +20751,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToInt64RoundToZero' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToInt64RoundToZeroTest(Vector128double_0);
@@ -21043,7 +20760,6 @@ ConvertToInt64RoundToZeroTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt64RoundToZero", "Performs 'ConvertToInt64RoundToZero' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21062,15 +20778,15 @@ Console.WriteLine(
 
 `Vector64<long> ConvertToInt64RoundToZeroScalar(Vector64<double> value)`
 
-Performs 'ConvertToInt64RoundToZeroScalar' operation.
+{0}
 
 ```csharp
 private Vector64<long> ConvertToInt64RoundToZeroScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ConvertToInt64RoundToZeroScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21081,7 +20797,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ConvertToInt64RoundToZeroScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ConvertToInt64RoundToZeroScalarTest(Vector64double_0);
@@ -21090,7 +20806,6 @@ ConvertToInt64RoundToZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToInt64RoundToZeroScalar", "Performs 'ConvertToInt64RoundToZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21109,15 +20824,15 @@ Console.WriteLine(
 
 `Vector64<float> ConvertToSingleLower(Vector128<double> value)`
 
-Performs 'ConvertToSingleLower' operation.
+{0}
 
 ```csharp
 private Vector64<float> ConvertToSingleLowerTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToSingleLower(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21128,7 +20843,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToSingleLower' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToSingleLowerTest(Vector128double_0);
@@ -21137,7 +20852,6 @@ ConvertToSingleLowerTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToSingleLower", "Performs 'ConvertToSingleLower' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21156,15 +20870,15 @@ Console.WriteLine(
 
 `Vector64<float> ConvertToSingleRoundToOddLower(Vector128<double> value)`
 
-Performs 'ConvertToSingleRoundToOddLower' operation.
+{0}
 
 ```csharp
 private Vector64<float> ConvertToSingleRoundToOddLowerTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToSingleRoundToOddLower(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21175,7 +20889,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToSingleRoundToOddLower' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToSingleRoundToOddLowerTest(Vector128double_0);
@@ -21184,7 +20898,6 @@ ConvertToSingleRoundToOddLowerTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToSingleRoundToOddLower", "Performs 'ConvertToSingleRoundToOddLower' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21203,16 +20916,16 @@ Console.WriteLine(
 
 `Vector128<float> ConvertToSingleRoundToOddUpper(Vector64<float> lower, Vector128<double> value)`
 
-Performs 'ConvertToSingleRoundToOddUpper' operation.
+{0}
 
 ```csharp
 private Vector128<float> ConvertToSingleRoundToOddUpperTest(Vector64<float> lower, Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToSingleRoundToOddUpper(lower, value);
 }}
-// lower = {0}
-// value = {1}
-// Result = {2}
+// lower = {1}
+// value = {2}
+// Result = {3}
 
 ```
 
@@ -21223,7 +20936,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector128double_0, apiResult);
+", "Performs 'ConvertToSingleRoundToOddUpper' operation.", Vector64float_0, Vector128double_0, apiResult);
 
 try {
 ConvertToSingleRoundToOddUpperTest(Vector64float_0, Vector128double_0);
@@ -21232,7 +20945,6 @@ ConvertToSingleRoundToOddUpperTest(Vector64float_0, Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToSingleRoundToOddUpper", "Performs 'ConvertToSingleRoundToOddUpper' operation", Vector64float_0, Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21251,16 +20963,16 @@ Console.WriteLine(
 
 `Vector128<float> ConvertToSingleUpper(Vector64<float> lower, Vector128<double> value)`
 
-Performs 'ConvertToSingleUpper' operation.
+{0}
 
 ```csharp
 private Vector128<float> ConvertToSingleUpperTest(Vector64<float> lower, Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToSingleUpper(lower, value);
 }}
-// lower = {0}
-// value = {1}
-// Result = {2}
+// lower = {1}
+// value = {2}
+// Result = {3}
 
 ```
 
@@ -21271,7 +20983,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector128double_0, apiResult);
+", "Performs 'ConvertToSingleUpper' operation.", Vector64float_0, Vector128double_0, apiResult);
 
 try {
 ConvertToSingleUpperTest(Vector64float_0, Vector128double_0);
@@ -21280,7 +20992,6 @@ ConvertToSingleUpperTest(Vector64float_0, Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToSingleUpper", "Performs 'ConvertToSingleUpper' operation", Vector64float_0, Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21299,15 +21010,15 @@ Console.WriteLine(
 
 `Vector128<ulong> ConvertToUInt64RoundAwayFromZero(Vector128<double> value)`
 
-Performs 'ConvertToUInt64RoundAwayFromZero' operation.
+{0}
 
 ```csharp
 private Vector128<ulong> ConvertToUInt64RoundAwayFromZeroTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZero(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21318,7 +21029,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToUInt64RoundAwayFromZero' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToUInt64RoundAwayFromZeroTest(Vector128double_0);
@@ -21327,7 +21038,6 @@ ConvertToUInt64RoundAwayFromZeroTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt64RoundAwayFromZero", "Performs 'ConvertToUInt64RoundAwayFromZero' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21346,15 +21056,15 @@ Console.WriteLine(
 
 `Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalar(Vector64<double> value)`
 
-Performs 'ConvertToUInt64RoundAwayFromZeroScalar' operation.
+{0}
 
 ```csharp
 private Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZeroScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21365,7 +21075,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ConvertToUInt64RoundAwayFromZeroScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64double_0);
@@ -21374,7 +21084,6 @@ ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt64RoundAwayFromZeroScalar", "Performs 'ConvertToUInt64RoundAwayFromZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21393,15 +21102,15 @@ Console.WriteLine(
 
 `Vector128<ulong> ConvertToUInt64RoundToEven(Vector128<double> value)`
 
-Performs 'ConvertToUInt64RoundToEven' operation.
+{0}
 
 ```csharp
 private Vector128<ulong> ConvertToUInt64RoundToEvenTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToUInt64RoundToEven(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21412,7 +21121,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToUInt64RoundToEven' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToUInt64RoundToEvenTest(Vector128double_0);
@@ -21421,7 +21130,6 @@ ConvertToUInt64RoundToEvenTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt64RoundToEven", "Performs 'ConvertToUInt64RoundToEven' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21440,15 +21148,15 @@ Console.WriteLine(
 
 `Vector64<ulong> ConvertToUInt64RoundToEvenScalar(Vector64<double> value)`
 
-Performs 'ConvertToUInt64RoundToEvenScalar' operation.
+{0}
 
 ```csharp
 private Vector64<ulong> ConvertToUInt64RoundToEvenScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ConvertToUInt64RoundToEvenScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21459,7 +21167,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ConvertToUInt64RoundToEvenScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ConvertToUInt64RoundToEvenScalarTest(Vector64double_0);
@@ -21468,7 +21176,6 @@ ConvertToUInt64RoundToEvenScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt64RoundToEvenScalar", "Performs 'ConvertToUInt64RoundToEvenScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21487,15 +21194,15 @@ Console.WriteLine(
 
 `Vector128<ulong> ConvertToUInt64RoundToNegativeInfinity(Vector128<double> value)`
 
-Performs 'ConvertToUInt64RoundToNegativeInfinity' operation.
+{0}
 
 ```csharp
 private Vector128<ulong> ConvertToUInt64RoundToNegativeInfinityTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinity(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21506,7 +21213,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToUInt64RoundToNegativeInfinity' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToUInt64RoundToNegativeInfinityTest(Vector128double_0);
@@ -21515,7 +21222,6 @@ ConvertToUInt64RoundToNegativeInfinityTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt64RoundToNegativeInfinity", "Performs 'ConvertToUInt64RoundToNegativeInfinity' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21534,15 +21240,15 @@ Console.WriteLine(
 
 `Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalar(Vector64<double> value)`
 
-Performs 'ConvertToUInt64RoundToNegativeInfinityScalar' operation.
+{0}
 
 ```csharp
 private Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinityScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21553,7 +21259,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ConvertToUInt64RoundToNegativeInfinityScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
@@ -21562,7 +21268,6 @@ ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToUInt64RoundToNegativeInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21581,15 +21286,15 @@ Console.WriteLine(
 
 `Vector128<ulong> ConvertToUInt64RoundToPositiveInfinity(Vector128<double> value)`
 
-Performs 'ConvertToUInt64RoundToPositiveInfinity' operation.
+{0}
 
 ```csharp
 private Vector128<ulong> ConvertToUInt64RoundToPositiveInfinityTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinity(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21600,7 +21305,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToUInt64RoundToPositiveInfinity' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToUInt64RoundToPositiveInfinityTest(Vector128double_0);
@@ -21609,7 +21314,6 @@ ConvertToUInt64RoundToPositiveInfinityTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt64RoundToPositiveInfinity", "Performs 'ConvertToUInt64RoundToPositiveInfinity' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21628,15 +21332,15 @@ Console.WriteLine(
 
 `Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalar(Vector64<double> value)`
 
-Performs 'ConvertToUInt64RoundToPositiveInfinityScalar' operation.
+{0}
 
 ```csharp
 private Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinityScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21647,7 +21351,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ConvertToUInt64RoundToPositiveInfinityScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
@@ -21656,7 +21360,6 @@ ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToUInt64RoundToPositiveInfinityScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21675,15 +21378,15 @@ Console.WriteLine(
 
 `Vector128<ulong> ConvertToUInt64RoundToZero(Vector128<double> value)`
 
-Performs 'ConvertToUInt64RoundToZero' operation.
+{0}
 
 ```csharp
 private Vector128<ulong> ConvertToUInt64RoundToZeroTest(Vector128<double> value)
 {{
   return AdvSimd.Arm64.ConvertToUInt64RoundToZero(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21694,7 +21397,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, apiResult);
+", "Performs 'ConvertToUInt64RoundToZero' operation.", Vector128double_0, apiResult);
 
 try {
 ConvertToUInt64RoundToZeroTest(Vector128double_0);
@@ -21703,7 +21406,6 @@ ConvertToUInt64RoundToZeroTest(Vector128double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt64RoundToZero", "Performs 'ConvertToUInt64RoundToZero' operation", Vector128double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21722,15 +21424,15 @@ Console.WriteLine(
 
 `Vector64<ulong> ConvertToUInt64RoundToZeroScalar(Vector64<double> value)`
 
-Performs 'ConvertToUInt64RoundToZeroScalar' operation.
+{0}
 
 ```csharp
 private Vector64<ulong> ConvertToUInt64RoundToZeroScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ConvertToUInt64RoundToZeroScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21741,7 +21443,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ConvertToUInt64RoundToZeroScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ConvertToUInt64RoundToZeroScalarTest(Vector64double_0);
@@ -21750,7 +21452,6 @@ ConvertToUInt64RoundToZeroScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ConvertToUInt64RoundToZeroScalar", "Performs 'ConvertToUInt64RoundToZeroScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21769,16 +21470,16 @@ Console.WriteLine(
 
 `Vector64<float> Divide(Vector64<float> left, Vector64<float> right)`
 
-Performs 'Divide' operation.
+{0}
 
 ```csharp
 private Vector64<float> DivideTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.Arm64.Divide(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -21796,7 +21497,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'Divide' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 DivideTest(Vector64float_0, Vector64float_1);
@@ -21805,7 +21506,6 @@ DivideTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("Divide", "Performs 'Divide' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 Console.WriteLine(
 @"```
@@ -21844,15 +21544,15 @@ Console.WriteLine(
 
 `Vector64<byte> ExtractNarrowingSaturateScalar(Vector64<ushort> value)`
 
-Performs 'ExtractNarrowingSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ExtractNarrowingSaturateScalarTest(Vector64<ushort> value)
 {{
   return AdvSimd.Arm64.ExtractNarrowingSaturateScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21873,7 +21573,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64ushort_0, apiResult);
+", "Performs 'ExtractNarrowingSaturateScalar' operation.", Vector64ushort_0, apiResult);
 
 try {
 ExtractNarrowingSaturateScalarTest(Vector64ushort_0);
@@ -21882,7 +21582,6 @@ ExtractNarrowingSaturateScalarTest(Vector64ushort_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ExtractNarrowingSaturateScalar", "Performs 'ExtractNarrowingSaturateScalar' operation", Vector64ushort_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21901,15 +21600,15 @@ Console.WriteLine(
 
 `Vector64<byte> ExtractNarrowingSaturateUnsignedScalar(Vector64<short> value)`
 
-Performs 'ExtractNarrowingSaturateUnsignedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ExtractNarrowingSaturateUnsignedScalarTest(Vector64<short> value)
 {{
   return AdvSimd.Arm64.ExtractNarrowingSaturateUnsignedScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -21927,7 +21626,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, apiResult);
+", "Performs 'ExtractNarrowingSaturateUnsignedScalar' operation.", Vector64short_0, apiResult);
 
 try {
 ExtractNarrowingSaturateUnsignedScalarTest(Vector64short_0);
@@ -21936,7 +21635,6 @@ ExtractNarrowingSaturateUnsignedScalarTest(Vector64short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ExtractNarrowingSaturateUnsignedScalar", "Performs 'ExtractNarrowingSaturateUnsignedScalar' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -21955,17 +21653,17 @@ Console.WriteLine(
 
 `Vector64<float> FusedMultiplyAddByScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right)`
 
-Performs 'FusedMultiplyAddByScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> FusedMultiplyAddByScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.Arm64.FusedMultiplyAddByScalar(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -21983,7 +21681,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
+", "Performs 'FusedMultiplyAddByScalar' operation.", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 
 try {
 FusedMultiplyAddByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
@@ -21992,7 +21690,6 @@ FusedMultiplyAddByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplyAddByScalar", "Performs 'FusedMultiplyAddByScalar' operation", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22011,18 +21708,18 @@ Console.WriteLine(
 
 `Vector64<float> FusedMultiplyAddBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)`
 
-Performs 'FusedMultiplyAddBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> FusedMultiplyAddBySelectedScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, rightIndex);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -22042,7 +21739,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, Vector64float_2, byte_0, apiResult);
+", "Performs 'FusedMultiplyAddBySelectedScalar' operation.", Vector64float_0, Vector64float_1, Vector64float_2, byte_0, apiResult);
 
 try {
 FusedMultiplyAddBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
@@ -22051,7 +21748,6 @@ FusedMultiplyAddBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64f
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplyAddBySelectedScalar", "Performs 'FusedMultiplyAddBySelectedScalar' operation", Vector64float_0, Vector64float_1, Vector64float_2, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22070,18 +21766,18 @@ Console.WriteLine(
 
 `Vector64<double> FusedMultiplyAddScalarBySelectedScalar(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)`
 
-Performs 'FusedMultiplyAddScalarBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> FusedMultiplyAddScalarBySelectedScalarTest(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, rightIndex);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -22099,7 +21795,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, Vector128double_0, byte_0, apiResult);
+", "Performs 'FusedMultiplyAddScalarBySelectedScalar' operation.", Vector64double_0, Vector64double_1, Vector128double_0, byte_0, apiResult);
 
 try {
 FusedMultiplyAddScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
@@ -22108,7 +21804,6 @@ FusedMultiplyAddScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, V
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplyAddScalarBySelectedScalar", "Performs 'FusedMultiplyAddScalarBySelectedScalar' operation", Vector64double_0, Vector64double_1, Vector128double_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22127,17 +21822,17 @@ Console.WriteLine(
 
 `Vector64<float> FusedMultiplySubtractByScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`
 
-Performs 'FusedMultiplySubtractByScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> FusedMultiplySubtractByScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.Arm64.FusedMultiplySubtractByScalar(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -22155,7 +21850,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
+", "Performs 'FusedMultiplySubtractByScalar' operation.", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 
 try {
 FusedMultiplySubtractByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
@@ -22164,7 +21859,6 @@ FusedMultiplySubtractByScalarTest(Vector64float_0, Vector64float_1, Vector64floa
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplySubtractByScalar", "Performs 'FusedMultiplySubtractByScalar' operation", Vector64float_0, Vector64float_1, Vector64float_2, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22183,18 +21877,18 @@ Console.WriteLine(
 
 `Vector64<float> FusedMultiplySubtractBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)`
 
-Performs 'FusedMultiplySubtractBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> FusedMultiplySubtractBySelectedScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, rightIndex);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -22214,7 +21908,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, Vector64float_2, byte_0, apiResult);
+", "Performs 'FusedMultiplySubtractBySelectedScalar' operation.", Vector64float_0, Vector64float_1, Vector64float_2, byte_0, apiResult);
 
 try {
 FusedMultiplySubtractBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
@@ -22223,7 +21917,6 @@ FusedMultiplySubtractBySelectedScalarTest(Vector64float_0, Vector64float_1, Vect
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplySubtractBySelectedScalar", "Performs 'FusedMultiplySubtractBySelectedScalar' operation", Vector64float_0, Vector64float_1, Vector64float_2, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22242,18 +21935,18 @@ Console.WriteLine(
 
 `Vector64<double> FusedMultiplySubtractScalarBySelectedScalar(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)`
 
-Performs 'FusedMultiplySubtractScalarBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> FusedMultiplySubtractScalarBySelectedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, rightIndex);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -22271,7 +21964,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, Vector128double_0, byte_0, apiResult);
+", "Performs 'FusedMultiplySubtractScalarBySelectedScalar' operation.", Vector64double_0, Vector64double_1, Vector128double_0, byte_0, apiResult);
 
 try {
 FusedMultiplySubtractScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
@@ -22280,7 +21973,6 @@ FusedMultiplySubtractScalarBySelectedScalarTest(Vector64double_0, Vector64double
    apiResult = "TODO";
 }
 
-LogInCsv("FusedMultiplySubtractScalarBySelectedScalar", "Performs 'FusedMultiplySubtractScalarBySelectedScalar' operation", Vector64double_0, Vector64double_1, Vector128double_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22299,18 +21991,18 @@ Console.WriteLine(
 
 `Vector64<byte> InsertSelectedScalar(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)`
 
-Performs 'InsertSelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<byte> InsertSelectedScalarTest(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
 {{
   return AdvSimd.Arm64.InsertSelectedScalar(result, resultIndex, value, valueIndex);
 }}
-// result = {0}
-// resultIndex = {1}
-// value = {2}
-// valueIndex = {3}
-// Result = {4}
+// result = {1}
+// resultIndex = {2}
+// value = {3}
+// valueIndex = {4}
+// Result = {5}
 
 ```
 
@@ -22356,7 +22048,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, byte_0, Vector64byte_1, byte_1, apiResult);
+", "Performs 'InsertSelectedScalar' operation.", Vector64byte_0, byte_0, Vector64byte_1, byte_1, apiResult);
 
 try {
 InsertSelectedScalarTest(Vector64byte_0, byte_0, Vector64byte_1, byte_1);
@@ -22365,7 +22057,6 @@ InsertSelectedScalarTest(Vector64byte_0, byte_0, Vector64byte_1, byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("InsertSelectedScalar", "Performs 'InsertSelectedScalar' operation", Vector64byte_0, byte_0, Vector64byte_1, byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22384,15 +22075,15 @@ Console.WriteLine(
 
 `Vector64<byte> MaxAcross(Vector64<byte> value)`
 
-Performs 'MaxAcross' operation.
+{0}
 
 ```csharp
 private Vector64<byte> MaxAcrossTest(Vector64<byte> value)
 {{
   return AdvSimd.Arm64.MaxAcross(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -22418,7 +22109,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, apiResult);
+", "Performs 'MaxAcross' operation.", Vector64byte_0, apiResult);
 
 try {
 MaxAcrossTest(Vector64byte_0);
@@ -22427,7 +22118,6 @@ MaxAcrossTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MaxAcross", "Performs 'MaxAcross' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22446,15 +22136,15 @@ Console.WriteLine(
 
 `Vector64<float> MaxNumberAcross(Vector128<float> value)`
 
-Performs 'MaxNumberAcross' operation.
+{0}
 
 ```csharp
 private Vector64<float> MaxNumberAcrossTest(Vector128<float> value)
 {{
   return AdvSimd.Arm64.MaxNumberAcross(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -22465,7 +22155,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128float_0, apiResult);
+", "Performs 'MaxNumberAcross' operation.", Vector128float_0, apiResult);
 
 try {
 MaxNumberAcrossTest(Vector128float_0);
@@ -22474,7 +22164,6 @@ MaxNumberAcrossTest(Vector128float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MaxNumberAcross", "Performs 'MaxNumberAcross' operation", Vector128float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22493,16 +22182,16 @@ Console.WriteLine(
 
 `Vector64<float> MaxNumberPairwise(Vector64<float> left, Vector64<float> right)`
 
-Performs 'MaxNumberPairwise' operation.
+{0}
 
 ```csharp
 private Vector64<float> MaxNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.Arm64.MaxNumberPairwise(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -22520,7 +22209,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'MaxNumberPairwise' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 MaxNumberPairwiseTest(Vector64float_0, Vector64float_1);
@@ -22529,7 +22218,6 @@ MaxNumberPairwiseTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MaxNumberPairwise", "Performs 'MaxNumberPairwise' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22548,15 +22236,15 @@ Console.WriteLine(
 
 `Vector64<float> MaxNumberPairwiseScalar(Vector64<float> value)`
 
-Performs 'MaxNumberPairwiseScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> MaxNumberPairwiseScalarTest(Vector64<float> value)
 {{
   return AdvSimd.Arm64.MaxNumberPairwiseScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -22573,7 +22261,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'MaxNumberPairwiseScalar' operation.", Vector64float_0, apiResult);
 
 try {
 MaxNumberPairwiseScalarTest(Vector64float_0);
@@ -22582,7 +22270,6 @@ MaxNumberPairwiseScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MaxNumberPairwiseScalar", "Performs 'MaxNumberPairwiseScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22601,15 +22288,15 @@ Console.WriteLine(
 
 `Vector64<float> MaxPairwiseScalar(Vector64<float> value)`
 
-Performs 'MaxPairwiseScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> MaxPairwiseScalarTest(Vector64<float> value)
 {{
   return AdvSimd.Arm64.MaxPairwiseScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -22626,7 +22313,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'MaxPairwiseScalar' operation.", Vector64float_0, apiResult);
 
 try {
 MaxPairwiseScalarTest(Vector64float_0);
@@ -22635,7 +22322,6 @@ MaxPairwiseScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MaxPairwiseScalar", "Performs 'MaxPairwiseScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22654,16 +22340,16 @@ Console.WriteLine(
 
 `Vector64<double> MaxScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'MaxScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> MaxScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.MaxScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -22680,7 +22366,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'MaxScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 MaxScalarTest(Vector64double_0, Vector64double_1);
@@ -22689,7 +22375,6 @@ MaxScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MaxScalar", "Performs 'MaxScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22708,15 +22393,15 @@ Console.WriteLine(
 
 `Vector64<byte> MinAcross(Vector64<byte> value)`
 
-Performs 'MinAcross' operation.
+{0}
 
 ```csharp
 private Vector64<byte> MinAcrossTest(Vector64<byte> value)
 {{
   return AdvSimd.Arm64.MinAcross(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -22742,7 +22427,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, apiResult);
+", "Performs 'MinAcross' operation.", Vector64byte_0, apiResult);
 
 try {
 MinAcrossTest(Vector64byte_0);
@@ -22751,7 +22436,6 @@ MinAcrossTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MinAcross", "Performs 'MinAcross' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22770,15 +22454,15 @@ Console.WriteLine(
 
 `Vector64<float> MinNumberAcross(Vector128<float> value)`
 
-Performs 'MinNumberAcross' operation.
+{0}
 
 ```csharp
 private Vector64<float> MinNumberAcrossTest(Vector128<float> value)
 {{
   return AdvSimd.Arm64.MinNumberAcross(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -22789,7 +22473,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128float_0, apiResult);
+", "Performs 'MinNumberAcross' operation.", Vector128float_0, apiResult);
 
 try {
 MinNumberAcrossTest(Vector128float_0);
@@ -22798,7 +22482,6 @@ MinNumberAcrossTest(Vector128float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MinNumberAcross", "Performs 'MinNumberAcross' operation", Vector128float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22817,16 +22500,16 @@ Console.WriteLine(
 
 `Vector64<float> MinNumberPairwise(Vector64<float> left, Vector64<float> right)`
 
-Performs 'MinNumberPairwise' operation.
+{0}
 
 ```csharp
 private Vector64<float> MinNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.Arm64.MinNumberPairwise(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -22844,7 +22527,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'MinNumberPairwise' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 MinNumberPairwiseTest(Vector64float_0, Vector64float_1);
@@ -22853,7 +22536,6 @@ MinNumberPairwiseTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MinNumberPairwise", "Performs 'MinNumberPairwise' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22872,15 +22554,15 @@ Console.WriteLine(
 
 `Vector64<float> MinNumberPairwiseScalar(Vector64<float> value)`
 
-Performs 'MinNumberPairwiseScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> MinNumberPairwiseScalarTest(Vector64<float> value)
 {{
   return AdvSimd.Arm64.MinNumberPairwiseScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -22897,7 +22579,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'MinNumberPairwiseScalar' operation.", Vector64float_0, apiResult);
 
 try {
 MinNumberPairwiseScalarTest(Vector64float_0);
@@ -22906,7 +22588,6 @@ MinNumberPairwiseScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MinNumberPairwiseScalar", "Performs 'MinNumberPairwiseScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22925,15 +22606,15 @@ Console.WriteLine(
 
 `Vector64<float> MinPairwiseScalar(Vector64<float> value)`
 
-Performs 'MinPairwiseScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> MinPairwiseScalarTest(Vector64<float> value)
 {{
   return AdvSimd.Arm64.MinPairwiseScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -22950,7 +22631,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'MinPairwiseScalar' operation.", Vector64float_0, apiResult);
 
 try {
 MinPairwiseScalarTest(Vector64float_0);
@@ -22959,7 +22640,6 @@ MinPairwiseScalarTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MinPairwiseScalar", "Performs 'MinPairwiseScalar' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -22978,16 +22658,16 @@ Console.WriteLine(
 
 `Vector64<double> MinScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'MinScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> MinScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.MinScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -23004,7 +22684,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'MinScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 MinScalarTest(Vector64double_0, Vector64double_1);
@@ -23013,7 +22693,6 @@ MinScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MinScalar", "Performs 'MinScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23032,16 +22711,16 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingSaturateHighScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.Arm64.MultiplyDoublingSaturateHighScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -23058,7 +22737,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingSaturateHighScalar' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
@@ -23067,7 +22746,6 @@ MultiplyDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingSaturateHighScalar", "Performs 'MultiplyDoublingSaturateHighScalar' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23086,17 +22764,17 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingScalarBySelectedScalarSaturateHigh' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -23115,7 +22793,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyDoublingScalarBySelectedScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
@@ -23124,7 +22802,6 @@ MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyDoublingScalarBySelectedScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23143,17 +22820,17 @@ Console.WriteLine(
 
 `Vector64<int> MultiplyDoublingWideningAndAddSaturateScalar(Vector64<int> addend, Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningAndAddSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<int> MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.Arm64.MultiplyDoublingWideningAndAddSaturateScalar(addend, left, right);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -23170,7 +22847,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64int_0, Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningAndAddSaturateScalar' operation.", Vector64int_0, Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
@@ -23179,7 +22856,6 @@ MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64int_0, Vector64short_0,
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningAndAddSaturateScalar", "Performs 'MultiplyDoublingWideningAndAddSaturateScalar' operation", Vector64int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23198,17 +22874,17 @@ Console.WriteLine(
 
 `Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalar(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningAndSubtractSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.Arm64.MultiplyDoublingWideningAndSubtractSaturateScalar(minuend, left, right);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// Result = {3}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
 
 ```
 
@@ -23225,7 +22901,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64int_0, Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningAndSubtractSaturateScalar' operation.", Vector64int_0, Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
@@ -23234,7 +22910,6 @@ MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64int_0, Vector64sho
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningAndSubtractSaturateScalar", "Performs 'MultiplyDoublingWideningAndSubtractSaturateScalar' operation", Vector64int_0, Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23253,16 +22928,16 @@ Console.WriteLine(
 
 `Vector64<int> MultiplyDoublingWideningSaturateScalar(Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyDoublingWideningSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<int> MultiplyDoublingWideningSaturateScalarTest(Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -23279,7 +22954,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyDoublingWideningSaturateScalar' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyDoublingWideningSaturateScalarTest(Vector64short_0, Vector64short_1);
@@ -23288,7 +22963,6 @@ MultiplyDoublingWideningSaturateScalarTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningSaturateScalar", "Performs 'MultiplyDoublingWideningSaturateScalar' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23307,17 +22981,17 @@ Console.WriteLine(
 
 `Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingWideningSaturateScalarBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -23336,7 +23010,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyDoublingWideningSaturateScalarBySelectedScalar' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
@@ -23345,7 +23019,6 @@ MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64short_0, Vect
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningSaturateScalarBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateScalarBySelectedScalar' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23364,18 +23037,18 @@ Console.WriteLine(
 
 `Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
 }}
-// addend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -23394,7 +23067,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate' operation.", Vector64int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -23403,7 +23076,6 @@ MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64int_0, 
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate' operation", Vector64int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23422,18 +23094,18 @@ Console.WriteLine(
 
 `Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate' operation.
+{0}
 
 ```csharp
 private Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
 }}
-// minuend = {0}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
 
 ```
 
@@ -23452,7 +23124,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate' operation.", Vector64int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
@@ -23461,7 +23133,6 @@ MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64in
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate' operation", Vector64int_0, Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23480,16 +23151,16 @@ Console.WriteLine(
 
 `Vector64<float> MultiplyExtended(Vector64<float> left, Vector64<float> right)`
 
-Performs 'MultiplyExtended' operation.
+{0}
 
 ```csharp
 private Vector64<float> MultiplyExtendedTest(Vector64<float> left, Vector64<float> right)
 {{
   return AdvSimd.Arm64.MultiplyExtended(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -23507,7 +23178,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, apiResult);
+", "Performs 'MultiplyExtended' operation.", Vector64float_0, Vector64float_1, apiResult);
 
 try {
 MultiplyExtendedTest(Vector64float_0, Vector64float_1);
@@ -23516,7 +23187,6 @@ MultiplyExtendedTest(Vector64float_0, Vector64float_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyExtended", "Performs 'MultiplyExtended' operation", Vector64float_0, Vector64float_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23535,16 +23205,16 @@ Console.WriteLine(
 
 `Vector128<double> MultiplyExtendedByScalar(Vector128<double> left, Vector64<double> right)`
 
-Performs 'MultiplyExtendedByScalar' operation.
+{0}
 
 ```csharp
 private Vector128<double> MultiplyExtendedByScalarTest(Vector128<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.MultiplyExtendedByScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -23555,7 +23225,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector128double_0, Vector64double_0, apiResult);
+", "Performs 'MultiplyExtendedByScalar' operation.", Vector128double_0, Vector64double_0, apiResult);
 
 try {
 MultiplyExtendedByScalarTest(Vector128double_0, Vector64double_0);
@@ -23564,7 +23234,6 @@ MultiplyExtendedByScalarTest(Vector128double_0, Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyExtendedByScalar", "Performs 'MultiplyExtendedByScalar' operation", Vector128double_0, Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23583,17 +23252,17 @@ Console.WriteLine(
 
 `Vector64<float> MultiplyExtendedBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`
 
-Performs 'MultiplyExtendedBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<float> MultiplyExtendedBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -23613,7 +23282,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, Vector64float_1, byte_0, apiResult);
+", "Performs 'MultiplyExtendedBySelectedScalar' operation.", Vector64float_0, Vector64float_1, byte_0, apiResult);
 
 try {
 MultiplyExtendedBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
@@ -23622,7 +23291,6 @@ MultiplyExtendedBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyExtendedBySelectedScalar", "Performs 'MultiplyExtendedBySelectedScalar' operation", Vector64float_0, Vector64float_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23641,16 +23309,16 @@ Console.WriteLine(
 
 `Vector64<double> MultiplyExtendedScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'MultiplyExtendedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> MultiplyExtendedScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.MultiplyExtendedScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -23667,7 +23335,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'MultiplyExtendedScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 MultiplyExtendedScalarTest(Vector64double_0, Vector64double_1);
@@ -23676,7 +23344,6 @@ MultiplyExtendedScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyExtendedScalar", "Performs 'MultiplyExtendedScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23695,17 +23362,17 @@ Console.WriteLine(
 
 `Vector64<double> MultiplyExtendedScalarBySelectedScalar(Vector64<double> left, Vector128<double> right, byte rightIndex)`
 
-Performs 'MultiplyExtendedScalarBySelectedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> MultiplyExtendedScalarBySelectedScalarTest(Vector64<double> left, Vector128<double> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -23723,7 +23390,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector128double_0, byte_0, apiResult);
+", "Performs 'MultiplyExtendedScalarBySelectedScalar' operation.", Vector64double_0, Vector128double_0, byte_0, apiResult);
 
 try {
 MultiplyExtendedScalarBySelectedScalarTest(Vector64double_0, Vector128double_0, byte_0);
@@ -23732,7 +23399,6 @@ MultiplyExtendedScalarBySelectedScalarTest(Vector64double_0, Vector128double_0, 
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyExtendedScalarBySelectedScalar", "Performs 'MultiplyExtendedScalarBySelectedScalar' operation", Vector64double_0, Vector128double_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23751,16 +23417,16 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyRoundedDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
 
-Performs 'MultiplyRoundedDoublingSaturateHighScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyRoundedDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
 {{
   return AdvSimd.Arm64.MultiplyRoundedDoublingSaturateHighScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -23777,7 +23443,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, apiResult);
+", "Performs 'MultiplyRoundedDoublingSaturateHighScalar' operation.", Vector64short_0, Vector64short_1, apiResult);
 
 try {
 MultiplyRoundedDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
@@ -23786,7 +23452,6 @@ MultiplyRoundedDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyRoundedDoublingSaturateHighScalar", "Performs 'MultiplyRoundedDoublingSaturateHighScalar' operation", Vector64short_0, Vector64short_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23805,17 +23470,17 @@ Console.WriteLine(
 
 `Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
-Performs 'MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh' operation.
+{0}
 
 ```csharp
 private Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
   return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, rightIndex);
 }}
-// left = {0}
-// right = {1}
-// rightIndex = {2}
-// Result = {3}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
 
 ```
 
@@ -23834,7 +23499,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, Vector64short_1, byte_0, apiResult);
+", "Performs 'MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh' operation.", Vector64short_0, Vector64short_1, byte_0, apiResult);
 
 try {
 MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
@@ -23843,7 +23508,6 @@ MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, V
    apiResult = "TODO";
 }
 
-LogInCsv("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh' operation", Vector64short_0, Vector64short_1, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23862,15 +23526,15 @@ Console.WriteLine(
 
 `Vector64<short> NegateSaturateScalar(Vector64<short> value)`
 
-Performs 'NegateSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> NegateSaturateScalarTest(Vector64<short> value)
 {{
   return AdvSimd.Arm64.NegateSaturateScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -23889,7 +23553,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, apiResult);
+", "Performs 'NegateSaturateScalar' operation.", Vector64short_0, apiResult);
 
 try {
 NegateSaturateScalarTest(Vector64short_0);
@@ -23898,7 +23562,6 @@ NegateSaturateScalarTest(Vector64short_0);
    apiResult = "TODO";
 }
 
-LogInCsv("NegateSaturateScalar", "Performs 'NegateSaturateScalar' operation", Vector64short_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23917,15 +23580,15 @@ Console.WriteLine(
 
 `Vector64<double> ReciprocalEstimateScalar(Vector64<double> value)`
 
-Performs 'ReciprocalEstimateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> ReciprocalEstimateScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ReciprocalEstimateScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -23942,7 +23605,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ReciprocalEstimateScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ReciprocalEstimateScalarTest(Vector64double_0);
@@ -23951,7 +23614,6 @@ ReciprocalEstimateScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ReciprocalEstimateScalar", "Performs 'ReciprocalEstimateScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -23970,15 +23632,15 @@ Console.WriteLine(
 
 `Vector64<double> ReciprocalExponentScalar(Vector64<double> value)`
 
-Performs 'ReciprocalExponentScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> ReciprocalExponentScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ReciprocalExponentScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -23995,7 +23657,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ReciprocalExponentScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ReciprocalExponentScalarTest(Vector64double_0);
@@ -24004,7 +23666,6 @@ ReciprocalExponentScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ReciprocalExponentScalar", "Performs 'ReciprocalExponentScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24023,15 +23684,15 @@ Console.WriteLine(
 
 `Vector64<double> ReciprocalSquareRootEstimateScalar(Vector64<double> value)`
 
-Performs 'ReciprocalSquareRootEstimateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> ReciprocalSquareRootEstimateScalarTest(Vector64<double> value)
 {{
   return AdvSimd.Arm64.ReciprocalSquareRootEstimateScalar(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -24048,7 +23709,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, apiResult);
+", "Performs 'ReciprocalSquareRootEstimateScalar' operation.", Vector64double_0, apiResult);
 
 try {
 ReciprocalSquareRootEstimateScalarTest(Vector64double_0);
@@ -24057,7 +23718,6 @@ ReciprocalSquareRootEstimateScalarTest(Vector64double_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ReciprocalSquareRootEstimateScalar", "Performs 'ReciprocalSquareRootEstimateScalar' operation", Vector64double_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24076,16 +23736,16 @@ Console.WriteLine(
 
 `Vector64<double> ReciprocalSquareRootStepScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'ReciprocalSquareRootStepScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> ReciprocalSquareRootStepScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.ReciprocalSquareRootStepScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -24102,7 +23762,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'ReciprocalSquareRootStepScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 ReciprocalSquareRootStepScalarTest(Vector64double_0, Vector64double_1);
@@ -24111,7 +23771,6 @@ ReciprocalSquareRootStepScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ReciprocalSquareRootStepScalar", "Performs 'ReciprocalSquareRootStepScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24130,16 +23789,16 @@ Console.WriteLine(
 
 `Vector64<double> ReciprocalStepScalar(Vector64<double> left, Vector64<double> right)`
 
-Performs 'ReciprocalStepScalar' operation.
+{0}
 
 ```csharp
 private Vector64<double> ReciprocalStepScalarTest(Vector64<double> left, Vector64<double> right)
 {{
   return AdvSimd.Arm64.ReciprocalStepScalar(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -24156,7 +23815,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64double_0, Vector64double_1, apiResult);
+", "Performs 'ReciprocalStepScalar' operation.", Vector64double_0, Vector64double_1, apiResult);
 
 try {
 ReciprocalStepScalarTest(Vector64double_0, Vector64double_1);
@@ -24165,7 +23824,6 @@ ReciprocalStepScalarTest(Vector64double_0, Vector64double_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ReciprocalStepScalar", "Performs 'ReciprocalStepScalar' operation", Vector64double_0, Vector64double_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24184,16 +23842,16 @@ Console.WriteLine(
 
 `Vector64<short> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<int> value, byte count)`
 
-Performs 'ShiftRightArithmeticNarrowingSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {{
   return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -24211,7 +23869,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64int_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticNarrowingSaturateScalar' operation.", Vector64int_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64int_0, byte_0);
@@ -24220,7 +23878,6 @@ ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64int_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateScalar' operation", Vector64int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24239,16 +23896,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
 
-Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {{
   return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -24266,7 +23923,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedScalar' operation.", Vector64short_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
@@ -24275,7 +23932,6 @@ ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0)
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedScalar' operation", Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24294,16 +23950,16 @@ Console.WriteLine(
 
 `Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<int> value, byte count)`
 
-Performs 'ShiftRightArithmeticRoundedNarrowingSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {{
   return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -24321,7 +23977,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64int_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateScalar' operation.", Vector64int_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64int_0, byte_0);
@@ -24330,7 +23986,6 @@ ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64int_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateScalar' operation", Vector64int_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24349,16 +24004,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
 
-Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {{
   return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -24376,7 +24031,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64short_0, byte_0, apiResult);
+", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar' operation.", Vector64short_0, byte_0, apiResult);
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
@@ -24385,7 +24040,6 @@ ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64short_0, 
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar' operation", Vector64short_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24404,16 +24058,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightLogicalNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
 
-Performs 'ShiftRightLogicalNarrowingSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {{
   return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -24434,7 +24088,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64ushort_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalNarrowingSaturateScalar' operation.", Vector64ushort_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
@@ -24443,7 +24097,6 @@ ShiftRightLogicalNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalNarrowingSaturateScalar", "Performs 'ShiftRightLogicalNarrowingSaturateScalar' operation", Vector64ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24462,16 +24115,16 @@ Console.WriteLine(
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
 
-Performs 'ShiftRightLogicalRoundedNarrowingSaturateScalar' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {{
   return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, count);
 }}
-// value = {0}
-// count = {1}
-// Result = {2}
+// value = {1}
+// count = {2}
+// Result = {3}
 
 ```
 
@@ -24492,7 +24145,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64ushort_0, byte_0, apiResult);
+", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateScalar' operation.", Vector64ushort_0, byte_0, apiResult);
 
 try {
 ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
@@ -24501,7 +24154,6 @@ ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ShiftRightLogicalRoundedNarrowingSaturateScalar", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateScalar' operation", Vector64ushort_0, byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24520,15 +24172,15 @@ Console.WriteLine(
 
 `Vector64<float> Sqrt(Vector64<float> value)`
 
-Performs 'Sqrt' operation.
+{0}
 
 ```csharp
 private Vector64<float> SqrtTest(Vector64<float> value)
 {{
   return AdvSimd.Arm64.Sqrt(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -24546,7 +24198,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64float_0, apiResult);
+", "Performs 'Sqrt' operation.", Vector64float_0, apiResult);
 
 try {
 SqrtTest(Vector64float_0);
@@ -24555,7 +24207,6 @@ SqrtTest(Vector64float_0);
    apiResult = "TODO";
 }
 
-LogInCsv("Sqrt", "Performs 'Sqrt' operation", Vector64float_0, apiResult);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -24576,16 +24227,16 @@ Console.WriteLine(
 
 `void StorePair(byte* address, Vector64<byte> value1, Vector64<byte> value2)`
 
-Performs 'StorePair' operation.
+{0}
 
 ```csharp
 private void StorePairTest(byte* address, Vector64<byte> value1, Vector64<byte> value2)
 {{
   AdvSimd.Arm64.StorePair(address, value1, value2);
 }}
-// address = {0}
-// value1 = {1}
-// value2 = {2}
+// address = {1}
+// value1 = {2}
+// value2 = {3}
 
 ```
 
@@ -24620,7 +24271,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "<address>", Vector64byte_0, Vector64byte_1);
+", "Performs 'StorePair' operation.", "<address>", Vector64byte_0, Vector64byte_1);
 
 try {
 StorePairTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
@@ -24630,7 +24281,6 @@ StorePairTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
 }
 
 }
-LogInCsv("StorePair", "Performs 'StorePair' operation", "<address>", Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 fixed (byte* bytePtr_0 = byteArray)
 {
@@ -24651,16 +24301,16 @@ Console.WriteLine(
 
 `void StorePairNonTemporal(byte* address, Vector64<byte> value1, Vector64<byte> value2)`
 
-Performs 'StorePairNonTemporal' operation.
+{0}
 
 ```csharp
 private void StorePairNonTemporalTest(byte* address, Vector64<byte> value1, Vector64<byte> value2)
 {{
   AdvSimd.Arm64.StorePairNonTemporal(address, value1, value2);
 }}
-// address = {0}
-// value1 = {1}
-// value2 = {2}
+// address = {1}
+// value1 = {2}
+// value2 = {3}
 
 ```
 
@@ -24695,7 +24345,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "<address>", Vector64byte_0, Vector64byte_1);
+", "Performs 'StorePairNonTemporal' operation.", "<address>", Vector64byte_0, Vector64byte_1);
 
 try {
 StorePairNonTemporalTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
@@ -24705,7 +24355,6 @@ StorePairNonTemporalTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
 }
 
 }
-LogInCsv("StorePairNonTemporal", "Performs 'StorePairNonTemporal' operation", "<address>", Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 fixed (int* intPtr_0 = intArray)
 {
@@ -24726,16 +24375,16 @@ Console.WriteLine(
 
 `void StorePairScalar(int* address, Vector64<int> value1, Vector64<int> value2)`
 
-Performs 'StorePairScalar' operation.
+{0}
 
 ```csharp
 private void StorePairScalarTest(int* address, Vector64<int> value1, Vector64<int> value2)
 {{
   AdvSimd.Arm64.StorePairScalar(address, value1, value2);
 }}
-// address = {0}
-// value1 = {1}
-// value2 = {2}
+// address = {1}
+// value1 = {2}
+// value2 = {3}
 
 ```
 
@@ -24753,7 +24402,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "<address>", Vector64int_0, Vector64int_1);
+", "Performs 'StorePairScalar' operation.", "<address>", Vector64int_0, Vector64int_1);
 
 try {
 StorePairScalarTest(intPtr_0, Vector64int_0, Vector64int_1);
@@ -24763,7 +24412,6 @@ StorePairScalarTest(intPtr_0, Vector64int_0, Vector64int_1);
 }
 
 }
-LogInCsv("StorePairScalar", "Performs 'StorePairScalar' operation", "<address>", Vector64int_0, Vector64int_1);
 // ----------------------------------------------------------------
 fixed (int* intPtr_0 = intArray)
 {
@@ -24784,16 +24432,16 @@ Console.WriteLine(
 
 `void StorePairScalarNonTemporal(int* address, Vector64<int> value1, Vector64<int> value2)`
 
-Performs 'StorePairScalarNonTemporal' operation.
+{0}
 
 ```csharp
 private void StorePairScalarNonTemporalTest(int* address, Vector64<int> value1, Vector64<int> value2)
 {{
   AdvSimd.Arm64.StorePairScalarNonTemporal(address, value1, value2);
 }}
-// address = {0}
-// value1 = {1}
-// value2 = {2}
+// address = {1}
+// value1 = {2}
+// value2 = {3}
 
 ```
 
@@ -24811,7 +24459,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", "<address>", Vector64int_0, Vector64int_1);
+", "Performs 'StorePairScalarNonTemporal' operation.", "<address>", Vector64int_0, Vector64int_1);
 
 try {
 StorePairScalarNonTemporalTest(intPtr_0, Vector64int_0, Vector64int_1);
@@ -24821,7 +24469,6 @@ StorePairScalarNonTemporalTest(intPtr_0, Vector64int_0, Vector64int_1);
 }
 
 }
-LogInCsv("StorePairScalarNonTemporal", "Performs 'StorePairScalarNonTemporal' operation", "<address>", Vector64int_0, Vector64int_1);
 // ----------------------------------------------------------------
 
 try {
@@ -24840,15 +24487,15 @@ Console.WriteLine(
 
 `Vector64<byte> ReverseElementBits(Vector64<byte> value)`
 
-Performs 'ReverseElementBits' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ReverseElementBitsTest(Vector64<byte> value)
 {{
   return AdvSimd.Arm64.ReverseElementBits(value);
 }}
-// value = {0}
-// Result = {1}
+// value = {1}
+// Result = {2}
 
 ```
 
@@ -24867,7 +24514,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, apiResult);
+", "Performs 'ReverseElementBits' operation.", Vector64byte_0, apiResult);
 
 try {
 ReverseElementBitsTest(Vector64byte_0);
@@ -24876,7 +24523,6 @@ ReverseElementBitsTest(Vector64byte_0);
    apiResult = "TODO";
 }
 
-LogInCsv("ReverseElementBits", "Performs 'ReverseElementBits' operation", Vector64byte_0, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24895,16 +24541,16 @@ Console.WriteLine(
 
 `Vector64<byte> TransposeEven(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'TransposeEven' operation.
+{0}
 
 ```csharp
 private Vector64<byte> TransposeEvenTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Arm64.TransposeEven(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -24936,7 +24582,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'TransposeEven' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 TransposeEvenTest(Vector64byte_0, Vector64byte_1);
@@ -24945,7 +24591,6 @@ TransposeEvenTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("TransposeEven", "Performs 'TransposeEven' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -24964,16 +24609,16 @@ Console.WriteLine(
 
 `Vector64<byte> TransposeOdd(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'TransposeOdd' operation.
+{0}
 
 ```csharp
 private Vector64<byte> TransposeOddTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Arm64.TransposeOdd(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -25005,7 +24650,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'TransposeOdd' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 TransposeOddTest(Vector64byte_0, Vector64byte_1);
@@ -25014,7 +24659,6 @@ TransposeOddTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("TransposeOdd", "Performs 'TransposeOdd' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -25033,16 +24677,16 @@ Console.WriteLine(
 
 `Vector64<byte> UnzipEven(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'UnzipEven' operation.
+{0}
 
 ```csharp
 private Vector64<byte> UnzipEvenTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Arm64.UnzipEven(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -25074,7 +24718,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'UnzipEven' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 UnzipEvenTest(Vector64byte_0, Vector64byte_1);
@@ -25083,7 +24727,6 @@ UnzipEvenTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("UnzipEven", "Performs 'UnzipEven' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -25102,16 +24745,16 @@ Console.WriteLine(
 
 `Vector64<byte> UnzipOdd(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'UnzipOdd' operation.
+{0}
 
 ```csharp
 private Vector64<byte> UnzipOddTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Arm64.UnzipOdd(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -25143,7 +24786,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'UnzipOdd' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 UnzipOddTest(Vector64byte_0, Vector64byte_1);
@@ -25152,7 +24795,6 @@ UnzipOddTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("UnzipOdd", "Performs 'UnzipOdd' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -25171,16 +24813,16 @@ Console.WriteLine(
 
 `Vector64<byte> ZipHigh(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'ZipHigh' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ZipHighTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Arm64.ZipHigh(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -25212,7 +24854,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'ZipHigh' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 ZipHighTest(Vector64byte_0, Vector64byte_1);
@@ -25221,7 +24863,6 @@ ZipHighTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ZipHigh", "Performs 'ZipHigh' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 try {
@@ -25240,16 +24881,16 @@ Console.WriteLine(
 
 `Vector64<byte> ZipLow(Vector64<byte> left, Vector64<byte> right)`
 
-Performs 'ZipLow' operation.
+{0}
 
 ```csharp
 private Vector64<byte> ZipLowTest(Vector64<byte> left, Vector64<byte> right)
 {{
   return AdvSimd.Arm64.ZipLow(left, right);
 }}
-// left = {0}
-// right = {1}
-// Result = {2}
+// left = {1}
+// right = {2}
+// Result = {3}
 
 ```
 
@@ -25281,7 +24922,7 @@ See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 Assembly generated:
 
 ```
-", Vector64byte_0, Vector64byte_1, apiResult);
+", "Performs 'ZipLow' operation.", Vector64byte_0, Vector64byte_1, apiResult);
 
 try {
 ZipLowTest(Vector64byte_0, Vector64byte_1);
@@ -25290,7 +24931,6 @@ ZipLowTest(Vector64byte_0, Vector64byte_1);
    apiResult = "TODO";
 }
 
-LogInCsv("ZipLow", "Performs 'ZipLow' operation", Vector64byte_0, Vector64byte_1, apiResult);
 // ----------------------------------------------------------------
 
 }
