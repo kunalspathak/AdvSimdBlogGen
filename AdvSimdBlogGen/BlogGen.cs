@@ -8,6 +8,8 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Resources;
+using System.Runtime.Intrinsics;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 
 namespace AdvSimdBlogGen
@@ -36,6 +38,7 @@ namespace AdvSimdBlogGen
             //SplitGeneratedBlog();
             PrintVarsAndMethodNames();
             Console.WriteLine("done");
+            Console.Error.WriteLine("Add https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order");
         }
 
         internal static void SplitGeneratedBlog()
