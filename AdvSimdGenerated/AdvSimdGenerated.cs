@@ -4347,7 +4347,7 @@ In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `
 
 ### API list
 
-[Abs](#1-abs), [AbsSaturate](#2-abssaturate), [AbsScalar](#3-absscalar), [AbsoluteCompareGreaterThan](#4-absolutecomparegreaterthan), [AbsoluteCompareGreaterThanOrEqual](#5-absolutecomparegreaterthanorequal), [AbsoluteCompareLessThan](#6-absolutecomparelessthan), [AbsoluteCompareLessThanOrEqual](#7-absolutecomparelessthanorequal), [AbsoluteDifference](#8-absolutedifference), [AbsoluteDifferenceAdd](#9-absolutedifferenceadd), [AbsoluteDifferenceWideningLower](#10-absolutedifferencewideninglower), [AbsoluteDifferenceWideningLowerAndAdd](#11-absolutedifferencewideninglowerandadd), [AbsoluteDifferenceWideningUpper](#12-absolutedifferencewideningupper), [AbsoluteDifferenceWideningUpperAndAdd](#13-absolutedifferencewideningupperandadd), [Add](#14-add), [AddHighNarrowingLower](#15-addhighnarrowinglower), [AddHighNarrowingUpper](#16-addhighnarrowingupper), [AddPairwise](#17-addpairwise), [AddPairwiseWidening](#18-addpairwisewidening), [AddPairwiseWideningAndAdd](#19-addpairwisewideningandadd), [AddPairwiseWideningAndAddScalar](#20-addpairwisewideningandaddscalar), [AddPairwiseWideningScalar](#21-addpairwisewideningscalar), [AddRoundedHighNarrowingLower](#22-addroundedhighnarrowinglower), [AddRoundedHighNarrowingUpper](#23-addroundedhighnarrowingupper), [AddSaturate](#24-addsaturate), [AddSaturateScalar](#25-addsaturatescalar), [AddScalar](#26-addscalar), [AddWideningLower](#27-addwideninglower), [AddWideningUpper](#28-addwideningupper), [And](#29-and), [BitwiseClear](#30-bitwiseclear), [BitwiseSelect](#31-bitwiseselect), [Ceiling](#32-ceiling), [CeilingScalar](#33-ceilingscalar), [CompareEqual](#34-compareequal), [CompareGreaterThan](#35-comparegreaterthan), [CompareGreaterThanOrEqual](#36-comparegreaterthanorequal), [CompareLessThan](#37-comparelessthan), [CompareLessThanOrEqual](#38-comparelessthanorequal), [CompareTest](#39-comparetest), [ConvertToInt32RoundAwayFromZero](#40-converttoint32roundawayfromzero), [ConvertToInt32RoundAwayFromZeroScalar](#41-converttoint32roundawayfromzeroscalar), [ConvertToInt32RoundToEven](#42-converttoint32roundtoeven), [ConvertToInt32RoundToEvenScalar](#43-converttoint32roundtoevenscalar), [ConvertToInt32RoundToNegativeInfinity](#44-converttoint32roundtonegativeinfinity), [ConvertToInt32RoundToNegativeInfinityScalar](#45-converttoint32roundtonegativeinfinityscalar), [ConvertToInt32RoundToPositiveInfinity](#46-converttoint32roundtopositiveinfinity), [ConvertToInt32RoundToPositiveInfinityScalar](#47-converttoint32roundtopositiveinfinityscalar), [ConvertToInt32RoundToZero](#48-converttoint32roundtozero), [ConvertToInt32RoundToZeroScalar](#49-converttoint32roundtozeroscalar), [ConvertToSingle](#50-converttosingle), [ConvertToSingleScalar](#51-converttosinglescalar), [ConvertToUInt32RoundAwayFromZero](#52-converttouint32roundawayfromzero), [ConvertToUInt32RoundAwayFromZeroScalar](#53-converttouint32roundawayfromzeroscalar), [ConvertToUInt32RoundToEven](#54-converttouint32roundtoeven), [ConvertToUInt32RoundToEvenScalar](#55-converttouint32roundtoevenscalar), [ConvertToUInt32RoundToNegativeInfinity](#56-converttouint32roundtonegativeinfinity), [ConvertToUInt32RoundToNegativeInfinityScalar](#57-converttouint32roundtonegativeinfinityscalar), [ConvertToUInt32RoundToPositiveInfinity](#58-converttouint32roundtopositiveinfinity), [ConvertToUInt32RoundToPositiveInfinityScalar](#59-converttouint32roundtopositiveinfinityscalar), [ConvertToUInt32RoundToZero](#60-converttouint32roundtozero),[...](Part1.md)
+[Abs](#1-abs), [AbsSaturate](#2-abssaturate), [AbsScalar](#3-absscalar), [AbsoluteCompareGreaterThan](#4-absolutecomparegreaterthan), [AbsoluteCompareGreaterThanOrEqual](#5-absolutecomparegreaterthanorequal), [AbsoluteCompareLessThan](#6-absolutecomparelessthan), [AbsoluteCompareLessThanOrEqual](#7-absolutecomparelessthanorequal), [AbsoluteDifference](#8-absolutedifference), [AbsoluteDifferenceAdd](#9-absolutedifferenceadd), [AbsoluteDifferenceWideningLower](#10-absolutedifferencewideninglower), [AbsoluteDifferenceWideningLowerAndAdd](#11-absolutedifferencewideninglowerandadd), [AbsoluteDifferenceWideningUpper](#12-absolutedifferencewideningupper), [AbsoluteDifferenceWideningUpperAndAdd](#13-absolutedifferencewideningupperandadd), [Add](#14-add), [AddHighNarrowingLower](#15-addhighnarrowinglower), [AddHighNarrowingUpper](#16-addhighnarrowingupper), [AddPairwise](#17-addpairwise), [AddPairwiseWidening](#18-addpairwisewidening), [AddPairwiseWideningAndAdd](#19-addpairwisewideningandadd), [AddPairwiseWideningAndAddScalar](#20-addpairwisewideningandaddscalar), [AddPairwiseWideningScalar](#21-addpairwisewideningscalar), [AddRoundedHighNarrowingLower](#22-addroundedhighnarrowinglower), [AddRoundedHighNarrowingUpper](#23-addroundedhighnarrowingupper), [AddSaturate](#24-addsaturate), [AddSaturateScalar](#25-addsaturatescalar), [AddScalar](#26-addscalar), [AddWideningLower](#27-addwideninglower), [AddWideningUpper](#28-addwideningupper), [And](#29-and), [BitwiseClear](#30-bitwiseclear),[...](Part1.md)
 
 
 ");
@@ -6181,6 +6181,27 @@ BitwiseClearTest(Vector64byte_0, Vector64byte_1);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: Hardware Intrinsics APIs for ARM64 - Part 2
+subtitle: With examples
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+
+
+### API list
+
+[BitwiseSelect](#1-bitwiseselect), [Ceiling](#2-ceiling), [CeilingScalar](#3-ceilingscalar), [CompareEqual](#4-compareequal), [CompareGreaterThan](#5-comparegreaterthan), [CompareGreaterThanOrEqual](#6-comparegreaterthanorequal), [CompareLessThan](#7-comparelessthan), [CompareLessThanOrEqual](#8-comparelessthanorequal), [CompareTest](#9-comparetest), [ConvertToInt32RoundAwayFromZero](#10-converttoint32roundawayfromzero), [ConvertToInt32RoundAwayFromZeroScalar](#11-converttoint32roundawayfromzeroscalar), [ConvertToInt32RoundToEven](#12-converttoint32roundtoeven), [ConvertToInt32RoundToEvenScalar](#13-converttoint32roundtoevenscalar), [ConvertToInt32RoundToNegativeInfinity](#14-converttoint32roundtonegativeinfinity), [ConvertToInt32RoundToNegativeInfinityScalar](#15-converttoint32roundtonegativeinfinityscalar), [ConvertToInt32RoundToPositiveInfinity](#16-converttoint32roundtopositiveinfinity), [ConvertToInt32RoundToPositiveInfinityScalar](#17-converttoint32roundtopositiveinfinityscalar), [ConvertToInt32RoundToZero](#18-converttoint32roundtozero), [ConvertToInt32RoundToZeroScalar](#19-converttoint32roundtozeroscalar), [ConvertToSingle](#20-converttosingle), [ConvertToSingleScalar](#21-converttosinglescalar), [ConvertToUInt32RoundAwayFromZero](#22-converttouint32roundawayfromzero), [ConvertToUInt32RoundAwayFromZeroScalar](#23-converttouint32roundawayfromzeroscalar), [ConvertToUInt32RoundToEven](#24-converttouint32roundtoeven), [ConvertToUInt32RoundToEvenScalar](#25-converttouint32roundtoevenscalar), [ConvertToUInt32RoundToNegativeInfinity](#26-converttouint32roundtonegativeinfinity), [ConvertToUInt32RoundToNegativeInfinityScalar](#27-converttouint32roundtonegativeinfinityscalar), [ConvertToUInt32RoundToPositiveInfinity](#28-converttouint32roundtopositiveinfinity), [ConvertToUInt32RoundToPositiveInfinityScalar](#29-converttouint32roundtopositiveinfinityscalar), [ConvertToUInt32RoundToZero](#30-converttouint32roundtozero),[...](Part2.md)
+
+
+");
 
 try {
 var BitwiseSelectResult = Dummy_BitwiseSelectTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
@@ -6191,10 +6212,9 @@ apiResult = BitwiseSelectResult.ToString();
 
 Console.WriteLine(
 @"
-```
-------------------------------------------------
 
-### 31. BitwiseSelect
+
+### 1. BitwiseSelect
 
 `Vector64<byte> BitwiseSelect(Vector64<byte> select, Vector64<byte> left, Vector64<byte> right)`
 
@@ -6266,7 +6286,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 32. Ceiling
+### 2. Ceiling
 
 `Vector64<float> Ceiling(Vector64<float> value)`
 
@@ -6321,7 +6341,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 33. CeilingScalar
+### 3. CeilingScalar
 
 `Vector64<double> CeilingScalar(Vector64<double> value)`
 
@@ -6373,7 +6393,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 34. CompareEqual
+### 4. CompareEqual
 
 `Vector64<byte> CompareEqual(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6443,7 +6463,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 35. CompareGreaterThan
+### 5. CompareGreaterThan
 
 `Vector64<byte> CompareGreaterThan(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6513,7 +6533,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 36. CompareGreaterThanOrEqual
+### 6. CompareGreaterThanOrEqual
 
 `Vector64<byte> CompareGreaterThanOrEqual(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6583,7 +6603,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 37. CompareLessThan
+### 7. CompareLessThan
 
 `Vector64<byte> CompareLessThan(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6653,7 +6673,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 38. CompareLessThanOrEqual
+### 8. CompareLessThanOrEqual
 
 `Vector64<byte> CompareLessThanOrEqual(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6723,7 +6743,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 39. CompareTest
+### 9. CompareTest
 
 `Vector64<byte> CompareTest(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6793,7 +6813,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 40. ConvertToInt32RoundAwayFromZero
+### 10. ConvertToInt32RoundAwayFromZero
 
 `Vector64<int> ConvertToInt32RoundAwayFromZero(Vector64<float> value)`
 
@@ -6845,7 +6865,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 41. ConvertToInt32RoundAwayFromZeroScalar
+### 11. ConvertToInt32RoundAwayFromZeroScalar
 
 `Vector64<int> ConvertToInt32RoundAwayFromZeroScalar(Vector64<float> value)`
 
@@ -6891,7 +6911,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 42. ConvertToInt32RoundToEven
+### 12. ConvertToInt32RoundToEven
 
 `Vector64<int> ConvertToInt32RoundToEven(Vector64<float> value)`
 
@@ -6943,7 +6963,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 43. ConvertToInt32RoundToEvenScalar
+### 13. ConvertToInt32RoundToEvenScalar
 
 `Vector64<int> ConvertToInt32RoundToEvenScalar(Vector64<float> value)`
 
@@ -6989,7 +7009,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 44. ConvertToInt32RoundToNegativeInfinity
+### 14. ConvertToInt32RoundToNegativeInfinity
 
 `Vector64<int> ConvertToInt32RoundToNegativeInfinity(Vector64<float> value)`
 
@@ -7041,7 +7061,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 45. ConvertToInt32RoundToNegativeInfinityScalar
+### 15. ConvertToInt32RoundToNegativeInfinityScalar
 
 `Vector64<int> ConvertToInt32RoundToNegativeInfinityScalar(Vector64<float> value)`
 
@@ -7087,7 +7107,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 46. ConvertToInt32RoundToPositiveInfinity
+### 16. ConvertToInt32RoundToPositiveInfinity
 
 `Vector64<int> ConvertToInt32RoundToPositiveInfinity(Vector64<float> value)`
 
@@ -7139,7 +7159,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 47. ConvertToInt32RoundToPositiveInfinityScalar
+### 17. ConvertToInt32RoundToPositiveInfinityScalar
 
 `Vector64<int> ConvertToInt32RoundToPositiveInfinityScalar(Vector64<float> value)`
 
@@ -7185,7 +7205,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 48. ConvertToInt32RoundToZero
+### 18. ConvertToInt32RoundToZero
 
 `Vector64<int> ConvertToInt32RoundToZero(Vector64<float> value)`
 
@@ -7237,7 +7257,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 49. ConvertToInt32RoundToZeroScalar
+### 19. ConvertToInt32RoundToZeroScalar
 
 `Vector64<int> ConvertToInt32RoundToZeroScalar(Vector64<float> value)`
 
@@ -7283,7 +7303,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 50. ConvertToSingle
+### 20. ConvertToSingle
 
 `Vector64<float> ConvertToSingle(Vector64<int> value)`
 
@@ -7337,7 +7357,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 51. ConvertToSingleScalar
+### 21. ConvertToSingleScalar
 
 `Vector64<float> ConvertToSingleScalar(Vector64<int> value)`
 
@@ -7389,7 +7409,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 52. ConvertToUInt32RoundAwayFromZero
+### 22. ConvertToUInt32RoundAwayFromZero
 
 `Vector64<uint> ConvertToUInt32RoundAwayFromZero(Vector64<float> value)`
 
@@ -7441,7 +7461,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 53. ConvertToUInt32RoundAwayFromZeroScalar
+### 23. ConvertToUInt32RoundAwayFromZeroScalar
 
 `Vector64<uint> ConvertToUInt32RoundAwayFromZeroScalar(Vector64<float> value)`
 
@@ -7487,7 +7507,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 54. ConvertToUInt32RoundToEven
+### 24. ConvertToUInt32RoundToEven
 
 `Vector64<uint> ConvertToUInt32RoundToEven(Vector64<float> value)`
 
@@ -7539,7 +7559,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 55. ConvertToUInt32RoundToEvenScalar
+### 25. ConvertToUInt32RoundToEvenScalar
 
 `Vector64<uint> ConvertToUInt32RoundToEvenScalar(Vector64<float> value)`
 
@@ -7585,7 +7605,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 56. ConvertToUInt32RoundToNegativeInfinity
+### 26. ConvertToUInt32RoundToNegativeInfinity
 
 `Vector64<uint> ConvertToUInt32RoundToNegativeInfinity(Vector64<float> value)`
 
@@ -7637,7 +7657,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 57. ConvertToUInt32RoundToNegativeInfinityScalar
+### 27. ConvertToUInt32RoundToNegativeInfinityScalar
 
 `Vector64<uint> ConvertToUInt32RoundToNegativeInfinityScalar(Vector64<float> value)`
 
@@ -7683,7 +7703,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 58. ConvertToUInt32RoundToPositiveInfinity
+### 28. ConvertToUInt32RoundToPositiveInfinity
 
 `Vector64<uint> ConvertToUInt32RoundToPositiveInfinity(Vector64<float> value)`
 
@@ -7735,7 +7755,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 59. ConvertToUInt32RoundToPositiveInfinityScalar
+### 29. ConvertToUInt32RoundToPositiveInfinityScalar
 
 `Vector64<uint> ConvertToUInt32RoundToPositiveInfinityScalar(Vector64<float> value)`
 
@@ -7781,7 +7801,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 60. ConvertToUInt32RoundToZero
+### 30. ConvertToUInt32RoundToZero
 
 `Vector64<uint> ConvertToUInt32RoundToZero(Vector64<float> value)`
 
@@ -7825,7 +7845,7 @@ Console.WriteLine(
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 2
+title: Hardware Intrinsics APIs for ARM64 - Part 3
 subtitle: With examples
 tags: [work, arm64, intrinsics]
 ---
@@ -7837,7 +7857,7 @@ In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `
 
 ### API list
 
-[ConvertToUInt32RoundToZeroScalar](#1-converttouint32roundtozeroscalar), [DivideScalar](#2-dividescalar), [DuplicateSelectedScalarToVector64](#3-duplicateselectedscalartovector64), [DuplicateSelectedScalarToVector128](#4-duplicateselectedscalartovector128), [DuplicateToVector64](#5-duplicatetovector64), [DuplicateToVector128](#6-duplicatetovector128), [Extract](#7-extract), [ExtractNarrowingLower](#8-extractnarrowinglower), [ExtractNarrowingSaturateLower](#9-extractnarrowingsaturatelower), [ExtractNarrowingSaturateUnsignedLower](#10-extractnarrowingsaturateunsignedlower), [ExtractNarrowingSaturateUnsignedUpper](#11-extractnarrowingsaturateunsignedupper), [ExtractNarrowingSaturateUpper](#12-extractnarrowingsaturateupper), [ExtractNarrowingUpper](#13-extractnarrowingupper), [ExtractVector64](#14-extractvector64), [ExtractVector128](#15-extractvector128), [Floor](#16-floor), [FloorScalar](#17-floorscalar), [FusedAddHalving](#18-fusedaddhalving), [FusedAddRoundedHalving](#19-fusedaddroundedhalving), [FusedMultiplyAdd](#20-fusedmultiplyadd), [FusedMultiplyAddNegatedScalar](#21-fusedmultiplyaddnegatedscalar), [FusedMultiplyAddScalar](#22-fusedmultiplyaddscalar), [FusedMultiplySubtract](#23-fusedmultiplysubtract), [FusedMultiplySubtractNegatedScalar](#24-fusedmultiplysubtractnegatedscalar), [FusedMultiplySubtractScalar](#25-fusedmultiplysubtractscalar), [FusedSubtractHalving](#26-fusedsubtracthalving), [Insert](#27-insert), [InsertScalar](#28-insertscalar), [LeadingSignCount](#29-leadingsigncount), [LeadingZeroCount](#30-leadingzerocount), [LoadAndInsertScalar](#31-loadandinsertscalar), [LoadAndReplicateToVector64](#32-loadandreplicatetovector64), [LoadAndReplicateToVector128](#33-loadandreplicatetovector128), [LoadVector64](#34-loadvector64), [LoadVector128](#35-loadvector128), [Max](#36-max), [MaxNumber](#37-maxnumber), [MaxNumberScalar](#38-maxnumberscalar), [MaxPairwise](#39-maxpairwise), [Min](#40-min), [MinNumber](#41-minnumber), [MinNumberScalar](#42-minnumberscalar), [MinPairwise](#43-minpairwise), [Multiply](#44-multiply), [MultiplyAdd](#45-multiplyadd), [MultiplyAddByScalar](#46-multiplyaddbyscalar), [MultiplyAddBySelectedScalar](#47-multiplyaddbyselectedscalar), [MultiplyByScalar](#48-multiplybyscalar), [MultiplyBySelectedScalar](#49-multiplybyselectedscalar), [MultiplyBySelectedScalarWideningLower](#50-multiplybyselectedscalarwideninglower), [MultiplyBySelectedScalarWideningLowerAndAdd](#51-multiplybyselectedscalarwideninglowerandadd), [MultiplyBySelectedScalarWideningLowerAndSubtract](#52-multiplybyselectedscalarwideninglowerandsubtract), [MultiplyBySelectedScalarWideningUpper](#53-multiplybyselectedscalarwideningupper), [MultiplyBySelectedScalarWideningUpperAndAdd](#54-multiplybyselectedscalarwideningupperandadd), [MultiplyBySelectedScalarWideningUpperAndSubtract](#55-multiplybyselectedscalarwideningupperandsubtract), [MultiplyDoublingByScalarSaturateHigh](#56-multiplydoublingbyscalarsaturatehigh), [MultiplyDoublingBySelectedScalarSaturateHigh](#57-multiplydoublingbyselectedscalarsaturatehigh), [MultiplyDoublingSaturateHigh](#58-multiplydoublingsaturatehigh), [MultiplyDoublingWideningLowerAndAddSaturate](#59-multiplydoublingwideninglowerandaddsaturate), [MultiplyDoublingWideningLowerAndSubtractSaturate](#60-multiplydoublingwideninglowerandsubtractsaturate),[...](Part2.md)
+[ConvertToUInt32RoundToZeroScalar](#1-converttouint32roundtozeroscalar), [DivideScalar](#2-dividescalar), [DuplicateSelectedScalarToVector64](#3-duplicateselectedscalartovector64), [DuplicateSelectedScalarToVector128](#4-duplicateselectedscalartovector128), [DuplicateToVector64](#5-duplicatetovector64), [DuplicateToVector128](#6-duplicatetovector128), [Extract](#7-extract), [ExtractNarrowingLower](#8-extractnarrowinglower), [ExtractNarrowingSaturateLower](#9-extractnarrowingsaturatelower), [ExtractNarrowingSaturateUnsignedLower](#10-extractnarrowingsaturateunsignedlower), [ExtractNarrowingSaturateUnsignedUpper](#11-extractnarrowingsaturateunsignedupper), [ExtractNarrowingSaturateUpper](#12-extractnarrowingsaturateupper), [ExtractNarrowingUpper](#13-extractnarrowingupper), [ExtractVector64](#14-extractvector64), [ExtractVector128](#15-extractvector128), [Floor](#16-floor), [FloorScalar](#17-floorscalar), [FusedAddHalving](#18-fusedaddhalving), [FusedAddRoundedHalving](#19-fusedaddroundedhalving), [FusedMultiplyAdd](#20-fusedmultiplyadd), [FusedMultiplyAddNegatedScalar](#21-fusedmultiplyaddnegatedscalar), [FusedMultiplyAddScalar](#22-fusedmultiplyaddscalar), [FusedMultiplySubtract](#23-fusedmultiplysubtract), [FusedMultiplySubtractNegatedScalar](#24-fusedmultiplysubtractnegatedscalar), [FusedMultiplySubtractScalar](#25-fusedmultiplysubtractscalar), [FusedSubtractHalving](#26-fusedsubtracthalving), [Insert](#27-insert), [InsertScalar](#28-insertscalar), [LeadingSignCount](#29-leadingsigncount), [LeadingZeroCount](#30-leadingzerocount),[...](Part3.md)
 
 
 ");
@@ -9583,6 +9603,27 @@ LeadingZeroCountTest(Vector64byte_0);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: Hardware Intrinsics APIs for ARM64 - Part 4
+subtitle: With examples
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+
+
+### API list
+
+[LoadAndInsertScalar](#1-loadandinsertscalar), [LoadAndReplicateToVector64](#2-loadandreplicatetovector64), [LoadAndReplicateToVector128](#3-loadandreplicatetovector128), [LoadVector64](#4-loadvector64), [LoadVector128](#5-loadvector128), [Max](#6-max), [MaxNumber](#7-maxnumber), [MaxNumberScalar](#8-maxnumberscalar), [MaxPairwise](#9-maxpairwise), [Min](#10-min), [MinNumber](#11-minnumber), [MinNumberScalar](#12-minnumberscalar), [MinPairwise](#13-minpairwise), [Multiply](#14-multiply), [MultiplyAdd](#15-multiplyadd), [MultiplyAddByScalar](#16-multiplyaddbyscalar), [MultiplyAddBySelectedScalar](#17-multiplyaddbyselectedscalar), [MultiplyByScalar](#18-multiplybyscalar), [MultiplyBySelectedScalar](#19-multiplybyselectedscalar), [MultiplyBySelectedScalarWideningLower](#20-multiplybyselectedscalarwideninglower), [MultiplyBySelectedScalarWideningLowerAndAdd](#21-multiplybyselectedscalarwideninglowerandadd), [MultiplyBySelectedScalarWideningLowerAndSubtract](#22-multiplybyselectedscalarwideninglowerandsubtract), [MultiplyBySelectedScalarWideningUpper](#23-multiplybyselectedscalarwideningupper), [MultiplyBySelectedScalarWideningUpperAndAdd](#24-multiplybyselectedscalarwideningupperandadd), [MultiplyBySelectedScalarWideningUpperAndSubtract](#25-multiplybyselectedscalarwideningupperandsubtract), [MultiplyDoublingByScalarSaturateHigh](#26-multiplydoublingbyscalarsaturatehigh), [MultiplyDoublingBySelectedScalarSaturateHigh](#27-multiplydoublingbyselectedscalarsaturatehigh), [MultiplyDoublingSaturateHigh](#28-multiplydoublingsaturatehigh), [MultiplyDoublingWideningLowerAndAddSaturate](#29-multiplydoublingwideninglowerandaddsaturate), [MultiplyDoublingWideningLowerAndSubtractSaturate](#30-multiplydoublingwideninglowerandsubtractsaturate),[...](Part4.md)
+
+
+");
 fixed (byte* bytePtr_0 = byteArray)
 {
 
@@ -9595,10 +9636,9 @@ apiResult = LoadAndInsertScalarResult.ToString();
 
 Console.WriteLine(
 @"
-```
-------------------------------------------------
 
-### 31. LoadAndInsertScalar
+
+### 1. LoadAndInsertScalar
 
 `Vector64<byte> LoadAndInsertScalar(Vector64<byte> value, byte index, byte* address)`
 
@@ -9670,7 +9710,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 32. LoadAndReplicateToVector64
+### 2. LoadAndReplicateToVector64
 
 `Vector64<byte> LoadAndReplicateToVector64(byte* address)`
 
@@ -9730,7 +9770,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 33. LoadAndReplicateToVector128
+### 3. LoadAndReplicateToVector128
 
 `Vector128<byte> LoadAndReplicateToVector128(byte* address)`
 
@@ -9795,7 +9835,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 34. LoadVector64
+### 4. LoadVector64
 
 `Vector64<byte> LoadVector64(byte* address)`
 
@@ -9858,7 +9898,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 35. LoadVector128
+### 5. LoadVector128
 
 `Vector128<byte> LoadVector128(byte* address)`
 
@@ -9919,7 +9959,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 36. Max
+### 6. Max
 
 `Vector64<byte> Max(Vector64<byte> left, Vector64<byte> right)`
 
@@ -9987,7 +10027,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 37. MaxNumber
+### 7. MaxNumber
 
 `Vector64<float> MaxNumber(Vector64<float> left, Vector64<float> right)`
 
@@ -10043,7 +10083,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 38. MaxNumberScalar
+### 8. MaxNumberScalar
 
 `Vector64<double> MaxNumberScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -10096,7 +10136,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 39. MaxPairwise
+### 9. MaxPairwise
 
 `Vector64<byte> MaxPairwise(Vector64<byte> left, Vector64<byte> right)`
 
@@ -10164,7 +10204,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 40. Min
+### 10. Min
 
 `Vector64<byte> Min(Vector64<byte> left, Vector64<byte> right)`
 
@@ -10232,7 +10272,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 41. MinNumber
+### 11. MinNumber
 
 `Vector64<float> MinNumber(Vector64<float> left, Vector64<float> right)`
 
@@ -10288,7 +10328,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 42. MinNumberScalar
+### 12. MinNumberScalar
 
 `Vector64<double> MinNumberScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -10341,7 +10381,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 43. MinPairwise
+### 13. MinPairwise
 
 `Vector64<byte> MinPairwise(Vector64<byte> left, Vector64<byte> right)`
 
@@ -10409,7 +10449,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 44. Multiply
+### 14. Multiply
 
 `Vector64<byte> Multiply(Vector64<byte> left, Vector64<byte> right)`
 
@@ -10477,7 +10517,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 45. MultiplyAdd
+### 15. MultiplyAdd
 
 `Vector64<byte> MultiplyAdd(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)`
 
@@ -10541,7 +10581,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 46. MultiplyAddByScalar
+### 16. MultiplyAddByScalar
 
 `Vector64<short> MultiplyAddByScalar(Vector64<short> addend, Vector64<short> left, Vector64<short> right)`
 
@@ -10601,7 +10641,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 47. MultiplyAddBySelectedScalar
+### 17. MultiplyAddBySelectedScalar
 
 `Vector64<short> MultiplyAddBySelectedScalar(Vector64<short> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10670,7 +10710,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 48. MultiplyByScalar
+### 18. MultiplyByScalar
 
 `Vector64<short> MultiplyByScalar(Vector64<short> left, Vector64<short> right)`
 
@@ -10734,7 +10774,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 49. MultiplyBySelectedScalar
+### 19. MultiplyBySelectedScalar
 
 `Vector64<short> MultiplyBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10809,7 +10849,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 50. MultiplyBySelectedScalarWideningLower
+### 20. MultiplyBySelectedScalarWideningLower
 
 `Vector128<int> MultiplyBySelectedScalarWideningLower(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10869,7 +10909,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 51. MultiplyBySelectedScalarWideningLowerAndAdd
+### 21. MultiplyBySelectedScalarWideningLowerAndAdd
 
 `Vector128<int> MultiplyBySelectedScalarWideningLowerAndAdd(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10930,7 +10970,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 52. MultiplyBySelectedScalarWideningLowerAndSubtract
+### 22. MultiplyBySelectedScalarWideningLowerAndSubtract
 
 `Vector128<int> MultiplyBySelectedScalarWideningLowerAndSubtract(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10991,7 +11031,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 53. MultiplyBySelectedScalarWideningUpper
+### 23. MultiplyBySelectedScalarWideningUpper
 
 `Vector128<int> MultiplyBySelectedScalarWideningUpper(Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11051,7 +11091,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 54. MultiplyBySelectedScalarWideningUpperAndAdd
+### 24. MultiplyBySelectedScalarWideningUpperAndAdd
 
 `Vector128<int> MultiplyBySelectedScalarWideningUpperAndAdd(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11112,7 +11152,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 55. MultiplyBySelectedScalarWideningUpperAndSubtract
+### 25. MultiplyBySelectedScalarWideningUpperAndSubtract
 
 `Vector128<int> MultiplyBySelectedScalarWideningUpperAndSubtract(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11173,7 +11213,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 56. MultiplyDoublingByScalarSaturateHigh
+### 26. MultiplyDoublingByScalarSaturateHigh
 
 `Vector64<short> MultiplyDoublingByScalarSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
@@ -11228,7 +11268,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 57. MultiplyDoublingBySelectedScalarSaturateHigh
+### 27. MultiplyDoublingBySelectedScalarSaturateHigh
 
 `Vector64<short> MultiplyDoublingBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11288,7 +11328,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 58. MultiplyDoublingSaturateHigh
+### 28. MultiplyDoublingSaturateHigh
 
 `Vector64<short> MultiplyDoublingSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
@@ -11343,7 +11383,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 59. MultiplyDoublingWideningLowerAndAddSaturate
+### 29. MultiplyDoublingWideningLowerAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right)`
 
@@ -11397,7 +11437,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 60. MultiplyDoublingWideningLowerAndSubtractSaturate
+### 30. MultiplyDoublingWideningLowerAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)`
 
@@ -11443,7 +11483,7 @@ Console.WriteLine(
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 3
+title: Hardware Intrinsics APIs for ARM64 - Part 5
 subtitle: With examples
 tags: [work, arm64, intrinsics]
 ---
@@ -11455,7 +11495,7 @@ In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `
 
 ### API list
 
-[MultiplyDoublingWideningLowerByScalarAndAddSaturate](#1-multiplydoublingwideninglowerbyscalarandaddsaturate), [MultiplyDoublingWideningLowerByScalarAndSubtractSaturate](#2-multiplydoublingwideninglowerbyscalarandsubtractsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate](#3-multiplydoublingwideninglowerbyselectedscalarandaddsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate](#4-multiplydoublingwideninglowerbyselectedscalarandsubtractsaturate), [MultiplyDoublingWideningSaturateLower](#5-multiplydoublingwideningsaturatelower), [MultiplyDoublingWideningSaturateLowerByScalar](#6-multiplydoublingwideningsaturatelowerbyscalar), [MultiplyDoublingWideningSaturateLowerBySelectedScalar](#7-multiplydoublingwideningsaturatelowerbyselectedscalar), [MultiplyDoublingWideningSaturateUpper](#8-multiplydoublingwideningsaturateupper), [MultiplyDoublingWideningSaturateUpperByScalar](#9-multiplydoublingwideningsaturateupperbyscalar), [MultiplyDoublingWideningSaturateUpperBySelectedScalar](#10-multiplydoublingwideningsaturateupperbyselectedscalar), [MultiplyDoublingWideningUpperAndAddSaturate](#11-multiplydoublingwideningupperandaddsaturate), [MultiplyDoublingWideningUpperAndSubtractSaturate](#12-multiplydoublingwideningupperandsubtractsaturate), [MultiplyDoublingWideningUpperByScalarAndAddSaturate](#13-multiplydoublingwideningupperbyscalarandaddsaturate), [MultiplyDoublingWideningUpperByScalarAndSubtractSaturate](#14-multiplydoublingwideningupperbyscalarandsubtractsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate](#15-multiplydoublingwideningupperbyselectedscalarandaddsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate](#16-multiplydoublingwideningupperbyselectedscalarandsubtractsaturate), [MultiplyRoundedDoublingByScalarSaturateHigh](#17-multiplyroundeddoublingbyscalarsaturatehigh), [MultiplyRoundedDoublingBySelectedScalarSaturateHigh](#18-multiplyroundeddoublingbyselectedscalarsaturatehigh), [MultiplyRoundedDoublingSaturateHigh](#19-multiplyroundeddoublingsaturatehigh), [MultiplyScalar](#20-multiplyscalar), [MultiplyScalarBySelectedScalar](#21-multiplyscalarbyselectedscalar), [MultiplySubtract](#22-multiplysubtract), [MultiplySubtractByScalar](#23-multiplysubtractbyscalar), [MultiplySubtractBySelectedScalar](#24-multiplysubtractbyselectedscalar), [MultiplyWideningLower](#25-multiplywideninglower), [MultiplyWideningLowerAndAdd](#26-multiplywideninglowerandadd), [MultiplyWideningLowerAndSubtract](#27-multiplywideninglowerandsubtract), [MultiplyWideningUpper](#28-multiplywideningupper), [MultiplyWideningUpperAndAdd](#29-multiplywideningupperandadd), [MultiplyWideningUpperAndSubtract](#30-multiplywideningupperandsubtract), [Negate](#31-negate), [NegateSaturate](#32-negatesaturate), [NegateScalar](#33-negatescalar), [Not](#34-not), [Or](#35-or), [OrNot](#36-ornot), [PolynomialMultiply](#37-polynomialmultiply), [PolynomialMultiplyWideningLower](#38-polynomialmultiplywideninglower), [PolynomialMultiplyWideningUpper](#39-polynomialmultiplywideningupper), [PopCount](#40-popcount), [ReciprocalEstimate](#41-reciprocalestimate), [ReciprocalSquareRootEstimate](#42-reciprocalsquarerootestimate), [ReciprocalSquareRootStep](#43-reciprocalsquarerootstep), [ReciprocalStep](#44-reciprocalstep), [ReverseElement16](#45-reverseelement16), [ReverseElement32](#46-reverseelement32), [ReverseElement8](#47-reverseelement8), [RoundAwayFromZero](#48-roundawayfromzero), [RoundAwayFromZeroScalar](#49-roundawayfromzeroscalar), [RoundToNearest](#50-roundtonearest), [RoundToNearestScalar](#51-roundtonearestscalar), [RoundToNegativeInfinity](#52-roundtonegativeinfinity), [RoundToNegativeInfinityScalar](#53-roundtonegativeinfinityscalar), [RoundToPositiveInfinity](#54-roundtopositiveinfinity), [RoundToPositiveInfinityScalar](#55-roundtopositiveinfinityscalar), [RoundToZero](#56-roundtozero), [RoundToZeroScalar](#57-roundtozeroscalar), [ShiftArithmetic](#58-shiftarithmetic), [ShiftArithmeticRounded](#59-shiftarithmeticrounded), [ShiftArithmeticRoundedSaturate](#60-shiftarithmeticroundedsaturate),[...](Part3.md)
+[MultiplyDoublingWideningLowerByScalarAndAddSaturate](#1-multiplydoublingwideninglowerbyscalarandaddsaturate), [MultiplyDoublingWideningLowerByScalarAndSubtractSaturate](#2-multiplydoublingwideninglowerbyscalarandsubtractsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate](#3-multiplydoublingwideninglowerbyselectedscalarandaddsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate](#4-multiplydoublingwideninglowerbyselectedscalarandsubtractsaturate), [MultiplyDoublingWideningSaturateLower](#5-multiplydoublingwideningsaturatelower), [MultiplyDoublingWideningSaturateLowerByScalar](#6-multiplydoublingwideningsaturatelowerbyscalar), [MultiplyDoublingWideningSaturateLowerBySelectedScalar](#7-multiplydoublingwideningsaturatelowerbyselectedscalar), [MultiplyDoublingWideningSaturateUpper](#8-multiplydoublingwideningsaturateupper), [MultiplyDoublingWideningSaturateUpperByScalar](#9-multiplydoublingwideningsaturateupperbyscalar), [MultiplyDoublingWideningSaturateUpperBySelectedScalar](#10-multiplydoublingwideningsaturateupperbyselectedscalar), [MultiplyDoublingWideningUpperAndAddSaturate](#11-multiplydoublingwideningupperandaddsaturate), [MultiplyDoublingWideningUpperAndSubtractSaturate](#12-multiplydoublingwideningupperandsubtractsaturate), [MultiplyDoublingWideningUpperByScalarAndAddSaturate](#13-multiplydoublingwideningupperbyscalarandaddsaturate), [MultiplyDoublingWideningUpperByScalarAndSubtractSaturate](#14-multiplydoublingwideningupperbyscalarandsubtractsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate](#15-multiplydoublingwideningupperbyselectedscalarandaddsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate](#16-multiplydoublingwideningupperbyselectedscalarandsubtractsaturate), [MultiplyRoundedDoublingByScalarSaturateHigh](#17-multiplyroundeddoublingbyscalarsaturatehigh), [MultiplyRoundedDoublingBySelectedScalarSaturateHigh](#18-multiplyroundeddoublingbyselectedscalarsaturatehigh), [MultiplyRoundedDoublingSaturateHigh](#19-multiplyroundeddoublingsaturatehigh), [MultiplyScalar](#20-multiplyscalar), [MultiplyScalarBySelectedScalar](#21-multiplyscalarbyselectedscalar), [MultiplySubtract](#22-multiplysubtract), [MultiplySubtractByScalar](#23-multiplysubtractbyscalar), [MultiplySubtractBySelectedScalar](#24-multiplysubtractbyselectedscalar), [MultiplyWideningLower](#25-multiplywideninglower), [MultiplyWideningLowerAndAdd](#26-multiplywideninglowerandadd), [MultiplyWideningLowerAndSubtract](#27-multiplywideninglowerandsubtract), [MultiplyWideningUpper](#28-multiplywideningupper), [MultiplyWideningUpperAndAdd](#29-multiplywideningupperandadd), [MultiplyWideningUpperAndSubtract](#30-multiplywideningupperandsubtract),[...](Part5.md)
 
 
 ");
@@ -13153,6 +13193,27 @@ MultiplyWideningUpperAndSubtractTest(Vector128ushort_0, Vector128byte_0, Vector1
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: Hardware Intrinsics APIs for ARM64 - Part 6
+subtitle: With examples
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+
+
+### API list
+
+[Negate](#1-negate), [NegateSaturate](#2-negatesaturate), [NegateScalar](#3-negatescalar), [Not](#4-not), [Or](#5-or), [OrNot](#6-ornot), [PolynomialMultiply](#7-polynomialmultiply), [PolynomialMultiplyWideningLower](#8-polynomialmultiplywideninglower), [PolynomialMultiplyWideningUpper](#9-polynomialmultiplywideningupper), [PopCount](#10-popcount), [ReciprocalEstimate](#11-reciprocalestimate), [ReciprocalSquareRootEstimate](#12-reciprocalsquarerootestimate), [ReciprocalSquareRootStep](#13-reciprocalsquarerootstep), [ReciprocalStep](#14-reciprocalstep), [ReverseElement16](#15-reverseelement16), [ReverseElement32](#16-reverseelement32), [ReverseElement8](#17-reverseelement8), [RoundAwayFromZero](#18-roundawayfromzero), [RoundAwayFromZeroScalar](#19-roundawayfromzeroscalar), [RoundToNearest](#20-roundtonearest), [RoundToNearestScalar](#21-roundtonearestscalar), [RoundToNegativeInfinity](#22-roundtonegativeinfinity), [RoundToNegativeInfinityScalar](#23-roundtonegativeinfinityscalar), [RoundToPositiveInfinity](#24-roundtopositiveinfinity), [RoundToPositiveInfinityScalar](#25-roundtopositiveinfinityscalar), [RoundToZero](#26-roundtozero), [RoundToZeroScalar](#27-roundtozeroscalar), [ShiftArithmetic](#28-shiftarithmetic), [ShiftArithmeticRounded](#29-shiftarithmeticrounded), [ShiftArithmeticRoundedSaturate](#30-shiftarithmeticroundedsaturate),[...](Part6.md)
+
+
+");
 
 try {
 var NegateResult = Dummy_NegateTest(Vector64short_0);
@@ -13163,10 +13224,9 @@ apiResult = NegateResult.ToString();
 
 Console.WriteLine(
 @"
-```
-------------------------------------------------
 
-### 31. Negate
+
+### 1. Negate
 
 `Vector64<short> Negate(Vector64<short> value)`
 
@@ -13228,7 +13288,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 32. NegateSaturate
+### 2. NegateSaturate
 
 `Vector64<short> NegateSaturate(Vector64<short> value)`
 
@@ -13287,7 +13347,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 33. NegateScalar
+### 3. NegateScalar
 
 `Vector64<double> NegateScalar(Vector64<double> value)`
 
@@ -13342,7 +13402,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 34. Not
+### 4. Not
 
 `Vector64<byte> Not(Vector64<byte> value)`
 
@@ -13412,7 +13472,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 35. Or
+### 5. Or
 
 `Vector64<byte> Or(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13483,7 +13543,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 36. OrNot
+### 6. OrNot
 
 `Vector64<byte> OrNot(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13554,7 +13614,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 37. PolynomialMultiply
+### 7. PolynomialMultiply
 
 `Vector64<byte> PolynomialMultiply(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13609,7 +13669,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 38. PolynomialMultiplyWideningLower
+### 8. PolynomialMultiplyWideningLower
 
 `Vector128<ushort> PolynomialMultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13662,7 +13722,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 39. PolynomialMultiplyWideningUpper
+### 9. PolynomialMultiplyWideningUpper
 
 `Vector128<ushort> PolynomialMultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
@@ -13715,7 +13775,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 40. PopCount
+### 10. PopCount
 
 `Vector64<byte> PopCount(Vector64<byte> value)`
 
@@ -13769,7 +13829,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 41. ReciprocalEstimate
+### 11. ReciprocalEstimate
 
 `Vector64<float> ReciprocalEstimate(Vector64<float> value)`
 
@@ -13826,7 +13886,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 42. ReciprocalSquareRootEstimate
+### 12. ReciprocalSquareRootEstimate
 
 `Vector64<float> ReciprocalSquareRootEstimate(Vector64<float> value)`
 
@@ -13883,7 +13943,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 43. ReciprocalSquareRootStep
+### 13. ReciprocalSquareRootStep
 
 `Vector64<float> ReciprocalSquareRootStep(Vector64<float> left, Vector64<float> right)`
 
@@ -13939,7 +13999,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 44. ReciprocalStep
+### 14. ReciprocalStep
 
 `Vector64<float> ReciprocalStep(Vector64<float> left, Vector64<float> right)`
 
@@ -13995,7 +14055,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 45. ReverseElement16
+### 15. ReverseElement16
 
 `Vector64<int> ReverseElement16(Vector64<int> value)`
 
@@ -14053,7 +14113,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 46. ReverseElement32
+### 16. ReverseElement32
 
 `Vector64<long> ReverseElement32(Vector64<long> value)`
 
@@ -14107,7 +14167,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 47. ReverseElement8
+### 17. ReverseElement8
 
 `Vector64<short> ReverseElement8(Vector64<short> value)`
 
@@ -14169,7 +14229,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 48. RoundAwayFromZero
+### 18. RoundAwayFromZero
 
 `Vector64<float> RoundAwayFromZero(Vector64<float> value)`
 
@@ -14224,7 +14284,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 49. RoundAwayFromZeroScalar
+### 19. RoundAwayFromZeroScalar
 
 `Vector64<double> RoundAwayFromZeroScalar(Vector64<double> value)`
 
@@ -14276,7 +14336,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 50. RoundToNearest
+### 20. RoundToNearest
 
 `Vector64<float> RoundToNearest(Vector64<float> value)`
 
@@ -14331,7 +14391,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 51. RoundToNearestScalar
+### 21. RoundToNearestScalar
 
 `Vector64<double> RoundToNearestScalar(Vector64<double> value)`
 
@@ -14383,7 +14443,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 52. RoundToNegativeInfinity
+### 22. RoundToNegativeInfinity
 
 `Vector64<float> RoundToNegativeInfinity(Vector64<float> value)`
 
@@ -14438,7 +14498,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 53. RoundToNegativeInfinityScalar
+### 23. RoundToNegativeInfinityScalar
 
 `Vector64<double> RoundToNegativeInfinityScalar(Vector64<double> value)`
 
@@ -14490,7 +14550,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 54. RoundToPositiveInfinity
+### 24. RoundToPositiveInfinity
 
 `Vector64<float> RoundToPositiveInfinity(Vector64<float> value)`
 
@@ -14545,7 +14605,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 55. RoundToPositiveInfinityScalar
+### 25. RoundToPositiveInfinityScalar
 
 `Vector64<double> RoundToPositiveInfinityScalar(Vector64<double> value)`
 
@@ -14597,7 +14657,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 56. RoundToZero
+### 26. RoundToZero
 
 `Vector64<float> RoundToZero(Vector64<float> value)`
 
@@ -14652,7 +14712,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 57. RoundToZeroScalar
+### 27. RoundToZeroScalar
 
 `Vector64<double> RoundToZeroScalar(Vector64<double> value)`
 
@@ -14704,7 +14764,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 58. ShiftArithmetic
+### 28. ShiftArithmetic
 
 `Vector64<short> ShiftArithmetic(Vector64<short> value, Vector64<short> count)`
 
@@ -14762,7 +14822,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 59. ShiftArithmeticRounded
+### 29. ShiftArithmeticRounded
 
 `Vector64<short> ShiftArithmeticRounded(Vector64<short> value, Vector64<short> count)`
 
@@ -14820,7 +14880,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 60. ShiftArithmeticRoundedSaturate
+### 30. ShiftArithmeticRoundedSaturate
 
 `Vector64<short> ShiftArithmeticRoundedSaturate(Vector64<short> value, Vector64<short> count)`
 
@@ -14870,7 +14930,7 @@ Console.WriteLine(
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 4
+title: Hardware Intrinsics APIs for ARM64 - Part 7
 subtitle: With examples
 tags: [work, arm64, intrinsics]
 ---
@@ -14882,7 +14942,7 @@ In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `
 
 ### API list
 
-[ShiftArithmeticRoundedSaturateScalar](#1-shiftarithmeticroundedsaturatescalar), [ShiftArithmeticRoundedScalar](#2-shiftarithmeticroundedscalar), [ShiftArithmeticSaturate](#3-shiftarithmeticsaturate), [ShiftArithmeticSaturateScalar](#4-shiftarithmeticsaturatescalar), [ShiftArithmeticScalar](#5-shiftarithmeticscalar), [ShiftLeftAndInsert](#6-shiftleftandinsert), [ShiftLeftAndInsertScalar](#7-shiftleftandinsertscalar), [ShiftLeftLogical](#8-shiftleftlogical), [ShiftLeftLogicalSaturate](#9-shiftleftlogicalsaturate), [ShiftLeftLogicalSaturateScalar](#10-shiftleftlogicalsaturatescalar), [ShiftLeftLogicalSaturateUnsigned](#11-shiftleftlogicalsaturateunsigned), [ShiftLeftLogicalSaturateUnsignedScalar](#12-shiftleftlogicalsaturateunsignedscalar), [ShiftLeftLogicalScalar](#13-shiftleftlogicalscalar), [ShiftLeftLogicalWideningLower](#14-shiftleftlogicalwideninglower), [ShiftLeftLogicalWideningUpper](#15-shiftleftlogicalwideningupper), [ShiftLogical](#16-shiftlogical), [ShiftLogicalRounded](#17-shiftlogicalrounded), [ShiftLogicalRoundedSaturate](#18-shiftlogicalroundedsaturate), [ShiftLogicalRoundedSaturateScalar](#19-shiftlogicalroundedsaturatescalar), [ShiftLogicalRoundedScalar](#20-shiftlogicalroundedscalar), [ShiftLogicalSaturate](#21-shiftlogicalsaturate), [ShiftLogicalSaturateScalar](#22-shiftlogicalsaturatescalar), [ShiftLogicalScalar](#23-shiftlogicalscalar), [ShiftRightAndInsert](#24-shiftrightandinsert), [ShiftRightAndInsertScalar](#25-shiftrightandinsertscalar), [ShiftRightArithmetic](#26-shiftrightarithmetic), [ShiftRightArithmeticAdd](#27-shiftrightarithmeticadd), [ShiftRightArithmeticAddScalar](#28-shiftrightarithmeticaddscalar), [ShiftRightArithmeticNarrowingSaturateLower](#29-shiftrightarithmeticnarrowingsaturatelower), [ShiftRightArithmeticNarrowingSaturateUnsignedLower](#30-shiftrightarithmeticnarrowingsaturateunsignedlower), [ShiftRightArithmeticNarrowingSaturateUnsignedUpper](#31-shiftrightarithmeticnarrowingsaturateunsignedupper), [ShiftRightArithmeticNarrowingSaturateUpper](#32-shiftrightarithmeticnarrowingsaturateupper), [ShiftRightArithmeticRounded](#33-shiftrightarithmeticrounded), [ShiftRightArithmeticRoundedAdd](#34-shiftrightarithmeticroundedadd), [ShiftRightArithmeticRoundedAddScalar](#35-shiftrightarithmeticroundedaddscalar), [ShiftRightArithmeticRoundedNarrowingSaturateLower](#36-shiftrightarithmeticroundednarrowingsaturatelower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower](#37-shiftrightarithmeticroundednarrowingsaturateunsignedlower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper](#38-shiftrightarithmeticroundednarrowingsaturateunsignedupper), [ShiftRightArithmeticRoundedNarrowingSaturateUpper](#39-shiftrightarithmeticroundednarrowingsaturateupper), [ShiftRightArithmeticRoundedScalar](#40-shiftrightarithmeticroundedscalar), [ShiftRightArithmeticScalar](#41-shiftrightarithmeticscalar), [ShiftRightLogical](#42-shiftrightlogical), [ShiftRightLogicalAdd](#43-shiftrightlogicaladd), [ShiftRightLogicalAddScalar](#44-shiftrightlogicaladdscalar), [ShiftRightLogicalNarrowingLower](#45-shiftrightlogicalnarrowinglower), [ShiftRightLogicalNarrowingSaturateLower](#46-shiftrightlogicalnarrowingsaturatelower), [ShiftRightLogicalNarrowingSaturateUpper](#47-shiftrightlogicalnarrowingsaturateupper), [ShiftRightLogicalNarrowingUpper](#48-shiftrightlogicalnarrowingupper), [ShiftRightLogicalRounded](#49-shiftrightlogicalrounded), [ShiftRightLogicalRoundedAdd](#50-shiftrightlogicalroundedadd), [ShiftRightLogicalRoundedAddScalar](#51-shiftrightlogicalroundedaddscalar), [ShiftRightLogicalRoundedNarrowingLower](#52-shiftrightlogicalroundednarrowinglower), [ShiftRightLogicalRoundedNarrowingSaturateLower](#53-shiftrightlogicalroundednarrowingsaturatelower), [ShiftRightLogicalRoundedNarrowingSaturateUpper](#54-shiftrightlogicalroundednarrowingsaturateupper), [ShiftRightLogicalRoundedNarrowingUpper](#55-shiftrightlogicalroundednarrowingupper), [ShiftRightLogicalRoundedScalar](#56-shiftrightlogicalroundedscalar), [ShiftRightLogicalScalar](#57-shiftrightlogicalscalar), [SignExtendWideningLower](#58-signextendwideninglower), [SignExtendWideningUpper](#59-signextendwideningupper), [SqrtScalar](#60-sqrtscalar),[...](Part4.md)
+[ShiftArithmeticRoundedSaturateScalar](#1-shiftarithmeticroundedsaturatescalar), [ShiftArithmeticRoundedScalar](#2-shiftarithmeticroundedscalar), [ShiftArithmeticSaturate](#3-shiftarithmeticsaturate), [ShiftArithmeticSaturateScalar](#4-shiftarithmeticsaturatescalar), [ShiftArithmeticScalar](#5-shiftarithmeticscalar), [ShiftLeftAndInsert](#6-shiftleftandinsert), [ShiftLeftAndInsertScalar](#7-shiftleftandinsertscalar), [ShiftLeftLogical](#8-shiftleftlogical), [ShiftLeftLogicalSaturate](#9-shiftleftlogicalsaturate), [ShiftLeftLogicalSaturateScalar](#10-shiftleftlogicalsaturatescalar), [ShiftLeftLogicalSaturateUnsigned](#11-shiftleftlogicalsaturateunsigned), [ShiftLeftLogicalSaturateUnsignedScalar](#12-shiftleftlogicalsaturateunsignedscalar), [ShiftLeftLogicalScalar](#13-shiftleftlogicalscalar), [ShiftLeftLogicalWideningLower](#14-shiftleftlogicalwideninglower), [ShiftLeftLogicalWideningUpper](#15-shiftleftlogicalwideningupper), [ShiftLogical](#16-shiftlogical), [ShiftLogicalRounded](#17-shiftlogicalrounded), [ShiftLogicalRoundedSaturate](#18-shiftlogicalroundedsaturate), [ShiftLogicalRoundedSaturateScalar](#19-shiftlogicalroundedsaturatescalar), [ShiftLogicalRoundedScalar](#20-shiftlogicalroundedscalar), [ShiftLogicalSaturate](#21-shiftlogicalsaturate), [ShiftLogicalSaturateScalar](#22-shiftlogicalsaturatescalar), [ShiftLogicalScalar](#23-shiftlogicalscalar), [ShiftRightAndInsert](#24-shiftrightandinsert), [ShiftRightAndInsertScalar](#25-shiftrightandinsertscalar), [ShiftRightArithmetic](#26-shiftrightarithmetic), [ShiftRightArithmeticAdd](#27-shiftrightarithmeticadd), [ShiftRightArithmeticAddScalar](#28-shiftrightarithmeticaddscalar), [ShiftRightArithmeticNarrowingSaturateLower](#29-shiftrightarithmeticnarrowingsaturatelower), [ShiftRightArithmeticNarrowingSaturateUnsignedLower](#30-shiftrightarithmeticnarrowingsaturateunsignedlower),[...](Part7.md)
 
 
 ");
@@ -16624,6 +16684,27 @@ ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0)
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: Hardware Intrinsics APIs for ARM64 - Part 8
+subtitle: With examples
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+
+
+### API list
+
+[ShiftRightArithmeticNarrowingSaturateUnsignedUpper](#1-shiftrightarithmeticnarrowingsaturateunsignedupper), [ShiftRightArithmeticNarrowingSaturateUpper](#2-shiftrightarithmeticnarrowingsaturateupper), [ShiftRightArithmeticRounded](#3-shiftrightarithmeticrounded), [ShiftRightArithmeticRoundedAdd](#4-shiftrightarithmeticroundedadd), [ShiftRightArithmeticRoundedAddScalar](#5-shiftrightarithmeticroundedaddscalar), [ShiftRightArithmeticRoundedNarrowingSaturateLower](#6-shiftrightarithmeticroundednarrowingsaturatelower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower](#7-shiftrightarithmeticroundednarrowingsaturateunsignedlower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper](#8-shiftrightarithmeticroundednarrowingsaturateunsignedupper), [ShiftRightArithmeticRoundedNarrowingSaturateUpper](#9-shiftrightarithmeticroundednarrowingsaturateupper), [ShiftRightArithmeticRoundedScalar](#10-shiftrightarithmeticroundedscalar), [ShiftRightArithmeticScalar](#11-shiftrightarithmeticscalar), [ShiftRightLogical](#12-shiftrightlogical), [ShiftRightLogicalAdd](#13-shiftrightlogicaladd), [ShiftRightLogicalAddScalar](#14-shiftrightlogicaladdscalar), [ShiftRightLogicalNarrowingLower](#15-shiftrightlogicalnarrowinglower), [ShiftRightLogicalNarrowingSaturateLower](#16-shiftrightlogicalnarrowingsaturatelower), [ShiftRightLogicalNarrowingSaturateUpper](#17-shiftrightlogicalnarrowingsaturateupper), [ShiftRightLogicalNarrowingUpper](#18-shiftrightlogicalnarrowingupper), [ShiftRightLogicalRounded](#19-shiftrightlogicalrounded), [ShiftRightLogicalRoundedAdd](#20-shiftrightlogicalroundedadd), [ShiftRightLogicalRoundedAddScalar](#21-shiftrightlogicalroundedaddscalar), [ShiftRightLogicalRoundedNarrowingLower](#22-shiftrightlogicalroundednarrowinglower), [ShiftRightLogicalRoundedNarrowingSaturateLower](#23-shiftrightlogicalroundednarrowingsaturatelower), [ShiftRightLogicalRoundedNarrowingSaturateUpper](#24-shiftrightlogicalroundednarrowingsaturateupper), [ShiftRightLogicalRoundedNarrowingUpper](#25-shiftrightlogicalroundednarrowingupper), [ShiftRightLogicalRoundedScalar](#26-shiftrightlogicalroundedscalar), [ShiftRightLogicalScalar](#27-shiftrightlogicalscalar), [SignExtendWideningLower](#28-signextendwideninglower), [SignExtendWideningUpper](#29-signextendwideningupper), [SqrtScalar](#30-sqrtscalar),[...](Part8.md)
+
+
+");
 
 try {
 var ShiftRightArithmeticNarrowingSaturateUnsignedUpperResult = Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0, byte_0);
@@ -16634,10 +16715,9 @@ apiResult = ShiftRightArithmeticNarrowingSaturateUnsignedUpperResult.ToString();
 
 Console.WriteLine(
 @"
-```
-------------------------------------------------
 
-### 31. ShiftRightArithmeticNarrowingSaturateUnsignedUpper
+
+### 1. ShiftRightArithmeticNarrowingSaturateUnsignedUpper
 
 `Vector128<byte> ShiftRightArithmeticNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`
 
@@ -16692,7 +16772,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 32. ShiftRightArithmeticNarrowingSaturateUpper
+### 2. ShiftRightArithmeticNarrowingSaturateUpper
 
 `Vector128<short> ShiftRightArithmeticNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`
 
@@ -16747,7 +16827,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 33. ShiftRightArithmeticRounded
+### 3. ShiftRightArithmeticRounded
 
 `Vector64<short> ShiftRightArithmeticRounded(Vector64<short> value, byte count)`
 
@@ -16805,7 +16885,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 34. ShiftRightArithmeticRoundedAdd
+### 4. ShiftRightArithmeticRoundedAdd
 
 `Vector64<short> ShiftRightArithmeticRoundedAdd(Vector64<short> addend, Vector64<short> value, byte count)`
 
@@ -16864,7 +16944,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 35. ShiftRightArithmeticRoundedAddScalar
+### 5. ShiftRightArithmeticRoundedAddScalar
 
 `Vector64<long> ShiftRightArithmeticRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
@@ -16912,7 +16992,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 36. ShiftRightArithmeticRoundedNarrowingSaturateLower
+### 6. ShiftRightArithmeticRoundedNarrowingSaturateLower
 
 `Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateLower(Vector128<int> value, byte count)`
 
@@ -16966,7 +17046,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 37. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower
+### 7. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower
 
 `Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(Vector128<short> value, byte count)`
 
@@ -17020,7 +17100,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 38. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper
+### 8. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper
 
 `Vector128<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`
 
@@ -17075,7 +17155,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 39. ShiftRightArithmeticRoundedNarrowingSaturateUpper
+### 9. ShiftRightArithmeticRoundedNarrowingSaturateUpper
 
 `Vector128<short> ShiftRightArithmeticRoundedNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`
 
@@ -17130,7 +17210,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 40. ShiftRightArithmeticRoundedScalar
+### 10. ShiftRightArithmeticRoundedScalar
 
 `Vector64<long> ShiftRightArithmeticRoundedScalar(Vector64<long> value, byte count)`
 
@@ -17177,7 +17257,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 41. ShiftRightArithmeticScalar
+### 11. ShiftRightArithmeticScalar
 
 `Vector64<long> ShiftRightArithmeticScalar(Vector64<long> value, byte count)`
 
@@ -17224,7 +17304,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 42. ShiftRightLogical
+### 12. ShiftRightLogical
 
 `Vector64<byte> ShiftRightLogical(Vector64<byte> value, byte count)`
 
@@ -17289,7 +17369,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 43. ShiftRightLogicalAdd
+### 13. ShiftRightLogicalAdd
 
 `Vector64<byte> ShiftRightLogicalAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`
 
@@ -17355,7 +17435,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 44. ShiftRightLogicalAddScalar
+### 14. ShiftRightLogicalAddScalar
 
 `Vector64<long> ShiftRightLogicalAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
@@ -17409,7 +17489,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 45. ShiftRightLogicalNarrowingLower
+### 15. ShiftRightLogicalNarrowingLower
 
 `Vector64<byte> ShiftRightLogicalNarrowingLower(Vector128<ushort> value, byte count)`
 
@@ -17466,7 +17546,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 46. ShiftRightLogicalNarrowingSaturateLower
+### 16. ShiftRightLogicalNarrowingSaturateLower
 
 `Vector64<byte> ShiftRightLogicalNarrowingSaturateLower(Vector128<ushort> value, byte count)`
 
@@ -17523,7 +17603,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 47. ShiftRightLogicalNarrowingSaturateUpper
+### 17. ShiftRightLogicalNarrowingSaturateUpper
 
 `Vector128<byte> ShiftRightLogicalNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -17581,7 +17661,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 48. ShiftRightLogicalNarrowingUpper
+### 18. ShiftRightLogicalNarrowingUpper
 
 `Vector128<byte> ShiftRightLogicalNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -17639,7 +17719,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 49. ShiftRightLogicalRounded
+### 19. ShiftRightLogicalRounded
 
 `Vector64<byte> ShiftRightLogicalRounded(Vector64<byte> value, byte count)`
 
@@ -17704,7 +17784,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 50. ShiftRightLogicalRoundedAdd
+### 20. ShiftRightLogicalRoundedAdd
 
 `Vector64<byte> ShiftRightLogicalRoundedAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`
 
@@ -17770,7 +17850,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 51. ShiftRightLogicalRoundedAddScalar
+### 21. ShiftRightLogicalRoundedAddScalar
 
 `Vector64<long> ShiftRightLogicalRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
@@ -17824,7 +17904,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 52. ShiftRightLogicalRoundedNarrowingLower
+### 22. ShiftRightLogicalRoundedNarrowingLower
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingLower(Vector128<ushort> value, byte count)`
 
@@ -17881,7 +17961,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 53. ShiftRightLogicalRoundedNarrowingSaturateLower
+### 23. ShiftRightLogicalRoundedNarrowingSaturateLower
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateLower(Vector128<ushort> value, byte count)`
 
@@ -17938,7 +18018,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 54. ShiftRightLogicalRoundedNarrowingSaturateUpper
+### 24. ShiftRightLogicalRoundedNarrowingSaturateUpper
 
 `Vector128<byte> ShiftRightLogicalRoundedNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -17996,7 +18076,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 55. ShiftRightLogicalRoundedNarrowingUpper
+### 25. ShiftRightLogicalRoundedNarrowingUpper
 
 `Vector128<byte> ShiftRightLogicalRoundedNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -18054,7 +18134,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 56. ShiftRightLogicalRoundedScalar
+### 26. ShiftRightLogicalRoundedScalar
 
 `Vector64<long> ShiftRightLogicalRoundedScalar(Vector64<long> value, byte count)`
 
@@ -18107,7 +18187,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 57. ShiftRightLogicalScalar
+### 27. ShiftRightLogicalScalar
 
 `Vector64<long> ShiftRightLogicalScalar(Vector64<long> value, byte count)`
 
@@ -18160,7 +18240,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 58. SignExtendWideningLower
+### 28. SignExtendWideningLower
 
 `Vector128<int> SignExtendWideningLower(Vector64<short> value)`
 
@@ -18213,7 +18293,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 59. SignExtendWideningUpper
+### 29. SignExtendWideningUpper
 
 `Vector128<int> SignExtendWideningUpper(Vector128<short> value)`
 
@@ -18266,7 +18346,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 60. SqrtScalar
+### 30. SqrtScalar
 
 `Vector64<double> SqrtScalar(Vector64<double> value)`
 
@@ -18310,7 +18390,7 @@ Console.WriteLine(
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 5
+title: Hardware Intrinsics APIs for ARM64 - Part 9
 subtitle: With examples
 tags: [work, arm64, intrinsics]
 ---
@@ -18322,7 +18402,7 @@ In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `
 
 ### API list
 
-[Store](#1-store), [StoreSelectedScalar](#2-storeselectedscalar), [Subtract](#3-subtract), [SubtractHighNarrowingLower](#4-subtracthighnarrowinglower), [SubtractHighNarrowingUpper](#5-subtracthighnarrowingupper), [SubtractRoundedHighNarrowingLower](#6-subtractroundedhighnarrowinglower), [SubtractRoundedHighNarrowingUpper](#7-subtractroundedhighnarrowingupper), [SubtractSaturate](#8-subtractsaturate), [SubtractSaturateScalar](#9-subtractsaturatescalar), [SubtractScalar](#10-subtractscalar), [SubtractWideningLower](#11-subtractwideninglower), [SubtractWideningUpper](#12-subtractwideningupper), [VectorTableLookup](#13-vectortablelookup), [VectorTableLookupExtension](#14-vectortablelookupextension), [Xor](#15-xor), [ZeroExtendWideningLower](#16-zeroextendwideninglower), [ZeroExtendWideningUpper](#17-zeroextendwideningupper), [AbsSaturateScalar](#18-abssaturatescalar), [AbsoluteCompareGreaterThanScalar](#19-absolutecomparegreaterthanscalar), [AbsoluteCompareGreaterThanOrEqualScalar](#20-absolutecomparegreaterthanorequalscalar), [AbsoluteCompareLessThanScalar](#21-absolutecomparelessthanscalar), [AbsoluteCompareLessThanOrEqualScalar](#22-absolutecomparelessthanorequalscalar), [AbsoluteDifferenceScalar](#23-absolutedifferencescalar), [AddAcross](#24-addacross), [AddAcrossWidening](#25-addacrosswidening), [AddPairwiseScalar](#26-addpairwisescalar), [CompareEqualScalar](#27-compareequalscalar), [CompareGreaterThanScalar](#28-comparegreaterthanscalar), [CompareGreaterThanOrEqualScalar](#29-comparegreaterthanorequalscalar), [CompareLessThanScalar](#30-comparelessthanscalar), [CompareLessThanOrEqualScalar](#31-comparelessthanorequalscalar), [CompareTestScalar](#32-comparetestscalar), [ConvertToDouble](#33-converttodouble), [ConvertToDoubleScalar](#34-converttodoublescalar), [ConvertToDoubleUpper](#35-converttodoubleupper), [ConvertToInt64RoundAwayFromZero](#36-converttoint64roundawayfromzero), [ConvertToInt64RoundAwayFromZeroScalar](#37-converttoint64roundawayfromzeroscalar), [ConvertToInt64RoundToEven](#38-converttoint64roundtoeven), [ConvertToInt64RoundToEvenScalar](#39-converttoint64roundtoevenscalar), [ConvertToInt64RoundToNegativeInfinity](#40-converttoint64roundtonegativeinfinity), [ConvertToInt64RoundToNegativeInfinityScalar](#41-converttoint64roundtonegativeinfinityscalar), [ConvertToInt64RoundToPositiveInfinity](#42-converttoint64roundtopositiveinfinity), [ConvertToInt64RoundToPositiveInfinityScalar](#43-converttoint64roundtopositiveinfinityscalar), [ConvertToInt64RoundToZero](#44-converttoint64roundtozero), [ConvertToInt64RoundToZeroScalar](#45-converttoint64roundtozeroscalar), [ConvertToSingleLower](#46-converttosinglelower), [ConvertToSingleRoundToOddLower](#47-converttosingleroundtooddlower), [ConvertToSingleRoundToOddUpper](#48-converttosingleroundtooddupper), [ConvertToSingleUpper](#49-converttosingleupper), [ConvertToUInt64RoundAwayFromZero](#50-converttouint64roundawayfromzero), [ConvertToUInt64RoundAwayFromZeroScalar](#51-converttouint64roundawayfromzeroscalar), [ConvertToUInt64RoundToEven](#52-converttouint64roundtoeven), [ConvertToUInt64RoundToEvenScalar](#53-converttouint64roundtoevenscalar), [ConvertToUInt64RoundToNegativeInfinity](#54-converttouint64roundtonegativeinfinity), [ConvertToUInt64RoundToNegativeInfinityScalar](#55-converttouint64roundtonegativeinfinityscalar), [ConvertToUInt64RoundToPositiveInfinity](#56-converttouint64roundtopositiveinfinity), [ConvertToUInt64RoundToPositiveInfinityScalar](#57-converttouint64roundtopositiveinfinityscalar), [ConvertToUInt64RoundToZero](#58-converttouint64roundtozero), [ConvertToUInt64RoundToZeroScalar](#59-converttouint64roundtozeroscalar), [Divide](#60-divide),[...](Part5.md)
+[Store](#1-store), [StoreSelectedScalar](#2-storeselectedscalar), [Subtract](#3-subtract), [SubtractHighNarrowingLower](#4-subtracthighnarrowinglower), [SubtractHighNarrowingUpper](#5-subtracthighnarrowingupper), [SubtractRoundedHighNarrowingLower](#6-subtractroundedhighnarrowinglower), [SubtractRoundedHighNarrowingUpper](#7-subtractroundedhighnarrowingupper), [SubtractSaturate](#8-subtractsaturate), [SubtractSaturateScalar](#9-subtractsaturatescalar), [SubtractScalar](#10-subtractscalar), [SubtractWideningLower](#11-subtractwideninglower), [SubtractWideningUpper](#12-subtractwideningupper), [VectorTableLookup](#13-vectortablelookup), [VectorTableLookupExtension](#14-vectortablelookupextension), [Xor](#15-xor), [ZeroExtendWideningLower](#16-zeroextendwideninglower), [ZeroExtendWideningUpper](#17-zeroextendwideningupper), [AbsSaturateScalar](#18-abssaturatescalar), [AbsoluteCompareGreaterThanScalar](#19-absolutecomparegreaterthanscalar), [AbsoluteCompareGreaterThanOrEqualScalar](#20-absolutecomparegreaterthanorequalscalar), [AbsoluteCompareLessThanScalar](#21-absolutecomparelessthanscalar), [AbsoluteCompareLessThanOrEqualScalar](#22-absolutecomparelessthanorequalscalar), [AbsoluteDifferenceScalar](#23-absolutedifferencescalar), [AddAcross](#24-addacross), [AddAcrossWidening](#25-addacrosswidening), [AddPairwiseScalar](#26-addpairwisescalar), [CompareEqualScalar](#27-compareequalscalar), [CompareGreaterThanScalar](#28-comparegreaterthanscalar), [CompareGreaterThanOrEqualScalar](#29-comparegreaterthanorequalscalar), [CompareLessThanScalar](#30-comparelessthanscalar),[...](Part9.md)
 
 
 ");
@@ -20087,6 +20167,27 @@ CompareLessThanScalarTest(Vector64double_0, Vector64double_1);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: Hardware Intrinsics APIs for ARM64 - Part 10
+subtitle: With examples
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+
+
+### API list
+
+[CompareLessThanOrEqualScalar](#1-comparelessthanorequalscalar), [CompareTestScalar](#2-comparetestscalar), [ConvertToDouble](#3-converttodouble), [ConvertToDoubleScalar](#4-converttodoublescalar), [ConvertToDoubleUpper](#5-converttodoubleupper), [ConvertToInt64RoundAwayFromZero](#6-converttoint64roundawayfromzero), [ConvertToInt64RoundAwayFromZeroScalar](#7-converttoint64roundawayfromzeroscalar), [ConvertToInt64RoundToEven](#8-converttoint64roundtoeven), [ConvertToInt64RoundToEvenScalar](#9-converttoint64roundtoevenscalar), [ConvertToInt64RoundToNegativeInfinity](#10-converttoint64roundtonegativeinfinity), [ConvertToInt64RoundToNegativeInfinityScalar](#11-converttoint64roundtonegativeinfinityscalar), [ConvertToInt64RoundToPositiveInfinity](#12-converttoint64roundtopositiveinfinity), [ConvertToInt64RoundToPositiveInfinityScalar](#13-converttoint64roundtopositiveinfinityscalar), [ConvertToInt64RoundToZero](#14-converttoint64roundtozero), [ConvertToInt64RoundToZeroScalar](#15-converttoint64roundtozeroscalar), [ConvertToSingleLower](#16-converttosinglelower), [ConvertToSingleRoundToOddLower](#17-converttosingleroundtooddlower), [ConvertToSingleRoundToOddUpper](#18-converttosingleroundtooddupper), [ConvertToSingleUpper](#19-converttosingleupper), [ConvertToUInt64RoundAwayFromZero](#20-converttouint64roundawayfromzero), [ConvertToUInt64RoundAwayFromZeroScalar](#21-converttouint64roundawayfromzeroscalar), [ConvertToUInt64RoundToEven](#22-converttouint64roundtoeven), [ConvertToUInt64RoundToEvenScalar](#23-converttouint64roundtoevenscalar), [ConvertToUInt64RoundToNegativeInfinity](#24-converttouint64roundtonegativeinfinity), [ConvertToUInt64RoundToNegativeInfinityScalar](#25-converttouint64roundtonegativeinfinityscalar), [ConvertToUInt64RoundToPositiveInfinity](#26-converttouint64roundtopositiveinfinity), [ConvertToUInt64RoundToPositiveInfinityScalar](#27-converttouint64roundtopositiveinfinityscalar), [ConvertToUInt64RoundToZero](#28-converttouint64roundtozero), [ConvertToUInt64RoundToZeroScalar](#29-converttouint64roundtozeroscalar), [Divide](#30-divide),[...](Part10.md)
+
+
+");
 
 try {
 var CompareLessThanOrEqualScalarResult = Dummy_CompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
@@ -20097,10 +20198,9 @@ apiResult = CompareLessThanOrEqualScalarResult.ToString();
 
 Console.WriteLine(
 @"
-```
-------------------------------------------------
 
-### 31. CompareLessThanOrEqualScalar
+
+### 1. CompareLessThanOrEqualScalar
 
 `Vector64<double> CompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -20155,7 +20255,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 32. CompareTestScalar
+### 2. CompareTestScalar
 
 `Vector64<double> CompareTestScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -20209,7 +20309,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 33. ConvertToDouble
+### 3. ConvertToDouble
 
 `Vector128<double> ConvertToDouble(Vector64<float> value)`
 
@@ -20262,7 +20362,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 34. ConvertToDoubleScalar
+### 4. ConvertToDoubleScalar
 
 `Vector64<double> ConvertToDoubleScalar(Vector64<long> value)`
 
@@ -20314,7 +20414,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 35. ConvertToDoubleUpper
+### 5. ConvertToDoubleUpper
 
 `Vector128<double> ConvertToDoubleUpper(Vector128<float> value)`
 
@@ -20360,7 +20460,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 36. ConvertToInt64RoundAwayFromZero
+### 6. ConvertToInt64RoundAwayFromZero
 
 `Vector128<long> ConvertToInt64RoundAwayFromZero(Vector128<double> value)`
 
@@ -20406,7 +20506,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 37. ConvertToInt64RoundAwayFromZeroScalar
+### 7. ConvertToInt64RoundAwayFromZeroScalar
 
 `Vector64<long> ConvertToInt64RoundAwayFromZeroScalar(Vector64<double> value)`
 
@@ -20452,7 +20552,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 38. ConvertToInt64RoundToEven
+### 8. ConvertToInt64RoundToEven
 
 `Vector128<long> ConvertToInt64RoundToEven(Vector128<double> value)`
 
@@ -20498,7 +20598,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 39. ConvertToInt64RoundToEvenScalar
+### 9. ConvertToInt64RoundToEvenScalar
 
 `Vector64<long> ConvertToInt64RoundToEvenScalar(Vector64<double> value)`
 
@@ -20544,7 +20644,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 40. ConvertToInt64RoundToNegativeInfinity
+### 10. ConvertToInt64RoundToNegativeInfinity
 
 `Vector128<long> ConvertToInt64RoundToNegativeInfinity(Vector128<double> value)`
 
@@ -20590,7 +20690,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 41. ConvertToInt64RoundToNegativeInfinityScalar
+### 11. ConvertToInt64RoundToNegativeInfinityScalar
 
 `Vector64<long> ConvertToInt64RoundToNegativeInfinityScalar(Vector64<double> value)`
 
@@ -20636,7 +20736,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 42. ConvertToInt64RoundToPositiveInfinity
+### 12. ConvertToInt64RoundToPositiveInfinity
 
 `Vector128<long> ConvertToInt64RoundToPositiveInfinity(Vector128<double> value)`
 
@@ -20682,7 +20782,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 43. ConvertToInt64RoundToPositiveInfinityScalar
+### 13. ConvertToInt64RoundToPositiveInfinityScalar
 
 `Vector64<long> ConvertToInt64RoundToPositiveInfinityScalar(Vector64<double> value)`
 
@@ -20728,7 +20828,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 44. ConvertToInt64RoundToZero
+### 14. ConvertToInt64RoundToZero
 
 `Vector128<long> ConvertToInt64RoundToZero(Vector128<double> value)`
 
@@ -20774,7 +20874,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 45. ConvertToInt64RoundToZeroScalar
+### 15. ConvertToInt64RoundToZeroScalar
 
 `Vector64<long> ConvertToInt64RoundToZeroScalar(Vector64<double> value)`
 
@@ -20820,7 +20920,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 46. ConvertToSingleLower
+### 16. ConvertToSingleLower
 
 `Vector64<float> ConvertToSingleLower(Vector128<double> value)`
 
@@ -20866,7 +20966,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 47. ConvertToSingleRoundToOddLower
+### 17. ConvertToSingleRoundToOddLower
 
 `Vector64<float> ConvertToSingleRoundToOddLower(Vector128<double> value)`
 
@@ -20912,7 +21012,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 48. ConvertToSingleRoundToOddUpper
+### 18. ConvertToSingleRoundToOddUpper
 
 `Vector128<float> ConvertToSingleRoundToOddUpper(Vector64<float> lower, Vector128<double> value)`
 
@@ -20959,7 +21059,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 49. ConvertToSingleUpper
+### 19. ConvertToSingleUpper
 
 `Vector128<float> ConvertToSingleUpper(Vector64<float> lower, Vector128<double> value)`
 
@@ -21006,7 +21106,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 50. ConvertToUInt64RoundAwayFromZero
+### 20. ConvertToUInt64RoundAwayFromZero
 
 `Vector128<ulong> ConvertToUInt64RoundAwayFromZero(Vector128<double> value)`
 
@@ -21052,7 +21152,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 51. ConvertToUInt64RoundAwayFromZeroScalar
+### 21. ConvertToUInt64RoundAwayFromZeroScalar
 
 `Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalar(Vector64<double> value)`
 
@@ -21098,7 +21198,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 52. ConvertToUInt64RoundToEven
+### 22. ConvertToUInt64RoundToEven
 
 `Vector128<ulong> ConvertToUInt64RoundToEven(Vector128<double> value)`
 
@@ -21144,7 +21244,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 53. ConvertToUInt64RoundToEvenScalar
+### 23. ConvertToUInt64RoundToEvenScalar
 
 `Vector64<ulong> ConvertToUInt64RoundToEvenScalar(Vector64<double> value)`
 
@@ -21190,7 +21290,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 54. ConvertToUInt64RoundToNegativeInfinity
+### 24. ConvertToUInt64RoundToNegativeInfinity
 
 `Vector128<ulong> ConvertToUInt64RoundToNegativeInfinity(Vector128<double> value)`
 
@@ -21236,7 +21336,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 55. ConvertToUInt64RoundToNegativeInfinityScalar
+### 25. ConvertToUInt64RoundToNegativeInfinityScalar
 
 `Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalar(Vector64<double> value)`
 
@@ -21282,7 +21382,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 56. ConvertToUInt64RoundToPositiveInfinity
+### 26. ConvertToUInt64RoundToPositiveInfinity
 
 `Vector128<ulong> ConvertToUInt64RoundToPositiveInfinity(Vector128<double> value)`
 
@@ -21328,7 +21428,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 57. ConvertToUInt64RoundToPositiveInfinityScalar
+### 27. ConvertToUInt64RoundToPositiveInfinityScalar
 
 `Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalar(Vector64<double> value)`
 
@@ -21374,7 +21474,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 58. ConvertToUInt64RoundToZero
+### 28. ConvertToUInt64RoundToZero
 
 `Vector128<ulong> ConvertToUInt64RoundToZero(Vector128<double> value)`
 
@@ -21420,7 +21520,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 59. ConvertToUInt64RoundToZeroScalar
+### 29. ConvertToUInt64RoundToZeroScalar
 
 `Vector64<ulong> ConvertToUInt64RoundToZeroScalar(Vector64<double> value)`
 
@@ -21466,7 +21566,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 60. Divide
+### 30. Divide
 
 `Vector64<float> Divide(Vector64<float> left, Vector64<float> right)`
 
@@ -21512,7 +21612,7 @@ Console.WriteLine(
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 6
+title: Hardware Intrinsics APIs for ARM64 - Part 11
 subtitle: With examples
 tags: [work, arm64, intrinsics]
 ---
@@ -21524,7 +21624,7 @@ In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `
 
 ### API list
 
-[ExtractNarrowingSaturateScalar](#1-extractnarrowingsaturatescalar), [ExtractNarrowingSaturateUnsignedScalar](#2-extractnarrowingsaturateunsignedscalar), [FusedMultiplyAddByScalar](#3-fusedmultiplyaddbyscalar), [FusedMultiplyAddBySelectedScalar](#4-fusedmultiplyaddbyselectedscalar), [FusedMultiplyAddScalarBySelectedScalar](#5-fusedmultiplyaddscalarbyselectedscalar), [FusedMultiplySubtractByScalar](#6-fusedmultiplysubtractbyscalar), [FusedMultiplySubtractBySelectedScalar](#7-fusedmultiplysubtractbyselectedscalar), [FusedMultiplySubtractScalarBySelectedScalar](#8-fusedmultiplysubtractscalarbyselectedscalar), [InsertSelectedScalar](#9-insertselectedscalar), [MaxAcross](#10-maxacross), [MaxNumberAcross](#11-maxnumberacross), [MaxNumberPairwise](#12-maxnumberpairwise), [MaxNumberPairwiseScalar](#13-maxnumberpairwisescalar), [MaxPairwiseScalar](#14-maxpairwisescalar), [MaxScalar](#15-maxscalar), [MinAcross](#16-minacross), [MinNumberAcross](#17-minnumberacross), [MinNumberPairwise](#18-minnumberpairwise), [MinNumberPairwiseScalar](#19-minnumberpairwisescalar), [MinPairwiseScalar](#20-minpairwisescalar), [MinScalar](#21-minscalar), [MultiplyDoublingSaturateHighScalar](#22-multiplydoublingsaturatehighscalar), [MultiplyDoublingScalarBySelectedScalarSaturateHigh](#23-multiplydoublingscalarbyselectedscalarsaturatehigh), [MultiplyDoublingWideningAndAddSaturateScalar](#24-multiplydoublingwideningandaddsaturatescalar), [MultiplyDoublingWideningAndSubtractSaturateScalar](#25-multiplydoublingwideningandsubtractsaturatescalar), [MultiplyDoublingWideningSaturateScalar](#26-multiplydoublingwideningsaturatescalar), [MultiplyDoublingWideningSaturateScalarBySelectedScalar](#27-multiplydoublingwideningsaturatescalarbyselectedscalar), [MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate](#28-multiplydoublingwideningscalarbyselectedscalarandaddsaturate), [MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate](#29-multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate), [MultiplyExtended](#30-multiplyextended), [MultiplyExtendedByScalar](#31-multiplyextendedbyscalar), [MultiplyExtendedBySelectedScalar](#32-multiplyextendedbyselectedscalar), [MultiplyExtendedScalar](#33-multiplyextendedscalar), [MultiplyExtendedScalarBySelectedScalar](#34-multiplyextendedscalarbyselectedscalar), [MultiplyRoundedDoublingSaturateHighScalar](#35-multiplyroundeddoublingsaturatehighscalar), [MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh](#36-multiplyroundeddoublingscalarbyselectedscalarsaturatehigh), [NegateSaturateScalar](#37-negatesaturatescalar), [ReciprocalEstimateScalar](#38-reciprocalestimatescalar), [ReciprocalExponentScalar](#39-reciprocalexponentscalar), [ReciprocalSquareRootEstimateScalar](#40-reciprocalsquarerootestimatescalar), [ReciprocalSquareRootStepScalar](#41-reciprocalsquarerootstepscalar), [ReciprocalStepScalar](#42-reciprocalstepscalar), [ShiftRightArithmeticNarrowingSaturateScalar](#43-shiftrightarithmeticnarrowingsaturatescalar), [ShiftRightArithmeticNarrowingSaturateUnsignedScalar](#44-shiftrightarithmeticnarrowingsaturateunsignedscalar), [ShiftRightArithmeticRoundedNarrowingSaturateScalar](#45-shiftrightarithmeticroundednarrowingsaturatescalar), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar](#46-shiftrightarithmeticroundednarrowingsaturateunsignedscalar), [ShiftRightLogicalNarrowingSaturateScalar](#47-shiftrightlogicalnarrowingsaturatescalar), [ShiftRightLogicalRoundedNarrowingSaturateScalar](#48-shiftrightlogicalroundednarrowingsaturatescalar), [Sqrt](#49-sqrt), [StorePair](#50-storepair), [StorePairNonTemporal](#51-storepairnontemporal), [StorePairScalar](#52-storepairscalar), [StorePairScalarNonTemporal](#53-storepairscalarnontemporal), [ReverseElementBits](#54-reverseelementbits), [TransposeEven](#55-transposeeven), [TransposeOdd](#56-transposeodd), [UnzipEven](#57-unzipeven), [UnzipOdd](#58-unzipodd), [ZipHigh](#59-ziphigh), [ZipLow](#60-ziplow),[...](Part6.md)
+[ExtractNarrowingSaturateScalar](#1-extractnarrowingsaturatescalar), [ExtractNarrowingSaturateUnsignedScalar](#2-extractnarrowingsaturateunsignedscalar), [FusedMultiplyAddByScalar](#3-fusedmultiplyaddbyscalar), [FusedMultiplyAddBySelectedScalar](#4-fusedmultiplyaddbyselectedscalar), [FusedMultiplyAddScalarBySelectedScalar](#5-fusedmultiplyaddscalarbyselectedscalar), [FusedMultiplySubtractByScalar](#6-fusedmultiplysubtractbyscalar), [FusedMultiplySubtractBySelectedScalar](#7-fusedmultiplysubtractbyselectedscalar), [FusedMultiplySubtractScalarBySelectedScalar](#8-fusedmultiplysubtractscalarbyselectedscalar), [InsertSelectedScalar](#9-insertselectedscalar), [MaxAcross](#10-maxacross), [MaxNumberAcross](#11-maxnumberacross), [MaxNumberPairwise](#12-maxnumberpairwise), [MaxNumberPairwiseScalar](#13-maxnumberpairwisescalar), [MaxPairwiseScalar](#14-maxpairwisescalar), [MaxScalar](#15-maxscalar), [MinAcross](#16-minacross), [MinNumberAcross](#17-minnumberacross), [MinNumberPairwise](#18-minnumberpairwise), [MinNumberPairwiseScalar](#19-minnumberpairwisescalar), [MinPairwiseScalar](#20-minpairwisescalar), [MinScalar](#21-minscalar), [MultiplyDoublingSaturateHighScalar](#22-multiplydoublingsaturatehighscalar), [MultiplyDoublingScalarBySelectedScalarSaturateHigh](#23-multiplydoublingscalarbyselectedscalarsaturatehigh), [MultiplyDoublingWideningAndAddSaturateScalar](#24-multiplydoublingwideningandaddsaturatescalar), [MultiplyDoublingWideningAndSubtractSaturateScalar](#25-multiplydoublingwideningandsubtractsaturatescalar), [MultiplyDoublingWideningSaturateScalar](#26-multiplydoublingwideningsaturatescalar), [MultiplyDoublingWideningSaturateScalarBySelectedScalar](#27-multiplydoublingwideningsaturatescalarbyselectedscalar), [MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate](#28-multiplydoublingwideningscalarbyselectedscalarandaddsaturate), [MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate](#29-multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate), [MultiplyExtended](#30-multiplyextended),[...](Part11.md)
 
 
 ");
@@ -23188,6 +23288,27 @@ MultiplyExtendedTest(Vector64float_0, Vector64float_1);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: Hardware Intrinsics APIs for ARM64 - Part 12
+subtitle: With examples
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+
+
+### API list
+
+[MultiplyExtendedByScalar](#1-multiplyextendedbyscalar), [MultiplyExtendedBySelectedScalar](#2-multiplyextendedbyselectedscalar), [MultiplyExtendedScalar](#3-multiplyextendedscalar), [MultiplyExtendedScalarBySelectedScalar](#4-multiplyextendedscalarbyselectedscalar), [MultiplyRoundedDoublingSaturateHighScalar](#5-multiplyroundeddoublingsaturatehighscalar), [MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh](#6-multiplyroundeddoublingscalarbyselectedscalarsaturatehigh), [NegateSaturateScalar](#7-negatesaturatescalar), [ReciprocalEstimateScalar](#8-reciprocalestimatescalar), [ReciprocalExponentScalar](#9-reciprocalexponentscalar), [ReciprocalSquareRootEstimateScalar](#10-reciprocalsquarerootestimatescalar), [ReciprocalSquareRootStepScalar](#11-reciprocalsquarerootstepscalar), [ReciprocalStepScalar](#12-reciprocalstepscalar), [ShiftRightArithmeticNarrowingSaturateScalar](#13-shiftrightarithmeticnarrowingsaturatescalar), [ShiftRightArithmeticNarrowingSaturateUnsignedScalar](#14-shiftrightarithmeticnarrowingsaturateunsignedscalar), [ShiftRightArithmeticRoundedNarrowingSaturateScalar](#15-shiftrightarithmeticroundednarrowingsaturatescalar), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar](#16-shiftrightarithmeticroundednarrowingsaturateunsignedscalar), [ShiftRightLogicalNarrowingSaturateScalar](#17-shiftrightlogicalnarrowingsaturatescalar), [ShiftRightLogicalRoundedNarrowingSaturateScalar](#18-shiftrightlogicalroundednarrowingsaturatescalar), [Sqrt](#19-sqrt), [StorePair](#20-storepair), [StorePairNonTemporal](#21-storepairnontemporal), [StorePairScalar](#22-storepairscalar), [StorePairScalarNonTemporal](#23-storepairscalarnontemporal), [ReverseElementBits](#24-reverseelementbits), [TransposeEven](#25-transposeeven), [TransposeOdd](#26-transposeodd), [UnzipEven](#27-unzipeven), [UnzipOdd](#28-unzipodd), [ZipHigh](#29-ziphigh), [ZipLow](#30-ziplow),[...](Part12.md)
+
+
+");
 
 try {
 var MultiplyExtendedByScalarResult = Dummy_MultiplyExtendedByScalarTest(Vector128double_0, Vector64double_0);
@@ -23198,10 +23319,9 @@ apiResult = MultiplyExtendedByScalarResult.ToString();
 
 Console.WriteLine(
 @"
-```
-------------------------------------------------
 
-### 31. MultiplyExtendedByScalar
+
+### 1. MultiplyExtendedByScalar
 
 `Vector128<double> MultiplyExtendedByScalar(Vector128<double> left, Vector64<double> right)`
 
@@ -23248,7 +23368,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 32. MultiplyExtendedBySelectedScalar
+### 2. MultiplyExtendedBySelectedScalar
 
 `Vector64<float> MultiplyExtendedBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`
 
@@ -23305,7 +23425,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 33. MultiplyExtendedScalar
+### 3. MultiplyExtendedScalar
 
 `Vector64<double> MultiplyExtendedScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -23358,7 +23478,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 34. MultiplyExtendedScalarBySelectedScalar
+### 4. MultiplyExtendedScalarBySelectedScalar
 
 `Vector64<double> MultiplyExtendedScalarBySelectedScalar(Vector64<double> left, Vector128<double> right, byte rightIndex)`
 
@@ -23413,7 +23533,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 35. MultiplyRoundedDoublingSaturateHighScalar
+### 5. MultiplyRoundedDoublingSaturateHighScalar
 
 `Vector64<short> MultiplyRoundedDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
 
@@ -23466,7 +23586,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 36. MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh
+### 6. MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh
 
 `Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -23522,7 +23642,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 37. NegateSaturateScalar
+### 7. NegateSaturateScalar
 
 `Vector64<short> NegateSaturateScalar(Vector64<short> value)`
 
@@ -23576,7 +23696,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 38. ReciprocalEstimateScalar
+### 8. ReciprocalEstimateScalar
 
 `Vector64<double> ReciprocalEstimateScalar(Vector64<double> value)`
 
@@ -23628,7 +23748,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 39. ReciprocalExponentScalar
+### 9. ReciprocalExponentScalar
 
 `Vector64<double> ReciprocalExponentScalar(Vector64<double> value)`
 
@@ -23680,7 +23800,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 40. ReciprocalSquareRootEstimateScalar
+### 10. ReciprocalSquareRootEstimateScalar
 
 `Vector64<double> ReciprocalSquareRootEstimateScalar(Vector64<double> value)`
 
@@ -23732,7 +23852,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 41. ReciprocalSquareRootStepScalar
+### 11. ReciprocalSquareRootStepScalar
 
 `Vector64<double> ReciprocalSquareRootStepScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -23785,7 +23905,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 42. ReciprocalStepScalar
+### 12. ReciprocalStepScalar
 
 `Vector64<double> ReciprocalStepScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -23838,7 +23958,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 43. ShiftRightArithmeticNarrowingSaturateScalar
+### 13. ShiftRightArithmeticNarrowingSaturateScalar
 
 `Vector64<short> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<int> value, byte count)`
 
@@ -23892,7 +24012,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 44. ShiftRightArithmeticNarrowingSaturateUnsignedScalar
+### 14. ShiftRightArithmeticNarrowingSaturateUnsignedScalar
 
 `Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
 
@@ -23946,7 +24066,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 45. ShiftRightArithmeticRoundedNarrowingSaturateScalar
+### 15. ShiftRightArithmeticRoundedNarrowingSaturateScalar
 
 `Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<int> value, byte count)`
 
@@ -24000,7 +24120,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 46. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar
+### 16. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar
 
 `Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
 
@@ -24054,7 +24174,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 47. ShiftRightLogicalNarrowingSaturateScalar
+### 17. ShiftRightLogicalNarrowingSaturateScalar
 
 `Vector64<byte> ShiftRightLogicalNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
 
@@ -24111,7 +24231,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 48. ShiftRightLogicalRoundedNarrowingSaturateScalar
+### 18. ShiftRightLogicalRoundedNarrowingSaturateScalar
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
 
@@ -24168,7 +24288,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 49. Sqrt
+### 19. Sqrt
 
 `Vector64<float> Sqrt(Vector64<float> value)`
 
@@ -24223,7 +24343,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 50. StorePair
+### 20. StorePair
 
 `void StorePair(byte* address, Vector64<byte> value1, Vector64<byte> value2)`
 
@@ -24297,7 +24417,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 51. StorePairNonTemporal
+### 21. StorePairNonTemporal
 
 `void StorePairNonTemporal(byte* address, Vector64<byte> value1, Vector64<byte> value2)`
 
@@ -24371,7 +24491,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 52. StorePairScalar
+### 22. StorePairScalar
 
 `void StorePairScalar(int* address, Vector64<int> value1, Vector64<int> value2)`
 
@@ -24428,7 +24548,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 53. StorePairScalarNonTemporal
+### 23. StorePairScalarNonTemporal
 
 `void StorePairScalarNonTemporal(int* address, Vector64<int> value1, Vector64<int> value2)`
 
@@ -24483,7 +24603,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 54. ReverseElementBits
+### 24. ReverseElementBits
 
 `Vector64<byte> ReverseElementBits(Vector64<byte> value)`
 
@@ -24537,7 +24657,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 55. TransposeEven
+### 25. TransposeEven
 
 `Vector64<byte> TransposeEven(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24605,7 +24725,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 56. TransposeOdd
+### 26. TransposeOdd
 
 `Vector64<byte> TransposeOdd(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24673,7 +24793,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 57. UnzipEven
+### 27. UnzipEven
 
 `Vector64<byte> UnzipEven(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24741,7 +24861,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 58. UnzipOdd
+### 28. UnzipOdd
 
 `Vector64<byte> UnzipOdd(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24809,7 +24929,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 59. ZipHigh
+### 29. ZipHigh
 
 `Vector64<byte> ZipHigh(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24877,7 +24997,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 60. ZipLow
+### 30. ZipLow
 
 `Vector64<byte> ZipLow(Vector64<byte> left, Vector64<byte> right)`
 

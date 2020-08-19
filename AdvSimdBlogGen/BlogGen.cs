@@ -26,6 +26,7 @@ namespace AdvSimdBlogGen
         private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>> arm64Methods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>>();
         private static bool shouldGenerateCsv = false;
         private static bool shouldReadFromCsv = true;
+        private static int apisPerBlog = 30;
 
         public static void Main(string[] args)
         {
@@ -35,7 +36,7 @@ namespace AdvSimdBlogGen
             PopulateMethods();
             GenerateBlogContents();
             WriteGeneratedCodeToFile(Path.Combine(generatedCsProjPath, "AdvSimdGenerated.cs"));
-            //SplitGeneratedBlog();
+            SplitGeneratedBlog();
             PrintVarsAndMethodNames();
             Console.WriteLine("done");
             Console.Error.WriteLine("Add https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order");
@@ -43,6 +44,21 @@ namespace AdvSimdBlogGen
 
         internal static void SplitGeneratedBlog()
         {
+            List<string> linesToIgnore = new List<string>()
+            {
+                "; optimized code",
+                "; fp based frame",
+                "; partially interruptible",
+                "; Final local variable assignments"
+            };
+            Dictionary<string, string> replacements = new Dictionary<string, string>()
+            {
+                { "This instruction", "This method" },
+                { "places the results in a vector, and writes the vector to the destination SIMD&FP register.", "places the results in a vector, and returns that vector." },
+                { "and writes the result to the SIMD&FP destination register.", "and returns the result." },
+                { "and writes the result to the general-purpose destination register.", "and returns the result." },
+            };
+
             string dirName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string blogFileName = "2018-01-01-Test";
             string blogFileFullPath = Path.Combine(dirName, blogFileName + ".md");
@@ -54,6 +70,18 @@ namespace AdvSimdBlogGen
             foreach (string line in blogContents)
             {
                 string blogLine = line;
+                if (linesToIgnore.Contains(blogLine))
+                {
+                    continue;
+                }
+                foreach (var pair in replacements)
+                {
+                    if (blogLine.Contains(pair.Key, StringComparison.InvariantCulture))
+                    {
+                        blogLine = blogLine.Replace(pair.Key, pair.Value);
+                    }
+                }
+
                 if ("START---END" == blogLine)
                 {
                     blogLine = "---";
@@ -114,7 +142,7 @@ namespace AdvSimdBlogGen
         private static void WriteGeneratedCodeToFile(string fileName)
         {
             string classContents = string.Format(classTemplate, methodDefBuilder.ToString(), methodCallBuilder.ToString());
-            foreach(var tocContents in globalTocBuilder)
+            foreach (var tocContents in globalTocBuilder)
             {
                 classContents = classContents.Replace(tocContents.Key, tocContents.Value);
             }
@@ -123,7 +151,7 @@ namespace AdvSimdBlogGen
 
         private static void GenerateCodeForMethod(string methodName, bool isForAdvSimd)
         {
-            if (((count - 1) % 60) == 0)
+            if (((count - 1) % apisPerBlog) == 0)
             {
                 count = 1;
                 string placeHolder = $"PART-{sectionCount}-TOC";
@@ -212,7 +240,7 @@ namespace AdvSimdBlogGen
                     isIntPtr = p.Type.ToString().Contains("int");
                 }
                 string normalizedType = p.Type.ToString().Replace("<", string.Empty).Replace(">", string.Empty).Replace("*", "Ptr");
-                
+
                 int id = 0;
                 if (!argsTracker.ContainsKey(normalizedType))
                 {
@@ -279,7 +307,7 @@ namespace AdvSimdBlogGen
 
             if (shouldReadFromCsv)
             {
-                argsValueToPrint = argsValueToPrint.Select((av, index) => "GetValue(\"" + methodName + "\", " + av + ".ToString(), " + (index+1) + ")").ToList();
+                argsValueToPrint = argsValueToPrint.Select((av, index) => "GetValue(\"" + methodName + "\", " + av + ".ToString(), " + (index + 1) + ")").ToList();
                 argsValueToPrint.Insert(0, $"GetValue(\"{methodName}\", \"Performs '{methodName}' operation.\", 0)");
             }
             else
@@ -288,7 +316,7 @@ namespace AdvSimdBlogGen
             }
 
             // Print method definition and result
-            string methodDefPrint = string.Format(methodDefPrintTemplate, 
+            string methodDefPrint = string.Format(methodDefPrintTemplate,
                 returnStatement, // 0
                 testMethodSig, // 1
                 argsValuePrintBuilder.ToString(),  // 2
@@ -298,7 +326,7 @@ namespace AdvSimdBlogGen
                 signature, // 6
                 overloadBuilder.ToString(), // 7
                 advsimdReference, // 8
-                (count == 1) ?  string.Empty : sectionSep // 9
+                (count == 1) ? string.Empty : sectionSep // 9
                 );
 
             methodCallBuilder.AppendLine(dummyMethodCall);
