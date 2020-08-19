@@ -230,3 +230,6 @@ G_M30981_IG03:
 ; Total bytes of code 20, prolog size 8, PerfScore 6.50, (MethodHash=602d86fa) for method BlogTests:InsertScalarTest(System.Runtime.Intrinsics.Vector128`1[Double],System.Runtime.Intrinsics.Vector64`1[Double]):System.Runtime.Intrinsics.Vector128`1[Double]:this
 ; ============================================================
 ```
+
+```cs
+```
