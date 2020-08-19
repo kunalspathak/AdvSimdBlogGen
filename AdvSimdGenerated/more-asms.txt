@@ -1,0 +1,232 @@
+```cs
+private Vector64<byte> DuplicateSelectedScalarToVector64Test(Vector64<byte> value)
+{
+  return AdvSimd.DuplicateSelectedScalarToVector64(value, 3);
+}
+```
+
+```
+; Assembly listing for method BlogTests:DuplicateSelectedScalarToVector64Test(System.Runtime.Intrinsics.Vector64`1[Byte]):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;# V02 OutArgs      [V02    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M3426_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M3426_IG02:
+        0E070410          dup     v16.8b, v0.b[3]
+        0EB01E00          mov     v0.8b, v16.8b
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M3426_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 7.40, (MethodHash=86aaf29d) for method BlogTests:DuplicateSelectedScalarToVector64Test(System.Runtime.Intrinsics.Vector64`1[Byte]):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; ============================================================
+```
+
+```cs
+private Vector128<byte> DuplicateSelectedScalarToVector64Test(Vector64<byte> left)
+{
+    return AdvSimd.DuplicateSelectedScalarToVector128(left, 3);
+}
+```
+
+```
+; Assembly listing for method BlogTests:DuplicateSelectedScalarToVector64Test(System.Runtime.Intrinsics.Vector64`1[Byte]):System.Runtime.Intrinsics.Vector128`1[Byte]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;# V02 OutArgs      [V02    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M15995_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M15995_IG02:
+        4E070410          dup     v16.16b, v0.b[3]
+        4EB01E00          mov     v0.16b, v16.16b
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M15995_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 7.40, (MethodHash=b8f0c184) for method BlogTests:DuplicateSelectedScalarToVector64Test(System.Runtime.Intrinsics.Vector64`1[Byte]):System.Runtime.Intrinsics.Vector128`1[Byte]:this
+; ============================================================
+```
+
+```cs
+[MethodImpl(MethodImplOptions.NoInlining)]
+private byte ExtractTest(Vector64<byte> vector)
+{
+    return AdvSimd.Extract(vector, 3);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ExtractTest(System.Runtime.Intrinsics.Vector64`1[Byte]):ubyte:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;# V02 OutArgs      [V02    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M12989_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M12989_IG02:
+        0E073C00          umov    w0, v0.b[3]
+                                                ;; bbWeight=1    PerfScore 1.00
+G_M12989_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 20, prolog size 8, PerfScore 6.50, (MethodHash=5006cd42) for method BlogTests:ExtractTest(System.Runtime.Intrinsics.Vector64`1[Byte]):ubyte:this
+; ============================================================
+```
+
+```cs
+[MethodImpl(MethodImplOptions.NoInlining)]
+private Vector64<byte> ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower)
+{
+    return AdvSimd.ExtractVector64(upper, lower, 5);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ExtractVector64Test(System.Runtime.Intrinsics.Vector64`1[Byte],System.Runtime.Intrinsics.Vector64`1[Byte]):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;  V02 arg2         [V02,T01] (  3,  3   )   simd8  ->   d1         HFA(simd8)
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M47797_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M47797_IG02:
+        2E010010          ext     v16.8b, v0.8b, v1.8b, #0
+        0EB01E00          mov     v0.8b, v16.8b
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M47797_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 7.40, (MethodHash=9658454a) for method BlogTests:ExtractVector64Test(System.Runtime.Intrinsics.Vector64`1[Byte],System.Runtime.Intrinsics.Vector64`1[Byte]):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; ============================================================
+```
+
+```cs
+[MethodImpl(MethodImplOptions.NoInlining)]
+private Vector64<byte> InsertTest(Vector64<byte> vector, byte data)
+{
+  return AdvSimd.Insert(vector, 4, data);
+}
+```
+
+```
+; Assembly listing for method BlogTests:InsertTest(System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T01] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;  V02 arg2         [V02,T00] (  3,  3   )   ubyte  ->   x1
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M55926_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M55926_IG02:
+        53001C20          uxtb    w0, w1
+        4E091C00          ins     v0.b[4], w0
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M55926_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 7.40, (MethodHash=87b12589) for method BlogTests:InsertTest(System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; ============================================================
+```
+
+```cs
+[MethodImpl(MethodImplOptions.NoInlining)]
+private Vector128<double> InsertScalarTest(Vector128<double> result, Vector64<double> value)
+{
+    return AdvSimd.InsertScalar(result, 1, value);
+}
+```
+
+```
+; Assembly listing for method BlogTests:InsertScalarTest(System.Runtime.Intrinsics.Vector128`1[Double],System.Runtime.Intrinsics.Vector64`1[Double]):System.Runtime.Intrinsics.Vector128`1[Double]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )  simd16  ->   d0         HFA(simd16)
+;  V02 arg2         [V02,T01] (  3,  3   )   simd8  ->   d1         HFA(simd8)
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M30981_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M30981_IG02:
+        6E180420          ins     v0.d[1], v1.d[0]
+                                                ;; bbWeight=1    PerfScore 1.00
+G_M30981_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 20, prolog size 8, PerfScore 6.50, (MethodHash=602d86fa) for method BlogTests:InsertScalarTest(System.Runtime.Intrinsics.Vector128`1[Double],System.Runtime.Intrinsics.Vector64`1[Double]):System.Runtime.Intrinsics.Vector128`1[Double]:this
+; ============================================================
+```
