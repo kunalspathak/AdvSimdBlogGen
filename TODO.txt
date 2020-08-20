@@ -1,6 +1,6 @@
-Refer that this is from ARM manual
-Try to add link to the C++ intrinsic search result something like this:
-
+- Refer that this is from ARM manual
+- Try to add link to the C++ intrinsic search result something like this: 
 https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqadd_s64
 - Sort method names from ARM/ARM64
 - Double check the method parameter `rightIndex` from more-asms.txt
+- Replace MSDN with newer name.
