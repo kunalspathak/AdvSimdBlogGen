@@ -4,3 +4,5 @@ https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsi
 - Sort method names from ARM/ARM64
 - Double check the method parameter `rightIndex` from more-asms.txt
 - Replace MSDN with newer name.
+- Tabular index with 8 columns containing 45 rows?
+- Extra lines in other references. See ShiftArithmeticRoundedSaturateScalar

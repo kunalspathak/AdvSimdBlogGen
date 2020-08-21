@@ -948,3 +948,394 @@ G_M3141_IG03:
 ; Total bytes of code 20, prolog size 8, PerfScore 8.50, (MethodHash=aafef3ba) for method BlogTests:MultiplySubtractBySelectedScalarTest(System.Runtime.Intrinsics.Vector64`1[Int16],System.Runtime.Intrinsics.Vector64`1[Int16],System.Runtime.Intrinsics.Vector64`1[Int16],ubyte):System.Runtime.Intrinsics.Vector64`1[Int16]:this
 ; ============================================================
 ```
+
+```cs
+private Vector64<byte> ShiftLeftAndInsertTest(Vector64<byte> left, Vector64<byte> right, byte shift)
+{
+    return AdvSimd.ShiftLeftAndInsert(left, right, 1);
+}
+```
+
+```asm
+; Assembly listing for method BlogTests:ShiftLeftAndInsertTest(System.Runtime.Intrinsics.Vector64`1[Byte],System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;  V02 arg2         [V02,T01] (  3,  3   )   simd8  ->   d1         HFA(simd8)
+;* V03 arg3         [V03    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V04 OutArgs      [V04    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M39767_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M39767_IG02:
+        2F095420          sli     v0.8b, v1.8b, #1
+                                                ;; bbWeight=1    PerfScore 1.00
+G_M39767_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 20, prolog size 8, PerfScore 6.50, (MethodHash=a58d64a8) for method BlogTests:ShiftLeftAndInsertTest(System.Runtime.Intrinsics.Vector64`1[Byte],System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; ============================================================
+```
+
+```cs
+private Vector64<long> ShiftLeftAndInsertScalarTest(Vector64<long> left, Vector64<long> right, byte shift)
+{
+    return AdvSimd.ShiftLeftAndInsertScalar(left, right, 1);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ShiftLeftAndInsertScalarTest(System.Runtime.Intrinsics.Vector64`1[Int64],System.Runtime.Intrinsics.Vector64`1[Int64],ubyte):System.Runtime.Intrinsics.Vector64`1[Int64]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;  V02 arg2         [V02,T01] (  3,  3   )   simd8  ->   d1         HFA(simd8)
+;* V03 arg3         [V03    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V04 OutArgs      [V04    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M38946_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M38946_IG02:
+        7F415420          sli     d0, d1, #1
+                                                ;; bbWeight=1    PerfScore 1.00
+G_M38946_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 20, prolog size 8, PerfScore 6.50, (MethodHash=2ce467dd) for method BlogTests:ShiftLeftAndInsertScalarTest(System.Runtime.Intrinsics.Vector64`1[Int64],System.Runtime.Intrinsics.Vector64`1[Int64],ubyte):System.Runtime.Intrinsics.Vector64`1[Int64]:this
+; ============================================================
+```
+
+```cs
+private Vector64<byte> ShiftLeftLogicalTest(Vector64<byte> value, byte count)
+{
+    return AdvSimd.ShiftLeftLogical(value, 1);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ShiftLeftLogicalTest(System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;* V02 arg2         [V02    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M20857_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M20857_IG02:
+        0F095410          shl     v16.8b, v0.8b, #1
+        0EB01E00          mov     v0.8b, v16.8b
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M20857_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 7.40, (MethodHash=d6b6ae86) for method BlogTests:ShiftLeftLogicalTest(System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; ============================================================
+```
+
+```cs
+private Vector64<byte> ShiftLeftLogicalSaturateTest(Vector64<byte> value, byte count)
+{
+    return AdvSimd.ShiftLeftLogicalSaturate(value, 6);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ShiftLeftLogicalSaturateTest(System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;* V02 arg2         [V02    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M19688_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M19688_IG02:
+        2F0E7410          uqshl   v16.8b, v0.8b, #6
+        0EB01E00          mov     v0.8b, v16.8b
+                                                ;; bbWeight=1    PerfScore 3.50
+G_M19688_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 9.40, (MethodHash=d0f5b317) for method BlogTests:ShiftLeftLogicalSaturateTest(System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):System.Runtime.Intrinsics.Vector64`1[Byte]:this
+; ============================================================
+```
+
+```cs
+private Vector64<long> ShiftLeftLogicalSaturateScalarTest(Vector64<long> value, byte count)
+{
+    return AdvSimd.ShiftLeftLogicalSaturateScalar(value, 0);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ShiftLeftLogicalSaturateScalarTest(System.Runtime.Intrinsics.Vector64`1[Int64],ubyte):System.Runtime.Intrinsics.Vector64`1[Int64]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;* V02 arg2         [V02    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M44070_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M44070_IG02:
+        5F407410          sqshl   d16, d0, #0
+        0EB01E00          mov     v0.8b, v16.8b
+                                                ;; bbWeight=1    PerfScore 3.50
+G_M44070_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 9.40, (MethodHash=4e5e53d9) for method BlogTests:ShiftLeftLogicalSaturateScalarTest(System.Runtime.Intrinsics.Vector64`1[Int64],ubyte):System.Runtime.Intrinsics.Vector64`1[Int64]:this
+; ============================================================
+```
+
+```cs
+private Vector64<ushort> ShiftLeftLogicalSaturateUnsignedTest(Vector64<short> value, byte count)
+{
+    return AdvSimd.ShiftLeftLogicalSaturateUnsigned(value, 1);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ShiftLeftLogicalSaturateUnsignedTest(System.Runtime.Intrinsics.Vector64`1[Int16],ubyte):System.Runtime.Intrinsics.Vector64`1[UInt16]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;* V02 arg2         [V02    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M44276_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M44276_IG02:
+        2F116410          sqshlu  v16.4h, v0.4h, #1
+        0EB01E00          mov     v0.8b, v16.8b
+                                                ;; bbWeight=1    PerfScore 3.50
+G_M44276_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 9.40, (MethodHash=70b0530b) for method BlogTests:ShiftLeftLogicalSaturateUnsignedTest(System.Runtime.Intrinsics.Vector64`1[Int16],ubyte):System.Runtime.Intrinsics.Vector64`1[UInt16]:this
+; ============================================================
+```
+
+```cs
+private Vector64<ulong> ShiftLeftLogicalSaturateUnsignedScalarTest(Vector64<long> value, byte count)
+{
+  return AdvSimd.ShiftLeftLogicalSaturateUnsignedScalar(value, count);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ShiftLeftLogicalSaturateUnsignedScalarTest(System.Runtime.Intrinsics.Vector64`1[Int64],ubyte):System.Runtime.Intrinsics.Vector64`1[UInt64]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;* V02 arg2         [V02    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M26170_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M26170_IG02:
+        7F406410          sqshlu  d16, d0, #0
+        0EB01E00          mov     v0.8b, v16.8b
+                                                ;; bbWeight=1    PerfScore 3.50
+G_M26170_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 9.40, (MethodHash=933f99c5) for method BlogTests:ShiftLeftLogicalSaturateUnsignedScalarTest(System.Runtime.Intrinsics.Vector64`1[Int64],ubyte):System.Runtime.Intrinsics.Vector64`1[UInt64]:this
+; ============================================================
+```
+
+```cs
+private Vector64<long> ShiftLeftLogicalScalarTest(Vector64<long> value, byte count)
+{
+    return AdvSimd.ShiftLeftLogicalScalar(value, 0);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ShiftLeftLogicalScalarTest(System.Runtime.Intrinsics.Vector64`1[Int64],ubyte):System.Runtime.Intrinsics.Vector64`1[Int64]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;* V02 arg2         [V02    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M10231_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M10231_IG02:
+        5F405410          shl     d16, d0, #1
+        0EB01E00          mov     v0.8b, v16.8b
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M10231_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 7.40, (MethodHash=7257d808) for method BlogTests:ShiftLeftLogicalScalarTest(System.Runtime.Intrinsics.Vector64`1[Int64],ubyte):System.Runtime.Intrinsics.Vector64`1[Int64]:this
+; ============================================================
+```
+
+```cs
+private Vector128<ushort> ShiftLeftLogicalWideningLowerTest(Vector64<byte> value, byte count)
+{
+  return AdvSimd.ShiftLeftLogicalWideningLower(value, 1);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ShiftLeftLogicalWideningLowerTest(System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):System.Runtime.Intrinsics.Vector128`1[UInt16]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;* V02 arg2         [V02    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M55321_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M55321_IG02:
+        2F09A410          ushll   v16.8h, v0.8b, #1
+        4EB01E00          mov     v0.16b, v16.16b
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M55321_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 7.40, (MethodHash=6ca327e6) for method BlogTests:ShiftLeftLogicalWideningLowerTest(System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):System.Runtime.Intrinsics.Vector128`1[UInt16]:this
+; ============================================================
+```
+
+```cs
+private Vector128<ushort> ShiftLeftLogicalWideningUpperTest(Vector128<byte> value, byte count)
+{
+  return AdvSimd.ShiftLeftLogicalWideningUpper(value, 1);
+}
+```
+
+```
+; Assembly listing for method BlogTests:ShiftLeftLogicalWideningUpperTest(System.Runtime.Intrinsics.Vector128`1[Byte],ubyte):System.Runtime.Intrinsics.Vector128`1[UInt16]:this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )  simd16  ->   d0         HFA(simd16)
+;* V02 arg2         [V02    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V03 OutArgs      [V03    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M54913_IG01:
+        A9BF7BFD          stp     fp, lr, [sp,#-16]!
+        910003FD          mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M54913_IG02:
+        6F09A410          ushll2  v16.8h, v0.16b, #1
+        4EB01E00          mov     v0.16b, v16.16b
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M54913_IG03:
+        A8C17BFD          ldp     fp, lr, [sp],#16
+        D65F03C0          ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 24, prolog size 8, PerfScore 7.40, (MethodHash=710c297e) for method BlogTests:ShiftLeftLogicalWideningUpperTest(System.Runtime.Intrinsics.Vector128`1[Byte],ubyte):System.Runtime.Intrinsics.Vector128`1[UInt16]:this
+; ============================================================
+```
+
