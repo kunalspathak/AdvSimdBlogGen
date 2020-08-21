@@ -4347,7 +4347,7 @@ In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `
 
 ### API list
 
-[Abs](#1-abs), [AbsSaturate](#2-abssaturate), [AbsScalar](#3-absscalar), [AbsoluteCompareGreaterThan](#4-absolutecomparegreaterthan), [AbsoluteCompareGreaterThanOrEqual](#5-absolutecomparegreaterthanorequal), [AbsoluteCompareLessThan](#6-absolutecomparelessthan), [AbsoluteCompareLessThanOrEqual](#7-absolutecomparelessthanorequal), [AbsoluteDifference](#8-absolutedifference), [AbsoluteDifferenceAdd](#9-absolutedifferenceadd), [AbsoluteDifferenceWideningLower](#10-absolutedifferencewideninglower), [AbsoluteDifferenceWideningLowerAndAdd](#11-absolutedifferencewideninglowerandadd), [AbsoluteDifferenceWideningUpper](#12-absolutedifferencewideningupper), [AbsoluteDifferenceWideningUpperAndAdd](#13-absolutedifferencewideningupperandadd), [Add](#14-add), [AddHighNarrowingLower](#15-addhighnarrowinglower), [AddHighNarrowingUpper](#16-addhighnarrowingupper), [AddPairwise](#17-addpairwise), [AddPairwiseWidening](#18-addpairwisewidening), [AddPairwiseWideningAndAdd](#19-addpairwisewideningandadd), [AddPairwiseWideningAndAddScalar](#20-addpairwisewideningandaddscalar), [AddPairwiseWideningScalar](#21-addpairwisewideningscalar), [AddRoundedHighNarrowingLower](#22-addroundedhighnarrowinglower), [AddRoundedHighNarrowingUpper](#23-addroundedhighnarrowingupper), [AddSaturate](#24-addsaturate), [AddSaturateScalar](#25-addsaturatescalar), [AddScalar](#26-addscalar), [AddWideningLower](#27-addwideninglower), [AddWideningUpper](#28-addwideningupper), [And](#29-and), [BitwiseClear](#30-bitwiseclear),[...](Part1.md)
+[Abs](#1-abs), [AbsSaturate](#2-abssaturate), [AbsScalar](#3-absscalar), [AbsoluteCompareGreaterThan](#4-absolutecomparegreaterthan), [AbsoluteCompareGreaterThanOrEqual](#5-absolutecomparegreaterthanorequal), [AbsoluteCompareLessThan](#6-absolutecomparelessthan), [AbsoluteCompareLessThanOrEqual](#7-absolutecomparelessthanorequal), [AbsoluteDifference](#8-absolutedifference), [AbsoluteDifferenceAdd](#9-absolutedifferenceadd), [AbsoluteDifferenceWideningLower](#10-absolutedifferencewideninglower), [AbsoluteDifferenceWideningLowerAndAdd](#11-absolutedifferencewideninglowerandadd), [AbsoluteDifferenceWideningUpper](#12-absolutedifferencewideningupper), [AbsoluteDifferenceWideningUpperAndAdd](#13-absolutedifferencewideningupperandadd), [Add](#14-add), [AddHighNarrowingLower](#15-addhighnarrowinglower), [AddHighNarrowingUpper](#16-addhighnarrowingupper), [AddPairwise](#17-addpairwise), [AddPairwiseWidening](#18-addpairwisewidening), [AddPairwiseWideningAndAdd](#19-addpairwisewideningandadd), [AddPairwiseWideningAndAddScalar](#20-addpairwisewideningandaddscalar), [AddPairwiseWideningScalar](#21-addpairwisewideningscalar), [AddRoundedHighNarrowingLower](#22-addroundedhighnarrowinglower), [AddRoundedHighNarrowingUpper](#23-addroundedhighnarrowingupper), [AddSaturate](#24-addsaturate), [AddSaturateScalar](#25-addsaturatescalar), [AddScalar](#26-addscalar), [AddWideningLower](#27-addwideninglower), [AddWideningUpper](#28-addwideningupper), [And](#29-and), [BitwiseClear](#30-bitwiseclear), [BitwiseSelect](#31-bitwiseselect), [Ceiling](#32-ceiling), [CeilingScalar](#33-ceilingscalar), [CompareEqual](#34-compareequal), [CompareGreaterThan](#35-comparegreaterthan), [CompareGreaterThanOrEqual](#36-comparegreaterthanorequal), [CompareLessThan](#37-comparelessthan), [CompareLessThanOrEqual](#38-comparelessthanorequal), [CompareTest](#39-comparetest), [ConvertToInt32RoundAwayFromZero](#40-converttoint32roundawayfromzero), [ConvertToInt32RoundAwayFromZeroScalar](#41-converttoint32roundawayfromzeroscalar), [ConvertToInt32RoundToEven](#42-converttoint32roundtoeven), [ConvertToInt32RoundToEvenScalar](#43-converttoint32roundtoevenscalar), [ConvertToInt32RoundToNegativeInfinity](#44-converttoint32roundtonegativeinfinity), [ConvertToInt32RoundToNegativeInfinityScalar](#45-converttoint32roundtonegativeinfinityscalar),[...](Part1.md)
 
 
 ");
@@ -4397,7 +4397,7 @@ Vector128<ulong> Abs(Vector128<long> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.abs?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.abs?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.abs?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.abs?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabs_s16).
 
 Assembly generated:
 
@@ -4456,7 +4456,7 @@ Vector128<long> AbsSaturate(Vector128<long> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.abssaturate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.abssaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.abssaturate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.abssaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqabs_s16).
 
 Assembly generated:
 
@@ -4511,7 +4511,7 @@ Vector64<ulong> AbsScalar(Vector64<long> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabs_f64).
 
 Assembly generated:
 
@@ -4567,7 +4567,7 @@ Vector128<double> AbsoluteCompareGreaterThan(Vector128<double> left, Vector128<d
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutecomparegreaterthan?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthan?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutecomparegreaterthan?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthan?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcagt_f32).
 
 Assembly generated:
 
@@ -4623,7 +4623,7 @@ Vector128<double> AbsoluteCompareGreaterThanOrEqual(Vector128<double> left, Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutecomparegreaterthanorequal?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthanorequal?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutecomparegreaterthanorequal?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthanorequal?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcage_f32).
 
 Assembly generated:
 
@@ -4679,7 +4679,7 @@ Vector128<double> AbsoluteCompareLessThan(Vector128<double> left, Vector128<doub
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutecomparelessthan?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthan?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutecomparelessthan?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthan?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcalt_f32).
 
 Assembly generated:
 
@@ -4735,7 +4735,7 @@ Vector128<double> AbsoluteCompareLessThanOrEqual(Vector128<double> left, Vector1
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutecomparelessthanorequal?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthanorequal?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutecomparelessthanorequal?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthanorequal?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcale_f32).
 
 Assembly generated:
 
@@ -4803,7 +4803,7 @@ Vector128<double> AbsoluteDifference(Vector128<double> left, Vector128<double> r
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifference?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutedifference?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifference?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutedifference?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabd_u8).
 
 Assembly generated:
 
@@ -4867,7 +4867,7 @@ Vector128<uint> AbsoluteDifferenceAdd(Vector128<uint> addend, Vector128<uint> le
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifferenceadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifferenceadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaba_u8).
 
 Assembly generated:
 
@@ -4924,7 +4924,7 @@ Vector128<ulong> AbsoluteDifferenceWideningLower(Vector64<uint> left, Vector64<u
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifferencewideninglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifferencewideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabdl_u8).
 
 Assembly generated:
 
@@ -4982,7 +4982,7 @@ Vector128<ulong> AbsoluteDifferenceWideningLowerAndAdd(Vector128<ulong> addend, 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifferencewideninglowerandadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifferencewideninglowerandadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabal_u8).
 
 Assembly generated:
 
@@ -5039,7 +5039,7 @@ Vector128<ulong> AbsoluteDifferenceWideningUpper(Vector128<uint> left, Vector128
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifferencewideningupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifferencewideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabdl_high_u8).
 
 Assembly generated:
 
@@ -5097,7 +5097,7 @@ Vector128<ulong> AbsoluteDifferenceWideningUpperAndAdd(Vector128<ulong> addend, 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifferencewideningupperandadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absolutedifferencewideningupperandadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabal_high_u8).
 
 Assembly generated:
 
@@ -5167,7 +5167,7 @@ Vector128<double> Add(Vector128<double> left, Vector128<double> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.add?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.add?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.add?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.add?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vadd_u8).
 
 Assembly generated:
 
@@ -5224,7 +5224,7 @@ Vector64<uint> AddHighNarrowingLower(Vector128<ulong> left, Vector128<ulong> rig
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addhighnarrowinglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addhighnarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaddhn_u16).
 
 Assembly generated:
 
@@ -5282,7 +5282,7 @@ Vector128<uint> AddHighNarrowingUpper(Vector64<uint> lower, Vector128<ulong> lef
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addhighnarrowingupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addhighnarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaddhn_high_u16).
 
 Assembly generated:
 
@@ -5352,7 +5352,7 @@ Vector128<ulong> AddPairwise(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addpairwise?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addpairwise?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addpairwise?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addpairwise?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpadd_u8).
 
 Assembly generated:
 
@@ -5412,7 +5412,7 @@ Vector128<ulong> AddPairwiseWidening(Vector128<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addpairwisewidening?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addpairwisewidening?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpaddl_u8).
 
 Assembly generated:
 
@@ -5473,7 +5473,7 @@ Vector128<ulong> AddPairwiseWideningAndAdd(Vector128<ulong> addend, Vector128<ui
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addpairwisewideningandadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addpairwisewideningandadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpadal_u8).
 
 Assembly generated:
 
@@ -5526,7 +5526,7 @@ Vector64<ulong> AddPairwiseWideningAndAddScalar(Vector64<ulong> addend, Vector64
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addpairwisewideningandaddscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addpairwisewideningandaddscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpadal_s32).
 
 Assembly generated:
 
@@ -5578,7 +5578,7 @@ Vector64<ulong> AddPairwiseWideningScalar(Vector64<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addpairwisewideningscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addpairwisewideningscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpaddl_s32).
 
 Assembly generated:
 
@@ -5635,7 +5635,7 @@ Vector64<uint> AddRoundedHighNarrowingLower(Vector128<ulong> left, Vector128<ulo
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addroundedhighnarrowinglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addroundedhighnarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vraddhn_u16).
 
 Assembly generated:
 
@@ -5693,7 +5693,7 @@ Vector128<uint> AddRoundedHighNarrowingUpper(Vector64<uint> lower, Vector128<ulo
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addroundedhighnarrowingupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addroundedhighnarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vraddhn_high_u16).
 
 Assembly generated:
 
@@ -5774,7 +5774,7 @@ Vector128<ulong> AddSaturate(Vector128<ulong> left, Vector128<long> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addsaturate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addsaturate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqadd_u8).
 
 Assembly generated:
 
@@ -5843,7 +5843,7 @@ Vector64<ulong> AddSaturateScalar(Vector64<ulong> left, Vector64<long> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqadd_s64).
 
 Assembly generated:
 
@@ -5898,7 +5898,7 @@ Vector64<ulong> AddScalar(Vector64<ulong> left, Vector64<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vadd_f64).
 
 Assembly generated:
 
@@ -5961,7 +5961,7 @@ Vector128<ulong> AddWideningLower(Vector128<ulong> left, Vector64<uint> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addwideninglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addwideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaddl_u8).
 
 Assembly generated:
 
@@ -6024,7 +6024,7 @@ Vector128<ulong> AddWideningUpper(Vector128<ulong> left, Vector128<uint> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addwideningupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.addwideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaddl_high_u8).
 
 Assembly generated:
 
@@ -6095,7 +6095,7 @@ Vector128<ulong> And(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.and?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.and?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vand_u8).
 
 Assembly generated:
 
@@ -6166,7 +6166,7 @@ Vector128<ulong> BitwiseClear(Vector128<ulong> value, Vector128<ulong> mask)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.bitwiseclear?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.bitwiseclear?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vbic_u8).
 
 Assembly generated:
 
@@ -6181,27 +6181,6 @@ BitwiseClearTest(Vector64byte_0, Vector64byte_1);
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 2
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[BitwiseSelect](#1-bitwiseselect), [Ceiling](#2-ceiling), [CeilingScalar](#3-ceilingscalar), [CompareEqual](#4-compareequal), [CompareGreaterThan](#5-comparegreaterthan), [CompareGreaterThanOrEqual](#6-comparegreaterthanorequal), [CompareLessThan](#7-comparelessthan), [CompareLessThanOrEqual](#8-comparelessthanorequal), [CompareTest](#9-comparetest), [ConvertToInt32RoundAwayFromZero](#10-converttoint32roundawayfromzero), [ConvertToInt32RoundAwayFromZeroScalar](#11-converttoint32roundawayfromzeroscalar), [ConvertToInt32RoundToEven](#12-converttoint32roundtoeven), [ConvertToInt32RoundToEvenScalar](#13-converttoint32roundtoevenscalar), [ConvertToInt32RoundToNegativeInfinity](#14-converttoint32roundtonegativeinfinity), [ConvertToInt32RoundToNegativeInfinityScalar](#15-converttoint32roundtonegativeinfinityscalar), [ConvertToInt32RoundToPositiveInfinity](#16-converttoint32roundtopositiveinfinity), [ConvertToInt32RoundToPositiveInfinityScalar](#17-converttoint32roundtopositiveinfinityscalar), [ConvertToInt32RoundToZero](#18-converttoint32roundtozero), [ConvertToInt32RoundToZeroScalar](#19-converttoint32roundtozeroscalar), [ConvertToSingle](#20-converttosingle), [ConvertToSingleScalar](#21-converttosinglescalar), [ConvertToUInt32RoundAwayFromZero](#22-converttouint32roundawayfromzero), [ConvertToUInt32RoundAwayFromZeroScalar](#23-converttouint32roundawayfromzeroscalar), [ConvertToUInt32RoundToEven](#24-converttouint32roundtoeven), [ConvertToUInt32RoundToEvenScalar](#25-converttouint32roundtoevenscalar), [ConvertToUInt32RoundToNegativeInfinity](#26-converttouint32roundtonegativeinfinity), [ConvertToUInt32RoundToNegativeInfinityScalar](#27-converttouint32roundtonegativeinfinityscalar), [ConvertToUInt32RoundToPositiveInfinity](#28-converttouint32roundtopositiveinfinity), [ConvertToUInt32RoundToPositiveInfinityScalar](#29-converttouint32roundtopositiveinfinityscalar), [ConvertToUInt32RoundToZero](#30-converttouint32roundtozero),[...](Part2.md)
-
-
-");
 
 try {
 var BitwiseSelectResult = Dummy_BitwiseSelectTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
@@ -6212,9 +6191,10 @@ apiResult = BitwiseSelectResult.ToString();
 
 Console.WriteLine(
 @"
+```
+------------------------------------------------
 
-
-### 1. BitwiseSelect
+### 31. BitwiseSelect
 
 `Vector64<byte> BitwiseSelect(Vector64<byte> select, Vector64<byte> left, Vector64<byte> right)`
 
@@ -6258,7 +6238,7 @@ Vector128<ulong> BitwiseSelect(Vector128<ulong> select, Vector128<ulong> left, V
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.bitwiseselect?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.bitwiseselect?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vbsl_u8).
 
 Assembly generated:
 
@@ -6286,7 +6266,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 2. Ceiling
+### 32. Ceiling
 
 `Vector64<float> Ceiling(Vector64<float> value)`
 
@@ -6313,7 +6293,7 @@ Vector128<double> Ceiling(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.ceiling?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.ceiling?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.ceiling?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.ceiling?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrndp_f32).
 
 Assembly generated:
 
@@ -6341,7 +6321,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 3. CeilingScalar
+### 33. CeilingScalar
 
 `Vector64<double> CeilingScalar(Vector64<double> value)`
 
@@ -6365,7 +6345,7 @@ Vector64<float> CeilingScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.ceilingscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.ceilingscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrndp_f64).
 
 Assembly generated:
 
@@ -6393,7 +6373,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 4. CompareEqual
+### 34. CompareEqual
 
 `Vector64<byte> CompareEqual(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6435,7 +6415,7 @@ Vector128<ulong> CompareEqual(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.compareequal?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.compareequal?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.compareequal?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.compareequal?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vceq_u8).
 
 Assembly generated:
 
@@ -6463,7 +6443,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 5. CompareGreaterThan
+### 35. CompareGreaterThan
 
 `Vector64<byte> CompareGreaterThan(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6505,7 +6485,7 @@ Vector128<ulong> CompareGreaterThan(Vector128<ulong> left, Vector128<ulong> righ
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.comparegreaterthan?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthan?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.comparegreaterthan?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthan?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcgt_u8).
 
 Assembly generated:
 
@@ -6533,7 +6513,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 6. CompareGreaterThanOrEqual
+### 36. CompareGreaterThanOrEqual
 
 `Vector64<byte> CompareGreaterThanOrEqual(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6575,7 +6555,7 @@ Vector128<ulong> CompareGreaterThanOrEqual(Vector128<ulong> left, Vector128<ulon
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.comparegreaterthanorequal?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthanorequal?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.comparegreaterthanorequal?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthanorequal?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcge_u8).
 
 Assembly generated:
 
@@ -6603,7 +6583,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 7. CompareLessThan
+### 37. CompareLessThan
 
 `Vector64<byte> CompareLessThan(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6645,7 +6625,7 @@ Vector128<ulong> CompareLessThan(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.comparelessthan?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthan?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.comparelessthan?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthan?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vclt_u8).
 
 Assembly generated:
 
@@ -6673,7 +6653,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 8. CompareLessThanOrEqual
+### 38. CompareLessThanOrEqual
 
 `Vector64<byte> CompareLessThanOrEqual(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6715,7 +6695,7 @@ Vector128<ulong> CompareLessThanOrEqual(Vector128<ulong> left, Vector128<ulong> 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.comparelessthanorequal?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthanorequal?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.comparelessthanorequal?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthanorequal?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcle_u8).
 
 Assembly generated:
 
@@ -6743,7 +6723,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 9. CompareTest
+### 39. CompareTest
 
 `Vector64<byte> CompareTest(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6785,7 +6765,7 @@ Vector128<ulong> CompareTest(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.comparetest?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparetest?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.comparetest?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparetest?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vtst_u8).
 
 Assembly generated:
 
@@ -6813,7 +6793,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 10. ConvertToInt32RoundAwayFromZero
+### 40. ConvertToInt32RoundAwayFromZero
 
 `Vector64<int> ConvertToInt32RoundAwayFromZero(Vector64<float> value)`
 
@@ -6837,7 +6817,7 @@ Vector128<int> ConvertToInt32RoundAwayFromZero(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundawayfromzero?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundawayfromzero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvta_s32_f32).
 
 Assembly generated:
 
@@ -6865,7 +6845,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 11. ConvertToInt32RoundAwayFromZeroScalar
+### 41. ConvertToInt32RoundAwayFromZeroScalar
 
 `Vector64<int> ConvertToInt32RoundAwayFromZeroScalar(Vector64<float> value)`
 
@@ -6883,7 +6863,7 @@ private Vector64<int> ConvertToInt32RoundAwayFromZeroScalarTest(Vector64<float> 
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundawayfromzeroscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundawayfromzeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtas_s32_f32).
 
 Assembly generated:
 
@@ -6911,7 +6891,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 12. ConvertToInt32RoundToEven
+### 42. ConvertToInt32RoundToEven
 
 `Vector64<int> ConvertToInt32RoundToEven(Vector64<float> value)`
 
@@ -6935,7 +6915,7 @@ Vector128<int> ConvertToInt32RoundToEven(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtoeven?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtoeven?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtn_s32_f32).
 
 Assembly generated:
 
@@ -6963,7 +6943,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 13. ConvertToInt32RoundToEvenScalar
+### 43. ConvertToInt32RoundToEvenScalar
 
 `Vector64<int> ConvertToInt32RoundToEvenScalar(Vector64<float> value)`
 
@@ -6981,7 +6961,7 @@ private Vector64<int> ConvertToInt32RoundToEvenScalarTest(Vector64<float> value)
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtoevenscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtoevenscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtns_s32_f32).
 
 Assembly generated:
 
@@ -7009,7 +6989,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 14. ConvertToInt32RoundToNegativeInfinity
+### 44. ConvertToInt32RoundToNegativeInfinity
 
 `Vector64<int> ConvertToInt32RoundToNegativeInfinity(Vector64<float> value)`
 
@@ -7033,7 +7013,7 @@ Vector128<int> ConvertToInt32RoundToNegativeInfinity(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtonegativeinfinity?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtonegativeinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtm_s32_f32).
 
 Assembly generated:
 
@@ -7061,7 +7041,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 15. ConvertToInt32RoundToNegativeInfinityScalar
+### 45. ConvertToInt32RoundToNegativeInfinityScalar
 
 `Vector64<int> ConvertToInt32RoundToNegativeInfinityScalar(Vector64<float> value)`
 
@@ -7079,7 +7059,7 @@ private Vector64<int> ConvertToInt32RoundToNegativeInfinityScalarTest(Vector64<f
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtonegativeinfinityscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtonegativeinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtms_s32_f32).
 
 Assembly generated:
 
@@ -7094,6 +7074,27 @@ ConvertToInt32RoundToNegativeInfinityScalarTest(Vector64float_0);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: Hardware Intrinsics APIs for ARM64 - Part 2
+subtitle: With examples
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+
+
+### API list
+
+[ConvertToInt32RoundToPositiveInfinity](#1-converttoint32roundtopositiveinfinity), [ConvertToInt32RoundToPositiveInfinityScalar](#2-converttoint32roundtopositiveinfinityscalar), [ConvertToInt32RoundToZero](#3-converttoint32roundtozero), [ConvertToInt32RoundToZeroScalar](#4-converttoint32roundtozeroscalar), [ConvertToSingle](#5-converttosingle), [ConvertToSingleScalar](#6-converttosinglescalar), [ConvertToUInt32RoundAwayFromZero](#7-converttouint32roundawayfromzero), [ConvertToUInt32RoundAwayFromZeroScalar](#8-converttouint32roundawayfromzeroscalar), [ConvertToUInt32RoundToEven](#9-converttouint32roundtoeven), [ConvertToUInt32RoundToEvenScalar](#10-converttouint32roundtoevenscalar), [ConvertToUInt32RoundToNegativeInfinity](#11-converttouint32roundtonegativeinfinity), [ConvertToUInt32RoundToNegativeInfinityScalar](#12-converttouint32roundtonegativeinfinityscalar), [ConvertToUInt32RoundToPositiveInfinity](#13-converttouint32roundtopositiveinfinity), [ConvertToUInt32RoundToPositiveInfinityScalar](#14-converttouint32roundtopositiveinfinityscalar), [ConvertToUInt32RoundToZero](#15-converttouint32roundtozero), [ConvertToUInt32RoundToZeroScalar](#16-converttouint32roundtozeroscalar), [DivideScalar](#17-dividescalar), [DuplicateSelectedScalarToVector64](#18-duplicateselectedscalartovector64), [DuplicateSelectedScalarToVector128](#19-duplicateselectedscalartovector128), [DuplicateToVector64](#20-duplicatetovector64), [DuplicateToVector128](#21-duplicatetovector128), [Extract](#22-extract), [ExtractNarrowingLower](#23-extractnarrowinglower), [ExtractNarrowingSaturateLower](#24-extractnarrowingsaturatelower), [ExtractNarrowingSaturateUnsignedLower](#25-extractnarrowingsaturateunsignedlower), [ExtractNarrowingSaturateUnsignedUpper](#26-extractnarrowingsaturateunsignedupper), [ExtractNarrowingSaturateUpper](#27-extractnarrowingsaturateupper), [ExtractNarrowingUpper](#28-extractnarrowingupper), [ExtractVector64](#29-extractvector64), [ExtractVector128](#30-extractvector128), [Floor](#31-floor), [FloorScalar](#32-floorscalar), [FusedAddHalving](#33-fusedaddhalving), [FusedAddRoundedHalving](#34-fusedaddroundedhalving), [FusedMultiplyAdd](#35-fusedmultiplyadd), [FusedMultiplyAddNegatedScalar](#36-fusedmultiplyaddnegatedscalar), [FusedMultiplyAddScalar](#37-fusedmultiplyaddscalar), [FusedMultiplySubtract](#38-fusedmultiplysubtract), [FusedMultiplySubtractNegatedScalar](#39-fusedmultiplysubtractnegatedscalar), [FusedMultiplySubtractScalar](#40-fusedmultiplysubtractscalar), [FusedSubtractHalving](#41-fusedsubtracthalving), [Insert](#42-insert), [InsertScalar](#43-insertscalar), [LeadingSignCount](#44-leadingsigncount), [LeadingZeroCount](#45-leadingzerocount),[...](Part2.md)
+
+
+");
 
 try {
 var ConvertToInt32RoundToPositiveInfinityResult = Dummy_ConvertToInt32RoundToPositiveInfinityTest(Vector64float_0);
@@ -7104,10 +7105,9 @@ apiResult = ConvertToInt32RoundToPositiveInfinityResult.ToString();
 
 Console.WriteLine(
 @"
-```
-------------------------------------------------
 
-### 16. ConvertToInt32RoundToPositiveInfinity
+
+### 1. ConvertToInt32RoundToPositiveInfinity
 
 `Vector64<int> ConvertToInt32RoundToPositiveInfinity(Vector64<float> value)`
 
@@ -7131,7 +7131,7 @@ Vector128<int> ConvertToInt32RoundToPositiveInfinity(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtopositiveinfinity?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtopositiveinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtp_s32_f32).
 
 Assembly generated:
 
@@ -7159,7 +7159,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 17. ConvertToInt32RoundToPositiveInfinityScalar
+### 2. ConvertToInt32RoundToPositiveInfinityScalar
 
 `Vector64<int> ConvertToInt32RoundToPositiveInfinityScalar(Vector64<float> value)`
 
@@ -7177,7 +7177,7 @@ private Vector64<int> ConvertToInt32RoundToPositiveInfinityScalarTest(Vector64<f
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtopositiveinfinityscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtopositiveinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtps_s32_f32).
 
 Assembly generated:
 
@@ -7205,7 +7205,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 18. ConvertToInt32RoundToZero
+### 3. ConvertToInt32RoundToZero
 
 `Vector64<int> ConvertToInt32RoundToZero(Vector64<float> value)`
 
@@ -7229,7 +7229,7 @@ Vector128<int> ConvertToInt32RoundToZero(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtozero?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtozero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_s32_f32).
 
 Assembly generated:
 
@@ -7257,7 +7257,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 19. ConvertToInt32RoundToZeroScalar
+### 4. ConvertToInt32RoundToZeroScalar
 
 `Vector64<int> ConvertToInt32RoundToZeroScalar(Vector64<float> value)`
 
@@ -7275,7 +7275,7 @@ private Vector64<int> ConvertToInt32RoundToZeroScalarTest(Vector64<float> value)
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtozeroscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttoint32roundtozeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvts_s32_f32).
 
 Assembly generated:
 
@@ -7303,7 +7303,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 20. ConvertToSingle
+### 5. ConvertToSingle
 
 `Vector64<float> ConvertToSingle(Vector64<int> value)`
 
@@ -7329,7 +7329,7 @@ Vector128<float> ConvertToSingle(Vector128<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttosingle?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttosingle?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_f32_s32).
 
 Assembly generated:
 
@@ -7357,7 +7357,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 21. ConvertToSingleScalar
+### 6. ConvertToSingleScalar
 
 `Vector64<float> ConvertToSingleScalar(Vector64<int> value)`
 
@@ -7381,7 +7381,7 @@ Vector64<float> ConvertToSingleScalar(Vector64<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttosinglescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttosinglescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvts_f32_s32).
 
 Assembly generated:
 
@@ -7409,7 +7409,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 22. ConvertToUInt32RoundAwayFromZero
+### 7. ConvertToUInt32RoundAwayFromZero
 
 `Vector64<uint> ConvertToUInt32RoundAwayFromZero(Vector64<float> value)`
 
@@ -7433,7 +7433,7 @@ Vector128<uint> ConvertToUInt32RoundAwayFromZero(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundawayfromzero?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundawayfromzero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvta_u32_f32).
 
 Assembly generated:
 
@@ -7461,7 +7461,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 23. ConvertToUInt32RoundAwayFromZeroScalar
+### 8. ConvertToUInt32RoundAwayFromZeroScalar
 
 `Vector64<uint> ConvertToUInt32RoundAwayFromZeroScalar(Vector64<float> value)`
 
@@ -7479,7 +7479,7 @@ private Vector64<uint> ConvertToUInt32RoundAwayFromZeroScalarTest(Vector64<float
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundawayfromzeroscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundawayfromzeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtas_u32_f32).
 
 Assembly generated:
 
@@ -7507,7 +7507,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 24. ConvertToUInt32RoundToEven
+### 9. ConvertToUInt32RoundToEven
 
 `Vector64<uint> ConvertToUInt32RoundToEven(Vector64<float> value)`
 
@@ -7531,7 +7531,7 @@ Vector128<uint> ConvertToUInt32RoundToEven(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtoeven?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtoeven?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtn_u32_f32).
 
 Assembly generated:
 
@@ -7559,7 +7559,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 25. ConvertToUInt32RoundToEvenScalar
+### 10. ConvertToUInt32RoundToEvenScalar
 
 `Vector64<uint> ConvertToUInt32RoundToEvenScalar(Vector64<float> value)`
 
@@ -7577,7 +7577,7 @@ private Vector64<uint> ConvertToUInt32RoundToEvenScalarTest(Vector64<float> valu
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtoevenscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtoevenscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtns_u32_f32).
 
 Assembly generated:
 
@@ -7605,7 +7605,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 26. ConvertToUInt32RoundToNegativeInfinity
+### 11. ConvertToUInt32RoundToNegativeInfinity
 
 `Vector64<uint> ConvertToUInt32RoundToNegativeInfinity(Vector64<float> value)`
 
@@ -7629,7 +7629,7 @@ Vector128<uint> ConvertToUInt32RoundToNegativeInfinity(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtonegativeinfinity?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtonegativeinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtm_u32_f32).
 
 Assembly generated:
 
@@ -7657,7 +7657,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 27. ConvertToUInt32RoundToNegativeInfinityScalar
+### 12. ConvertToUInt32RoundToNegativeInfinityScalar
 
 `Vector64<uint> ConvertToUInt32RoundToNegativeInfinityScalar(Vector64<float> value)`
 
@@ -7675,7 +7675,7 @@ private Vector64<uint> ConvertToUInt32RoundToNegativeInfinityScalarTest(Vector64
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtonegativeinfinityscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtonegativeinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtms_u32_f32).
 
 Assembly generated:
 
@@ -7703,7 +7703,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 28. ConvertToUInt32RoundToPositiveInfinity
+### 13. ConvertToUInt32RoundToPositiveInfinity
 
 `Vector64<uint> ConvertToUInt32RoundToPositiveInfinity(Vector64<float> value)`
 
@@ -7727,7 +7727,7 @@ Vector128<uint> ConvertToUInt32RoundToPositiveInfinity(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtopositiveinfinity?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtopositiveinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtp_u32_f32).
 
 Assembly generated:
 
@@ -7755,7 +7755,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 29. ConvertToUInt32RoundToPositiveInfinityScalar
+### 14. ConvertToUInt32RoundToPositiveInfinityScalar
 
 `Vector64<uint> ConvertToUInt32RoundToPositiveInfinityScalar(Vector64<float> value)`
 
@@ -7773,7 +7773,7 @@ private Vector64<uint> ConvertToUInt32RoundToPositiveInfinityScalarTest(Vector64
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtopositiveinfinityscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtopositiveinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtps_u32_f32).
 
 Assembly generated:
 
@@ -7801,7 +7801,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 30. ConvertToUInt32RoundToZero
+### 15. ConvertToUInt32RoundToZero
 
 `Vector64<uint> ConvertToUInt32RoundToZero(Vector64<float> value)`
 
@@ -7825,7 +7825,7 @@ Vector128<uint> ConvertToUInt32RoundToZero(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtozero?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtozero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_u32_f32).
 
 Assembly generated:
 
@@ -7840,27 +7840,6 @@ ConvertToUInt32RoundToZeroTest(Vector64float_0);
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 3
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[ConvertToUInt32RoundToZeroScalar](#1-converttouint32roundtozeroscalar), [DivideScalar](#2-dividescalar), [DuplicateSelectedScalarToVector64](#3-duplicateselectedscalartovector64), [DuplicateSelectedScalarToVector128](#4-duplicateselectedscalartovector128), [DuplicateToVector64](#5-duplicatetovector64), [DuplicateToVector128](#6-duplicatetovector128), [Extract](#7-extract), [ExtractNarrowingLower](#8-extractnarrowinglower), [ExtractNarrowingSaturateLower](#9-extractnarrowingsaturatelower), [ExtractNarrowingSaturateUnsignedLower](#10-extractnarrowingsaturateunsignedlower), [ExtractNarrowingSaturateUnsignedUpper](#11-extractnarrowingsaturateunsignedupper), [ExtractNarrowingSaturateUpper](#12-extractnarrowingsaturateupper), [ExtractNarrowingUpper](#13-extractnarrowingupper), [ExtractVector64](#14-extractvector64), [ExtractVector128](#15-extractvector128), [Floor](#16-floor), [FloorScalar](#17-floorscalar), [FusedAddHalving](#18-fusedaddhalving), [FusedAddRoundedHalving](#19-fusedaddroundedhalving), [FusedMultiplyAdd](#20-fusedmultiplyadd), [FusedMultiplyAddNegatedScalar](#21-fusedmultiplyaddnegatedscalar), [FusedMultiplyAddScalar](#22-fusedmultiplyaddscalar), [FusedMultiplySubtract](#23-fusedmultiplysubtract), [FusedMultiplySubtractNegatedScalar](#24-fusedmultiplysubtractnegatedscalar), [FusedMultiplySubtractScalar](#25-fusedmultiplysubtractscalar), [FusedSubtractHalving](#26-fusedsubtracthalving), [Insert](#27-insert), [InsertScalar](#28-insertscalar), [LeadingSignCount](#29-leadingsigncount), [LeadingZeroCount](#30-leadingzerocount),[...](Part3.md)
-
-
-");
 
 try {
 var ConvertToUInt32RoundToZeroScalarResult = Dummy_ConvertToUInt32RoundToZeroScalarTest(Vector64float_0);
@@ -7871,9 +7850,10 @@ apiResult = ConvertToUInt32RoundToZeroScalarResult.ToString();
 
 Console.WriteLine(
 @"
+```
+------------------------------------------------
 
-
-### 1. ConvertToUInt32RoundToZeroScalar
+### 16. ConvertToUInt32RoundToZeroScalar
 
 `Vector64<uint> ConvertToUInt32RoundToZeroScalar(Vector64<float> value)`
 
@@ -7891,7 +7871,7 @@ private Vector64<uint> ConvertToUInt32RoundToZeroScalarTest(Vector64<float> valu
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtozeroscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.converttouint32roundtozeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvts_u32_f32).
 
 Assembly generated:
 
@@ -7919,7 +7899,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 2. DivideScalar
+### 17. DivideScalar
 
 `Vector64<double> DivideScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -7944,7 +7924,7 @@ Vector64<float> DivideScalar(Vector64<float> left, Vector64<float> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.dividescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.dividescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdiv_f64).
 
 Assembly generated:
 
@@ -7972,7 +7952,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 3. DuplicateSelectedScalarToVector64
+### 18. DuplicateSelectedScalarToVector64
 
 `Vector64<byte> DuplicateSelectedScalarToVector64(Vector64<byte> value, byte index)`
 
@@ -8009,7 +7989,7 @@ Vector64<uint> DuplicateSelectedScalarToVector64(Vector128<uint> value, byte ind
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicateselectedscalartovector64?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicateselectedscalartovector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdup_lane_u8).
 
 Assembly generated:
 
@@ -8037,7 +8017,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 4. DuplicateSelectedScalarToVector128
+### 19. DuplicateSelectedScalarToVector128
 
 `Vector128<byte> DuplicateSelectedScalarToVector128(Vector64<byte> value, byte index)`
 
@@ -8079,7 +8059,7 @@ Vector128<ulong> DuplicateSelectedScalarToVector128(Vector128<ulong> value, byte
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicateselectedscalartovector128?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.duplicateselectedscalartovector128?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicateselectedscalartovector128?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.duplicateselectedscalartovector128?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdupq_lane_u8).
 
 Assembly generated:
 
@@ -8107,7 +8087,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 5. DuplicateToVector64
+### 20. DuplicateToVector64
 
 `Vector64<byte> DuplicateToVector64(byte value)`
 
@@ -8136,7 +8116,7 @@ Vector64<uint> DuplicateToVector64(uint value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicatetovector64?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicatetovector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdup_n_u8).
 
 Assembly generated:
 
@@ -8164,7 +8144,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 6. DuplicateToVector128
+### 21. DuplicateToVector128
 
 `Vector128<byte> DuplicateToVector128(byte value)`
 
@@ -8198,7 +8178,7 @@ Vector128<ulong> DuplicateToVector128(ulong value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicatetovector128?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.duplicatetovector128?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicatetovector128?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.duplicatetovector128?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdupq_n_u8).
 
 Assembly generated:
 
@@ -8226,7 +8206,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 7. Extract
+### 22. Extract
 
 `byte Extract(Vector64<byte> vector, byte index)`
 
@@ -8266,7 +8246,7 @@ ulong Extract(Vector128<ulong> vector, byte index)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extract?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extract?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vget_lane_u8).
 
 Assembly generated:
 
@@ -8294,7 +8274,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 8. ExtractNarrowingLower
+### 23. ExtractNarrowingLower
 
 `Vector64<byte> ExtractNarrowingLower(Vector128<ushort> value)`
 
@@ -8322,7 +8302,7 @@ Vector64<uint> ExtractNarrowingLower(Vector128<ulong> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowinglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmovn_u16).
 
 Assembly generated:
 
@@ -8350,7 +8330,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 9. ExtractNarrowingSaturateLower
+### 24. ExtractNarrowingSaturateLower
 
 `Vector64<byte> ExtractNarrowingSaturateLower(Vector128<ushort> value)`
 
@@ -8378,7 +8358,7 @@ Vector64<uint> ExtractNarrowingSaturateLower(Vector128<ulong> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowingsaturatelower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowingsaturatelower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqmovn_u16).
 
 Assembly generated:
 
@@ -8406,7 +8386,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 10. ExtractNarrowingSaturateUnsignedLower
+### 25. ExtractNarrowingSaturateUnsignedLower
 
 `Vector64<byte> ExtractNarrowingSaturateUnsignedLower(Vector128<short> value)`
 
@@ -8431,7 +8411,7 @@ Vector64<uint> ExtractNarrowingSaturateUnsignedLower(Vector128<long> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowingsaturateunsignedlower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowingsaturateunsignedlower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqmovun_s16).
 
 Assembly generated:
 
@@ -8459,7 +8439,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 11. ExtractNarrowingSaturateUnsignedUpper
+### 26. ExtractNarrowingSaturateUnsignedUpper
 
 `Vector128<byte> ExtractNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value)`
 
@@ -8485,7 +8465,7 @@ Vector128<uint> ExtractNarrowingSaturateUnsignedUpper(Vector64<uint> lower, Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowingsaturateunsignedupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowingsaturateunsignedupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqmovun_high_s16).
 
 Assembly generated:
 
@@ -8513,7 +8493,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 12. ExtractNarrowingSaturateUpper
+### 27. ExtractNarrowingSaturateUpper
 
 `Vector128<byte> ExtractNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value)`
 
@@ -8542,7 +8522,7 @@ Vector128<uint> ExtractNarrowingSaturateUpper(Vector64<uint> lower, Vector128<ul
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowingsaturateupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowingsaturateupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqmovn_high_u16).
 
 Assembly generated:
 
@@ -8570,7 +8550,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 13. ExtractNarrowingUpper
+### 28. ExtractNarrowingUpper
 
 `Vector128<byte> ExtractNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value)`
 
@@ -8599,7 +8579,7 @@ Vector128<uint> ExtractNarrowingUpper(Vector64<uint> lower, Vector128<ulong> val
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowingupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractnarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmovn_high_u16).
 
 Assembly generated:
 
@@ -8627,7 +8607,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 14. ExtractVector64
+### 29. ExtractVector64
 
 `Vector64<byte> ExtractVector64(Vector64<byte> upper, Vector64<byte> lower, byte index)`
 
@@ -8658,7 +8638,7 @@ Vector64<uint> ExtractVector64(Vector64<uint> upper, Vector64<uint> lower, byte 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractvector64?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractvector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vext_s8).
 
 Assembly generated:
 
@@ -8686,7 +8666,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 15. ExtractVector128
+### 30. ExtractVector128
 
 `Vector128<byte> ExtractVector128(Vector128<byte> upper, Vector128<byte> lower, byte index)`
 
@@ -8720,7 +8700,7 @@ Vector128<ulong> ExtractVector128(Vector128<ulong> upper, Vector128<ulong> lower
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractvector128?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractvector128?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vextq_s8).
 
 Assembly generated:
 
@@ -8748,7 +8728,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 16. Floor
+### 31. Floor
 
 `Vector64<float> Floor(Vector64<float> value)`
 
@@ -8775,7 +8755,7 @@ Vector128<double> Floor(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.floor?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.floor?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.floor?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.floor?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrndm_f32).
 
 Assembly generated:
 
@@ -8803,7 +8783,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 17. FloorScalar
+### 32. FloorScalar
 
 `Vector64<double> FloorScalar(Vector64<double> value)`
 
@@ -8827,7 +8807,7 @@ Vector64<float> FloorScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.floorscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.floorscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrndm_f64).
 
 Assembly generated:
 
@@ -8855,7 +8835,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 18. FusedAddHalving
+### 33. FusedAddHalving
 
 `Vector64<byte> FusedAddHalving(Vector64<byte> left, Vector64<byte> right)`
 
@@ -8890,7 +8870,7 @@ Vector128<uint> FusedAddHalving(Vector128<uint> left, Vector128<uint> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedaddhalving?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedaddhalving?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vhadd_u8).
 
 Assembly generated:
 
@@ -8918,7 +8898,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 19. FusedAddRoundedHalving
+### 34. FusedAddRoundedHalving
 
 `Vector64<byte> FusedAddRoundedHalving(Vector64<byte> left, Vector64<byte> right)`
 
@@ -8953,7 +8933,7 @@ Vector128<uint> FusedAddRoundedHalving(Vector128<uint> left, Vector128<uint> rig
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedaddroundedhalving?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedaddroundedhalving?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrhadd_u8).
 
 Assembly generated:
 
@@ -8981,7 +8961,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 20. FusedMultiplyAdd
+### 35. FusedMultiplyAdd
 
 `Vector64<float> FusedMultiplyAdd(Vector64<float> addend, Vector64<float> left, Vector64<float> right)`
 
@@ -9010,7 +8990,7 @@ Vector128<double> FusedMultiplyAdd(Vector128<double> addend, Vector128<double> l
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplyadd?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplyadd?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfma_f32).
 
 Assembly generated:
 
@@ -9038,7 +9018,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 21. FusedMultiplyAddNegatedScalar
+### 36. FusedMultiplyAddNegatedScalar
 
 `Vector64<double> FusedMultiplyAddNegatedScalar(Vector64<double> addend, Vector64<double> left, Vector64<double> right)`
 
@@ -9064,7 +9044,7 @@ Vector64<float> FusedMultiplyAddNegatedScalar(Vector64<float> addend, Vector64<f
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplyaddnegatedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplyaddnegatedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfnma_f64).
 
 Assembly generated:
 
@@ -9092,7 +9072,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 22. FusedMultiplyAddScalar
+### 37. FusedMultiplyAddScalar
 
 `Vector64<double> FusedMultiplyAddScalar(Vector64<double> addend, Vector64<double> left, Vector64<double> right)`
 
@@ -9118,7 +9098,7 @@ Vector64<float> FusedMultiplyAddScalar(Vector64<float> addend, Vector64<float> l
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplyaddscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplyaddscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfma_f64).
 
 Assembly generated:
 
@@ -9146,7 +9126,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 23. FusedMultiplySubtract
+### 38. FusedMultiplySubtract
 
 `Vector64<float> FusedMultiplySubtract(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`
 
@@ -9175,7 +9155,7 @@ Vector128<double> FusedMultiplySubtract(Vector128<double> minuend, Vector128<dou
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplysubtract?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtract?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplysubtract?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtract?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfms_f32).
 
 Assembly generated:
 
@@ -9203,7 +9183,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 24. FusedMultiplySubtractNegatedScalar
+### 39. FusedMultiplySubtractNegatedScalar
 
 `Vector64<double> FusedMultiplySubtractNegatedScalar(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)`
 
@@ -9229,7 +9209,7 @@ Vector64<float> FusedMultiplySubtractNegatedScalar(Vector64<float> minuend, Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplysubtractnegatedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplysubtractnegatedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfnms_f64).
 
 Assembly generated:
 
@@ -9257,7 +9237,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 25. FusedMultiplySubtractScalar
+### 40. FusedMultiplySubtractScalar
 
 `Vector64<double> FusedMultiplySubtractScalar(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)`
 
@@ -9283,7 +9263,7 @@ Vector64<float> FusedMultiplySubtractScalar(Vector64<float> minuend, Vector64<fl
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplysubtractscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedmultiplysubtractscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfms_f64).
 
 Assembly generated:
 
@@ -9311,7 +9291,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 26. FusedSubtractHalving
+### 41. FusedSubtractHalving
 
 `Vector64<byte> FusedSubtractHalving(Vector64<byte> left, Vector64<byte> right)`
 
@@ -9346,7 +9326,7 @@ Vector128<uint> FusedSubtractHalving(Vector128<uint> left, Vector128<uint> right
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedsubtracthalving?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.fusedsubtracthalving?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vhsub_u8).
 
 Assembly generated:
 
@@ -9374,7 +9354,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 27. Insert
+### 42. Insert
 
 `Vector64<byte> Insert(Vector64<byte> vector, byte index, byte data)`
 
@@ -9415,7 +9395,7 @@ Vector128<ulong> Insert(Vector128<ulong> vector, byte index, ulong data)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.insert?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.insert?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vset_lane_u8).
 
 Assembly generated:
 
@@ -9443,7 +9423,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 28. InsertScalar
+### 43. InsertScalar
 
 `Vector128<double> InsertScalar(Vector128<double> result, byte resultIndex, Vector64<double> value)`
 
@@ -9470,7 +9450,7 @@ Vector128<ulong> InsertScalar(Vector128<ulong> result, byte resultIndex, Vector6
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.insertscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.insertscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcopyq_lane_f64).
 
 Assembly generated:
 
@@ -9498,7 +9478,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 29. LeadingSignCount
+### 44. LeadingSignCount
 
 `Vector64<short> LeadingSignCount(Vector64<short> value)`
 
@@ -9526,7 +9506,7 @@ Vector128<sbyte> LeadingSignCount(Vector128<sbyte> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.leadingsigncount?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.leadingsigncount?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcls_s16).
 
 Assembly generated:
 
@@ -9554,7 +9534,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 30. LeadingZeroCount
+### 45. LeadingZeroCount
 
 `Vector64<byte> LeadingZeroCount(Vector64<byte> value)`
 
@@ -9588,7 +9568,7 @@ Vector128<uint> LeadingZeroCount(Vector128<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.leadingzerocount?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.leadingzerocount?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vclz_u8).
 
 Assembly generated:
 
@@ -9608,7 +9588,7 @@ Console.WriteLine(
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 4
+title: Hardware Intrinsics APIs for ARM64 - Part 3
 subtitle: With examples
 tags: [work, arm64, intrinsics]
 ---
@@ -9620,7 +9600,7 @@ In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `
 
 ### API list
 
-[LoadAndInsertScalar](#1-loadandinsertscalar), [LoadAndReplicateToVector64](#2-loadandreplicatetovector64), [LoadAndReplicateToVector128](#3-loadandreplicatetovector128), [LoadVector64](#4-loadvector64), [LoadVector128](#5-loadvector128), [Max](#6-max), [MaxNumber](#7-maxnumber), [MaxNumberScalar](#8-maxnumberscalar), [MaxPairwise](#9-maxpairwise), [Min](#10-min), [MinNumber](#11-minnumber), [MinNumberScalar](#12-minnumberscalar), [MinPairwise](#13-minpairwise), [Multiply](#14-multiply), [MultiplyAdd](#15-multiplyadd), [MultiplyAddByScalar](#16-multiplyaddbyscalar), [MultiplyAddBySelectedScalar](#17-multiplyaddbyselectedscalar), [MultiplyByScalar](#18-multiplybyscalar), [MultiplyBySelectedScalar](#19-multiplybyselectedscalar), [MultiplyBySelectedScalarWideningLower](#20-multiplybyselectedscalarwideninglower), [MultiplyBySelectedScalarWideningLowerAndAdd](#21-multiplybyselectedscalarwideninglowerandadd), [MultiplyBySelectedScalarWideningLowerAndSubtract](#22-multiplybyselectedscalarwideninglowerandsubtract), [MultiplyBySelectedScalarWideningUpper](#23-multiplybyselectedscalarwideningupper), [MultiplyBySelectedScalarWideningUpperAndAdd](#24-multiplybyselectedscalarwideningupperandadd), [MultiplyBySelectedScalarWideningUpperAndSubtract](#25-multiplybyselectedscalarwideningupperandsubtract), [MultiplyDoublingByScalarSaturateHigh](#26-multiplydoublingbyscalarsaturatehigh), [MultiplyDoublingBySelectedScalarSaturateHigh](#27-multiplydoublingbyselectedscalarsaturatehigh), [MultiplyDoublingSaturateHigh](#28-multiplydoublingsaturatehigh), [MultiplyDoublingWideningLowerAndAddSaturate](#29-multiplydoublingwideninglowerandaddsaturate), [MultiplyDoublingWideningLowerAndSubtractSaturate](#30-multiplydoublingwideninglowerandsubtractsaturate),[...](Part4.md)
+[LoadAndInsertScalar](#1-loadandinsertscalar), [LoadAndReplicateToVector64](#2-loadandreplicatetovector64), [LoadAndReplicateToVector128](#3-loadandreplicatetovector128), [LoadVector64](#4-loadvector64), [LoadVector128](#5-loadvector128), [Max](#6-max), [MaxNumber](#7-maxnumber), [MaxNumberScalar](#8-maxnumberscalar), [MaxPairwise](#9-maxpairwise), [Min](#10-min), [MinNumber](#11-minnumber), [MinNumberScalar](#12-minnumberscalar), [MinPairwise](#13-minpairwise), [Multiply](#14-multiply), [MultiplyAdd](#15-multiplyadd), [MultiplyAddByScalar](#16-multiplyaddbyscalar), [MultiplyAddBySelectedScalar](#17-multiplyaddbyselectedscalar), [MultiplyByScalar](#18-multiplybyscalar), [MultiplyBySelectedScalar](#19-multiplybyselectedscalar), [MultiplyBySelectedScalarWideningLower](#20-multiplybyselectedscalarwideninglower), [MultiplyBySelectedScalarWideningLowerAndAdd](#21-multiplybyselectedscalarwideninglowerandadd), [MultiplyBySelectedScalarWideningLowerAndSubtract](#22-multiplybyselectedscalarwideninglowerandsubtract), [MultiplyBySelectedScalarWideningUpper](#23-multiplybyselectedscalarwideningupper), [MultiplyBySelectedScalarWideningUpperAndAdd](#24-multiplybyselectedscalarwideningupperandadd), [MultiplyBySelectedScalarWideningUpperAndSubtract](#25-multiplybyselectedscalarwideningupperandsubtract), [MultiplyDoublingByScalarSaturateHigh](#26-multiplydoublingbyscalarsaturatehigh), [MultiplyDoublingBySelectedScalarSaturateHigh](#27-multiplydoublingbyselectedscalarsaturatehigh), [MultiplyDoublingSaturateHigh](#28-multiplydoublingsaturatehigh), [MultiplyDoublingWideningLowerAndAddSaturate](#29-multiplydoublingwideninglowerandaddsaturate), [MultiplyDoublingWideningLowerAndSubtractSaturate](#30-multiplydoublingwideninglowerandsubtractsaturate), [MultiplyDoublingWideningLowerByScalarAndAddSaturate](#31-multiplydoublingwideninglowerbyscalarandaddsaturate), [MultiplyDoublingWideningLowerByScalarAndSubtractSaturate](#32-multiplydoublingwideninglowerbyscalarandsubtractsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate](#33-multiplydoublingwideninglowerbyselectedscalarandaddsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate](#34-multiplydoublingwideninglowerbyselectedscalarandsubtractsaturate), [MultiplyDoublingWideningSaturateLower](#35-multiplydoublingwideningsaturatelower), [MultiplyDoublingWideningSaturateLowerByScalar](#36-multiplydoublingwideningsaturatelowerbyscalar), [MultiplyDoublingWideningSaturateLowerBySelectedScalar](#37-multiplydoublingwideningsaturatelowerbyselectedscalar), [MultiplyDoublingWideningSaturateUpper](#38-multiplydoublingwideningsaturateupper), [MultiplyDoublingWideningSaturateUpperByScalar](#39-multiplydoublingwideningsaturateupperbyscalar), [MultiplyDoublingWideningSaturateUpperBySelectedScalar](#40-multiplydoublingwideningsaturateupperbyselectedscalar), [MultiplyDoublingWideningUpperAndAddSaturate](#41-multiplydoublingwideningupperandaddsaturate), [MultiplyDoublingWideningUpperAndSubtractSaturate](#42-multiplydoublingwideningupperandsubtractsaturate), [MultiplyDoublingWideningUpperByScalarAndAddSaturate](#43-multiplydoublingwideningupperbyscalarandaddsaturate), [MultiplyDoublingWideningUpperByScalarAndSubtractSaturate](#44-multiplydoublingwideningupperbyscalarandsubtractsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate](#45-multiplydoublingwideningupperbyselectedscalarandaddsaturate),[...](Part3.md)
 
 
 ");
@@ -9679,7 +9659,7 @@ Vector128<ulong> LoadAndInsertScalar(Vector128<ulong> value, byte index, ulong* 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadandinsertscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadandinsertscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vld1_lane_u8).
 
 Assembly generated:
 
@@ -9739,7 +9719,7 @@ Vector64<uint> LoadAndReplicateToVector64(uint* address)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadandreplicatetovector64?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadandreplicatetovector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vld1_dup_u8).
 
 Assembly generated:
 
@@ -9804,7 +9784,7 @@ Vector128<ulong> LoadAndReplicateToVector128(ulong* address)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadandreplicatetovector128?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.loadandreplicatetovector128?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadandreplicatetovector128?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.loadandreplicatetovector128?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vld1q_dup_u8).
 
 Assembly generated:
 
@@ -9867,7 +9847,7 @@ Vector64<ulong> LoadVector64(ulong* address)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadvector64?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadvector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vld1_u8).
 
 Assembly generated:
 
@@ -9930,7 +9910,7 @@ Vector128<ulong> LoadVector128(ulong* address)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadvector128?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadvector128?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vld1q_u8).
 
 Assembly generated:
 
@@ -9999,7 +9979,7 @@ Vector128<double> Max(Vector128<double> left, Vector128<double> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.max?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.max?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.max?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.max?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmax_u8).
 
 Assembly generated:
 
@@ -10055,7 +10035,7 @@ Vector128<double> MaxNumber(Vector128<double> left, Vector128<double> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.maxnumber?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumber?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.maxnumber?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumber?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmaxnm_f32).
 
 Assembly generated:
 
@@ -10108,7 +10088,7 @@ Vector64<float> MaxNumberScalar(Vector64<float> left, Vector64<float> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.maxnumberscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.maxnumberscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmaxnm_f64).
 
 Assembly generated:
 
@@ -10176,7 +10156,7 @@ Vector128<uint> MaxPairwise(Vector128<uint> left, Vector128<uint> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.maxpairwise?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxpairwise?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.maxpairwise?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxpairwise?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmax_u8).
 
 Assembly generated:
 
@@ -10244,7 +10224,7 @@ Vector128<double> Min(Vector128<double> left, Vector128<double> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.min?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.min?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.min?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.min?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmin_u8).
 
 Assembly generated:
 
@@ -10300,7 +10280,7 @@ Vector128<double> MinNumber(Vector128<double> left, Vector128<double> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.minnumber?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumber?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.minnumber?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumber?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vminnm_f32).
 
 Assembly generated:
 
@@ -10353,7 +10333,7 @@ Vector64<float> MinNumberScalar(Vector64<float> left, Vector64<float> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.minnumberscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.minnumberscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vminnm_f64).
 
 Assembly generated:
 
@@ -10421,7 +10401,7 @@ Vector128<uint> MinPairwise(Vector128<uint> left, Vector128<uint> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.minpairwise?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minpairwise?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.minpairwise?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minpairwise?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmin_u8).
 
 Assembly generated:
 
@@ -10489,7 +10469,7 @@ Vector128<double> Multiply(Vector128<double> left, Vector128<double> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiply?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiply?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiply?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiply?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmul_u8).
 
 Assembly generated:
 
@@ -10553,7 +10533,7 @@ Vector128<uint> MultiplyAdd(Vector128<uint> addend, Vector128<uint> left, Vector
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmla_u8).
 
 Assembly generated:
 
@@ -10613,7 +10593,7 @@ Vector128<uint> MultiplyAddByScalar(Vector128<uint> addend, Vector128<uint> left
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyaddbyscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyaddbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmla_n_s16).
 
 Assembly generated:
 
@@ -10682,7 +10662,7 @@ Vector128<uint> MultiplyAddBySelectedScalar(Vector128<uint> addend, Vector128<ui
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyaddbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyaddbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmla_lane_s16).
 
 Assembly generated:
 
@@ -10746,7 +10726,7 @@ Vector128<double> MultiplyByScalar(Vector128<double> left, Vector64<double> righ
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplybyscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplybyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmul_n_s16).
 
 Assembly generated:
 
@@ -10821,7 +10801,7 @@ Vector128<double> MultiplyBySelectedScalar(Vector128<double> left, Vector128<dou
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplybyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplybyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmul_lane_s16).
 
 Assembly generated:
 
@@ -10881,7 +10861,7 @@ Vector128<ulong> MultiplyBySelectedScalarWideningLower(Vector64<uint> left, Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideninglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmull_lane_s16).
 
 Assembly generated:
 
@@ -10942,7 +10922,7 @@ Vector128<ulong> MultiplyBySelectedScalarWideningLowerAndAdd(Vector128<ulong> ad
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideninglowerandadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideninglowerandadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmlal_lane_s16).
 
 Assembly generated:
 
@@ -11003,7 +10983,7 @@ Vector128<ulong> MultiplyBySelectedScalarWideningLowerAndSubtract(Vector128<ulon
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideninglowerandsubtract?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideninglowerandsubtract?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmlsl_lane_s16).
 
 Assembly generated:
 
@@ -11063,7 +11043,7 @@ Vector128<ulong> MultiplyBySelectedScalarWideningUpper(Vector128<uint> left, Vec
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideningupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmull_high_lane_s16).
 
 Assembly generated:
 
@@ -11124,7 +11104,7 @@ Vector128<ulong> MultiplyBySelectedScalarWideningUpperAndAdd(Vector128<ulong> ad
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideningupperandadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideningupperandadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmlal_high_lane_s16).
 
 Assembly generated:
 
@@ -11185,7 +11165,7 @@ Vector128<ulong> MultiplyBySelectedScalarWideningUpperAndSubtract(Vector128<ulon
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideningupperandsubtract?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplybyselectedscalarwideningupperandsubtract?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmlsl_high_lane_s16).
 
 Assembly generated:
 
@@ -11240,7 +11220,7 @@ Vector128<int> MultiplyDoublingByScalarSaturateHigh(Vector128<int> left, Vector6
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingbyscalarsaturatehigh?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingbyscalarsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmulh_n_s16).
 
 Assembly generated:
 
@@ -11300,7 +11280,7 @@ Vector128<int> MultiplyDoublingBySelectedScalarSaturateHigh(Vector128<int> left,
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingbyselectedscalarsaturatehigh?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingbyselectedscalarsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmulh_lane_s16).
 
 Assembly generated:
 
@@ -11355,7 +11335,7 @@ Vector128<int> MultiplyDoublingSaturateHigh(Vector128<int> left, Vector128<int> 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingsaturatehigh?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmulh_s16).
 
 Assembly generated:
 
@@ -11409,7 +11389,7 @@ Vector128<long> MultiplyDoublingWideningLowerAndAddSaturate(Vector128<long> adde
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerandaddsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerandaddsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlal_s16).
 
 Assembly generated:
 
@@ -11463,7 +11443,7 @@ Vector128<long> MultiplyDoublingWideningLowerAndSubtractSaturate(Vector128<long>
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerandsubtractsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerandsubtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlsl_s16).
 
 Assembly generated:
 
@@ -11478,27 +11458,6 @@ MultiplyDoublingWideningLowerAndSubtractSaturateTest(Vector128int_0, Vector64sho
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 5
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[MultiplyDoublingWideningLowerByScalarAndAddSaturate](#1-multiplydoublingwideninglowerbyscalarandaddsaturate), [MultiplyDoublingWideningLowerByScalarAndSubtractSaturate](#2-multiplydoublingwideninglowerbyscalarandsubtractsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate](#3-multiplydoublingwideninglowerbyselectedscalarandaddsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate](#4-multiplydoublingwideninglowerbyselectedscalarandsubtractsaturate), [MultiplyDoublingWideningSaturateLower](#5-multiplydoublingwideningsaturatelower), [MultiplyDoublingWideningSaturateLowerByScalar](#6-multiplydoublingwideningsaturatelowerbyscalar), [MultiplyDoublingWideningSaturateLowerBySelectedScalar](#7-multiplydoublingwideningsaturatelowerbyselectedscalar), [MultiplyDoublingWideningSaturateUpper](#8-multiplydoublingwideningsaturateupper), [MultiplyDoublingWideningSaturateUpperByScalar](#9-multiplydoublingwideningsaturateupperbyscalar), [MultiplyDoublingWideningSaturateUpperBySelectedScalar](#10-multiplydoublingwideningsaturateupperbyselectedscalar), [MultiplyDoublingWideningUpperAndAddSaturate](#11-multiplydoublingwideningupperandaddsaturate), [MultiplyDoublingWideningUpperAndSubtractSaturate](#12-multiplydoublingwideningupperandsubtractsaturate), [MultiplyDoublingWideningUpperByScalarAndAddSaturate](#13-multiplydoublingwideningupperbyscalarandaddsaturate), [MultiplyDoublingWideningUpperByScalarAndSubtractSaturate](#14-multiplydoublingwideningupperbyscalarandsubtractsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate](#15-multiplydoublingwideningupperbyselectedscalarandaddsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate](#16-multiplydoublingwideningupperbyselectedscalarandsubtractsaturate), [MultiplyRoundedDoublingByScalarSaturateHigh](#17-multiplyroundeddoublingbyscalarsaturatehigh), [MultiplyRoundedDoublingBySelectedScalarSaturateHigh](#18-multiplyroundeddoublingbyselectedscalarsaturatehigh), [MultiplyRoundedDoublingSaturateHigh](#19-multiplyroundeddoublingsaturatehigh), [MultiplyScalar](#20-multiplyscalar), [MultiplyScalarBySelectedScalar](#21-multiplyscalarbyselectedscalar), [MultiplySubtract](#22-multiplysubtract), [MultiplySubtractByScalar](#23-multiplysubtractbyscalar), [MultiplySubtractBySelectedScalar](#24-multiplysubtractbyselectedscalar), [MultiplyWideningLower](#25-multiplywideninglower), [MultiplyWideningLowerAndAdd](#26-multiplywideninglowerandadd), [MultiplyWideningLowerAndSubtract](#27-multiplywideninglowerandsubtract), [MultiplyWideningUpper](#28-multiplywideningupper), [MultiplyWideningUpperAndAdd](#29-multiplywideningupperandadd), [MultiplyWideningUpperAndSubtract](#30-multiplywideningupperandsubtract),[...](Part5.md)
-
-
-");
 
 try {
 var MultiplyDoublingWideningLowerByScalarAndAddSaturateResult = Dummy_MultiplyDoublingWideningLowerByScalarAndAddSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1);
@@ -11509,9 +11468,10 @@ apiResult = MultiplyDoublingWideningLowerByScalarAndAddSaturateResult.ToString()
 
 Console.WriteLine(
 @"
+```
+------------------------------------------------
 
-
-### 1. MultiplyDoublingWideningLowerByScalarAndAddSaturate
+### 31. MultiplyDoublingWideningLowerByScalarAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerByScalarAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right)`
 
@@ -11537,7 +11497,7 @@ Vector128<long> MultiplyDoublingWideningLowerByScalarAndAddSaturate(Vector128<lo
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerbyscalarandaddsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerbyscalarandaddsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlal_n_s16).
 
 Assembly generated:
 
@@ -11565,7 +11525,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 2. MultiplyDoublingWideningLowerByScalarAndSubtractSaturate
+### 32. MultiplyDoublingWideningLowerByScalarAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerByScalarAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)`
 
@@ -11591,7 +11551,7 @@ Vector128<long> MultiplyDoublingWideningLowerByScalarAndSubtractSaturate(Vector1
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerbyscalarandsubtractsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerbyscalarandsubtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlsl_n_s16).
 
 Assembly generated:
 
@@ -11619,7 +11579,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 3. MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate
+### 33. MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11648,7 +11608,7 @@ Vector128<long> MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerbyselectedscalarandaddsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerbyselectedscalarandaddsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlal_lane_s16).
 
 Assembly generated:
 
@@ -11676,7 +11636,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 4. MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate
+### 34. MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11705,7 +11665,7 @@ Vector128<long> MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerbyselectedscalarandsubtractsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideninglowerbyselectedscalarandsubtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlsl_lane_s16).
 
 Assembly generated:
 
@@ -11733,7 +11693,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 5. MultiplyDoublingWideningSaturateLower
+### 35. MultiplyDoublingWideningSaturateLower
 
 `Vector128<int> MultiplyDoublingWideningSaturateLower(Vector64<short> left, Vector64<short> right)`
 
@@ -11758,7 +11718,7 @@ Vector128<long> MultiplyDoublingWideningSaturateLower(Vector64<int> left, Vector
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturatelower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturatelower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmull_s16).
 
 Assembly generated:
 
@@ -11786,7 +11746,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 6. MultiplyDoublingWideningSaturateLowerByScalar
+### 36. MultiplyDoublingWideningSaturateLowerByScalar
 
 `Vector128<int> MultiplyDoublingWideningSaturateLowerByScalar(Vector64<short> left, Vector64<short> right)`
 
@@ -11811,7 +11771,7 @@ Vector128<long> MultiplyDoublingWideningSaturateLowerByScalar(Vector64<int> left
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturatelowerbyscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturatelowerbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmull_n_s16).
 
 Assembly generated:
 
@@ -11839,7 +11799,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 7. MultiplyDoublingWideningSaturateLowerBySelectedScalar
+### 37. MultiplyDoublingWideningSaturateLowerBySelectedScalar
 
 `Vector128<int> MultiplyDoublingWideningSaturateLowerBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11867,7 +11827,7 @@ Vector128<long> MultiplyDoublingWideningSaturateLowerBySelectedScalar(Vector64<i
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturatelowerbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturatelowerbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmull_lane_s16).
 
 Assembly generated:
 
@@ -11895,7 +11855,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 8. MultiplyDoublingWideningSaturateUpper
+### 38. MultiplyDoublingWideningSaturateUpper
 
 `Vector128<int> MultiplyDoublingWideningSaturateUpper(Vector128<short> left, Vector128<short> right)`
 
@@ -11920,7 +11880,7 @@ Vector128<long> MultiplyDoublingWideningSaturateUpper(Vector128<int> left, Vecto
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturateupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturateupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmull_high_s16).
 
 Assembly generated:
 
@@ -11948,7 +11908,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 9. MultiplyDoublingWideningSaturateUpperByScalar
+### 39. MultiplyDoublingWideningSaturateUpperByScalar
 
 `Vector128<int> MultiplyDoublingWideningSaturateUpperByScalar(Vector128<short> left, Vector64<short> right)`
 
@@ -11973,7 +11933,7 @@ Vector128<long> MultiplyDoublingWideningSaturateUpperByScalar(Vector128<int> lef
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturateupperbyscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturateupperbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmull_high_n_s16).
 
 Assembly generated:
 
@@ -12001,7 +11961,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 10. MultiplyDoublingWideningSaturateUpperBySelectedScalar
+### 40. MultiplyDoublingWideningSaturateUpperBySelectedScalar
 
 `Vector128<int> MultiplyDoublingWideningSaturateUpperBySelectedScalar(Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -12029,7 +11989,7 @@ Vector128<long> MultiplyDoublingWideningSaturateUpperBySelectedScalar(Vector128<
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturateupperbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningsaturateupperbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmull_high_lane_s16).
 
 Assembly generated:
 
@@ -12057,7 +12017,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 11. MultiplyDoublingWideningUpperAndAddSaturate
+### 41. MultiplyDoublingWideningUpperAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector128<short> right)`
 
@@ -12083,7 +12043,7 @@ Vector128<long> MultiplyDoublingWideningUpperAndAddSaturate(Vector128<long> adde
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperandaddsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperandaddsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlal_high_s16).
 
 Assembly generated:
 
@@ -12111,7 +12071,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 12. MultiplyDoublingWideningUpperAndSubtractSaturate
+### 42. MultiplyDoublingWideningUpperAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector128<short> right)`
 
@@ -12137,7 +12097,7 @@ Vector128<long> MultiplyDoublingWideningUpperAndSubtractSaturate(Vector128<long>
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperandsubtractsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperandsubtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlsl_high_s16).
 
 Assembly generated:
 
@@ -12165,7 +12125,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 13. MultiplyDoublingWideningUpperByScalarAndAddSaturate
+### 43. MultiplyDoublingWideningUpperByScalarAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperByScalarAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector64<short> right)`
 
@@ -12191,7 +12151,7 @@ Vector128<long> MultiplyDoublingWideningUpperByScalarAndAddSaturate(Vector128<lo
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperbyscalarandaddsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperbyscalarandaddsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlal_high_n_s16).
 
 Assembly generated:
 
@@ -12219,7 +12179,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 14. MultiplyDoublingWideningUpperByScalarAndSubtractSaturate
+### 44. MultiplyDoublingWideningUpperByScalarAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperByScalarAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector64<short> right)`
 
@@ -12245,7 +12205,7 @@ Vector128<long> MultiplyDoublingWideningUpperByScalarAndSubtractSaturate(Vector1
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperbyscalarandsubtractsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperbyscalarandsubtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlsl_high_n_s16).
 
 Assembly generated:
 
@@ -12273,7 +12233,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 15. MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate
+### 45. MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -12302,7 +12262,7 @@ Vector128<long> MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperbyselectedscalarandaddsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperbyselectedscalarandaddsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlal_high_lane_s16).
 
 Assembly generated:
 
@@ -12317,6 +12277,27 @@ MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturateTest(Vector128int_0, 
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: Hardware Intrinsics APIs for ARM64 - Part 4
+subtitle: With examples
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+
+
+### API list
+
+[MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate](#1-multiplydoublingwideningupperbyselectedscalarandsubtractsaturate), [MultiplyRoundedDoublingByScalarSaturateHigh](#2-multiplyroundeddoublingbyscalarsaturatehigh), [MultiplyRoundedDoublingBySelectedScalarSaturateHigh](#3-multiplyroundeddoublingbyselectedscalarsaturatehigh), [MultiplyRoundedDoublingSaturateHigh](#4-multiplyroundeddoublingsaturatehigh), [MultiplyScalar](#5-multiplyscalar), [MultiplyScalarBySelectedScalar](#6-multiplyscalarbyselectedscalar), [MultiplySubtract](#7-multiplysubtract), [MultiplySubtractByScalar](#8-multiplysubtractbyscalar), [MultiplySubtractBySelectedScalar](#9-multiplysubtractbyselectedscalar), [MultiplyWideningLower](#10-multiplywideninglower), [MultiplyWideningLowerAndAdd](#11-multiplywideninglowerandadd), [MultiplyWideningLowerAndSubtract](#12-multiplywideninglowerandsubtract), [MultiplyWideningUpper](#13-multiplywideningupper), [MultiplyWideningUpperAndAdd](#14-multiplywideningupperandadd), [MultiplyWideningUpperAndSubtract](#15-multiplywideningupperandsubtract), [Negate](#16-negate), [NegateSaturate](#17-negatesaturate), [NegateScalar](#18-negatescalar), [Not](#19-not), [Or](#20-or), [OrNot](#21-ornot), [PolynomialMultiply](#22-polynomialmultiply), [PolynomialMultiplyWideningLower](#23-polynomialmultiplywideninglower), [PolynomialMultiplyWideningUpper](#24-polynomialmultiplywideningupper), [PopCount](#25-popcount), [ReciprocalEstimate](#26-reciprocalestimate), [ReciprocalSquareRootEstimate](#27-reciprocalsquarerootestimate), [ReciprocalSquareRootStep](#28-reciprocalsquarerootstep), [ReciprocalStep](#29-reciprocalstep), [ReverseElement16](#30-reverseelement16), [ReverseElement32](#31-reverseelement32), [ReverseElement8](#32-reverseelement8), [RoundAwayFromZero](#33-roundawayfromzero), [RoundAwayFromZeroScalar](#34-roundawayfromzeroscalar), [RoundToNearest](#35-roundtonearest), [RoundToNearestScalar](#36-roundtonearestscalar), [RoundToNegativeInfinity](#37-roundtonegativeinfinity), [RoundToNegativeInfinityScalar](#38-roundtonegativeinfinityscalar), [RoundToPositiveInfinity](#39-roundtopositiveinfinity), [RoundToPositiveInfinityScalar](#40-roundtopositiveinfinityscalar), [RoundToZero](#41-roundtozero), [RoundToZeroScalar](#42-roundtozeroscalar), [ShiftArithmetic](#43-shiftarithmetic), [ShiftArithmeticRounded](#44-shiftarithmeticrounded), [ShiftArithmeticRoundedSaturate](#45-shiftarithmeticroundedsaturate),[...](Part4.md)
+
+
+");
 
 try {
 var MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateResult = Dummy_MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128int_0, Vector128short_0, Vector64short_0, byte_0);
@@ -12327,10 +12308,9 @@ apiResult = MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateResu
 
 Console.WriteLine(
 @"
-```
-------------------------------------------------
 
-### 16. MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate
+
+### 1. MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -12359,7 +12339,7 @@ Vector128<long> MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperbyselectedscalarandsubtractsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplydoublingwideningupperbyselectedscalarandsubtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlsl_high_lane_s16).
 
 Assembly generated:
 
@@ -12387,7 +12367,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 17. MultiplyRoundedDoublingByScalarSaturateHigh
+### 2. MultiplyRoundedDoublingByScalarSaturateHigh
 
 `Vector64<short> MultiplyRoundedDoublingByScalarSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
@@ -12414,7 +12394,7 @@ Vector128<int> MultiplyRoundedDoublingByScalarSaturateHigh(Vector128<int> left, 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyroundeddoublingbyscalarsaturatehigh?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyroundeddoublingbyscalarsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrdmulh_n_s16).
 
 Assembly generated:
 
@@ -12442,7 +12422,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 18. MultiplyRoundedDoublingBySelectedScalarSaturateHigh
+### 3. MultiplyRoundedDoublingBySelectedScalarSaturateHigh
 
 `Vector64<short> MultiplyRoundedDoublingBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -12474,7 +12454,7 @@ Vector128<int> MultiplyRoundedDoublingBySelectedScalarSaturateHigh(Vector128<int
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyroundeddoublingbyselectedscalarsaturatehigh?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyroundeddoublingbyselectedscalarsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrdmulh_lane_s16).
 
 Assembly generated:
 
@@ -12502,7 +12482,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 19. MultiplyRoundedDoublingSaturateHigh
+### 4. MultiplyRoundedDoublingSaturateHigh
 
 `Vector64<short> MultiplyRoundedDoublingSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
@@ -12529,7 +12509,7 @@ Vector128<int> MultiplyRoundedDoublingSaturateHigh(Vector128<int> left, Vector12
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyroundeddoublingsaturatehigh?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyroundeddoublingsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrdmulh_s16).
 
 Assembly generated:
 
@@ -12557,7 +12537,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 20. MultiplyScalar
+### 5. MultiplyScalar
 
 `Vector64<double> MultiplyScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -12582,7 +12562,7 @@ Vector64<float> MultiplyScalar(Vector64<float> left, Vector64<float> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmul_f64).
 
 Assembly generated:
 
@@ -12610,7 +12590,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 21. MultiplyScalarBySelectedScalar
+### 6. MultiplyScalarBySelectedScalar
 
 `Vector64<float> MultiplyScalarBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`
 
@@ -12639,7 +12619,7 @@ Vector64<double> MultiplyScalarBySelectedScalar(Vector64<double> left, Vector128
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyscalarbyselectedscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyscalarbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplyscalarbyselectedscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyscalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmuls_lane_f32).
 
 Assembly generated:
 
@@ -12667,7 +12647,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 22. MultiplySubtract
+### 7. MultiplySubtract
 
 `Vector64<byte> MultiplySubtract(Vector64<byte> minuend, Vector64<byte> left, Vector64<byte> right)`
 
@@ -12703,7 +12683,7 @@ Vector128<uint> MultiplySubtract(Vector128<uint> minuend, Vector128<uint> left, 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplysubtract?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplysubtract?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmls_u8).
 
 Assembly generated:
 
@@ -12731,7 +12711,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 23. MultiplySubtractByScalar
+### 8. MultiplySubtractByScalar
 
 `Vector64<short> MultiplySubtractByScalar(Vector64<short> minuend, Vector64<short> left, Vector64<short> right)`
 
@@ -12763,7 +12743,7 @@ Vector128<uint> MultiplySubtractByScalar(Vector128<uint> minuend, Vector128<uint
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplysubtractbyscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplysubtractbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmls_n_s16).
 
 Assembly generated:
 
@@ -12791,7 +12771,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 24. MultiplySubtractBySelectedScalar
+### 9. MultiplySubtractBySelectedScalar
 
 `Vector64<short> MultiplySubtractBySelectedScalar(Vector64<short> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -12832,7 +12812,7 @@ Vector128<uint> MultiplySubtractBySelectedScalar(Vector128<uint> minuend, Vector
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplysubtractbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplysubtractbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmls_lane_s16).
 
 Assembly generated:
 
@@ -12860,7 +12840,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 25. MultiplyWideningLower
+### 10. MultiplyWideningLower
 
 `Vector128<ushort> MultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
@@ -12889,7 +12869,7 @@ Vector128<ulong> MultiplyWideningLower(Vector64<uint> left, Vector64<uint> right
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideninglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmull_u8).
 
 Assembly generated:
 
@@ -12917,7 +12897,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 26. MultiplyWideningLowerAndAdd
+### 11. MultiplyWideningLowerAndAdd
 
 `Vector128<ushort> MultiplyWideningLowerAndAdd(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)`
 
@@ -12947,7 +12927,7 @@ Vector128<ulong> MultiplyWideningLowerAndAdd(Vector128<ulong> addend, Vector64<u
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideninglowerandadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideninglowerandadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmlal_u8).
 
 Assembly generated:
 
@@ -12975,7 +12955,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 27. MultiplyWideningLowerAndSubtract
+### 12. MultiplyWideningLowerAndSubtract
 
 `Vector128<ushort> MultiplyWideningLowerAndSubtract(Vector128<ushort> minuend, Vector64<byte> left, Vector64<byte> right)`
 
@@ -13005,7 +12985,7 @@ Vector128<ulong> MultiplyWideningLowerAndSubtract(Vector128<ulong> minuend, Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideninglowerandsubtract?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideninglowerandsubtract?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmlsl_u8).
 
 Assembly generated:
 
@@ -13033,7 +13013,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 28. MultiplyWideningUpper
+### 13. MultiplyWideningUpper
 
 `Vector128<ushort> MultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
@@ -13062,7 +13042,7 @@ Vector128<ulong> MultiplyWideningUpper(Vector128<uint> left, Vector128<uint> rig
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideningupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmull_high_u8).
 
 Assembly generated:
 
@@ -13090,7 +13070,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 29. MultiplyWideningUpperAndAdd
+### 14. MultiplyWideningUpperAndAdd
 
 `Vector128<ushort> MultiplyWideningUpperAndAdd(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)`
 
@@ -13120,7 +13100,7 @@ Vector128<ulong> MultiplyWideningUpperAndAdd(Vector128<ulong> addend, Vector128<
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideningupperandadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideningupperandadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmlal_high_u8).
 
 Assembly generated:
 
@@ -13148,7 +13128,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 30. MultiplyWideningUpperAndSubtract
+### 15. MultiplyWideningUpperAndSubtract
 
 `Vector128<ushort> MultiplyWideningUpperAndSubtract(Vector128<ushort> minuend, Vector128<byte> left, Vector128<byte> right)`
 
@@ -13178,7 +13158,7 @@ Vector128<ulong> MultiplyWideningUpperAndSubtract(Vector128<ulong> minuend, Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideningupperandsubtract?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.multiplywideningupperandsubtract?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmlsl_high_u8).
 
 Assembly generated:
 
@@ -13193,27 +13173,6 @@ MultiplyWideningUpperAndSubtractTest(Vector128ushort_0, Vector128byte_0, Vector1
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 6
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[Negate](#1-negate), [NegateSaturate](#2-negatesaturate), [NegateScalar](#3-negatescalar), [Not](#4-not), [Or](#5-or), [OrNot](#6-ornot), [PolynomialMultiply](#7-polynomialmultiply), [PolynomialMultiplyWideningLower](#8-polynomialmultiplywideninglower), [PolynomialMultiplyWideningUpper](#9-polynomialmultiplywideningupper), [PopCount](#10-popcount), [ReciprocalEstimate](#11-reciprocalestimate), [ReciprocalSquareRootEstimate](#12-reciprocalsquarerootestimate), [ReciprocalSquareRootStep](#13-reciprocalsquarerootstep), [ReciprocalStep](#14-reciprocalstep), [ReverseElement16](#15-reverseelement16), [ReverseElement32](#16-reverseelement32), [ReverseElement8](#17-reverseelement8), [RoundAwayFromZero](#18-roundawayfromzero), [RoundAwayFromZeroScalar](#19-roundawayfromzeroscalar), [RoundToNearest](#20-roundtonearest), [RoundToNearestScalar](#21-roundtonearestscalar), [RoundToNegativeInfinity](#22-roundtonegativeinfinity), [RoundToNegativeInfinityScalar](#23-roundtonegativeinfinityscalar), [RoundToPositiveInfinity](#24-roundtopositiveinfinity), [RoundToPositiveInfinityScalar](#25-roundtopositiveinfinityscalar), [RoundToZero](#26-roundtozero), [RoundToZeroScalar](#27-roundtozeroscalar), [ShiftArithmetic](#28-shiftarithmetic), [ShiftArithmeticRounded](#29-shiftarithmeticrounded), [ShiftArithmeticRoundedSaturate](#30-shiftarithmeticroundedsaturate),[...](Part6.md)
-
-
-");
 
 try {
 var NegateResult = Dummy_NegateTest(Vector64short_0);
@@ -13224,9 +13183,10 @@ apiResult = NegateResult.ToString();
 
 Console.WriteLine(
 @"
+```
+------------------------------------------------
 
-
-### 1. Negate
+### 16. Negate
 
 `Vector64<short> Negate(Vector64<short> value)`
 
@@ -13260,7 +13220,7 @@ Vector128<long> Negate(Vector128<long> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.negate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.negate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.negate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.negate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vneg_s16).
 
 Assembly generated:
 
@@ -13288,7 +13248,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 2. NegateSaturate
+### 17. NegateSaturate
 
 `Vector64<short> NegateSaturate(Vector64<short> value)`
 
@@ -13319,7 +13279,7 @@ Vector128<long> NegateSaturate(Vector128<long> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.negatesaturate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.negatesaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.negatesaturate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.negatesaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqneg_s16).
 
 Assembly generated:
 
@@ -13347,7 +13307,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 3. NegateScalar
+### 18. NegateScalar
 
 `Vector64<double> NegateScalar(Vector64<double> value)`
 
@@ -13374,7 +13334,7 @@ Vector64<long> NegateScalar(Vector64<long> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.negatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.negatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.negatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.negatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vneg_f64).
 
 Assembly generated:
 
@@ -13402,7 +13362,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 4. Not
+### 19. Not
 
 `Vector64<byte> Not(Vector64<byte> value)`
 
@@ -13444,7 +13404,7 @@ Vector128<ulong> Not(Vector128<ulong> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.not?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.not?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmvn_u8).
 
 Assembly generated:
 
@@ -13472,7 +13432,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 5. Or
+### 20. Or
 
 `Vector64<byte> Or(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13515,7 +13475,7 @@ Vector128<ulong> Or(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.or?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.or?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vorr_u8).
 
 Assembly generated:
 
@@ -13543,7 +13503,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 6. OrNot
+### 21. OrNot
 
 `Vector64<byte> OrNot(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13586,7 +13546,7 @@ Vector128<ulong> OrNot(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.ornot?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.ornot?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vorn_u8).
 
 Assembly generated:
 
@@ -13614,7 +13574,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 7. PolynomialMultiply
+### 22. PolynomialMultiply
 
 `Vector64<byte> PolynomialMultiply(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13641,7 +13601,7 @@ Vector128<sbyte> PolynomialMultiply(Vector128<sbyte> left, Vector128<sbyte> righ
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.polynomialmultiply?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.polynomialmultiply?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmul_p8).
 
 Assembly generated:
 
@@ -13669,7 +13629,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 8. PolynomialMultiplyWideningLower
+### 23. PolynomialMultiplyWideningLower
 
 `Vector128<ushort> PolynomialMultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13694,7 +13654,7 @@ Vector128<short> PolynomialMultiplyWideningLower(Vector64<sbyte> left, Vector64<
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.polynomialmultiplywideninglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.polynomialmultiplywideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmull_p8).
 
 Assembly generated:
 
@@ -13722,7 +13682,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 9. PolynomialMultiplyWideningUpper
+### 24. PolynomialMultiplyWideningUpper
 
 `Vector128<ushort> PolynomialMultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
@@ -13747,7 +13707,7 @@ Vector128<short> PolynomialMultiplyWideningUpper(Vector128<sbyte> left, Vector12
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.polynomialmultiplywideningupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.polynomialmultiplywideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmull_high_p8).
 
 Assembly generated:
 
@@ -13775,7 +13735,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 10. PopCount
+### 25. PopCount
 
 `Vector64<byte> PopCount(Vector64<byte> value)`
 
@@ -13801,7 +13761,7 @@ Vector128<sbyte> PopCount(Vector128<sbyte> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.popcount?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.popcount?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcnt_u8).
 
 Assembly generated:
 
@@ -13829,7 +13789,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 11. ReciprocalEstimate
+### 26. ReciprocalEstimate
 
 `Vector64<float> ReciprocalEstimate(Vector64<float> value)`
 
@@ -13858,7 +13818,7 @@ Vector128<double> ReciprocalEstimate(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reciprocalestimate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalestimate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reciprocalestimate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalestimate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecpe_f32).
 
 Assembly generated:
 
@@ -13886,7 +13846,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 12. ReciprocalSquareRootEstimate
+### 27. ReciprocalSquareRootEstimate
 
 `Vector64<float> ReciprocalSquareRootEstimate(Vector64<float> value)`
 
@@ -13915,7 +13875,7 @@ Vector128<double> ReciprocalSquareRootEstimate(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reciprocalsquarerootestimate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootestimate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reciprocalsquarerootestimate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootestimate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsqrte_f32).
 
 Assembly generated:
 
@@ -13943,7 +13903,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 13. ReciprocalSquareRootStep
+### 28. ReciprocalSquareRootStep
 
 `Vector64<float> ReciprocalSquareRootStep(Vector64<float> left, Vector64<float> right)`
 
@@ -13971,7 +13931,7 @@ Vector128<double> ReciprocalSquareRootStep(Vector128<double> left, Vector128<dou
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reciprocalsquarerootstep?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootstep?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reciprocalsquarerootstep?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootstep?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsqrts_f32).
 
 Assembly generated:
 
@@ -13999,7 +13959,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 14. ReciprocalStep
+### 29. ReciprocalStep
 
 `Vector64<float> ReciprocalStep(Vector64<float> left, Vector64<float> right)`
 
@@ -14027,7 +13987,7 @@ Vector128<double> ReciprocalStep(Vector128<double> left, Vector128<double> right
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reciprocalstep?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalstep?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reciprocalstep?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalstep?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecps_f32).
 
 Assembly generated:
 
@@ -14055,7 +14015,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 15. ReverseElement16
+### 30. ReverseElement16
 
 `Vector64<int> ReverseElement16(Vector64<int> value)`
 
@@ -14085,7 +14045,7 @@ Vector128<ulong> ReverseElement16(Vector128<ulong> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reverseelement16?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reverseelement16?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrev32_s16).
 
 Assembly generated:
 
@@ -14113,7 +14073,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 16. ReverseElement32
+### 31. ReverseElement32
 
 `Vector64<long> ReverseElement32(Vector64<long> value)`
 
@@ -14139,7 +14099,7 @@ Vector128<ulong> ReverseElement32(Vector128<ulong> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reverseelement32?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reverseelement32?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrev64_s32).
 
 Assembly generated:
 
@@ -14167,7 +14127,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 17. ReverseElement8
+### 32. ReverseElement8
 
 `Vector64<short> ReverseElement8(Vector64<short> value)`
 
@@ -14201,7 +14161,7 @@ Vector128<ulong> ReverseElement8(Vector128<ulong> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reverseelement8?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.reverseelement8?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrev16_s8).
 
 Assembly generated:
 
@@ -14229,7 +14189,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 18. RoundAwayFromZero
+### 33. RoundAwayFromZero
 
 `Vector64<float> RoundAwayFromZero(Vector64<float> value)`
 
@@ -14256,7 +14216,7 @@ Vector128<double> RoundAwayFromZero(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundawayfromzero?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.roundawayfromzero?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundawayfromzero?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.roundawayfromzero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrnda_f32).
 
 Assembly generated:
 
@@ -14284,7 +14244,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 19. RoundAwayFromZeroScalar
+### 34. RoundAwayFromZeroScalar
 
 `Vector64<double> RoundAwayFromZeroScalar(Vector64<double> value)`
 
@@ -14308,7 +14268,7 @@ Vector64<float> RoundAwayFromZeroScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundawayfromzeroscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundawayfromzeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrnda_f64).
 
 Assembly generated:
 
@@ -14336,7 +14296,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 20. RoundToNearest
+### 35. RoundToNearest
 
 `Vector64<float> RoundToNearest(Vector64<float> value)`
 
@@ -14363,7 +14323,7 @@ Vector128<double> RoundToNearest(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtonearest?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.roundtonearest?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtonearest?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.roundtonearest?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrndn_f32).
 
 Assembly generated:
 
@@ -14391,7 +14351,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 21. RoundToNearestScalar
+### 36. RoundToNearestScalar
 
 `Vector64<double> RoundToNearestScalar(Vector64<double> value)`
 
@@ -14415,7 +14375,7 @@ Vector64<float> RoundToNearestScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtonearestscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtonearestscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrndn_f64).
 
 Assembly generated:
 
@@ -14443,7 +14403,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 22. RoundToNegativeInfinity
+### 37. RoundToNegativeInfinity
 
 `Vector64<float> RoundToNegativeInfinity(Vector64<float> value)`
 
@@ -14470,7 +14430,7 @@ Vector128<double> RoundToNegativeInfinity(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtonegativeinfinity?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.roundtonegativeinfinity?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtonegativeinfinity?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.roundtonegativeinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrndm_f32).
 
 Assembly generated:
 
@@ -14498,7 +14458,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 23. RoundToNegativeInfinityScalar
+### 38. RoundToNegativeInfinityScalar
 
 `Vector64<double> RoundToNegativeInfinityScalar(Vector64<double> value)`
 
@@ -14522,7 +14482,7 @@ Vector64<float> RoundToNegativeInfinityScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtonegativeinfinityscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtonegativeinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrndm_f64).
 
 Assembly generated:
 
@@ -14550,7 +14510,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 24. RoundToPositiveInfinity
+### 39. RoundToPositiveInfinity
 
 `Vector64<float> RoundToPositiveInfinity(Vector64<float> value)`
 
@@ -14577,7 +14537,7 @@ Vector128<double> RoundToPositiveInfinity(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtopositiveinfinity?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.roundtopositiveinfinity?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtopositiveinfinity?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.roundtopositiveinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrndp_f32).
 
 Assembly generated:
 
@@ -14605,7 +14565,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 25. RoundToPositiveInfinityScalar
+### 40. RoundToPositiveInfinityScalar
 
 `Vector64<double> RoundToPositiveInfinityScalar(Vector64<double> value)`
 
@@ -14629,7 +14589,7 @@ Vector64<float> RoundToPositiveInfinityScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtopositiveinfinityscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtopositiveinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrndp_f64).
 
 Assembly generated:
 
@@ -14657,7 +14617,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 26. RoundToZero
+### 41. RoundToZero
 
 `Vector64<float> RoundToZero(Vector64<float> value)`
 
@@ -14684,7 +14644,7 @@ Vector128<double> RoundToZero(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtozero?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.roundtozero?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtozero?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.roundtozero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrnd_f32).
 
 Assembly generated:
 
@@ -14712,7 +14672,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 27. RoundToZeroScalar
+### 42. RoundToZeroScalar
 
 `Vector64<double> RoundToZeroScalar(Vector64<double> value)`
 
@@ -14736,7 +14696,7 @@ Vector64<float> RoundToZeroScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtozeroscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.roundtozeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrnd_f64).
 
 Assembly generated:
 
@@ -14764,7 +14724,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 28. ShiftArithmetic
+### 43. ShiftArithmetic
 
 `Vector64<short> ShiftArithmetic(Vector64<short> value, Vector64<short> count)`
 
@@ -14794,7 +14754,7 @@ Vector128<sbyte> ShiftArithmetic(Vector128<sbyte> value, Vector128<sbyte> count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmetic?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmetic?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshl_s16).
 
 Assembly generated:
 
@@ -14822,7 +14782,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 29. ShiftArithmeticRounded
+### 44. ShiftArithmeticRounded
 
 `Vector64<short> ShiftArithmeticRounded(Vector64<short> value, Vector64<short> count)`
 
@@ -14852,7 +14812,7 @@ Vector128<sbyte> ShiftArithmeticRounded(Vector128<sbyte> value, Vector128<sbyte>
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticrounded?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticrounded?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrshl_s16).
 
 Assembly generated:
 
@@ -14880,7 +14840,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 30. ShiftArithmeticRoundedSaturate
+### 45. ShiftArithmeticRoundedSaturate
 
 `Vector64<short> ShiftArithmeticRoundedSaturate(Vector64<short> value, Vector64<short> count)`
 
@@ -14910,7 +14870,7 @@ Vector128<sbyte> ShiftArithmeticRoundedSaturate(Vector128<sbyte> value, Vector12
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticroundedsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticroundedsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshl_s16).
 
 Assembly generated:
 
@@ -14930,7 +14890,7 @@ Console.WriteLine(
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 7
+title: Hardware Intrinsics APIs for ARM64 - Part 5
 subtitle: With examples
 tags: [work, arm64, intrinsics]
 ---
@@ -14942,7 +14902,7 @@ In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `
 
 ### API list
 
-[ShiftArithmeticRoundedSaturateScalar](#1-shiftarithmeticroundedsaturatescalar), [ShiftArithmeticRoundedScalar](#2-shiftarithmeticroundedscalar), [ShiftArithmeticSaturate](#3-shiftarithmeticsaturate), [ShiftArithmeticSaturateScalar](#4-shiftarithmeticsaturatescalar), [ShiftArithmeticScalar](#5-shiftarithmeticscalar), [ShiftLeftAndInsert](#6-shiftleftandinsert), [ShiftLeftAndInsertScalar](#7-shiftleftandinsertscalar), [ShiftLeftLogical](#8-shiftleftlogical), [ShiftLeftLogicalSaturate](#9-shiftleftlogicalsaturate), [ShiftLeftLogicalSaturateScalar](#10-shiftleftlogicalsaturatescalar), [ShiftLeftLogicalSaturateUnsigned](#11-shiftleftlogicalsaturateunsigned), [ShiftLeftLogicalSaturateUnsignedScalar](#12-shiftleftlogicalsaturateunsignedscalar), [ShiftLeftLogicalScalar](#13-shiftleftlogicalscalar), [ShiftLeftLogicalWideningLower](#14-shiftleftlogicalwideninglower), [ShiftLeftLogicalWideningUpper](#15-shiftleftlogicalwideningupper), [ShiftLogical](#16-shiftlogical), [ShiftLogicalRounded](#17-shiftlogicalrounded), [ShiftLogicalRoundedSaturate](#18-shiftlogicalroundedsaturate), [ShiftLogicalRoundedSaturateScalar](#19-shiftlogicalroundedsaturatescalar), [ShiftLogicalRoundedScalar](#20-shiftlogicalroundedscalar), [ShiftLogicalSaturate](#21-shiftlogicalsaturate), [ShiftLogicalSaturateScalar](#22-shiftlogicalsaturatescalar), [ShiftLogicalScalar](#23-shiftlogicalscalar), [ShiftRightAndInsert](#24-shiftrightandinsert), [ShiftRightAndInsertScalar](#25-shiftrightandinsertscalar), [ShiftRightArithmetic](#26-shiftrightarithmetic), [ShiftRightArithmeticAdd](#27-shiftrightarithmeticadd), [ShiftRightArithmeticAddScalar](#28-shiftrightarithmeticaddscalar), [ShiftRightArithmeticNarrowingSaturateLower](#29-shiftrightarithmeticnarrowingsaturatelower), [ShiftRightArithmeticNarrowingSaturateUnsignedLower](#30-shiftrightarithmeticnarrowingsaturateunsignedlower),[...](Part7.md)
+[ShiftArithmeticRoundedSaturateScalar](#1-shiftarithmeticroundedsaturatescalar), [ShiftArithmeticRoundedScalar](#2-shiftarithmeticroundedscalar), [ShiftArithmeticSaturate](#3-shiftarithmeticsaturate), [ShiftArithmeticSaturateScalar](#4-shiftarithmeticsaturatescalar), [ShiftArithmeticScalar](#5-shiftarithmeticscalar), [ShiftLeftAndInsert](#6-shiftleftandinsert), [ShiftLeftAndInsertScalar](#7-shiftleftandinsertscalar), [ShiftLeftLogical](#8-shiftleftlogical), [ShiftLeftLogicalSaturate](#9-shiftleftlogicalsaturate), [ShiftLeftLogicalSaturateScalar](#10-shiftleftlogicalsaturatescalar), [ShiftLeftLogicalSaturateUnsigned](#11-shiftleftlogicalsaturateunsigned), [ShiftLeftLogicalSaturateUnsignedScalar](#12-shiftleftlogicalsaturateunsignedscalar), [ShiftLeftLogicalScalar](#13-shiftleftlogicalscalar), [ShiftLeftLogicalWideningLower](#14-shiftleftlogicalwideninglower), [ShiftLeftLogicalWideningUpper](#15-shiftleftlogicalwideningupper), [ShiftLogical](#16-shiftlogical), [ShiftLogicalRounded](#17-shiftlogicalrounded), [ShiftLogicalRoundedSaturate](#18-shiftlogicalroundedsaturate), [ShiftLogicalRoundedSaturateScalar](#19-shiftlogicalroundedsaturatescalar), [ShiftLogicalRoundedScalar](#20-shiftlogicalroundedscalar), [ShiftLogicalSaturate](#21-shiftlogicalsaturate), [ShiftLogicalSaturateScalar](#22-shiftlogicalsaturatescalar), [ShiftLogicalScalar](#23-shiftlogicalscalar), [ShiftRightAndInsert](#24-shiftrightandinsert), [ShiftRightAndInsertScalar](#25-shiftrightandinsertscalar), [ShiftRightArithmetic](#26-shiftrightarithmetic), [ShiftRightArithmeticAdd](#27-shiftrightarithmeticadd), [ShiftRightArithmeticAddScalar](#28-shiftrightarithmeticaddscalar), [ShiftRightArithmeticNarrowingSaturateLower](#29-shiftrightarithmeticnarrowingsaturatelower), [ShiftRightArithmeticNarrowingSaturateUnsignedLower](#30-shiftrightarithmeticnarrowingsaturateunsignedlower), [ShiftRightArithmeticNarrowingSaturateUnsignedUpper](#31-shiftrightarithmeticnarrowingsaturateunsignedupper), [ShiftRightArithmeticNarrowingSaturateUpper](#32-shiftrightarithmeticnarrowingsaturateupper), [ShiftRightArithmeticRounded](#33-shiftrightarithmeticrounded), [ShiftRightArithmeticRoundedAdd](#34-shiftrightarithmeticroundedadd), [ShiftRightArithmeticRoundedAddScalar](#35-shiftrightarithmeticroundedaddscalar), [ShiftRightArithmeticRoundedNarrowingSaturateLower](#36-shiftrightarithmeticroundednarrowingsaturatelower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower](#37-shiftrightarithmeticroundednarrowingsaturateunsignedlower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper](#38-shiftrightarithmeticroundednarrowingsaturateunsignedupper), [ShiftRightArithmeticRoundedNarrowingSaturateUpper](#39-shiftrightarithmeticroundednarrowingsaturateupper), [ShiftRightArithmeticRoundedScalar](#40-shiftrightarithmeticroundedscalar), [ShiftRightArithmeticScalar](#41-shiftrightarithmeticscalar), [ShiftRightLogical](#42-shiftrightlogical), [ShiftRightLogicalAdd](#43-shiftrightlogicaladd), [ShiftRightLogicalAddScalar](#44-shiftrightlogicaladdscalar), [ShiftRightLogicalNarrowingLower](#45-shiftrightlogicalnarrowinglower),[...](Part5.md)
 
 
 ");
@@ -14987,7 +14947,7 @@ Vector64<sbyte> ShiftArithmeticRoundedSaturateScalar(Vector64<sbyte> value, Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticroundedsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftarithmeticroundedsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticroundedsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftarithmeticroundedsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshl_s64).
 
 Assembly generated:
 
@@ -15034,7 +14994,7 @@ private Vector64<long> ShiftArithmeticRoundedScalarTest(Vector64<long> value, Ve
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticroundedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticroundedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrshl_s64).
 
 Assembly generated:
 
@@ -15092,7 +15052,7 @@ Vector128<sbyte> ShiftArithmeticSaturate(Vector128<sbyte> value, Vector128<sbyte
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshl_s16).
 
 Assembly generated:
 
@@ -15149,7 +15109,7 @@ Vector64<sbyte> ShiftArithmeticSaturateScalar(Vector64<sbyte> value, Vector64<sb
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftarithmeticsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftarithmeticsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshl_s64).
 
 Assembly generated:
 
@@ -15196,7 +15156,7 @@ private Vector64<long> ShiftArithmeticScalarTest(Vector64<long> value, Vector64<
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftarithmeticscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshl_s64).
 
 Assembly generated:
 
@@ -15262,7 +15222,7 @@ Vector128<ulong> ShiftLeftAndInsert(Vector128<ulong> left, Vector128<ulong> righ
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftandinsert?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftandinsert?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsli_n_u8).
 
 Assembly generated:
 
@@ -15316,7 +15276,7 @@ Vector64<ulong> ShiftLeftAndInsertScalar(Vector64<ulong> left, Vector64<ulong> r
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftandinsertscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftandinsertscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vslid_n_s64).
 
 Assembly generated:
 
@@ -15380,7 +15340,7 @@ Vector128<ulong> ShiftLeftLogical(Vector128<ulong> value, byte count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogical?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogical?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshl_n_u8).
 
 Assembly generated:
 
@@ -15445,7 +15405,7 @@ Vector128<ulong> ShiftLeftLogicalSaturate(Vector128<ulong> value, byte count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshl_n_u8).
 
 Assembly generated:
 
@@ -15506,7 +15466,7 @@ Vector64<uint> ShiftLeftLogicalSaturateScalar(Vector64<uint> value, byte count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftleftlogicalsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftleftlogicalsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshl_n_s64).
 
 Assembly generated:
 
@@ -15564,7 +15524,7 @@ Vector128<byte> ShiftLeftLogicalSaturateUnsigned(Vector128<sbyte> value, byte co
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalsaturateunsigned?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalsaturateunsigned?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshlu_n_s16).
 
 Assembly generated:
 
@@ -15621,7 +15581,7 @@ Vector64<byte> ShiftLeftLogicalSaturateUnsignedScalar(Vector64<sbyte> value, byt
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalsaturateunsignedscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftleftlogicalsaturateunsignedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalsaturateunsignedscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftleftlogicalsaturateunsignedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshlu_n_s64).
 
 Assembly generated:
 
@@ -15674,7 +15634,7 @@ Vector64<ulong> ShiftLeftLogicalScalar(Vector64<ulong> value, byte count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshl_n_s64).
 
 Assembly generated:
 
@@ -15731,7 +15691,7 @@ Vector128<ulong> ShiftLeftLogicalWideningLower(Vector64<uint> value, byte count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalwideninglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalwideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshll_n_u8).
 
 Assembly generated:
 
@@ -15788,7 +15748,7 @@ Vector128<ulong> ShiftLeftLogicalWideningUpper(Vector128<uint> value, byte count
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalwideningupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftleftlogicalwideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshll_high_n_u8).
 
 Assembly generated:
 
@@ -15853,7 +15813,7 @@ Vector128<ulong> ShiftLogical(Vector128<ulong> value, Vector128<long> count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogical?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogical?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshl_u8).
 
 Assembly generated:
 
@@ -15918,7 +15878,7 @@ Vector128<ulong> ShiftLogicalRounded(Vector128<ulong> value, Vector128<long> cou
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalrounded?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalrounded?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrshl_u8).
 
 Assembly generated:
 
@@ -15983,7 +15943,7 @@ Vector128<ulong> ShiftLogicalRoundedSaturate(Vector128<ulong> value, Vector128<l
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalroundedsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalroundedsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshl_u8).
 
 Assembly generated:
 
@@ -16044,7 +16004,7 @@ Vector64<uint> ShiftLogicalRoundedSaturateScalar(Vector64<uint> value, Vector64<
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalroundedsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftlogicalroundedsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalroundedsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftlogicalroundedsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshl_u64).
 
 Assembly generated:
 
@@ -16097,7 +16057,7 @@ Vector64<ulong> ShiftLogicalRoundedScalar(Vector64<ulong> value, Vector64<long> 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalroundedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalroundedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrshl_u64).
 
 Assembly generated:
 
@@ -16162,7 +16122,7 @@ Vector128<ulong> ShiftLogicalSaturate(Vector128<ulong> value, Vector128<long> co
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshl_u8).
 
 Assembly generated:
 
@@ -16223,7 +16183,7 @@ Vector64<uint> ShiftLogicalSaturateScalar(Vector64<uint> value, Vector64<int> co
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftlogicalsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftlogicalsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshl_u64).
 
 Assembly generated:
 
@@ -16276,7 +16236,7 @@ Vector64<ulong> ShiftLogicalScalar(Vector64<ulong> value, Vector64<long> count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftlogicalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshl_u64).
 
 Assembly generated:
 
@@ -16342,7 +16302,7 @@ Vector128<ulong> ShiftRightAndInsert(Vector128<ulong> left, Vector128<ulong> rig
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightandinsert?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightandinsert?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsri_n_u8).
 
 Assembly generated:
 
@@ -16396,7 +16356,7 @@ Vector64<ulong> ShiftRightAndInsertScalar(Vector64<ulong> left, Vector64<ulong> 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightandinsertscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightandinsertscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsrid_n_s64).
 
 Assembly generated:
 
@@ -16454,7 +16414,7 @@ Vector128<sbyte> ShiftRightArithmetic(Vector128<sbyte> value, byte count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmetic?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmetic?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshr_n_s16).
 
 Assembly generated:
 
@@ -16513,7 +16473,7 @@ Vector128<sbyte> ShiftRightArithmeticAdd(Vector128<sbyte> addend, Vector128<sbyt
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsra_n_s16).
 
 Assembly generated:
 
@@ -16561,7 +16521,7 @@ private Vector64<long> ShiftRightArithmeticAddScalarTest(Vector64<long> addend, 
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticaddscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticaddscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsra_n_s64).
 
 Assembly generated:
 
@@ -16615,7 +16575,7 @@ Vector64<sbyte> ShiftRightArithmeticNarrowingSaturateLower(Vector128<short> valu
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticnarrowingsaturatelower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticnarrowingsaturatelower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrn_n_s32).
 
 Assembly generated:
 
@@ -16669,7 +16629,7 @@ Vector64<uint> ShiftRightArithmeticNarrowingSaturateUnsignedLower(Vector128<long
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticnarrowingsaturateunsignedlower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticnarrowingsaturateunsignedlower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrun_n_s16).
 
 Assembly generated:
 
@@ -16684,27 +16644,6 @@ ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0)
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 8
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[ShiftRightArithmeticNarrowingSaturateUnsignedUpper](#1-shiftrightarithmeticnarrowingsaturateunsignedupper), [ShiftRightArithmeticNarrowingSaturateUpper](#2-shiftrightarithmeticnarrowingsaturateupper), [ShiftRightArithmeticRounded](#3-shiftrightarithmeticrounded), [ShiftRightArithmeticRoundedAdd](#4-shiftrightarithmeticroundedadd), [ShiftRightArithmeticRoundedAddScalar](#5-shiftrightarithmeticroundedaddscalar), [ShiftRightArithmeticRoundedNarrowingSaturateLower](#6-shiftrightarithmeticroundednarrowingsaturatelower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower](#7-shiftrightarithmeticroundednarrowingsaturateunsignedlower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper](#8-shiftrightarithmeticroundednarrowingsaturateunsignedupper), [ShiftRightArithmeticRoundedNarrowingSaturateUpper](#9-shiftrightarithmeticroundednarrowingsaturateupper), [ShiftRightArithmeticRoundedScalar](#10-shiftrightarithmeticroundedscalar), [ShiftRightArithmeticScalar](#11-shiftrightarithmeticscalar), [ShiftRightLogical](#12-shiftrightlogical), [ShiftRightLogicalAdd](#13-shiftrightlogicaladd), [ShiftRightLogicalAddScalar](#14-shiftrightlogicaladdscalar), [ShiftRightLogicalNarrowingLower](#15-shiftrightlogicalnarrowinglower), [ShiftRightLogicalNarrowingSaturateLower](#16-shiftrightlogicalnarrowingsaturatelower), [ShiftRightLogicalNarrowingSaturateUpper](#17-shiftrightlogicalnarrowingsaturateupper), [ShiftRightLogicalNarrowingUpper](#18-shiftrightlogicalnarrowingupper), [ShiftRightLogicalRounded](#19-shiftrightlogicalrounded), [ShiftRightLogicalRoundedAdd](#20-shiftrightlogicalroundedadd), [ShiftRightLogicalRoundedAddScalar](#21-shiftrightlogicalroundedaddscalar), [ShiftRightLogicalRoundedNarrowingLower](#22-shiftrightlogicalroundednarrowinglower), [ShiftRightLogicalRoundedNarrowingSaturateLower](#23-shiftrightlogicalroundednarrowingsaturatelower), [ShiftRightLogicalRoundedNarrowingSaturateUpper](#24-shiftrightlogicalroundednarrowingsaturateupper), [ShiftRightLogicalRoundedNarrowingUpper](#25-shiftrightlogicalroundednarrowingupper), [ShiftRightLogicalRoundedScalar](#26-shiftrightlogicalroundedscalar), [ShiftRightLogicalScalar](#27-shiftrightlogicalscalar), [SignExtendWideningLower](#28-signextendwideninglower), [SignExtendWideningUpper](#29-signextendwideningupper), [SqrtScalar](#30-sqrtscalar),[...](Part8.md)
-
-
-");
 
 try {
 var ShiftRightArithmeticNarrowingSaturateUnsignedUpperResult = Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0, byte_0);
@@ -16715,9 +16654,10 @@ apiResult = ShiftRightArithmeticNarrowingSaturateUnsignedUpperResult.ToString();
 
 Console.WriteLine(
 @"
+```
+------------------------------------------------
 
-
-### 1. ShiftRightArithmeticNarrowingSaturateUnsignedUpper
+### 31. ShiftRightArithmeticNarrowingSaturateUnsignedUpper
 
 `Vector128<byte> ShiftRightArithmeticNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`
 
@@ -16744,7 +16684,7 @@ Vector128<uint> ShiftRightArithmeticNarrowingSaturateUnsignedUpper(Vector64<uint
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticnarrowingsaturateunsignedupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticnarrowingsaturateunsignedupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrun_high_n_s16).
 
 Assembly generated:
 
@@ -16772,7 +16712,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 2. ShiftRightArithmeticNarrowingSaturateUpper
+### 32. ShiftRightArithmeticNarrowingSaturateUpper
 
 `Vector128<short> ShiftRightArithmeticNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`
 
@@ -16799,7 +16739,7 @@ Vector128<sbyte> ShiftRightArithmeticNarrowingSaturateUpper(Vector64<sbyte> lowe
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticnarrowingsaturateupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticnarrowingsaturateupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrn_high_n_s32).
 
 Assembly generated:
 
@@ -16827,7 +16767,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 3. ShiftRightArithmeticRounded
+### 33. ShiftRightArithmeticRounded
 
 `Vector64<short> ShiftRightArithmeticRounded(Vector64<short> value, byte count)`
 
@@ -16857,7 +16797,7 @@ Vector128<sbyte> ShiftRightArithmeticRounded(Vector128<sbyte> value, byte count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticrounded?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticrounded?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrshr_n_s16).
 
 Assembly generated:
 
@@ -16885,7 +16825,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 4. ShiftRightArithmeticRoundedAdd
+### 34. ShiftRightArithmeticRoundedAdd
 
 `Vector64<short> ShiftRightArithmeticRoundedAdd(Vector64<short> addend, Vector64<short> value, byte count)`
 
@@ -16916,7 +16856,7 @@ Vector128<sbyte> ShiftRightArithmeticRoundedAdd(Vector128<sbyte> addend, Vector1
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundedadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundedadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsra_n_s16).
 
 Assembly generated:
 
@@ -16944,7 +16884,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 5. ShiftRightArithmeticRoundedAddScalar
+### 35. ShiftRightArithmeticRoundedAddScalar
 
 `Vector64<long> ShiftRightArithmeticRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
@@ -16964,7 +16904,7 @@ private Vector64<long> ShiftRightArithmeticRoundedAddScalarTest(Vector64<long> a
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundedaddscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundedaddscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsra_n_s64).
 
 Assembly generated:
 
@@ -16992,7 +16932,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 6. ShiftRightArithmeticRoundedNarrowingSaturateLower
+### 36. ShiftRightArithmeticRoundedNarrowingSaturateLower
 
 `Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateLower(Vector128<int> value, byte count)`
 
@@ -17018,7 +16958,7 @@ Vector64<sbyte> ShiftRightArithmeticRoundedNarrowingSaturateLower(Vector128<shor
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundednarrowingsaturatelower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundednarrowingsaturatelower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrn_n_s32).
 
 Assembly generated:
 
@@ -17046,7 +16986,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 7. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower
+### 37. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower
 
 `Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(Vector128<short> value, byte count)`
 
@@ -17072,7 +17012,7 @@ Vector64<uint> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(Vector1
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundednarrowingsaturateunsignedlower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundednarrowingsaturateunsignedlower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrun_n_s16).
 
 Assembly generated:
 
@@ -17100,7 +17040,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 8. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper
+### 38. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper
 
 `Vector128<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`
 
@@ -17127,7 +17067,7 @@ Vector128<uint> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(Vector
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundednarrowingsaturateunsignedupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundednarrowingsaturateunsignedupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrun_high_n_s16).
 
 Assembly generated:
 
@@ -17155,7 +17095,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 9. ShiftRightArithmeticRoundedNarrowingSaturateUpper
+### 39. ShiftRightArithmeticRoundedNarrowingSaturateUpper
 
 `Vector128<short> ShiftRightArithmeticRoundedNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`
 
@@ -17182,7 +17122,7 @@ Vector128<sbyte> ShiftRightArithmeticRoundedNarrowingSaturateUpper(Vector64<sbyt
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundednarrowingsaturateupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundednarrowingsaturateupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrn_high_n_s32).
 
 Assembly generated:
 
@@ -17210,7 +17150,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 10. ShiftRightArithmeticRoundedScalar
+### 40. ShiftRightArithmeticRoundedScalar
 
 `Vector64<long> ShiftRightArithmeticRoundedScalar(Vector64<long> value, byte count)`
 
@@ -17229,7 +17169,7 @@ private Vector64<long> ShiftRightArithmeticRoundedScalarTest(Vector64<long> valu
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticroundedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrshr_n_s64).
 
 Assembly generated:
 
@@ -17257,7 +17197,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 11. ShiftRightArithmeticScalar
+### 41. ShiftRightArithmeticScalar
 
 `Vector64<long> ShiftRightArithmeticScalar(Vector64<long> value, byte count)`
 
@@ -17276,7 +17216,7 @@ private Vector64<long> ShiftRightArithmeticScalarTest(Vector64<long> value, byte
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightarithmeticscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshr_n_s64).
 
 Assembly generated:
 
@@ -17304,7 +17244,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 12. ShiftRightLogical
+### 42. ShiftRightLogical
 
 `Vector64<byte> ShiftRightLogical(Vector64<byte> value, byte count)`
 
@@ -17341,7 +17281,7 @@ Vector128<ulong> ShiftRightLogical(Vector128<ulong> value, byte count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogical?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogical?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshr_n_u8).
 
 Assembly generated:
 
@@ -17369,7 +17309,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 13. ShiftRightLogicalAdd
+### 43. ShiftRightLogicalAdd
 
 `Vector64<byte> ShiftRightLogicalAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`
 
@@ -17407,7 +17347,7 @@ Vector128<ulong> ShiftRightLogicalAdd(Vector128<ulong> addend, Vector128<ulong> 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicaladd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicaladd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsra_n_u8).
 
 Assembly generated:
 
@@ -17435,7 +17375,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 14. ShiftRightLogicalAddScalar
+### 44. ShiftRightLogicalAddScalar
 
 `Vector64<long> ShiftRightLogicalAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
@@ -17461,7 +17401,7 @@ Vector64<ulong> ShiftRightLogicalAddScalar(Vector64<ulong> addend, Vector64<ulon
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicaladdscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicaladdscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsra_n_u64).
 
 Assembly generated:
 
@@ -17489,7 +17429,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 15. ShiftRightLogicalNarrowingLower
+### 45. ShiftRightLogicalNarrowingLower
 
 `Vector64<byte> ShiftRightLogicalNarrowingLower(Vector128<ushort> value, byte count)`
 
@@ -17518,7 +17458,7 @@ Vector64<uint> ShiftRightLogicalNarrowingLower(Vector128<ulong> value, byte coun
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalnarrowinglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalnarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshrn_n_u16).
 
 Assembly generated:
 
@@ -17533,6 +17473,27 @@ ShiftRightLogicalNarrowingLowerTest(Vector128ushort_0, byte_0);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: Hardware Intrinsics APIs for ARM64 - Part 6
+subtitle: With examples
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+
+
+### API list
+
+[ShiftRightLogicalNarrowingSaturateLower](#1-shiftrightlogicalnarrowingsaturatelower), [ShiftRightLogicalNarrowingSaturateUpper](#2-shiftrightlogicalnarrowingsaturateupper), [ShiftRightLogicalNarrowingUpper](#3-shiftrightlogicalnarrowingupper), [ShiftRightLogicalRounded](#4-shiftrightlogicalrounded), [ShiftRightLogicalRoundedAdd](#5-shiftrightlogicalroundedadd), [ShiftRightLogicalRoundedAddScalar](#6-shiftrightlogicalroundedaddscalar), [ShiftRightLogicalRoundedNarrowingLower](#7-shiftrightlogicalroundednarrowinglower), [ShiftRightLogicalRoundedNarrowingSaturateLower](#8-shiftrightlogicalroundednarrowingsaturatelower), [ShiftRightLogicalRoundedNarrowingSaturateUpper](#9-shiftrightlogicalroundednarrowingsaturateupper), [ShiftRightLogicalRoundedNarrowingUpper](#10-shiftrightlogicalroundednarrowingupper), [ShiftRightLogicalRoundedScalar](#11-shiftrightlogicalroundedscalar), [ShiftRightLogicalScalar](#12-shiftrightlogicalscalar), [SignExtendWideningLower](#13-signextendwideninglower), [SignExtendWideningUpper](#14-signextendwideningupper), [SqrtScalar](#15-sqrtscalar), [Store](#16-store), [StoreSelectedScalar](#17-storeselectedscalar), [Subtract](#18-subtract), [SubtractHighNarrowingLower](#19-subtracthighnarrowinglower), [SubtractHighNarrowingUpper](#20-subtracthighnarrowingupper), [SubtractRoundedHighNarrowingLower](#21-subtractroundedhighnarrowinglower), [SubtractRoundedHighNarrowingUpper](#22-subtractroundedhighnarrowingupper), [SubtractSaturate](#23-subtractsaturate), [SubtractSaturateScalar](#24-subtractsaturatescalar), [SubtractScalar](#25-subtractscalar), [SubtractWideningLower](#26-subtractwideninglower), [SubtractWideningUpper](#27-subtractwideningupper), [VectorTableLookup](#28-vectortablelookup), [VectorTableLookupExtension](#29-vectortablelookupextension), [Xor](#30-xor), [ZeroExtendWideningLower](#31-zeroextendwideninglower), [ZeroExtendWideningUpper](#32-zeroextendwideningupper), [AbsSaturateScalar](#33-abssaturatescalar), [AbsoluteCompareGreaterThanScalar](#34-absolutecomparegreaterthanscalar), [AbsoluteCompareGreaterThanOrEqualScalar](#35-absolutecomparegreaterthanorequalscalar), [AbsoluteCompareLessThanScalar](#36-absolutecomparelessthanscalar), [AbsoluteCompareLessThanOrEqualScalar](#37-absolutecomparelessthanorequalscalar), [AbsoluteDifferenceScalar](#38-absolutedifferencescalar), [AddAcross](#39-addacross), [AddAcrossWidening](#40-addacrosswidening), [AddPairwiseScalar](#41-addpairwisescalar), [CompareEqualScalar](#42-compareequalscalar), [CompareGreaterThanScalar](#43-comparegreaterthanscalar), [CompareGreaterThanOrEqualScalar](#44-comparegreaterthanorequalscalar), [CompareLessThanScalar](#45-comparelessthanscalar),[...](Part6.md)
+
+
+");
 
 try {
 var ShiftRightLogicalNarrowingSaturateLowerResult = Dummy_ShiftRightLogicalNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
@@ -17543,10 +17504,9 @@ apiResult = ShiftRightLogicalNarrowingSaturateLowerResult.ToString();
 
 Console.WriteLine(
 @"
-```
-------------------------------------------------
 
-### 16. ShiftRightLogicalNarrowingSaturateLower
+
+### 1. ShiftRightLogicalNarrowingSaturateLower
 
 `Vector64<byte> ShiftRightLogicalNarrowingSaturateLower(Vector128<ushort> value, byte count)`
 
@@ -17575,7 +17535,7 @@ Vector64<uint> ShiftRightLogicalNarrowingSaturateLower(Vector128<ulong> value, b
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalnarrowingsaturatelower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalnarrowingsaturatelower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrn_n_u16).
 
 Assembly generated:
 
@@ -17603,7 +17563,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 17. ShiftRightLogicalNarrowingSaturateUpper
+### 2. ShiftRightLogicalNarrowingSaturateUpper
 
 `Vector128<byte> ShiftRightLogicalNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -17633,7 +17593,7 @@ Vector128<uint> ShiftRightLogicalNarrowingSaturateUpper(Vector64<uint> lower, Ve
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalnarrowingsaturateupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalnarrowingsaturateupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrn_high_n_u16).
 
 Assembly generated:
 
@@ -17661,7 +17621,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 18. ShiftRightLogicalNarrowingUpper
+### 3. ShiftRightLogicalNarrowingUpper
 
 `Vector128<byte> ShiftRightLogicalNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -17691,7 +17651,7 @@ Vector128<uint> ShiftRightLogicalNarrowingUpper(Vector64<uint> lower, Vector128<
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalnarrowingupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalnarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshrn_high_n_u16).
 
 Assembly generated:
 
@@ -17719,7 +17679,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 19. ShiftRightLogicalRounded
+### 4. ShiftRightLogicalRounded
 
 `Vector64<byte> ShiftRightLogicalRounded(Vector64<byte> value, byte count)`
 
@@ -17756,7 +17716,7 @@ Vector128<ulong> ShiftRightLogicalRounded(Vector128<ulong> value, byte count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalrounded?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalrounded?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrshr_n_u8).
 
 Assembly generated:
 
@@ -17784,7 +17744,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 20. ShiftRightLogicalRoundedAdd
+### 5. ShiftRightLogicalRoundedAdd
 
 `Vector64<byte> ShiftRightLogicalRoundedAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`
 
@@ -17822,7 +17782,7 @@ Vector128<ulong> ShiftRightLogicalRoundedAdd(Vector128<ulong> addend, Vector128<
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundedadd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundedadd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsra_n_u8).
 
 Assembly generated:
 
@@ -17850,7 +17810,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 21. ShiftRightLogicalRoundedAddScalar
+### 6. ShiftRightLogicalRoundedAddScalar
 
 `Vector64<long> ShiftRightLogicalRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
@@ -17876,7 +17836,7 @@ Vector64<ulong> ShiftRightLogicalRoundedAddScalar(Vector64<ulong> addend, Vector
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundedaddscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundedaddscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsra_n_u64).
 
 Assembly generated:
 
@@ -17904,7 +17864,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 22. ShiftRightLogicalRoundedNarrowingLower
+### 7. ShiftRightLogicalRoundedNarrowingLower
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingLower(Vector128<ushort> value, byte count)`
 
@@ -17933,7 +17893,7 @@ Vector64<uint> ShiftRightLogicalRoundedNarrowingLower(Vector128<ulong> value, by
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundednarrowinglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundednarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrshrn_n_u16).
 
 Assembly generated:
 
@@ -17961,7 +17921,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 23. ShiftRightLogicalRoundedNarrowingSaturateLower
+### 8. ShiftRightLogicalRoundedNarrowingSaturateLower
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateLower(Vector128<ushort> value, byte count)`
 
@@ -17990,7 +17950,7 @@ Vector64<uint> ShiftRightLogicalRoundedNarrowingSaturateLower(Vector128<ulong> v
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundednarrowingsaturatelower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundednarrowingsaturatelower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrn_n_u16).
 
 Assembly generated:
 
@@ -18018,7 +17978,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 24. ShiftRightLogicalRoundedNarrowingSaturateUpper
+### 9. ShiftRightLogicalRoundedNarrowingSaturateUpper
 
 `Vector128<byte> ShiftRightLogicalRoundedNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -18048,7 +18008,7 @@ Vector128<uint> ShiftRightLogicalRoundedNarrowingSaturateUpper(Vector64<uint> lo
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundednarrowingsaturateupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundednarrowingsaturateupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrn_high_n_u16).
 
 Assembly generated:
 
@@ -18076,7 +18036,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 25. ShiftRightLogicalRoundedNarrowingUpper
+### 10. ShiftRightLogicalRoundedNarrowingUpper
 
 `Vector128<byte> ShiftRightLogicalRoundedNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -18106,7 +18066,7 @@ Vector128<uint> ShiftRightLogicalRoundedNarrowingUpper(Vector64<uint> lower, Vec
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundednarrowingupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundednarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrshrn_high_n_u16).
 
 Assembly generated:
 
@@ -18134,7 +18094,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 26. ShiftRightLogicalRoundedScalar
+### 11. ShiftRightLogicalRoundedScalar
 
 `Vector64<long> ShiftRightLogicalRoundedScalar(Vector64<long> value, byte count)`
 
@@ -18159,7 +18119,7 @@ Vector64<ulong> ShiftRightLogicalRoundedScalar(Vector64<ulong> value, byte count
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalroundedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrshr_n_u64).
 
 Assembly generated:
 
@@ -18187,7 +18147,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 27. ShiftRightLogicalScalar
+### 12. ShiftRightLogicalScalar
 
 `Vector64<long> ShiftRightLogicalScalar(Vector64<long> value, byte count)`
 
@@ -18212,7 +18172,7 @@ Vector64<ulong> ShiftRightLogicalScalar(Vector64<ulong> value, byte count)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.shiftrightlogicalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vshr_n_u64).
 
 Assembly generated:
 
@@ -18240,7 +18200,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 28. SignExtendWideningLower
+### 13. SignExtendWideningLower
 
 `Vector128<int> SignExtendWideningLower(Vector64<short> value)`
 
@@ -18265,7 +18225,7 @@ Vector128<short> SignExtendWideningLower(Vector64<sbyte> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.signextendwideninglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.signextendwideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmovl_s16).
 
 Assembly generated:
 
@@ -18293,7 +18253,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 29. SignExtendWideningUpper
+### 14. SignExtendWideningUpper
 
 `Vector128<int> SignExtendWideningUpper(Vector128<short> value)`
 
@@ -18318,7 +18278,7 @@ Vector128<short> SignExtendWideningUpper(Vector128<sbyte> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.signextendwideningupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.signextendwideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmovl_high_s16).
 
 Assembly generated:
 
@@ -18346,7 +18306,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 30. SqrtScalar
+### 15. SqrtScalar
 
 `Vector64<double> SqrtScalar(Vector64<double> value)`
 
@@ -18370,7 +18330,7 @@ Vector64<float> SqrtScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.sqrtscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.sqrtscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsqrt_f64).
 
 Assembly generated:
 
@@ -18385,27 +18345,6 @@ SqrtScalarTest(Vector64double_0);
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 9
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[Store](#1-store), [StoreSelectedScalar](#2-storeselectedscalar), [Subtract](#3-subtract), [SubtractHighNarrowingLower](#4-subtracthighnarrowinglower), [SubtractHighNarrowingUpper](#5-subtracthighnarrowingupper), [SubtractRoundedHighNarrowingLower](#6-subtractroundedhighnarrowinglower), [SubtractRoundedHighNarrowingUpper](#7-subtractroundedhighnarrowingupper), [SubtractSaturate](#8-subtractsaturate), [SubtractSaturateScalar](#9-subtractsaturatescalar), [SubtractScalar](#10-subtractscalar), [SubtractWideningLower](#11-subtractwideninglower), [SubtractWideningUpper](#12-subtractwideningupper), [VectorTableLookup](#13-vectortablelookup), [VectorTableLookupExtension](#14-vectortablelookupextension), [Xor](#15-xor), [ZeroExtendWideningLower](#16-zeroextendwideninglower), [ZeroExtendWideningUpper](#17-zeroextendwideningupper), [AbsSaturateScalar](#18-abssaturatescalar), [AbsoluteCompareGreaterThanScalar](#19-absolutecomparegreaterthanscalar), [AbsoluteCompareGreaterThanOrEqualScalar](#20-absolutecomparegreaterthanorequalscalar), [AbsoluteCompareLessThanScalar](#21-absolutecomparelessthanscalar), [AbsoluteCompareLessThanOrEqualScalar](#22-absolutecomparelessthanorequalscalar), [AbsoluteDifferenceScalar](#23-absolutedifferencescalar), [AddAcross](#24-addacross), [AddAcrossWidening](#25-addacrosswidening), [AddPairwiseScalar](#26-addpairwisescalar), [CompareEqualScalar](#27-compareequalscalar), [CompareGreaterThanScalar](#28-comparegreaterthanscalar), [CompareGreaterThanOrEqualScalar](#29-comparegreaterthanorequalscalar), [CompareLessThanScalar](#30-comparelessthanscalar),[...](Part9.md)
-
-
-");
 fixed (byte* bytePtr_0 = byteArray)
 {
 
@@ -18418,9 +18357,10 @@ StoreTest(bytePtr_0, Vector64byte_0);
 
 Console.WriteLine(
 @"
+```
+------------------------------------------------
 
-
-### 1. Store
+### 16. Store
 
 `void Store(byte* address, Vector64<byte> source)`
 
@@ -18462,7 +18402,7 @@ void Store(ulong* address, Vector128<ulong> source)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.store?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.store?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vst1_u8).
 
 Assembly generated:
 
@@ -18493,7 +18433,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 2. StoreSelectedScalar
+### 17. StoreSelectedScalar
 
 `void StoreSelectedScalar(byte* address, Vector64<byte> value, byte index)`
 
@@ -18533,7 +18473,7 @@ void StoreSelectedScalar(ulong* address, Vector128<ulong> value, byte index)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.storeselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.storeselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vst1_lane_u8).
 
 Assembly generated:
 
@@ -18562,7 +18502,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 3. Subtract
+### 18. Subtract
 
 `Vector64<byte> Subtract(Vector64<byte> left, Vector64<byte> right)`
 
@@ -18604,7 +18544,7 @@ Vector128<double> Subtract(Vector128<double> left, Vector128<double> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtract?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.subtract?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtract?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.subtract?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsub_u8).
 
 Assembly generated:
 
@@ -18632,7 +18572,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 4. SubtractHighNarrowingLower
+### 19. SubtractHighNarrowingLower
 
 `Vector64<byte> SubtractHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
 
@@ -18661,7 +18601,7 @@ Vector64<uint> SubtractHighNarrowingLower(Vector128<ulong> left, Vector128<ulong
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtracthighnarrowinglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtracthighnarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubhn_u16).
 
 Assembly generated:
 
@@ -18689,7 +18629,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 5. SubtractHighNarrowingUpper
+### 20. SubtractHighNarrowingUpper
 
 `Vector128<byte> SubtractHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
 
@@ -18719,7 +18659,7 @@ Vector128<uint> SubtractHighNarrowingUpper(Vector64<uint> lower, Vector128<ulong
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtracthighnarrowingupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtracthighnarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubhn_high_u16).
 
 Assembly generated:
 
@@ -18747,7 +18687,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 6. SubtractRoundedHighNarrowingLower
+### 21. SubtractRoundedHighNarrowingLower
 
 `Vector64<byte> SubtractRoundedHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
 
@@ -18776,7 +18716,7 @@ Vector64<uint> SubtractRoundedHighNarrowingLower(Vector128<ulong> left, Vector12
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractroundedhighnarrowinglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractroundedhighnarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsubhn_u16).
 
 Assembly generated:
 
@@ -18804,7 +18744,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 7. SubtractRoundedHighNarrowingUpper
+### 22. SubtractRoundedHighNarrowingUpper
 
 `Vector128<byte> SubtractRoundedHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
 
@@ -18834,7 +18774,7 @@ Vector128<uint> SubtractRoundedHighNarrowingUpper(Vector64<uint> lower, Vector12
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractroundedhighnarrowingupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractroundedhighnarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsubhn_high_u16).
 
 Assembly generated:
 
@@ -18862,7 +18802,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 8. SubtractSaturate
+### 23. SubtractSaturate
 
 `Vector64<byte> SubtractSaturate(Vector64<byte> left, Vector64<byte> right)`
 
@@ -18899,7 +18839,7 @@ Vector128<ulong> SubtractSaturate(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqsub_u8).
 
 Assembly generated:
 
@@ -18927,7 +18867,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 9. SubtractSaturateScalar
+### 24. SubtractSaturateScalar
 
 `Vector64<long> SubtractSaturateScalar(Vector64<long> left, Vector64<long> right)`
 
@@ -18960,7 +18900,7 @@ Vector64<uint> SubtractSaturateScalar(Vector64<uint> left, Vector64<uint> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.subtractsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.subtractsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqsub_s64).
 
 Assembly generated:
 
@@ -18988,7 +18928,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 10. SubtractScalar
+### 25. SubtractScalar
 
 `Vector64<double> SubtractScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -19015,7 +18955,7 @@ Vector64<ulong> SubtractScalar(Vector64<ulong> left, Vector64<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsub_f64).
 
 Assembly generated:
 
@@ -19043,7 +18983,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 11. SubtractWideningLower
+### 26. SubtractWideningLower
 
 `Vector128<ushort> SubtractWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
@@ -19078,7 +19018,7 @@ Vector128<ulong> SubtractWideningLower(Vector128<ulong> left, Vector64<uint> rig
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractwideninglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractwideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubl_u8).
 
 Assembly generated:
 
@@ -19106,7 +19046,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 12. SubtractWideningUpper
+### 27. SubtractWideningUpper
 
 `Vector128<ushort> SubtractWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
@@ -19141,7 +19081,7 @@ Vector128<ulong> SubtractWideningUpper(Vector128<ulong> left, Vector128<uint> ri
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractwideningupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractwideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubl_high_u8).
 
 Assembly generated:
 
@@ -19169,7 +19109,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 13. VectorTableLookup
+### 28. VectorTableLookup
 
 `Vector64<byte> VectorTableLookup(Vector128<byte> table, Vector64<byte> byteIndexes)`
 
@@ -19198,7 +19138,7 @@ Vector128<sbyte> VectorTableLookup(Vector128<sbyte> table, Vector128<sbyte> byte
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.vectortablelookup?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.vectortablelookup?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.vectortablelookup?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.vectortablelookup?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqvtbl1_u8).
 
 Assembly generated:
 
@@ -19226,7 +19166,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 14. VectorTableLookupExtension
+### 29. VectorTableLookupExtension
 
 `Vector64<byte> VectorTableLookupExtension(Vector64<byte> defaultValues, Vector128<byte> table, Vector64<byte> byteIndexes)`
 
@@ -19256,7 +19196,7 @@ Vector128<sbyte> VectorTableLookupExtension(Vector128<sbyte> defaultValues, Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.vectortablelookupextension?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.vectortablelookupextension?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.vectortablelookupextension?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.vectortablelookupextension?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqvtbx1_u8).
 
 Assembly generated:
 
@@ -19284,7 +19224,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 15. Xor
+### 30. Xor
 
 `Vector64<byte> Xor(Vector64<byte> left, Vector64<byte> right)`
 
@@ -19327,7 +19267,7 @@ Vector128<ulong> Xor(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.xor?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.xor?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=veor_u8).
 
 Assembly generated:
 
@@ -19355,7 +19295,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 16. ZeroExtendWideningLower
+### 31. ZeroExtendWideningLower
 
 `Vector128<ushort> ZeroExtendWideningLower(Vector64<byte> value)`
 
@@ -19383,7 +19323,7 @@ Vector128<ulong> ZeroExtendWideningLower(Vector64<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.zeroextendwideninglower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.zeroextendwideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmovl_u8).
 
 Assembly generated:
 
@@ -19411,7 +19351,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 17. ZeroExtendWideningUpper
+### 32. ZeroExtendWideningUpper
 
 `Vector128<ushort> ZeroExtendWideningUpper(Vector128<byte> value)`
 
@@ -19439,7 +19379,7 @@ Vector128<ulong> ZeroExtendWideningUpper(Vector128<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.zeroextendwideningupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.zeroextendwideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmovl_high_u8).
 
 Assembly generated:
 
@@ -19467,7 +19407,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 18. AbsSaturateScalar
+### 33. AbsSaturateScalar
 
 `Vector64<short> AbsSaturateScalar(Vector64<short> value)`
 
@@ -19493,7 +19433,7 @@ Vector64<sbyte> AbsSaturateScalar(Vector64<sbyte> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.abssaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.abssaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqabsh_s16).
 
 Assembly generated:
 
@@ -19521,7 +19461,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 19. AbsoluteCompareGreaterThanScalar
+### 34. AbsoluteCompareGreaterThanScalar
 
 `Vector64<double> AbsoluteCompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -19546,7 +19486,7 @@ Vector64<float> AbsoluteCompareGreaterThanScalar(Vector64<float> left, Vector64<
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthanscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcagt_f64).
 
 Assembly generated:
 
@@ -19574,7 +19514,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 20. AbsoluteCompareGreaterThanOrEqualScalar
+### 35. AbsoluteCompareGreaterThanOrEqualScalar
 
 `Vector64<double> AbsoluteCompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -19599,7 +19539,7 @@ Vector64<float> AbsoluteCompareGreaterThanOrEqualScalar(Vector64<float> left, Ve
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthanorequalscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcage_f64).
 
 Assembly generated:
 
@@ -19627,7 +19567,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 21. AbsoluteCompareLessThanScalar
+### 36. AbsoluteCompareLessThanScalar
 
 `Vector64<double> AbsoluteCompareLessThanScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -19652,7 +19592,7 @@ Vector64<float> AbsoluteCompareLessThanScalar(Vector64<float> left, Vector64<flo
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthanscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcalt_f64).
 
 Assembly generated:
 
@@ -19680,7 +19620,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 22. AbsoluteCompareLessThanOrEqualScalar
+### 37. AbsoluteCompareLessThanOrEqualScalar
 
 `Vector64<double> AbsoluteCompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -19705,7 +19645,7 @@ Vector64<float> AbsoluteCompareLessThanOrEqualScalar(Vector64<float> left, Vecto
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthanorequalscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcale_f64).
 
 Assembly generated:
 
@@ -19733,7 +19673,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 23. AbsoluteDifferenceScalar
+### 38. AbsoluteDifferenceScalar
 
 `Vector64<double> AbsoluteDifferenceScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -19758,7 +19698,7 @@ Vector64<float> AbsoluteDifferenceScalar(Vector64<float> left, Vector64<float> r
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutedifferencescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutedifferencescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabd_f64).
 
 Assembly generated:
 
@@ -19786,7 +19726,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 24. AddAcross
+### 39. AddAcross
 
 `Vector64<byte> AddAcross(Vector64<byte> value)`
 
@@ -19818,7 +19758,7 @@ Vector64<uint> AddAcross(Vector128<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addacross?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaddv_u8).
 
 Assembly generated:
 
@@ -19846,7 +19786,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 25. AddAcrossWidening
+### 40. AddAcrossWidening
 
 `Vector64<ushort> AddAcrossWidening(Vector64<byte> value)`
 
@@ -19878,7 +19818,7 @@ Vector64<ulong> AddAcrossWidening(Vector128<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addacrosswidening?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addacrosswidening?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaddlv_u8).
 
 Assembly generated:
 
@@ -19906,7 +19846,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 26. AddPairwiseScalar
+### 41. AddPairwiseScalar
 
 `Vector64<float> AddPairwiseScalar(Vector64<float> value)`
 
@@ -19932,7 +19872,7 @@ Vector64<ulong> AddPairwiseScalar(Vector128<ulong> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addpairwisescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpadds_f32).
 
 Assembly generated:
 
@@ -19960,7 +19900,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 27. CompareEqualScalar
+### 42. CompareEqualScalar
 
 `Vector64<double> CompareEqualScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -19987,7 +19927,7 @@ Vector64<ulong> CompareEqualScalar(Vector64<ulong> left, Vector64<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.compareequalscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.compareequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vceq_f64).
 
 Assembly generated:
 
@@ -20015,7 +19955,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 28. CompareGreaterThanScalar
+### 43. CompareGreaterThanScalar
 
 `Vector64<double> CompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -20042,7 +19982,7 @@ Vector64<ulong> CompareGreaterThanScalar(Vector64<ulong> left, Vector64<ulong> r
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthanscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcgt_f64).
 
 Assembly generated:
 
@@ -20070,7 +20010,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 29. CompareGreaterThanOrEqualScalar
+### 44. CompareGreaterThanOrEqualScalar
 
 `Vector64<double> CompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -20097,7 +20037,7 @@ Vector64<ulong> CompareGreaterThanOrEqualScalar(Vector64<ulong> left, Vector64<u
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthanorequalscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcge_f64).
 
 Assembly generated:
 
@@ -20125,7 +20065,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 30. CompareLessThanScalar
+### 45. CompareLessThanScalar
 
 `Vector64<double> CompareLessThanScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -20152,7 +20092,7 @@ Vector64<ulong> CompareLessThanScalar(Vector64<ulong> left, Vector64<ulong> righ
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthanscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vclt_f64).
 
 Assembly generated:
 
@@ -20172,7 +20112,7 @@ Console.WriteLine(
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 10
+title: Hardware Intrinsics APIs for ARM64 - Part 7
 subtitle: With examples
 tags: [work, arm64, intrinsics]
 ---
@@ -20184,7 +20124,7 @@ In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `
 
 ### API list
 
-[CompareLessThanOrEqualScalar](#1-comparelessthanorequalscalar), [CompareTestScalar](#2-comparetestscalar), [ConvertToDouble](#3-converttodouble), [ConvertToDoubleScalar](#4-converttodoublescalar), [ConvertToDoubleUpper](#5-converttodoubleupper), [ConvertToInt64RoundAwayFromZero](#6-converttoint64roundawayfromzero), [ConvertToInt64RoundAwayFromZeroScalar](#7-converttoint64roundawayfromzeroscalar), [ConvertToInt64RoundToEven](#8-converttoint64roundtoeven), [ConvertToInt64RoundToEvenScalar](#9-converttoint64roundtoevenscalar), [ConvertToInt64RoundToNegativeInfinity](#10-converttoint64roundtonegativeinfinity), [ConvertToInt64RoundToNegativeInfinityScalar](#11-converttoint64roundtonegativeinfinityscalar), [ConvertToInt64RoundToPositiveInfinity](#12-converttoint64roundtopositiveinfinity), [ConvertToInt64RoundToPositiveInfinityScalar](#13-converttoint64roundtopositiveinfinityscalar), [ConvertToInt64RoundToZero](#14-converttoint64roundtozero), [ConvertToInt64RoundToZeroScalar](#15-converttoint64roundtozeroscalar), [ConvertToSingleLower](#16-converttosinglelower), [ConvertToSingleRoundToOddLower](#17-converttosingleroundtooddlower), [ConvertToSingleRoundToOddUpper](#18-converttosingleroundtooddupper), [ConvertToSingleUpper](#19-converttosingleupper), [ConvertToUInt64RoundAwayFromZero](#20-converttouint64roundawayfromzero), [ConvertToUInt64RoundAwayFromZeroScalar](#21-converttouint64roundawayfromzeroscalar), [ConvertToUInt64RoundToEven](#22-converttouint64roundtoeven), [ConvertToUInt64RoundToEvenScalar](#23-converttouint64roundtoevenscalar), [ConvertToUInt64RoundToNegativeInfinity](#24-converttouint64roundtonegativeinfinity), [ConvertToUInt64RoundToNegativeInfinityScalar](#25-converttouint64roundtonegativeinfinityscalar), [ConvertToUInt64RoundToPositiveInfinity](#26-converttouint64roundtopositiveinfinity), [ConvertToUInt64RoundToPositiveInfinityScalar](#27-converttouint64roundtopositiveinfinityscalar), [ConvertToUInt64RoundToZero](#28-converttouint64roundtozero), [ConvertToUInt64RoundToZeroScalar](#29-converttouint64roundtozeroscalar), [Divide](#30-divide),[...](Part10.md)
+[CompareLessThanOrEqualScalar](#1-comparelessthanorequalscalar), [CompareTestScalar](#2-comparetestscalar), [ConvertToDouble](#3-converttodouble), [ConvertToDoubleScalar](#4-converttodoublescalar), [ConvertToDoubleUpper](#5-converttodoubleupper), [ConvertToInt64RoundAwayFromZero](#6-converttoint64roundawayfromzero), [ConvertToInt64RoundAwayFromZeroScalar](#7-converttoint64roundawayfromzeroscalar), [ConvertToInt64RoundToEven](#8-converttoint64roundtoeven), [ConvertToInt64RoundToEvenScalar](#9-converttoint64roundtoevenscalar), [ConvertToInt64RoundToNegativeInfinity](#10-converttoint64roundtonegativeinfinity), [ConvertToInt64RoundToNegativeInfinityScalar](#11-converttoint64roundtonegativeinfinityscalar), [ConvertToInt64RoundToPositiveInfinity](#12-converttoint64roundtopositiveinfinity), [ConvertToInt64RoundToPositiveInfinityScalar](#13-converttoint64roundtopositiveinfinityscalar), [ConvertToInt64RoundToZero](#14-converttoint64roundtozero), [ConvertToInt64RoundToZeroScalar](#15-converttoint64roundtozeroscalar), [ConvertToSingleLower](#16-converttosinglelower), [ConvertToSingleRoundToOddLower](#17-converttosingleroundtooddlower), [ConvertToSingleRoundToOddUpper](#18-converttosingleroundtooddupper), [ConvertToSingleUpper](#19-converttosingleupper), [ConvertToUInt64RoundAwayFromZero](#20-converttouint64roundawayfromzero), [ConvertToUInt64RoundAwayFromZeroScalar](#21-converttouint64roundawayfromzeroscalar), [ConvertToUInt64RoundToEven](#22-converttouint64roundtoeven), [ConvertToUInt64RoundToEvenScalar](#23-converttouint64roundtoevenscalar), [ConvertToUInt64RoundToNegativeInfinity](#24-converttouint64roundtonegativeinfinity), [ConvertToUInt64RoundToNegativeInfinityScalar](#25-converttouint64roundtonegativeinfinityscalar), [ConvertToUInt64RoundToPositiveInfinity](#26-converttouint64roundtopositiveinfinity), [ConvertToUInt64RoundToPositiveInfinityScalar](#27-converttouint64roundtopositiveinfinityscalar), [ConvertToUInt64RoundToZero](#28-converttouint64roundtozero), [ConvertToUInt64RoundToZeroScalar](#29-converttouint64roundtozeroscalar), [Divide](#30-divide), [ExtractNarrowingSaturateScalar](#31-extractnarrowingsaturatescalar), [ExtractNarrowingSaturateUnsignedScalar](#32-extractnarrowingsaturateunsignedscalar), [FusedMultiplyAddByScalar](#33-fusedmultiplyaddbyscalar), [FusedMultiplyAddBySelectedScalar](#34-fusedmultiplyaddbyselectedscalar), [FusedMultiplyAddScalarBySelectedScalar](#35-fusedmultiplyaddscalarbyselectedscalar), [FusedMultiplySubtractByScalar](#36-fusedmultiplysubtractbyscalar), [FusedMultiplySubtractBySelectedScalar](#37-fusedmultiplysubtractbyselectedscalar), [FusedMultiplySubtractScalarBySelectedScalar](#38-fusedmultiplysubtractscalarbyselectedscalar), [InsertSelectedScalar](#39-insertselectedscalar), [MaxAcross](#40-maxacross), [MaxNumberAcross](#41-maxnumberacross), [MaxNumberPairwise](#42-maxnumberpairwise), [MaxNumberPairwiseScalar](#43-maxnumberpairwisescalar), [MaxPairwiseScalar](#44-maxpairwisescalar), [MaxScalar](#45-maxscalar),[...](Part7.md)
 
 
 ");
@@ -20227,7 +20167,7 @@ Vector64<ulong> CompareLessThanOrEqualScalar(Vector64<ulong> left, Vector64<ulon
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthanorequalscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcle_f64).
 
 Assembly generated:
 
@@ -20281,7 +20221,7 @@ Vector64<ulong> CompareTestScalar(Vector64<ulong> left, Vector64<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparetestscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparetestscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vtst_f64).
 
 Assembly generated:
 
@@ -20334,7 +20274,7 @@ Vector128<double> ConvertToDouble(Vector128<ulong> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodouble?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodouble?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_f64_f32).
 
 Assembly generated:
 
@@ -20386,7 +20326,7 @@ Vector64<double> ConvertToDoubleScalar(Vector64<ulong> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodoublescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodoublescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_f64_s64).
 
 Assembly generated:
 
@@ -20432,7 +20372,7 @@ private Vector128<double> ConvertToDoubleUpperTest(Vector128<float> value)
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodoubleupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodoubleupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_high_f64_f32).
 
 Assembly generated:
 
@@ -20478,7 +20418,7 @@ private Vector128<long> ConvertToInt64RoundAwayFromZeroTest(Vector128<double> va
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundawayfromzero?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundawayfromzero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtaq_s64_f64).
 
 Assembly generated:
 
@@ -20524,7 +20464,7 @@ private Vector64<long> ConvertToInt64RoundAwayFromZeroScalarTest(Vector64<double
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundawayfromzeroscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundawayfromzeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvta_s64_f64).
 
 Assembly generated:
 
@@ -20570,7 +20510,7 @@ private Vector128<long> ConvertToInt64RoundToEvenTest(Vector128<double> value)
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtoeven?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtoeven?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtnq_s64_f64).
 
 Assembly generated:
 
@@ -20616,7 +20556,7 @@ private Vector64<long> ConvertToInt64RoundToEvenScalarTest(Vector64<double> valu
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtoevenscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtoevenscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtn_s64_f64).
 
 Assembly generated:
 
@@ -20662,7 +20602,7 @@ private Vector128<long> ConvertToInt64RoundToNegativeInfinityTest(Vector128<doub
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtonegativeinfinity?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtonegativeinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtmq_s64_f64).
 
 Assembly generated:
 
@@ -20708,7 +20648,7 @@ private Vector64<long> ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64<
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtonegativeinfinityscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtonegativeinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtm_s64_f64).
 
 Assembly generated:
 
@@ -20754,7 +20694,7 @@ private Vector128<long> ConvertToInt64RoundToPositiveInfinityTest(Vector128<doub
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtopositiveinfinity?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtopositiveinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtpq_s64_f64).
 
 Assembly generated:
 
@@ -20800,7 +20740,7 @@ private Vector64<long> ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64<
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtopositiveinfinityscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtopositiveinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtp_s64_f64).
 
 Assembly generated:
 
@@ -20846,7 +20786,7 @@ private Vector128<long> ConvertToInt64RoundToZeroTest(Vector128<double> value)
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtozero?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtozero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtq_s64_f64).
 
 Assembly generated:
 
@@ -20892,7 +20832,7 @@ private Vector64<long> ConvertToInt64RoundToZeroScalarTest(Vector64<double> valu
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtozeroscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtozeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_s64_f64).
 
 Assembly generated:
 
@@ -20938,7 +20878,7 @@ private Vector64<float> ConvertToSingleLowerTest(Vector128<double> value)
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosinglelower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosinglelower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_f32_f64).
 
 Assembly generated:
 
@@ -20984,7 +20924,7 @@ private Vector64<float> ConvertToSingleRoundToOddLowerTest(Vector128<double> val
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleroundtooddlower?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleroundtooddlower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtx_f32_f64).
 
 Assembly generated:
 
@@ -21031,7 +20971,7 @@ private Vector128<float> ConvertToSingleRoundToOddUpperTest(Vector64<float> lowe
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleroundtooddupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleroundtooddupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtx_high_f32_f64).
 
 Assembly generated:
 
@@ -21078,7 +21018,7 @@ private Vector128<float> ConvertToSingleUpperTest(Vector64<float> lower, Vector1
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleupper?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_high_f32_f64).
 
 Assembly generated:
 
@@ -21124,7 +21064,7 @@ private Vector128<ulong> ConvertToUInt64RoundAwayFromZeroTest(Vector128<double> 
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundawayfromzero?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundawayfromzero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtaq_u64_f64).
 
 Assembly generated:
 
@@ -21170,7 +21110,7 @@ private Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64<doub
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundawayfromzeroscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundawayfromzeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvta_u64_f64).
 
 Assembly generated:
 
@@ -21216,7 +21156,7 @@ private Vector128<ulong> ConvertToUInt64RoundToEvenTest(Vector128<double> value)
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtoeven?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtoeven?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtnq_u64_f64).
 
 Assembly generated:
 
@@ -21262,7 +21202,7 @@ private Vector64<ulong> ConvertToUInt64RoundToEvenScalarTest(Vector64<double> va
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtoevenscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtoevenscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtn_u64_f64).
 
 Assembly generated:
 
@@ -21308,7 +21248,7 @@ private Vector128<ulong> ConvertToUInt64RoundToNegativeInfinityTest(Vector128<do
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtonegativeinfinity?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtonegativeinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtmq_u64_f64).
 
 Assembly generated:
 
@@ -21354,7 +21294,7 @@ private Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector6
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtonegativeinfinityscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtonegativeinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtm_u64_f64).
 
 Assembly generated:
 
@@ -21400,7 +21340,7 @@ private Vector128<ulong> ConvertToUInt64RoundToPositiveInfinityTest(Vector128<do
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtopositiveinfinity?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtopositiveinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtpq_u64_f64).
 
 Assembly generated:
 
@@ -21446,7 +21386,7 @@ private Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector6
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtopositiveinfinityscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtopositiveinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtp_u64_f64).
 
 Assembly generated:
 
@@ -21492,7 +21432,7 @@ private Vector128<ulong> ConvertToUInt64RoundToZeroTest(Vector128<double> value)
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtozero?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtozero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtq_u64_f64).
 
 Assembly generated:
 
@@ -21538,7 +21478,7 @@ private Vector64<ulong> ConvertToUInt64RoundToZeroScalarTest(Vector64<double> va
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtozeroscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtozeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_u64_f64).
 
 Assembly generated:
 
@@ -21592,7 +21532,7 @@ Vector128<float> Divide(Vector128<float> left, Vector128<float> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.divide?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.divide?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdiv_f32).
 
 Assembly generated:
 
@@ -21607,27 +21547,6 @@ DivideTest(Vector64float_0, Vector64float_1);
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 11
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[ExtractNarrowingSaturateScalar](#1-extractnarrowingsaturatescalar), [ExtractNarrowingSaturateUnsignedScalar](#2-extractnarrowingsaturateunsignedscalar), [FusedMultiplyAddByScalar](#3-fusedmultiplyaddbyscalar), [FusedMultiplyAddBySelectedScalar](#4-fusedmultiplyaddbyselectedscalar), [FusedMultiplyAddScalarBySelectedScalar](#5-fusedmultiplyaddscalarbyselectedscalar), [FusedMultiplySubtractByScalar](#6-fusedmultiplysubtractbyscalar), [FusedMultiplySubtractBySelectedScalar](#7-fusedmultiplysubtractbyselectedscalar), [FusedMultiplySubtractScalarBySelectedScalar](#8-fusedmultiplysubtractscalarbyselectedscalar), [InsertSelectedScalar](#9-insertselectedscalar), [MaxAcross](#10-maxacross), [MaxNumberAcross](#11-maxnumberacross), [MaxNumberPairwise](#12-maxnumberpairwise), [MaxNumberPairwiseScalar](#13-maxnumberpairwisescalar), [MaxPairwiseScalar](#14-maxpairwisescalar), [MaxScalar](#15-maxscalar), [MinAcross](#16-minacross), [MinNumberAcross](#17-minnumberacross), [MinNumberPairwise](#18-minnumberpairwise), [MinNumberPairwiseScalar](#19-minnumberpairwisescalar), [MinPairwiseScalar](#20-minpairwisescalar), [MinScalar](#21-minscalar), [MultiplyDoublingSaturateHighScalar](#22-multiplydoublingsaturatehighscalar), [MultiplyDoublingScalarBySelectedScalarSaturateHigh](#23-multiplydoublingscalarbyselectedscalarsaturatehigh), [MultiplyDoublingWideningAndAddSaturateScalar](#24-multiplydoublingwideningandaddsaturatescalar), [MultiplyDoublingWideningAndSubtractSaturateScalar](#25-multiplydoublingwideningandsubtractsaturatescalar), [MultiplyDoublingWideningSaturateScalar](#26-multiplydoublingwideningsaturatescalar), [MultiplyDoublingWideningSaturateScalarBySelectedScalar](#27-multiplydoublingwideningsaturatescalarbyselectedscalar), [MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate](#28-multiplydoublingwideningscalarbyselectedscalarandaddsaturate), [MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate](#29-multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate), [MultiplyExtended](#30-multiplyextended),[...](Part11.md)
-
-
-");
 
 try {
 var ExtractNarrowingSaturateScalarResult = Dummy_ExtractNarrowingSaturateScalarTest(Vector64ushort_0);
@@ -21638,9 +21557,10 @@ apiResult = ExtractNarrowingSaturateScalarResult.ToString();
 
 Console.WriteLine(
 @"
+```
+------------------------------------------------
 
-
-### 1. ExtractNarrowingSaturateScalar
+### 31. ExtractNarrowingSaturateScalar
 
 `Vector64<byte> ExtractNarrowingSaturateScalar(Vector64<ushort> value)`
 
@@ -21668,7 +21588,7 @@ Vector64<uint> ExtractNarrowingSaturateScalar(Vector64<ulong> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.extractnarrowingsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.extractnarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqmovnh_u16).
 
 Assembly generated:
 
@@ -21696,7 +21616,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 2. ExtractNarrowingSaturateUnsignedScalar
+### 32. ExtractNarrowingSaturateUnsignedScalar
 
 `Vector64<byte> ExtractNarrowingSaturateUnsignedScalar(Vector64<short> value)`
 
@@ -21721,7 +21641,7 @@ Vector64<uint> ExtractNarrowingSaturateUnsignedScalar(Vector64<long> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.extractnarrowingsaturateunsignedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.extractnarrowingsaturateunsignedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqmovunh_s16).
 
 Assembly generated:
 
@@ -21749,7 +21669,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 3. FusedMultiplyAddByScalar
+### 33. FusedMultiplyAddByScalar
 
 `Vector64<float> FusedMultiplyAddByScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right)`
 
@@ -21776,7 +21696,7 @@ Vector128<float> FusedMultiplyAddByScalar(Vector128<float> addend, Vector128<flo
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddbyscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfma_n_f32).
 
 Assembly generated:
 
@@ -21804,7 +21724,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 4. FusedMultiplyAddBySelectedScalar
+### 34. FusedMultiplyAddBySelectedScalar
 
 `Vector64<float> FusedMultiplyAddBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)`
 
@@ -21834,7 +21754,7 @@ Vector128<float> FusedMultiplyAddBySelectedScalar(Vector128<float> addend, Vecto
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfma_lane_f32).
 
 Assembly generated:
 
@@ -21862,7 +21782,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 5. FusedMultiplyAddScalarBySelectedScalar
+### 35. FusedMultiplyAddScalarBySelectedScalar
 
 `Vector64<double> FusedMultiplyAddScalarBySelectedScalar(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)`
 
@@ -21890,7 +21810,7 @@ Vector64<float> FusedMultiplyAddScalarBySelectedScalar(Vector64<float> addend, V
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddscalarbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddscalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfmad_laneq_f64).
 
 Assembly generated:
 
@@ -21918,7 +21838,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 6. FusedMultiplySubtractByScalar
+### 36. FusedMultiplySubtractByScalar
 
 `Vector64<float> FusedMultiplySubtractByScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`
 
@@ -21945,7 +21865,7 @@ Vector128<float> FusedMultiplySubtractByScalar(Vector128<float> minuend, Vector1
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractbyscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfms_n_f32).
 
 Assembly generated:
 
@@ -21973,7 +21893,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 7. FusedMultiplySubtractBySelectedScalar
+### 37. FusedMultiplySubtractBySelectedScalar
 
 `Vector64<float> FusedMultiplySubtractBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)`
 
@@ -22003,7 +21923,7 @@ Vector128<float> FusedMultiplySubtractBySelectedScalar(Vector128<float> minuend,
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfms_lane_f32).
 
 Assembly generated:
 
@@ -22031,7 +21951,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 8. FusedMultiplySubtractScalarBySelectedScalar
+### 38. FusedMultiplySubtractScalarBySelectedScalar
 
 `Vector64<double> FusedMultiplySubtractScalarBySelectedScalar(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)`
 
@@ -22059,7 +21979,7 @@ Vector64<float> FusedMultiplySubtractScalarBySelectedScalar(Vector64<float> minu
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractscalarbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractscalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfmsd_laneq_f64).
 
 Assembly generated:
 
@@ -22087,7 +22007,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 9. InsertSelectedScalar
+### 39. InsertSelectedScalar
 
 `Vector64<byte> InsertSelectedScalar(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)`
 
@@ -22143,7 +22063,7 @@ Vector128<ulong> InsertSelectedScalar(Vector128<ulong> result, byte resultIndex,
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.insertselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.insertselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcopy_lane_u8).
 
 Assembly generated:
 
@@ -22171,7 +22091,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 10. MaxAcross
+### 40. MaxAcross
 
 `Vector64<byte> MaxAcross(Vector64<byte> value)`
 
@@ -22204,7 +22124,7 @@ Vector64<uint> MaxAcross(Vector128<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxacross?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmaxv_u8).
 
 Assembly generated:
 
@@ -22232,7 +22152,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 11. MaxNumberAcross
+### 41. MaxNumberAcross
 
 `Vector64<float> MaxNumberAcross(Vector128<float> value)`
 
@@ -22250,7 +22170,7 @@ private Vector64<float> MaxNumberAcrossTest(Vector128<float> value)
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberacross?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmaxnmvq_f32).
 
 Assembly generated:
 
@@ -22278,7 +22198,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 12. MaxNumberPairwise
+### 42. MaxNumberPairwise
 
 `Vector64<float> MaxNumberPairwise(Vector64<float> left, Vector64<float> right)`
 
@@ -22304,7 +22224,7 @@ Vector128<float> MaxNumberPairwise(Vector128<float> left, Vector128<float> right
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberpairwise?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberpairwise?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmaxnm_f32).
 
 Assembly generated:
 
@@ -22332,7 +22252,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 13. MaxNumberPairwiseScalar
+### 43. MaxNumberPairwiseScalar
 
 `Vector64<float> MaxNumberPairwiseScalar(Vector64<float> value)`
 
@@ -22356,7 +22276,7 @@ Vector64<double> MaxNumberPairwiseScalar(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberpairwisescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmaxnms_f32).
 
 Assembly generated:
 
@@ -22384,7 +22304,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 14. MaxPairwiseScalar
+### 44. MaxPairwiseScalar
 
 `Vector64<float> MaxPairwiseScalar(Vector64<float> value)`
 
@@ -22408,7 +22328,7 @@ Vector64<double> MaxPairwiseScalar(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxpairwisescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmaxs_f32).
 
 Assembly generated:
 
@@ -22436,7 +22356,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 15. MaxScalar
+### 45. MaxScalar
 
 `Vector64<double> MaxScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -22461,7 +22381,7 @@ Vector64<float> MaxScalar(Vector64<float> left, Vector64<float> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmax_f64).
 
 Assembly generated:
 
@@ -22476,6 +22396,27 @@ MaxScalarTest(Vector64double_0, Vector64double_1);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: Hardware Intrinsics APIs for ARM64 - Part 8
+subtitle: With examples
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+
+
+### API list
+
+[MinAcross](#1-minacross), [MinNumberAcross](#2-minnumberacross), [MinNumberPairwise](#3-minnumberpairwise), [MinNumberPairwiseScalar](#4-minnumberpairwisescalar), [MinPairwiseScalar](#5-minpairwisescalar), [MinScalar](#6-minscalar), [MultiplyDoublingSaturateHighScalar](#7-multiplydoublingsaturatehighscalar), [MultiplyDoublingScalarBySelectedScalarSaturateHigh](#8-multiplydoublingscalarbyselectedscalarsaturatehigh), [MultiplyDoublingWideningAndAddSaturateScalar](#9-multiplydoublingwideningandaddsaturatescalar), [MultiplyDoublingWideningAndSubtractSaturateScalar](#10-multiplydoublingwideningandsubtractsaturatescalar), [MultiplyDoublingWideningSaturateScalar](#11-multiplydoublingwideningsaturatescalar), [MultiplyDoublingWideningSaturateScalarBySelectedScalar](#12-multiplydoublingwideningsaturatescalarbyselectedscalar), [MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate](#13-multiplydoublingwideningscalarbyselectedscalarandaddsaturate), [MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate](#14-multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate), [MultiplyExtended](#15-multiplyextended), [MultiplyExtendedByScalar](#16-multiplyextendedbyscalar), [MultiplyExtendedBySelectedScalar](#17-multiplyextendedbyselectedscalar), [MultiplyExtendedScalar](#18-multiplyextendedscalar), [MultiplyExtendedScalarBySelectedScalar](#19-multiplyextendedscalarbyselectedscalar), [MultiplyRoundedDoublingSaturateHighScalar](#20-multiplyroundeddoublingsaturatehighscalar), [MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh](#21-multiplyroundeddoublingscalarbyselectedscalarsaturatehigh), [NegateSaturateScalar](#22-negatesaturatescalar), [ReciprocalEstimateScalar](#23-reciprocalestimatescalar), [ReciprocalExponentScalar](#24-reciprocalexponentscalar), [ReciprocalSquareRootEstimateScalar](#25-reciprocalsquarerootestimatescalar), [ReciprocalSquareRootStepScalar](#26-reciprocalsquarerootstepscalar), [ReciprocalStepScalar](#27-reciprocalstepscalar), [ShiftRightArithmeticNarrowingSaturateScalar](#28-shiftrightarithmeticnarrowingsaturatescalar), [ShiftRightArithmeticNarrowingSaturateUnsignedScalar](#29-shiftrightarithmeticnarrowingsaturateunsignedscalar), [ShiftRightArithmeticRoundedNarrowingSaturateScalar](#30-shiftrightarithmeticroundednarrowingsaturatescalar), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar](#31-shiftrightarithmeticroundednarrowingsaturateunsignedscalar), [ShiftRightLogicalNarrowingSaturateScalar](#32-shiftrightlogicalnarrowingsaturatescalar), [ShiftRightLogicalRoundedNarrowingSaturateScalar](#33-shiftrightlogicalroundednarrowingsaturatescalar), [Sqrt](#34-sqrt), [StorePair](#35-storepair), [StorePairNonTemporal](#36-storepairnontemporal), [StorePairScalar](#37-storepairscalar), [StorePairScalarNonTemporal](#38-storepairscalarnontemporal), [ReverseElementBits](#39-reverseelementbits), [TransposeEven](#40-transposeeven), [TransposeOdd](#41-transposeodd), [UnzipEven](#42-unzipeven), [UnzipOdd](#43-unzipodd), [ZipHigh](#44-ziphigh), [ZipLow](#45-ziplow),[...](Part8.md)
+
+
+");
 
 try {
 var MinAcrossResult = Dummy_MinAcrossTest(Vector64byte_0);
@@ -22486,10 +22427,9 @@ apiResult = MinAcrossResult.ToString();
 
 Console.WriteLine(
 @"
-```
-------------------------------------------------
 
-### 16. MinAcross
+
+### 1. MinAcross
 
 `Vector64<byte> MinAcross(Vector64<byte> value)`
 
@@ -22522,7 +22462,7 @@ Vector64<uint> MinAcross(Vector128<uint> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minacross?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vminv_u8).
 
 Assembly generated:
 
@@ -22550,7 +22490,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 17. MinNumberAcross
+### 2. MinNumberAcross
 
 `Vector64<float> MinNumberAcross(Vector128<float> value)`
 
@@ -22568,7 +22508,7 @@ private Vector64<float> MinNumberAcrossTest(Vector128<float> value)
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberacross?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vminnmvq_f32).
 
 Assembly generated:
 
@@ -22596,7 +22536,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 18. MinNumberPairwise
+### 3. MinNumberPairwise
 
 `Vector64<float> MinNumberPairwise(Vector64<float> left, Vector64<float> right)`
 
@@ -22622,7 +22562,7 @@ Vector128<float> MinNumberPairwise(Vector128<float> left, Vector128<float> right
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberpairwise?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberpairwise?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpminnm_f32).
 
 Assembly generated:
 
@@ -22650,7 +22590,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 19. MinNumberPairwiseScalar
+### 4. MinNumberPairwiseScalar
 
 `Vector64<float> MinNumberPairwiseScalar(Vector64<float> value)`
 
@@ -22674,7 +22614,7 @@ Vector64<double> MinNumberPairwiseScalar(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberpairwisescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpminnms_f32).
 
 Assembly generated:
 
@@ -22702,7 +22642,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 20. MinPairwiseScalar
+### 5. MinPairwiseScalar
 
 `Vector64<float> MinPairwiseScalar(Vector64<float> value)`
 
@@ -22726,7 +22666,7 @@ Vector64<double> MinPairwiseScalar(Vector128<double> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minpairwisescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmins_f32).
 
 Assembly generated:
 
@@ -22754,7 +22694,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 21. MinScalar
+### 6. MinScalar
 
 `Vector64<double> MinScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -22779,7 +22719,7 @@ Vector64<float> MinScalar(Vector64<float> left, Vector64<float> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmin_f64).
 
 Assembly generated:
 
@@ -22807,7 +22747,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 22. MultiplyDoublingSaturateHighScalar
+### 7. MultiplyDoublingSaturateHighScalar
 
 `Vector64<short> MultiplyDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
 
@@ -22832,7 +22772,7 @@ Vector64<int> MultiplyDoublingSaturateHighScalar(Vector64<int> left, Vector64<in
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingsaturatehighscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingsaturatehighscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmulhh_s16).
 
 Assembly generated:
 
@@ -22860,7 +22800,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 23. MultiplyDoublingScalarBySelectedScalarSaturateHigh
+### 8. MultiplyDoublingScalarBySelectedScalarSaturateHigh
 
 `Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -22888,7 +22828,7 @@ Vector64<int> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<int> l
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingscalarbyselectedscalarsaturatehigh?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingscalarbyselectedscalarsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmulhh_lane_s16).
 
 Assembly generated:
 
@@ -22916,7 +22856,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 24. MultiplyDoublingWideningAndAddSaturateScalar
+### 9. MultiplyDoublingWideningAndAddSaturateScalar
 
 `Vector64<int> MultiplyDoublingWideningAndAddSaturateScalar(Vector64<int> addend, Vector64<short> left, Vector64<short> right)`
 
@@ -22942,7 +22882,7 @@ Vector64<long> MultiplyDoublingWideningAndAddSaturateScalar(Vector64<long> adden
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningandaddsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningandaddsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlalh_s16).
 
 Assembly generated:
 
@@ -22970,7 +22910,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 25. MultiplyDoublingWideningAndSubtractSaturateScalar
+### 10. MultiplyDoublingWideningAndSubtractSaturateScalar
 
 `Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalar(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)`
 
@@ -22996,7 +22936,7 @@ Vector64<long> MultiplyDoublingWideningAndSubtractSaturateScalar(Vector64<long> 
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningandsubtractsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningandsubtractsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlslh_s16).
 
 Assembly generated:
 
@@ -23024,7 +22964,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 26. MultiplyDoublingWideningSaturateScalar
+### 11. MultiplyDoublingWideningSaturateScalar
 
 `Vector64<int> MultiplyDoublingWideningSaturateScalar(Vector64<short> left, Vector64<short> right)`
 
@@ -23049,7 +22989,7 @@ Vector64<long> MultiplyDoublingWideningSaturateScalar(Vector64<int> left, Vector
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmullh_s16).
 
 Assembly generated:
 
@@ -23077,7 +23017,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 27. MultiplyDoublingWideningSaturateScalarBySelectedScalar
+### 12. MultiplyDoublingWideningSaturateScalarBySelectedScalar
 
 `Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -23105,7 +23045,7 @@ Vector64<long> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<i
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningsaturatescalarbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningsaturatescalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmullh_lane_s16).
 
 Assembly generated:
 
@@ -23133,7 +23073,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 28. MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate
+### 13. MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate
 
 `Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -23162,7 +23102,7 @@ Vector64<long> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningscalarbyselectedscalarandaddsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningscalarbyselectedscalarandaddsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlalh_lane_s16).
 
 Assembly generated:
 
@@ -23190,7 +23130,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 29. MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate
+### 14. MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate
 
 `Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -23219,7 +23159,7 @@ Vector64<long> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlslh_lane_s16).
 
 Assembly generated:
 
@@ -23247,7 +23187,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 30. MultiplyExtended
+### 15. MultiplyExtended
 
 `Vector64<float> MultiplyExtended(Vector64<float> left, Vector64<float> right)`
 
@@ -23273,7 +23213,7 @@ Vector128<float> MultiplyExtended(Vector128<float> left, Vector128<float> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextended?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextended?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulx_f32).
 
 Assembly generated:
 
@@ -23288,27 +23228,6 @@ MultiplyExtendedTest(Vector64float_0, Vector64float_1);
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 12
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[MultiplyExtendedByScalar](#1-multiplyextendedbyscalar), [MultiplyExtendedBySelectedScalar](#2-multiplyextendedbyselectedscalar), [MultiplyExtendedScalar](#3-multiplyextendedscalar), [MultiplyExtendedScalarBySelectedScalar](#4-multiplyextendedscalarbyselectedscalar), [MultiplyRoundedDoublingSaturateHighScalar](#5-multiplyroundeddoublingsaturatehighscalar), [MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh](#6-multiplyroundeddoublingscalarbyselectedscalarsaturatehigh), [NegateSaturateScalar](#7-negatesaturatescalar), [ReciprocalEstimateScalar](#8-reciprocalestimatescalar), [ReciprocalExponentScalar](#9-reciprocalexponentscalar), [ReciprocalSquareRootEstimateScalar](#10-reciprocalsquarerootestimatescalar), [ReciprocalSquareRootStepScalar](#11-reciprocalsquarerootstepscalar), [ReciprocalStepScalar](#12-reciprocalstepscalar), [ShiftRightArithmeticNarrowingSaturateScalar](#13-shiftrightarithmeticnarrowingsaturatescalar), [ShiftRightArithmeticNarrowingSaturateUnsignedScalar](#14-shiftrightarithmeticnarrowingsaturateunsignedscalar), [ShiftRightArithmeticRoundedNarrowingSaturateScalar](#15-shiftrightarithmeticroundednarrowingsaturatescalar), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar](#16-shiftrightarithmeticroundednarrowingsaturateunsignedscalar), [ShiftRightLogicalNarrowingSaturateScalar](#17-shiftrightlogicalnarrowingsaturatescalar), [ShiftRightLogicalRoundedNarrowingSaturateScalar](#18-shiftrightlogicalroundednarrowingsaturatescalar), [Sqrt](#19-sqrt), [StorePair](#20-storepair), [StorePairNonTemporal](#21-storepairnontemporal), [StorePairScalar](#22-storepairscalar), [StorePairScalarNonTemporal](#23-storepairscalarnontemporal), [ReverseElementBits](#24-reverseelementbits), [TransposeEven](#25-transposeeven), [TransposeOdd](#26-transposeodd), [UnzipEven](#27-unzipeven), [UnzipOdd](#28-unzipodd), [ZipHigh](#29-ziphigh), [ZipLow](#30-ziplow),[...](Part12.md)
-
-
-");
 
 try {
 var MultiplyExtendedByScalarResult = Dummy_MultiplyExtendedByScalarTest(Vector128double_0, Vector64double_0);
@@ -23319,9 +23238,10 @@ apiResult = MultiplyExtendedByScalarResult.ToString();
 
 Console.WriteLine(
 @"
+```
+------------------------------------------------
 
-
-### 1. MultiplyExtendedByScalar
+### 16. MultiplyExtendedByScalar
 
 `Vector128<double> MultiplyExtendedByScalar(Vector128<double> left, Vector64<double> right)`
 
@@ -23340,7 +23260,7 @@ private Vector128<double> MultiplyExtendedByScalarTest(Vector128<double> left, V
 
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedbyscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulxq_lane_f64).
 
 Assembly generated:
 
@@ -23368,7 +23288,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 2. MultiplyExtendedBySelectedScalar
+### 17. MultiplyExtendedBySelectedScalar
 
 `Vector64<float> MultiplyExtendedBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`
 
@@ -23397,7 +23317,7 @@ Vector128<float> MultiplyExtendedBySelectedScalar(Vector128<float> left, Vector1
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulx_lane_f32).
 
 Assembly generated:
 
@@ -23425,7 +23345,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 3. MultiplyExtendedScalar
+### 18. MultiplyExtendedScalar
 
 `Vector64<double> MultiplyExtendedScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -23450,7 +23370,7 @@ Vector64<float> MultiplyExtendedScalar(Vector64<float> left, Vector64<float> rig
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulx_f64).
 
 Assembly generated:
 
@@ -23478,7 +23398,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 4. MultiplyExtendedScalarBySelectedScalar
+### 19. MultiplyExtendedScalarBySelectedScalar
 
 `Vector64<double> MultiplyExtendedScalarBySelectedScalar(Vector64<double> left, Vector128<double> right, byte rightIndex)`
 
@@ -23505,7 +23425,7 @@ Vector64<float> MultiplyExtendedScalarBySelectedScalar(Vector64<float> left, Vec
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedscalarbyselectedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedscalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulxd_laneq_f64).
 
 Assembly generated:
 
@@ -23533,7 +23453,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 5. MultiplyRoundedDoublingSaturateHighScalar
+### 20. MultiplyRoundedDoublingSaturateHighScalar
 
 `Vector64<short> MultiplyRoundedDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
 
@@ -23558,7 +23478,7 @@ Vector64<int> MultiplyRoundedDoublingSaturateHighScalar(Vector64<int> left, Vect
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyroundeddoublingsaturatehighscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyroundeddoublingsaturatehighscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrdmulhh_s16).
 
 Assembly generated:
 
@@ -23586,7 +23506,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 6. MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh
+### 21. MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh
 
 `Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -23614,7 +23534,7 @@ Vector64<int> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyroundeddoublingscalarbyselectedscalarsaturatehigh?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyroundeddoublingscalarbyselectedscalarsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrdmulhh_lane_s16).
 
 Assembly generated:
 
@@ -23642,7 +23562,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 7. NegateSaturateScalar
+### 22. NegateSaturateScalar
 
 `Vector64<short> NegateSaturateScalar(Vector64<short> value)`
 
@@ -23668,7 +23588,7 @@ Vector64<sbyte> NegateSaturateScalar(Vector64<sbyte> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.negatesaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.negatesaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqnegh_s16).
 
 Assembly generated:
 
@@ -23696,7 +23616,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 8. ReciprocalEstimateScalar
+### 23. ReciprocalEstimateScalar
 
 `Vector64<double> ReciprocalEstimateScalar(Vector64<double> value)`
 
@@ -23720,7 +23640,7 @@ Vector64<float> ReciprocalEstimateScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalestimatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalestimatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecpe_f64).
 
 Assembly generated:
 
@@ -23748,7 +23668,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 9. ReciprocalExponentScalar
+### 24. ReciprocalExponentScalar
 
 `Vector64<double> ReciprocalExponentScalar(Vector64<double> value)`
 
@@ -23772,7 +23692,7 @@ Vector64<float> ReciprocalExponentScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalexponentscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalexponentscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecpxd_f64).
 
 Assembly generated:
 
@@ -23800,7 +23720,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 10. ReciprocalSquareRootEstimateScalar
+### 25. ReciprocalSquareRootEstimateScalar
 
 `Vector64<double> ReciprocalSquareRootEstimateScalar(Vector64<double> value)`
 
@@ -23824,7 +23744,7 @@ Vector64<float> ReciprocalSquareRootEstimateScalar(Vector64<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootestimatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootestimatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsqrte_f64).
 
 Assembly generated:
 
@@ -23852,7 +23772,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 11. ReciprocalSquareRootStepScalar
+### 26. ReciprocalSquareRootStepScalar
 
 `Vector64<double> ReciprocalSquareRootStepScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -23877,7 +23797,7 @@ Vector64<float> ReciprocalSquareRootStepScalar(Vector64<float> left, Vector64<fl
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootstepscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootstepscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsqrts_f64).
 
 Assembly generated:
 
@@ -23905,7 +23825,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 12. ReciprocalStepScalar
+### 27. ReciprocalStepScalar
 
 `Vector64<double> ReciprocalStepScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -23930,7 +23850,7 @@ Vector64<float> ReciprocalStepScalar(Vector64<float> left, Vector64<float> right
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalstepscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalstepscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecps_f64).
 
 Assembly generated:
 
@@ -23958,7 +23878,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 13. ShiftRightArithmeticNarrowingSaturateScalar
+### 28. ShiftRightArithmeticNarrowingSaturateScalar
 
 `Vector64<short> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<int> value, byte count)`
 
@@ -23984,7 +23904,7 @@ Vector64<sbyte> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<short> valu
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticnarrowingsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticnarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrns_n_s32).
 
 Assembly generated:
 
@@ -24012,7 +23932,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 14. ShiftRightArithmeticNarrowingSaturateUnsignedScalar
+### 29. ShiftRightArithmeticNarrowingSaturateUnsignedScalar
 
 `Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
 
@@ -24038,7 +23958,7 @@ Vector64<uint> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<long
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticnarrowingsaturateunsignedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticnarrowingsaturateunsignedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrunh_n_s16).
 
 Assembly generated:
 
@@ -24066,7 +23986,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 15. ShiftRightArithmeticRoundedNarrowingSaturateScalar
+### 30. ShiftRightArithmeticRoundedNarrowingSaturateScalar
 
 `Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<int> value, byte count)`
 
@@ -24092,7 +24012,7 @@ Vector64<sbyte> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<shor
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticroundednarrowingsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticroundednarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrns_n_s32).
 
 Assembly generated:
 
@@ -24120,7 +24040,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 16. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar
+### 31. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar
 
 `Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
 
@@ -24146,7 +24066,7 @@ Vector64<uint> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticroundednarrowingsaturateunsignedscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticroundednarrowingsaturateunsignedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrunh_n_s16).
 
 Assembly generated:
 
@@ -24174,7 +24094,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 17. ShiftRightLogicalNarrowingSaturateScalar
+### 32. ShiftRightLogicalNarrowingSaturateScalar
 
 `Vector64<byte> ShiftRightLogicalNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
 
@@ -24203,7 +24123,7 @@ Vector64<uint> ShiftRightLogicalNarrowingSaturateScalar(Vector64<ulong> value, b
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightlogicalnarrowingsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightlogicalnarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrnh_n_u16).
 
 Assembly generated:
 
@@ -24231,7 +24151,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 18. ShiftRightLogicalRoundedNarrowingSaturateScalar
+### 33. ShiftRightLogicalRoundedNarrowingSaturateScalar
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
 
@@ -24260,7 +24180,7 @@ Vector64<uint> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<ulong> v
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightlogicalroundednarrowingsaturatescalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightlogicalroundednarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrnh_n_u16).
 
 Assembly generated:
 
@@ -24288,7 +24208,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 19. Sqrt
+### 34. Sqrt
 
 `Vector64<float> Sqrt(Vector64<float> value)`
 
@@ -24313,7 +24233,7 @@ Vector128<float> Sqrt(Vector128<float> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.sqrt?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.sqrt?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsqrt_f32).
 
 Assembly generated:
 
@@ -24343,7 +24263,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 20. StorePair
+### 35. StorePair
 
 `void StorePair(byte* address, Vector64<byte> value1, Vector64<byte> value2)`
 
@@ -24386,7 +24306,7 @@ void StorePair(ulong* address, Vector128<ulong> value1, Vector128<ulong> value2)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepair?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepair?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=).
 
 Assembly generated:
 
@@ -24417,7 +24337,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 21. StorePairNonTemporal
+### 36. StorePairNonTemporal
 
 `void StorePairNonTemporal(byte* address, Vector64<byte> value1, Vector64<byte> value2)`
 
@@ -24460,7 +24380,7 @@ void StorePairNonTemporal(ulong* address, Vector128<ulong> value1, Vector128<ulo
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairnontemporal?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairnontemporal?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=).
 
 Assembly generated:
 
@@ -24491,7 +24411,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 22. StorePairScalar
+### 37. StorePairScalar
 
 `void StorePairScalar(int* address, Vector64<int> value1, Vector64<int> value2)`
 
@@ -24517,7 +24437,7 @@ void StorePairScalar(uint* address, Vector64<uint> value1, Vector64<uint> value2
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairscalar?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=).
 
 Assembly generated:
 
@@ -24548,7 +24468,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 23. StorePairScalarNonTemporal
+### 38. StorePairScalarNonTemporal
 
 `void StorePairScalarNonTemporal(int* address, Vector64<int> value1, Vector64<int> value2)`
 
@@ -24574,7 +24494,7 @@ void StorePairScalarNonTemporal(uint* address, Vector64<uint> value1, Vector64<u
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairscalarnontemporal?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairscalarnontemporal?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=).
 
 Assembly generated:
 
@@ -24603,7 +24523,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 24. ReverseElementBits
+### 39. ReverseElementBits
 
 `Vector64<byte> ReverseElementBits(Vector64<byte> value)`
 
@@ -24629,7 +24549,7 @@ Vector128<sbyte> ReverseElementBits(Vector128<sbyte> value)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reverseelementbits?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reverseelementbits?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrbit_u8).
 
 Assembly generated:
 
@@ -24657,7 +24577,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 25. TransposeEven
+### 40. TransposeEven
 
 `Vector64<byte> TransposeEven(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24697,7 +24617,7 @@ Vector128<ulong> TransposeEven(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.transposeeven?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.transposeeven?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vtrn1_u8).
 
 Assembly generated:
 
@@ -24725,7 +24645,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 26. TransposeOdd
+### 41. TransposeOdd
 
 `Vector64<byte> TransposeOdd(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24765,7 +24685,7 @@ Vector128<ulong> TransposeOdd(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.transposeodd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.transposeodd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vtrn2_u8).
 
 Assembly generated:
 
@@ -24793,7 +24713,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 27. UnzipEven
+### 42. UnzipEven
 
 `Vector64<byte> UnzipEven(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24833,7 +24753,7 @@ Vector128<ulong> UnzipEven(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.unzipeven?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.unzipeven?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vuzp1_u8).
 
 Assembly generated:
 
@@ -24861,7 +24781,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 28. UnzipOdd
+### 43. UnzipOdd
 
 `Vector64<byte> UnzipOdd(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24901,7 +24821,7 @@ Vector128<ulong> UnzipOdd(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.unzipodd?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.unzipodd?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vuzp2_u8).
 
 Assembly generated:
 
@@ -24929,7 +24849,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 29. ZipHigh
+### 44. ZipHigh
 
 `Vector64<byte> ZipHigh(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24969,7 +24889,7 @@ Vector128<ulong> ZipHigh(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.ziphigh?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.ziphigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vzip2_u8).
 
 Assembly generated:
 
@@ -24997,7 +24917,7 @@ Console.WriteLine(
 ```
 ------------------------------------------------
 
-### 30. ZipLow
+### 45. ZipLow
 
 `Vector64<byte> ZipLow(Vector64<byte> left, Vector64<byte> right)`
 
@@ -25037,7 +24957,7 @@ Vector128<ulong> ZipLow(Vector128<ulong> left, Vector128<ulong> right)
 ```
 
 
-See MSDN reference [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.ziplow?view=net-5.0).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.ziplow?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vzip1_u8).
 
 Assembly generated:
 

@@ -70,7 +70,7 @@ private {1}
 
 {7}
 
-See MSDN reference {8}.
+See Microsoft docs {8}{10}.
 
 Assembly generated:
 
@@ -96,8 +96,9 @@ private static {2} {1}
         private static string sectionSep =
 @"```
 ------------------------------------------------";
-        private static string advSimdRefTemplate = "https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.{0}?view=net-5.0";
-        private static string arm64RefTemplate = "https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.{0}?view=net-5.0";
+        private static string microsoftAdvSimdRefTemplate = "https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.{0}?view=net-5.0";
+        private static string microsoftArm64RefTemplate = "https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.{0}?view=net-5.0";
+        private static string armRefTemplate = "https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search={0}";
         private static int count = 1;
         private static int sectionCount = 1;
         #endregion

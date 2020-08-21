@@ -11,6 +11,7 @@ using System.Resources;
 using System.Runtime.Intrinsics;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace AdvSimdBlogGen
 {
@@ -22,11 +23,11 @@ namespace AdvSimdBlogGen
         private static HashSet<string> uniqueArgs = new HashSet<string>();
         private static List<string> tocBuilder = new List<string>();
         private static Dictionary<string, string> globalTocBuilder = new Dictionary<string, string>();
-        private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>> advSimdMethods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>>();
-        private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>> arm64Methods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>>();
+        private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>, string>>> advSimdMethods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>, string>>>();
+        private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>, string>>> arm64Methods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>, string>>>();
         private static bool shouldGenerateCsv = false;
         private static bool shouldReadFromCsv = true;
-        private static int apisPerBlog = 30;
+        private static int apisPerBlog = 45;
 
         public static void Main(string[] args)
         {
@@ -171,13 +172,19 @@ namespace AdvSimdBlogGen
             string testMethodSig = signature.Replace(methodName, testMethodName);
             string dummyTestMethodSig = signature.Replace(methodName, dummyTestMethodName);
             var parameters = details.Item2;
+            var cppIntrinsic = details.Item3;
 
             // TOC
             tocBuilder.Add(string.Format("[{0}](#{1}-{2})", methodName, count, methodName.ToLower()));
 
             // References
-            string advsimdReference = "[here](" + string.Format(advSimdRefTemplate, methodName.ToLower()) + ")";
-            string arm64Reference = "[here](" + string.Format(arm64RefTemplate, methodName.ToLower()) + ")";
+            string advsimdReference = "[here](" + string.Format(microsoftAdvSimdRefTemplate, methodName.ToLower()) + ")";
+            string arm64Reference = "[here](" + string.Format(microsoftArm64RefTemplate, methodName.ToLower()) + ")";
+            string armDocsReference = string.Empty;
+            if (!string.IsNullOrEmpty(cppIntrinsic))
+            {
+                armDocsReference = ", ARM docs [here](" + string.Format(armRefTemplate, cppIntrinsic) + ")";
+            }
 
             // Overloads
             StringBuilder overloadBuilder = new StringBuilder();
@@ -326,7 +333,8 @@ namespace AdvSimdBlogGen
                 signature, // 6
                 overloadBuilder.ToString(), // 7
                 advsimdReference, // 8
-                (count == 1) ? string.Empty : sectionSep // 9
+                (count == 1) ? string.Empty : sectionSep, // 9
+                armDocsReference // 10
                 );
 
             methodCallBuilder.AppendLine(dummyMethodCall);
@@ -360,26 +368,41 @@ namespace AdvSimdBlogGen
             string contents = File.ReadAllText(@"D:\git\runtime\src\libraries\System.Private.CoreLib\src\System\Runtime\Intrinsics\Arm\AdvSimd.cs");
             SyntaxTree tree = CSharpSyntaxTree.ParseText(contents);
             var members = tree.GetRoot().DescendantNodes().OfType<MemberDeclarationSyntax>();
+            var cppSignatureRe = new Regex(@"(\w+)\s+(\w+)\s*\((\w+)");
             foreach (var member in members)
             {
                 var method = member as MethodDeclarationSyntax;
                 if (method != null)
                 {
+                    string cppIntrinsic = null;
                     string className = ((Microsoft.CodeAnalysis.CSharp.Syntax.ClassDeclarationSyntax)method.Parent).Identifier.ValueText;
                     string methodName = method.Identifier.Text;
                     var tableToUse = className == "Arm64" ? arm64Methods : advSimdMethods;
-
                     var parameters = method.ParameterList.Parameters;
                     string parametersSig = string.Join(", ", parameters.Select(p => p.ToString()));
                     var returnType = method.ReturnType.ToString();
+
+                    // Get the cppIntrinsics from summary docs
+                    var methodSummaryTree = method.GetLeadingTrivia().FirstOrDefault(t => t.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia);
+                    if (methodSummaryTree != null)
+                    {
+                        string cppSignature = methodSummaryTree.ToString().Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries).Skip(1).First();
+                        Match signatureMatch = cppSignatureRe.Match(cppSignature);
+                        if (signatureMatch.Success && signatureMatch.Groups.Count > 3)
+                        {
+                            cppIntrinsic = signatureMatch.Groups[2].Value.Trim();
+                        }
+                    }
+
                     if (!tableToUse.ContainsKey(methodName))
                     {
-                        tableToUse[methodName] = new List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>>>();
+                        tableToUse[methodName] = new List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>, string>>();
                     }
 
                     string signature = $"{returnType} {methodName}({parametersSig})";
+                    tableToUse[methodName].Add(Tuple.Create(signature, parameters, cppIntrinsic));
 
-                    tableToUse[methodName].Add(Tuple.Create(signature, parameters));
+                    
                 }
             }
         }
