@@ -753,24 +753,24 @@ private static  Vector64<double> DivideScalarTest(Vector64<double> left, Vector6
 
 private static  Vector64<byte> Dummy_DuplicateSelectedScalarToVector64Test(Vector64<byte> value, byte index)
 {
-  return AdvSimd.DuplicateSelectedScalarToVector64(value, index);
+  return AdvSimd.DuplicateSelectedScalarToVector64(value, 3);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> DuplicateSelectedScalarToVector64Test(Vector64<byte> value, byte index)
 {
-  return AdvSimd.DuplicateSelectedScalarToVector64(value, index);
+  return AdvSimd.DuplicateSelectedScalarToVector64(value, 3);
 }
 
 
 
 private static  Vector128<byte> Dummy_DuplicateSelectedScalarToVector128Test(Vector64<byte> value, byte index)
 {
-  return AdvSimd.DuplicateSelectedScalarToVector128(value, index);
+  return AdvSimd.DuplicateSelectedScalarToVector128(value, 3);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<byte> DuplicateSelectedScalarToVector128Test(Vector64<byte> value, byte index)
 {
-  return AdvSimd.DuplicateSelectedScalarToVector128(value, index);
+  return AdvSimd.DuplicateSelectedScalarToVector128(value, 3);
 }
 
 
@@ -801,12 +801,12 @@ private static  Vector128<byte> DuplicateToVector128Test(byte value)
 
 private static  byte Dummy_ExtractTest(Vector64<byte> vector, byte index)
 {
-  return AdvSimd.Extract(vector, index);
+  return AdvSimd.Extract(vector, 3);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  byte ExtractTest(Vector64<byte> vector, byte index)
 {
-  return AdvSimd.Extract(vector, index);
+  return AdvSimd.Extract(vector, 3);
 }
 
 
@@ -885,24 +885,24 @@ private static  Vector128<byte> ExtractNarrowingUpperTest(Vector64<byte> lower, 
 
 private static  Vector64<byte> Dummy_ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower, byte index)
 {
-  return AdvSimd.ExtractVector64(upper, lower, index);
+  return AdvSimd.ExtractVector64(upper, lower, 5);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower, byte index)
 {
-  return AdvSimd.ExtractVector64(upper, lower, index);
+  return AdvSimd.ExtractVector64(upper, lower, 5);
 }
 
 
 
 private static  Vector128<byte> Dummy_ExtractVector128Test(Vector128<byte> upper, Vector128<byte> lower, byte index)
 {
-  return AdvSimd.ExtractVector128(upper, lower, index);
+  return AdvSimd.ExtractVector128(upper, lower, 5);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<byte> ExtractVector128Test(Vector128<byte> upper, Vector128<byte> lower, byte index)
 {
-  return AdvSimd.ExtractVector128(upper, lower, index);
+  return AdvSimd.ExtractVector128(upper, lower, 5);
 }
 
 
@@ -1041,24 +1041,24 @@ private static  Vector64<byte> FusedSubtractHalvingTest(Vector64<byte> left, Vec
 
 private static  Vector64<byte> Dummy_InsertTest(Vector64<byte> vector, byte index, byte data)
 {
-  return AdvSimd.Insert(vector, index, data);
+  return AdvSimd.Insert(vector, 4, 200);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> InsertTest(Vector64<byte> vector, byte index, byte data)
 {
-  return AdvSimd.Insert(vector, index, data);
+  return AdvSimd.Insert(vector, 4, 200);
 }
 
 
 
 private static  Vector128<double> Dummy_InsertScalarTest(Vector128<double> result, byte resultIndex, Vector64<double> value)
 {
-  return AdvSimd.InsertScalar(result, resultIndex, value);
+  return AdvSimd.InsertScalar(result, 1, value);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<double> InsertScalarTest(Vector128<double> result, byte resultIndex, Vector64<double> value)
 {
-  return AdvSimd.InsertScalar(result, resultIndex, value);
+  return AdvSimd.InsertScalar(result, 1, value);
 }
 
 
@@ -1089,12 +1089,12 @@ private static  Vector64<byte> LeadingZeroCountTest(Vector64<byte> value)
 
 private static unsafe Vector64<byte> Dummy_LoadAndInsertScalarTest(Vector64<byte> value, byte index, byte* address)
 {
-  return AdvSimd.LoadAndInsertScalar(value, index, address);
+  return AdvSimd.LoadAndInsertScalar(value, 2, address);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static unsafe Vector64<byte> LoadAndInsertScalarTest(Vector64<byte> value, byte index, byte* address)
 {
-  return AdvSimd.LoadAndInsertScalar(value, index, address);
+  return AdvSimd.LoadAndInsertScalar(value, 2, address);
 }
 
 
@@ -1281,12 +1281,12 @@ private static  Vector64<short> MultiplyAddByScalarTest(Vector64<short> addend, 
 
 private static  Vector64<short> Dummy_MultiplyAddBySelectedScalarTest(Vector64<short> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyAddBySelectedScalar(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyAddBySelectedScalar(addend, left, right, 3);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> MultiplyAddBySelectedScalarTest(Vector64<short> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyAddBySelectedScalar(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyAddBySelectedScalar(addend, left, right, 3);
 }
 
 
@@ -1305,84 +1305,84 @@ private static  Vector64<short> MultiplyByScalarTest(Vector64<short> left, Vecto
 
 private static  Vector64<short> Dummy_MultiplyBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalar(left, right, 3);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> MultiplyBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalar(left, right, 3);
 }
 
 
 
 private static  Vector128<int> Dummy_MultiplyBySelectedScalarWideningLowerTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningLower(left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningLower(left, right, 3);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyBySelectedScalarWideningLowerTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningLower(left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningLower(left, right, 3);
 }
 
 
 
 private static  Vector128<int> Dummy_MultiplyBySelectedScalarWideningLowerAndAddTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndAdd(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndAdd(addend, left, right, 2);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyBySelectedScalarWideningLowerAndAddTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndAdd(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndAdd(addend, left, right, 2);
 }
 
 
 
 private static  Vector128<int> Dummy_MultiplyBySelectedScalarWideningLowerAndSubtractTest(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndSubtract(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndSubtract(minuend, left, right, 2);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyBySelectedScalarWideningLowerAndSubtractTest(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndSubtract(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndSubtract(minuend, left, right, 2);
 }
 
 
 
 private static  Vector128<int> Dummy_MultiplyBySelectedScalarWideningUpperTest(Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningUpper(left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningUpper(left, right, 2);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyBySelectedScalarWideningUpperTest(Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningUpper(left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningUpper(left, right, 2);
 }
 
 
 
 private static  Vector128<int> Dummy_MultiplyBySelectedScalarWideningUpperAndAddTest(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndAdd(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndAdd(addend, left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyBySelectedScalarWideningUpperAndAddTest(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndAdd(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndAdd(addend, left, right, 0);
 }
 
 
 
 private static  Vector128<int> Dummy_MultiplyBySelectedScalarWideningUpperAndSubtractTest(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndSubtract(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndSubtract(minuend, left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyBySelectedScalarWideningUpperAndSubtractTest(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndSubtract(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndSubtract(minuend, left, right, 0);
 }
 
 
@@ -1401,12 +1401,12 @@ private static  Vector64<short> MultiplyDoublingByScalarSaturateHighTest(Vector6
 
 private static  Vector64<short> Dummy_MultiplyDoublingBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingBySelectedScalarSaturateHigh(left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> MultiplyDoublingBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingBySelectedScalarSaturateHigh(left, right, 0);
 }
 
 
@@ -1473,24 +1473,24 @@ private static  Vector128<int> MultiplyDoublingWideningLowerByScalarAndSubtractS
 
 private static  Vector128<int> Dummy_MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturateTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(addend, left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturateTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(addend, left, right, 0);
 }
 
 
 
 private static  Vector128<int> Dummy_MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturateTest(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturateTest(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
 }
 
 
@@ -1521,12 +1521,12 @@ private static  Vector128<int> MultiplyDoublingWideningSaturateLowerByScalarTest
 
 private static  Vector128<int> Dummy_MultiplyDoublingWideningSaturateLowerBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningSaturateLowerBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningSaturateLowerBySelectedScalar(left, right, 2);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyDoublingWideningSaturateLowerBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningSaturateLowerBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningSaturateLowerBySelectedScalar(left, right, 2);
 }
 
 
@@ -1557,12 +1557,12 @@ private static  Vector128<int> MultiplyDoublingWideningSaturateUpperByScalarTest
 
 private static  Vector128<int> Dummy_MultiplyDoublingWideningSaturateUpperBySelectedScalarTest(Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningSaturateUpperBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningSaturateUpperBySelectedScalar(left, right, 2);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyDoublingWideningSaturateUpperBySelectedScalarTest(Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningSaturateUpperBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningSaturateUpperBySelectedScalar(left, right, 2);
 }
 
 
@@ -1617,24 +1617,24 @@ private static  Vector128<int> MultiplyDoublingWideningUpperByScalarAndSubtractS
 
 private static  Vector128<int> Dummy_MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturateTest(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(addend, left, right, 2);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturateTest(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(addend, left, right, 2);
 }
 
 
 
 private static  Vector128<int> Dummy_MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(minuend, left, right, 2);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(minuend, left, right, 2);
 }
 
 
@@ -1653,12 +1653,12 @@ private static  Vector64<short> MultiplyRoundedDoublingByScalarSaturateHighTest(
 
 private static  Vector64<short> Dummy_MultiplyRoundedDoublingBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyRoundedDoublingBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.MultiplyRoundedDoublingBySelectedScalarSaturateHigh(left, right, 2);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> MultiplyRoundedDoublingBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyRoundedDoublingBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.MultiplyRoundedDoublingBySelectedScalarSaturateHigh(left, right, 2);
 }
 
 
@@ -1689,12 +1689,12 @@ private static  Vector64<double> MultiplyScalarTest(Vector64<double> left, Vecto
 
 private static  Vector64<float> Dummy_MultiplyScalarBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyScalarBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyScalarBySelectedScalar(left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<float> MultiplyScalarBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
 {
-  return AdvSimd.MultiplyScalarBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyScalarBySelectedScalar(left, right, 0);
 }
 
 
@@ -1725,12 +1725,12 @@ private static  Vector64<short> MultiplySubtractByScalarTest(Vector64<short> min
 
 private static  Vector64<short> Dummy_MultiplySubtractBySelectedScalarTest(Vector64<short> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplySubtractBySelectedScalar(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplySubtractBySelectedScalar(minuend, left, right, 2);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> MultiplySubtractBySelectedScalarTest(Vector64<short> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.MultiplySubtractBySelectedScalar(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplySubtractBySelectedScalar(minuend, left, right, 2);
 }
 
 
@@ -2229,120 +2229,120 @@ private static  Vector64<long> ShiftArithmeticScalarTest(Vector64<long> value, V
 
 private static  Vector64<byte> Dummy_ShiftLeftAndInsertTest(Vector64<byte> left, Vector64<byte> right, byte shift)
 {
-  return AdvSimd.ShiftLeftAndInsert(left, right, shift);
+  return AdvSimd.ShiftLeftAndInsert(left, right, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftLeftAndInsertTest(Vector64<byte> left, Vector64<byte> right, byte shift)
 {
-  return AdvSimd.ShiftLeftAndInsert(left, right, shift);
+  return AdvSimd.ShiftLeftAndInsert(left, right, 1);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftLeftAndInsertScalarTest(Vector64<long> left, Vector64<long> right, byte shift)
 {
-  return AdvSimd.ShiftLeftAndInsertScalar(left, right, shift);
+  return AdvSimd.ShiftLeftAndInsertScalar(left, right, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftLeftAndInsertScalarTest(Vector64<long> left, Vector64<long> right, byte shift)
 {
-  return AdvSimd.ShiftLeftAndInsertScalar(left, right, shift);
+  return AdvSimd.ShiftLeftAndInsertScalar(left, right, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftLeftLogicalTest(Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogical(value, count);
+  return AdvSimd.ShiftLeftLogical(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftLeftLogicalTest(Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogical(value, count);
+  return AdvSimd.ShiftLeftLogical(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftLeftLogicalSaturateTest(Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalSaturate(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturate(value, 6);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftLeftLogicalSaturateTest(Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalSaturate(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturate(value, 6);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftLeftLogicalSaturateScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalSaturateScalar(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturateScalar(value, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftLeftLogicalSaturateScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalSaturateScalar(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturateScalar(value, 0);
 }
 
 
 
 private static  Vector64<ushort> Dummy_ShiftLeftLogicalSaturateUnsignedTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalSaturateUnsigned(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturateUnsigned(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<ushort> ShiftLeftLogicalSaturateUnsignedTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalSaturateUnsigned(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturateUnsigned(value, 1);
 }
 
 
 
 private static  Vector64<ulong> Dummy_ShiftLeftLogicalSaturateUnsignedScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalSaturateUnsignedScalar(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturateUnsignedScalar(value, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<ulong> ShiftLeftLogicalSaturateUnsignedScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalSaturateUnsignedScalar(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturateUnsignedScalar(value, 0);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftLeftLogicalScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalScalar(value, count);
+  return AdvSimd.ShiftLeftLogicalScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftLeftLogicalScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalScalar(value, count);
+  return AdvSimd.ShiftLeftLogicalScalar(value, 1);
 }
 
 
 
 private static  Vector128<ushort> Dummy_ShiftLeftLogicalWideningLowerTest(Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalWideningLower(value, count);
+  return AdvSimd.ShiftLeftLogicalWideningLower(value, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<ushort> ShiftLeftLogicalWideningLowerTest(Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalWideningLower(value, count);
+  return AdvSimd.ShiftLeftLogicalWideningLower(value, 0);
 }
 
 
 
 private static  Vector128<ushort> Dummy_ShiftLeftLogicalWideningUpperTest(Vector128<byte> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalWideningUpper(value, count);
+  return AdvSimd.ShiftLeftLogicalWideningUpper(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<ushort> ShiftLeftLogicalWideningUpperTest(Vector128<byte> value, byte count)
 {
-  return AdvSimd.ShiftLeftLogicalWideningUpper(value, count);
+  return AdvSimd.ShiftLeftLogicalWideningUpper(value, 1);
 }
 
 
@@ -2445,408 +2445,408 @@ private static  Vector64<long> ShiftLogicalScalarTest(Vector64<long> value, Vect
 
 private static  Vector64<byte> Dummy_ShiftRightAndInsertTest(Vector64<byte> left, Vector64<byte> right, byte shift)
 {
-  return AdvSimd.ShiftRightAndInsert(left, right, shift);
+  return AdvSimd.ShiftRightAndInsert(left, right, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightAndInsertTest(Vector64<byte> left, Vector64<byte> right, byte shift)
 {
-  return AdvSimd.ShiftRightAndInsert(left, right, shift);
+  return AdvSimd.ShiftRightAndInsert(left, right, 1);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftRightAndInsertScalarTest(Vector64<long> left, Vector64<long> right, byte shift)
 {
-  return AdvSimd.ShiftRightAndInsertScalar(left, right, shift);
+  return AdvSimd.ShiftRightAndInsertScalar(left, right, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftRightAndInsertScalarTest(Vector64<long> left, Vector64<long> right, byte shift)
 {
-  return AdvSimd.ShiftRightAndInsertScalar(left, right, shift);
+  return AdvSimd.ShiftRightAndInsertScalar(left, right, 1);
 }
 
 
 
 private static  Vector64<short> Dummy_ShiftRightArithmeticTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmetic(value, count);
+  return AdvSimd.ShiftRightArithmetic(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> ShiftRightArithmeticTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmetic(value, count);
+  return AdvSimd.ShiftRightArithmetic(value, 1);
 }
 
 
 
 private static  Vector64<short> Dummy_ShiftRightArithmeticAddTest(Vector64<short> addend, Vector64<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticAdd(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticAdd(addend, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> ShiftRightArithmeticAddTest(Vector64<short> addend, Vector64<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticAdd(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticAdd(addend, value, 1);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftRightArithmeticAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticAddScalar(addend, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftRightArithmeticAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticAddScalar(addend, value, 1);
 }
 
 
 
 private static  Vector64<short> Dummy_ShiftRightArithmeticNarrowingSaturateLowerTest(Vector128<int> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateLower(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> ShiftRightArithmeticNarrowingSaturateLowerTest(Vector128<int> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateLower(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedLower(value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedLower(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedLower(value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedLower(value, 1);
 }
 
 
 
 private static  Vector128<byte> Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64<byte> lower, Vector128<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedUpper(lower, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<byte> ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64<byte> lower, Vector128<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedUpper(lower, value, 1);
 }
 
 
 
 private static  Vector128<short> Dummy_ShiftRightArithmeticNarrowingSaturateUpperTest(Vector64<short> lower, Vector128<int> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUpper(lower, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<short> ShiftRightArithmeticNarrowingSaturateUpperTest(Vector64<short> lower, Vector128<int> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUpper(lower, value, 1);
 }
 
 
 
 private static  Vector64<short> Dummy_ShiftRightArithmeticRoundedTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRounded(value, count);
+  return AdvSimd.ShiftRightArithmeticRounded(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> ShiftRightArithmeticRoundedTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRounded(value, count);
+  return AdvSimd.ShiftRightArithmeticRounded(value, 1);
 }
 
 
 
 private static  Vector64<short> Dummy_ShiftRightArithmeticRoundedAddTest(Vector64<short> addend, Vector64<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedAdd(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedAdd(addend, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> ShiftRightArithmeticRoundedAddTest(Vector64<short> addend, Vector64<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedAdd(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedAdd(addend, value, 1);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftRightArithmeticRoundedAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedAddScalar(addend, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftRightArithmeticRoundedAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedAddScalar(addend, value, 1);
 }
 
 
 
 private static  Vector64<short> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateLowerTest(Vector128<int> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateLower(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateLowerTest(Vector128<int> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateLower(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(value, 1);
 }
 
 
 
 private static  Vector128<byte> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpperTest(Vector64<byte> lower, Vector128<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(lower, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpperTest(Vector64<byte> lower, Vector128<short> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(lower, value, 1);
 }
 
 
 
 private static  Vector128<short> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUpperTest(Vector64<short> lower, Vector128<int> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUpper(lower, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<short> ShiftRightArithmeticRoundedNarrowingSaturateUpperTest(Vector64<short> lower, Vector128<int> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUpper(lower, value, 1);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftRightArithmeticRoundedScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedScalar(value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftRightArithmeticRoundedScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticRoundedScalar(value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedScalar(value, 1);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftRightArithmeticScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticScalar(value, count);
+  return AdvSimd.ShiftRightArithmeticScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftRightArithmeticScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightArithmeticScalar(value, count);
+  return AdvSimd.ShiftRightArithmeticScalar(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalTest(Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftRightLogical(value, count);
+  return AdvSimd.ShiftRightLogical(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalTest(Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftRightLogical(value, count);
+  return AdvSimd.ShiftRightLogical(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalAddTest(Vector64<byte> addend, Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalAdd(addend, value, count);
+  return AdvSimd.ShiftRightLogicalAdd(addend, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalAddTest(Vector64<byte> addend, Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalAdd(addend, value, count);
+  return AdvSimd.ShiftRightLogicalAdd(addend, value, 1);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftRightLogicalAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightLogicalAddScalar(addend, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftRightLogicalAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightLogicalAddScalar(addend, value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalNarrowingLowerTest(Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalNarrowingLower(value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingLower(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalNarrowingLowerTest(Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalNarrowingLower(value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingLower(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalNarrowingSaturateLowerTest(Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingSaturateLower(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalNarrowingSaturateLowerTest(Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingSaturateLower(value, 1);
 }
 
 
 
 private static  Vector128<byte> Dummy_ShiftRightLogicalNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingSaturateUpper(lower, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<byte> ShiftRightLogicalNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingSaturateUpper(lower, value, 1);
 }
 
 
 
 private static  Vector128<byte> Dummy_ShiftRightLogicalNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalNarrowingUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingUpper(lower, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<byte> ShiftRightLogicalNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalNarrowingUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingUpper(lower, value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalRoundedTest(Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRounded(value, count);
+  return AdvSimd.ShiftRightLogicalRounded(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalRoundedTest(Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRounded(value, count);
+  return AdvSimd.ShiftRightLogicalRounded(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalRoundedAddTest(Vector64<byte> addend, Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedAdd(addend, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedAdd(addend, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalRoundedAddTest(Vector64<byte> addend, Vector64<byte> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedAdd(addend, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedAdd(addend, value, 1);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftRightLogicalRoundedAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedAddScalar(addend, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftRightLogicalRoundedAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedAddScalar(addend, value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalRoundedNarrowingLowerTest(Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingLower(value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingLower(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalRoundedNarrowingLowerTest(Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingLower(value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingLower(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalRoundedNarrowingSaturateLowerTest(Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateLower(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateLowerTest(Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateLower(value, 1);
 }
 
 
 
 private static  Vector128<byte> Dummy_ShiftRightLogicalRoundedNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(lower, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<byte> ShiftRightLogicalRoundedNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(lower, value, 1);
 }
 
 
 
 private static  Vector128<byte> Dummy_ShiftRightLogicalRoundedNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingUpper(lower, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector128<byte> ShiftRightLogicalRoundedNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingUpper(lower, value, 1);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftRightLogicalRoundedScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedScalar(value, count);
+  return AdvSimd.ShiftRightLogicalRoundedScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftRightLogicalRoundedScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalRoundedScalar(value, count);
+  return AdvSimd.ShiftRightLogicalRoundedScalar(value, 1);
 }
 
 
 
 private static  Vector64<long> Dummy_ShiftRightLogicalScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalScalar(value, count);
+  return AdvSimd.ShiftRightLogicalScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<long> ShiftRightLogicalScalarTest(Vector64<long> value, byte count)
 {
-  return AdvSimd.ShiftRightLogicalScalar(value, count);
+  return AdvSimd.ShiftRightLogicalScalar(value, 1);
 }
 
 
@@ -2901,12 +2901,12 @@ private static unsafe void StoreTest(byte* address, Vector64<byte> source)
 
 private static unsafe void Dummy_StoreSelectedScalarTest(byte* address, Vector64<byte> value, byte index)
 {
-  AdvSimd.StoreSelectedScalar(address, value, index);
+  AdvSimd.StoreSelectedScalar(address, value, 3);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static unsafe void StoreSelectedScalarTest(byte* address, Vector64<byte> value, byte index)
 {
-  AdvSimd.StoreSelectedScalar(address, value, index);
+  AdvSimd.StoreSelectedScalar(address, value, 3);
 }
 
 
@@ -3645,24 +3645,24 @@ private static  Vector64<float> FusedMultiplyAddByScalarTest(Vector64<float> add
 
 private static  Vector64<float> Dummy_FusedMultiplyAddBySelectedScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<float> FusedMultiplyAddBySelectedScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, 0);
 }
 
 
 
 private static  Vector64<double> Dummy_FusedMultiplyAddScalarBySelectedScalarTest(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<double> FusedMultiplyAddScalarBySelectedScalarTest(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, 0);
 }
 
 
@@ -3681,36 +3681,36 @@ private static  Vector64<float> FusedMultiplySubtractByScalarTest(Vector64<float
 
 private static  Vector64<float> Dummy_FusedMultiplySubtractBySelectedScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<float> FusedMultiplySubtractBySelectedScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, 0);
 }
 
 
 
 private static  Vector64<double> Dummy_FusedMultiplySubtractScalarBySelectedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<double> FusedMultiplySubtractScalarBySelectedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, 0);
 }
 
 
 
 private static  Vector64<byte> Dummy_InsertSelectedScalarTest(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
 {
-  return AdvSimd.Arm64.InsertSelectedScalar(result, resultIndex, value, valueIndex);
+  return AdvSimd.Arm64.InsertSelectedScalar(result, 0, value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> InsertSelectedScalarTest(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
 {
-  return AdvSimd.Arm64.InsertSelectedScalar(result, resultIndex, value, valueIndex);
+  return AdvSimd.Arm64.InsertSelectedScalar(result, 0, value, 1);
 }
 
 
@@ -3873,12 +3873,12 @@ private static  Vector64<short> MultiplyDoublingSaturateHighScalarTest(Vector64<
 
 private static  Vector64<short> Dummy_MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
 }
 
 
@@ -3921,36 +3921,36 @@ private static  Vector64<int> MultiplyDoublingWideningSaturateScalarTest(Vector6
 
 private static  Vector64<int> Dummy_MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, 0);
 }
 
 
 
 private static  Vector64<int> Dummy_MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, 0);
 }
 
 
 
 private static  Vector64<int> Dummy_MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
 }
 
 
@@ -3981,12 +3981,12 @@ private static  Vector128<double> MultiplyExtendedByScalarTest(Vector128<double>
 
 private static  Vector64<float> Dummy_MultiplyExtendedBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<float> MultiplyExtendedBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, 0);
 }
 
 
@@ -4005,12 +4005,12 @@ private static  Vector64<double> MultiplyExtendedScalarTest(Vector64<double> lef
 
 private static  Vector64<double> Dummy_MultiplyExtendedScalarBySelectedScalarTest(Vector64<double> left, Vector128<double> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<double> MultiplyExtendedScalarBySelectedScalarTest(Vector64<double> left, Vector128<double> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, 0);
 }
 
 
@@ -4029,12 +4029,12 @@ private static  Vector64<short> MultiplyRoundedDoublingSaturateHighScalarTest(Ve
 
 private static  Vector64<short> Dummy_MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {
-  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
 }
 
 
@@ -4113,72 +4113,72 @@ private static  Vector64<double> ReciprocalStepScalarTest(Vector64<double> left,
 
 private static  Vector64<short> Dummy_ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 0);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 0);
 }
 
 
 
 private static  Vector64<short> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 0);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 0);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 0);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 0);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 0);
 }
 
 
@@ -7961,7 +7961,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> DuplicateSelectedScalarToVector64Test(Vector64<byte> value, byte index)
 {{
-  return AdvSimd.DuplicateSelectedScalarToVector64(value, index);
+  return AdvSimd.DuplicateSelectedScalarToVector64(value, 3);
 }}
 // value = {1}
 // index = {2}
@@ -8026,7 +8026,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<byte> DuplicateSelectedScalarToVector128Test(Vector64<byte> value, byte index)
 {{
-  return AdvSimd.DuplicateSelectedScalarToVector128(value, index);
+  return AdvSimd.DuplicateSelectedScalarToVector128(value, 3);
 }}
 // value = {1}
 // index = {2}
@@ -8215,7 +8215,7 @@ Console.WriteLine(
 ```csharp
 private byte ExtractTest(Vector64<byte> vector, byte index)
 {{
-  return AdvSimd.Extract(vector, index);
+  return AdvSimd.Extract(vector, 3);
 }}
 // vector = {1}
 // index = {2}
@@ -8616,7 +8616,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower, byte index)
 {{
-  return AdvSimd.ExtractVector64(upper, lower, index);
+  return AdvSimd.ExtractVector64(upper, lower, 5);
 }}
 // upper = {1}
 // lower = {2}
@@ -8675,7 +8675,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<byte> ExtractVector128Test(Vector128<byte> upper, Vector128<byte> lower, byte index)
 {{
-  return AdvSimd.ExtractVector128(upper, lower, index);
+  return AdvSimd.ExtractVector128(upper, lower, 5);
 }}
 // upper = {1}
 // lower = {2}
@@ -9363,7 +9363,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> InsertTest(Vector64<byte> vector, byte index, byte data)
 {{
-  return AdvSimd.Insert(vector, index, data);
+  return AdvSimd.Insert(vector, 4, 200);
 }}
 // vector = {1}
 // index = {2}
@@ -9432,7 +9432,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<double> InsertScalarTest(Vector128<double> result, byte resultIndex, Vector64<double> value)
 {{
-  return AdvSimd.InsertScalar(result, resultIndex, value);
+  return AdvSimd.InsertScalar(result, 1, value);
 }}
 // result = {1}
 // resultIndex = {2}
@@ -9627,7 +9627,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> LoadAndInsertScalarTest(Vector64<byte> value, byte index, byte* address)
 {{
-  return AdvSimd.LoadAndInsertScalar(value, index, address);
+  return AdvSimd.LoadAndInsertScalar(value, 2, address);
 }}
 // value = {1}
 // index = {2}
@@ -10630,7 +10630,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> MultiplyAddBySelectedScalarTest(Vector64<short> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyAddBySelectedScalar(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyAddBySelectedScalar(addend, left, right, 3);
 }}
 // addend = {1}
 // left = {2}
@@ -10763,7 +10763,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> MultiplyBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalar(left, right, 3);
 }}
 // left = {1}
 // right = {2}
@@ -10838,7 +10838,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningLowerTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyBySelectedScalarWideningLower(left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningLower(left, right, 3);
 }}
 // left = {1}
 // right = {2}
@@ -10898,7 +10898,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningLowerAndAddTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndAdd(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndAdd(addend, left, right, 2);
 }}
 // addend = {1}
 // left = {2}
@@ -10959,7 +10959,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningLowerAndSubtractTest(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndSubtract(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningLowerAndSubtract(minuend, left, right, 2);
 }}
 // minuend = {1}
 // left = {2}
@@ -11020,7 +11020,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningUpperTest(Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyBySelectedScalarWideningUpper(left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningUpper(left, right, 2);
 }}
 // left = {1}
 // right = {2}
@@ -11080,7 +11080,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningUpperAndAddTest(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndAdd(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndAdd(addend, left, right, 0);
 }}
 // addend = {1}
 // left = {2}
@@ -11141,7 +11141,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyBySelectedScalarWideningUpperAndSubtractTest(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndSubtract(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyBySelectedScalarWideningUpperAndSubtract(minuend, left, right, 0);
 }}
 // minuend = {1}
 // left = {2}
@@ -11257,7 +11257,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> MultiplyDoublingBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyDoublingBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingBySelectedScalarSaturateHigh(left, right, 0);
 }}
 // left = {1}
 // right = {2}
@@ -11588,7 +11588,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturateTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(addend, left, right, 0);
 }}
 // addend = {1}
 // left = {2}
@@ -11645,7 +11645,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturateTest(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
 }}
 // minuend = {1}
 // left = {2}
@@ -11808,7 +11808,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyDoublingWideningSaturateLowerBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyDoublingWideningSaturateLowerBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningSaturateLowerBySelectedScalar(left, right, 2);
 }}
 // left = {1}
 // right = {2}
@@ -11970,7 +11970,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyDoublingWideningSaturateUpperBySelectedScalarTest(Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyDoublingWideningSaturateUpperBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningSaturateUpperBySelectedScalar(left, right, 2);
 }}
 // left = {1}
 // right = {2}
@@ -12242,7 +12242,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturateTest(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(addend, left, right, 2);
 }}
 // addend = {1}
 // left = {2}
@@ -12319,7 +12319,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(minuend, left, right, 2);
 }}
 // minuend = {1}
 // left = {2}
@@ -12431,7 +12431,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> MultiplyRoundedDoublingBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyRoundedDoublingBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.MultiplyRoundedDoublingBySelectedScalarSaturateHigh(left, right, 2);
 }}
 // left = {1}
 // right = {2}
@@ -12599,7 +12599,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<float> MultiplyScalarBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplyScalarBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.MultiplyScalarBySelectedScalar(left, right, 0);
 }}
 // left = {1}
 // right = {2}
@@ -12780,7 +12780,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> MultiplySubtractBySelectedScalarTest(Vector64<short> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.MultiplySubtractBySelectedScalar(minuend, left, right, rightIndex);
+  return AdvSimd.MultiplySubtractBySelectedScalar(minuend, left, right, 2);
 }}
 // minuend = {1}
 // left = {2}
@@ -15193,7 +15193,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftLeftAndInsertTest(Vector64<byte> left, Vector64<byte> right, byte shift)
 {{
-  return AdvSimd.ShiftLeftAndInsert(left, right, shift);
+  return AdvSimd.ShiftLeftAndInsert(left, right, 1);
 }}
 // left = {1}
 // right = {2}
@@ -15259,7 +15259,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftLeftAndInsertScalarTest(Vector64<long> left, Vector64<long> right, byte shift)
 {{
-  return AdvSimd.ShiftLeftAndInsertScalar(left, right, shift);
+  return AdvSimd.ShiftLeftAndInsertScalar(left, right, 1);
 }}
 // left = {1}
 // right = {2}
@@ -15313,7 +15313,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftLeftLogicalTest(Vector64<byte> value, byte count)
 {{
-  return AdvSimd.ShiftLeftLogical(value, count);
+  return AdvSimd.ShiftLeftLogical(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -15377,7 +15377,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftLeftLogicalSaturateTest(Vector64<byte> value, byte count)
 {{
-  return AdvSimd.ShiftLeftLogicalSaturate(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturate(value, 6);
 }}
 // value = {1}
 // count = {2}
@@ -15442,7 +15442,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftLeftLogicalSaturateScalarTest(Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftLeftLogicalSaturateScalar(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturateScalar(value, 0);
 }}
 // value = {1}
 // count = {2}
@@ -15503,7 +15503,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<ushort> ShiftLeftLogicalSaturateUnsignedTest(Vector64<short> value, byte count)
 {{
-  return AdvSimd.ShiftLeftLogicalSaturateUnsigned(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturateUnsigned(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -15561,7 +15561,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<ulong> ShiftLeftLogicalSaturateUnsignedScalarTest(Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftLeftLogicalSaturateUnsignedScalar(value, count);
+  return AdvSimd.ShiftLeftLogicalSaturateUnsignedScalar(value, 0);
 }}
 // value = {1}
 // count = {2}
@@ -15618,7 +15618,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftLeftLogicalScalarTest(Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftLeftLogicalScalar(value, count);
+  return AdvSimd.ShiftLeftLogicalScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -15671,7 +15671,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<ushort> ShiftLeftLogicalWideningLowerTest(Vector64<byte> value, byte count)
 {{
-  return AdvSimd.ShiftLeftLogicalWideningLower(value, count);
+  return AdvSimd.ShiftLeftLogicalWideningLower(value, 0);
 }}
 // value = {1}
 // count = {2}
@@ -15728,7 +15728,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<ushort> ShiftLeftLogicalWideningUpperTest(Vector128<byte> value, byte count)
 {{
-  return AdvSimd.ShiftLeftLogicalWideningUpper(value, count);
+  return AdvSimd.ShiftLeftLogicalWideningUpper(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -16273,7 +16273,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightAndInsertTest(Vector64<byte> left, Vector64<byte> right, byte shift)
 {{
-  return AdvSimd.ShiftRightAndInsert(left, right, shift);
+  return AdvSimd.ShiftRightAndInsert(left, right, 1);
 }}
 // left = {1}
 // right = {2}
@@ -16339,7 +16339,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftRightAndInsertScalarTest(Vector64<long> left, Vector64<long> right, byte shift)
 {{
-  return AdvSimd.ShiftRightAndInsertScalar(left, right, shift);
+  return AdvSimd.ShiftRightAndInsertScalar(left, right, 1);
 }}
 // left = {1}
 // right = {2}
@@ -16393,7 +16393,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> ShiftRightArithmeticTest(Vector64<short> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmetic(value, count);
+  return AdvSimd.ShiftRightArithmetic(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -16451,7 +16451,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> ShiftRightArithmeticAddTest(Vector64<short> addend, Vector64<short> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticAdd(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticAdd(addend, value, 1);
 }}
 // addend = {1}
 // value = {2}
@@ -16510,7 +16510,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftRightArithmeticAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticAddScalar(addend, value, 1);
 }}
 // addend = {1}
 // value = {2}
@@ -16558,7 +16558,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> ShiftRightArithmeticNarrowingSaturateLowerTest(Vector128<int> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateLower(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -16612,7 +16612,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedLower(value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedLower(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -16666,7 +16666,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<byte> ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64<byte> lower, Vector128<short> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedUpper(lower, value, 1);
 }}
 // lower = {1}
 // value = {2}
@@ -16721,7 +16721,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<short> ShiftRightArithmeticNarrowingSaturateUpperTest(Vector64<short> lower, Vector128<int> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticNarrowingSaturateUpper(lower, value, 1);
 }}
 // lower = {1}
 // value = {2}
@@ -16776,7 +16776,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> ShiftRightArithmeticRoundedTest(Vector64<short> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticRounded(value, count);
+  return AdvSimd.ShiftRightArithmeticRounded(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -16834,7 +16834,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> ShiftRightArithmeticRoundedAddTest(Vector64<short> addend, Vector64<short> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticRoundedAdd(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedAdd(addend, value, 1);
 }}
 // addend = {1}
 // value = {2}
@@ -16893,7 +16893,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftRightArithmeticRoundedAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticRoundedAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedAddScalar(addend, value, 1);
 }}
 // addend = {1}
 // value = {2}
@@ -16941,7 +16941,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateLowerTest(Vector128<int> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateLower(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -16995,7 +16995,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -17049,7 +17049,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpperTest(Vector64<byte> lower, Vector128<short> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(lower, value, 1);
 }}
 // lower = {1}
 // value = {2}
@@ -17104,7 +17104,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<short> ShiftRightArithmeticRoundedNarrowingSaturateUpperTest(Vector64<short> lower, Vector128<int> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUpper(lower, value, 1);
 }}
 // lower = {1}
 // value = {2}
@@ -17159,7 +17159,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftRightArithmeticRoundedScalarTest(Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticRoundedScalar(value, count);
+  return AdvSimd.ShiftRightArithmeticRoundedScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -17206,7 +17206,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftRightArithmeticScalarTest(Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftRightArithmeticScalar(value, count);
+  return AdvSimd.ShiftRightArithmeticScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -17253,7 +17253,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalTest(Vector64<byte> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogical(value, count);
+  return AdvSimd.ShiftRightLogical(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -17318,7 +17318,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalAddTest(Vector64<byte> addend, Vector64<byte> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalAdd(addend, value, count);
+  return AdvSimd.ShiftRightLogicalAdd(addend, value, 1);
 }}
 // addend = {1}
 // value = {2}
@@ -17384,7 +17384,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftRightLogicalAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightLogicalAddScalar(addend, value, 1);
 }}
 // addend = {1}
 // value = {2}
@@ -17438,7 +17438,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalNarrowingLowerTest(Vector128<ushort> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalNarrowingLower(value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingLower(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -17515,7 +17515,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalNarrowingSaturateLowerTest(Vector128<ushort> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingSaturateLower(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -17572,7 +17572,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<byte> ShiftRightLogicalNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingSaturateUpper(lower, value, 1);
 }}
 // lower = {1}
 // value = {2}
@@ -17630,7 +17630,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<byte> ShiftRightLogicalNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalNarrowingUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalNarrowingUpper(lower, value, 1);
 }}
 // lower = {1}
 // value = {2}
@@ -17688,7 +17688,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedTest(Vector64<byte> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalRounded(value, count);
+  return AdvSimd.ShiftRightLogicalRounded(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -17753,7 +17753,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedAddTest(Vector64<byte> addend, Vector64<byte> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalRoundedAdd(addend, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedAdd(addend, value, 1);
 }}
 // addend = {1}
 // value = {2}
@@ -17819,7 +17819,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftRightLogicalRoundedAddScalarTest(Vector64<long> addend, Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalRoundedAddScalar(addend, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedAddScalar(addend, value, 1);
 }}
 // addend = {1}
 // value = {2}
@@ -17873,7 +17873,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedNarrowingLowerTest(Vector128<ushort> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingLower(value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingLower(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -17930,7 +17930,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateLowerTest(Vector128<ushort> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateLower(value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateLower(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -17987,7 +17987,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<byte> ShiftRightLogicalRoundedNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(lower, value, 1);
 }}
 // lower = {1}
 // value = {2}
@@ -18045,7 +18045,7 @@ Console.WriteLine(
 ```csharp
 private Vector128<byte> ShiftRightLogicalRoundedNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalRoundedNarrowingUpper(lower, value, count);
+  return AdvSimd.ShiftRightLogicalRoundedNarrowingUpper(lower, value, 1);
 }}
 // lower = {1}
 // value = {2}
@@ -18103,7 +18103,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftRightLogicalRoundedScalarTest(Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalRoundedScalar(value, count);
+  return AdvSimd.ShiftRightLogicalRoundedScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -18156,7 +18156,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<long> ShiftRightLogicalScalarTest(Vector64<long> value, byte count)
 {{
-  return AdvSimd.ShiftRightLogicalScalar(value, count);
+  return AdvSimd.ShiftRightLogicalScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -18442,7 +18442,7 @@ Console.WriteLine(
 ```csharp
 private void StoreSelectedScalarTest(byte* address, Vector64<byte> value, byte index)
 {{
-  AdvSimd.StoreSelectedScalar(address, value, index);
+  AdvSimd.StoreSelectedScalar(address, value, 3);
 }}
 // address = {1}
 // value = {2}
@@ -21733,7 +21733,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<float> FusedMultiplyAddBySelectedScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, 0);
 }}
 // addend = {1}
 // left = {2}
@@ -21791,7 +21791,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<double> FusedMultiplyAddScalarBySelectedScalarTest(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, 0);
 }}
 // addend = {1}
 // left = {2}
@@ -21902,7 +21902,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<float> FusedMultiplySubtractBySelectedScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, 0);
 }}
 // minuend = {1}
 // left = {2}
@@ -21960,7 +21960,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<double> FusedMultiplySubtractScalarBySelectedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, rightIndex);
+  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, 0);
 }}
 // minuend = {1}
 // left = {2}
@@ -22016,7 +22016,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> InsertSelectedScalarTest(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
 {{
-  return AdvSimd.Arm64.InsertSelectedScalar(result, resultIndex, value, valueIndex);
+  return AdvSimd.Arm64.InsertSelectedScalar(result, 0, value, 1);
 }}
 // result = {1}
 // resultIndex = {2}
@@ -22809,7 +22809,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
 }}
 // left = {1}
 // right = {2}
@@ -23026,7 +23026,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, 0);
 }}
 // left = {1}
 // right = {2}
@@ -23082,7 +23082,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, 0);
 }}
 // addend = {1}
 // left = {2}
@@ -23139,7 +23139,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
 }}
 // minuend = {1}
 // left = {2}
@@ -23297,7 +23297,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<float> MultiplyExtendedBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, 0);
 }}
 // left = {1}
 // right = {2}
@@ -23407,7 +23407,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<double> MultiplyExtendedScalarBySelectedScalarTest(Vector64<double> left, Vector128<double> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, 0);
 }}
 // left = {1}
 // right = {2}
@@ -23515,7 +23515,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
 {{
-  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, rightIndex);
+  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
 }}
 // left = {1}
 // right = {2}
@@ -23887,7 +23887,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 0);
 }}
 // value = {1}
 // count = {2}
@@ -23941,7 +23941,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 0);
 }}
 // value = {1}
 // count = {2}
@@ -23995,7 +23995,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 0);
 }}
 // value = {1}
 // count = {2}
@@ -24049,7 +24049,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 0);
 }}
 // value = {1}
 // count = {2}
@@ -24103,7 +24103,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 0);
 }}
 // value = {1}
 // count = {2}
@@ -24160,7 +24160,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, count);
+  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 0);
 }}
 // value = {1}
 // count = {2}

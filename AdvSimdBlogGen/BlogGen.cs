@@ -34,6 +34,7 @@ namespace AdvSimdBlogGen
             string dirName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string genCsProjPath = Path.Combine(dirName, "..", "..", "..");
             string generatedCsProjPath = Path.Combine(dirName, "..", "..", "..", "..", "AdvSimdGenerated");
+            AdvSimdMethods.ReadCsv();
             PopulateMethods();
             GenerateBlogContents();
             WriteGeneratedCodeToFile(Path.Combine(generatedCsProjPath, "AdvSimdGenerated.cs"));
@@ -268,7 +269,19 @@ namespace AdvSimdBlogGen
 
             // method defintion
 
-            var methodParams = string.Join(", ", parameters.Select(p => p.Identifier.Text));
+            var methodParams = string.Join(", ", parameters.Select(
+                (p, index) => {
+                    // If byte parameter, then emit the value from csv
+                    if (p.Type.ToString() == "byte" && methodName != "DuplicateToVector128" && methodName != "DuplicateToVector64")
+                    {
+                        return AdvSimdMethods.GetValue(methodName, p.Identifier.Text, index + 1 /* in csv, col0 is desc */);
+                    }
+                    else
+                    {
+                        return p.Identifier.Text;
+                    }
+                }
+            ));
             //var methodParams = string.Join(", ", parameters.Select(p => p.Type.ToString() == "byte" ? "(byte)0" : p.Identifier.Text));
             string returnStatement = string.Format("{0}.{1}({2})", isForAdvSimd ? "AdvSimd" : "AdvSimd.Arm64", methodName, methodParams);
             if (!isVoid)
