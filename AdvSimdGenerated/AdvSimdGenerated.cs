@@ -18349,7 +18349,7 @@ fixed (byte* bytePtr_0 = byteArray)
 {
 
 try {
-StoreTest(bytePtr_0, Vector64byte_0);
+Dummy_StoreTest(bytePtr_0, Vector64byte_0);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -18422,7 +18422,7 @@ fixed (byte* bytePtr_0 = byteArray)
 {
 
 try {
-StoreSelectedScalarTest(bytePtr_0, Vector64byte_0, byte_0);
+Dummy_StoreSelectedScalarTest(bytePtr_0, Vector64byte_0, byte_0);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -24252,7 +24252,7 @@ fixed (byte* bytePtr_0 = byteArray)
 {
 
 try {
-StorePairTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
+Dummy_StorePairTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -24326,7 +24326,7 @@ fixed (byte* bytePtr_0 = byteArray)
 {
 
 try {
-StorePairNonTemporalTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
+Dummy_StorePairNonTemporalTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -24400,7 +24400,7 @@ fixed (int* intPtr_0 = intArray)
 {
 
 try {
-StorePairScalarTest(intPtr_0, Vector64int_0, Vector64int_1);
+Dummy_StorePairScalarTest(intPtr_0, Vector64int_0, Vector64int_1);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -24457,7 +24457,7 @@ fixed (int* intPtr_0 = intArray)
 {
 
 try {
-StorePairScalarNonTemporalTest(intPtr_0, Vector64int_0, Vector64int_1);
+Dummy_StorePairScalarNonTemporalTest(intPtr_0, Vector64int_0, Vector64int_1);
 
 } catch (Exception) {
    apiResult = "TODO";

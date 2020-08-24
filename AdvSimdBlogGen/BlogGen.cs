@@ -285,7 +285,7 @@ namespace AdvSimdBlogGen
             methodDefBuilder.AppendLine();
 
             string result = methodName;
-            string dummyResult = isVoid ? methodName : string.Format("var {0}Result = Dummy_{0}", methodName);
+            string dummyResult = isVoid ? $"Dummy_{methodName}" : string.Format("var {0}Result = Dummy_{0}", methodName);
 
             string dummyMethodCall;
             if (isVoid)
