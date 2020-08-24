@@ -4,3 +4,6 @@
 - Replace MSDN with newer name.
 - Tabular index with 8 columns containing 45 rows?
 - Extra lines in other references. See ShiftArithmeticRoundedSaturateScalar
+- Print better asm using ```armasm
+- Use COMPlus_JitDiffableDasm=1
+- Delete PerfScore printing

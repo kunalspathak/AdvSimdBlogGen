@@ -24306,7 +24306,7 @@ void StorePair(ulong* address, Vector128<ulong> value1, Vector128<ulong> value2)
 ```
 
 
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepair?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepair?view=net-5.0).
 
 Assembly generated:
 
@@ -24380,7 +24380,7 @@ void StorePairNonTemporal(ulong* address, Vector128<ulong> value1, Vector128<ulo
 ```
 
 
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairnontemporal?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairnontemporal?view=net-5.0).
 
 Assembly generated:
 
@@ -24437,7 +24437,7 @@ void StorePairScalar(uint* address, Vector64<uint> value1, Vector64<uint> value2
 ```
 
 
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairscalar?view=net-5.0).
 
 Assembly generated:
 
@@ -24494,7 +24494,7 @@ void StorePairScalarNonTemporal(uint* address, Vector64<uint> value1, Vector64<u
 ```
 
 
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairscalarnontemporal?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.storepairscalarnontemporal?view=net-5.0).
 
 Assembly generated:
 

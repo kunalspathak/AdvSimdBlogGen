@@ -267,6 +267,7 @@ namespace AdvSimdBlogGen
             // method defintion
 
             var methodParams = string.Join(", ", parameters.Select(p => p.Identifier.Text));
+            //var methodParams = string.Join(", ", parameters.Select(p => p.Type.ToString() == "byte" ? "(byte)0" : p.Identifier.Text));
             string returnStatement = string.Format("{0}.{1}({2})", isForAdvSimd ? "AdvSimd" : "AdvSimd.Arm64", methodName, methodParams);
             if (!isVoid)
             {
