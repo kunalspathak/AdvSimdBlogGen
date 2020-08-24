@@ -1339,3 +1339,41 @@ G_M54913_IG03:
 ; ============================================================
 ```
 
+```cs
+private unsafe void StoreSelectedScalarTest(byte* address, Vector64<byte> value, byte index)
+{
+    AdvSimd.StoreSelectedScalar(address, value, 3);
+}
+```
+
+```
+; Assembly listing for method BlogTests:StoreSelectedScalarTest(long,System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):this
+; Emitting BLENDED_CODE for generic ARM64 CPU - Windows
+; optimized code
+; fp based frame
+; partially interruptible
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd
+;  V01 arg1         [V01,T00] (  3,  3   )    long  ->   x1
+;  V02 arg2         [V02,T01] (  3,  3   )   simd8  ->   d0         HFA(simd8)
+;* V03 arg3         [V03    ] (  0,  0   )   ubyte  ->  zero-ref
+;# V04 OutArgs      [V04    ] (  1,  1   )  lclBlk ( 0) [sp+0x00]   "OutgoingArgSpace"
+;
+; Lcl frame size = 0
+
+G_M30776_IG01:
+            stp     fp, lr, [sp,#-16]!
+            mov     fp, sp
+                                                ;; bbWeight=1    PerfScore 1.50
+G_M30776_IG02:
+            st1     {v0.b}[3], [x1]
+                                                ;; bbWeight=1    PerfScore 1.00
+G_M30776_IG03:
+            ldp     fp, lr, [sp],#16
+            ret     lr
+                                                ;; bbWeight=1    PerfScore 2.00
+
+; Total bytes of code 20, prolog size 8, PerfScore 6.50, (MethodHash=628c87c7) for method BlogTests:StoreSelectedScalarTest(long,System.Runtime.Intrinsics.Vector64`1[Byte],ubyte):this
+; ============================================================
+```
