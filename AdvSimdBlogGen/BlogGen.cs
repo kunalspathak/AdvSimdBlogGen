@@ -58,6 +58,8 @@ namespace AdvSimdBlogGen
                 { "places the results in a vector, and writes the vector to the destination SIMD&FP register.", "places the results in a vector, and returns that vector." },
                 { "and writes the result to the SIMD&FP destination register.", "and returns the result." },
                 { "and writes the result to the general-purpose destination register.", "and returns the result." },
+                { "in the destination SIMD&FP register to one", "in the result vector to one" },
+                { "in the destination SIMD&FP register to zero", "in the result vector to zero" },
             };
 
             string dirName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
