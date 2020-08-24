@@ -7,4 +7,3 @@
 - Print better asm using ```armasm
 - Use COMPlus_JitDiffableDasm=1
 - Delete PerfScore printing
-- 286, 287, 288, 289
