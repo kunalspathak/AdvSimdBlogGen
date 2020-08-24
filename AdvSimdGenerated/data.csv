@@ -202,40 +202,40 @@ ShiftLogicalRoundedScalar|This instruction takes each element in the `value` vec
 ShiftLogicalSaturate|This instruction takes each element in the `value` vector, shifts the element by a value from the least significant byte of the corresponding element of the `count` vector, places the results in a vector, and writes the vector to the destination SIMD&FP register. If the shift value is positive, the operation is a left shift. Otherwise, it is a right shift. The results are truncated. If overflow occurs with any of the results, those results are saturated.|<11, 12, 13, 14, 15, 16, 17, 18>|<-3, 2, 3, 5, 6, 7, -8, 0>|<1, 48, 104, 255, 255, 255, 0, 18>||
 ShiftLogicalSaturateScalar|This instruction takes 0th element in the `value` vector, shifts the element by a value from the least significant byte of the corresponding element of the `count` vector, places the results in a vector, and writes the vector to the destination SIMD&FP register. If the shift value is positive, the operation is a left shift. Otherwise, it is a right shift. The results are truncated. If overflow occurs with any of the results, those results are saturated.|<11>|<11>|<22528>||
 ShiftLogicalScalar|This instruction takes each element in the `value` vector, shifts each element by a value from the least significant byte of the corresponding element of the `count` vector, places the results in a vector, and writes the vector to the destination SIMD&FP register. If the shift value is positive, the operation is a left shift. If the shift value is negative, it is a truncating right shift.|<11>|<11>|<22528>||
-ShiftRightAndInsert|Performs 'ShiftRightAndInsert' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|0|TODO|
-ShiftRightAndInsertScalar|Performs 'ShiftRightAndInsertScalar' operation|<11>|<11>|0|TODO|
-ShiftRightArithmetic|Performs 'ShiftRightArithmetic' operation|<11, 12, 13, 14>|0|TODO||
-ShiftRightArithmeticAdd|Performs 'ShiftRightArithmeticAdd' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|TODO|
-ShiftRightArithmeticAddScalar|Performs 'ShiftRightArithmeticAddScalar' operation|<11>|<11>|0|TODO|
-ShiftRightArithmeticNarrowingSaturateLower|Performs 'ShiftRightArithmeticNarrowingSaturateLower' operation|<11, 12, 13, 14>|0|TODO||
-ShiftRightArithmeticNarrowingSaturateUnsignedLower|Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO||
-ShiftRightArithmeticNarrowingSaturateUnsignedUpper|Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO|
-ShiftRightArithmeticNarrowingSaturateUpper|Performs 'ShiftRightArithmeticNarrowingSaturateUpper' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|0|TODO|
-ShiftRightArithmeticRounded|Performs 'ShiftRightArithmeticRounded' operation|<11, 12, 13, 14>|0|TODO||
-ShiftRightArithmeticRoundedAdd|Performs 'ShiftRightArithmeticRoundedAdd' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|0|TODO|
-ShiftRightArithmeticRoundedAddScalar|Performs 'ShiftRightArithmeticRoundedAddScalar' operation|<11>|<11>|0|TODO|
-ShiftRightArithmeticRoundedNarrowingSaturateLower|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateLower' operation|<11, 12, 13, 14>|0|TODO||
-ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO||
-ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO|
-ShiftRightArithmeticRoundedNarrowingSaturateUpper|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUpper' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|0|TODO|
-ShiftRightArithmeticRoundedScalar|Performs 'ShiftRightArithmeticRoundedScalar' operation|<11>|0|TODO||
-ShiftRightArithmeticScalar|Performs 'ShiftRightArithmeticScalar' operation|<11>|0|TODO||
-ShiftRightLogical|Performs 'ShiftRightLogical' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO||
-ShiftRightLogicalAdd|Performs 'ShiftRightLogicalAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|0|TODO|
-ShiftRightLogicalAddScalar|Performs 'ShiftRightLogicalAddScalar' operation|<11>|<11>|0|TODO|
-ShiftRightLogicalNarrowingLower|Performs 'ShiftRightLogicalNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO||
-ShiftRightLogicalNarrowingSaturateLower|Performs 'ShiftRightLogicalNarrowingSaturateLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO||
-ShiftRightLogicalNarrowingSaturateUpper|Performs 'ShiftRightLogicalNarrowingSaturateUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO|
-ShiftRightLogicalNarrowingUpper|Performs 'ShiftRightLogicalNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO|
-ShiftRightLogicalRounded|Performs 'ShiftRightLogicalRounded' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO||
-ShiftRightLogicalRoundedAdd|Performs 'ShiftRightLogicalRoundedAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|0|TODO|
-ShiftRightLogicalRoundedAddScalar|Performs 'ShiftRightLogicalRoundedAddScalar' operation|<11>|<11>|0|TODO|
-ShiftRightLogicalRoundedNarrowingLower|Performs 'ShiftRightLogicalRoundedNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO||
-ShiftRightLogicalRoundedNarrowingSaturateLower|Performs 'ShiftRightLogicalRoundedNarrowingSaturateLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO||
-ShiftRightLogicalRoundedNarrowingSaturateUpper|Performs 'ShiftRightLogicalRoundedNarrowingSaturateUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO|
-ShiftRightLogicalRoundedNarrowingUpper|Performs 'ShiftRightLogicalRoundedNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|0|TODO|
-ShiftRightLogicalRoundedScalar|Performs 'ShiftRightLogicalRoundedScalar' operation|<11>|0|TODO||
-ShiftRightLogicalScalar|Performs 'ShiftRightLogicalScalar' operation|<11>|0|TODO||
+ShiftRightAndInsert|Performs 'ShiftRightAndInsert' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|1|TODO|
+ShiftRightAndInsertScalar|Performs 'ShiftRightAndInsertScalar' operation|<11>|<11>|1|TODO|
+ShiftRightArithmetic|Performs 'ShiftRightArithmetic' operation|<11, 12, 13, 14>|1|TODO||
+ShiftRightArithmeticAdd|Performs 'ShiftRightArithmeticAdd' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|1|TODO|
+ShiftRightArithmeticAddScalar|Performs 'ShiftRightArithmeticAddScalar' operation|<11>|<11>|1|TODO|
+ShiftRightArithmeticNarrowingSaturateLower|Performs 'ShiftRightArithmeticNarrowingSaturateLower' operation|<11, 12, 13, 14>|1|TODO||
+ShiftRightArithmeticNarrowingSaturateUnsignedLower|Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO||
+ShiftRightArithmeticNarrowingSaturateUnsignedUpper|Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO|
+ShiftRightArithmeticNarrowingSaturateUpper|Performs 'ShiftRightArithmeticNarrowingSaturateUpper' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|1|TODO|
+ShiftRightArithmeticRounded|Performs 'ShiftRightArithmeticRounded' operation|<11, 12, 13, 14>|1|TODO||
+ShiftRightArithmeticRoundedAdd|Performs 'ShiftRightArithmeticRoundedAdd' operation|<11, 12, 13, 14>|<21, 22, 23, 24>|1|TODO|
+ShiftRightArithmeticRoundedAddScalar|Performs 'ShiftRightArithmeticRoundedAddScalar' operation|<11>|<11>|1|TODO|
+ShiftRightArithmeticRoundedNarrowingSaturateLower|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateLower' operation|<11, 12, 13, 14>|1|TODO||
+ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO||
+ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO|
+ShiftRightArithmeticRoundedNarrowingSaturateUpper|Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUpper' operation|<11, 12, 13, 14>|<11, 12, 13, 14>|1|TODO|
+ShiftRightArithmeticRoundedScalar|Performs 'ShiftRightArithmeticRoundedScalar' operation|<11>|1|TODO||
+ShiftRightArithmeticScalar|Performs 'ShiftRightArithmeticScalar' operation|<11>|1|TODO||
+ShiftRightLogical|Performs 'ShiftRightLogical' operation|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO||
+ShiftRightLogicalAdd|Performs 'ShiftRightLogicalAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|1|TODO|
+ShiftRightLogicalAddScalar|Performs 'ShiftRightLogicalAddScalar' operation|<11>|<11>|1|TODO|
+ShiftRightLogicalNarrowingLower|Performs 'ShiftRightLogicalNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO||
+ShiftRightLogicalNarrowingSaturateLower|Performs 'ShiftRightLogicalNarrowingSaturateLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO||
+ShiftRightLogicalNarrowingSaturateUpper|Performs 'ShiftRightLogicalNarrowingSaturateUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO|
+ShiftRightLogicalNarrowingUpper|Performs 'ShiftRightLogicalNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO|
+ShiftRightLogicalRounded|Performs 'ShiftRightLogicalRounded' operation|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO||
+ShiftRightLogicalRoundedAdd|Performs 'ShiftRightLogicalRoundedAdd' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<21, 22, 23, 24, 25, 26, 27, 28>|1|TODO|
+ShiftRightLogicalRoundedAddScalar|Performs 'ShiftRightLogicalRoundedAddScalar' operation|<11>|<11>|1|TODO|
+ShiftRightLogicalRoundedNarrowingLower|Performs 'ShiftRightLogicalRoundedNarrowingLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO||
+ShiftRightLogicalRoundedNarrowingSaturateLower|Performs 'ShiftRightLogicalRoundedNarrowingSaturateLower' operation|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO||
+ShiftRightLogicalRoundedNarrowingSaturateUpper|Performs 'ShiftRightLogicalRoundedNarrowingSaturateUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO|
+ShiftRightLogicalRoundedNarrowingUpper|Performs 'ShiftRightLogicalRoundedNarrowingUpper' operation|<11, 12, 13, 14, 15, 16, 17, 18>|<11, 12, 13, 14, 15, 16, 17, 18>|1|TODO|
+ShiftRightLogicalRoundedScalar|Performs 'ShiftRightLogicalRoundedScalar' operation|<11>|1|TODO||
+ShiftRightLogicalScalar|Performs 'ShiftRightLogicalScalar' operation|<11>|1|TODO||
 SignExtendWideningLower|This instruction duplicates each vector element in the `value` into a vector, and writes the vector to the destination SIMD&FP register. The destination vector elements are twice as long as the source vector elements. All the values in this instruction are signed integer values.|<11, -12, 13, 14>|<11, -12, 13, 14>|||
 SignExtendWideningUpper|This instruction duplicates each vector element in the upper half of the `value` into a vector, and writes the vector to the destination SIMD&FP register. The destination vector elements are twice as long as the source vector elements. All the values in this instruction are signed integer values. |<11, 12, 13, 14, -15, 16, 17, 18>|<-15, 16, 17, 18>|||
 SqrtScalar|This instruction calculates the square root of the value in the `value` vector and writes the result to the SIMD&FP destination register.|<11.5>|<3.391164991562634>|||
