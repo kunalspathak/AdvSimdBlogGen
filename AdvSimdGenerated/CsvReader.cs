@@ -24,7 +24,7 @@ public partial class AdvSimdMethods
                 csvValues = new Dictionary<string, List<string>>();
                 foreach (string csvEntry in csvEntries)
                 {
-                    var methodEntry = csvEntry.Split("|").ToList();
+                    var methodEntry = csvEntry.Split("|", StringSplitOptions.RemoveEmptyEntries).ToList();
                     csvValues[methodEntry[0]] = methodEntry.Skip(1).ToList();
                 }
             }
