@@ -4113,72 +4113,72 @@ private static  Vector64<double> ReciprocalStepScalarTest(Vector64<double> left,
 
 private static  Vector64<short> Dummy_ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 1);
 }
 
 
 
 private static  Vector64<short> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 1);
 }
 
 
 
 private static  Vector64<byte> Dummy_ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 1);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
 private static  Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {
-  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 1);
 }
 
 
@@ -23887,7 +23887,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -23941,7 +23941,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -23995,7 +23995,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -24049,7 +24049,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -24103,7 +24103,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
@@ -24160,7 +24160,7 @@ Console.WriteLine(
 ```csharp
 private Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
 {{
-  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 0);
+  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 1);
 }}
 // value = {1}
 // count = {2}
