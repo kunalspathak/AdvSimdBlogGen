@@ -7,3 +7,4 @@
 - Print better asm using ```armasm
 - Use COMPlus_JitDiffableDasm=1
 - Delete PerfScore printing
+- Search for instructions in entire .md file
