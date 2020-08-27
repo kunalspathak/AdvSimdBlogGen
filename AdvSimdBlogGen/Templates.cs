@@ -51,8 +51,7 @@ public static unsafe void Run()
         private static string argValuePrintTemplate = "// {0} = {1}";
         private static string methodDefPrintTemplate =
 @"Console.WriteLine(
-@""
-{9}
+@""{9}
 
 ### {4}. {5}
 
@@ -74,8 +73,7 @@ See Microsoft docs {8}{10}.
 
 Assembly generated:
 
-```armasm
-"", {3});";
+```armasm"", {3});";
         private static string methodCallTemplate =
 @"
 try {{
