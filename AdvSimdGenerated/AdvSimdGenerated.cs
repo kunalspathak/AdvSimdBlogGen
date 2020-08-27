@@ -4401,7 +4401,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Abs", "Performs 'Abs' operation.", 0), GetValue("Abs", Vector64short_0.ToString(), 1), GetValue("Abs", apiResult.ToString(), 2));
 
 try {
@@ -4460,7 +4460,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsSaturate", "Performs 'AbsSaturate' operation.", 0), GetValue("AbsSaturate", Vector64short_0.ToString(), 1), GetValue("AbsSaturate", apiResult.ToString(), 2));
 
 try {
@@ -4515,7 +4515,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsScalar", "Performs 'AbsScalar' operation.", 0), GetValue("AbsScalar", Vector64double_0.ToString(), 1), GetValue("AbsScalar", apiResult.ToString(), 2));
 
 try {
@@ -4571,7 +4571,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteCompareGreaterThan", "Performs 'AbsoluteCompareGreaterThan' operation.", 0), GetValue("AbsoluteCompareGreaterThan", Vector64float_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThan", Vector64float_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThan", apiResult.ToString(), 3));
 
 try {
@@ -4627,7 +4627,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteCompareGreaterThanOrEqual", "Performs 'AbsoluteCompareGreaterThanOrEqual' operation.", 0), GetValue("AbsoluteCompareGreaterThanOrEqual", Vector64float_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThanOrEqual", Vector64float_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThanOrEqual", apiResult.ToString(), 3));
 
 try {
@@ -4683,7 +4683,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteCompareLessThan", "Performs 'AbsoluteCompareLessThan' operation.", 0), GetValue("AbsoluteCompareLessThan", Vector64float_0.ToString(), 1), GetValue("AbsoluteCompareLessThan", Vector64float_1.ToString(), 2), GetValue("AbsoluteCompareLessThan", apiResult.ToString(), 3));
 
 try {
@@ -4739,7 +4739,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteCompareLessThanOrEqual", "Performs 'AbsoluteCompareLessThanOrEqual' operation.", 0), GetValue("AbsoluteCompareLessThanOrEqual", Vector64float_0.ToString(), 1), GetValue("AbsoluteCompareLessThanOrEqual", Vector64float_1.ToString(), 2), GetValue("AbsoluteCompareLessThanOrEqual", apiResult.ToString(), 3));
 
 try {
@@ -4807,7 +4807,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteDifference", "Performs 'AbsoluteDifference' operation.", 0), GetValue("AbsoluteDifference", Vector64byte_0.ToString(), 1), GetValue("AbsoluteDifference", Vector64byte_1.ToString(), 2), GetValue("AbsoluteDifference", apiResult.ToString(), 3));
 
 try {
@@ -4871,7 +4871,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteDifferenceAdd", "Performs 'AbsoluteDifferenceAdd' operation.", 0), GetValue("AbsoluteDifferenceAdd", Vector64byte_0.ToString(), 1), GetValue("AbsoluteDifferenceAdd", Vector64byte_1.ToString(), 2), GetValue("AbsoluteDifferenceAdd", Vector64byte_2.ToString(), 3), GetValue("AbsoluteDifferenceAdd", apiResult.ToString(), 4));
 
 try {
@@ -4928,7 +4928,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteDifferenceWideningLower", "Performs 'AbsoluteDifferenceWideningLower' operation.", 0), GetValue("AbsoluteDifferenceWideningLower", Vector64byte_0.ToString(), 1), GetValue("AbsoluteDifferenceWideningLower", Vector64byte_1.ToString(), 2), GetValue("AbsoluteDifferenceWideningLower", apiResult.ToString(), 3));
 
 try {
@@ -4986,7 +4986,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteDifferenceWideningLowerAndAdd", "Performs 'AbsoluteDifferenceWideningLowerAndAdd' operation.", 0), GetValue("AbsoluteDifferenceWideningLowerAndAdd", Vector128ushort_0.ToString(), 1), GetValue("AbsoluteDifferenceWideningLowerAndAdd", Vector64byte_0.ToString(), 2), GetValue("AbsoluteDifferenceWideningLowerAndAdd", Vector64byte_1.ToString(), 3), GetValue("AbsoluteDifferenceWideningLowerAndAdd", apiResult.ToString(), 4));
 
 try {
@@ -5043,7 +5043,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteDifferenceWideningUpper", "Performs 'AbsoluteDifferenceWideningUpper' operation.", 0), GetValue("AbsoluteDifferenceWideningUpper", Vector128byte_0.ToString(), 1), GetValue("AbsoluteDifferenceWideningUpper", Vector128byte_1.ToString(), 2), GetValue("AbsoluteDifferenceWideningUpper", apiResult.ToString(), 3));
 
 try {
@@ -5101,7 +5101,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteDifferenceWideningUpperAndAdd", "Performs 'AbsoluteDifferenceWideningUpperAndAdd' operation.", 0), GetValue("AbsoluteDifferenceWideningUpperAndAdd", Vector128ushort_0.ToString(), 1), GetValue("AbsoluteDifferenceWideningUpperAndAdd", Vector128byte_0.ToString(), 2), GetValue("AbsoluteDifferenceWideningUpperAndAdd", Vector128byte_1.ToString(), 3), GetValue("AbsoluteDifferenceWideningUpperAndAdd", apiResult.ToString(), 4));
 
 try {
@@ -5171,7 +5171,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Add", "Performs 'Add' operation.", 0), GetValue("Add", Vector64byte_0.ToString(), 1), GetValue("Add", Vector64byte_1.ToString(), 2), GetValue("Add", apiResult.ToString(), 3));
 
 try {
@@ -5228,7 +5228,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddHighNarrowingLower", "Performs 'AddHighNarrowingLower' operation.", 0), GetValue("AddHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("AddHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("AddHighNarrowingLower", apiResult.ToString(), 3));
 
 try {
@@ -5286,7 +5286,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddHighNarrowingUpper", "Performs 'AddHighNarrowingUpper' operation.", 0), GetValue("AddHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("AddHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("AddHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("AddHighNarrowingUpper", apiResult.ToString(), 4));
 
 try {
@@ -5356,7 +5356,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddPairwise", "Performs 'AddPairwise' operation.", 0), GetValue("AddPairwise", Vector64byte_0.ToString(), 1), GetValue("AddPairwise", Vector64byte_1.ToString(), 2), GetValue("AddPairwise", apiResult.ToString(), 3));
 
 try {
@@ -5416,7 +5416,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddPairwiseWidening", "Performs 'AddPairwiseWidening' operation.", 0), GetValue("AddPairwiseWidening", Vector64byte_0.ToString(), 1), GetValue("AddPairwiseWidening", apiResult.ToString(), 2));
 
 try {
@@ -5477,7 +5477,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddPairwiseWideningAndAdd", "Performs 'AddPairwiseWideningAndAdd' operation.", 0), GetValue("AddPairwiseWideningAndAdd", Vector64ushort_0.ToString(), 1), GetValue("AddPairwiseWideningAndAdd", Vector64byte_0.ToString(), 2), GetValue("AddPairwiseWideningAndAdd", apiResult.ToString(), 3));
 
 try {
@@ -5530,7 +5530,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddPairwiseWideningAndAddScalar", "Performs 'AddPairwiseWideningAndAddScalar' operation.", 0), GetValue("AddPairwiseWideningAndAddScalar", Vector64long_0.ToString(), 1), GetValue("AddPairwiseWideningAndAddScalar", Vector64int_0.ToString(), 2), GetValue("AddPairwiseWideningAndAddScalar", apiResult.ToString(), 3));
 
 try {
@@ -5582,7 +5582,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddPairwiseWideningScalar", "Performs 'AddPairwiseWideningScalar' operation.", 0), GetValue("AddPairwiseWideningScalar", Vector64int_0.ToString(), 1), GetValue("AddPairwiseWideningScalar", apiResult.ToString(), 2));
 
 try {
@@ -5639,7 +5639,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddRoundedHighNarrowingLower", "Performs 'AddRoundedHighNarrowingLower' operation.", 0), GetValue("AddRoundedHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("AddRoundedHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("AddRoundedHighNarrowingLower", apiResult.ToString(), 3));
 
 try {
@@ -5697,7 +5697,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddRoundedHighNarrowingUpper", "Performs 'AddRoundedHighNarrowingUpper' operation.", 0), GetValue("AddRoundedHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("AddRoundedHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("AddRoundedHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("AddRoundedHighNarrowingUpper", apiResult.ToString(), 4));
 
 try {
@@ -5778,7 +5778,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddSaturate", "Performs 'AddSaturate' operation.", 0), GetValue("AddSaturate", Vector64byte_0.ToString(), 1), GetValue("AddSaturate", Vector64byte_1.ToString(), 2), GetValue("AddSaturate", apiResult.ToString(), 3));
 
 try {
@@ -5847,7 +5847,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddSaturateScalar", "Performs 'AddSaturateScalar' operation.", 0), GetValue("AddSaturateScalar", Vector64long_0.ToString(), 1), GetValue("AddSaturateScalar", Vector64long_1.ToString(), 2), GetValue("AddSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -5902,7 +5902,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddScalar", "Performs 'AddScalar' operation.", 0), GetValue("AddScalar", Vector64double_0.ToString(), 1), GetValue("AddScalar", Vector64double_1.ToString(), 2), GetValue("AddScalar", apiResult.ToString(), 3));
 
 try {
@@ -5965,7 +5965,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddWideningLower", "Performs 'AddWideningLower' operation.", 0), GetValue("AddWideningLower", Vector64byte_0.ToString(), 1), GetValue("AddWideningLower", Vector64byte_1.ToString(), 2), GetValue("AddWideningLower", apiResult.ToString(), 3));
 
 try {
@@ -6028,7 +6028,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddWideningUpper", "Performs 'AddWideningUpper' operation.", 0), GetValue("AddWideningUpper", Vector128byte_0.ToString(), 1), GetValue("AddWideningUpper", Vector128byte_1.ToString(), 2), GetValue("AddWideningUpper", apiResult.ToString(), 3));
 
 try {
@@ -6099,7 +6099,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("And", "Performs 'And' operation.", 0), GetValue("And", Vector64byte_0.ToString(), 1), GetValue("And", Vector64byte_1.ToString(), 2), GetValue("And", apiResult.ToString(), 3));
 
 try {
@@ -6170,7 +6170,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("BitwiseClear", "Performs 'BitwiseClear' operation.", 0), GetValue("BitwiseClear", Vector64byte_0.ToString(), 1), GetValue("BitwiseClear", Vector64byte_1.ToString(), 2), GetValue("BitwiseClear", apiResult.ToString(), 3));
 
 try {
@@ -6242,7 +6242,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("BitwiseSelect", "Performs 'BitwiseSelect' operation.", 0), GetValue("BitwiseSelect", Vector64byte_0.ToString(), 1), GetValue("BitwiseSelect", Vector64byte_1.ToString(), 2), GetValue("BitwiseSelect", Vector64byte_2.ToString(), 3), GetValue("BitwiseSelect", apiResult.ToString(), 4));
 
 try {
@@ -6297,7 +6297,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Ceiling", "Performs 'Ceiling' operation.", 0), GetValue("Ceiling", Vector64float_0.ToString(), 1), GetValue("Ceiling", apiResult.ToString(), 2));
 
 try {
@@ -6349,7 +6349,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CeilingScalar", "Performs 'CeilingScalar' operation.", 0), GetValue("CeilingScalar", Vector64double_0.ToString(), 1), GetValue("CeilingScalar", apiResult.ToString(), 2));
 
 try {
@@ -6419,7 +6419,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareEqual", "Performs 'CompareEqual' operation.", 0), GetValue("CompareEqual", Vector64byte_0.ToString(), 1), GetValue("CompareEqual", Vector64byte_1.ToString(), 2), GetValue("CompareEqual", apiResult.ToString(), 3));
 
 try {
@@ -6489,7 +6489,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareGreaterThan", "Performs 'CompareGreaterThan' operation.", 0), GetValue("CompareGreaterThan", Vector64byte_0.ToString(), 1), GetValue("CompareGreaterThan", Vector64byte_1.ToString(), 2), GetValue("CompareGreaterThan", apiResult.ToString(), 3));
 
 try {
@@ -6559,7 +6559,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareGreaterThanOrEqual", "Performs 'CompareGreaterThanOrEqual' operation.", 0), GetValue("CompareGreaterThanOrEqual", Vector64byte_0.ToString(), 1), GetValue("CompareGreaterThanOrEqual", Vector64byte_1.ToString(), 2), GetValue("CompareGreaterThanOrEqual", apiResult.ToString(), 3));
 
 try {
@@ -6629,7 +6629,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareLessThan", "Performs 'CompareLessThan' operation.", 0), GetValue("CompareLessThan", Vector64byte_0.ToString(), 1), GetValue("CompareLessThan", Vector64byte_1.ToString(), 2), GetValue("CompareLessThan", apiResult.ToString(), 3));
 
 try {
@@ -6699,7 +6699,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareLessThanOrEqual", "Performs 'CompareLessThanOrEqual' operation.", 0), GetValue("CompareLessThanOrEqual", Vector64byte_0.ToString(), 1), GetValue("CompareLessThanOrEqual", Vector64byte_1.ToString(), 2), GetValue("CompareLessThanOrEqual", apiResult.ToString(), 3));
 
 try {
@@ -6769,7 +6769,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareTest", "Performs 'CompareTest' operation.", 0), GetValue("CompareTest", Vector64byte_0.ToString(), 1), GetValue("CompareTest", Vector64byte_1.ToString(), 2), GetValue("CompareTest", apiResult.ToString(), 3));
 
 try {
@@ -6821,7 +6821,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt32RoundAwayFromZero", "Performs 'ConvertToInt32RoundAwayFromZero' operation.", 0), GetValue("ConvertToInt32RoundAwayFromZero", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundAwayFromZero", apiResult.ToString(), 2));
 
 try {
@@ -6867,7 +6867,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt32RoundAwayFromZeroScalar", "Performs 'ConvertToInt32RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToInt32RoundAwayFromZeroScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundAwayFromZeroScalar", apiResult.ToString(), 2));
 
 try {
@@ -6919,7 +6919,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt32RoundToEven", "Performs 'ConvertToInt32RoundToEven' operation.", 0), GetValue("ConvertToInt32RoundToEven", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToEven", apiResult.ToString(), 2));
 
 try {
@@ -6965,7 +6965,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt32RoundToEvenScalar", "Performs 'ConvertToInt32RoundToEvenScalar' operation.", 0), GetValue("ConvertToInt32RoundToEvenScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToEvenScalar", apiResult.ToString(), 2));
 
 try {
@@ -7017,7 +7017,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt32RoundToNegativeInfinity", "Performs 'ConvertToInt32RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToInt32RoundToNegativeInfinity", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToNegativeInfinity", apiResult.ToString(), 2));
 
 try {
@@ -7063,7 +7063,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt32RoundToNegativeInfinityScalar", "Performs 'ConvertToInt32RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToInt32RoundToNegativeInfinityScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
 
 try {
@@ -7135,7 +7135,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt32RoundToPositiveInfinity", "Performs 'ConvertToInt32RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToInt32RoundToPositiveInfinity", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToPositiveInfinity", apiResult.ToString(), 2));
 
 try {
@@ -7181,7 +7181,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt32RoundToPositiveInfinityScalar", "Performs 'ConvertToInt32RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToInt32RoundToPositiveInfinityScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
 
 try {
@@ -7233,7 +7233,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt32RoundToZero", "Performs 'ConvertToInt32RoundToZero' operation.", 0), GetValue("ConvertToInt32RoundToZero", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToZero", apiResult.ToString(), 2));
 
 try {
@@ -7279,7 +7279,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt32RoundToZeroScalar", "Performs 'ConvertToInt32RoundToZeroScalar' operation.", 0), GetValue("ConvertToInt32RoundToZeroScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToInt32RoundToZeroScalar", apiResult.ToString(), 2));
 
 try {
@@ -7333,7 +7333,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToSingle", "Performs 'ConvertToSingle' operation.", 0), GetValue("ConvertToSingle", Vector64int_0.ToString(), 1), GetValue("ConvertToSingle", apiResult.ToString(), 2));
 
 try {
@@ -7385,7 +7385,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToSingleScalar", "Performs 'ConvertToSingleScalar' operation.", 0), GetValue("ConvertToSingleScalar", Vector64int_0.ToString(), 1), GetValue("ConvertToSingleScalar", apiResult.ToString(), 2));
 
 try {
@@ -7437,7 +7437,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt32RoundAwayFromZero", "Performs 'ConvertToUInt32RoundAwayFromZero' operation.", 0), GetValue("ConvertToUInt32RoundAwayFromZero", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundAwayFromZero", apiResult.ToString(), 2));
 
 try {
@@ -7483,7 +7483,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt32RoundAwayFromZeroScalar", "Performs 'ConvertToUInt32RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToUInt32RoundAwayFromZeroScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundAwayFromZeroScalar", apiResult.ToString(), 2));
 
 try {
@@ -7535,7 +7535,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt32RoundToEven", "Performs 'ConvertToUInt32RoundToEven' operation.", 0), GetValue("ConvertToUInt32RoundToEven", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToEven", apiResult.ToString(), 2));
 
 try {
@@ -7581,7 +7581,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt32RoundToEvenScalar", "Performs 'ConvertToUInt32RoundToEvenScalar' operation.", 0), GetValue("ConvertToUInt32RoundToEvenScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToEvenScalar", apiResult.ToString(), 2));
 
 try {
@@ -7633,7 +7633,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt32RoundToNegativeInfinity", "Performs 'ConvertToUInt32RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToUInt32RoundToNegativeInfinity", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToNegativeInfinity", apiResult.ToString(), 2));
 
 try {
@@ -7679,7 +7679,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt32RoundToNegativeInfinityScalar", "Performs 'ConvertToUInt32RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToUInt32RoundToNegativeInfinityScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
 
 try {
@@ -7731,7 +7731,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt32RoundToPositiveInfinity", "Performs 'ConvertToUInt32RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToUInt32RoundToPositiveInfinity", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToPositiveInfinity", apiResult.ToString(), 2));
 
 try {
@@ -7777,7 +7777,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt32RoundToPositiveInfinityScalar", "Performs 'ConvertToUInt32RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToUInt32RoundToPositiveInfinityScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
 
 try {
@@ -7829,7 +7829,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt32RoundToZero", "Performs 'ConvertToUInt32RoundToZero' operation.", 0), GetValue("ConvertToUInt32RoundToZero", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToZero", apiResult.ToString(), 2));
 
 try {
@@ -7875,7 +7875,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt32RoundToZeroScalar", "Performs 'ConvertToUInt32RoundToZeroScalar' operation.", 0), GetValue("ConvertToUInt32RoundToZeroScalar", Vector64float_0.ToString(), 1), GetValue("ConvertToUInt32RoundToZeroScalar", apiResult.ToString(), 2));
 
 try {
@@ -7928,7 +7928,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("DivideScalar", "Performs 'DivideScalar' operation.", 0), GetValue("DivideScalar", Vector64double_0.ToString(), 1), GetValue("DivideScalar", Vector64double_1.ToString(), 2), GetValue("DivideScalar", apiResult.ToString(), 3));
 
 try {
@@ -7993,7 +7993,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("DuplicateSelectedScalarToVector64", "Performs 'DuplicateSelectedScalarToVector64' operation.", 0), GetValue("DuplicateSelectedScalarToVector64", Vector64byte_0.ToString(), 1), GetValue("DuplicateSelectedScalarToVector64", byte_0.ToString(), 2), GetValue("DuplicateSelectedScalarToVector64", apiResult.ToString(), 3));
 
 try {
@@ -8063,7 +8063,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("DuplicateSelectedScalarToVector128", "Performs 'DuplicateSelectedScalarToVector128' operation.", 0), GetValue("DuplicateSelectedScalarToVector128", Vector64byte_0.ToString(), 1), GetValue("DuplicateSelectedScalarToVector128", byte_0.ToString(), 2), GetValue("DuplicateSelectedScalarToVector128", apiResult.ToString(), 3));
 
 try {
@@ -8120,7 +8120,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("DuplicateToVector64", "Performs 'DuplicateToVector64' operation.", 0), GetValue("DuplicateToVector64", byte_0.ToString(), 1), GetValue("DuplicateToVector64", apiResult.ToString(), 2));
 
 try {
@@ -8182,7 +8182,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("DuplicateToVector128", "Performs 'DuplicateToVector128' operation.", 0), GetValue("DuplicateToVector128", byte_0.ToString(), 1), GetValue("DuplicateToVector128", apiResult.ToString(), 2));
 
 try {
@@ -8250,7 +8250,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Extract", "Performs 'Extract' operation.", 0), GetValue("Extract", Vector64byte_0.ToString(), 1), GetValue("Extract", byte_0.ToString(), 2), GetValue("Extract", apiResult.ToString(), 3));
 
 try {
@@ -8306,7 +8306,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ExtractNarrowingLower", "Performs 'ExtractNarrowingLower' operation.", 0), GetValue("ExtractNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("ExtractNarrowingLower", apiResult.ToString(), 2));
 
 try {
@@ -8362,7 +8362,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ExtractNarrowingSaturateLower", "Performs 'ExtractNarrowingSaturateLower' operation.", 0), GetValue("ExtractNarrowingSaturateLower", Vector128ushort_0.ToString(), 1), GetValue("ExtractNarrowingSaturateLower", apiResult.ToString(), 2));
 
 try {
@@ -8415,7 +8415,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ExtractNarrowingSaturateUnsignedLower", "Performs 'ExtractNarrowingSaturateUnsignedLower' operation.", 0), GetValue("ExtractNarrowingSaturateUnsignedLower", Vector128short_0.ToString(), 1), GetValue("ExtractNarrowingSaturateUnsignedLower", apiResult.ToString(), 2));
 
 try {
@@ -8469,7 +8469,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ExtractNarrowingSaturateUnsignedUpper", "Performs 'ExtractNarrowingSaturateUnsignedUpper' operation.", 0), GetValue("ExtractNarrowingSaturateUnsignedUpper", Vector64byte_0.ToString(), 1), GetValue("ExtractNarrowingSaturateUnsignedUpper", Vector128short_0.ToString(), 2), GetValue("ExtractNarrowingSaturateUnsignedUpper", apiResult.ToString(), 3));
 
 try {
@@ -8526,7 +8526,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ExtractNarrowingSaturateUpper", "Performs 'ExtractNarrowingSaturateUpper' operation.", 0), GetValue("ExtractNarrowingSaturateUpper", Vector64byte_0.ToString(), 1), GetValue("ExtractNarrowingSaturateUpper", Vector128ushort_0.ToString(), 2), GetValue("ExtractNarrowingSaturateUpper", apiResult.ToString(), 3));
 
 try {
@@ -8583,7 +8583,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ExtractNarrowingUpper", "Performs 'ExtractNarrowingUpper' operation.", 0), GetValue("ExtractNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("ExtractNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("ExtractNarrowingUpper", apiResult.ToString(), 3));
 
 try {
@@ -8642,7 +8642,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ExtractVector64", "Performs 'ExtractVector64' operation.", 0), GetValue("ExtractVector64", Vector64byte_0.ToString(), 1), GetValue("ExtractVector64", Vector64byte_1.ToString(), 2), GetValue("ExtractVector64", byte_0.ToString(), 3), GetValue("ExtractVector64", apiResult.ToString(), 4));
 
 try {
@@ -8704,7 +8704,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ExtractVector128", "Performs 'ExtractVector128' operation.", 0), GetValue("ExtractVector128", Vector128byte_0.ToString(), 1), GetValue("ExtractVector128", Vector128byte_1.ToString(), 2), GetValue("ExtractVector128", byte_0.ToString(), 3), GetValue("ExtractVector128", apiResult.ToString(), 4));
 
 try {
@@ -8759,7 +8759,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Floor", "Performs 'Floor' operation.", 0), GetValue("Floor", Vector64float_0.ToString(), 1), GetValue("Floor", apiResult.ToString(), 2));
 
 try {
@@ -8811,7 +8811,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FloorScalar", "Performs 'FloorScalar' operation.", 0), GetValue("FloorScalar", Vector64double_0.ToString(), 1), GetValue("FloorScalar", apiResult.ToString(), 2));
 
 try {
@@ -8874,7 +8874,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedAddHalving", "Performs 'FusedAddHalving' operation.", 0), GetValue("FusedAddHalving", Vector64byte_0.ToString(), 1), GetValue("FusedAddHalving", Vector64byte_1.ToString(), 2), GetValue("FusedAddHalving", apiResult.ToString(), 3));
 
 try {
@@ -8937,7 +8937,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedAddRoundedHalving", "Performs 'FusedAddRoundedHalving' operation.", 0), GetValue("FusedAddRoundedHalving", Vector64byte_0.ToString(), 1), GetValue("FusedAddRoundedHalving", Vector64byte_1.ToString(), 2), GetValue("FusedAddRoundedHalving", apiResult.ToString(), 3));
 
 try {
@@ -8994,7 +8994,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplyAdd", "Performs 'FusedMultiplyAdd' operation.", 0), GetValue("FusedMultiplyAdd", Vector64float_0.ToString(), 1), GetValue("FusedMultiplyAdd", Vector64float_1.ToString(), 2), GetValue("FusedMultiplyAdd", Vector64float_2.ToString(), 3), GetValue("FusedMultiplyAdd", apiResult.ToString(), 4));
 
 try {
@@ -9048,7 +9048,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplyAddNegatedScalar", "Performs 'FusedMultiplyAddNegatedScalar' operation.", 0), GetValue("FusedMultiplyAddNegatedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplyAddNegatedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplyAddNegatedScalar", Vector64double_2.ToString(), 3), GetValue("FusedMultiplyAddNegatedScalar", apiResult.ToString(), 4));
 
 try {
@@ -9102,7 +9102,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplyAddScalar", "Performs 'FusedMultiplyAddScalar' operation.", 0), GetValue("FusedMultiplyAddScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplyAddScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplyAddScalar", Vector64double_2.ToString(), 3), GetValue("FusedMultiplyAddScalar", apiResult.ToString(), 4));
 
 try {
@@ -9159,7 +9159,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplySubtract", "Performs 'FusedMultiplySubtract' operation.", 0), GetValue("FusedMultiplySubtract", Vector64float_0.ToString(), 1), GetValue("FusedMultiplySubtract", Vector64float_1.ToString(), 2), GetValue("FusedMultiplySubtract", Vector64float_2.ToString(), 3), GetValue("FusedMultiplySubtract", apiResult.ToString(), 4));
 
 try {
@@ -9213,7 +9213,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplySubtractNegatedScalar", "Performs 'FusedMultiplySubtractNegatedScalar' operation.", 0), GetValue("FusedMultiplySubtractNegatedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplySubtractNegatedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplySubtractNegatedScalar", Vector64double_2.ToString(), 3), GetValue("FusedMultiplySubtractNegatedScalar", apiResult.ToString(), 4));
 
 try {
@@ -9267,7 +9267,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplySubtractScalar", "Performs 'FusedMultiplySubtractScalar' operation.", 0), GetValue("FusedMultiplySubtractScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplySubtractScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplySubtractScalar", Vector64double_2.ToString(), 3), GetValue("FusedMultiplySubtractScalar", apiResult.ToString(), 4));
 
 try {
@@ -9330,7 +9330,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedSubtractHalving", "Performs 'FusedSubtractHalving' operation.", 0), GetValue("FusedSubtractHalving", Vector64byte_0.ToString(), 1), GetValue("FusedSubtractHalving", Vector64byte_1.ToString(), 2), GetValue("FusedSubtractHalving", apiResult.ToString(), 3));
 
 try {
@@ -9399,7 +9399,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Insert", "Performs 'Insert' operation.", 0), GetValue("Insert", Vector64byte_0.ToString(), 1), GetValue("Insert", byte_0.ToString(), 2), GetValue("Insert", byte_1.ToString(), 3), GetValue("Insert", apiResult.ToString(), 4));
 
 try {
@@ -9454,7 +9454,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("InsertScalar", "Performs 'InsertScalar' operation.", 0), GetValue("InsertScalar", Vector128double_0.ToString(), 1), GetValue("InsertScalar", byte_0.ToString(), 2), GetValue("InsertScalar", Vector64double_0.ToString(), 3), GetValue("InsertScalar", apiResult.ToString(), 4));
 
 try {
@@ -9510,7 +9510,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("LeadingSignCount", "Performs 'LeadingSignCount' operation.", 0), GetValue("LeadingSignCount", Vector64short_0.ToString(), 1), GetValue("LeadingSignCount", apiResult.ToString(), 2));
 
 try {
@@ -9572,7 +9572,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("LeadingZeroCount", "Performs 'LeadingZeroCount' operation.", 0), GetValue("LeadingZeroCount", Vector64byte_0.ToString(), 1), GetValue("LeadingZeroCount", apiResult.ToString(), 2));
 
 try {
@@ -9663,7 +9663,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("LoadAndInsertScalar", "Performs 'LoadAndInsertScalar' operation.", 0), GetValue("LoadAndInsertScalar", Vector64byte_0.ToString(), 1), GetValue("LoadAndInsertScalar", byte_0.ToString(), 2), GetValue("LoadAndInsertScalar", "<address>".ToString(), 3), GetValue("LoadAndInsertScalar", apiResult.ToString(), 4));
 
 try {
@@ -9723,7 +9723,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("LoadAndReplicateToVector64", "Performs 'LoadAndReplicateToVector64' operation.", 0), GetValue("LoadAndReplicateToVector64", "<address>".ToString(), 1), GetValue("LoadAndReplicateToVector64", apiResult.ToString(), 2));
 
 try {
@@ -9788,7 +9788,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("LoadAndReplicateToVector128", "Performs 'LoadAndReplicateToVector128' operation.", 0), GetValue("LoadAndReplicateToVector128", "<address>".ToString(), 1), GetValue("LoadAndReplicateToVector128", apiResult.ToString(), 2));
 
 try {
@@ -9851,7 +9851,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("LoadVector64", "Performs 'LoadVector64' operation.", 0), GetValue("LoadVector64", "<address>".ToString(), 1), GetValue("LoadVector64", apiResult.ToString(), 2));
 
 try {
@@ -9914,7 +9914,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("LoadVector128", "Performs 'LoadVector128' operation.", 0), GetValue("LoadVector128", "<address>".ToString(), 1), GetValue("LoadVector128", apiResult.ToString(), 2));
 
 try {
@@ -9983,7 +9983,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Max", "Performs 'Max' operation.", 0), GetValue("Max", Vector64byte_0.ToString(), 1), GetValue("Max", Vector64byte_1.ToString(), 2), GetValue("Max", apiResult.ToString(), 3));
 
 try {
@@ -10039,7 +10039,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MaxNumber", "Performs 'MaxNumber' operation.", 0), GetValue("MaxNumber", Vector64float_0.ToString(), 1), GetValue("MaxNumber", Vector64float_1.ToString(), 2), GetValue("MaxNumber", apiResult.ToString(), 3));
 
 try {
@@ -10092,7 +10092,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MaxNumberScalar", "Performs 'MaxNumberScalar' operation.", 0), GetValue("MaxNumberScalar", Vector64double_0.ToString(), 1), GetValue("MaxNumberScalar", Vector64double_1.ToString(), 2), GetValue("MaxNumberScalar", apiResult.ToString(), 3));
 
 try {
@@ -10160,7 +10160,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MaxPairwise", "Performs 'MaxPairwise' operation.", 0), GetValue("MaxPairwise", Vector64byte_0.ToString(), 1), GetValue("MaxPairwise", Vector64byte_1.ToString(), 2), GetValue("MaxPairwise", apiResult.ToString(), 3));
 
 try {
@@ -10228,7 +10228,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Min", "Performs 'Min' operation.", 0), GetValue("Min", Vector64byte_0.ToString(), 1), GetValue("Min", Vector64byte_1.ToString(), 2), GetValue("Min", apiResult.ToString(), 3));
 
 try {
@@ -10284,7 +10284,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MinNumber", "Performs 'MinNumber' operation.", 0), GetValue("MinNumber", Vector64float_0.ToString(), 1), GetValue("MinNumber", Vector64float_1.ToString(), 2), GetValue("MinNumber", apiResult.ToString(), 3));
 
 try {
@@ -10337,7 +10337,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MinNumberScalar", "Performs 'MinNumberScalar' operation.", 0), GetValue("MinNumberScalar", Vector64double_0.ToString(), 1), GetValue("MinNumberScalar", Vector64double_1.ToString(), 2), GetValue("MinNumberScalar", apiResult.ToString(), 3));
 
 try {
@@ -10405,7 +10405,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MinPairwise", "Performs 'MinPairwise' operation.", 0), GetValue("MinPairwise", Vector64byte_0.ToString(), 1), GetValue("MinPairwise", Vector64byte_1.ToString(), 2), GetValue("MinPairwise", apiResult.ToString(), 3));
 
 try {
@@ -10473,7 +10473,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Multiply", "Performs 'Multiply' operation.", 0), GetValue("Multiply", Vector64byte_0.ToString(), 1), GetValue("Multiply", Vector64byte_1.ToString(), 2), GetValue("Multiply", apiResult.ToString(), 3));
 
 try {
@@ -10537,7 +10537,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyAdd", "Performs 'MultiplyAdd' operation.", 0), GetValue("MultiplyAdd", Vector64byte_0.ToString(), 1), GetValue("MultiplyAdd", Vector64byte_1.ToString(), 2), GetValue("MultiplyAdd", Vector64byte_2.ToString(), 3), GetValue("MultiplyAdd", apiResult.ToString(), 4));
 
 try {
@@ -10597,7 +10597,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyAddByScalar", "Performs 'MultiplyAddByScalar' operation.", 0), GetValue("MultiplyAddByScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyAddByScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyAddByScalar", Vector64short_2.ToString(), 3), GetValue("MultiplyAddByScalar", apiResult.ToString(), 4));
 
 try {
@@ -10666,7 +10666,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyAddBySelectedScalar", "Performs 'MultiplyAddBySelectedScalar' operation.", 0), GetValue("MultiplyAddBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyAddBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyAddBySelectedScalar", Vector64short_2.ToString(), 3), GetValue("MultiplyAddBySelectedScalar", byte_0.ToString(), 4), GetValue("MultiplyAddBySelectedScalar", apiResult.ToString(), 5));
 
 try {
@@ -10730,7 +10730,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyByScalar", "Performs 'MultiplyByScalar' operation.", 0), GetValue("MultiplyByScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyByScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyByScalar", apiResult.ToString(), 3));
 
 try {
@@ -10805,7 +10805,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyBySelectedScalar", "Performs 'MultiplyBySelectedScalar' operation.", 0), GetValue("MultiplyBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyBySelectedScalar", apiResult.ToString(), 4));
 
 try {
@@ -10865,7 +10865,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyBySelectedScalarWideningLower", "Performs 'MultiplyBySelectedScalarWideningLower' operation.", 0), GetValue("MultiplyBySelectedScalarWideningLower", Vector64short_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningLower", Vector64short_1.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningLower", byte_0.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningLower", apiResult.ToString(), 4));
 
 try {
@@ -10926,7 +10926,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", "Performs 'MultiplyBySelectedScalarWideningLowerAndAdd' operation.", 0), GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", Vector128int_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", Vector64short_0.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", Vector64short_1.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", byte_0.ToString(), 4), GetValue("MultiplyBySelectedScalarWideningLowerAndAdd", apiResult.ToString(), 5));
 
 try {
@@ -10987,7 +10987,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", "Performs 'MultiplyBySelectedScalarWideningLowerAndSubtract' operation.", 0), GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", Vector128int_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", Vector64short_0.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", Vector64short_1.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", byte_0.ToString(), 4), GetValue("MultiplyBySelectedScalarWideningLowerAndSubtract", apiResult.ToString(), 5));
 
 try {
@@ -11047,7 +11047,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyBySelectedScalarWideningUpper", "Performs 'MultiplyBySelectedScalarWideningUpper' operation.", 0), GetValue("MultiplyBySelectedScalarWideningUpper", Vector128short_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningUpper", Vector64short_0.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningUpper", byte_0.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningUpper", apiResult.ToString(), 4));
 
 try {
@@ -11108,7 +11108,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", "Performs 'MultiplyBySelectedScalarWideningUpperAndAdd' operation.", 0), GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", Vector128int_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", Vector128short_0.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", Vector64short_0.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", byte_0.ToString(), 4), GetValue("MultiplyBySelectedScalarWideningUpperAndAdd", apiResult.ToString(), 5));
 
 try {
@@ -11169,7 +11169,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", "Performs 'MultiplyBySelectedScalarWideningUpperAndSubtract' operation.", 0), GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", Vector128int_0.ToString(), 1), GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", Vector128short_0.ToString(), 2), GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", Vector64short_0.ToString(), 3), GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", byte_0.ToString(), 4), GetValue("MultiplyBySelectedScalarWideningUpperAndSubtract", apiResult.ToString(), 5));
 
 try {
@@ -11224,7 +11224,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingByScalarSaturateHigh", "Performs 'MultiplyDoublingByScalarSaturateHigh' operation.", 0), GetValue("MultiplyDoublingByScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingByScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingByScalarSaturateHigh", apiResult.ToString(), 3));
 
 try {
@@ -11284,7 +11284,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingBySelectedScalarSaturateHigh", "Performs 'MultiplyDoublingBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyDoublingBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyDoublingBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
 
 try {
@@ -11339,7 +11339,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingSaturateHigh", "Performs 'MultiplyDoublingSaturateHigh' operation.", 0), GetValue("MultiplyDoublingSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingSaturateHigh", apiResult.ToString(), 3));
 
 try {
@@ -11393,7 +11393,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningLowerAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerAndAddSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerAndAddSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerAndAddSaturate", apiResult.ToString(), 4));
 
 try {
@@ -11447,7 +11447,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningLowerAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerAndSubtractSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerAndSubtractSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerAndSubtractSaturate", apiResult.ToString(), 4));
 
 try {
@@ -11501,7 +11501,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningLowerByScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerByScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerByScalarAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerByScalarAndAddSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerByScalarAndAddSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerByScalarAndAddSaturate", apiResult.ToString(), 4));
 
 try {
@@ -11555,7 +11555,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerByScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerByScalarAndSubtractSaturate", apiResult.ToString(), 4));
 
 try {
@@ -11612,7 +11612,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate", apiResult.ToString(), 5));
 
 try {
@@ -11669,7 +11669,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate", apiResult.ToString(), 5));
 
 try {
@@ -11722,7 +11722,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningSaturateLower", "Performs 'MultiplyDoublingWideningSaturateLower' operation.", 0), GetValue("MultiplyDoublingWideningSaturateLower", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateLower", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateLower", apiResult.ToString(), 3));
 
 try {
@@ -11775,7 +11775,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningSaturateLowerByScalar", "Performs 'MultiplyDoublingWideningSaturateLowerByScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateLowerByScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateLowerByScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateLowerByScalar", apiResult.ToString(), 3));
 
 try {
@@ -11831,7 +11831,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningSaturateLowerBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateLowerBySelectedScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateLowerBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateLowerBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateLowerBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyDoublingWideningSaturateLowerBySelectedScalar", apiResult.ToString(), 4));
 
 try {
@@ -11884,7 +11884,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningSaturateUpper", "Performs 'MultiplyDoublingWideningSaturateUpper' operation.", 0), GetValue("MultiplyDoublingWideningSaturateUpper", Vector128short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateUpper", Vector128short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateUpper", apiResult.ToString(), 3));
 
 try {
@@ -11937,7 +11937,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningSaturateUpperByScalar", "Performs 'MultiplyDoublingWideningSaturateUpperByScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateUpperByScalar", Vector128short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateUpperByScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateUpperByScalar", apiResult.ToString(), 3));
 
 try {
@@ -11993,7 +11993,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningSaturateUpperBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateUpperBySelectedScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateUpperBySelectedScalar", Vector128short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateUpperBySelectedScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateUpperBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyDoublingWideningSaturateUpperBySelectedScalar", apiResult.ToString(), 4));
 
 try {
@@ -12047,7 +12047,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningUpperAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperAndAddSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperAndAddSaturate", Vector128short_1.ToString(), 3), GetValue("MultiplyDoublingWideningUpperAndAddSaturate", apiResult.ToString(), 4));
 
 try {
@@ -12101,7 +12101,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningUpperAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperAndSubtractSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperAndSubtractSaturate", Vector128short_1.ToString(), 3), GetValue("MultiplyDoublingWideningUpperAndSubtractSaturate", apiResult.ToString(), 4));
 
 try {
@@ -12155,7 +12155,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningUpperByScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperByScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperByScalarAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperByScalarAndAddSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperByScalarAndAddSaturate", Vector64short_0.ToString(), 3), GetValue("MultiplyDoublingWideningUpperByScalarAndAddSaturate", apiResult.ToString(), 4));
 
 try {
@@ -12209,7 +12209,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperByScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", Vector64short_0.ToString(), 3), GetValue("MultiplyDoublingWideningUpperByScalarAndSubtractSaturate", apiResult.ToString(), 4));
 
 try {
@@ -12266,7 +12266,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", Vector64short_0.ToString(), 3), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate", apiResult.ToString(), 5));
 
 try {
@@ -12343,7 +12343,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", Vector128int_0.ToString(), 1), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", Vector128short_0.ToString(), 2), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", Vector64short_0.ToString(), 3), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate", apiResult.ToString(), 5));
 
 try {
@@ -12398,7 +12398,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyRoundedDoublingByScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingByScalarSaturateHigh' operation.", 0), GetValue("MultiplyRoundedDoublingByScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingByScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingByScalarSaturateHigh", apiResult.ToString(), 3));
 
 try {
@@ -12458,7 +12458,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyRoundedDoublingBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
 
 try {
@@ -12513,7 +12513,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyRoundedDoublingSaturateHigh", "Performs 'MultiplyRoundedDoublingSaturateHigh' operation.", 0), GetValue("MultiplyRoundedDoublingSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingSaturateHigh", apiResult.ToString(), 3));
 
 try {
@@ -12566,7 +12566,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyScalar", "Performs 'MultiplyScalar' operation.", 0), GetValue("MultiplyScalar", Vector64double_0.ToString(), 1), GetValue("MultiplyScalar", Vector64double_1.ToString(), 2), GetValue("MultiplyScalar", apiResult.ToString(), 3));
 
 try {
@@ -12623,7 +12623,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyScalarBySelectedScalar", "Performs 'MultiplyScalarBySelectedScalar' operation.", 0), GetValue("MultiplyScalarBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("MultiplyScalarBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("MultiplyScalarBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyScalarBySelectedScalar", apiResult.ToString(), 4));
 
 try {
@@ -12687,7 +12687,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplySubtract", "Performs 'MultiplySubtract' operation.", 0), GetValue("MultiplySubtract", Vector64byte_0.ToString(), 1), GetValue("MultiplySubtract", Vector64byte_1.ToString(), 2), GetValue("MultiplySubtract", Vector64byte_2.ToString(), 3), GetValue("MultiplySubtract", apiResult.ToString(), 4));
 
 try {
@@ -12747,7 +12747,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplySubtractByScalar", "Performs 'MultiplySubtractByScalar' operation.", 0), GetValue("MultiplySubtractByScalar", Vector64short_0.ToString(), 1), GetValue("MultiplySubtractByScalar", Vector64short_1.ToString(), 2), GetValue("MultiplySubtractByScalar", Vector64short_2.ToString(), 3), GetValue("MultiplySubtractByScalar", apiResult.ToString(), 4));
 
 try {
@@ -12816,7 +12816,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplySubtractBySelectedScalar", "Performs 'MultiplySubtractBySelectedScalar' operation.", 0), GetValue("MultiplySubtractBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplySubtractBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplySubtractBySelectedScalar", Vector64short_2.ToString(), 3), GetValue("MultiplySubtractBySelectedScalar", byte_0.ToString(), 4), GetValue("MultiplySubtractBySelectedScalar", apiResult.ToString(), 5));
 
 try {
@@ -12873,7 +12873,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyWideningLower", "Performs 'MultiplyWideningLower' operation.", 0), GetValue("MultiplyWideningLower", Vector64byte_0.ToString(), 1), GetValue("MultiplyWideningLower", Vector64byte_1.ToString(), 2), GetValue("MultiplyWideningLower", apiResult.ToString(), 3));
 
 try {
@@ -12931,7 +12931,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyWideningLowerAndAdd", "Performs 'MultiplyWideningLowerAndAdd' operation.", 0), GetValue("MultiplyWideningLowerAndAdd", Vector128ushort_0.ToString(), 1), GetValue("MultiplyWideningLowerAndAdd", Vector64byte_0.ToString(), 2), GetValue("MultiplyWideningLowerAndAdd", Vector64byte_1.ToString(), 3), GetValue("MultiplyWideningLowerAndAdd", apiResult.ToString(), 4));
 
 try {
@@ -12989,7 +12989,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyWideningLowerAndSubtract", "Performs 'MultiplyWideningLowerAndSubtract' operation.", 0), GetValue("MultiplyWideningLowerAndSubtract", Vector128ushort_0.ToString(), 1), GetValue("MultiplyWideningLowerAndSubtract", Vector64byte_0.ToString(), 2), GetValue("MultiplyWideningLowerAndSubtract", Vector64byte_1.ToString(), 3), GetValue("MultiplyWideningLowerAndSubtract", apiResult.ToString(), 4));
 
 try {
@@ -13046,7 +13046,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyWideningUpper", "Performs 'MultiplyWideningUpper' operation.", 0), GetValue("MultiplyWideningUpper", Vector128byte_0.ToString(), 1), GetValue("MultiplyWideningUpper", Vector128byte_1.ToString(), 2), GetValue("MultiplyWideningUpper", apiResult.ToString(), 3));
 
 try {
@@ -13104,7 +13104,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyWideningUpperAndAdd", "Performs 'MultiplyWideningUpperAndAdd' operation.", 0), GetValue("MultiplyWideningUpperAndAdd", Vector128ushort_0.ToString(), 1), GetValue("MultiplyWideningUpperAndAdd", Vector128byte_0.ToString(), 2), GetValue("MultiplyWideningUpperAndAdd", Vector128byte_1.ToString(), 3), GetValue("MultiplyWideningUpperAndAdd", apiResult.ToString(), 4));
 
 try {
@@ -13162,7 +13162,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyWideningUpperAndSubtract", "Performs 'MultiplyWideningUpperAndSubtract' operation.", 0), GetValue("MultiplyWideningUpperAndSubtract", Vector128ushort_0.ToString(), 1), GetValue("MultiplyWideningUpperAndSubtract", Vector128byte_0.ToString(), 2), GetValue("MultiplyWideningUpperAndSubtract", Vector128byte_1.ToString(), 3), GetValue("MultiplyWideningUpperAndSubtract", apiResult.ToString(), 4));
 
 try {
@@ -13224,7 +13224,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Negate", "Performs 'Negate' operation.", 0), GetValue("Negate", Vector64short_0.ToString(), 1), GetValue("Negate", apiResult.ToString(), 2));
 
 try {
@@ -13283,7 +13283,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("NegateSaturate", "Performs 'NegateSaturate' operation.", 0), GetValue("NegateSaturate", Vector64short_0.ToString(), 1), GetValue("NegateSaturate", apiResult.ToString(), 2));
 
 try {
@@ -13338,7 +13338,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("NegateScalar", "Performs 'NegateScalar' operation.", 0), GetValue("NegateScalar", Vector64double_0.ToString(), 1), GetValue("NegateScalar", apiResult.ToString(), 2));
 
 try {
@@ -13408,7 +13408,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Not", "Performs 'Not' operation.", 0), GetValue("Not", Vector64byte_0.ToString(), 1), GetValue("Not", apiResult.ToString(), 2));
 
 try {
@@ -13479,7 +13479,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Or", "Performs 'Or' operation.", 0), GetValue("Or", Vector64byte_0.ToString(), 1), GetValue("Or", Vector64byte_1.ToString(), 2), GetValue("Or", apiResult.ToString(), 3));
 
 try {
@@ -13550,7 +13550,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("OrNot", "Performs 'OrNot' operation.", 0), GetValue("OrNot", Vector64byte_0.ToString(), 1), GetValue("OrNot", Vector64byte_1.ToString(), 2), GetValue("OrNot", apiResult.ToString(), 3));
 
 try {
@@ -13605,7 +13605,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("PolynomialMultiply", "Performs 'PolynomialMultiply' operation.", 0), GetValue("PolynomialMultiply", Vector64byte_0.ToString(), 1), GetValue("PolynomialMultiply", Vector64byte_1.ToString(), 2), GetValue("PolynomialMultiply", apiResult.ToString(), 3));
 
 try {
@@ -13658,7 +13658,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("PolynomialMultiplyWideningLower", "Performs 'PolynomialMultiplyWideningLower' operation.", 0), GetValue("PolynomialMultiplyWideningLower", Vector64byte_0.ToString(), 1), GetValue("PolynomialMultiplyWideningLower", Vector64byte_1.ToString(), 2), GetValue("PolynomialMultiplyWideningLower", apiResult.ToString(), 3));
 
 try {
@@ -13711,7 +13711,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("PolynomialMultiplyWideningUpper", "Performs 'PolynomialMultiplyWideningUpper' operation.", 0), GetValue("PolynomialMultiplyWideningUpper", Vector128byte_0.ToString(), 1), GetValue("PolynomialMultiplyWideningUpper", Vector128byte_1.ToString(), 2), GetValue("PolynomialMultiplyWideningUpper", apiResult.ToString(), 3));
 
 try {
@@ -13765,7 +13765,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("PopCount", "Performs 'PopCount' operation.", 0), GetValue("PopCount", Vector64byte_0.ToString(), 1), GetValue("PopCount", apiResult.ToString(), 2));
 
 try {
@@ -13822,7 +13822,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReciprocalEstimate", "Performs 'ReciprocalEstimate' operation.", 0), GetValue("ReciprocalEstimate", Vector64float_0.ToString(), 1), GetValue("ReciprocalEstimate", apiResult.ToString(), 2));
 
 try {
@@ -13879,7 +13879,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReciprocalSquareRootEstimate", "Performs 'ReciprocalSquareRootEstimate' operation.", 0), GetValue("ReciprocalSquareRootEstimate", Vector64float_0.ToString(), 1), GetValue("ReciprocalSquareRootEstimate", apiResult.ToString(), 2));
 
 try {
@@ -13935,7 +13935,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReciprocalSquareRootStep", "Performs 'ReciprocalSquareRootStep' operation.", 0), GetValue("ReciprocalSquareRootStep", Vector64float_0.ToString(), 1), GetValue("ReciprocalSquareRootStep", Vector64float_1.ToString(), 2), GetValue("ReciprocalSquareRootStep", apiResult.ToString(), 3));
 
 try {
@@ -13991,7 +13991,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReciprocalStep", "Performs 'ReciprocalStep' operation.", 0), GetValue("ReciprocalStep", Vector64float_0.ToString(), 1), GetValue("ReciprocalStep", Vector64float_1.ToString(), 2), GetValue("ReciprocalStep", apiResult.ToString(), 3));
 
 try {
@@ -14049,7 +14049,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReverseElement16", "Performs 'ReverseElement16' operation.", 0), GetValue("ReverseElement16", Vector64int_0.ToString(), 1), GetValue("ReverseElement16", apiResult.ToString(), 2));
 
 try {
@@ -14103,7 +14103,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReverseElement32", "Performs 'ReverseElement32' operation.", 0), GetValue("ReverseElement32", Vector64long_0.ToString(), 1), GetValue("ReverseElement32", apiResult.ToString(), 2));
 
 try {
@@ -14165,7 +14165,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReverseElement8", "Performs 'ReverseElement8' operation.", 0), GetValue("ReverseElement8", Vector64short_0.ToString(), 1), GetValue("ReverseElement8", apiResult.ToString(), 2));
 
 try {
@@ -14220,7 +14220,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("RoundAwayFromZero", "Performs 'RoundAwayFromZero' operation.", 0), GetValue("RoundAwayFromZero", Vector64float_0.ToString(), 1), GetValue("RoundAwayFromZero", apiResult.ToString(), 2));
 
 try {
@@ -14272,7 +14272,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("RoundAwayFromZeroScalar", "Performs 'RoundAwayFromZeroScalar' operation.", 0), GetValue("RoundAwayFromZeroScalar", Vector64double_0.ToString(), 1), GetValue("RoundAwayFromZeroScalar", apiResult.ToString(), 2));
 
 try {
@@ -14327,7 +14327,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("RoundToNearest", "Performs 'RoundToNearest' operation.", 0), GetValue("RoundToNearest", Vector64float_0.ToString(), 1), GetValue("RoundToNearest", apiResult.ToString(), 2));
 
 try {
@@ -14379,7 +14379,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("RoundToNearestScalar", "Performs 'RoundToNearestScalar' operation.", 0), GetValue("RoundToNearestScalar", Vector64double_0.ToString(), 1), GetValue("RoundToNearestScalar", apiResult.ToString(), 2));
 
 try {
@@ -14434,7 +14434,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("RoundToNegativeInfinity", "Performs 'RoundToNegativeInfinity' operation.", 0), GetValue("RoundToNegativeInfinity", Vector64float_0.ToString(), 1), GetValue("RoundToNegativeInfinity", apiResult.ToString(), 2));
 
 try {
@@ -14486,7 +14486,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("RoundToNegativeInfinityScalar", "Performs 'RoundToNegativeInfinityScalar' operation.", 0), GetValue("RoundToNegativeInfinityScalar", Vector64double_0.ToString(), 1), GetValue("RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
 
 try {
@@ -14541,7 +14541,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("RoundToPositiveInfinity", "Performs 'RoundToPositiveInfinity' operation.", 0), GetValue("RoundToPositiveInfinity", Vector64float_0.ToString(), 1), GetValue("RoundToPositiveInfinity", apiResult.ToString(), 2));
 
 try {
@@ -14593,7 +14593,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("RoundToPositiveInfinityScalar", "Performs 'RoundToPositiveInfinityScalar' operation.", 0), GetValue("RoundToPositiveInfinityScalar", Vector64double_0.ToString(), 1), GetValue("RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
 
 try {
@@ -14648,7 +14648,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("RoundToZero", "Performs 'RoundToZero' operation.", 0), GetValue("RoundToZero", Vector64float_0.ToString(), 1), GetValue("RoundToZero", apiResult.ToString(), 2));
 
 try {
@@ -14700,7 +14700,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("RoundToZeroScalar", "Performs 'RoundToZeroScalar' operation.", 0), GetValue("RoundToZeroScalar", Vector64double_0.ToString(), 1), GetValue("RoundToZeroScalar", apiResult.ToString(), 2));
 
 try {
@@ -14758,7 +14758,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftArithmetic", "Performs 'ShiftArithmetic' operation.", 0), GetValue("ShiftArithmetic", Vector64short_0.ToString(), 1), GetValue("ShiftArithmetic", Vector64short_1.ToString(), 2), GetValue("ShiftArithmetic", apiResult.ToString(), 3));
 
 try {
@@ -14816,7 +14816,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftArithmeticRounded", "Performs 'ShiftArithmeticRounded' operation.", 0), GetValue("ShiftArithmeticRounded", Vector64short_0.ToString(), 1), GetValue("ShiftArithmeticRounded", Vector64short_1.ToString(), 2), GetValue("ShiftArithmeticRounded", apiResult.ToString(), 3));
 
 try {
@@ -14874,7 +14874,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftArithmeticRoundedSaturate", "Performs 'ShiftArithmeticRoundedSaturate' operation.", 0), GetValue("ShiftArithmeticRoundedSaturate", Vector64short_0.ToString(), 1), GetValue("ShiftArithmeticRoundedSaturate", Vector64short_1.ToString(), 2), GetValue("ShiftArithmeticRoundedSaturate", apiResult.ToString(), 3));
 
 try {
@@ -14951,7 +14951,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftArithmeticRoundedSaturateScalar", "Performs 'ShiftArithmeticRoundedSaturateScalar' operation.", 0), GetValue("ShiftArithmeticRoundedSaturateScalar", Vector64long_0.ToString(), 1), GetValue("ShiftArithmeticRoundedSaturateScalar", Vector64long_1.ToString(), 2), GetValue("ShiftArithmeticRoundedSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -14998,7 +14998,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftArithmeticRoundedScalar", "Performs 'ShiftArithmeticRoundedScalar' operation.", 0), GetValue("ShiftArithmeticRoundedScalar", Vector64long_0.ToString(), 1), GetValue("ShiftArithmeticRoundedScalar", Vector64long_1.ToString(), 2), GetValue("ShiftArithmeticRoundedScalar", apiResult.ToString(), 3));
 
 try {
@@ -15056,7 +15056,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftArithmeticSaturate", "Performs 'ShiftArithmeticSaturate' operation.", 0), GetValue("ShiftArithmeticSaturate", Vector64short_0.ToString(), 1), GetValue("ShiftArithmeticSaturate", Vector64short_1.ToString(), 2), GetValue("ShiftArithmeticSaturate", apiResult.ToString(), 3));
 
 try {
@@ -15113,7 +15113,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftArithmeticSaturateScalar", "Performs 'ShiftArithmeticSaturateScalar' operation.", 0), GetValue("ShiftArithmeticSaturateScalar", Vector64long_0.ToString(), 1), GetValue("ShiftArithmeticSaturateScalar", Vector64long_1.ToString(), 2), GetValue("ShiftArithmeticSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -15160,7 +15160,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftArithmeticScalar", "Performs 'ShiftArithmeticScalar' operation.", 0), GetValue("ShiftArithmeticScalar", Vector64long_0.ToString(), 1), GetValue("ShiftArithmeticScalar", Vector64long_1.ToString(), 2), GetValue("ShiftArithmeticScalar", apiResult.ToString(), 3));
 
 try {
@@ -15226,7 +15226,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLeftAndInsert", "Performs 'ShiftLeftAndInsert' operation.", 0), GetValue("ShiftLeftAndInsert", Vector64byte_0.ToString(), 1), GetValue("ShiftLeftAndInsert", Vector64byte_1.ToString(), 2), GetValue("ShiftLeftAndInsert", byte_0.ToString(), 3), GetValue("ShiftLeftAndInsert", apiResult.ToString(), 4));
 
 try {
@@ -15280,7 +15280,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLeftAndInsertScalar", "Performs 'ShiftLeftAndInsertScalar' operation.", 0), GetValue("ShiftLeftAndInsertScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLeftAndInsertScalar", Vector64long_1.ToString(), 2), GetValue("ShiftLeftAndInsertScalar", byte_0.ToString(), 3), GetValue("ShiftLeftAndInsertScalar", apiResult.ToString(), 4));
 
 try {
@@ -15344,7 +15344,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLeftLogical", "Performs 'ShiftLeftLogical' operation.", 0), GetValue("ShiftLeftLogical", Vector64byte_0.ToString(), 1), GetValue("ShiftLeftLogical", byte_0.ToString(), 2), GetValue("ShiftLeftLogical", apiResult.ToString(), 3));
 
 try {
@@ -15409,7 +15409,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLeftLogicalSaturate", "Performs 'ShiftLeftLogicalSaturate' operation.", 0), GetValue("ShiftLeftLogicalSaturate", Vector64byte_0.ToString(), 1), GetValue("ShiftLeftLogicalSaturate", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalSaturate", apiResult.ToString(), 3));
 
 try {
@@ -15470,7 +15470,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLeftLogicalSaturateScalar", "Performs 'ShiftLeftLogicalSaturateScalar' operation.", 0), GetValue("ShiftLeftLogicalSaturateScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLeftLogicalSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -15528,7 +15528,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLeftLogicalSaturateUnsigned", "Performs 'ShiftLeftLogicalSaturateUnsigned' operation.", 0), GetValue("ShiftLeftLogicalSaturateUnsigned", Vector64short_0.ToString(), 1), GetValue("ShiftLeftLogicalSaturateUnsigned", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalSaturateUnsigned", apiResult.ToString(), 3));
 
 try {
@@ -15585,7 +15585,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLeftLogicalSaturateUnsignedScalar", "Performs 'ShiftLeftLogicalSaturateUnsignedScalar' operation.", 0), GetValue("ShiftLeftLogicalSaturateUnsignedScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLeftLogicalSaturateUnsignedScalar", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalSaturateUnsignedScalar", apiResult.ToString(), 3));
 
 try {
@@ -15638,7 +15638,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLeftLogicalScalar", "Performs 'ShiftLeftLogicalScalar' operation.", 0), GetValue("ShiftLeftLogicalScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLeftLogicalScalar", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalScalar", apiResult.ToString(), 3));
 
 try {
@@ -15695,7 +15695,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLeftLogicalWideningLower", "Performs 'ShiftLeftLogicalWideningLower' operation.", 0), GetValue("ShiftLeftLogicalWideningLower", Vector64byte_0.ToString(), 1), GetValue("ShiftLeftLogicalWideningLower", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalWideningLower", apiResult.ToString(), 3));
 
 try {
@@ -15752,7 +15752,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLeftLogicalWideningUpper", "Performs 'ShiftLeftLogicalWideningUpper' operation.", 0), GetValue("ShiftLeftLogicalWideningUpper", Vector128byte_0.ToString(), 1), GetValue("ShiftLeftLogicalWideningUpper", byte_0.ToString(), 2), GetValue("ShiftLeftLogicalWideningUpper", apiResult.ToString(), 3));
 
 try {
@@ -15817,7 +15817,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLogical", "Performs 'ShiftLogical' operation.", 0), GetValue("ShiftLogical", Vector64byte_0.ToString(), 1), GetValue("ShiftLogical", Vector64sbyte_0.ToString(), 2), GetValue("ShiftLogical", apiResult.ToString(), 3));
 
 try {
@@ -15882,7 +15882,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLogicalRounded", "Performs 'ShiftLogicalRounded' operation.", 0), GetValue("ShiftLogicalRounded", Vector64byte_0.ToString(), 1), GetValue("ShiftLogicalRounded", Vector64sbyte_0.ToString(), 2), GetValue("ShiftLogicalRounded", apiResult.ToString(), 3));
 
 try {
@@ -15947,7 +15947,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLogicalRoundedSaturate", "Performs 'ShiftLogicalRoundedSaturate' operation.", 0), GetValue("ShiftLogicalRoundedSaturate", Vector64byte_0.ToString(), 1), GetValue("ShiftLogicalRoundedSaturate", Vector64sbyte_0.ToString(), 2), GetValue("ShiftLogicalRoundedSaturate", apiResult.ToString(), 3));
 
 try {
@@ -16008,7 +16008,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLogicalRoundedSaturateScalar", "Performs 'ShiftLogicalRoundedSaturateScalar' operation.", 0), GetValue("ShiftLogicalRoundedSaturateScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLogicalRoundedSaturateScalar", Vector64long_1.ToString(), 2), GetValue("ShiftLogicalRoundedSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -16061,7 +16061,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLogicalRoundedScalar", "Performs 'ShiftLogicalRoundedScalar' operation.", 0), GetValue("ShiftLogicalRoundedScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLogicalRoundedScalar", Vector64long_1.ToString(), 2), GetValue("ShiftLogicalRoundedScalar", apiResult.ToString(), 3));
 
 try {
@@ -16126,7 +16126,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLogicalSaturate", "Performs 'ShiftLogicalSaturate' operation.", 0), GetValue("ShiftLogicalSaturate", Vector64byte_0.ToString(), 1), GetValue("ShiftLogicalSaturate", Vector64sbyte_0.ToString(), 2), GetValue("ShiftLogicalSaturate", apiResult.ToString(), 3));
 
 try {
@@ -16187,7 +16187,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLogicalSaturateScalar", "Performs 'ShiftLogicalSaturateScalar' operation.", 0), GetValue("ShiftLogicalSaturateScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLogicalSaturateScalar", Vector64long_1.ToString(), 2), GetValue("ShiftLogicalSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -16240,7 +16240,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftLogicalScalar", "Performs 'ShiftLogicalScalar' operation.", 0), GetValue("ShiftLogicalScalar", Vector64long_0.ToString(), 1), GetValue("ShiftLogicalScalar", Vector64long_1.ToString(), 2), GetValue("ShiftLogicalScalar", apiResult.ToString(), 3));
 
 try {
@@ -16306,7 +16306,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightAndInsert", "Performs 'ShiftRightAndInsert' operation.", 0), GetValue("ShiftRightAndInsert", Vector64byte_0.ToString(), 1), GetValue("ShiftRightAndInsert", Vector64byte_1.ToString(), 2), GetValue("ShiftRightAndInsert", byte_0.ToString(), 3), GetValue("ShiftRightAndInsert", apiResult.ToString(), 4));
 
 try {
@@ -16360,7 +16360,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightAndInsertScalar", "Performs 'ShiftRightAndInsertScalar' operation.", 0), GetValue("ShiftRightAndInsertScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightAndInsertScalar", Vector64long_1.ToString(), 2), GetValue("ShiftRightAndInsertScalar", byte_0.ToString(), 3), GetValue("ShiftRightAndInsertScalar", apiResult.ToString(), 4));
 
 try {
@@ -16418,7 +16418,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmetic", "Performs 'ShiftRightArithmetic' operation.", 0), GetValue("ShiftRightArithmetic", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmetic", byte_0.ToString(), 2), GetValue("ShiftRightArithmetic", apiResult.ToString(), 3));
 
 try {
@@ -16477,7 +16477,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticAdd", "Performs 'ShiftRightArithmeticAdd' operation.", 0), GetValue("ShiftRightArithmeticAdd", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticAdd", Vector64short_1.ToString(), 2), GetValue("ShiftRightArithmeticAdd", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticAdd", apiResult.ToString(), 4));
 
 try {
@@ -16525,7 +16525,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticAddScalar", "Performs 'ShiftRightArithmeticAddScalar' operation.", 0), GetValue("ShiftRightArithmeticAddScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightArithmeticAddScalar", Vector64long_1.ToString(), 2), GetValue("ShiftRightArithmeticAddScalar", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticAddScalar", apiResult.ToString(), 4));
 
 try {
@@ -16579,7 +16579,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticNarrowingSaturateLower", "Performs 'ShiftRightArithmeticNarrowingSaturateLower' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateLower", Vector128int_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateLower", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateLower", apiResult.ToString(), 3));
 
 try {
@@ -16633,7 +16633,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedLower", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedLower' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedLower", Vector128short_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedLower", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedLower", apiResult.ToString(), 3));
 
 try {
@@ -16688,7 +16688,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedUpper' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", Vector128short_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedUpper", apiResult.ToString(), 4));
 
 try {
@@ -16743,7 +16743,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticNarrowingSaturateUpper", "Performs 'ShiftRightArithmeticNarrowingSaturateUpper' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateUpper", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateUpper", Vector128int_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateUpper", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticNarrowingSaturateUpper", apiResult.ToString(), 4));
 
 try {
@@ -16801,7 +16801,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticRounded", "Performs 'ShiftRightArithmeticRounded' operation.", 0), GetValue("ShiftRightArithmeticRounded", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticRounded", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRounded", apiResult.ToString(), 3));
 
 try {
@@ -16860,7 +16860,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticRoundedAdd", "Performs 'ShiftRightArithmeticRoundedAdd' operation.", 0), GetValue("ShiftRightArithmeticRoundedAdd", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedAdd", Vector64short_1.ToString(), 2), GetValue("ShiftRightArithmeticRoundedAdd", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticRoundedAdd", apiResult.ToString(), 4));
 
 try {
@@ -16908,7 +16908,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticRoundedAddScalar", "Performs 'ShiftRightArithmeticRoundedAddScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedAddScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedAddScalar", Vector64long_1.ToString(), 2), GetValue("ShiftRightArithmeticRoundedAddScalar", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticRoundedAddScalar", apiResult.ToString(), 4));
 
 try {
@@ -16962,7 +16962,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateLower", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateLower' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateLower", Vector128int_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateLower", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateLower", apiResult.ToString(), 3));
 
 try {
@@ -17016,7 +17016,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower", Vector128short_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower", apiResult.ToString(), 3));
 
 try {
@@ -17071,7 +17071,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", Vector128short_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper", apiResult.ToString(), 4));
 
 try {
@@ -17126,7 +17126,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUpper", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUpper' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUpper", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUpper", Vector128int_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUpper", byte_0.ToString(), 3), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUpper", apiResult.ToString(), 4));
 
 try {
@@ -17173,7 +17173,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticRoundedScalar", "Performs 'ShiftRightArithmeticRoundedScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedScalar", apiResult.ToString(), 3));
 
 try {
@@ -17220,7 +17220,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticScalar", "Performs 'ShiftRightArithmeticScalar' operation.", 0), GetValue("ShiftRightArithmeticScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightArithmeticScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticScalar", apiResult.ToString(), 3));
 
 try {
@@ -17285,7 +17285,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogical", "Performs 'ShiftRightLogical' operation.", 0), GetValue("ShiftRightLogical", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogical", byte_0.ToString(), 2), GetValue("ShiftRightLogical", apiResult.ToString(), 3));
 
 try {
@@ -17351,7 +17351,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalAdd", "Performs 'ShiftRightLogicalAdd' operation.", 0), GetValue("ShiftRightLogicalAdd", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalAdd", Vector64byte_1.ToString(), 2), GetValue("ShiftRightLogicalAdd", byte_0.ToString(), 3), GetValue("ShiftRightLogicalAdd", apiResult.ToString(), 4));
 
 try {
@@ -17405,7 +17405,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalAddScalar", "Performs 'ShiftRightLogicalAddScalar' operation.", 0), GetValue("ShiftRightLogicalAddScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightLogicalAddScalar", Vector64long_1.ToString(), 2), GetValue("ShiftRightLogicalAddScalar", byte_0.ToString(), 3), GetValue("ShiftRightLogicalAddScalar", apiResult.ToString(), 4));
 
 try {
@@ -17462,7 +17462,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalNarrowingLower", "Performs 'ShiftRightLogicalNarrowingLower' operation.", 0), GetValue("ShiftRightLogicalNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingLower", byte_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingLower", apiResult.ToString(), 3));
 
 try {
@@ -17539,7 +17539,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalNarrowingSaturateLower", "Performs 'ShiftRightLogicalNarrowingSaturateLower' operation.", 0), GetValue("ShiftRightLogicalNarrowingSaturateLower", Vector128ushort_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingSaturateLower", byte_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingSaturateLower", apiResult.ToString(), 3));
 
 try {
@@ -17597,7 +17597,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalNarrowingSaturateUpper", "Performs 'ShiftRightLogicalNarrowingSaturateUpper' operation.", 0), GetValue("ShiftRightLogicalNarrowingSaturateUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingSaturateUpper", Vector128ushort_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingSaturateUpper", byte_0.ToString(), 3), GetValue("ShiftRightLogicalNarrowingSaturateUpper", apiResult.ToString(), 4));
 
 try {
@@ -17655,7 +17655,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalNarrowingUpper", "Performs 'ShiftRightLogicalNarrowingUpper' operation.", 0), GetValue("ShiftRightLogicalNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingUpper", byte_0.ToString(), 3), GetValue("ShiftRightLogicalNarrowingUpper", apiResult.ToString(), 4));
 
 try {
@@ -17720,7 +17720,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalRounded", "Performs 'ShiftRightLogicalRounded' operation.", 0), GetValue("ShiftRightLogicalRounded", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalRounded", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRounded", apiResult.ToString(), 3));
 
 try {
@@ -17786,7 +17786,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalRoundedAdd", "Performs 'ShiftRightLogicalRoundedAdd' operation.", 0), GetValue("ShiftRightLogicalRoundedAdd", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedAdd", Vector64byte_1.ToString(), 2), GetValue("ShiftRightLogicalRoundedAdd", byte_0.ToString(), 3), GetValue("ShiftRightLogicalRoundedAdd", apiResult.ToString(), 4));
 
 try {
@@ -17840,7 +17840,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalRoundedAddScalar", "Performs 'ShiftRightLogicalRoundedAddScalar' operation.", 0), GetValue("ShiftRightLogicalRoundedAddScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedAddScalar", Vector64long_1.ToString(), 2), GetValue("ShiftRightLogicalRoundedAddScalar", byte_0.ToString(), 3), GetValue("ShiftRightLogicalRoundedAddScalar", apiResult.ToString(), 4));
 
 try {
@@ -17897,7 +17897,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalRoundedNarrowingLower", "Performs 'ShiftRightLogicalRoundedNarrowingLower' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingLower", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingLower", apiResult.ToString(), 3));
 
 try {
@@ -17954,7 +17954,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalRoundedNarrowingSaturateLower", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateLower' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingSaturateLower", Vector128ushort_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingSaturateLower", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingSaturateLower", apiResult.ToString(), 3));
 
 try {
@@ -18012,7 +18012,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalRoundedNarrowingSaturateUpper", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateUpper' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingSaturateUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingSaturateUpper", Vector128ushort_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingSaturateUpper", byte_0.ToString(), 3), GetValue("ShiftRightLogicalRoundedNarrowingSaturateUpper", apiResult.ToString(), 4));
 
 try {
@@ -18070,7 +18070,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalRoundedNarrowingUpper", "Performs 'ShiftRightLogicalRoundedNarrowingUpper' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingUpper", byte_0.ToString(), 3), GetValue("ShiftRightLogicalRoundedNarrowingUpper", apiResult.ToString(), 4));
 
 try {
@@ -18123,7 +18123,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalRoundedScalar", "Performs 'ShiftRightLogicalRoundedScalar' operation.", 0), GetValue("ShiftRightLogicalRoundedScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedScalar", apiResult.ToString(), 3));
 
 try {
@@ -18176,7 +18176,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalScalar", "Performs 'ShiftRightLogicalScalar' operation.", 0), GetValue("ShiftRightLogicalScalar", Vector64long_0.ToString(), 1), GetValue("ShiftRightLogicalScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalScalar", apiResult.ToString(), 3));
 
 try {
@@ -18229,7 +18229,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SignExtendWideningLower", "Performs 'SignExtendWideningLower' operation.", 0), GetValue("SignExtendWideningLower", Vector64short_0.ToString(), 1), GetValue("SignExtendWideningLower", apiResult.ToString(), 2));
 
 try {
@@ -18282,7 +18282,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SignExtendWideningUpper", "Performs 'SignExtendWideningUpper' operation.", 0), GetValue("SignExtendWideningUpper", Vector128short_0.ToString(), 1), GetValue("SignExtendWideningUpper", apiResult.ToString(), 2));
 
 try {
@@ -18334,7 +18334,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SqrtScalar", "Performs 'SqrtScalar' operation.", 0), GetValue("SqrtScalar", Vector64double_0.ToString(), 1), GetValue("SqrtScalar", apiResult.ToString(), 2));
 
 try {
@@ -18406,7 +18406,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Store", "Performs 'Store' operation.", 0), GetValue("Store", "<address>".ToString(), 1), GetValue("Store", Vector64byte_0.ToString(), 2));
 
 try {
@@ -18477,7 +18477,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("StoreSelectedScalar", "Performs 'StoreSelectedScalar' operation.", 0), GetValue("StoreSelectedScalar", "<address>".ToString(), 1), GetValue("StoreSelectedScalar", Vector64byte_0.ToString(), 2), GetValue("StoreSelectedScalar", byte_0.ToString(), 3));
 
 try {
@@ -18548,7 +18548,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Subtract", "Performs 'Subtract' operation.", 0), GetValue("Subtract", Vector64byte_0.ToString(), 1), GetValue("Subtract", Vector64byte_1.ToString(), 2), GetValue("Subtract", apiResult.ToString(), 3));
 
 try {
@@ -18605,7 +18605,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SubtractHighNarrowingLower", "Performs 'SubtractHighNarrowingLower' operation.", 0), GetValue("SubtractHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("SubtractHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("SubtractHighNarrowingLower", apiResult.ToString(), 3));
 
 try {
@@ -18663,7 +18663,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SubtractHighNarrowingUpper", "Performs 'SubtractHighNarrowingUpper' operation.", 0), GetValue("SubtractHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("SubtractHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("SubtractHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("SubtractHighNarrowingUpper", apiResult.ToString(), 4));
 
 try {
@@ -18720,7 +18720,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SubtractRoundedHighNarrowingLower", "Performs 'SubtractRoundedHighNarrowingLower' operation.", 0), GetValue("SubtractRoundedHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("SubtractRoundedHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("SubtractRoundedHighNarrowingLower", apiResult.ToString(), 3));
 
 try {
@@ -18778,7 +18778,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SubtractRoundedHighNarrowingUpper", "Performs 'SubtractRoundedHighNarrowingUpper' operation.", 0), GetValue("SubtractRoundedHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("SubtractRoundedHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("SubtractRoundedHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("SubtractRoundedHighNarrowingUpper", apiResult.ToString(), 4));
 
 try {
@@ -18843,7 +18843,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SubtractSaturate", "Performs 'SubtractSaturate' operation.", 0), GetValue("SubtractSaturate", Vector64byte_0.ToString(), 1), GetValue("SubtractSaturate", Vector64byte_1.ToString(), 2), GetValue("SubtractSaturate", apiResult.ToString(), 3));
 
 try {
@@ -18904,7 +18904,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SubtractSaturateScalar", "Performs 'SubtractSaturateScalar' operation.", 0), GetValue("SubtractSaturateScalar", Vector64long_0.ToString(), 1), GetValue("SubtractSaturateScalar", Vector64long_1.ToString(), 2), GetValue("SubtractSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -18959,7 +18959,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SubtractScalar", "Performs 'SubtractScalar' operation.", 0), GetValue("SubtractScalar", Vector64double_0.ToString(), 1), GetValue("SubtractScalar", Vector64double_1.ToString(), 2), GetValue("SubtractScalar", apiResult.ToString(), 3));
 
 try {
@@ -19022,7 +19022,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SubtractWideningLower", "Performs 'SubtractWideningLower' operation.", 0), GetValue("SubtractWideningLower", Vector64byte_0.ToString(), 1), GetValue("SubtractWideningLower", Vector64byte_1.ToString(), 2), GetValue("SubtractWideningLower", apiResult.ToString(), 3));
 
 try {
@@ -19085,7 +19085,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("SubtractWideningUpper", "Performs 'SubtractWideningUpper' operation.", 0), GetValue("SubtractWideningUpper", Vector128byte_0.ToString(), 1), GetValue("SubtractWideningUpper", Vector128byte_1.ToString(), 2), GetValue("SubtractWideningUpper", apiResult.ToString(), 3));
 
 try {
@@ -19142,7 +19142,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("VectorTableLookup", "Performs 'VectorTableLookup' operation.", 0), GetValue("VectorTableLookup", Vector128byte_0.ToString(), 1), GetValue("VectorTableLookup", Vector64byte_0.ToString(), 2), GetValue("VectorTableLookup", apiResult.ToString(), 3));
 
 try {
@@ -19200,7 +19200,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("VectorTableLookupExtension", "Performs 'VectorTableLookupExtension' operation.", 0), GetValue("VectorTableLookupExtension", Vector64byte_0.ToString(), 1), GetValue("VectorTableLookupExtension", Vector128byte_0.ToString(), 2), GetValue("VectorTableLookupExtension", Vector64byte_1.ToString(), 3), GetValue("VectorTableLookupExtension", apiResult.ToString(), 4));
 
 try {
@@ -19271,7 +19271,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Xor", "Performs 'Xor' operation.", 0), GetValue("Xor", Vector64byte_0.ToString(), 1), GetValue("Xor", Vector64byte_1.ToString(), 2), GetValue("Xor", apiResult.ToString(), 3));
 
 try {
@@ -19327,7 +19327,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ZeroExtendWideningLower", "Performs 'ZeroExtendWideningLower' operation.", 0), GetValue("ZeroExtendWideningLower", Vector64byte_0.ToString(), 1), GetValue("ZeroExtendWideningLower", apiResult.ToString(), 2));
 
 try {
@@ -19383,7 +19383,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ZeroExtendWideningUpper", "Performs 'ZeroExtendWideningUpper' operation.", 0), GetValue("ZeroExtendWideningUpper", Vector128byte_0.ToString(), 1), GetValue("ZeroExtendWideningUpper", apiResult.ToString(), 2));
 
 try {
@@ -19437,7 +19437,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsSaturateScalar", "Performs 'AbsSaturateScalar' operation.", 0), GetValue("AbsSaturateScalar", Vector64short_0.ToString(), 1), GetValue("AbsSaturateScalar", apiResult.ToString(), 2));
 
 try {
@@ -19490,7 +19490,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteCompareGreaterThanScalar", "Performs 'AbsoluteCompareGreaterThanScalar' operation.", 0), GetValue("AbsoluteCompareGreaterThanScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThanScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThanScalar", apiResult.ToString(), 3));
 
 try {
@@ -19543,7 +19543,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteCompareGreaterThanOrEqualScalar", "Performs 'AbsoluteCompareGreaterThanOrEqualScalar' operation.", 0), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", apiResult.ToString(), 3));
 
 try {
@@ -19596,7 +19596,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteCompareLessThanScalar", "Performs 'AbsoluteCompareLessThanScalar' operation.", 0), GetValue("AbsoluteCompareLessThanScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareLessThanScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareLessThanScalar", apiResult.ToString(), 3));
 
 try {
@@ -19649,7 +19649,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteCompareLessThanOrEqualScalar", "Performs 'AbsoluteCompareLessThanOrEqualScalar' operation.", 0), GetValue("AbsoluteCompareLessThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareLessThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareLessThanOrEqualScalar", apiResult.ToString(), 3));
 
 try {
@@ -19702,7 +19702,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AbsoluteDifferenceScalar", "Performs 'AbsoluteDifferenceScalar' operation.", 0), GetValue("AbsoluteDifferenceScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteDifferenceScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteDifferenceScalar", apiResult.ToString(), 3));
 
 try {
@@ -19762,7 +19762,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddAcross", "Performs 'AddAcross' operation.", 0), GetValue("AddAcross", Vector64byte_0.ToString(), 1), GetValue("AddAcross", apiResult.ToString(), 2));
 
 try {
@@ -19822,7 +19822,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddAcrossWidening", "Performs 'AddAcrossWidening' operation.", 0), GetValue("AddAcrossWidening", Vector64byte_0.ToString(), 1), GetValue("AddAcrossWidening", apiResult.ToString(), 2));
 
 try {
@@ -19876,7 +19876,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("AddPairwiseScalar", "Performs 'AddPairwiseScalar' operation.", 0), GetValue("AddPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("AddPairwiseScalar", apiResult.ToString(), 2));
 
 try {
@@ -19931,7 +19931,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareEqualScalar", "Performs 'CompareEqualScalar' operation.", 0), GetValue("CompareEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareEqualScalar", apiResult.ToString(), 3));
 
 try {
@@ -19986,7 +19986,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareGreaterThanScalar", "Performs 'CompareGreaterThanScalar' operation.", 0), GetValue("CompareGreaterThanScalar", Vector64double_0.ToString(), 1), GetValue("CompareGreaterThanScalar", Vector64double_1.ToString(), 2), GetValue("CompareGreaterThanScalar", apiResult.ToString(), 3));
 
 try {
@@ -20041,7 +20041,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareGreaterThanOrEqualScalar", "Performs 'CompareGreaterThanOrEqualScalar' operation.", 0), GetValue("CompareGreaterThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareGreaterThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareGreaterThanOrEqualScalar", apiResult.ToString(), 3));
 
 try {
@@ -20096,7 +20096,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareLessThanScalar", "Performs 'CompareLessThanScalar' operation.", 0), GetValue("CompareLessThanScalar", Vector64double_0.ToString(), 1), GetValue("CompareLessThanScalar", Vector64double_1.ToString(), 2), GetValue("CompareLessThanScalar", apiResult.ToString(), 3));
 
 try {
@@ -20171,7 +20171,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareLessThanOrEqualScalar", "Performs 'CompareLessThanOrEqualScalar' operation.", 0), GetValue("CompareLessThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareLessThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareLessThanOrEqualScalar", apiResult.ToString(), 3));
 
 try {
@@ -20225,7 +20225,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("CompareTestScalar", "Performs 'CompareTestScalar' operation.", 0), GetValue("CompareTestScalar", Vector64double_0.ToString(), 1), GetValue("CompareTestScalar", Vector64double_1.ToString(), 2), GetValue("CompareTestScalar", apiResult.ToString(), 3));
 
 try {
@@ -20278,7 +20278,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToDouble", "Performs 'ConvertToDouble' operation.", 0), GetValue("ConvertToDouble", Vector64float_0.ToString(), 1), GetValue("ConvertToDouble", apiResult.ToString(), 2));
 
 try {
@@ -20330,7 +20330,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToDoubleScalar", "Performs 'ConvertToDoubleScalar' operation.", 0), GetValue("ConvertToDoubleScalar", Vector64long_0.ToString(), 1), GetValue("ConvertToDoubleScalar", apiResult.ToString(), 2));
 
 try {
@@ -20376,7 +20376,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToDoubleUpper", "Performs 'ConvertToDoubleUpper' operation.", 0), GetValue("ConvertToDoubleUpper", Vector128float_0.ToString(), 1), GetValue("ConvertToDoubleUpper", apiResult.ToString(), 2));
 
 try {
@@ -20422,7 +20422,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt64RoundAwayFromZero", "Performs 'ConvertToInt64RoundAwayFromZero' operation.", 0), GetValue("ConvertToInt64RoundAwayFromZero", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundAwayFromZero", apiResult.ToString(), 2));
 
 try {
@@ -20468,7 +20468,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt64RoundAwayFromZeroScalar", "Performs 'ConvertToInt64RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToInt64RoundAwayFromZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundAwayFromZeroScalar", apiResult.ToString(), 2));
 
 try {
@@ -20514,7 +20514,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt64RoundToEven", "Performs 'ConvertToInt64RoundToEven' operation.", 0), GetValue("ConvertToInt64RoundToEven", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToEven", apiResult.ToString(), 2));
 
 try {
@@ -20560,7 +20560,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt64RoundToEvenScalar", "Performs 'ConvertToInt64RoundToEvenScalar' operation.", 0), GetValue("ConvertToInt64RoundToEvenScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToEvenScalar", apiResult.ToString(), 2));
 
 try {
@@ -20606,7 +20606,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt64RoundToNegativeInfinity", "Performs 'ConvertToInt64RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToInt64RoundToNegativeInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToNegativeInfinity", apiResult.ToString(), 2));
 
 try {
@@ -20652,7 +20652,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToInt64RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToInt64RoundToNegativeInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
 
 try {
@@ -20698,7 +20698,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt64RoundToPositiveInfinity", "Performs 'ConvertToInt64RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToInt64RoundToPositiveInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToPositiveInfinity", apiResult.ToString(), 2));
 
 try {
@@ -20744,7 +20744,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToInt64RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToInt64RoundToPositiveInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
 
 try {
@@ -20790,7 +20790,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt64RoundToZero", "Performs 'ConvertToInt64RoundToZero' operation.", 0), GetValue("ConvertToInt64RoundToZero", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToZero", apiResult.ToString(), 2));
 
 try {
@@ -20836,7 +20836,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToInt64RoundToZeroScalar", "Performs 'ConvertToInt64RoundToZeroScalar' operation.", 0), GetValue("ConvertToInt64RoundToZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToZeroScalar", apiResult.ToString(), 2));
 
 try {
@@ -20882,7 +20882,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToSingleLower", "Performs 'ConvertToSingleLower' operation.", 0), GetValue("ConvertToSingleLower", Vector128double_0.ToString(), 1), GetValue("ConvertToSingleLower", apiResult.ToString(), 2));
 
 try {
@@ -20928,7 +20928,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToSingleRoundToOddLower", "Performs 'ConvertToSingleRoundToOddLower' operation.", 0), GetValue("ConvertToSingleRoundToOddLower", Vector128double_0.ToString(), 1), GetValue("ConvertToSingleRoundToOddLower", apiResult.ToString(), 2));
 
 try {
@@ -20975,7 +20975,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToSingleRoundToOddUpper", "Performs 'ConvertToSingleRoundToOddUpper' operation.", 0), GetValue("ConvertToSingleRoundToOddUpper", Vector64float_0.ToString(), 1), GetValue("ConvertToSingleRoundToOddUpper", Vector128double_0.ToString(), 2), GetValue("ConvertToSingleRoundToOddUpper", apiResult.ToString(), 3));
 
 try {
@@ -21022,7 +21022,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToSingleUpper", "Performs 'ConvertToSingleUpper' operation.", 0), GetValue("ConvertToSingleUpper", Vector64float_0.ToString(), 1), GetValue("ConvertToSingleUpper", Vector128double_0.ToString(), 2), GetValue("ConvertToSingleUpper", apiResult.ToString(), 3));
 
 try {
@@ -21068,7 +21068,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt64RoundAwayFromZero", "Performs 'ConvertToUInt64RoundAwayFromZero' operation.", 0), GetValue("ConvertToUInt64RoundAwayFromZero", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundAwayFromZero", apiResult.ToString(), 2));
 
 try {
@@ -21114,7 +21114,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt64RoundAwayFromZeroScalar", "Performs 'ConvertToUInt64RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToUInt64RoundAwayFromZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundAwayFromZeroScalar", apiResult.ToString(), 2));
 
 try {
@@ -21160,7 +21160,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt64RoundToEven", "Performs 'ConvertToUInt64RoundToEven' operation.", 0), GetValue("ConvertToUInt64RoundToEven", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToEven", apiResult.ToString(), 2));
 
 try {
@@ -21206,7 +21206,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt64RoundToEvenScalar", "Performs 'ConvertToUInt64RoundToEvenScalar' operation.", 0), GetValue("ConvertToUInt64RoundToEvenScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToEvenScalar", apiResult.ToString(), 2));
 
 try {
@@ -21252,7 +21252,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt64RoundToNegativeInfinity", "Performs 'ConvertToUInt64RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToUInt64RoundToNegativeInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToNegativeInfinity", apiResult.ToString(), 2));
 
 try {
@@ -21298,7 +21298,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToUInt64RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
 
 try {
@@ -21344,7 +21344,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt64RoundToPositiveInfinity", "Performs 'ConvertToUInt64RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToUInt64RoundToPositiveInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToPositiveInfinity", apiResult.ToString(), 2));
 
 try {
@@ -21390,7 +21390,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToUInt64RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
 
 try {
@@ -21436,7 +21436,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt64RoundToZero", "Performs 'ConvertToUInt64RoundToZero' operation.", 0), GetValue("ConvertToUInt64RoundToZero", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToZero", apiResult.ToString(), 2));
 
 try {
@@ -21482,7 +21482,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ConvertToUInt64RoundToZeroScalar", "Performs 'ConvertToUInt64RoundToZeroScalar' operation.", 0), GetValue("ConvertToUInt64RoundToZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToZeroScalar", apiResult.ToString(), 2));
 
 try {
@@ -21536,7 +21536,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Divide", "Performs 'Divide' operation.", 0), GetValue("Divide", Vector64float_0.ToString(), 1), GetValue("Divide", Vector64float_1.ToString(), 2), GetValue("Divide", apiResult.ToString(), 3));
 
 try {
@@ -21592,7 +21592,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ExtractNarrowingSaturateScalar", "Performs 'ExtractNarrowingSaturateScalar' operation.", 0), GetValue("ExtractNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ExtractNarrowingSaturateScalar", apiResult.ToString(), 2));
 
 try {
@@ -21645,7 +21645,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ExtractNarrowingSaturateUnsignedScalar", "Performs 'ExtractNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ExtractNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ExtractNarrowingSaturateUnsignedScalar", apiResult.ToString(), 2));
 
 try {
@@ -21700,7 +21700,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplyAddByScalar", "Performs 'FusedMultiplyAddByScalar' operation.", 0), GetValue("FusedMultiplyAddByScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplyAddByScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplyAddByScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplyAddByScalar", apiResult.ToString(), 4));
 
 try {
@@ -21758,7 +21758,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplyAddBySelectedScalar", "Performs 'FusedMultiplyAddBySelectedScalar' operation.", 0), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplyAddBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplyAddBySelectedScalar", apiResult.ToString(), 5));
 
 try {
@@ -21814,7 +21814,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplyAddScalarBySelectedScalar", "Performs 'FusedMultiplyAddScalarBySelectedScalar' operation.", 0), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector128double_0.ToString(), 3), GetValue("FusedMultiplyAddScalarBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplyAddScalarBySelectedScalar", apiResult.ToString(), 5));
 
 try {
@@ -21869,7 +21869,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplySubtractByScalar", "Performs 'FusedMultiplySubtractByScalar' operation.", 0), GetValue("FusedMultiplySubtractByScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplySubtractByScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplySubtractByScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplySubtractByScalar", apiResult.ToString(), 4));
 
 try {
@@ -21927,7 +21927,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplySubtractBySelectedScalar", "Performs 'FusedMultiplySubtractBySelectedScalar' operation.", 0), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplySubtractBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplySubtractBySelectedScalar", apiResult.ToString(), 5));
 
 try {
@@ -21983,7 +21983,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("FusedMultiplySubtractScalarBySelectedScalar", "Performs 'FusedMultiplySubtractScalarBySelectedScalar' operation.", 0), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector128double_0.ToString(), 3), GetValue("FusedMultiplySubtractScalarBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplySubtractScalarBySelectedScalar", apiResult.ToString(), 5));
 
 try {
@@ -22067,7 +22067,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("InsertSelectedScalar", "Performs 'InsertSelectedScalar' operation.", 0), GetValue("InsertSelectedScalar", Vector64byte_0.ToString(), 1), GetValue("InsertSelectedScalar", byte_0.ToString(), 2), GetValue("InsertSelectedScalar", Vector64byte_1.ToString(), 3), GetValue("InsertSelectedScalar", byte_1.ToString(), 4), GetValue("InsertSelectedScalar", apiResult.ToString(), 5));
 
 try {
@@ -22128,7 +22128,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MaxAcross", "Performs 'MaxAcross' operation.", 0), GetValue("MaxAcross", Vector64byte_0.ToString(), 1), GetValue("MaxAcross", apiResult.ToString(), 2));
 
 try {
@@ -22174,7 +22174,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MaxNumberAcross", "Performs 'MaxNumberAcross' operation.", 0), GetValue("MaxNumberAcross", Vector128float_0.ToString(), 1), GetValue("MaxNumberAcross", apiResult.ToString(), 2));
 
 try {
@@ -22228,7 +22228,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MaxNumberPairwise", "Performs 'MaxNumberPairwise' operation.", 0), GetValue("MaxNumberPairwise", Vector64float_0.ToString(), 1), GetValue("MaxNumberPairwise", Vector64float_1.ToString(), 2), GetValue("MaxNumberPairwise", apiResult.ToString(), 3));
 
 try {
@@ -22280,7 +22280,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MaxNumberPairwiseScalar", "Performs 'MaxNumberPairwiseScalar' operation.", 0), GetValue("MaxNumberPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MaxNumberPairwiseScalar", apiResult.ToString(), 2));
 
 try {
@@ -22332,7 +22332,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MaxPairwiseScalar", "Performs 'MaxPairwiseScalar' operation.", 0), GetValue("MaxPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MaxPairwiseScalar", apiResult.ToString(), 2));
 
 try {
@@ -22385,7 +22385,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MaxScalar", "Performs 'MaxScalar' operation.", 0), GetValue("MaxScalar", Vector64double_0.ToString(), 1), GetValue("MaxScalar", Vector64double_1.ToString(), 2), GetValue("MaxScalar", apiResult.ToString(), 3));
 
 try {
@@ -22466,7 +22466,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MinAcross", "Performs 'MinAcross' operation.", 0), GetValue("MinAcross", Vector64byte_0.ToString(), 1), GetValue("MinAcross", apiResult.ToString(), 2));
 
 try {
@@ -22512,7 +22512,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MinNumberAcross", "Performs 'MinNumberAcross' operation.", 0), GetValue("MinNumberAcross", Vector128float_0.ToString(), 1), GetValue("MinNumberAcross", apiResult.ToString(), 2));
 
 try {
@@ -22566,7 +22566,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MinNumberPairwise", "Performs 'MinNumberPairwise' operation.", 0), GetValue("MinNumberPairwise", Vector64float_0.ToString(), 1), GetValue("MinNumberPairwise", Vector64float_1.ToString(), 2), GetValue("MinNumberPairwise", apiResult.ToString(), 3));
 
 try {
@@ -22618,7 +22618,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MinNumberPairwiseScalar", "Performs 'MinNumberPairwiseScalar' operation.", 0), GetValue("MinNumberPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MinNumberPairwiseScalar", apiResult.ToString(), 2));
 
 try {
@@ -22670,7 +22670,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MinPairwiseScalar", "Performs 'MinPairwiseScalar' operation.", 0), GetValue("MinPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MinPairwiseScalar", apiResult.ToString(), 2));
 
 try {
@@ -22723,7 +22723,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MinScalar", "Performs 'MinScalar' operation.", 0), GetValue("MinScalar", Vector64double_0.ToString(), 1), GetValue("MinScalar", Vector64double_1.ToString(), 2), GetValue("MinScalar", apiResult.ToString(), 3));
 
 try {
@@ -22776,7 +22776,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingSaturateHighScalar", "Performs 'MultiplyDoublingSaturateHighScalar' operation.", 0), GetValue("MultiplyDoublingSaturateHighScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingSaturateHighScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingSaturateHighScalar", apiResult.ToString(), 3));
 
 try {
@@ -22832,7 +22832,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyDoublingScalarBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
 
 try {
@@ -22886,7 +22886,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningAndAddSaturateScalar", "Performs 'MultiplyDoublingWideningAndAddSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", apiResult.ToString(), 4));
 
 try {
@@ -22940,7 +22940,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", "Performs 'MultiplyDoublingWideningAndSubtractSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", apiResult.ToString(), 4));
 
 try {
@@ -22993,7 +22993,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningSaturateScalar", "Performs 'MultiplyDoublingWideningSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -23049,7 +23049,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateScalarBySelectedScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", apiResult.ToString(), 4));
 
 try {
@@ -23106,7 +23106,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", apiResult.ToString(), 5));
 
 try {
@@ -23163,7 +23163,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", apiResult.ToString(), 5));
 
 try {
@@ -23217,7 +23217,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyExtended", "Performs 'MultiplyExtended' operation.", 0), GetValue("MultiplyExtended", Vector64float_0.ToString(), 1), GetValue("MultiplyExtended", Vector64float_1.ToString(), 2), GetValue("MultiplyExtended", apiResult.ToString(), 3));
 
 try {
@@ -23264,7 +23264,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyExtendedByScalar", "Performs 'MultiplyExtendedByScalar' operation.", 0), GetValue("MultiplyExtendedByScalar", Vector128double_0.ToString(), 1), GetValue("MultiplyExtendedByScalar", Vector64double_0.ToString(), 2), GetValue("MultiplyExtendedByScalar", apiResult.ToString(), 3));
 
 try {
@@ -23321,7 +23321,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyExtendedBySelectedScalar", "Performs 'MultiplyExtendedBySelectedScalar' operation.", 0), GetValue("MultiplyExtendedBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("MultiplyExtendedBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("MultiplyExtendedBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyExtendedBySelectedScalar", apiResult.ToString(), 4));
 
 try {
@@ -23374,7 +23374,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyExtendedScalar", "Performs 'MultiplyExtendedScalar' operation.", 0), GetValue("MultiplyExtendedScalar", Vector64double_0.ToString(), 1), GetValue("MultiplyExtendedScalar", Vector64double_1.ToString(), 2), GetValue("MultiplyExtendedScalar", apiResult.ToString(), 3));
 
 try {
@@ -23429,7 +23429,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyExtendedScalarBySelectedScalar", "Performs 'MultiplyExtendedScalarBySelectedScalar' operation.", 0), GetValue("MultiplyExtendedScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("MultiplyExtendedScalarBySelectedScalar", Vector128double_0.ToString(), 2), GetValue("MultiplyExtendedScalarBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyExtendedScalarBySelectedScalar", apiResult.ToString(), 4));
 
 try {
@@ -23482,7 +23482,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyRoundedDoublingSaturateHighScalar", "Performs 'MultiplyRoundedDoublingSaturateHighScalar' operation.", 0), GetValue("MultiplyRoundedDoublingSaturateHighScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingSaturateHighScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingSaturateHighScalar", apiResult.ToString(), 3));
 
 try {
@@ -23538,7 +23538,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
 
 try {
@@ -23592,7 +23592,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("NegateSaturateScalar", "Performs 'NegateSaturateScalar' operation.", 0), GetValue("NegateSaturateScalar", Vector64short_0.ToString(), 1), GetValue("NegateSaturateScalar", apiResult.ToString(), 2));
 
 try {
@@ -23644,7 +23644,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReciprocalEstimateScalar", "Performs 'ReciprocalEstimateScalar' operation.", 0), GetValue("ReciprocalEstimateScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalEstimateScalar", apiResult.ToString(), 2));
 
 try {
@@ -23696,7 +23696,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReciprocalExponentScalar", "Performs 'ReciprocalExponentScalar' operation.", 0), GetValue("ReciprocalExponentScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalExponentScalar", apiResult.ToString(), 2));
 
 try {
@@ -23748,7 +23748,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReciprocalSquareRootEstimateScalar", "Performs 'ReciprocalSquareRootEstimateScalar' operation.", 0), GetValue("ReciprocalSquareRootEstimateScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalSquareRootEstimateScalar", apiResult.ToString(), 2));
 
 try {
@@ -23801,7 +23801,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReciprocalSquareRootStepScalar", "Performs 'ReciprocalSquareRootStepScalar' operation.", 0), GetValue("ReciprocalSquareRootStepScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalSquareRootStepScalar", Vector64double_1.ToString(), 2), GetValue("ReciprocalSquareRootStepScalar", apiResult.ToString(), 3));
 
 try {
@@ -23854,7 +23854,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReciprocalStepScalar", "Performs 'ReciprocalStepScalar' operation.", 0), GetValue("ReciprocalStepScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalStepScalar", Vector64double_1.ToString(), 2), GetValue("ReciprocalStepScalar", apiResult.ToString(), 3));
 
 try {
@@ -23908,7 +23908,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", Vector64int_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -23962,7 +23962,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", apiResult.ToString(), 3));
 
 try {
@@ -24016,7 +24016,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", Vector64int_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -24070,7 +24070,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", apiResult.ToString(), 3));
 
 try {
@@ -24127,7 +24127,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalNarrowingSaturateScalar", "Performs 'ShiftRightLogicalNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightLogicalNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -24184,7 +24184,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", apiResult.ToString(), 3));
 
 try {
@@ -24237,7 +24237,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("Sqrt", "Performs 'Sqrt' operation.", 0), GetValue("Sqrt", Vector64float_0.ToString(), 1), GetValue("Sqrt", apiResult.ToString(), 2));
 
 try {
@@ -24310,7 +24310,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("StorePair", "Performs 'StorePair' operation.", 0), GetValue("StorePair", "<address>".ToString(), 1), GetValue("StorePair", Vector64byte_0.ToString(), 2), GetValue("StorePair", Vector64byte_1.ToString(), 3));
 
 try {
@@ -24384,7 +24384,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("StorePairNonTemporal", "Performs 'StorePairNonTemporal' operation.", 0), GetValue("StorePairNonTemporal", "<address>".ToString(), 1), GetValue("StorePairNonTemporal", Vector64byte_0.ToString(), 2), GetValue("StorePairNonTemporal", Vector64byte_1.ToString(), 3));
 
 try {
@@ -24441,7 +24441,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("StorePairScalar", "Performs 'StorePairScalar' operation.", 0), GetValue("StorePairScalar", "<address>".ToString(), 1), GetValue("StorePairScalar", Vector64int_0.ToString(), 2), GetValue("StorePairScalar", Vector64int_1.ToString(), 3));
 
 try {
@@ -24498,7 +24498,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("StorePairScalarNonTemporal", "Performs 'StorePairScalarNonTemporal' operation.", 0), GetValue("StorePairScalarNonTemporal", "<address>".ToString(), 1), GetValue("StorePairScalarNonTemporal", Vector64int_0.ToString(), 2), GetValue("StorePairScalarNonTemporal", Vector64int_1.ToString(), 3));
 
 try {
@@ -24553,7 +24553,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ReverseElementBits", "Performs 'ReverseElementBits' operation.", 0), GetValue("ReverseElementBits", Vector64byte_0.ToString(), 1), GetValue("ReverseElementBits", apiResult.ToString(), 2));
 
 try {
@@ -24621,7 +24621,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("TransposeEven", "Performs 'TransposeEven' operation.", 0), GetValue("TransposeEven", Vector64byte_0.ToString(), 1), GetValue("TransposeEven", Vector64byte_1.ToString(), 2), GetValue("TransposeEven", apiResult.ToString(), 3));
 
 try {
@@ -24689,7 +24689,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("TransposeOdd", "Performs 'TransposeOdd' operation.", 0), GetValue("TransposeOdd", Vector64byte_0.ToString(), 1), GetValue("TransposeOdd", Vector64byte_1.ToString(), 2), GetValue("TransposeOdd", apiResult.ToString(), 3));
 
 try {
@@ -24757,7 +24757,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("UnzipEven", "Performs 'UnzipEven' operation.", 0), GetValue("UnzipEven", Vector64byte_0.ToString(), 1), GetValue("UnzipEven", Vector64byte_1.ToString(), 2), GetValue("UnzipEven", apiResult.ToString(), 3));
 
 try {
@@ -24825,7 +24825,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("UnzipOdd", "Performs 'UnzipOdd' operation.", 0), GetValue("UnzipOdd", Vector64byte_0.ToString(), 1), GetValue("UnzipOdd", Vector64byte_1.ToString(), 2), GetValue("UnzipOdd", apiResult.ToString(), 3));
 
 try {
@@ -24893,7 +24893,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ZipHigh", "Performs 'ZipHigh' operation.", 0), GetValue("ZipHigh", Vector64byte_0.ToString(), 1), GetValue("ZipHigh", Vector64byte_1.ToString(), 2), GetValue("ZipHigh", apiResult.ToString(), 3));
 
 try {
@@ -24961,7 +24961,7 @@ See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.run
 
 Assembly generated:
 
-```
+```armasm
 ", GetValue("ZipLow", "Performs 'ZipLow' operation.", 0), GetValue("ZipLow", Vector64byte_0.ToString(), 1), GetValue("ZipLow", Vector64byte_1.ToString(), 2), GetValue("ZipLow", apiResult.ToString(), 3));
 
 try {

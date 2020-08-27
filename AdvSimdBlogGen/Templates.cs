@@ -74,7 +74,7 @@ See Microsoft docs {8}{10}.
 
 Assembly generated:
 
-```
+```armasm
 "", {3});";
         private static string methodCallTemplate =
 @"
