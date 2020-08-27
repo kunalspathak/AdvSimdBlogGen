@@ -70,7 +70,7 @@ namespace AdvSimdBlogGen
             Console.ReadLine();
             string[] blogContents = File.ReadAllLines(blogFileFullPath);
             StringBuilder blogBuilder = new StringBuilder();
-            int partId = 1;
+            int partId = 0;
             foreach (string line in blogContents)
             {
                 string blogLine = line;
@@ -204,8 +204,13 @@ namespace AdvSimdBlogGen
                 if (arm64Methods.ContainsKey(methodName))
                 {
                     var similarMethods = arm64Methods[methodName];
-                    overloadBuilder.AppendLine();
-                    overloadBuilder.AppendLine();
+
+                    // Add new lines only if similar APIs were present in AdvSimd namespace
+                    if (otherOverloads.Count() > 0)
+                    {
+                        overloadBuilder.AppendLine();
+                        overloadBuilder.AppendLine();
+                    }
                     overloadBuilder.AppendLine("// class System.Runtime.Intrinisics.AdvSimd.Arm64");
                     overloadBuilder.Append(string.Join(Environment.NewLine, similarMethods.Select(sm => sm.Item1)));
 

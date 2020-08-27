@@ -14938,8 +14938,6 @@ private Vector64<long> ShiftArithmeticRoundedSaturateScalarTest(Vector64<long> v
 Similar APIs that operate on different sizes:
 
 ```csharp
-
-
 // class System.Runtime.Intrinisics.AdvSimd.Arm64
 Vector64<short> ShiftArithmeticRoundedSaturateScalar(Vector64<short> value, Vector64<short> count)
 Vector64<int> ShiftArithmeticRoundedSaturateScalar(Vector64<int> value, Vector64<int> count)
@@ -15100,8 +15098,6 @@ private Vector64<long> ShiftArithmeticSaturateScalarTest(Vector64<long> value, V
 Similar APIs that operate on different sizes:
 
 ```csharp
-
-
 // class System.Runtime.Intrinisics.AdvSimd.Arm64
 Vector64<short> ShiftArithmeticSaturateScalar(Vector64<short> value, Vector64<short> count)
 Vector64<int> ShiftArithmeticSaturateScalar(Vector64<int> value, Vector64<int> count)
@@ -15572,8 +15568,6 @@ private Vector64<ulong> ShiftLeftLogicalSaturateUnsignedScalarTest(Vector64<long
 Similar APIs that operate on different sizes:
 
 ```csharp
-
-
 // class System.Runtime.Intrinisics.AdvSimd.Arm64
 Vector64<ushort> ShiftLeftLogicalSaturateUnsignedScalar(Vector64<short> value, byte count)
 Vector64<uint> ShiftLeftLogicalSaturateUnsignedScalar(Vector64<int> value, byte count)

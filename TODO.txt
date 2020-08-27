@@ -1,10 +1,7 @@
 - Refer that this is from ARM manual
 - Sort method names from ARM/ARM64
-- Double check the method parameter `rightIndex` from more-asms.txt
-- Replace MSDN with newer name.
+DONE - Double check the method parameter `rightIndex` from more-asms.txt
 - Tabular index with 8 columns containing 45 rows?
-- Extra lines in other references. See ShiftArithmeticRoundedSaturateScalar
-- Print better asm using ```armasm
-- Use COMPlus_JitDiffableDasm=1
-- Delete PerfScore printing
+
+
 - Search for instructions in entire .md file
