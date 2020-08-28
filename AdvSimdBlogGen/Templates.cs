@@ -14,19 +14,20 @@ namespace AdvSimdBlogGen
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part {0}
-subtitle: With examples
+title: ARM64 Hardware Intrinsics APIs in .NET - Part {0}
+subtitle: Sample code usage, examples and generated assembly code
 tags: [work, arm64, intrinsics]
 ---
 
 ### Introduction
 
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+In my [vectorization using .NET APIs](../2020-08-01-Vectorization-APIs) blog, I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrinsic' APIs. In this post I will describe those hardware intrinsic APIs for ARM64 by showing sample code usage along with examples and generated ARM64 code. This will help people in understanding these APIs so they can use them to optimize their .NET code written to target ARM64. Since there are 360 APIs, describing all of them in a single post will be overwhelming. So I have divided these APIs among 8 blogs and will demonstrate 45 APIs in each blog. This is part {0} of that blog series.
 
+Most of the description of these APIs is adapted and referenced from [Arm Architecture Reference Manual Armv8, for Armv8-A architecture profile document](https://developer.arm.com/documentation/ddi0487/fc/). You can also refer to the description of SIMD and Floating-point instructions description at [Arm developer docs page](https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order).
 
-### API list
+### APIs covered
 
-{1},[...](Part{0}.md)
+{1}
 
 
 "");";
