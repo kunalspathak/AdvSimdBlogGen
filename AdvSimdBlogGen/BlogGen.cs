@@ -49,8 +49,6 @@ namespace AdvSimdBlogGen
             WriteGeneratedCodeToFile(Path.Combine(generatedCsProjPath, "AdvSimdGenerated.cs"));
             SplitGeneratedBlog();
             PrintVarsAndMethodNames();
-            Console.WriteLine("done");
-            Console.Error.WriteLine("Add https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order");
         }
 
         internal static void SplitGeneratedBlog()
