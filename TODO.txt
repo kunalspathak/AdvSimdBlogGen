@@ -2,3 +2,4 @@
 - Sort method names from ARM/ARM64
 DONE - Double check the method parameter `rightIndex` from more-asms.txt
 - Tabular index with 8 columns containing 45 rows?
+- Add link to https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order

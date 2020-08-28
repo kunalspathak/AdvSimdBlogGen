@@ -48,6 +48,7 @@ namespace AdvSimdBlogGen
         {
             List<string> linesToIgnore = new List<string>()
             {
+                "; Emitting BLENDED_CODE for generic ARM64 CPU - Windows",
                 "; optimized code",
                 "; fp based frame",
                 "; partially interruptible",
@@ -68,6 +69,9 @@ namespace AdvSimdBlogGen
                 { " to the destination SIMD&FP register.", " to the result vector." },
                 { "and writes the vector to the destination SIMD&FP register.", "and returns the result." },
                 { " in this instruction ", " in this method " },
+                { "; Lcl frame size = 0", string.Empty },
+                { "; Assembly listing for method ", "; " },
+
             };
 
             string dirName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
