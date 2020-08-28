@@ -129,13 +129,30 @@ namespace AdvSimdBlogGen
 
         internal static void GenerateBlogContents()
         {
+            var allSortedMethodNames = AllIntrinsicApis().ToList().OrderBy(api => api.Item1).ToList();
+            foreach (var method in allSortedMethodNames)
+            {
+                GenerateCodeForMethod(method.Item1, method.Item2);
+            }
+
+            string toc = string.Join(", ", tocBuilder);
+            // update previous value
+            globalTocBuilder.Add($"PART-{sectionCount - 1}-TOC", toc);
+        }
+
+        /// <summary>
+        ///     Returns IEnumerable so the APIs from AdvSimd and AdvSimd.Arm64 can be sorted alphabetically.
+        /// </summary>
+        /// <returns></returns>
+        internal static IEnumerable<Tuple<string, bool>> AllIntrinsicApis()
+        {
             HashSet<string> methodsDone = new HashSet<string>();
 
             // Process AdvSimd methods
             foreach (string methodName in advSimdMethods.Keys)
             {
-                GenerateCodeForMethod(methodName, true);
                 Debug.Assert(methodsDone.Add(methodName), $"{methodName} already present.");
+                yield return Tuple.Create(methodName, true);
             }
 
             // Process AdvSimd.Arm64 methods
@@ -145,13 +162,8 @@ namespace AdvSimdBlogGen
                 {
                     continue;
                 }
-                GenerateCodeForMethod(methodName, false);
+                yield return Tuple.Create(methodName, false);
             }
-
-            string toc = string.Join(", ", tocBuilder);
-            // update previous value
-            globalTocBuilder.Add($"PART-{sectionCount - 1}-TOC", toc);
-
         }
 
         private static void WriteGeneratedCodeToFile(string fileName)

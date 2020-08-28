@@ -19,30 +19,6 @@ private static  Vector64<ushort> AbsTest(Vector64<short> value)
 
 
 
-private static  Vector64<short> Dummy_AbsSaturateTest(Vector64<short> value)
-{
-  return AdvSimd.AbsSaturate(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<short> AbsSaturateTest(Vector64<short> value)
-{
-  return AdvSimd.AbsSaturate(value);
-}
-
-
-
-private static  Vector64<double> Dummy_AbsScalarTest(Vector64<double> value)
-{
-  return AdvSimd.AbsScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> AbsScalarTest(Vector64<double> value)
-{
-  return AdvSimd.AbsScalar(value);
-}
-
-
-
 private static  Vector64<float> Dummy_AbsoluteCompareGreaterThanTest(Vector64<float> left, Vector64<float> right)
 {
   return AdvSimd.AbsoluteCompareGreaterThan(left, right);
@@ -63,6 +39,30 @@ private static  Vector64<float> Dummy_AbsoluteCompareGreaterThanOrEqualTest(Vect
 private static  Vector64<float> AbsoluteCompareGreaterThanOrEqualTest(Vector64<float> left, Vector64<float> right)
 {
   return AdvSimd.AbsoluteCompareGreaterThanOrEqual(left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.AbsoluteCompareGreaterThanOrEqualScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.AbsoluteCompareGreaterThanOrEqualScalar(left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_AbsoluteCompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.AbsoluteCompareGreaterThanScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> AbsoluteCompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.AbsoluteCompareGreaterThanScalar(left, right);
 }
 
 
@@ -91,6 +91,30 @@ private static  Vector64<float> AbsoluteCompareLessThanOrEqualTest(Vector64<floa
 
 
 
+private static  Vector64<double> Dummy_AbsoluteCompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.AbsoluteCompareLessThanOrEqualScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> AbsoluteCompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.AbsoluteCompareLessThanOrEqualScalar(left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_AbsoluteCompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.AbsoluteCompareLessThanScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> AbsoluteCompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.AbsoluteCompareLessThanScalar(left, right);
+}
+
+
+
 private static  Vector64<byte> Dummy_AbsoluteDifferenceTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.AbsoluteDifference(left, right);
@@ -111,6 +135,18 @@ private static  Vector64<byte> Dummy_AbsoluteDifferenceAddTest(Vector64<byte> ad
 private static  Vector64<byte> AbsoluteDifferenceAddTest(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.AbsoluteDifferenceAdd(addend, left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_AbsoluteDifferenceScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.AbsoluteDifferenceScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> AbsoluteDifferenceScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.AbsoluteDifferenceScalar(left, right);
 }
 
 
@@ -163,6 +199,42 @@ private static  Vector128<ushort> AbsoluteDifferenceWideningUpperAndAddTest(Vect
 
 
 
+private static  Vector64<short> Dummy_AbsSaturateTest(Vector64<short> value)
+{
+  return AdvSimd.AbsSaturate(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<short> AbsSaturateTest(Vector64<short> value)
+{
+  return AdvSimd.AbsSaturate(value);
+}
+
+
+
+private static  Vector64<short> Dummy_AbsSaturateScalarTest(Vector64<short> value)
+{
+  return AdvSimd.Arm64.AbsSaturateScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<short> AbsSaturateScalarTest(Vector64<short> value)
+{
+  return AdvSimd.Arm64.AbsSaturateScalar(value);
+}
+
+
+
+private static  Vector64<double> Dummy_AbsScalarTest(Vector64<double> value)
+{
+  return AdvSimd.AbsScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> AbsScalarTest(Vector64<double> value)
+{
+  return AdvSimd.AbsScalar(value);
+}
+
+
+
 private static  Vector64<byte> Dummy_AddTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.Add(left, right);
@@ -171,6 +243,30 @@ private static  Vector64<byte> Dummy_AddTest(Vector64<byte> left, Vector64<byte>
 private static  Vector64<byte> AddTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.Add(left, right);
+}
+
+
+
+private static  Vector64<byte> Dummy_AddAcrossTest(Vector64<byte> value)
+{
+  return AdvSimd.Arm64.AddAcross(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> AddAcrossTest(Vector64<byte> value)
+{
+  return AdvSimd.Arm64.AddAcross(value);
+}
+
+
+
+private static  Vector64<ushort> Dummy_AddAcrossWideningTest(Vector64<byte> value)
+{
+  return AdvSimd.Arm64.AddAcrossWidening(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<ushort> AddAcrossWideningTest(Vector64<byte> value)
+{
+  return AdvSimd.Arm64.AddAcrossWidening(value);
 }
 
 
@@ -207,6 +303,18 @@ private static  Vector64<byte> Dummy_AddPairwiseTest(Vector64<byte> left, Vector
 private static  Vector64<byte> AddPairwiseTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.AddPairwise(left, right);
+}
+
+
+
+private static  Vector64<float> Dummy_AddPairwiseScalarTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.AddPairwiseScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> AddPairwiseScalarTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.AddPairwiseScalar(value);
 }
 
 
@@ -415,6 +523,18 @@ private static  Vector64<byte> CompareEqualTest(Vector64<byte> left, Vector64<by
 
 
 
+private static  Vector64<double> Dummy_CompareEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareEqualScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> CompareEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareEqualScalar(left, right);
+}
+
+
+
 private static  Vector64<byte> Dummy_CompareGreaterThanTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.CompareGreaterThan(left, right);
@@ -435,6 +555,30 @@ private static  Vector64<byte> Dummy_CompareGreaterThanOrEqualTest(Vector64<byte
 private static  Vector64<byte> CompareGreaterThanOrEqualTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.CompareGreaterThanOrEqual(left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_CompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareGreaterThanOrEqualScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> CompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareGreaterThanOrEqualScalar(left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_CompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareGreaterThanScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> CompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareGreaterThanScalar(left, right);
 }
 
 
@@ -463,6 +607,30 @@ private static  Vector64<byte> CompareLessThanOrEqualTest(Vector64<byte> left, V
 
 
 
+private static  Vector64<double> Dummy_CompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareLessThanOrEqualScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> CompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareLessThanOrEqualScalar(left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_CompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareLessThanScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> CompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareLessThanScalar(left, right);
+}
+
+
+
 private static  Vector64<byte> Dummy_CompareTestTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.CompareTest(left, right);
@@ -471,6 +639,54 @@ private static  Vector64<byte> Dummy_CompareTestTest(Vector64<byte> left, Vector
 private static  Vector64<byte> CompareTestTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.CompareTest(left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_CompareTestScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareTestScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> CompareTestScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.CompareTestScalar(left, right);
+}
+
+
+
+private static  Vector128<double> Dummy_ConvertToDoubleTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.ConvertToDouble(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<double> ConvertToDoubleTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.ConvertToDouble(value);
+}
+
+
+
+private static  Vector64<double> Dummy_ConvertToDoubleScalarTest(Vector64<long> value)
+{
+  return AdvSimd.Arm64.ConvertToDoubleScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> ConvertToDoubleScalarTest(Vector64<long> value)
+{
+  return AdvSimd.Arm64.ConvertToDoubleScalar(value);
+}
+
+
+
+private static  Vector128<double> Dummy_ConvertToDoubleUpperTest(Vector128<float> value)
+{
+  return AdvSimd.Arm64.ConvertToDoubleUpper(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<double> ConvertToDoubleUpperTest(Vector128<float> value)
+{
+  return AdvSimd.Arm64.ConvertToDoubleUpper(value);
 }
 
 
@@ -595,6 +811,126 @@ private static  Vector64<int> ConvertToInt32RoundToZeroScalarTest(Vector64<float
 
 
 
+private static  Vector128<long> Dummy_ConvertToInt64RoundAwayFromZeroTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZero(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<long> ConvertToInt64RoundAwayFromZeroTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZero(value);
+}
+
+
+
+private static  Vector64<long> Dummy_ConvertToInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZeroScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<long> ConvertToInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZeroScalar(value);
+}
+
+
+
+private static  Vector128<long> Dummy_ConvertToInt64RoundToEvenTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToEven(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<long> ConvertToInt64RoundToEvenTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToEven(value);
+}
+
+
+
+private static  Vector64<long> Dummy_ConvertToInt64RoundToEvenScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToEvenScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<long> ConvertToInt64RoundToEvenScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToEvenScalar(value);
+}
+
+
+
+private static  Vector128<long> Dummy_ConvertToInt64RoundToNegativeInfinityTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinity(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<long> ConvertToInt64RoundToNegativeInfinityTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinity(value);
+}
+
+
+
+private static  Vector64<long> Dummy_ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinityScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<long> ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinityScalar(value);
+}
+
+
+
+private static  Vector128<long> Dummy_ConvertToInt64RoundToPositiveInfinityTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinity(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<long> ConvertToInt64RoundToPositiveInfinityTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinity(value);
+}
+
+
+
+private static  Vector64<long> Dummy_ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinityScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<long> ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinityScalar(value);
+}
+
+
+
+private static  Vector128<long> Dummy_ConvertToInt64RoundToZeroTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToZero(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<long> ConvertToInt64RoundToZeroTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToZero(value);
+}
+
+
+
+private static  Vector64<long> Dummy_ConvertToInt64RoundToZeroScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToZeroScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<long> ConvertToInt64RoundToZeroScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToInt64RoundToZeroScalar(value);
+}
+
+
+
 private static  Vector64<float> Dummy_ConvertToSingleTest(Vector64<int> value)
 {
   return AdvSimd.ConvertToSingle(value);
@@ -607,6 +943,42 @@ private static  Vector64<float> ConvertToSingleTest(Vector64<int> value)
 
 
 
+private static  Vector64<float> Dummy_ConvertToSingleLowerTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToSingleLower(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> ConvertToSingleLowerTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToSingleLower(value);
+}
+
+
+
+private static  Vector64<float> Dummy_ConvertToSingleRoundToOddLowerTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToSingleRoundToOddLower(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> ConvertToSingleRoundToOddLowerTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToSingleRoundToOddLower(value);
+}
+
+
+
+private static  Vector128<float> Dummy_ConvertToSingleRoundToOddUpperTest(Vector64<float> lower, Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToSingleRoundToOddUpper(lower, value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<float> ConvertToSingleRoundToOddUpperTest(Vector64<float> lower, Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToSingleRoundToOddUpper(lower, value);
+}
+
+
+
 private static  Vector64<float> Dummy_ConvertToSingleScalarTest(Vector64<int> value)
 {
   return AdvSimd.ConvertToSingleScalar(value);
@@ -615,6 +987,18 @@ private static  Vector64<float> Dummy_ConvertToSingleScalarTest(Vector64<int> va
 private static  Vector64<float> ConvertToSingleScalarTest(Vector64<int> value)
 {
   return AdvSimd.ConvertToSingleScalar(value);
+}
+
+
+
+private static  Vector128<float> Dummy_ConvertToSingleUpperTest(Vector64<float> lower, Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToSingleUpper(lower, value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<float> ConvertToSingleUpperTest(Vector64<float> lower, Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToSingleUpper(lower, value);
 }
 
 
@@ -739,6 +1123,138 @@ private static  Vector64<uint> ConvertToUInt32RoundToZeroScalarTest(Vector64<flo
 
 
 
+private static  Vector128<ulong> Dummy_ConvertToUInt64RoundAwayFromZeroTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZero(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<ulong> ConvertToUInt64RoundAwayFromZeroTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZero(value);
+}
+
+
+
+private static  Vector64<ulong> Dummy_ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZeroScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZeroScalar(value);
+}
+
+
+
+private static  Vector128<ulong> Dummy_ConvertToUInt64RoundToEvenTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToEven(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<ulong> ConvertToUInt64RoundToEvenTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToEven(value);
+}
+
+
+
+private static  Vector64<ulong> Dummy_ConvertToUInt64RoundToEvenScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToEvenScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<ulong> ConvertToUInt64RoundToEvenScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToEvenScalar(value);
+}
+
+
+
+private static  Vector128<ulong> Dummy_ConvertToUInt64RoundToNegativeInfinityTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinity(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<ulong> ConvertToUInt64RoundToNegativeInfinityTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinity(value);
+}
+
+
+
+private static  Vector64<ulong> Dummy_ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinityScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinityScalar(value);
+}
+
+
+
+private static  Vector128<ulong> Dummy_ConvertToUInt64RoundToPositiveInfinityTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinity(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<ulong> ConvertToUInt64RoundToPositiveInfinityTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinity(value);
+}
+
+
+
+private static  Vector64<ulong> Dummy_ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinityScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinityScalar(value);
+}
+
+
+
+private static  Vector128<ulong> Dummy_ConvertToUInt64RoundToZeroTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToZero(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<ulong> ConvertToUInt64RoundToZeroTest(Vector128<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToZero(value);
+}
+
+
+
+private static  Vector64<ulong> Dummy_ConvertToUInt64RoundToZeroScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToZeroScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<ulong> ConvertToUInt64RoundToZeroScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToZeroScalar(value);
+}
+
+
+
+private static  Vector64<float> Dummy_DivideTest(Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.Divide(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> DivideTest(Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.Divide(left, right);
+}
+
+
+
 private static  Vector64<double> Dummy_DivideScalarTest(Vector64<double> left, Vector64<double> right)
 {
   return AdvSimd.DivideScalar(left, right);
@@ -747,18 +1263,6 @@ private static  Vector64<double> Dummy_DivideScalarTest(Vector64<double> left, V
 private static  Vector64<double> DivideScalarTest(Vector64<double> left, Vector64<double> right)
 {
   return AdvSimd.DivideScalar(left, right);
-}
-
-
-
-private static  Vector64<byte> Dummy_DuplicateSelectedScalarToVector64Test(Vector64<byte> value, byte index)
-{
-  return AdvSimd.DuplicateSelectedScalarToVector64(value, 3);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> DuplicateSelectedScalarToVector64Test(Vector64<byte> value, byte index)
-{
-  return AdvSimd.DuplicateSelectedScalarToVector64(value, 3);
 }
 
 
@@ -775,14 +1279,14 @@ private static  Vector128<byte> DuplicateSelectedScalarToVector128Test(Vector64<
 
 
 
-private static  Vector64<byte> Dummy_DuplicateToVector64Test(byte value)
+private static  Vector64<byte> Dummy_DuplicateSelectedScalarToVector64Test(Vector64<byte> value, byte index)
 {
-  return AdvSimd.DuplicateToVector64(value);
+  return AdvSimd.DuplicateSelectedScalarToVector64(value, 3);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> DuplicateToVector64Test(byte value)
+private static  Vector64<byte> DuplicateSelectedScalarToVector64Test(Vector64<byte> value, byte index)
 {
-  return AdvSimd.DuplicateToVector64(value);
+  return AdvSimd.DuplicateSelectedScalarToVector64(value, 3);
 }
 
 
@@ -795,6 +1299,18 @@ private static  Vector128<byte> Dummy_DuplicateToVector128Test(byte value)
 private static  Vector128<byte> DuplicateToVector128Test(byte value)
 {
   return AdvSimd.DuplicateToVector128(value);
+}
+
+
+
+private static  Vector64<byte> Dummy_DuplicateToVector64Test(byte value)
+{
+  return AdvSimd.DuplicateToVector64(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> DuplicateToVector64Test(byte value)
+{
+  return AdvSimd.DuplicateToVector64(value);
 }
 
 
@@ -835,6 +1351,18 @@ private static  Vector64<byte> ExtractNarrowingSaturateLowerTest(Vector128<ushor
 
 
 
+private static  Vector64<byte> Dummy_ExtractNarrowingSaturateScalarTest(Vector64<ushort> value)
+{
+  return AdvSimd.Arm64.ExtractNarrowingSaturateScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> ExtractNarrowingSaturateScalarTest(Vector64<ushort> value)
+{
+  return AdvSimd.Arm64.ExtractNarrowingSaturateScalar(value);
+}
+
+
+
 private static  Vector64<byte> Dummy_ExtractNarrowingSaturateUnsignedLowerTest(Vector128<short> value)
 {
   return AdvSimd.ExtractNarrowingSaturateUnsignedLower(value);
@@ -843,6 +1371,18 @@ private static  Vector64<byte> Dummy_ExtractNarrowingSaturateUnsignedLowerTest(V
 private static  Vector64<byte> ExtractNarrowingSaturateUnsignedLowerTest(Vector128<short> value)
 {
   return AdvSimd.ExtractNarrowingSaturateUnsignedLower(value);
+}
+
+
+
+private static  Vector64<byte> Dummy_ExtractNarrowingSaturateUnsignedScalarTest(Vector64<short> value)
+{
+  return AdvSimd.Arm64.ExtractNarrowingSaturateUnsignedScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> ExtractNarrowingSaturateUnsignedScalarTest(Vector64<short> value)
+{
+  return AdvSimd.Arm64.ExtractNarrowingSaturateUnsignedScalar(value);
 }
 
 
@@ -883,18 +1423,6 @@ private static  Vector128<byte> ExtractNarrowingUpperTest(Vector64<byte> lower, 
 
 
 
-private static  Vector64<byte> Dummy_ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower, byte index)
-{
-  return AdvSimd.ExtractVector64(upper, lower, 5);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower, byte index)
-{
-  return AdvSimd.ExtractVector64(upper, lower, 5);
-}
-
-
-
 private static  Vector128<byte> Dummy_ExtractVector128Test(Vector128<byte> upper, Vector128<byte> lower, byte index)
 {
   return AdvSimd.ExtractVector128(upper, lower, 5);
@@ -903,6 +1431,18 @@ private static  Vector128<byte> Dummy_ExtractVector128Test(Vector128<byte> upper
 private static  Vector128<byte> ExtractVector128Test(Vector128<byte> upper, Vector128<byte> lower, byte index)
 {
   return AdvSimd.ExtractVector128(upper, lower, 5);
+}
+
+
+
+private static  Vector64<byte> Dummy_ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower, byte index)
+{
+  return AdvSimd.ExtractVector64(upper, lower, 5);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower, byte index)
+{
+  return AdvSimd.ExtractVector64(upper, lower, 5);
 }
 
 
@@ -967,6 +1507,30 @@ private static  Vector64<float> FusedMultiplyAddTest(Vector64<float> addend, Vec
 
 
 
+private static  Vector64<float> Dummy_FusedMultiplyAddByScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.FusedMultiplyAddByScalar(addend, left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> FusedMultiplyAddByScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.FusedMultiplyAddByScalar(addend, left, right);
+}
+
+
+
+private static  Vector64<float> Dummy_FusedMultiplyAddBySelectedScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> FusedMultiplyAddBySelectedScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, 0);
+}
+
+
+
 private static  Vector64<double> Dummy_FusedMultiplyAddNegatedScalarTest(Vector64<double> addend, Vector64<double> left, Vector64<double> right)
 {
   return AdvSimd.FusedMultiplyAddNegatedScalar(addend, left, right);
@@ -991,6 +1555,18 @@ private static  Vector64<double> FusedMultiplyAddScalarTest(Vector64<double> add
 
 
 
+private static  Vector64<double> Dummy_FusedMultiplyAddScalarBySelectedScalarTest(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> FusedMultiplyAddScalarBySelectedScalarTest(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, 0);
+}
+
+
+
 private static  Vector64<float> Dummy_FusedMultiplySubtractTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)
 {
   return AdvSimd.FusedMultiplySubtract(minuend, left, right);
@@ -999,6 +1575,30 @@ private static  Vector64<float> Dummy_FusedMultiplySubtractTest(Vector64<float> 
 private static  Vector64<float> FusedMultiplySubtractTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)
 {
   return AdvSimd.FusedMultiplySubtract(minuend, left, right);
+}
+
+
+
+private static  Vector64<float> Dummy_FusedMultiplySubtractByScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.FusedMultiplySubtractByScalar(minuend, left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> FusedMultiplySubtractByScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.FusedMultiplySubtractByScalar(minuend, left, right);
+}
+
+
+
+private static  Vector64<float> Dummy_FusedMultiplySubtractBySelectedScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> FusedMultiplySubtractBySelectedScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, 0);
 }
 
 
@@ -1023,6 +1623,18 @@ private static  Vector64<double> Dummy_FusedMultiplySubtractScalarTest(Vector64<
 private static  Vector64<double> FusedMultiplySubtractScalarTest(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)
 {
   return AdvSimd.FusedMultiplySubtractScalar(minuend, left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_FusedMultiplySubtractScalarBySelectedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> FusedMultiplySubtractScalarBySelectedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, 0);
 }
 
 
@@ -1063,6 +1675,18 @@ private static  Vector128<double> InsertScalarTest(Vector128<double> result, byt
 
 
 
+private static  Vector64<byte> Dummy_InsertSelectedScalarTest(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
+{
+  return AdvSimd.Arm64.InsertSelectedScalar(result, 0, value, 1);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> InsertSelectedScalarTest(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
+{
+  return AdvSimd.Arm64.InsertSelectedScalar(result, 0, value, 1);
+}
+
+
+
 private static  Vector64<short> Dummy_LeadingSignCountTest(Vector64<short> value)
 {
   return AdvSimd.LeadingSignCount(value);
@@ -1099,18 +1723,6 @@ private static unsafe Vector64<byte> LoadAndInsertScalarTest(Vector64<byte> valu
 
 
 
-private static unsafe Vector64<byte> Dummy_LoadAndReplicateToVector64Test(byte* address)
-{
-  return AdvSimd.LoadAndReplicateToVector64(address);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static unsafe Vector64<byte> LoadAndReplicateToVector64Test(byte* address)
-{
-  return AdvSimd.LoadAndReplicateToVector64(address);
-}
-
-
-
 private static unsafe Vector128<byte> Dummy_LoadAndReplicateToVector128Test(byte* address)
 {
   return AdvSimd.LoadAndReplicateToVector128(address);
@@ -1123,14 +1735,14 @@ private static unsafe Vector128<byte> LoadAndReplicateToVector128Test(byte* addr
 
 
 
-private static unsafe Vector64<byte> Dummy_LoadVector64Test(byte* address)
+private static unsafe Vector64<byte> Dummy_LoadAndReplicateToVector64Test(byte* address)
 {
-  return AdvSimd.LoadVector64(address);
+  return AdvSimd.LoadAndReplicateToVector64(address);
 }
 [MethodImpl(MethodImplOptions.NoInlining)]
-private static unsafe Vector64<byte> LoadVector64Test(byte* address)
+private static unsafe Vector64<byte> LoadAndReplicateToVector64Test(byte* address)
 {
-  return AdvSimd.LoadVector64(address);
+  return AdvSimd.LoadAndReplicateToVector64(address);
 }
 
 
@@ -1147,6 +1759,18 @@ private static unsafe Vector128<byte> LoadVector128Test(byte* address)
 
 
 
+private static unsafe Vector64<byte> Dummy_LoadVector64Test(byte* address)
+{
+  return AdvSimd.LoadVector64(address);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static unsafe Vector64<byte> LoadVector64Test(byte* address)
+{
+  return AdvSimd.LoadVector64(address);
+}
+
+
+
 private static  Vector64<byte> Dummy_MaxTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.Max(left, right);
@@ -1159,6 +1783,18 @@ private static  Vector64<byte> MaxTest(Vector64<byte> left, Vector64<byte> right
 
 
 
+private static  Vector64<byte> Dummy_MaxAcrossTest(Vector64<byte> value)
+{
+  return AdvSimd.Arm64.MaxAcross(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> MaxAcrossTest(Vector64<byte> value)
+{
+  return AdvSimd.Arm64.MaxAcross(value);
+}
+
+
+
 private static  Vector64<float> Dummy_MaxNumberTest(Vector64<float> left, Vector64<float> right)
 {
   return AdvSimd.MaxNumber(left, right);
@@ -1167,6 +1803,42 @@ private static  Vector64<float> Dummy_MaxNumberTest(Vector64<float> left, Vector
 private static  Vector64<float> MaxNumberTest(Vector64<float> left, Vector64<float> right)
 {
   return AdvSimd.MaxNumber(left, right);
+}
+
+
+
+private static  Vector64<float> Dummy_MaxNumberAcrossTest(Vector128<float> value)
+{
+  return AdvSimd.Arm64.MaxNumberAcross(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> MaxNumberAcrossTest(Vector128<float> value)
+{
+  return AdvSimd.Arm64.MaxNumberAcross(value);
+}
+
+
+
+private static  Vector64<float> Dummy_MaxNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.MaxNumberPairwise(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> MaxNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.MaxNumberPairwise(left, right);
+}
+
+
+
+private static  Vector64<float> Dummy_MaxNumberPairwiseScalarTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.MaxNumberPairwiseScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> MaxNumberPairwiseScalarTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.MaxNumberPairwiseScalar(value);
 }
 
 
@@ -1195,6 +1867,30 @@ private static  Vector64<byte> MaxPairwiseTest(Vector64<byte> left, Vector64<byt
 
 
 
+private static  Vector64<float> Dummy_MaxPairwiseScalarTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.MaxPairwiseScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> MaxPairwiseScalarTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.MaxPairwiseScalar(value);
+}
+
+
+
+private static  Vector64<double> Dummy_MaxScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.MaxScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> MaxScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.MaxScalar(left, right);
+}
+
+
+
 private static  Vector64<byte> Dummy_MinTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.Min(left, right);
@@ -1207,6 +1903,18 @@ private static  Vector64<byte> MinTest(Vector64<byte> left, Vector64<byte> right
 
 
 
+private static  Vector64<byte> Dummy_MinAcrossTest(Vector64<byte> value)
+{
+  return AdvSimd.Arm64.MinAcross(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> MinAcrossTest(Vector64<byte> value)
+{
+  return AdvSimd.Arm64.MinAcross(value);
+}
+
+
+
 private static  Vector64<float> Dummy_MinNumberTest(Vector64<float> left, Vector64<float> right)
 {
   return AdvSimd.MinNumber(left, right);
@@ -1215,6 +1923,42 @@ private static  Vector64<float> Dummy_MinNumberTest(Vector64<float> left, Vector
 private static  Vector64<float> MinNumberTest(Vector64<float> left, Vector64<float> right)
 {
   return AdvSimd.MinNumber(left, right);
+}
+
+
+
+private static  Vector64<float> Dummy_MinNumberAcrossTest(Vector128<float> value)
+{
+  return AdvSimd.Arm64.MinNumberAcross(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> MinNumberAcrossTest(Vector128<float> value)
+{
+  return AdvSimd.Arm64.MinNumberAcross(value);
+}
+
+
+
+private static  Vector64<float> Dummy_MinNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.MinNumberPairwise(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> MinNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.MinNumberPairwise(left, right);
+}
+
+
+
+private static  Vector64<float> Dummy_MinNumberPairwiseScalarTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.MinNumberPairwiseScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> MinNumberPairwiseScalarTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.MinNumberPairwiseScalar(value);
 }
 
 
@@ -1239,6 +1983,30 @@ private static  Vector64<byte> Dummy_MinPairwiseTest(Vector64<byte> left, Vector
 private static  Vector64<byte> MinPairwiseTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.MinPairwise(left, right);
+}
+
+
+
+private static  Vector64<float> Dummy_MinPairwiseScalarTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.MinPairwiseScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> MinPairwiseScalarTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.MinPairwiseScalar(value);
+}
+
+
+
+private static  Vector64<double> Dummy_MinScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.MinScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> MinScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.MinScalar(left, right);
 }
 
 
@@ -1423,6 +2191,54 @@ private static  Vector64<short> MultiplyDoublingSaturateHighTest(Vector64<short>
 
 
 
+private static  Vector64<short> Dummy_MultiplyDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
+{
+  return AdvSimd.Arm64.MultiplyDoublingSaturateHighScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<short> MultiplyDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
+{
+  return AdvSimd.Arm64.MultiplyDoublingSaturateHighScalar(left, right);
+}
+
+
+
+private static  Vector64<short> Dummy_MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
+}
+
+
+
+private static  Vector64<int> Dummy_MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningAndAddSaturateScalar(addend, left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<int> MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningAndAddSaturateScalar(addend, left, right);
+}
+
+
+
+private static  Vector64<int> Dummy_MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningAndSubtractSaturateScalar(minuend, left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningAndSubtractSaturateScalar(minuend, left, right);
+}
+
+
+
 private static  Vector128<int> Dummy_MultiplyDoublingWideningLowerAndAddSaturateTest(Vector128<int> addend, Vector64<short> left, Vector64<short> right)
 {
   return AdvSimd.MultiplyDoublingWideningLowerAndAddSaturate(addend, left, right);
@@ -1531,6 +2347,30 @@ private static  Vector128<int> MultiplyDoublingWideningSaturateLowerBySelectedSc
 
 
 
+private static  Vector64<int> Dummy_MultiplyDoublingWideningSaturateScalarTest(Vector64<short> left, Vector64<short> right)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<int> MultiplyDoublingWideningSaturateScalarTest(Vector64<short> left, Vector64<short> right)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalar(left, right);
+}
+
+
+
+private static  Vector64<int> Dummy_MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, 0);
+}
+
+
+
 private static  Vector128<int> Dummy_MultiplyDoublingWideningSaturateUpperTest(Vector128<short> left, Vector128<short> right)
 {
   return AdvSimd.MultiplyDoublingWideningSaturateUpper(left, right);
@@ -1563,6 +2403,30 @@ private static  Vector128<int> Dummy_MultiplyDoublingWideningSaturateUpperBySele
 private static  Vector128<int> MultiplyDoublingWideningSaturateUpperBySelectedScalarTest(Vector128<short> left, Vector64<short> right, byte rightIndex)
 {
   return AdvSimd.MultiplyDoublingWideningSaturateUpperBySelectedScalar(left, right, 2);
+}
+
+
+
+private static  Vector64<int> Dummy_MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, 0);
+}
+
+
+
+private static  Vector64<int> Dummy_MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
 }
 
 
@@ -1639,6 +2503,66 @@ private static  Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndS
 
 
 
+private static  Vector64<float> Dummy_MultiplyExtendedTest(Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.MultiplyExtended(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> MultiplyExtendedTest(Vector64<float> left, Vector64<float> right)
+{
+  return AdvSimd.Arm64.MultiplyExtended(left, right);
+}
+
+
+
+private static  Vector128<double> Dummy_MultiplyExtendedByScalarTest(Vector128<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.MultiplyExtendedByScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector128<double> MultiplyExtendedByScalarTest(Vector128<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.MultiplyExtendedByScalar(left, right);
+}
+
+
+
+private static  Vector64<float> Dummy_MultiplyExtendedBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> MultiplyExtendedBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, 0);
+}
+
+
+
+private static  Vector64<double> Dummy_MultiplyExtendedScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.MultiplyExtendedScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> MultiplyExtendedScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.MultiplyExtendedScalar(left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_MultiplyExtendedScalarBySelectedScalarTest(Vector64<double> left, Vector128<double> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> MultiplyExtendedScalarBySelectedScalarTest(Vector64<double> left, Vector128<double> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, 0);
+}
+
+
+
 private static  Vector64<short> Dummy_MultiplyRoundedDoublingByScalarSaturateHighTest(Vector64<short> left, Vector64<short> right)
 {
   return AdvSimd.MultiplyRoundedDoublingByScalarSaturateHigh(left, right);
@@ -1671,6 +2595,30 @@ private static  Vector64<short> Dummy_MultiplyRoundedDoublingSaturateHighTest(Ve
 private static  Vector64<short> MultiplyRoundedDoublingSaturateHighTest(Vector64<short> left, Vector64<short> right)
 {
   return AdvSimd.MultiplyRoundedDoublingSaturateHigh(left, right);
+}
+
+
+
+private static  Vector64<short> Dummy_MultiplyRoundedDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
+{
+  return AdvSimd.Arm64.MultiplyRoundedDoublingSaturateHighScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<short> MultiplyRoundedDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
+{
+  return AdvSimd.Arm64.MultiplyRoundedDoublingSaturateHighScalar(left, right);
+}
+
+
+
+private static  Vector64<short> Dummy_MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
+{
+  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
 }
 
 
@@ -1831,6 +2779,18 @@ private static  Vector64<short> NegateSaturateTest(Vector64<short> value)
 
 
 
+private static  Vector64<short> Dummy_NegateSaturateScalarTest(Vector64<short> value)
+{
+  return AdvSimd.Arm64.NegateSaturateScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<short> NegateSaturateScalarTest(Vector64<short> value)
+{
+  return AdvSimd.Arm64.NegateSaturateScalar(value);
+}
+
+
+
 private static  Vector64<double> Dummy_NegateScalarTest(Vector64<double> value)
 {
   return AdvSimd.NegateScalar(value);
@@ -1939,6 +2899,30 @@ private static  Vector64<float> ReciprocalEstimateTest(Vector64<float> value)
 
 
 
+private static  Vector64<double> Dummy_ReciprocalEstimateScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ReciprocalEstimateScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> ReciprocalEstimateScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ReciprocalEstimateScalar(value);
+}
+
+
+
+private static  Vector64<double> Dummy_ReciprocalExponentScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ReciprocalExponentScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> ReciprocalExponentScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ReciprocalExponentScalar(value);
+}
+
+
+
 private static  Vector64<float> Dummy_ReciprocalSquareRootEstimateTest(Vector64<float> value)
 {
   return AdvSimd.ReciprocalSquareRootEstimate(value);
@@ -1947,6 +2931,18 @@ private static  Vector64<float> Dummy_ReciprocalSquareRootEstimateTest(Vector64<
 private static  Vector64<float> ReciprocalSquareRootEstimateTest(Vector64<float> value)
 {
   return AdvSimd.ReciprocalSquareRootEstimate(value);
+}
+
+
+
+private static  Vector64<double> Dummy_ReciprocalSquareRootEstimateScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ReciprocalSquareRootEstimateScalar(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> ReciprocalSquareRootEstimateScalarTest(Vector64<double> value)
+{
+  return AdvSimd.Arm64.ReciprocalSquareRootEstimateScalar(value);
 }
 
 
@@ -1963,6 +2959,18 @@ private static  Vector64<float> ReciprocalSquareRootStepTest(Vector64<float> lef
 
 
 
+private static  Vector64<double> Dummy_ReciprocalSquareRootStepScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.ReciprocalSquareRootStepScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> ReciprocalSquareRootStepScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.ReciprocalSquareRootStepScalar(left, right);
+}
+
+
+
 private static  Vector64<float> Dummy_ReciprocalStepTest(Vector64<float> left, Vector64<float> right)
 {
   return AdvSimd.ReciprocalStep(left, right);
@@ -1971,6 +2979,18 @@ private static  Vector64<float> Dummy_ReciprocalStepTest(Vector64<float> left, V
 private static  Vector64<float> ReciprocalStepTest(Vector64<float> left, Vector64<float> right)
 {
   return AdvSimd.ReciprocalStep(left, right);
+}
+
+
+
+private static  Vector64<double> Dummy_ReciprocalStepScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.ReciprocalStepScalar(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<double> ReciprocalStepScalarTest(Vector64<double> left, Vector64<double> right)
+{
+  return AdvSimd.Arm64.ReciprocalStepScalar(left, right);
 }
 
 
@@ -2007,6 +3027,18 @@ private static  Vector64<short> Dummy_ReverseElement8Test(Vector64<short> value)
 private static  Vector64<short> ReverseElement8Test(Vector64<short> value)
 {
   return AdvSimd.ReverseElement8(value);
+}
+
+
+
+private static  Vector64<byte> Dummy_ReverseElementBitsTest(Vector64<byte> value)
+{
+  return AdvSimd.Arm64.ReverseElementBits(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> ReverseElementBitsTest(Vector64<byte> value)
+{
+  return AdvSimd.Arm64.ReverseElementBits(value);
 }
 
 
@@ -2515,6 +3547,18 @@ private static  Vector64<short> ShiftRightArithmeticNarrowingSaturateLowerTest(V
 
 
 
+private static  Vector64<short> Dummy_ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 1);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<short> ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 1);
+}
+
+
+
 private static  Vector64<byte> Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {
   return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedLower(value, 1);
@@ -2523,6 +3567,18 @@ private static  Vector64<byte> Dummy_ShiftRightArithmeticNarrowingSaturateUnsign
 private static  Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {
   return AdvSimd.ShiftRightArithmeticNarrowingSaturateUnsignedLower(value, 1);
+}
+
+
+
+private static  Vector64<byte> Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 1);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 1);
 }
 
 
@@ -2599,6 +3655,18 @@ private static  Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateLowe
 
 
 
+private static  Vector64<short> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 1);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 1);
+}
+
+
+
 private static  Vector64<byte> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {
   return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(value, 1);
@@ -2607,6 +3675,18 @@ private static  Vector64<byte> Dummy_ShiftRightArithmeticRoundedNarrowingSaturat
 private static  Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128<short> value, byte count)
 {
   return AdvSimd.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(value, 1);
+}
+
+
+
+private static  Vector64<byte> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 1);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 1);
 }
 
 
@@ -2719,6 +3799,18 @@ private static  Vector64<byte> ShiftRightLogicalNarrowingSaturateLowerTest(Vecto
 
 
 
+private static  Vector64<byte> Dummy_ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 1);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 1);
+}
+
+
+
 private static  Vector128<byte> Dummy_ShiftRightLogicalNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {
   return AdvSimd.ShiftRightLogicalNarrowingSaturateUpper(lower, value, 1);
@@ -2803,6 +3895,18 @@ private static  Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateLowerTes
 
 
 
+private static  Vector64<byte> Dummy_ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 1);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
+{
+  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 1);
+}
+
+
+
 private static  Vector128<byte> Dummy_ShiftRightLogicalRoundedNarrowingSaturateUpperTest(Vector64<byte> lower, Vector128<ushort> value, byte count)
 {
   return AdvSimd.ShiftRightLogicalRoundedNarrowingSaturateUpper(lower, value, 1);
@@ -2875,6 +3979,18 @@ private static  Vector128<int> SignExtendWideningUpperTest(Vector128<short> valu
 
 
 
+private static  Vector64<float> Dummy_SqrtTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.Sqrt(value);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<float> SqrtTest(Vector64<float> value)
+{
+  return AdvSimd.Arm64.Sqrt(value);
+}
+
+
+
 private static  Vector64<double> Dummy_SqrtScalarTest(Vector64<double> value)
 {
   return AdvSimd.SqrtScalar(value);
@@ -2895,6 +4011,54 @@ private static unsafe void Dummy_StoreTest(byte* address, Vector64<byte> source)
 private static unsafe void StoreTest(byte* address, Vector64<byte> source)
 {
   AdvSimd.Store(address, source);
+}
+
+
+
+private static unsafe void Dummy_StorePairTest(byte* address, Vector64<byte> value1, Vector64<byte> value2)
+{
+  AdvSimd.Arm64.StorePair(address, value1, value2);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static unsafe void StorePairTest(byte* address, Vector64<byte> value1, Vector64<byte> value2)
+{
+  AdvSimd.Arm64.StorePair(address, value1, value2);
+}
+
+
+
+private static unsafe void Dummy_StorePairNonTemporalTest(byte* address, Vector64<byte> value1, Vector64<byte> value2)
+{
+  AdvSimd.Arm64.StorePairNonTemporal(address, value1, value2);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static unsafe void StorePairNonTemporalTest(byte* address, Vector64<byte> value1, Vector64<byte> value2)
+{
+  AdvSimd.Arm64.StorePairNonTemporal(address, value1, value2);
+}
+
+
+
+private static unsafe void Dummy_StorePairScalarTest(int* address, Vector64<int> value1, Vector64<int> value2)
+{
+  AdvSimd.Arm64.StorePairScalar(address, value1, value2);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static unsafe void StorePairScalarTest(int* address, Vector64<int> value1, Vector64<int> value2)
+{
+  AdvSimd.Arm64.StorePairScalar(address, value1, value2);
+}
+
+
+
+private static unsafe void Dummy_StorePairScalarNonTemporalTest(int* address, Vector64<int> value1, Vector64<int> value2)
+{
+  AdvSimd.Arm64.StorePairScalarNonTemporal(address, value1, value2);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static unsafe void StorePairScalarNonTemporalTest(int* address, Vector64<int> value1, Vector64<int> value2)
+{
+  AdvSimd.Arm64.StorePairScalarNonTemporal(address, value1, value2);
 }
 
 
@@ -3031,6 +4195,54 @@ private static  Vector128<ushort> SubtractWideningUpperTest(Vector128<byte> left
 
 
 
+private static  Vector64<byte> Dummy_TransposeEvenTest(Vector64<byte> left, Vector64<byte> right)
+{
+  return AdvSimd.Arm64.TransposeEven(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> TransposeEvenTest(Vector64<byte> left, Vector64<byte> right)
+{
+  return AdvSimd.Arm64.TransposeEven(left, right);
+}
+
+
+
+private static  Vector64<byte> Dummy_TransposeOddTest(Vector64<byte> left, Vector64<byte> right)
+{
+  return AdvSimd.Arm64.TransposeOdd(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> TransposeOddTest(Vector64<byte> left, Vector64<byte> right)
+{
+  return AdvSimd.Arm64.TransposeOdd(left, right);
+}
+
+
+
+private static  Vector64<byte> Dummy_UnzipEvenTest(Vector64<byte> left, Vector64<byte> right)
+{
+  return AdvSimd.Arm64.UnzipEven(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> UnzipEvenTest(Vector64<byte> left, Vector64<byte> right)
+{
+  return AdvSimd.Arm64.UnzipEven(left, right);
+}
+
+
+
+private static  Vector64<byte> Dummy_UnzipOddTest(Vector64<byte> left, Vector64<byte> right)
+{
+  return AdvSimd.Arm64.UnzipOdd(left, right);
+}
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static  Vector64<byte> UnzipOddTest(Vector64<byte> left, Vector64<byte> right)
+{
+  return AdvSimd.Arm64.UnzipOdd(left, right);
+}
+
+
+
 private static  Vector64<byte> Dummy_VectorTableLookupTest(Vector128<byte> table, Vector64<byte> byteIndexes)
 {
   return AdvSimd.VectorTableLookup(table, byteIndexes);
@@ -3091,1218 +4303,6 @@ private static  Vector128<ushort> ZeroExtendWideningUpperTest(Vector128<byte> va
 
 
 
-private static  Vector64<short> Dummy_AbsSaturateScalarTest(Vector64<short> value)
-{
-  return AdvSimd.Arm64.AbsSaturateScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<short> AbsSaturateScalarTest(Vector64<short> value)
-{
-  return AdvSimd.Arm64.AbsSaturateScalar(value);
-}
-
-
-
-private static  Vector64<double> Dummy_AbsoluteCompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.AbsoluteCompareGreaterThanScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> AbsoluteCompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.AbsoluteCompareGreaterThanScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.AbsoluteCompareGreaterThanOrEqualScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.AbsoluteCompareGreaterThanOrEqualScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_AbsoluteCompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.AbsoluteCompareLessThanScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> AbsoluteCompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.AbsoluteCompareLessThanScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_AbsoluteCompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.AbsoluteCompareLessThanOrEqualScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> AbsoluteCompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.AbsoluteCompareLessThanOrEqualScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_AbsoluteDifferenceScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.AbsoluteDifferenceScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> AbsoluteDifferenceScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.AbsoluteDifferenceScalar(left, right);
-}
-
-
-
-private static  Vector64<byte> Dummy_AddAcrossTest(Vector64<byte> value)
-{
-  return AdvSimd.Arm64.AddAcross(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> AddAcrossTest(Vector64<byte> value)
-{
-  return AdvSimd.Arm64.AddAcross(value);
-}
-
-
-
-private static  Vector64<ushort> Dummy_AddAcrossWideningTest(Vector64<byte> value)
-{
-  return AdvSimd.Arm64.AddAcrossWidening(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<ushort> AddAcrossWideningTest(Vector64<byte> value)
-{
-  return AdvSimd.Arm64.AddAcrossWidening(value);
-}
-
-
-
-private static  Vector64<float> Dummy_AddPairwiseScalarTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.AddPairwiseScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> AddPairwiseScalarTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.AddPairwiseScalar(value);
-}
-
-
-
-private static  Vector64<double> Dummy_CompareEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareEqualScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> CompareEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareEqualScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_CompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareGreaterThanScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> CompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareGreaterThanScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_CompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareGreaterThanOrEqualScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> CompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareGreaterThanOrEqualScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_CompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareLessThanScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> CompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareLessThanScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_CompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareLessThanOrEqualScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> CompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareLessThanOrEqualScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_CompareTestScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareTestScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> CompareTestScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.CompareTestScalar(left, right);
-}
-
-
-
-private static  Vector128<double> Dummy_ConvertToDoubleTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.ConvertToDouble(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<double> ConvertToDoubleTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.ConvertToDouble(value);
-}
-
-
-
-private static  Vector64<double> Dummy_ConvertToDoubleScalarTest(Vector64<long> value)
-{
-  return AdvSimd.Arm64.ConvertToDoubleScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> ConvertToDoubleScalarTest(Vector64<long> value)
-{
-  return AdvSimd.Arm64.ConvertToDoubleScalar(value);
-}
-
-
-
-private static  Vector128<double> Dummy_ConvertToDoubleUpperTest(Vector128<float> value)
-{
-  return AdvSimd.Arm64.ConvertToDoubleUpper(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<double> ConvertToDoubleUpperTest(Vector128<float> value)
-{
-  return AdvSimd.Arm64.ConvertToDoubleUpper(value);
-}
-
-
-
-private static  Vector128<long> Dummy_ConvertToInt64RoundAwayFromZeroTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZero(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<long> ConvertToInt64RoundAwayFromZeroTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZero(value);
-}
-
-
-
-private static  Vector64<long> Dummy_ConvertToInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZeroScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<long> ConvertToInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZeroScalar(value);
-}
-
-
-
-private static  Vector128<long> Dummy_ConvertToInt64RoundToEvenTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToEven(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<long> ConvertToInt64RoundToEvenTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToEven(value);
-}
-
-
-
-private static  Vector64<long> Dummy_ConvertToInt64RoundToEvenScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToEvenScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<long> ConvertToInt64RoundToEvenScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToEvenScalar(value);
-}
-
-
-
-private static  Vector128<long> Dummy_ConvertToInt64RoundToNegativeInfinityTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinity(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<long> ConvertToInt64RoundToNegativeInfinityTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinity(value);
-}
-
-
-
-private static  Vector64<long> Dummy_ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinityScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<long> ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinityScalar(value);
-}
-
-
-
-private static  Vector128<long> Dummy_ConvertToInt64RoundToPositiveInfinityTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinity(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<long> ConvertToInt64RoundToPositiveInfinityTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinity(value);
-}
-
-
-
-private static  Vector64<long> Dummy_ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinityScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<long> ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinityScalar(value);
-}
-
-
-
-private static  Vector128<long> Dummy_ConvertToInt64RoundToZeroTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToZero(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<long> ConvertToInt64RoundToZeroTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToZero(value);
-}
-
-
-
-private static  Vector64<long> Dummy_ConvertToInt64RoundToZeroScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToZeroScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<long> ConvertToInt64RoundToZeroScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToInt64RoundToZeroScalar(value);
-}
-
-
-
-private static  Vector64<float> Dummy_ConvertToSingleLowerTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToSingleLower(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> ConvertToSingleLowerTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToSingleLower(value);
-}
-
-
-
-private static  Vector64<float> Dummy_ConvertToSingleRoundToOddLowerTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToSingleRoundToOddLower(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> ConvertToSingleRoundToOddLowerTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToSingleRoundToOddLower(value);
-}
-
-
-
-private static  Vector128<float> Dummy_ConvertToSingleRoundToOddUpperTest(Vector64<float> lower, Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToSingleRoundToOddUpper(lower, value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<float> ConvertToSingleRoundToOddUpperTest(Vector64<float> lower, Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToSingleRoundToOddUpper(lower, value);
-}
-
-
-
-private static  Vector128<float> Dummy_ConvertToSingleUpperTest(Vector64<float> lower, Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToSingleUpper(lower, value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<float> ConvertToSingleUpperTest(Vector64<float> lower, Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToSingleUpper(lower, value);
-}
-
-
-
-private static  Vector128<ulong> Dummy_ConvertToUInt64RoundAwayFromZeroTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZero(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<ulong> ConvertToUInt64RoundAwayFromZeroTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZero(value);
-}
-
-
-
-private static  Vector64<ulong> Dummy_ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZeroScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZeroScalar(value);
-}
-
-
-
-private static  Vector128<ulong> Dummy_ConvertToUInt64RoundToEvenTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToEven(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<ulong> ConvertToUInt64RoundToEvenTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToEven(value);
-}
-
-
-
-private static  Vector64<ulong> Dummy_ConvertToUInt64RoundToEvenScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToEvenScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<ulong> ConvertToUInt64RoundToEvenScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToEvenScalar(value);
-}
-
-
-
-private static  Vector128<ulong> Dummy_ConvertToUInt64RoundToNegativeInfinityTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinity(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<ulong> ConvertToUInt64RoundToNegativeInfinityTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinity(value);
-}
-
-
-
-private static  Vector64<ulong> Dummy_ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinityScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinityScalar(value);
-}
-
-
-
-private static  Vector128<ulong> Dummy_ConvertToUInt64RoundToPositiveInfinityTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinity(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<ulong> ConvertToUInt64RoundToPositiveInfinityTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinity(value);
-}
-
-
-
-private static  Vector64<ulong> Dummy_ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinityScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinityScalar(value);
-}
-
-
-
-private static  Vector128<ulong> Dummy_ConvertToUInt64RoundToZeroTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToZero(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<ulong> ConvertToUInt64RoundToZeroTest(Vector128<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToZero(value);
-}
-
-
-
-private static  Vector64<ulong> Dummy_ConvertToUInt64RoundToZeroScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToZeroScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<ulong> ConvertToUInt64RoundToZeroScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToZeroScalar(value);
-}
-
-
-
-private static  Vector64<float> Dummy_DivideTest(Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.Divide(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> DivideTest(Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.Divide(left, right);
-}
-
-
-
-private static  Vector64<byte> Dummy_ExtractNarrowingSaturateScalarTest(Vector64<ushort> value)
-{
-  return AdvSimd.Arm64.ExtractNarrowingSaturateScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> ExtractNarrowingSaturateScalarTest(Vector64<ushort> value)
-{
-  return AdvSimd.Arm64.ExtractNarrowingSaturateScalar(value);
-}
-
-
-
-private static  Vector64<byte> Dummy_ExtractNarrowingSaturateUnsignedScalarTest(Vector64<short> value)
-{
-  return AdvSimd.Arm64.ExtractNarrowingSaturateUnsignedScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> ExtractNarrowingSaturateUnsignedScalarTest(Vector64<short> value)
-{
-  return AdvSimd.Arm64.ExtractNarrowingSaturateUnsignedScalar(value);
-}
-
-
-
-private static  Vector64<float> Dummy_FusedMultiplyAddByScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.FusedMultiplyAddByScalar(addend, left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> FusedMultiplyAddByScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.FusedMultiplyAddByScalar(addend, left, right);
-}
-
-
-
-private static  Vector64<float> Dummy_FusedMultiplyAddBySelectedScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> FusedMultiplyAddBySelectedScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, 0);
-}
-
-
-
-private static  Vector64<double> Dummy_FusedMultiplyAddScalarBySelectedScalarTest(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> FusedMultiplyAddScalarBySelectedScalarTest(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, 0);
-}
-
-
-
-private static  Vector64<float> Dummy_FusedMultiplySubtractByScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.FusedMultiplySubtractByScalar(minuend, left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> FusedMultiplySubtractByScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.FusedMultiplySubtractByScalar(minuend, left, right);
-}
-
-
-
-private static  Vector64<float> Dummy_FusedMultiplySubtractBySelectedScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> FusedMultiplySubtractBySelectedScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, 0);
-}
-
-
-
-private static  Vector64<double> Dummy_FusedMultiplySubtractScalarBySelectedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> FusedMultiplySubtractScalarBySelectedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, 0);
-}
-
-
-
-private static  Vector64<byte> Dummy_InsertSelectedScalarTest(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
-{
-  return AdvSimd.Arm64.InsertSelectedScalar(result, 0, value, 1);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> InsertSelectedScalarTest(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
-{
-  return AdvSimd.Arm64.InsertSelectedScalar(result, 0, value, 1);
-}
-
-
-
-private static  Vector64<byte> Dummy_MaxAcrossTest(Vector64<byte> value)
-{
-  return AdvSimd.Arm64.MaxAcross(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> MaxAcrossTest(Vector64<byte> value)
-{
-  return AdvSimd.Arm64.MaxAcross(value);
-}
-
-
-
-private static  Vector64<float> Dummy_MaxNumberAcrossTest(Vector128<float> value)
-{
-  return AdvSimd.Arm64.MaxNumberAcross(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> MaxNumberAcrossTest(Vector128<float> value)
-{
-  return AdvSimd.Arm64.MaxNumberAcross(value);
-}
-
-
-
-private static  Vector64<float> Dummy_MaxNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.MaxNumberPairwise(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> MaxNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.MaxNumberPairwise(left, right);
-}
-
-
-
-private static  Vector64<float> Dummy_MaxNumberPairwiseScalarTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.MaxNumberPairwiseScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> MaxNumberPairwiseScalarTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.MaxNumberPairwiseScalar(value);
-}
-
-
-
-private static  Vector64<float> Dummy_MaxPairwiseScalarTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.MaxPairwiseScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> MaxPairwiseScalarTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.MaxPairwiseScalar(value);
-}
-
-
-
-private static  Vector64<double> Dummy_MaxScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.MaxScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> MaxScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.MaxScalar(left, right);
-}
-
-
-
-private static  Vector64<byte> Dummy_MinAcrossTest(Vector64<byte> value)
-{
-  return AdvSimd.Arm64.MinAcross(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> MinAcrossTest(Vector64<byte> value)
-{
-  return AdvSimd.Arm64.MinAcross(value);
-}
-
-
-
-private static  Vector64<float> Dummy_MinNumberAcrossTest(Vector128<float> value)
-{
-  return AdvSimd.Arm64.MinNumberAcross(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> MinNumberAcrossTest(Vector128<float> value)
-{
-  return AdvSimd.Arm64.MinNumberAcross(value);
-}
-
-
-
-private static  Vector64<float> Dummy_MinNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.MinNumberPairwise(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> MinNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.MinNumberPairwise(left, right);
-}
-
-
-
-private static  Vector64<float> Dummy_MinNumberPairwiseScalarTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.MinNumberPairwiseScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> MinNumberPairwiseScalarTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.MinNumberPairwiseScalar(value);
-}
-
-
-
-private static  Vector64<float> Dummy_MinPairwiseScalarTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.MinPairwiseScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> MinPairwiseScalarTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.MinPairwiseScalar(value);
-}
-
-
-
-private static  Vector64<double> Dummy_MinScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.MinScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> MinScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.MinScalar(left, right);
-}
-
-
-
-private static  Vector64<short> Dummy_MultiplyDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
-{
-  return AdvSimd.Arm64.MultiplyDoublingSaturateHighScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<short> MultiplyDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
-{
-  return AdvSimd.Arm64.MultiplyDoublingSaturateHighScalar(left, right);
-}
-
-
-
-private static  Vector64<short> Dummy_MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
-}
-
-
-
-private static  Vector64<int> Dummy_MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningAndAddSaturateScalar(addend, left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<int> MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningAndAddSaturateScalar(addend, left, right);
-}
-
-
-
-private static  Vector64<int> Dummy_MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningAndSubtractSaturateScalar(minuend, left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningAndSubtractSaturateScalar(minuend, left, right);
-}
-
-
-
-private static  Vector64<int> Dummy_MultiplyDoublingWideningSaturateScalarTest(Vector64<short> left, Vector64<short> right)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<int> MultiplyDoublingWideningSaturateScalarTest(Vector64<short> left, Vector64<short> right)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalar(left, right);
-}
-
-
-
-private static  Vector64<int> Dummy_MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, 0);
-}
-
-
-
-private static  Vector64<int> Dummy_MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, 0);
-}
-
-
-
-private static  Vector64<int> Dummy_MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
-}
-
-
-
-private static  Vector64<float> Dummy_MultiplyExtendedTest(Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.MultiplyExtended(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> MultiplyExtendedTest(Vector64<float> left, Vector64<float> right)
-{
-  return AdvSimd.Arm64.MultiplyExtended(left, right);
-}
-
-
-
-private static  Vector128<double> Dummy_MultiplyExtendedByScalarTest(Vector128<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.MultiplyExtendedByScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector128<double> MultiplyExtendedByScalarTest(Vector128<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.MultiplyExtendedByScalar(left, right);
-}
-
-
-
-private static  Vector64<float> Dummy_MultiplyExtendedBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> MultiplyExtendedBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, 0);
-}
-
-
-
-private static  Vector64<double> Dummy_MultiplyExtendedScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.MultiplyExtendedScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> MultiplyExtendedScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.MultiplyExtendedScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_MultiplyExtendedScalarBySelectedScalarTest(Vector64<double> left, Vector128<double> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> MultiplyExtendedScalarBySelectedScalarTest(Vector64<double> left, Vector128<double> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, 0);
-}
-
-
-
-private static  Vector64<short> Dummy_MultiplyRoundedDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
-{
-  return AdvSimd.Arm64.MultiplyRoundedDoublingSaturateHighScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<short> MultiplyRoundedDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
-{
-  return AdvSimd.Arm64.MultiplyRoundedDoublingSaturateHighScalar(left, right);
-}
-
-
-
-private static  Vector64<short> Dummy_MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
-{
-  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
-}
-
-
-
-private static  Vector64<short> Dummy_NegateSaturateScalarTest(Vector64<short> value)
-{
-  return AdvSimd.Arm64.NegateSaturateScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<short> NegateSaturateScalarTest(Vector64<short> value)
-{
-  return AdvSimd.Arm64.NegateSaturateScalar(value);
-}
-
-
-
-private static  Vector64<double> Dummy_ReciprocalEstimateScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ReciprocalEstimateScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> ReciprocalEstimateScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ReciprocalEstimateScalar(value);
-}
-
-
-
-private static  Vector64<double> Dummy_ReciprocalExponentScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ReciprocalExponentScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> ReciprocalExponentScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ReciprocalExponentScalar(value);
-}
-
-
-
-private static  Vector64<double> Dummy_ReciprocalSquareRootEstimateScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ReciprocalSquareRootEstimateScalar(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> ReciprocalSquareRootEstimateScalarTest(Vector64<double> value)
-{
-  return AdvSimd.Arm64.ReciprocalSquareRootEstimateScalar(value);
-}
-
-
-
-private static  Vector64<double> Dummy_ReciprocalSquareRootStepScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.ReciprocalSquareRootStepScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> ReciprocalSquareRootStepScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.ReciprocalSquareRootStepScalar(left, right);
-}
-
-
-
-private static  Vector64<double> Dummy_ReciprocalStepScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.ReciprocalStepScalar(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<double> ReciprocalStepScalarTest(Vector64<double> left, Vector64<double> right)
-{
-  return AdvSimd.Arm64.ReciprocalStepScalar(left, right);
-}
-
-
-
-private static  Vector64<short> Dummy_ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 1);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<short> ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 1);
-}
-
-
-
-private static  Vector64<byte> Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 1);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 1);
-}
-
-
-
-private static  Vector64<short> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 1);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 1);
-}
-
-
-
-private static  Vector64<byte> Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 1);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 1);
-}
-
-
-
-private static  Vector64<byte> Dummy_ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 1);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 1);
-}
-
-
-
-private static  Vector64<byte> Dummy_ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 1);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
-{
-  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 1);
-}
-
-
-
-private static  Vector64<float> Dummy_SqrtTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.Sqrt(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<float> SqrtTest(Vector64<float> value)
-{
-  return AdvSimd.Arm64.Sqrt(value);
-}
-
-
-
-private static unsafe void Dummy_StorePairTest(byte* address, Vector64<byte> value1, Vector64<byte> value2)
-{
-  AdvSimd.Arm64.StorePair(address, value1, value2);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static unsafe void StorePairTest(byte* address, Vector64<byte> value1, Vector64<byte> value2)
-{
-  AdvSimd.Arm64.StorePair(address, value1, value2);
-}
-
-
-
-private static unsafe void Dummy_StorePairNonTemporalTest(byte* address, Vector64<byte> value1, Vector64<byte> value2)
-{
-  AdvSimd.Arm64.StorePairNonTemporal(address, value1, value2);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static unsafe void StorePairNonTemporalTest(byte* address, Vector64<byte> value1, Vector64<byte> value2)
-{
-  AdvSimd.Arm64.StorePairNonTemporal(address, value1, value2);
-}
-
-
-
-private static unsafe void Dummy_StorePairScalarTest(int* address, Vector64<int> value1, Vector64<int> value2)
-{
-  AdvSimd.Arm64.StorePairScalar(address, value1, value2);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static unsafe void StorePairScalarTest(int* address, Vector64<int> value1, Vector64<int> value2)
-{
-  AdvSimd.Arm64.StorePairScalar(address, value1, value2);
-}
-
-
-
-private static unsafe void Dummy_StorePairScalarNonTemporalTest(int* address, Vector64<int> value1, Vector64<int> value2)
-{
-  AdvSimd.Arm64.StorePairScalarNonTemporal(address, value1, value2);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static unsafe void StorePairScalarNonTemporalTest(int* address, Vector64<int> value1, Vector64<int> value2)
-{
-  AdvSimd.Arm64.StorePairScalarNonTemporal(address, value1, value2);
-}
-
-
-
-private static  Vector64<byte> Dummy_ReverseElementBitsTest(Vector64<byte> value)
-{
-  return AdvSimd.Arm64.ReverseElementBits(value);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> ReverseElementBitsTest(Vector64<byte> value)
-{
-  return AdvSimd.Arm64.ReverseElementBits(value);
-}
-
-
-
-private static  Vector64<byte> Dummy_TransposeEvenTest(Vector64<byte> left, Vector64<byte> right)
-{
-  return AdvSimd.Arm64.TransposeEven(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> TransposeEvenTest(Vector64<byte> left, Vector64<byte> right)
-{
-  return AdvSimd.Arm64.TransposeEven(left, right);
-}
-
-
-
-private static  Vector64<byte> Dummy_TransposeOddTest(Vector64<byte> left, Vector64<byte> right)
-{
-  return AdvSimd.Arm64.TransposeOdd(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> TransposeOddTest(Vector64<byte> left, Vector64<byte> right)
-{
-  return AdvSimd.Arm64.TransposeOdd(left, right);
-}
-
-
-
-private static  Vector64<byte> Dummy_UnzipEvenTest(Vector64<byte> left, Vector64<byte> right)
-{
-  return AdvSimd.Arm64.UnzipEven(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> UnzipEvenTest(Vector64<byte> left, Vector64<byte> right)
-{
-  return AdvSimd.Arm64.UnzipEven(left, right);
-}
-
-
-
-private static  Vector64<byte> Dummy_UnzipOddTest(Vector64<byte> left, Vector64<byte> right)
-{
-  return AdvSimd.Arm64.UnzipOdd(left, right);
-}
-[MethodImpl(MethodImplOptions.NoInlining)]
-private static  Vector64<byte> UnzipOddTest(Vector64<byte> left, Vector64<byte> right)
-{
-  return AdvSimd.Arm64.UnzipOdd(left, right);
-}
-
-
-
 private static  Vector64<byte> Dummy_ZipHighTest(Vector64<byte> left, Vector64<byte> right)
 {
   return AdvSimd.Arm64.ZipHigh(left, right);
@@ -4335,19 +4335,20 @@ Console.WriteLine(
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 1
-subtitle: With examples
+title: ARM64 Hardware Intrinsics APIs in .NET - Part 1
+subtitle: Sample code usage, examples and generated assembly code
 tags: [work, arm64, intrinsics]
 ---
 
 ### Introduction
 
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+In my [vectorization using .NET APIs](../2020-08-01-Vectorization-APIs) blog, I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrinsic' APIs. In this post I will describe those hardware intrinsic APIs for ARM64 by showing sample code usage along with examples and generated ARM64 code. This will help people in understanding these APIs so they can use them to optimize their .NET code written to target ARM64. Since there are 360 APIs, describing all of them in a single post will be overwhelming. So I have divided these APIs among 8 blogs and will demonstrate 45 APIs in each blog. This is part 1 of that blog series.
 
+Most of the description of these APIs is adapted and referenced from [Arm Architecture Reference Manual Armv8, for Armv8-A architecture profile document](https://developer.arm.com/documentation/ddi0487/fc/). You can also refer to the description of SIMD and Floating-point instructions description at [Arm developer docs page](https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order).
 
-### API list
+### APIs covered
 
-[Abs](#1-abs), [AbsSaturate](#2-abssaturate), [AbsScalar](#3-absscalar), [AbsoluteCompareGreaterThan](#4-absolutecomparegreaterthan), [AbsoluteCompareGreaterThanOrEqual](#5-absolutecomparegreaterthanorequal), [AbsoluteCompareLessThan](#6-absolutecomparelessthan), [AbsoluteCompareLessThanOrEqual](#7-absolutecomparelessthanorequal), [AbsoluteDifference](#8-absolutedifference), [AbsoluteDifferenceAdd](#9-absolutedifferenceadd), [AbsoluteDifferenceWideningLower](#10-absolutedifferencewideninglower), [AbsoluteDifferenceWideningLowerAndAdd](#11-absolutedifferencewideninglowerandadd), [AbsoluteDifferenceWideningUpper](#12-absolutedifferencewideningupper), [AbsoluteDifferenceWideningUpperAndAdd](#13-absolutedifferencewideningupperandadd), [Add](#14-add), [AddHighNarrowingLower](#15-addhighnarrowinglower), [AddHighNarrowingUpper](#16-addhighnarrowingupper), [AddPairwise](#17-addpairwise), [AddPairwiseWidening](#18-addpairwisewidening), [AddPairwiseWideningAndAdd](#19-addpairwisewideningandadd), [AddPairwiseWideningAndAddScalar](#20-addpairwisewideningandaddscalar), [AddPairwiseWideningScalar](#21-addpairwisewideningscalar), [AddRoundedHighNarrowingLower](#22-addroundedhighnarrowinglower), [AddRoundedHighNarrowingUpper](#23-addroundedhighnarrowingupper), [AddSaturate](#24-addsaturate), [AddSaturateScalar](#25-addsaturatescalar), [AddScalar](#26-addscalar), [AddWideningLower](#27-addwideninglower), [AddWideningUpper](#28-addwideningupper), [And](#29-and), [BitwiseClear](#30-bitwiseclear), [BitwiseSelect](#31-bitwiseselect), [Ceiling](#32-ceiling), [CeilingScalar](#33-ceilingscalar), [CompareEqual](#34-compareequal), [CompareGreaterThan](#35-comparegreaterthan), [CompareGreaterThanOrEqual](#36-comparegreaterthanorequal), [CompareLessThan](#37-comparelessthan), [CompareLessThanOrEqual](#38-comparelessthanorequal), [CompareTest](#39-comparetest), [ConvertToInt32RoundAwayFromZero](#40-converttoint32roundawayfromzero), [ConvertToInt32RoundAwayFromZeroScalar](#41-converttoint32roundawayfromzeroscalar), [ConvertToInt32RoundToEven](#42-converttoint32roundtoeven), [ConvertToInt32RoundToEvenScalar](#43-converttoint32roundtoevenscalar), [ConvertToInt32RoundToNegativeInfinity](#44-converttoint32roundtonegativeinfinity), [ConvertToInt32RoundToNegativeInfinityScalar](#45-converttoint32roundtonegativeinfinityscalar),[...](Part1.md)
+[Abs](#1-abs), [AbsoluteCompareGreaterThan](#2-absolutecomparegreaterthan), [AbsoluteCompareGreaterThanOrEqual](#3-absolutecomparegreaterthanorequal), [AbsoluteCompareGreaterThanOrEqualScalar](#4-absolutecomparegreaterthanorequalscalar), [AbsoluteCompareGreaterThanScalar](#5-absolutecomparegreaterthanscalar), [AbsoluteCompareLessThan](#6-absolutecomparelessthan), [AbsoluteCompareLessThanOrEqual](#7-absolutecomparelessthanorequal), [AbsoluteCompareLessThanOrEqualScalar](#8-absolutecomparelessthanorequalscalar), [AbsoluteCompareLessThanScalar](#9-absolutecomparelessthanscalar), [AbsoluteDifference](#10-absolutedifference), [AbsoluteDifferenceAdd](#11-absolutedifferenceadd), [AbsoluteDifferenceScalar](#12-absolutedifferencescalar), [AbsoluteDifferenceWideningLower](#13-absolutedifferencewideninglower), [AbsoluteDifferenceWideningLowerAndAdd](#14-absolutedifferencewideninglowerandadd), [AbsoluteDifferenceWideningUpper](#15-absolutedifferencewideningupper), [AbsoluteDifferenceWideningUpperAndAdd](#16-absolutedifferencewideningupperandadd), [AbsSaturate](#17-abssaturate), [AbsSaturateScalar](#18-abssaturatescalar), [AbsScalar](#19-absscalar), [Add](#20-add), [AddAcross](#21-addacross), [AddAcrossWidening](#22-addacrosswidening), [AddHighNarrowingLower](#23-addhighnarrowinglower), [AddHighNarrowingUpper](#24-addhighnarrowingupper), [AddPairwise](#25-addpairwise), [AddPairwiseScalar](#26-addpairwisescalar), [AddPairwiseWidening](#27-addpairwisewidening), [AddPairwiseWideningAndAdd](#28-addpairwisewideningandadd), [AddPairwiseWideningAndAddScalar](#29-addpairwisewideningandaddscalar), [AddPairwiseWideningScalar](#30-addpairwisewideningscalar), [AddRoundedHighNarrowingLower](#31-addroundedhighnarrowinglower), [AddRoundedHighNarrowingUpper](#32-addroundedhighnarrowingupper), [AddSaturate](#33-addsaturate), [AddSaturateScalar](#34-addsaturatescalar), [AddScalar](#35-addscalar), [AddWideningLower](#36-addwideninglower), [AddWideningUpper](#37-addwideningupper), [And](#38-and), [BitwiseClear](#39-bitwiseclear), [BitwiseSelect](#40-bitwiseselect), [Ceiling](#41-ceiling), [CeilingScalar](#42-ceilingscalar), [CompareEqual](#43-compareequal), [CompareEqualScalar](#44-compareequalscalar), [CompareGreaterThan](#45-comparegreaterthan)
 
 
 ");
@@ -4412,116 +4413,6 @@ AbsTest(Vector64short_0);
 // ----------------------------------------------------------------
 
 try {
-var AbsSaturateResult = Dummy_AbsSaturateTest(Vector64short_0);
-apiResult = AbsSaturateResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 2. AbsSaturate
-
-`Vector64<short> AbsSaturate(Vector64<short> value)`
-
-{0}
-
-```csharp
-private Vector64<short> AbsSaturateTest(Vector64<short> value)
-{{
-  return AdvSimd.AbsSaturate(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<int> AbsSaturate(Vector64<int> value)
-Vector64<sbyte> AbsSaturate(Vector64<sbyte> value)
-Vector128<short> AbsSaturate(Vector128<short> value)
-Vector128<int> AbsSaturate(Vector128<int> value)
-Vector128<sbyte> AbsSaturate(Vector128<sbyte> value)
-
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<long> AbsSaturate(Vector128<long> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.abssaturate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.abssaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqabs_s16).
-
-Assembly generated:
-
-```armasm", GetValue("AbsSaturate", "Performs 'AbsSaturate' operation.", 0), GetValue("AbsSaturate", Vector64short_0.ToString(), 1), GetValue("AbsSaturate", apiResult.ToString(), 2));
-
-try {
-AbsSaturateTest(Vector64short_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var AbsScalarResult = Dummy_AbsScalarTest(Vector64double_0);
-apiResult = AbsScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 3. AbsScalar
-
-`Vector64<double> AbsScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<double> AbsScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.AbsScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<float> AbsScalar(Vector64<float> value)
-
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<ulong> AbsScalar(Vector64<long> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabs_f64).
-
-Assembly generated:
-
-```armasm", GetValue("AbsScalar", "Performs 'AbsScalar' operation.", 0), GetValue("AbsScalar", Vector64double_0.ToString(), 1), GetValue("AbsScalar", apiResult.ToString(), 2));
-
-try {
-AbsScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
 var AbsoluteCompareGreaterThanResult = Dummy_AbsoluteCompareGreaterThanTest(Vector64float_0, Vector64float_1);
 apiResult = AbsoluteCompareGreaterThanResult.ToString();
 } catch (Exception) {
@@ -4532,7 +4423,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 4. AbsoluteCompareGreaterThan
+### 2. AbsoluteCompareGreaterThan
 
 `Vector64<float> AbsoluteCompareGreaterThan(Vector64<float> left, Vector64<float> right)`
 
@@ -4586,7 +4477,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 5. AbsoluteCompareGreaterThanOrEqual
+### 3. AbsoluteCompareGreaterThanOrEqual
 
 `Vector64<float> AbsoluteCompareGreaterThanOrEqual(Vector64<float> left, Vector64<float> right)`
 
@@ -4622,6 +4513,108 @@ Assembly generated:
 
 try {
 AbsoluteCompareGreaterThanOrEqualTest(Vector64float_0, Vector64float_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var AbsoluteCompareGreaterThanOrEqualScalarResult = Dummy_AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
+apiResult = AbsoluteCompareGreaterThanOrEqualScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 4. AbsoluteCompareGreaterThanOrEqualScalar
+
+`Vector64<double> AbsoluteCompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.AbsoluteCompareGreaterThanOrEqualScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> AbsoluteCompareGreaterThanOrEqualScalar(Vector64<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcage_f64).
+
+Assembly generated:
+
+```armasm", GetValue("AbsoluteCompareGreaterThanOrEqualScalar", "Performs 'AbsoluteCompareGreaterThanOrEqualScalar' operation.", 0), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", apiResult.ToString(), 3));
+
+try {
+AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var AbsoluteCompareGreaterThanScalarResult = Dummy_AbsoluteCompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
+apiResult = AbsoluteCompareGreaterThanScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 5. AbsoluteCompareGreaterThanScalar
+
+`Vector64<double> AbsoluteCompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> AbsoluteCompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.AbsoluteCompareGreaterThanScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> AbsoluteCompareGreaterThanScalar(Vector64<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcagt_f64).
+
+Assembly generated:
+
+```armasm", GetValue("AbsoluteCompareGreaterThanScalar", "Performs 'AbsoluteCompareGreaterThanScalar' operation.", 0), GetValue("AbsoluteCompareGreaterThanScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThanScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThanScalar", apiResult.ToString(), 3));
+
+try {
+AbsoluteCompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -4738,6 +4731,108 @@ AbsoluteCompareLessThanOrEqualTest(Vector64float_0, Vector64float_1);
 // ----------------------------------------------------------------
 
 try {
+var AbsoluteCompareLessThanOrEqualScalarResult = Dummy_AbsoluteCompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
+apiResult = AbsoluteCompareLessThanOrEqualScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 8. AbsoluteCompareLessThanOrEqualScalar
+
+`Vector64<double> AbsoluteCompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> AbsoluteCompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.AbsoluteCompareLessThanOrEqualScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> AbsoluteCompareLessThanOrEqualScalar(Vector64<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcale_f64).
+
+Assembly generated:
+
+```armasm", GetValue("AbsoluteCompareLessThanOrEqualScalar", "Performs 'AbsoluteCompareLessThanOrEqualScalar' operation.", 0), GetValue("AbsoluteCompareLessThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareLessThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareLessThanOrEqualScalar", apiResult.ToString(), 3));
+
+try {
+AbsoluteCompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var AbsoluteCompareLessThanScalarResult = Dummy_AbsoluteCompareLessThanScalarTest(Vector64double_0, Vector64double_1);
+apiResult = AbsoluteCompareLessThanScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 9. AbsoluteCompareLessThanScalar
+
+`Vector64<double> AbsoluteCompareLessThanScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> AbsoluteCompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.AbsoluteCompareLessThanScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> AbsoluteCompareLessThanScalar(Vector64<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcalt_f64).
+
+Assembly generated:
+
+```armasm", GetValue("AbsoluteCompareLessThanScalar", "Performs 'AbsoluteCompareLessThanScalar' operation.", 0), GetValue("AbsoluteCompareLessThanScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareLessThanScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareLessThanScalar", apiResult.ToString(), 3));
+
+try {
+AbsoluteCompareLessThanScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var AbsoluteDifferenceResult = Dummy_AbsoluteDifferenceTest(Vector64byte_0, Vector64byte_1);
 apiResult = AbsoluteDifferenceResult.ToString();
 } catch (Exception) {
@@ -4748,7 +4843,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 8. AbsoluteDifference
+### 10. AbsoluteDifference
 
 `Vector64<byte> AbsoluteDifference(Vector64<byte> left, Vector64<byte> right)`
 
@@ -4814,7 +4909,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 9. AbsoluteDifferenceAdd
+### 11. AbsoluteDifferenceAdd
 
 `Vector64<byte> AbsoluteDifferenceAdd(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)`
 
@@ -4866,6 +4961,57 @@ AbsoluteDifferenceAddTest(Vector64byte_0, Vector64byte_1, Vector64byte_2);
 // ----------------------------------------------------------------
 
 try {
+var AbsoluteDifferenceScalarResult = Dummy_AbsoluteDifferenceScalarTest(Vector64double_0, Vector64double_1);
+apiResult = AbsoluteDifferenceScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 12. AbsoluteDifferenceScalar
+
+`Vector64<double> AbsoluteDifferenceScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> AbsoluteDifferenceScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.AbsoluteDifferenceScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> AbsoluteDifferenceScalar(Vector64<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutedifferencescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabd_f64).
+
+Assembly generated:
+
+```armasm", GetValue("AbsoluteDifferenceScalar", "Performs 'AbsoluteDifferenceScalar' operation.", 0), GetValue("AbsoluteDifferenceScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteDifferenceScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteDifferenceScalar", apiResult.ToString(), 3));
+
+try {
+AbsoluteDifferenceScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var AbsoluteDifferenceWideningLowerResult = Dummy_AbsoluteDifferenceWideningLowerTest(Vector64byte_0, Vector64byte_1);
 apiResult = AbsoluteDifferenceWideningLowerResult.ToString();
 } catch (Exception) {
@@ -4876,7 +5022,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 10. AbsoluteDifferenceWideningLower
+### 13. AbsoluteDifferenceWideningLower
 
 `Vector128<ushort> AbsoluteDifferenceWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
@@ -4931,7 +5077,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 11. AbsoluteDifferenceWideningLowerAndAdd
+### 14. AbsoluteDifferenceWideningLowerAndAdd
 
 `Vector128<ushort> AbsoluteDifferenceWideningLowerAndAdd(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)`
 
@@ -4987,7 +5133,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 12. AbsoluteDifferenceWideningUpper
+### 15. AbsoluteDifferenceWideningUpper
 
 `Vector128<ushort> AbsoluteDifferenceWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
@@ -5042,7 +5188,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 13. AbsoluteDifferenceWideningUpperAndAdd
+### 16. AbsoluteDifferenceWideningUpperAndAdd
 
 `Vector128<ushort> AbsoluteDifferenceWideningUpperAndAdd(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)`
 
@@ -5088,6 +5234,168 @@ AbsoluteDifferenceWideningUpperAndAddTest(Vector128ushort_0, Vector128byte_0, Ve
 // ----------------------------------------------------------------
 
 try {
+var AbsSaturateResult = Dummy_AbsSaturateTest(Vector64short_0);
+apiResult = AbsSaturateResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 17. AbsSaturate
+
+`Vector64<short> AbsSaturate(Vector64<short> value)`
+
+{0}
+
+```csharp
+private Vector64<short> AbsSaturateTest(Vector64<short> value)
+{{
+  return AdvSimd.AbsSaturate(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<int> AbsSaturate(Vector64<int> value)
+Vector64<sbyte> AbsSaturate(Vector64<sbyte> value)
+Vector128<short> AbsSaturate(Vector128<short> value)
+Vector128<int> AbsSaturate(Vector128<int> value)
+Vector128<sbyte> AbsSaturate(Vector128<sbyte> value)
+
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<long> AbsSaturate(Vector128<long> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.abssaturate?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.abssaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqabs_s16).
+
+Assembly generated:
+
+```armasm", GetValue("AbsSaturate", "Performs 'AbsSaturate' operation.", 0), GetValue("AbsSaturate", Vector64short_0.ToString(), 1), GetValue("AbsSaturate", apiResult.ToString(), 2));
+
+try {
+AbsSaturateTest(Vector64short_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var AbsSaturateScalarResult = Dummy_AbsSaturateScalarTest(Vector64short_0);
+apiResult = AbsSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 18. AbsSaturateScalar
+
+`Vector64<short> AbsSaturateScalar(Vector64<short> value)`
+
+{0}
+
+```csharp
+private Vector64<short> AbsSaturateScalarTest(Vector64<short> value)
+{{
+  return AdvSimd.Arm64.AbsSaturateScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<int> AbsSaturateScalar(Vector64<int> value)
+Vector64<long> AbsSaturateScalar(Vector64<long> value)
+Vector64<sbyte> AbsSaturateScalar(Vector64<sbyte> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.abssaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqabsh_s16).
+
+Assembly generated:
+
+```armasm", GetValue("AbsSaturateScalar", "Performs 'AbsSaturateScalar' operation.", 0), GetValue("AbsSaturateScalar", Vector64short_0.ToString(), 1), GetValue("AbsSaturateScalar", apiResult.ToString(), 2));
+
+try {
+AbsSaturateScalarTest(Vector64short_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var AbsScalarResult = Dummy_AbsScalarTest(Vector64double_0);
+apiResult = AbsScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 19. AbsScalar
+
+`Vector64<double> AbsScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<double> AbsScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.AbsScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<float> AbsScalar(Vector64<float> value)
+
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<ulong> AbsScalar(Vector64<long> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.absscalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabs_f64).
+
+Assembly generated:
+
+```armasm", GetValue("AbsScalar", "Performs 'AbsScalar' operation.", 0), GetValue("AbsScalar", Vector64double_0.ToString(), 1), GetValue("AbsScalar", apiResult.ToString(), 2));
+
+try {
+AbsScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var AddResult = Dummy_AddTest(Vector64byte_0, Vector64byte_1);
 apiResult = AddResult.ToString();
 } catch (Exception) {
@@ -5098,7 +5406,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 14. Add
+### 20. Add
 
 `Vector64<byte> Add(Vector64<byte> left, Vector64<byte> right)`
 
@@ -5156,6 +5464,122 @@ AddTest(Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 
 try {
+var AddAcrossResult = Dummy_AddAcrossTest(Vector64byte_0);
+apiResult = AddAcrossResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 21. AddAcross
+
+`Vector64<byte> AddAcross(Vector64<byte> value)`
+
+{0}
+
+```csharp
+private Vector64<byte> AddAcrossTest(Vector64<byte> value)
+{{
+  return AdvSimd.Arm64.AddAcross(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<short> AddAcross(Vector64<short> value)
+Vector64<sbyte> AddAcross(Vector64<sbyte> value)
+Vector64<ushort> AddAcross(Vector64<ushort> value)
+Vector64<byte> AddAcross(Vector128<byte> value)
+Vector64<short> AddAcross(Vector128<short> value)
+Vector64<int> AddAcross(Vector128<int> value)
+Vector64<sbyte> AddAcross(Vector128<sbyte> value)
+Vector64<ushort> AddAcross(Vector128<ushort> value)
+Vector64<uint> AddAcross(Vector128<uint> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaddv_u8).
+
+Assembly generated:
+
+```armasm", GetValue("AddAcross", "Performs 'AddAcross' operation.", 0), GetValue("AddAcross", Vector64byte_0.ToString(), 1), GetValue("AddAcross", apiResult.ToString(), 2));
+
+try {
+AddAcrossTest(Vector64byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var AddAcrossWideningResult = Dummy_AddAcrossWideningTest(Vector64byte_0);
+apiResult = AddAcrossWideningResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 22. AddAcrossWidening
+
+`Vector64<ushort> AddAcrossWidening(Vector64<byte> value)`
+
+{0}
+
+```csharp
+private Vector64<ushort> AddAcrossWideningTest(Vector64<byte> value)
+{{
+  return AdvSimd.Arm64.AddAcrossWidening(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<int> AddAcrossWidening(Vector64<short> value)
+Vector64<short> AddAcrossWidening(Vector64<sbyte> value)
+Vector64<uint> AddAcrossWidening(Vector64<ushort> value)
+Vector64<ushort> AddAcrossWidening(Vector128<byte> value)
+Vector64<int> AddAcrossWidening(Vector128<short> value)
+Vector64<long> AddAcrossWidening(Vector128<int> value)
+Vector64<short> AddAcrossWidening(Vector128<sbyte> value)
+Vector64<uint> AddAcrossWidening(Vector128<ushort> value)
+Vector64<ulong> AddAcrossWidening(Vector128<uint> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addacrosswidening?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaddlv_u8).
+
+Assembly generated:
+
+```armasm", GetValue("AddAcrossWidening", "Performs 'AddAcrossWidening' operation.", 0), GetValue("AddAcrossWidening", Vector64byte_0.ToString(), 1), GetValue("AddAcrossWidening", apiResult.ToString(), 2));
+
+try {
+AddAcrossWideningTest(Vector64byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var AddHighNarrowingLowerResult = Dummy_AddHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
 apiResult = AddHighNarrowingLowerResult.ToString();
 } catch (Exception) {
@@ -5166,7 +5590,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 15. AddHighNarrowingLower
+### 23. AddHighNarrowingLower
 
 `Vector64<byte> AddHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
 
@@ -5221,7 +5645,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 16. AddHighNarrowingUpper
+### 24. AddHighNarrowingUpper
 
 `Vector128<byte> AddHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
 
@@ -5277,7 +5701,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 17. AddPairwise
+### 25. AddPairwise
 
 `Vector64<byte> AddPairwise(Vector64<byte> left, Vector64<byte> right)`
 
@@ -5335,6 +5759,58 @@ AddPairwiseTest(Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 
 try {
+var AddPairwiseScalarResult = Dummy_AddPairwiseScalarTest(Vector64float_0);
+apiResult = AddPairwiseScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 26. AddPairwiseScalar
+
+`Vector64<float> AddPairwiseScalar(Vector64<float> value)`
+
+{0}
+
+```csharp
+private Vector64<float> AddPairwiseScalarTest(Vector64<float> value)
+{{
+  return AdvSimd.Arm64.AddPairwiseScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<double> AddPairwiseScalar(Vector128<double> value)
+Vector64<long> AddPairwiseScalar(Vector128<long> value)
+Vector64<ulong> AddPairwiseScalar(Vector128<ulong> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpadds_f32).
+
+Assembly generated:
+
+```armasm", GetValue("AddPairwiseScalar", "Performs 'AddPairwiseScalar' operation.", 0), GetValue("AddPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("AddPairwiseScalar", apiResult.ToString(), 2));
+
+try {
+AddPairwiseScalarTest(Vector64float_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var AddPairwiseWideningResult = Dummy_AddPairwiseWideningTest(Vector64byte_0);
 apiResult = AddPairwiseWideningResult.ToString();
 } catch (Exception) {
@@ -5345,7 +5821,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 18. AddPairwiseWidening
+### 27. AddPairwiseWidening
 
 `Vector64<ushort> AddPairwiseWidening(Vector64<byte> value)`
 
@@ -5403,7 +5879,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 19. AddPairwiseWideningAndAdd
+### 28. AddPairwiseWideningAndAdd
 
 `Vector64<ushort> AddPairwiseWideningAndAdd(Vector64<ushort> addend, Vector64<byte> value)`
 
@@ -5462,7 +5938,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 20. AddPairwiseWideningAndAddScalar
+### 29. AddPairwiseWideningAndAddScalar
 
 `Vector64<long> AddPairwiseWideningAndAddScalar(Vector64<long> addend, Vector64<int> value)`
 
@@ -5513,7 +5989,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 21. AddPairwiseWideningScalar
+### 30. AddPairwiseWideningScalar
 
 `Vector64<long> AddPairwiseWideningScalar(Vector64<int> value)`
 
@@ -5563,7 +6039,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 22. AddRoundedHighNarrowingLower
+### 31. AddRoundedHighNarrowingLower
 
 `Vector64<byte> AddRoundedHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
 
@@ -5618,7 +6094,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 23. AddRoundedHighNarrowingUpper
+### 32. AddRoundedHighNarrowingUpper
 
 `Vector128<byte> AddRoundedHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
 
@@ -5674,7 +6150,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 24. AddSaturate
+### 33. AddSaturate
 
 `Vector64<byte> AddSaturate(Vector64<byte> left, Vector64<byte> right)`
 
@@ -5753,7 +6229,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 25. AddSaturateScalar
+### 34. AddSaturateScalar
 
 `Vector64<long> AddSaturateScalar(Vector64<long> left, Vector64<long> right)`
 
@@ -5820,7 +6296,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 26. AddScalar
+### 35. AddScalar
 
 `Vector64<double> AddScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -5873,7 +6349,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 27. AddWideningLower
+### 36. AddWideningLower
 
 `Vector128<ushort> AddWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
@@ -5934,7 +6410,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 28. AddWideningUpper
+### 37. AddWideningUpper
 
 `Vector128<ushort> AddWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
@@ -5995,7 +6471,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 29. And
+### 38. And
 
 `Vector64<byte> And(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6064,7 +6540,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 30. BitwiseClear
+### 39. BitwiseClear
 
 `Vector64<byte> BitwiseClear(Vector64<byte> value, Vector64<byte> mask)`
 
@@ -6133,7 +6609,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 31. BitwiseSelect
+### 40. BitwiseSelect
 
 `Vector64<byte> BitwiseSelect(Vector64<byte> select, Vector64<byte> left, Vector64<byte> right)`
 
@@ -6203,7 +6679,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 32. Ceiling
+### 41. Ceiling
 
 `Vector64<float> Ceiling(Vector64<float> value)`
 
@@ -6256,7 +6732,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 33. CeilingScalar
+### 42. CeilingScalar
 
 `Vector64<double> CeilingScalar(Vector64<double> value)`
 
@@ -6306,7 +6782,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 34. CompareEqual
+### 43. CompareEqual
 
 `Vector64<byte> CompareEqual(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6364,6 +6840,59 @@ CompareEqualTest(Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 
 try {
+var CompareEqualScalarResult = Dummy_CompareEqualScalarTest(Vector64double_0, Vector64double_1);
+apiResult = CompareEqualScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 44. CompareEqualScalar
+
+`Vector64<double> CompareEqualScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> CompareEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.CompareEqualScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<long> CompareEqualScalar(Vector64<long> left, Vector64<long> right)
+Vector64<float> CompareEqualScalar(Vector64<float> left, Vector64<float> right)
+Vector64<ulong> CompareEqualScalar(Vector64<ulong> left, Vector64<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.compareequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vceq_f64).
+
+Assembly generated:
+
+```armasm", GetValue("CompareEqualScalar", "Performs 'CompareEqualScalar' operation.", 0), GetValue("CompareEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareEqualScalar", apiResult.ToString(), 3));
+
+try {
+CompareEqualScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var CompareGreaterThanResult = Dummy_CompareGreaterThanTest(Vector64byte_0, Vector64byte_1);
 apiResult = CompareGreaterThanResult.ToString();
 } catch (Exception) {
@@ -6374,7 +6903,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 35. CompareGreaterThan
+### 45. CompareGreaterThan
 
 `Vector64<byte> CompareGreaterThan(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6430,6 +6959,28 @@ CompareGreaterThanTest(Vector64byte_0, Vector64byte_1);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: ARM64 Hardware Intrinsics APIs in .NET - Part 2
+subtitle: Sample code usage, examples and generated assembly code
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [vectorization using .NET APIs](../2020-08-01-Vectorization-APIs) blog, I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrinsic' APIs. In this post I will describe those hardware intrinsic APIs for ARM64 by showing sample code usage along with examples and generated ARM64 code. This will help people in understanding these APIs so they can use them to optimize their .NET code written to target ARM64. Since there are 360 APIs, describing all of them in a single post will be overwhelming. So I have divided these APIs among 8 blogs and will demonstrate 45 APIs in each blog. This is part 2 of that blog series.
+
+Most of the description of these APIs is adapted and referenced from [Arm Architecture Reference Manual Armv8, for Armv8-A architecture profile document](https://developer.arm.com/documentation/ddi0487/fc/). You can also refer to the description of SIMD and Floating-point instructions description at [Arm developer docs page](https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order).
+
+### APIs covered
+
+[CompareGreaterThanOrEqual](#1-comparegreaterthanorequal), [CompareGreaterThanOrEqualScalar](#2-comparegreaterthanorequalscalar), [CompareGreaterThanScalar](#3-comparegreaterthanscalar), [CompareLessThan](#4-comparelessthan), [CompareLessThanOrEqual](#5-comparelessthanorequal), [CompareLessThanOrEqualScalar](#6-comparelessthanorequalscalar), [CompareLessThanScalar](#7-comparelessthanscalar), [CompareTest](#8-comparetest), [CompareTestScalar](#9-comparetestscalar), [ConvertToDouble](#10-converttodouble), [ConvertToDoubleScalar](#11-converttodoublescalar), [ConvertToDoubleUpper](#12-converttodoubleupper), [ConvertToInt32RoundAwayFromZero](#13-converttoint32roundawayfromzero), [ConvertToInt32RoundAwayFromZeroScalar](#14-converttoint32roundawayfromzeroscalar), [ConvertToInt32RoundToEven](#15-converttoint32roundtoeven), [ConvertToInt32RoundToEvenScalar](#16-converttoint32roundtoevenscalar), [ConvertToInt32RoundToNegativeInfinity](#17-converttoint32roundtonegativeinfinity), [ConvertToInt32RoundToNegativeInfinityScalar](#18-converttoint32roundtonegativeinfinityscalar), [ConvertToInt32RoundToPositiveInfinity](#19-converttoint32roundtopositiveinfinity), [ConvertToInt32RoundToPositiveInfinityScalar](#20-converttoint32roundtopositiveinfinityscalar), [ConvertToInt32RoundToZero](#21-converttoint32roundtozero), [ConvertToInt32RoundToZeroScalar](#22-converttoint32roundtozeroscalar), [ConvertToInt64RoundAwayFromZero](#23-converttoint64roundawayfromzero), [ConvertToInt64RoundAwayFromZeroScalar](#24-converttoint64roundawayfromzeroscalar), [ConvertToInt64RoundToEven](#25-converttoint64roundtoeven), [ConvertToInt64RoundToEvenScalar](#26-converttoint64roundtoevenscalar), [ConvertToInt64RoundToNegativeInfinity](#27-converttoint64roundtonegativeinfinity), [ConvertToInt64RoundToNegativeInfinityScalar](#28-converttoint64roundtonegativeinfinityscalar), [ConvertToInt64RoundToPositiveInfinity](#29-converttoint64roundtopositiveinfinity), [ConvertToInt64RoundToPositiveInfinityScalar](#30-converttoint64roundtopositiveinfinityscalar), [ConvertToInt64RoundToZero](#31-converttoint64roundtozero), [ConvertToInt64RoundToZeroScalar](#32-converttoint64roundtozeroscalar), [ConvertToSingle](#33-converttosingle), [ConvertToSingleLower](#34-converttosinglelower), [ConvertToSingleRoundToOddLower](#35-converttosingleroundtooddlower), [ConvertToSingleRoundToOddUpper](#36-converttosingleroundtooddupper), [ConvertToSingleScalar](#37-converttosinglescalar), [ConvertToSingleUpper](#38-converttosingleupper), [ConvertToUInt32RoundAwayFromZero](#39-converttouint32roundawayfromzero), [ConvertToUInt32RoundAwayFromZeroScalar](#40-converttouint32roundawayfromzeroscalar), [ConvertToUInt32RoundToEven](#41-converttouint32roundtoeven), [ConvertToUInt32RoundToEvenScalar](#42-converttouint32roundtoevenscalar), [ConvertToUInt32RoundToNegativeInfinity](#43-converttouint32roundtonegativeinfinity), [ConvertToUInt32RoundToNegativeInfinityScalar](#44-converttouint32roundtonegativeinfinityscalar), [ConvertToUInt32RoundToPositiveInfinity](#45-converttouint32roundtopositiveinfinity)
+
+
+");
 
 try {
 var CompareGreaterThanOrEqualResult = Dummy_CompareGreaterThanOrEqualTest(Vector64byte_0, Vector64byte_1);
@@ -6439,10 +6990,9 @@ apiResult = CompareGreaterThanOrEqualResult.ToString();
 }
 
 Console.WriteLine(
-@"```
-------------------------------------------------
+@"
 
-### 36. CompareGreaterThanOrEqual
+### 1. CompareGreaterThanOrEqual
 
 `Vector64<byte> CompareGreaterThanOrEqual(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6500,6 +7050,112 @@ CompareGreaterThanOrEqualTest(Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 
 try {
+var CompareGreaterThanOrEqualScalarResult = Dummy_CompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
+apiResult = CompareGreaterThanOrEqualScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 2. CompareGreaterThanOrEqualScalar
+
+`Vector64<double> CompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> CompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.CompareGreaterThanOrEqualScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<long> CompareGreaterThanOrEqualScalar(Vector64<long> left, Vector64<long> right)
+Vector64<float> CompareGreaterThanOrEqualScalar(Vector64<float> left, Vector64<float> right)
+Vector64<ulong> CompareGreaterThanOrEqualScalar(Vector64<ulong> left, Vector64<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcge_f64).
+
+Assembly generated:
+
+```armasm", GetValue("CompareGreaterThanOrEqualScalar", "Performs 'CompareGreaterThanOrEqualScalar' operation.", 0), GetValue("CompareGreaterThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareGreaterThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareGreaterThanOrEqualScalar", apiResult.ToString(), 3));
+
+try {
+CompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var CompareGreaterThanScalarResult = Dummy_CompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
+apiResult = CompareGreaterThanScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 3. CompareGreaterThanScalar
+
+`Vector64<double> CompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> CompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.CompareGreaterThanScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<long> CompareGreaterThanScalar(Vector64<long> left, Vector64<long> right)
+Vector64<float> CompareGreaterThanScalar(Vector64<float> left, Vector64<float> right)
+Vector64<ulong> CompareGreaterThanScalar(Vector64<ulong> left, Vector64<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcgt_f64).
+
+Assembly generated:
+
+```armasm", GetValue("CompareGreaterThanScalar", "Performs 'CompareGreaterThanScalar' operation.", 0), GetValue("CompareGreaterThanScalar", Vector64double_0.ToString(), 1), GetValue("CompareGreaterThanScalar", Vector64double_1.ToString(), 2), GetValue("CompareGreaterThanScalar", apiResult.ToString(), 3));
+
+try {
+CompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var CompareLessThanResult = Dummy_CompareLessThanTest(Vector64byte_0, Vector64byte_1);
 apiResult = CompareLessThanResult.ToString();
 } catch (Exception) {
@@ -6510,7 +7166,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 37. CompareLessThan
+### 4. CompareLessThan
 
 `Vector64<byte> CompareLessThan(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6578,7 +7234,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 38. CompareLessThanOrEqual
+### 5. CompareLessThanOrEqual
 
 `Vector64<byte> CompareLessThanOrEqual(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6636,6 +7292,112 @@ CompareLessThanOrEqualTest(Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 
 try {
+var CompareLessThanOrEqualScalarResult = Dummy_CompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
+apiResult = CompareLessThanOrEqualScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 6. CompareLessThanOrEqualScalar
+
+`Vector64<double> CompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> CompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.CompareLessThanOrEqualScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<long> CompareLessThanOrEqualScalar(Vector64<long> left, Vector64<long> right)
+Vector64<float> CompareLessThanOrEqualScalar(Vector64<float> left, Vector64<float> right)
+Vector64<ulong> CompareLessThanOrEqualScalar(Vector64<ulong> left, Vector64<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcle_f64).
+
+Assembly generated:
+
+```armasm", GetValue("CompareLessThanOrEqualScalar", "Performs 'CompareLessThanOrEqualScalar' operation.", 0), GetValue("CompareLessThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareLessThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareLessThanOrEqualScalar", apiResult.ToString(), 3));
+
+try {
+CompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var CompareLessThanScalarResult = Dummy_CompareLessThanScalarTest(Vector64double_0, Vector64double_1);
+apiResult = CompareLessThanScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 7. CompareLessThanScalar
+
+`Vector64<double> CompareLessThanScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> CompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.CompareLessThanScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<long> CompareLessThanScalar(Vector64<long> left, Vector64<long> right)
+Vector64<float> CompareLessThanScalar(Vector64<float> left, Vector64<float> right)
+Vector64<ulong> CompareLessThanScalar(Vector64<ulong> left, Vector64<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vclt_f64).
+
+Assembly generated:
+
+```armasm", GetValue("CompareLessThanScalar", "Performs 'CompareLessThanScalar' operation.", 0), GetValue("CompareLessThanScalar", Vector64double_0.ToString(), 1), GetValue("CompareLessThanScalar", Vector64double_1.ToString(), 2), GetValue("CompareLessThanScalar", apiResult.ToString(), 3));
+
+try {
+CompareLessThanScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var CompareTestResult = Dummy_CompareTestTest(Vector64byte_0, Vector64byte_1);
 apiResult = CompareTestResult.ToString();
 } catch (Exception) {
@@ -6646,7 +7408,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 39. CompareTest
+### 8. CompareTest
 
 `Vector64<byte> CompareTest(Vector64<byte> left, Vector64<byte> right)`
 
@@ -6704,6 +7466,203 @@ CompareTestTest(Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 
 try {
+var CompareTestScalarResult = Dummy_CompareTestScalarTest(Vector64double_0, Vector64double_1);
+apiResult = CompareTestScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 9. CompareTestScalar
+
+`Vector64<double> CompareTestScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> CompareTestScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.CompareTestScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<long> CompareTestScalar(Vector64<long> left, Vector64<long> right)
+Vector64<ulong> CompareTestScalar(Vector64<ulong> left, Vector64<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparetestscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vtst_f64).
+
+Assembly generated:
+
+```armasm", GetValue("CompareTestScalar", "Performs 'CompareTestScalar' operation.", 0), GetValue("CompareTestScalar", Vector64double_0.ToString(), 1), GetValue("CompareTestScalar", Vector64double_1.ToString(), 2), GetValue("CompareTestScalar", apiResult.ToString(), 3));
+
+try {
+CompareTestScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToDoubleResult = Dummy_ConvertToDoubleTest(Vector64float_0);
+apiResult = ConvertToDoubleResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 10. ConvertToDouble
+
+`Vector128<double> ConvertToDouble(Vector64<float> value)`
+
+{0}
+
+```csharp
+private Vector128<double> ConvertToDoubleTest(Vector64<float> value)
+{{
+  return AdvSimd.Arm64.ConvertToDouble(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<double> ConvertToDouble(Vector128<long> value)
+Vector128<double> ConvertToDouble(Vector128<ulong> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodouble?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_f64_f32).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToDouble", "Performs 'ConvertToDouble' operation.", 0), GetValue("ConvertToDouble", Vector64float_0.ToString(), 1), GetValue("ConvertToDouble", apiResult.ToString(), 2));
+
+try {
+ConvertToDoubleTest(Vector64float_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToDoubleScalarResult = Dummy_ConvertToDoubleScalarTest(Vector64long_0);
+apiResult = ConvertToDoubleScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 11. ConvertToDoubleScalar
+
+`Vector64<double> ConvertToDoubleScalar(Vector64<long> value)`
+
+{0}
+
+```csharp
+private Vector64<double> ConvertToDoubleScalarTest(Vector64<long> value)
+{{
+  return AdvSimd.Arm64.ConvertToDoubleScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<double> ConvertToDoubleScalar(Vector64<ulong> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodoublescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_f64_s64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToDoubleScalar", "Performs 'ConvertToDoubleScalar' operation.", 0), GetValue("ConvertToDoubleScalar", Vector64long_0.ToString(), 1), GetValue("ConvertToDoubleScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToDoubleScalarTest(Vector64long_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToDoubleUpperResult = Dummy_ConvertToDoubleUpperTest(Vector128float_0);
+apiResult = ConvertToDoubleUpperResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 12. ConvertToDoubleUpper
+
+`Vector128<double> ConvertToDoubleUpper(Vector128<float> value)`
+
+{0}
+
+```csharp
+private Vector128<double> ConvertToDoubleUpperTest(Vector128<float> value)
+{{
+  return AdvSimd.Arm64.ConvertToDoubleUpper(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodoubleupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_high_f64_f32).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToDoubleUpper", "Performs 'ConvertToDoubleUpper' operation.", 0), GetValue("ConvertToDoubleUpper", Vector128float_0.ToString(), 1), GetValue("ConvertToDoubleUpper", apiResult.ToString(), 2));
+
+try {
+ConvertToDoubleUpperTest(Vector128float_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ConvertToInt32RoundAwayFromZeroResult = Dummy_ConvertToInt32RoundAwayFromZeroTest(Vector64float_0);
 apiResult = ConvertToInt32RoundAwayFromZeroResult.ToString();
 } catch (Exception) {
@@ -6714,7 +7673,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 40. ConvertToInt32RoundAwayFromZero
+### 13. ConvertToInt32RoundAwayFromZero
 
 `Vector64<int> ConvertToInt32RoundAwayFromZero(Vector64<float> value)`
 
@@ -6764,7 +7723,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 41. ConvertToInt32RoundAwayFromZeroScalar
+### 14. ConvertToInt32RoundAwayFromZeroScalar
 
 `Vector64<int> ConvertToInt32RoundAwayFromZeroScalar(Vector64<float> value)`
 
@@ -6808,7 +7767,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 42. ConvertToInt32RoundToEven
+### 15. ConvertToInt32RoundToEven
 
 `Vector64<int> ConvertToInt32RoundToEven(Vector64<float> value)`
 
@@ -6858,7 +7817,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 43. ConvertToInt32RoundToEvenScalar
+### 16. ConvertToInt32RoundToEvenScalar
 
 `Vector64<int> ConvertToInt32RoundToEvenScalar(Vector64<float> value)`
 
@@ -6902,7 +7861,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 44. ConvertToInt32RoundToNegativeInfinity
+### 17. ConvertToInt32RoundToNegativeInfinity
 
 `Vector64<int> ConvertToInt32RoundToNegativeInfinity(Vector64<float> value)`
 
@@ -6952,7 +7911,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 45. ConvertToInt32RoundToNegativeInfinityScalar
+### 18. ConvertToInt32RoundToNegativeInfinityScalar
 
 `Vector64<int> ConvertToInt32RoundToNegativeInfinityScalar(Vector64<float> value)`
 
@@ -6984,27 +7943,6 @@ ConvertToInt32RoundToNegativeInfinityScalarTest(Vector64float_0);
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 2
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[ConvertToInt32RoundToPositiveInfinity](#1-converttoint32roundtopositiveinfinity), [ConvertToInt32RoundToPositiveInfinityScalar](#2-converttoint32roundtopositiveinfinityscalar), [ConvertToInt32RoundToZero](#3-converttoint32roundtozero), [ConvertToInt32RoundToZeroScalar](#4-converttoint32roundtozeroscalar), [ConvertToSingle](#5-converttosingle), [ConvertToSingleScalar](#6-converttosinglescalar), [ConvertToUInt32RoundAwayFromZero](#7-converttouint32roundawayfromzero), [ConvertToUInt32RoundAwayFromZeroScalar](#8-converttouint32roundawayfromzeroscalar), [ConvertToUInt32RoundToEven](#9-converttouint32roundtoeven), [ConvertToUInt32RoundToEvenScalar](#10-converttouint32roundtoevenscalar), [ConvertToUInt32RoundToNegativeInfinity](#11-converttouint32roundtonegativeinfinity), [ConvertToUInt32RoundToNegativeInfinityScalar](#12-converttouint32roundtonegativeinfinityscalar), [ConvertToUInt32RoundToPositiveInfinity](#13-converttouint32roundtopositiveinfinity), [ConvertToUInt32RoundToPositiveInfinityScalar](#14-converttouint32roundtopositiveinfinityscalar), [ConvertToUInt32RoundToZero](#15-converttouint32roundtozero), [ConvertToUInt32RoundToZeroScalar](#16-converttouint32roundtozeroscalar), [DivideScalar](#17-dividescalar), [DuplicateSelectedScalarToVector64](#18-duplicateselectedscalartovector64), [DuplicateSelectedScalarToVector128](#19-duplicateselectedscalartovector128), [DuplicateToVector64](#20-duplicatetovector64), [DuplicateToVector128](#21-duplicatetovector128), [Extract](#22-extract), [ExtractNarrowingLower](#23-extractnarrowinglower), [ExtractNarrowingSaturateLower](#24-extractnarrowingsaturatelower), [ExtractNarrowingSaturateUnsignedLower](#25-extractnarrowingsaturateunsignedlower), [ExtractNarrowingSaturateUnsignedUpper](#26-extractnarrowingsaturateunsignedupper), [ExtractNarrowingSaturateUpper](#27-extractnarrowingsaturateupper), [ExtractNarrowingUpper](#28-extractnarrowingupper), [ExtractVector64](#29-extractvector64), [ExtractVector128](#30-extractvector128), [Floor](#31-floor), [FloorScalar](#32-floorscalar), [FusedAddHalving](#33-fusedaddhalving), [FusedAddRoundedHalving](#34-fusedaddroundedhalving), [FusedMultiplyAdd](#35-fusedmultiplyadd), [FusedMultiplyAddNegatedScalar](#36-fusedmultiplyaddnegatedscalar), [FusedMultiplyAddScalar](#37-fusedmultiplyaddscalar), [FusedMultiplySubtract](#38-fusedmultiplysubtract), [FusedMultiplySubtractNegatedScalar](#39-fusedmultiplysubtractnegatedscalar), [FusedMultiplySubtractScalar](#40-fusedmultiplysubtractscalar), [FusedSubtractHalving](#41-fusedsubtracthalving), [Insert](#42-insert), [InsertScalar](#43-insertscalar), [LeadingSignCount](#44-leadingsigncount), [LeadingZeroCount](#45-leadingzerocount),[...](Part2.md)
-
-
-");
 
 try {
 var ConvertToInt32RoundToPositiveInfinityResult = Dummy_ConvertToInt32RoundToPositiveInfinityTest(Vector64float_0);
@@ -7014,9 +7952,10 @@ apiResult = ConvertToInt32RoundToPositiveInfinityResult.ToString();
 }
 
 Console.WriteLine(
-@"
+@"```
+------------------------------------------------
 
-### 1. ConvertToInt32RoundToPositiveInfinity
+### 19. ConvertToInt32RoundToPositiveInfinity
 
 `Vector64<int> ConvertToInt32RoundToPositiveInfinity(Vector64<float> value)`
 
@@ -7066,7 +8005,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 2. ConvertToInt32RoundToPositiveInfinityScalar
+### 20. ConvertToInt32RoundToPositiveInfinityScalar
 
 `Vector64<int> ConvertToInt32RoundToPositiveInfinityScalar(Vector64<float> value)`
 
@@ -7110,7 +8049,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 3. ConvertToInt32RoundToZero
+### 21. ConvertToInt32RoundToZero
 
 `Vector64<int> ConvertToInt32RoundToZero(Vector64<float> value)`
 
@@ -7160,7 +8099,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 4. ConvertToInt32RoundToZeroScalar
+### 22. ConvertToInt32RoundToZeroScalar
 
 `Vector64<int> ConvertToInt32RoundToZeroScalar(Vector64<float> value)`
 
@@ -7194,6 +8133,446 @@ ConvertToInt32RoundToZeroScalarTest(Vector64float_0);
 // ----------------------------------------------------------------
 
 try {
+var ConvertToInt64RoundAwayFromZeroResult = Dummy_ConvertToInt64RoundAwayFromZeroTest(Vector128double_0);
+apiResult = ConvertToInt64RoundAwayFromZeroResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 23. ConvertToInt64RoundAwayFromZero
+
+`Vector128<long> ConvertToInt64RoundAwayFromZero(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<long> ConvertToInt64RoundAwayFromZeroTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZero(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundawayfromzero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtaq_s64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToInt64RoundAwayFromZero", "Performs 'ConvertToInt64RoundAwayFromZero' operation.", 0), GetValue("ConvertToInt64RoundAwayFromZero", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundAwayFromZero", apiResult.ToString(), 2));
+
+try {
+ConvertToInt64RoundAwayFromZeroTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToInt64RoundAwayFromZeroScalarResult = Dummy_ConvertToInt64RoundAwayFromZeroScalarTest(Vector64double_0);
+apiResult = ConvertToInt64RoundAwayFromZeroScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 24. ConvertToInt64RoundAwayFromZeroScalar
+
+`Vector64<long> ConvertToInt64RoundAwayFromZeroScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<long> ConvertToInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZeroScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundawayfromzeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvta_s64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToInt64RoundAwayFromZeroScalar", "Performs 'ConvertToInt64RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToInt64RoundAwayFromZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundAwayFromZeroScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToInt64RoundAwayFromZeroScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToInt64RoundToEvenResult = Dummy_ConvertToInt64RoundToEvenTest(Vector128double_0);
+apiResult = ConvertToInt64RoundToEvenResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 25. ConvertToInt64RoundToEven
+
+`Vector128<long> ConvertToInt64RoundToEven(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<long> ConvertToInt64RoundToEvenTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToInt64RoundToEven(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtoeven?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtnq_s64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToInt64RoundToEven", "Performs 'ConvertToInt64RoundToEven' operation.", 0), GetValue("ConvertToInt64RoundToEven", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToEven", apiResult.ToString(), 2));
+
+try {
+ConvertToInt64RoundToEvenTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToInt64RoundToEvenScalarResult = Dummy_ConvertToInt64RoundToEvenScalarTest(Vector64double_0);
+apiResult = ConvertToInt64RoundToEvenScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 26. ConvertToInt64RoundToEvenScalar
+
+`Vector64<long> ConvertToInt64RoundToEvenScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<long> ConvertToInt64RoundToEvenScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToInt64RoundToEvenScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtoevenscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtn_s64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToInt64RoundToEvenScalar", "Performs 'ConvertToInt64RoundToEvenScalar' operation.", 0), GetValue("ConvertToInt64RoundToEvenScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToEvenScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToInt64RoundToEvenScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToInt64RoundToNegativeInfinityResult = Dummy_ConvertToInt64RoundToNegativeInfinityTest(Vector128double_0);
+apiResult = ConvertToInt64RoundToNegativeInfinityResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 27. ConvertToInt64RoundToNegativeInfinity
+
+`Vector128<long> ConvertToInt64RoundToNegativeInfinity(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<long> ConvertToInt64RoundToNegativeInfinityTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinity(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtonegativeinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtmq_s64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToInt64RoundToNegativeInfinity", "Performs 'ConvertToInt64RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToInt64RoundToNegativeInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToNegativeInfinity", apiResult.ToString(), 2));
+
+try {
+ConvertToInt64RoundToNegativeInfinityTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToInt64RoundToNegativeInfinityScalarResult = Dummy_ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
+apiResult = ConvertToInt64RoundToNegativeInfinityScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 28. ConvertToInt64RoundToNegativeInfinityScalar
+
+`Vector64<long> ConvertToInt64RoundToNegativeInfinityScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<long> ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinityScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtonegativeinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtm_s64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToInt64RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToInt64RoundToNegativeInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToInt64RoundToPositiveInfinityResult = Dummy_ConvertToInt64RoundToPositiveInfinityTest(Vector128double_0);
+apiResult = ConvertToInt64RoundToPositiveInfinityResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 29. ConvertToInt64RoundToPositiveInfinity
+
+`Vector128<long> ConvertToInt64RoundToPositiveInfinity(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<long> ConvertToInt64RoundToPositiveInfinityTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinity(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtopositiveinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtpq_s64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToInt64RoundToPositiveInfinity", "Performs 'ConvertToInt64RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToInt64RoundToPositiveInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToPositiveInfinity", apiResult.ToString(), 2));
+
+try {
+ConvertToInt64RoundToPositiveInfinityTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToInt64RoundToPositiveInfinityScalarResult = Dummy_ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
+apiResult = ConvertToInt64RoundToPositiveInfinityScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 30. ConvertToInt64RoundToPositiveInfinityScalar
+
+`Vector64<long> ConvertToInt64RoundToPositiveInfinityScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<long> ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinityScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtopositiveinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtp_s64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToInt64RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToInt64RoundToPositiveInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToInt64RoundToZeroResult = Dummy_ConvertToInt64RoundToZeroTest(Vector128double_0);
+apiResult = ConvertToInt64RoundToZeroResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 31. ConvertToInt64RoundToZero
+
+`Vector128<long> ConvertToInt64RoundToZero(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<long> ConvertToInt64RoundToZeroTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToInt64RoundToZero(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtozero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtq_s64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToInt64RoundToZero", "Performs 'ConvertToInt64RoundToZero' operation.", 0), GetValue("ConvertToInt64RoundToZero", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToZero", apiResult.ToString(), 2));
+
+try {
+ConvertToInt64RoundToZeroTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToInt64RoundToZeroScalarResult = Dummy_ConvertToInt64RoundToZeroScalarTest(Vector64double_0);
+apiResult = ConvertToInt64RoundToZeroScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 32. ConvertToInt64RoundToZeroScalar
+
+`Vector64<long> ConvertToInt64RoundToZeroScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<long> ConvertToInt64RoundToZeroScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToInt64RoundToZeroScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtozeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_s64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToInt64RoundToZeroScalar", "Performs 'ConvertToInt64RoundToZeroScalar' operation.", 0), GetValue("ConvertToInt64RoundToZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToZeroScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToInt64RoundToZeroScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ConvertToSingleResult = Dummy_ConvertToSingleTest(Vector64int_0);
 apiResult = ConvertToSingleResult.ToString();
 } catch (Exception) {
@@ -7204,7 +8583,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 5. ConvertToSingle
+### 33. ConvertToSingle
 
 `Vector64<float> ConvertToSingle(Vector64<int> value)`
 
@@ -7246,6 +8625,139 @@ ConvertToSingleTest(Vector64int_0);
 // ----------------------------------------------------------------
 
 try {
+var ConvertToSingleLowerResult = Dummy_ConvertToSingleLowerTest(Vector128double_0);
+apiResult = ConvertToSingleLowerResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 34. ConvertToSingleLower
+
+`Vector64<float> ConvertToSingleLower(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector64<float> ConvertToSingleLowerTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToSingleLower(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosinglelower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_f32_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToSingleLower", "Performs 'ConvertToSingleLower' operation.", 0), GetValue("ConvertToSingleLower", Vector128double_0.ToString(), 1), GetValue("ConvertToSingleLower", apiResult.ToString(), 2));
+
+try {
+ConvertToSingleLowerTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToSingleRoundToOddLowerResult = Dummy_ConvertToSingleRoundToOddLowerTest(Vector128double_0);
+apiResult = ConvertToSingleRoundToOddLowerResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 35. ConvertToSingleRoundToOddLower
+
+`Vector64<float> ConvertToSingleRoundToOddLower(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector64<float> ConvertToSingleRoundToOddLowerTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToSingleRoundToOddLower(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleroundtooddlower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtx_f32_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToSingleRoundToOddLower", "Performs 'ConvertToSingleRoundToOddLower' operation.", 0), GetValue("ConvertToSingleRoundToOddLower", Vector128double_0.ToString(), 1), GetValue("ConvertToSingleRoundToOddLower", apiResult.ToString(), 2));
+
+try {
+ConvertToSingleRoundToOddLowerTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToSingleRoundToOddUpperResult = Dummy_ConvertToSingleRoundToOddUpperTest(Vector64float_0, Vector128double_0);
+apiResult = ConvertToSingleRoundToOddUpperResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 36. ConvertToSingleRoundToOddUpper
+
+`Vector128<float> ConvertToSingleRoundToOddUpper(Vector64<float> lower, Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<float> ConvertToSingleRoundToOddUpperTest(Vector64<float> lower, Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToSingleRoundToOddUpper(lower, value);
+}}
+// lower = {1}
+// value = {2}
+// Result = {3}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleroundtooddupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtx_high_f32_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToSingleRoundToOddUpper", "Performs 'ConvertToSingleRoundToOddUpper' operation.", 0), GetValue("ConvertToSingleRoundToOddUpper", Vector64float_0.ToString(), 1), GetValue("ConvertToSingleRoundToOddUpper", Vector128double_0.ToString(), 2), GetValue("ConvertToSingleRoundToOddUpper", apiResult.ToString(), 3));
+
+try {
+ConvertToSingleRoundToOddUpperTest(Vector64float_0, Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ConvertToSingleScalarResult = Dummy_ConvertToSingleScalarTest(Vector64int_0);
 apiResult = ConvertToSingleScalarResult.ToString();
 } catch (Exception) {
@@ -7256,7 +8768,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 6. ConvertToSingleScalar
+### 37. ConvertToSingleScalar
 
 `Vector64<float> ConvertToSingleScalar(Vector64<int> value)`
 
@@ -7296,6 +8808,51 @@ ConvertToSingleScalarTest(Vector64int_0);
 // ----------------------------------------------------------------
 
 try {
+var ConvertToSingleUpperResult = Dummy_ConvertToSingleUpperTest(Vector64float_0, Vector128double_0);
+apiResult = ConvertToSingleUpperResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 38. ConvertToSingleUpper
+
+`Vector128<float> ConvertToSingleUpper(Vector64<float> lower, Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<float> ConvertToSingleUpperTest(Vector64<float> lower, Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToSingleUpper(lower, value);
+}}
+// lower = {1}
+// value = {2}
+// Result = {3}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_high_f32_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToSingleUpper", "Performs 'ConvertToSingleUpper' operation.", 0), GetValue("ConvertToSingleUpper", Vector64float_0.ToString(), 1), GetValue("ConvertToSingleUpper", Vector128double_0.ToString(), 2), GetValue("ConvertToSingleUpper", apiResult.ToString(), 3));
+
+try {
+ConvertToSingleUpperTest(Vector64float_0, Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ConvertToUInt32RoundAwayFromZeroResult = Dummy_ConvertToUInt32RoundAwayFromZeroTest(Vector64float_0);
 apiResult = ConvertToUInt32RoundAwayFromZeroResult.ToString();
 } catch (Exception) {
@@ -7306,7 +8863,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 7. ConvertToUInt32RoundAwayFromZero
+### 39. ConvertToUInt32RoundAwayFromZero
 
 `Vector64<uint> ConvertToUInt32RoundAwayFromZero(Vector64<float> value)`
 
@@ -7356,7 +8913,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 8. ConvertToUInt32RoundAwayFromZeroScalar
+### 40. ConvertToUInt32RoundAwayFromZeroScalar
 
 `Vector64<uint> ConvertToUInt32RoundAwayFromZeroScalar(Vector64<float> value)`
 
@@ -7400,7 +8957,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 9. ConvertToUInt32RoundToEven
+### 41. ConvertToUInt32RoundToEven
 
 `Vector64<uint> ConvertToUInt32RoundToEven(Vector64<float> value)`
 
@@ -7450,7 +9007,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 10. ConvertToUInt32RoundToEvenScalar
+### 42. ConvertToUInt32RoundToEvenScalar
 
 `Vector64<uint> ConvertToUInt32RoundToEvenScalar(Vector64<float> value)`
 
@@ -7494,7 +9051,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 11. ConvertToUInt32RoundToNegativeInfinity
+### 43. ConvertToUInt32RoundToNegativeInfinity
 
 `Vector64<uint> ConvertToUInt32RoundToNegativeInfinity(Vector64<float> value)`
 
@@ -7544,7 +9101,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 12. ConvertToUInt32RoundToNegativeInfinityScalar
+### 44. ConvertToUInt32RoundToNegativeInfinityScalar
 
 `Vector64<uint> ConvertToUInt32RoundToNegativeInfinityScalar(Vector64<float> value)`
 
@@ -7588,7 +9145,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 13. ConvertToUInt32RoundToPositiveInfinity
+### 45. ConvertToUInt32RoundToPositiveInfinity
 
 `Vector64<uint> ConvertToUInt32RoundToPositiveInfinity(Vector64<float> value)`
 
@@ -7626,6 +9183,28 @@ ConvertToUInt32RoundToPositiveInfinityTest(Vector64float_0);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: ARM64 Hardware Intrinsics APIs in .NET - Part 3
+subtitle: Sample code usage, examples and generated assembly code
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [vectorization using .NET APIs](../2020-08-01-Vectorization-APIs) blog, I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrinsic' APIs. In this post I will describe those hardware intrinsic APIs for ARM64 by showing sample code usage along with examples and generated ARM64 code. This will help people in understanding these APIs so they can use them to optimize their .NET code written to target ARM64. Since there are 360 APIs, describing all of them in a single post will be overwhelming. So I have divided these APIs among 8 blogs and will demonstrate 45 APIs in each blog. This is part 3 of that blog series.
+
+Most of the description of these APIs is adapted and referenced from [Arm Architecture Reference Manual Armv8, for Armv8-A architecture profile document](https://developer.arm.com/documentation/ddi0487/fc/). You can also refer to the description of SIMD and Floating-point instructions description at [Arm developer docs page](https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order).
+
+### APIs covered
+
+[ConvertToUInt32RoundToPositiveInfinityScalar](#1-converttouint32roundtopositiveinfinityscalar), [ConvertToUInt32RoundToZero](#2-converttouint32roundtozero), [ConvertToUInt32RoundToZeroScalar](#3-converttouint32roundtozeroscalar), [ConvertToUInt64RoundAwayFromZero](#4-converttouint64roundawayfromzero), [ConvertToUInt64RoundAwayFromZeroScalar](#5-converttouint64roundawayfromzeroscalar), [ConvertToUInt64RoundToEven](#6-converttouint64roundtoeven), [ConvertToUInt64RoundToEvenScalar](#7-converttouint64roundtoevenscalar), [ConvertToUInt64RoundToNegativeInfinity](#8-converttouint64roundtonegativeinfinity), [ConvertToUInt64RoundToNegativeInfinityScalar](#9-converttouint64roundtonegativeinfinityscalar), [ConvertToUInt64RoundToPositiveInfinity](#10-converttouint64roundtopositiveinfinity), [ConvertToUInt64RoundToPositiveInfinityScalar](#11-converttouint64roundtopositiveinfinityscalar), [ConvertToUInt64RoundToZero](#12-converttouint64roundtozero), [ConvertToUInt64RoundToZeroScalar](#13-converttouint64roundtozeroscalar), [Divide](#14-divide), [DivideScalar](#15-dividescalar), [DuplicateSelectedScalarToVector128](#16-duplicateselectedscalartovector128), [DuplicateSelectedScalarToVector64](#17-duplicateselectedscalartovector64), [DuplicateToVector128](#18-duplicatetovector128), [DuplicateToVector64](#19-duplicatetovector64), [Extract](#20-extract), [ExtractNarrowingLower](#21-extractnarrowinglower), [ExtractNarrowingSaturateLower](#22-extractnarrowingsaturatelower), [ExtractNarrowingSaturateScalar](#23-extractnarrowingsaturatescalar), [ExtractNarrowingSaturateUnsignedLower](#24-extractnarrowingsaturateunsignedlower), [ExtractNarrowingSaturateUnsignedScalar](#25-extractnarrowingsaturateunsignedscalar), [ExtractNarrowingSaturateUnsignedUpper](#26-extractnarrowingsaturateunsignedupper), [ExtractNarrowingSaturateUpper](#27-extractnarrowingsaturateupper), [ExtractNarrowingUpper](#28-extractnarrowingupper), [ExtractVector128](#29-extractvector128), [ExtractVector64](#30-extractvector64), [Floor](#31-floor), [FloorScalar](#32-floorscalar), [FusedAddHalving](#33-fusedaddhalving), [FusedAddRoundedHalving](#34-fusedaddroundedhalving), [FusedMultiplyAdd](#35-fusedmultiplyadd), [FusedMultiplyAddByScalar](#36-fusedmultiplyaddbyscalar), [FusedMultiplyAddBySelectedScalar](#37-fusedmultiplyaddbyselectedscalar), [FusedMultiplyAddNegatedScalar](#38-fusedmultiplyaddnegatedscalar), [FusedMultiplyAddScalar](#39-fusedmultiplyaddscalar), [FusedMultiplyAddScalarBySelectedScalar](#40-fusedmultiplyaddscalarbyselectedscalar), [FusedMultiplySubtract](#41-fusedmultiplysubtract), [FusedMultiplySubtractByScalar](#42-fusedmultiplysubtractbyscalar), [FusedMultiplySubtractBySelectedScalar](#43-fusedmultiplysubtractbyselectedscalar), [FusedMultiplySubtractNegatedScalar](#44-fusedmultiplysubtractnegatedscalar), [FusedMultiplySubtractScalar](#45-fusedmultiplysubtractscalar)
+
+
+");
 
 try {
 var ConvertToUInt32RoundToPositiveInfinityScalarResult = Dummy_ConvertToUInt32RoundToPositiveInfinityScalarTest(Vector64float_0);
@@ -7635,10 +9214,9 @@ apiResult = ConvertToUInt32RoundToPositiveInfinityScalarResult.ToString();
 }
 
 Console.WriteLine(
-@"```
-------------------------------------------------
+@"
 
-### 14. ConvertToUInt32RoundToPositiveInfinityScalar
+### 1. ConvertToUInt32RoundToPositiveInfinityScalar
 
 `Vector64<uint> ConvertToUInt32RoundToPositiveInfinityScalar(Vector64<float> value)`
 
@@ -7682,7 +9260,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 15. ConvertToUInt32RoundToZero
+### 2. ConvertToUInt32RoundToZero
 
 `Vector64<uint> ConvertToUInt32RoundToZero(Vector64<float> value)`
 
@@ -7732,7 +9310,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 16. ConvertToUInt32RoundToZeroScalar
+### 3. ConvertToUInt32RoundToZeroScalar
 
 `Vector64<uint> ConvertToUInt32RoundToZeroScalar(Vector64<float> value)`
 
@@ -7766,6 +9344,498 @@ ConvertToUInt32RoundToZeroScalarTest(Vector64float_0);
 // ----------------------------------------------------------------
 
 try {
+var ConvertToUInt64RoundAwayFromZeroResult = Dummy_ConvertToUInt64RoundAwayFromZeroTest(Vector128double_0);
+apiResult = ConvertToUInt64RoundAwayFromZeroResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 4. ConvertToUInt64RoundAwayFromZero
+
+`Vector128<ulong> ConvertToUInt64RoundAwayFromZero(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<ulong> ConvertToUInt64RoundAwayFromZeroTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZero(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundawayfromzero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtaq_u64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToUInt64RoundAwayFromZero", "Performs 'ConvertToUInt64RoundAwayFromZero' operation.", 0), GetValue("ConvertToUInt64RoundAwayFromZero", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundAwayFromZero", apiResult.ToString(), 2));
+
+try {
+ConvertToUInt64RoundAwayFromZeroTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToUInt64RoundAwayFromZeroScalarResult = Dummy_ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64double_0);
+apiResult = ConvertToUInt64RoundAwayFromZeroScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 5. ConvertToUInt64RoundAwayFromZeroScalar
+
+`Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZeroScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundawayfromzeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvta_u64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToUInt64RoundAwayFromZeroScalar", "Performs 'ConvertToUInt64RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToUInt64RoundAwayFromZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundAwayFromZeroScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToUInt64RoundToEvenResult = Dummy_ConvertToUInt64RoundToEvenTest(Vector128double_0);
+apiResult = ConvertToUInt64RoundToEvenResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 6. ConvertToUInt64RoundToEven
+
+`Vector128<ulong> ConvertToUInt64RoundToEven(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<ulong> ConvertToUInt64RoundToEvenTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToEven(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtoeven?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtnq_u64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToUInt64RoundToEven", "Performs 'ConvertToUInt64RoundToEven' operation.", 0), GetValue("ConvertToUInt64RoundToEven", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToEven", apiResult.ToString(), 2));
+
+try {
+ConvertToUInt64RoundToEvenTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToUInt64RoundToEvenScalarResult = Dummy_ConvertToUInt64RoundToEvenScalarTest(Vector64double_0);
+apiResult = ConvertToUInt64RoundToEvenScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 7. ConvertToUInt64RoundToEvenScalar
+
+`Vector64<ulong> ConvertToUInt64RoundToEvenScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<ulong> ConvertToUInt64RoundToEvenScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToEvenScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtoevenscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtn_u64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToUInt64RoundToEvenScalar", "Performs 'ConvertToUInt64RoundToEvenScalar' operation.", 0), GetValue("ConvertToUInt64RoundToEvenScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToEvenScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToUInt64RoundToEvenScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToUInt64RoundToNegativeInfinityResult = Dummy_ConvertToUInt64RoundToNegativeInfinityTest(Vector128double_0);
+apiResult = ConvertToUInt64RoundToNegativeInfinityResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 8. ConvertToUInt64RoundToNegativeInfinity
+
+`Vector128<ulong> ConvertToUInt64RoundToNegativeInfinity(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<ulong> ConvertToUInt64RoundToNegativeInfinityTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinity(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtonegativeinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtmq_u64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToUInt64RoundToNegativeInfinity", "Performs 'ConvertToUInt64RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToUInt64RoundToNegativeInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToNegativeInfinity", apiResult.ToString(), 2));
+
+try {
+ConvertToUInt64RoundToNegativeInfinityTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToUInt64RoundToNegativeInfinityScalarResult = Dummy_ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
+apiResult = ConvertToUInt64RoundToNegativeInfinityScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 9. ConvertToUInt64RoundToNegativeInfinityScalar
+
+`Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinityScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtonegativeinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtm_u64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToUInt64RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToUInt64RoundToPositiveInfinityResult = Dummy_ConvertToUInt64RoundToPositiveInfinityTest(Vector128double_0);
+apiResult = ConvertToUInt64RoundToPositiveInfinityResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 10. ConvertToUInt64RoundToPositiveInfinity
+
+`Vector128<ulong> ConvertToUInt64RoundToPositiveInfinity(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<ulong> ConvertToUInt64RoundToPositiveInfinityTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinity(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtopositiveinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtpq_u64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToUInt64RoundToPositiveInfinity", "Performs 'ConvertToUInt64RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToUInt64RoundToPositiveInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToPositiveInfinity", apiResult.ToString(), 2));
+
+try {
+ConvertToUInt64RoundToPositiveInfinityTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToUInt64RoundToPositiveInfinityScalarResult = Dummy_ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
+apiResult = ConvertToUInt64RoundToPositiveInfinityScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 11. ConvertToUInt64RoundToPositiveInfinityScalar
+
+`Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinityScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtopositiveinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtp_u64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToUInt64RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToUInt64RoundToZeroResult = Dummy_ConvertToUInt64RoundToZeroTest(Vector128double_0);
+apiResult = ConvertToUInt64RoundToZeroResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 12. ConvertToUInt64RoundToZero
+
+`Vector128<ulong> ConvertToUInt64RoundToZero(Vector128<double> value)`
+
+{0}
+
+```csharp
+private Vector128<ulong> ConvertToUInt64RoundToZeroTest(Vector128<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToZero(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtozero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtq_u64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToUInt64RoundToZero", "Performs 'ConvertToUInt64RoundToZero' operation.", 0), GetValue("ConvertToUInt64RoundToZero", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToZero", apiResult.ToString(), 2));
+
+try {
+ConvertToUInt64RoundToZeroTest(Vector128double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ConvertToUInt64RoundToZeroScalarResult = Dummy_ConvertToUInt64RoundToZeroScalarTest(Vector64double_0);
+apiResult = ConvertToUInt64RoundToZeroScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 13. ConvertToUInt64RoundToZeroScalar
+
+`Vector64<ulong> ConvertToUInt64RoundToZeroScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<ulong> ConvertToUInt64RoundToZeroScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ConvertToUInt64RoundToZeroScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtozeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_u64_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ConvertToUInt64RoundToZeroScalar", "Performs 'ConvertToUInt64RoundToZeroScalar' operation.", 0), GetValue("ConvertToUInt64RoundToZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToZeroScalar", apiResult.ToString(), 2));
+
+try {
+ConvertToUInt64RoundToZeroScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var DivideResult = Dummy_DivideTest(Vector64float_0, Vector64float_1);
+apiResult = DivideResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 14. Divide
+
+`Vector64<float> Divide(Vector64<float> left, Vector64<float> right)`
+
+{0}
+
+```csharp
+private Vector64<float> DivideTest(Vector64<float> left, Vector64<float> right)
+{{
+  return AdvSimd.Arm64.Divide(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<double> Divide(Vector128<double> left, Vector128<double> right)
+Vector128<float> Divide(Vector128<float> left, Vector128<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.divide?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdiv_f32).
+
+Assembly generated:
+
+```armasm", GetValue("Divide", "Performs 'Divide' operation.", 0), GetValue("Divide", Vector64float_0.ToString(), 1), GetValue("Divide", Vector64float_1.ToString(), 2), GetValue("Divide", apiResult.ToString(), 3));
+
+try {
+DivideTest(Vector64float_0, Vector64float_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var DivideScalarResult = Dummy_DivideScalarTest(Vector64double_0, Vector64double_1);
 apiResult = DivideScalarResult.ToString();
 } catch (Exception) {
@@ -7776,7 +9846,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 17. DivideScalar
+### 15. DivideScalar
 
 `Vector64<double> DivideScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -7817,69 +9887,6 @@ DivideScalarTest(Vector64double_0, Vector64double_1);
 // ----------------------------------------------------------------
 
 try {
-var DuplicateSelectedScalarToVector64Result = Dummy_DuplicateSelectedScalarToVector64Test(Vector64byte_0, byte_0);
-apiResult = DuplicateSelectedScalarToVector64Result.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 18. DuplicateSelectedScalarToVector64
-
-`Vector64<byte> DuplicateSelectedScalarToVector64(Vector64<byte> value, byte index)`
-
-{0}
-
-```csharp
-private Vector64<byte> DuplicateSelectedScalarToVector64Test(Vector64<byte> value, byte index)
-{{
-  return AdvSimd.DuplicateSelectedScalarToVector64(value, 3);
-}}
-// value = {1}
-// index = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<short> DuplicateSelectedScalarToVector64(Vector64<short> value, byte index)
-Vector64<int> DuplicateSelectedScalarToVector64(Vector64<int> value, byte index)
-Vector64<float> DuplicateSelectedScalarToVector64(Vector64<float> value, byte index)
-Vector64<sbyte> DuplicateSelectedScalarToVector64(Vector64<sbyte> value, byte index)
-Vector64<ushort> DuplicateSelectedScalarToVector64(Vector64<ushort> value, byte index)
-Vector64<uint> DuplicateSelectedScalarToVector64(Vector64<uint> value, byte index)
-Vector64<byte> DuplicateSelectedScalarToVector64(Vector128<byte> value, byte index)
-Vector64<short> DuplicateSelectedScalarToVector64(Vector128<short> value, byte index)
-Vector64<int> DuplicateSelectedScalarToVector64(Vector128<int> value, byte index)
-Vector64<float> DuplicateSelectedScalarToVector64(Vector128<float> value, byte index)
-Vector64<sbyte> DuplicateSelectedScalarToVector64(Vector128<sbyte> value, byte index)
-Vector64<ushort> DuplicateSelectedScalarToVector64(Vector128<ushort> value, byte index)
-Vector64<uint> DuplicateSelectedScalarToVector64(Vector128<uint> value, byte index)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicateselectedscalartovector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdup_lane_u8).
-
-Assembly generated:
-
-```armasm", GetValue("DuplicateSelectedScalarToVector64", "Performs 'DuplicateSelectedScalarToVector64' operation.", 0), GetValue("DuplicateSelectedScalarToVector64", Vector64byte_0.ToString(), 1), GetValue("DuplicateSelectedScalarToVector64", byte_0.ToString(), 2), GetValue("DuplicateSelectedScalarToVector64", apiResult.ToString(), 3));
-
-try {
-DuplicateSelectedScalarToVector64Test(Vector64byte_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
 var DuplicateSelectedScalarToVector128Result = Dummy_DuplicateSelectedScalarToVector128Test(Vector64byte_0, byte_0);
 apiResult = DuplicateSelectedScalarToVector128Result.ToString();
 } catch (Exception) {
@@ -7890,7 +9897,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 19. DuplicateSelectedScalarToVector128
+### 16. DuplicateSelectedScalarToVector128
 
 `Vector128<byte> DuplicateSelectedScalarToVector128(Vector64<byte> value, byte index)`
 
@@ -7948,8 +9955,8 @@ DuplicateSelectedScalarToVector128Test(Vector64byte_0, byte_0);
 // ----------------------------------------------------------------
 
 try {
-var DuplicateToVector64Result = Dummy_DuplicateToVector64Test(byte_0);
-apiResult = DuplicateToVector64Result.ToString();
+var DuplicateSelectedScalarToVector64Result = Dummy_DuplicateSelectedScalarToVector64Test(Vector64byte_0, byte_0);
+apiResult = DuplicateSelectedScalarToVector64Result.ToString();
 } catch (Exception) {
    apiResult = "TODO";
 }
@@ -7958,19 +9965,20 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 20. DuplicateToVector64
+### 17. DuplicateSelectedScalarToVector64
 
-`Vector64<byte> DuplicateToVector64(byte value)`
+`Vector64<byte> DuplicateSelectedScalarToVector64(Vector64<byte> value, byte index)`
 
 {0}
 
 ```csharp
-private Vector64<byte> DuplicateToVector64Test(byte value)
+private Vector64<byte> DuplicateSelectedScalarToVector64Test(Vector64<byte> value, byte index)
 {{
-  return AdvSimd.DuplicateToVector64(value);
+  return AdvSimd.DuplicateSelectedScalarToVector64(value, 3);
 }}
 // value = {1}
-// Result = {2}
+// index = {2}
+// Result = {3}
 
 ```
 
@@ -7978,23 +9986,30 @@ Similar APIs that operate on different sizes:
 
 ```csharp
 // class System.Runtime.Intrinisics.AdvSimd
-Vector64<short> DuplicateToVector64(short value)
-Vector64<int> DuplicateToVector64(int value)
-Vector64<sbyte> DuplicateToVector64(sbyte value)
-Vector64<float> DuplicateToVector64(float value)
-Vector64<ushort> DuplicateToVector64(ushort value)
-Vector64<uint> DuplicateToVector64(uint value)
+Vector64<short> DuplicateSelectedScalarToVector64(Vector64<short> value, byte index)
+Vector64<int> DuplicateSelectedScalarToVector64(Vector64<int> value, byte index)
+Vector64<float> DuplicateSelectedScalarToVector64(Vector64<float> value, byte index)
+Vector64<sbyte> DuplicateSelectedScalarToVector64(Vector64<sbyte> value, byte index)
+Vector64<ushort> DuplicateSelectedScalarToVector64(Vector64<ushort> value, byte index)
+Vector64<uint> DuplicateSelectedScalarToVector64(Vector64<uint> value, byte index)
+Vector64<byte> DuplicateSelectedScalarToVector64(Vector128<byte> value, byte index)
+Vector64<short> DuplicateSelectedScalarToVector64(Vector128<short> value, byte index)
+Vector64<int> DuplicateSelectedScalarToVector64(Vector128<int> value, byte index)
+Vector64<float> DuplicateSelectedScalarToVector64(Vector128<float> value, byte index)
+Vector64<sbyte> DuplicateSelectedScalarToVector64(Vector128<sbyte> value, byte index)
+Vector64<ushort> DuplicateSelectedScalarToVector64(Vector128<ushort> value, byte index)
+Vector64<uint> DuplicateSelectedScalarToVector64(Vector128<uint> value, byte index)
 ```
 
 
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicatetovector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdup_n_u8).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicateselectedscalartovector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdup_lane_u8).
 
 Assembly generated:
 
-```armasm", GetValue("DuplicateToVector64", "Performs 'DuplicateToVector64' operation.", 0), GetValue("DuplicateToVector64", byte_0.ToString(), 1), GetValue("DuplicateToVector64", apiResult.ToString(), 2));
+```armasm", GetValue("DuplicateSelectedScalarToVector64", "Performs 'DuplicateSelectedScalarToVector64' operation.", 0), GetValue("DuplicateSelectedScalarToVector64", Vector64byte_0.ToString(), 1), GetValue("DuplicateSelectedScalarToVector64", byte_0.ToString(), 2), GetValue("DuplicateSelectedScalarToVector64", apiResult.ToString(), 3));
 
 try {
-DuplicateToVector64Test(byte_0);
+DuplicateSelectedScalarToVector64Test(Vector64byte_0, byte_0);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -8013,7 +10028,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 21. DuplicateToVector128
+### 18. DuplicateToVector128
 
 `Vector128<byte> DuplicateToVector128(byte value)`
 
@@ -8063,6 +10078,61 @@ DuplicateToVector128Test(byte_0);
 // ----------------------------------------------------------------
 
 try {
+var DuplicateToVector64Result = Dummy_DuplicateToVector64Test(byte_0);
+apiResult = DuplicateToVector64Result.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 19. DuplicateToVector64
+
+`Vector64<byte> DuplicateToVector64(byte value)`
+
+{0}
+
+```csharp
+private Vector64<byte> DuplicateToVector64Test(byte value)
+{{
+  return AdvSimd.DuplicateToVector64(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<short> DuplicateToVector64(short value)
+Vector64<int> DuplicateToVector64(int value)
+Vector64<sbyte> DuplicateToVector64(sbyte value)
+Vector64<float> DuplicateToVector64(float value)
+Vector64<ushort> DuplicateToVector64(ushort value)
+Vector64<uint> DuplicateToVector64(uint value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.duplicatetovector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdup_n_u8).
+
+Assembly generated:
+
+```armasm", GetValue("DuplicateToVector64", "Performs 'DuplicateToVector64' operation.", 0), GetValue("DuplicateToVector64", byte_0.ToString(), 1), GetValue("DuplicateToVector64", apiResult.ToString(), 2));
+
+try {
+DuplicateToVector64Test(byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ExtractResult = Dummy_ExtractTest(Vector64byte_0, byte_0);
 apiResult = ExtractResult.ToString();
 } catch (Exception) {
@@ -8073,7 +10143,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 22. Extract
+### 20. Extract
 
 `byte Extract(Vector64<byte> vector, byte index)`
 
@@ -8139,7 +10209,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 23. ExtractNarrowingLower
+### 21. ExtractNarrowingLower
 
 `Vector64<byte> ExtractNarrowingLower(Vector128<ushort> value)`
 
@@ -8193,7 +10263,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 24. ExtractNarrowingSaturateLower
+### 22. ExtractNarrowingSaturateLower
 
 `Vector64<byte> ExtractNarrowingSaturateLower(Vector128<ushort> value)`
 
@@ -8237,6 +10307,60 @@ ExtractNarrowingSaturateLowerTest(Vector128ushort_0);
 // ----------------------------------------------------------------
 
 try {
+var ExtractNarrowingSaturateScalarResult = Dummy_ExtractNarrowingSaturateScalarTest(Vector64ushort_0);
+apiResult = ExtractNarrowingSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 23. ExtractNarrowingSaturateScalar
+
+`Vector64<byte> ExtractNarrowingSaturateScalar(Vector64<ushort> value)`
+
+{0}
+
+```csharp
+private Vector64<byte> ExtractNarrowingSaturateScalarTest(Vector64<ushort> value)
+{{
+  return AdvSimd.Arm64.ExtractNarrowingSaturateScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<short> ExtractNarrowingSaturateScalar(Vector64<int> value)
+Vector64<int> ExtractNarrowingSaturateScalar(Vector64<long> value)
+Vector64<sbyte> ExtractNarrowingSaturateScalar(Vector64<short> value)
+Vector64<ushort> ExtractNarrowingSaturateScalar(Vector64<uint> value)
+Vector64<uint> ExtractNarrowingSaturateScalar(Vector64<ulong> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.extractnarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqmovnh_u16).
+
+Assembly generated:
+
+```armasm", GetValue("ExtractNarrowingSaturateScalar", "Performs 'ExtractNarrowingSaturateScalar' operation.", 0), GetValue("ExtractNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ExtractNarrowingSaturateScalar", apiResult.ToString(), 2));
+
+try {
+ExtractNarrowingSaturateScalarTest(Vector64ushort_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ExtractNarrowingSaturateUnsignedLowerResult = Dummy_ExtractNarrowingSaturateUnsignedLowerTest(Vector128short_0);
 apiResult = ExtractNarrowingSaturateUnsignedLowerResult.ToString();
 } catch (Exception) {
@@ -8247,7 +10371,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 25. ExtractNarrowingSaturateUnsignedLower
+### 24. ExtractNarrowingSaturateUnsignedLower
 
 `Vector64<byte> ExtractNarrowingSaturateUnsignedLower(Vector128<short> value)`
 
@@ -8280,6 +10404,57 @@ Assembly generated:
 
 try {
 ExtractNarrowingSaturateUnsignedLowerTest(Vector128short_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ExtractNarrowingSaturateUnsignedScalarResult = Dummy_ExtractNarrowingSaturateUnsignedScalarTest(Vector64short_0);
+apiResult = ExtractNarrowingSaturateUnsignedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 25. ExtractNarrowingSaturateUnsignedScalar
+
+`Vector64<byte> ExtractNarrowingSaturateUnsignedScalar(Vector64<short> value)`
+
+{0}
+
+```csharp
+private Vector64<byte> ExtractNarrowingSaturateUnsignedScalarTest(Vector64<short> value)
+{{
+  return AdvSimd.Arm64.ExtractNarrowingSaturateUnsignedScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<ushort> ExtractNarrowingSaturateUnsignedScalar(Vector64<int> value)
+Vector64<uint> ExtractNarrowingSaturateUnsignedScalar(Vector64<long> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.extractnarrowingsaturateunsignedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqmovunh_s16).
+
+Assembly generated:
+
+```armasm", GetValue("ExtractNarrowingSaturateUnsignedScalar", "Performs 'ExtractNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ExtractNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ExtractNarrowingSaturateUnsignedScalar", apiResult.ToString(), 2));
+
+try {
+ExtractNarrowingSaturateUnsignedScalarTest(Vector64short_0);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -8450,63 +10625,6 @@ ExtractNarrowingUpperTest(Vector64byte_0, Vector128ushort_0);
 // ----------------------------------------------------------------
 
 try {
-var ExtractVector64Result = Dummy_ExtractVector64Test(Vector64byte_0, Vector64byte_1, byte_0);
-apiResult = ExtractVector64Result.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 29. ExtractVector64
-
-`Vector64<byte> ExtractVector64(Vector64<byte> upper, Vector64<byte> lower, byte index)`
-
-{0}
-
-```csharp
-private Vector64<byte> ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower, byte index)
-{{
-  return AdvSimd.ExtractVector64(upper, lower, 5);
-}}
-// upper = {1}
-// lower = {2}
-// index = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<short> ExtractVector64(Vector64<short> upper, Vector64<short> lower, byte index)
-Vector64<int> ExtractVector64(Vector64<int> upper, Vector64<int> lower, byte index)
-Vector64<sbyte> ExtractVector64(Vector64<sbyte> upper, Vector64<sbyte> lower, byte index)
-Vector64<float> ExtractVector64(Vector64<float> upper, Vector64<float> lower, byte index)
-Vector64<ushort> ExtractVector64(Vector64<ushort> upper, Vector64<ushort> lower, byte index)
-Vector64<uint> ExtractVector64(Vector64<uint> upper, Vector64<uint> lower, byte index)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractvector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vext_s8).
-
-Assembly generated:
-
-```armasm", GetValue("ExtractVector64", "Performs 'ExtractVector64' operation.", 0), GetValue("ExtractVector64", Vector64byte_0.ToString(), 1), GetValue("ExtractVector64", Vector64byte_1.ToString(), 2), GetValue("ExtractVector64", byte_0.ToString(), 3), GetValue("ExtractVector64", apiResult.ToString(), 4));
-
-try {
-ExtractVector64Test(Vector64byte_0, Vector64byte_1, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
 var ExtractVector128Result = Dummy_ExtractVector128Test(Vector128byte_0, Vector128byte_1, byte_0);
 apiResult = ExtractVector128Result.ToString();
 } catch (Exception) {
@@ -8517,7 +10635,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 30. ExtractVector128
+### 29. ExtractVector128
 
 `Vector128<byte> ExtractVector128(Vector128<byte> upper, Vector128<byte> lower, byte index)`
 
@@ -8559,6 +10677,63 @@ Assembly generated:
 
 try {
 ExtractVector128Test(Vector128byte_0, Vector128byte_1, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ExtractVector64Result = Dummy_ExtractVector64Test(Vector64byte_0, Vector64byte_1, byte_0);
+apiResult = ExtractVector64Result.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 30. ExtractVector64
+
+`Vector64<byte> ExtractVector64(Vector64<byte> upper, Vector64<byte> lower, byte index)`
+
+{0}
+
+```csharp
+private Vector64<byte> ExtractVector64Test(Vector64<byte> upper, Vector64<byte> lower, byte index)
+{{
+  return AdvSimd.ExtractVector64(upper, lower, 5);
+}}
+// upper = {1}
+// lower = {2}
+// index = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<short> ExtractVector64(Vector64<short> upper, Vector64<short> lower, byte index)
+Vector64<int> ExtractVector64(Vector64<int> upper, Vector64<int> lower, byte index)
+Vector64<sbyte> ExtractVector64(Vector64<sbyte> upper, Vector64<sbyte> lower, byte index)
+Vector64<float> ExtractVector64(Vector64<float> upper, Vector64<float> lower, byte index)
+Vector64<ushort> ExtractVector64(Vector64<ushort> upper, Vector64<ushort> lower, byte index)
+Vector64<uint> ExtractVector64(Vector64<uint> upper, Vector64<uint> lower, byte index)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.extractvector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vext_s8).
+
+Assembly generated:
+
+```armasm", GetValue("ExtractVector64", "Performs 'ExtractVector64' operation.", 0), GetValue("ExtractVector64", Vector64byte_0.ToString(), 1), GetValue("ExtractVector64", Vector64byte_1.ToString(), 2), GetValue("ExtractVector64", byte_0.ToString(), 3), GetValue("ExtractVector64", apiResult.ToString(), 4));
+
+try {
+ExtractVector64Test(Vector64byte_0, Vector64byte_1, byte_0);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -8847,6 +11022,115 @@ FusedMultiplyAddTest(Vector64float_0, Vector64float_1, Vector64float_2);
 // ----------------------------------------------------------------
 
 try {
+var FusedMultiplyAddByScalarResult = Dummy_FusedMultiplyAddByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
+apiResult = FusedMultiplyAddByScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 36. FusedMultiplyAddByScalar
+
+`Vector64<float> FusedMultiplyAddByScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right)`
+
+{0}
+
+```csharp
+private Vector64<float> FusedMultiplyAddByScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right)
+{{
+  return AdvSimd.Arm64.FusedMultiplyAddByScalar(addend, left, right);
+}}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<double> FusedMultiplyAddByScalar(Vector128<double> addend, Vector128<double> left, Vector64<double> right)
+Vector128<float> FusedMultiplyAddByScalar(Vector128<float> addend, Vector128<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfma_n_f32).
+
+Assembly generated:
+
+```armasm", GetValue("FusedMultiplyAddByScalar", "Performs 'FusedMultiplyAddByScalar' operation.", 0), GetValue("FusedMultiplyAddByScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplyAddByScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplyAddByScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplyAddByScalar", apiResult.ToString(), 4));
+
+try {
+FusedMultiplyAddByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var FusedMultiplyAddBySelectedScalarResult = Dummy_FusedMultiplyAddBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
+apiResult = FusedMultiplyAddBySelectedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 37. FusedMultiplyAddBySelectedScalar
+
+`Vector64<float> FusedMultiplyAddBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<float> FusedMultiplyAddBySelectedScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, 0);
+}}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> FusedMultiplyAddBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector128<float> right, byte rightIndex)
+Vector128<double> FusedMultiplyAddBySelectedScalar(Vector128<double> addend, Vector128<double> left, Vector128<double> right, byte rightIndex)
+Vector128<float> FusedMultiplyAddBySelectedScalar(Vector128<float> addend, Vector128<float> left, Vector64<float> right, byte rightIndex)
+Vector128<float> FusedMultiplyAddBySelectedScalar(Vector128<float> addend, Vector128<float> left, Vector128<float> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfma_lane_f32).
+
+Assembly generated:
+
+```armasm", GetValue("FusedMultiplyAddBySelectedScalar", "Performs 'FusedMultiplyAddBySelectedScalar' operation.", 0), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplyAddBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplyAddBySelectedScalar", apiResult.ToString(), 5));
+
+try {
+FusedMultiplyAddBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var FusedMultiplyAddNegatedScalarResult = Dummy_FusedMultiplyAddNegatedScalarTest(Vector64double_0, Vector64double_1, Vector64double_2);
 apiResult = FusedMultiplyAddNegatedScalarResult.ToString();
 } catch (Exception) {
@@ -8857,7 +11141,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 36. FusedMultiplyAddNegatedScalar
+### 38. FusedMultiplyAddNegatedScalar
 
 `Vector64<double> FusedMultiplyAddNegatedScalar(Vector64<double> addend, Vector64<double> left, Vector64<double> right)`
 
@@ -8909,7 +11193,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 37. FusedMultiplyAddScalar
+### 39. FusedMultiplyAddScalar
 
 `Vector64<double> FusedMultiplyAddScalar(Vector64<double> addend, Vector64<double> left, Vector64<double> right)`
 
@@ -8951,6 +11235,60 @@ FusedMultiplyAddScalarTest(Vector64double_0, Vector64double_1, Vector64double_2)
 // ----------------------------------------------------------------
 
 try {
+var FusedMultiplyAddScalarBySelectedScalarResult = Dummy_FusedMultiplyAddScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
+apiResult = FusedMultiplyAddScalarBySelectedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 40. FusedMultiplyAddScalarBySelectedScalar
+
+`Vector64<double> FusedMultiplyAddScalarBySelectedScalar(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<double> FusedMultiplyAddScalarBySelectedScalarTest(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, 0);
+}}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> FusedMultiplyAddScalarBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
+Vector64<float> FusedMultiplyAddScalarBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector128<float> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddscalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfmad_laneq_f64).
+
+Assembly generated:
+
+```armasm", GetValue("FusedMultiplyAddScalarBySelectedScalar", "Performs 'FusedMultiplyAddScalarBySelectedScalar' operation.", 0), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector128double_0.ToString(), 3), GetValue("FusedMultiplyAddScalarBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplyAddScalarBySelectedScalar", apiResult.ToString(), 5));
+
+try {
+FusedMultiplyAddScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var FusedMultiplySubtractResult = Dummy_FusedMultiplySubtractTest(Vector64float_0, Vector64float_1, Vector64float_2);
 apiResult = FusedMultiplySubtractResult.ToString();
 } catch (Exception) {
@@ -8961,7 +11299,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 38. FusedMultiplySubtract
+### 41. FusedMultiplySubtract
 
 `Vector64<float> FusedMultiplySubtract(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`
 
@@ -9006,6 +11344,115 @@ FusedMultiplySubtractTest(Vector64float_0, Vector64float_1, Vector64float_2);
 // ----------------------------------------------------------------
 
 try {
+var FusedMultiplySubtractByScalarResult = Dummy_FusedMultiplySubtractByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
+apiResult = FusedMultiplySubtractByScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 42. FusedMultiplySubtractByScalar
+
+`Vector64<float> FusedMultiplySubtractByScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`
+
+{0}
+
+```csharp
+private Vector64<float> FusedMultiplySubtractByScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)
+{{
+  return AdvSimd.Arm64.FusedMultiplySubtractByScalar(minuend, left, right);
+}}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<double> FusedMultiplySubtractByScalar(Vector128<double> minuend, Vector128<double> left, Vector64<double> right)
+Vector128<float> FusedMultiplySubtractByScalar(Vector128<float> minuend, Vector128<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfms_n_f32).
+
+Assembly generated:
+
+```armasm", GetValue("FusedMultiplySubtractByScalar", "Performs 'FusedMultiplySubtractByScalar' operation.", 0), GetValue("FusedMultiplySubtractByScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplySubtractByScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplySubtractByScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplySubtractByScalar", apiResult.ToString(), 4));
+
+try {
+FusedMultiplySubtractByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var FusedMultiplySubtractBySelectedScalarResult = Dummy_FusedMultiplySubtractBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
+apiResult = FusedMultiplySubtractBySelectedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 43. FusedMultiplySubtractBySelectedScalar
+
+`Vector64<float> FusedMultiplySubtractBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<float> FusedMultiplySubtractBySelectedScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, 0);
+}}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> FusedMultiplySubtractBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector128<float> right, byte rightIndex)
+Vector128<double> FusedMultiplySubtractBySelectedScalar(Vector128<double> minuend, Vector128<double> left, Vector128<double> right, byte rightIndex)
+Vector128<float> FusedMultiplySubtractBySelectedScalar(Vector128<float> minuend, Vector128<float> left, Vector64<float> right, byte rightIndex)
+Vector128<float> FusedMultiplySubtractBySelectedScalar(Vector128<float> minuend, Vector128<float> left, Vector128<float> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfms_lane_f32).
+
+Assembly generated:
+
+```armasm", GetValue("FusedMultiplySubtractBySelectedScalar", "Performs 'FusedMultiplySubtractBySelectedScalar' operation.", 0), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplySubtractBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplySubtractBySelectedScalar", apiResult.ToString(), 5));
+
+try {
+FusedMultiplySubtractBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var FusedMultiplySubtractNegatedScalarResult = Dummy_FusedMultiplySubtractNegatedScalarTest(Vector64double_0, Vector64double_1, Vector64double_2);
 apiResult = FusedMultiplySubtractNegatedScalarResult.ToString();
 } catch (Exception) {
@@ -9016,7 +11463,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 39. FusedMultiplySubtractNegatedScalar
+### 44. FusedMultiplySubtractNegatedScalar
 
 `Vector64<double> FusedMultiplySubtractNegatedScalar(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)`
 
@@ -9068,7 +11515,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 40. FusedMultiplySubtractScalar
+### 45. FusedMultiplySubtractScalar
 
 `Vector64<double> FusedMultiplySubtractScalar(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)`
 
@@ -9108,6 +11555,81 @@ FusedMultiplySubtractScalarTest(Vector64double_0, Vector64double_1, Vector64doub
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: ARM64 Hardware Intrinsics APIs in .NET - Part 4
+subtitle: Sample code usage, examples and generated assembly code
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [vectorization using .NET APIs](../2020-08-01-Vectorization-APIs) blog, I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrinsic' APIs. In this post I will describe those hardware intrinsic APIs for ARM64 by showing sample code usage along with examples and generated ARM64 code. This will help people in understanding these APIs so they can use them to optimize their .NET code written to target ARM64. Since there are 360 APIs, describing all of them in a single post will be overwhelming. So I have divided these APIs among 8 blogs and will demonstrate 45 APIs in each blog. This is part 4 of that blog series.
+
+Most of the description of these APIs is adapted and referenced from [Arm Architecture Reference Manual Armv8, for Armv8-A architecture profile document](https://developer.arm.com/documentation/ddi0487/fc/). You can also refer to the description of SIMD and Floating-point instructions description at [Arm developer docs page](https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order).
+
+### APIs covered
+
+[FusedMultiplySubtractScalarBySelectedScalar](#1-fusedmultiplysubtractscalarbyselectedscalar), [FusedSubtractHalving](#2-fusedsubtracthalving), [Insert](#3-insert), [InsertScalar](#4-insertscalar), [InsertSelectedScalar](#5-insertselectedscalar), [LeadingSignCount](#6-leadingsigncount), [LeadingZeroCount](#7-leadingzerocount), [LoadAndInsertScalar](#8-loadandinsertscalar), [LoadAndReplicateToVector128](#9-loadandreplicatetovector128), [LoadAndReplicateToVector64](#10-loadandreplicatetovector64), [LoadVector128](#11-loadvector128), [LoadVector64](#12-loadvector64), [Max](#13-max), [MaxAcross](#14-maxacross), [MaxNumber](#15-maxnumber), [MaxNumberAcross](#16-maxnumberacross), [MaxNumberPairwise](#17-maxnumberpairwise), [MaxNumberPairwiseScalar](#18-maxnumberpairwisescalar), [MaxNumberScalar](#19-maxnumberscalar), [MaxPairwise](#20-maxpairwise), [MaxPairwiseScalar](#21-maxpairwisescalar), [MaxScalar](#22-maxscalar), [Min](#23-min), [MinAcross](#24-minacross), [MinNumber](#25-minnumber), [MinNumberAcross](#26-minnumberacross), [MinNumberPairwise](#27-minnumberpairwise), [MinNumberPairwiseScalar](#28-minnumberpairwisescalar), [MinNumberScalar](#29-minnumberscalar), [MinPairwise](#30-minpairwise), [MinPairwiseScalar](#31-minpairwisescalar), [MinScalar](#32-minscalar), [Multiply](#33-multiply), [MultiplyAdd](#34-multiplyadd), [MultiplyAddByScalar](#35-multiplyaddbyscalar), [MultiplyAddBySelectedScalar](#36-multiplyaddbyselectedscalar), [MultiplyByScalar](#37-multiplybyscalar), [MultiplyBySelectedScalar](#38-multiplybyselectedscalar), [MultiplyBySelectedScalarWideningLower](#39-multiplybyselectedscalarwideninglower), [MultiplyBySelectedScalarWideningLowerAndAdd](#40-multiplybyselectedscalarwideninglowerandadd), [MultiplyBySelectedScalarWideningLowerAndSubtract](#41-multiplybyselectedscalarwideninglowerandsubtract), [MultiplyBySelectedScalarWideningUpper](#42-multiplybyselectedscalarwideningupper), [MultiplyBySelectedScalarWideningUpperAndAdd](#43-multiplybyselectedscalarwideningupperandadd), [MultiplyBySelectedScalarWideningUpperAndSubtract](#44-multiplybyselectedscalarwideningupperandsubtract), [MultiplyDoublingByScalarSaturateHigh](#45-multiplydoublingbyscalarsaturatehigh)
+
+
+");
+
+try {
+var FusedMultiplySubtractScalarBySelectedScalarResult = Dummy_FusedMultiplySubtractScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
+apiResult = FusedMultiplySubtractScalarBySelectedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"
+
+### 1. FusedMultiplySubtractScalarBySelectedScalar
+
+`Vector64<double> FusedMultiplySubtractScalarBySelectedScalar(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<double> FusedMultiplySubtractScalarBySelectedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, 0);
+}}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> FusedMultiplySubtractScalarBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
+Vector64<float> FusedMultiplySubtractScalarBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector128<float> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractscalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfmsd_laneq_f64).
+
+Assembly generated:
+
+```armasm", GetValue("FusedMultiplySubtractScalarBySelectedScalar", "Performs 'FusedMultiplySubtractScalarBySelectedScalar' operation.", 0), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector128double_0.ToString(), 3), GetValue("FusedMultiplySubtractScalarBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplySubtractScalarBySelectedScalar", apiResult.ToString(), 5));
+
+try {
+FusedMultiplySubtractScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
 
 try {
 var FusedSubtractHalvingResult = Dummy_FusedSubtractHalvingTest(Vector64byte_0, Vector64byte_1);
@@ -9120,7 +11642,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 41. FusedSubtractHalving
+### 2. FusedSubtractHalving
 
 `Vector64<byte> FusedSubtractHalving(Vector64<byte> left, Vector64<byte> right)`
 
@@ -9181,7 +11703,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 42. Insert
+### 3. Insert
 
 `Vector64<byte> Insert(Vector64<byte> vector, byte index, byte data)`
 
@@ -9248,7 +11770,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 43. InsertScalar
+### 4. InsertScalar
 
 `Vector128<double> InsertScalar(Vector128<double> result, byte resultIndex, Vector64<double> value)`
 
@@ -9291,6 +11813,88 @@ InsertScalarTest(Vector128double_0, byte_0, Vector64double_0);
 // ----------------------------------------------------------------
 
 try {
+var InsertSelectedScalarResult = Dummy_InsertSelectedScalarTest(Vector64byte_0, byte_0, Vector64byte_1, byte_1);
+apiResult = InsertSelectedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 5. InsertSelectedScalar
+
+`Vector64<byte> InsertSelectedScalar(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)`
+
+{0}
+
+```csharp
+private Vector64<byte> InsertSelectedScalarTest(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
+{{
+  return AdvSimd.Arm64.InsertSelectedScalar(result, 0, value, 1);
+}}
+// result = {1}
+// resultIndex = {2}
+// value = {3}
+// valueIndex = {4}
+// Result = {5}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<byte> InsertSelectedScalar(Vector64<byte> result, byte resultIndex, Vector128<byte> value, byte valueIndex)
+Vector64<short> InsertSelectedScalar(Vector64<short> result, byte resultIndex, Vector64<short> value, byte valueIndex)
+Vector64<short> InsertSelectedScalar(Vector64<short> result, byte resultIndex, Vector128<short> value, byte valueIndex)
+Vector64<int> InsertSelectedScalar(Vector64<int> result, byte resultIndex, Vector64<int> value, byte valueIndex)
+Vector64<int> InsertSelectedScalar(Vector64<int> result, byte resultIndex, Vector128<int> value, byte valueIndex)
+Vector64<sbyte> InsertSelectedScalar(Vector64<sbyte> result, byte resultIndex, Vector64<sbyte> value, byte valueIndex)
+Vector64<sbyte> InsertSelectedScalar(Vector64<sbyte> result, byte resultIndex, Vector128<sbyte> value, byte valueIndex)
+Vector64<float> InsertSelectedScalar(Vector64<float> result, byte resultIndex, Vector64<float> value, byte valueIndex)
+Vector64<float> InsertSelectedScalar(Vector64<float> result, byte resultIndex, Vector128<float> value, byte valueIndex)
+Vector64<ushort> InsertSelectedScalar(Vector64<ushort> result, byte resultIndex, Vector64<ushort> value, byte valueIndex)
+Vector64<ushort> InsertSelectedScalar(Vector64<ushort> result, byte resultIndex, Vector128<ushort> value, byte valueIndex)
+Vector64<uint> InsertSelectedScalar(Vector64<uint> result, byte resultIndex, Vector64<uint> value, byte valueIndex)
+Vector64<uint> InsertSelectedScalar(Vector64<uint> result, byte resultIndex, Vector128<uint> value, byte valueIndex)
+Vector128<byte> InsertSelectedScalar(Vector128<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
+Vector128<byte> InsertSelectedScalar(Vector128<byte> result, byte resultIndex, Vector128<byte> value, byte valueIndex)
+Vector128<double> InsertSelectedScalar(Vector128<double> result, byte resultIndex, Vector128<double> value, byte valueIndex)
+Vector128<short> InsertSelectedScalar(Vector128<short> result, byte resultIndex, Vector64<short> value, byte valueIndex)
+Vector128<short> InsertSelectedScalar(Vector128<short> result, byte resultIndex, Vector128<short> value, byte valueIndex)
+Vector128<int> InsertSelectedScalar(Vector128<int> result, byte resultIndex, Vector64<int> value, byte valueIndex)
+Vector128<int> InsertSelectedScalar(Vector128<int> result, byte resultIndex, Vector128<int> value, byte valueIndex)
+Vector128<long> InsertSelectedScalar(Vector128<long> result, byte resultIndex, Vector128<long> value, byte valueIndex)
+Vector128<sbyte> InsertSelectedScalar(Vector128<sbyte> result, byte resultIndex, Vector64<sbyte> value, byte valueIndex)
+Vector128<sbyte> InsertSelectedScalar(Vector128<sbyte> result, byte resultIndex, Vector128<sbyte> value, byte valueIndex)
+Vector128<float> InsertSelectedScalar(Vector128<float> result, byte resultIndex, Vector64<float> value, byte valueIndex)
+Vector128<float> InsertSelectedScalar(Vector128<float> result, byte resultIndex, Vector128<float> value, byte valueIndex)
+Vector128<ushort> InsertSelectedScalar(Vector128<ushort> result, byte resultIndex, Vector64<ushort> value, byte valueIndex)
+Vector128<ushort> InsertSelectedScalar(Vector128<ushort> result, byte resultIndex, Vector128<ushort> value, byte valueIndex)
+Vector128<uint> InsertSelectedScalar(Vector128<uint> result, byte resultIndex, Vector64<uint> value, byte valueIndex)
+Vector128<uint> InsertSelectedScalar(Vector128<uint> result, byte resultIndex, Vector128<uint> value, byte valueIndex)
+Vector128<ulong> InsertSelectedScalar(Vector128<ulong> result, byte resultIndex, Vector128<ulong> value, byte valueIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.insertselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcopy_lane_u8).
+
+Assembly generated:
+
+```armasm", GetValue("InsertSelectedScalar", "Performs 'InsertSelectedScalar' operation.", 0), GetValue("InsertSelectedScalar", Vector64byte_0.ToString(), 1), GetValue("InsertSelectedScalar", byte_0.ToString(), 2), GetValue("InsertSelectedScalar", Vector64byte_1.ToString(), 3), GetValue("InsertSelectedScalar", byte_1.ToString(), 4), GetValue("InsertSelectedScalar", apiResult.ToString(), 5));
+
+try {
+InsertSelectedScalarTest(Vector64byte_0, byte_0, Vector64byte_1, byte_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var LeadingSignCountResult = Dummy_LeadingSignCountTest(Vector64short_0);
 apiResult = LeadingSignCountResult.ToString();
 } catch (Exception) {
@@ -9301,7 +11905,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 44. LeadingSignCount
+### 6. LeadingSignCount
 
 `Vector64<short> LeadingSignCount(Vector64<short> value)`
 
@@ -9355,7 +11959,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 45. LeadingZeroCount
+### 7. LeadingZeroCount
 
 `Vector64<byte> LeadingZeroCount(Vector64<byte> value)`
 
@@ -9403,27 +12007,6 @@ LeadingZeroCountTest(Vector64byte_0);
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 3
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[LoadAndInsertScalar](#1-loadandinsertscalar), [LoadAndReplicateToVector64](#2-loadandreplicatetovector64), [LoadAndReplicateToVector128](#3-loadandreplicatetovector128), [LoadVector64](#4-loadvector64), [LoadVector128](#5-loadvector128), [Max](#6-max), [MaxNumber](#7-maxnumber), [MaxNumberScalar](#8-maxnumberscalar), [MaxPairwise](#9-maxpairwise), [Min](#10-min), [MinNumber](#11-minnumber), [MinNumberScalar](#12-minnumberscalar), [MinPairwise](#13-minpairwise), [Multiply](#14-multiply), [MultiplyAdd](#15-multiplyadd), [MultiplyAddByScalar](#16-multiplyaddbyscalar), [MultiplyAddBySelectedScalar](#17-multiplyaddbyselectedscalar), [MultiplyByScalar](#18-multiplybyscalar), [MultiplyBySelectedScalar](#19-multiplybyselectedscalar), [MultiplyBySelectedScalarWideningLower](#20-multiplybyselectedscalarwideninglower), [MultiplyBySelectedScalarWideningLowerAndAdd](#21-multiplybyselectedscalarwideninglowerandadd), [MultiplyBySelectedScalarWideningLowerAndSubtract](#22-multiplybyselectedscalarwideninglowerandsubtract), [MultiplyBySelectedScalarWideningUpper](#23-multiplybyselectedscalarwideningupper), [MultiplyBySelectedScalarWideningUpperAndAdd](#24-multiplybyselectedscalarwideningupperandadd), [MultiplyBySelectedScalarWideningUpperAndSubtract](#25-multiplybyselectedscalarwideningupperandsubtract), [MultiplyDoublingByScalarSaturateHigh](#26-multiplydoublingbyscalarsaturatehigh), [MultiplyDoublingBySelectedScalarSaturateHigh](#27-multiplydoublingbyselectedscalarsaturatehigh), [MultiplyDoublingSaturateHigh](#28-multiplydoublingsaturatehigh), [MultiplyDoublingWideningLowerAndAddSaturate](#29-multiplydoublingwideninglowerandaddsaturate), [MultiplyDoublingWideningLowerAndSubtractSaturate](#30-multiplydoublingwideninglowerandsubtractsaturate), [MultiplyDoublingWideningLowerByScalarAndAddSaturate](#31-multiplydoublingwideninglowerbyscalarandaddsaturate), [MultiplyDoublingWideningLowerByScalarAndSubtractSaturate](#32-multiplydoublingwideninglowerbyscalarandsubtractsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate](#33-multiplydoublingwideninglowerbyselectedscalarandaddsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate](#34-multiplydoublingwideninglowerbyselectedscalarandsubtractsaturate), [MultiplyDoublingWideningSaturateLower](#35-multiplydoublingwideningsaturatelower), [MultiplyDoublingWideningSaturateLowerByScalar](#36-multiplydoublingwideningsaturatelowerbyscalar), [MultiplyDoublingWideningSaturateLowerBySelectedScalar](#37-multiplydoublingwideningsaturatelowerbyselectedscalar), [MultiplyDoublingWideningSaturateUpper](#38-multiplydoublingwideningsaturateupper), [MultiplyDoublingWideningSaturateUpperByScalar](#39-multiplydoublingwideningsaturateupperbyscalar), [MultiplyDoublingWideningSaturateUpperBySelectedScalar](#40-multiplydoublingwideningsaturateupperbyselectedscalar), [MultiplyDoublingWideningUpperAndAddSaturate](#41-multiplydoublingwideningupperandaddsaturate), [MultiplyDoublingWideningUpperAndSubtractSaturate](#42-multiplydoublingwideningupperandsubtractsaturate), [MultiplyDoublingWideningUpperByScalarAndAddSaturate](#43-multiplydoublingwideningupperbyscalarandaddsaturate), [MultiplyDoublingWideningUpperByScalarAndSubtractSaturate](#44-multiplydoublingwideningupperbyscalarandsubtractsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate](#45-multiplydoublingwideningupperbyselectedscalarandaddsaturate),[...](Part3.md)
-
-
-");
 fixed (byte* bytePtr_0 = byteArray)
 {
 
@@ -9435,9 +12018,10 @@ apiResult = LoadAndInsertScalarResult.ToString();
 }
 
 Console.WriteLine(
-@"
+@"```
+------------------------------------------------
 
-### 1. LoadAndInsertScalar
+### 8. LoadAndInsertScalar
 
 `Vector64<byte> LoadAndInsertScalar(Vector64<byte> value, byte index, byte* address)`
 
@@ -9497,64 +12081,6 @@ fixed (byte* bytePtr_0 = byteArray)
 {
 
 try {
-var LoadAndReplicateToVector64Result = Dummy_LoadAndReplicateToVector64Test(bytePtr_0);
-apiResult = LoadAndReplicateToVector64Result.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 2. LoadAndReplicateToVector64
-
-`Vector64<byte> LoadAndReplicateToVector64(byte* address)`
-
-{0}
-
-```csharp
-private Vector64<byte> LoadAndReplicateToVector64Test(byte* address)
-{{
-  return AdvSimd.LoadAndReplicateToVector64(address);
-}}
-// address = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<short> LoadAndReplicateToVector64(short* address)
-Vector64<int> LoadAndReplicateToVector64(int* address)
-Vector64<sbyte> LoadAndReplicateToVector64(sbyte* address)
-Vector64<float> LoadAndReplicateToVector64(float* address)
-Vector64<ushort> LoadAndReplicateToVector64(ushort* address)
-Vector64<uint> LoadAndReplicateToVector64(uint* address)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadandreplicatetovector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vld1_dup_u8).
-
-Assembly generated:
-
-```armasm", GetValue("LoadAndReplicateToVector64", "Performs 'LoadAndReplicateToVector64' operation.", 0), GetValue("LoadAndReplicateToVector64", "<address>".ToString(), 1), GetValue("LoadAndReplicateToVector64", apiResult.ToString(), 2));
-
-try {
-LoadAndReplicateToVector64Test(bytePtr_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-}
-// ----------------------------------------------------------------
-fixed (byte* bytePtr_0 = byteArray)
-{
-
-try {
 var LoadAndReplicateToVector128Result = Dummy_LoadAndReplicateToVector128Test(bytePtr_0);
 apiResult = LoadAndReplicateToVector128Result.ToString();
 } catch (Exception) {
@@ -9565,7 +12091,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 3. LoadAndReplicateToVector128
+### 9. LoadAndReplicateToVector128
 
 `Vector128<byte> LoadAndReplicateToVector128(byte* address)`
 
@@ -9618,8 +12144,8 @@ fixed (byte* bytePtr_0 = byteArray)
 {
 
 try {
-var LoadVector64Result = Dummy_LoadVector64Test(bytePtr_0);
-apiResult = LoadVector64Result.ToString();
+var LoadAndReplicateToVector64Result = Dummy_LoadAndReplicateToVector64Test(bytePtr_0);
+apiResult = LoadAndReplicateToVector64Result.ToString();
 } catch (Exception) {
    apiResult = "TODO";
 }
@@ -9628,16 +12154,16 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 4. LoadVector64
+### 10. LoadAndReplicateToVector64
 
-`Vector64<byte> LoadVector64(byte* address)`
+`Vector64<byte> LoadAndReplicateToVector64(byte* address)`
 
 {0}
 
 ```csharp
-private Vector64<byte> LoadVector64Test(byte* address)
+private Vector64<byte> LoadAndReplicateToVector64Test(byte* address)
 {{
-  return AdvSimd.LoadVector64(address);
+  return AdvSimd.LoadAndReplicateToVector64(address);
 }}
 // address = {1}
 // Result = {2}
@@ -9648,26 +12174,23 @@ Similar APIs that operate on different sizes:
 
 ```csharp
 // class System.Runtime.Intrinisics.AdvSimd
-Vector64<double> LoadVector64(double* address)
-Vector64<short> LoadVector64(short* address)
-Vector64<int> LoadVector64(int* address)
-Vector64<long> LoadVector64(long* address)
-Vector64<sbyte> LoadVector64(sbyte* address)
-Vector64<float> LoadVector64(float* address)
-Vector64<ushort> LoadVector64(ushort* address)
-Vector64<uint> LoadVector64(uint* address)
-Vector64<ulong> LoadVector64(ulong* address)
+Vector64<short> LoadAndReplicateToVector64(short* address)
+Vector64<int> LoadAndReplicateToVector64(int* address)
+Vector64<sbyte> LoadAndReplicateToVector64(sbyte* address)
+Vector64<float> LoadAndReplicateToVector64(float* address)
+Vector64<ushort> LoadAndReplicateToVector64(ushort* address)
+Vector64<uint> LoadAndReplicateToVector64(uint* address)
 ```
 
 
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadvector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vld1_u8).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadandreplicatetovector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vld1_dup_u8).
 
 Assembly generated:
 
-```armasm", GetValue("LoadVector64", "Performs 'LoadVector64' operation.", 0), GetValue("LoadVector64", "<address>".ToString(), 1), GetValue("LoadVector64", apiResult.ToString(), 2));
+```armasm", GetValue("LoadAndReplicateToVector64", "Performs 'LoadAndReplicateToVector64' operation.", 0), GetValue("LoadAndReplicateToVector64", "<address>".ToString(), 1), GetValue("LoadAndReplicateToVector64", apiResult.ToString(), 2));
 
 try {
-LoadVector64Test(bytePtr_0);
+LoadAndReplicateToVector64Test(bytePtr_0);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -9689,7 +12212,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 5. LoadVector128
+### 11. LoadVector128
 
 `Vector128<byte> LoadVector128(byte* address)`
 
@@ -9736,6 +12259,67 @@ LoadVector128Test(bytePtr_0);
 
 }
 // ----------------------------------------------------------------
+fixed (byte* bytePtr_0 = byteArray)
+{
+
+try {
+var LoadVector64Result = Dummy_LoadVector64Test(bytePtr_0);
+apiResult = LoadVector64Result.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 12. LoadVector64
+
+`Vector64<byte> LoadVector64(byte* address)`
+
+{0}
+
+```csharp
+private Vector64<byte> LoadVector64Test(byte* address)
+{{
+  return AdvSimd.LoadVector64(address);
+}}
+// address = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<double> LoadVector64(double* address)
+Vector64<short> LoadVector64(short* address)
+Vector64<int> LoadVector64(int* address)
+Vector64<long> LoadVector64(long* address)
+Vector64<sbyte> LoadVector64(sbyte* address)
+Vector64<float> LoadVector64(float* address)
+Vector64<ushort> LoadVector64(ushort* address)
+Vector64<uint> LoadVector64(uint* address)
+Vector64<ulong> LoadVector64(ulong* address)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.loadvector64?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vld1_u8).
+
+Assembly generated:
+
+```armasm", GetValue("LoadVector64", "Performs 'LoadVector64' operation.", 0), GetValue("LoadVector64", "<address>".ToString(), 1), GetValue("LoadVector64", apiResult.ToString(), 2));
+
+try {
+LoadVector64Test(bytePtr_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+}
+// ----------------------------------------------------------------
 
 try {
 var MaxResult = Dummy_MaxTest(Vector64byte_0, Vector64byte_1);
@@ -9748,7 +12332,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 6. Max
+### 13. Max
 
 `Vector64<byte> Max(Vector64<byte> left, Vector64<byte> right)`
 
@@ -9804,6 +12388,65 @@ MaxTest(Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 
 try {
+var MaxAcrossResult = Dummy_MaxAcrossTest(Vector64byte_0);
+apiResult = MaxAcrossResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 14. MaxAcross
+
+`Vector64<byte> MaxAcross(Vector64<byte> value)`
+
+{0}
+
+```csharp
+private Vector64<byte> MaxAcrossTest(Vector64<byte> value)
+{{
+  return AdvSimd.Arm64.MaxAcross(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<short> MaxAcross(Vector64<short> value)
+Vector64<sbyte> MaxAcross(Vector64<sbyte> value)
+Vector64<ushort> MaxAcross(Vector64<ushort> value)
+Vector64<byte> MaxAcross(Vector128<byte> value)
+Vector64<short> MaxAcross(Vector128<short> value)
+Vector64<int> MaxAcross(Vector128<int> value)
+Vector64<sbyte> MaxAcross(Vector128<sbyte> value)
+Vector64<float> MaxAcross(Vector128<float> value)
+Vector64<ushort> MaxAcross(Vector128<ushort> value)
+Vector64<uint> MaxAcross(Vector128<uint> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmaxv_u8).
+
+Assembly generated:
+
+```armasm", GetValue("MaxAcross", "Performs 'MaxAcross' operation.", 0), GetValue("MaxAcross", Vector64byte_0.ToString(), 1), GetValue("MaxAcross", apiResult.ToString(), 2));
+
+try {
+MaxAcrossTest(Vector64byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MaxNumberResult = Dummy_MaxNumberTest(Vector64float_0, Vector64float_1);
 apiResult = MaxNumberResult.ToString();
 } catch (Exception) {
@@ -9814,7 +12457,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 7. MaxNumber
+### 15. MaxNumber
 
 `Vector64<float> MaxNumber(Vector64<float> left, Vector64<float> right)`
 
@@ -9858,6 +12501,152 @@ MaxNumberTest(Vector64float_0, Vector64float_1);
 // ----------------------------------------------------------------
 
 try {
+var MaxNumberAcrossResult = Dummy_MaxNumberAcrossTest(Vector128float_0);
+apiResult = MaxNumberAcrossResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 16. MaxNumberAcross
+
+`Vector64<float> MaxNumberAcross(Vector128<float> value)`
+
+{0}
+
+```csharp
+private Vector64<float> MaxNumberAcrossTest(Vector128<float> value)
+{{
+  return AdvSimd.Arm64.MaxNumberAcross(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmaxnmvq_f32).
+
+Assembly generated:
+
+```armasm", GetValue("MaxNumberAcross", "Performs 'MaxNumberAcross' operation.", 0), GetValue("MaxNumberAcross", Vector128float_0.ToString(), 1), GetValue("MaxNumberAcross", apiResult.ToString(), 2));
+
+try {
+MaxNumberAcrossTest(Vector128float_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MaxNumberPairwiseResult = Dummy_MaxNumberPairwiseTest(Vector64float_0, Vector64float_1);
+apiResult = MaxNumberPairwiseResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 17. MaxNumberPairwise
+
+`Vector64<float> MaxNumberPairwise(Vector64<float> left, Vector64<float> right)`
+
+{0}
+
+```csharp
+private Vector64<float> MaxNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
+{{
+  return AdvSimd.Arm64.MaxNumberPairwise(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<double> MaxNumberPairwise(Vector128<double> left, Vector128<double> right)
+Vector128<float> MaxNumberPairwise(Vector128<float> left, Vector128<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberpairwise?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmaxnm_f32).
+
+Assembly generated:
+
+```armasm", GetValue("MaxNumberPairwise", "Performs 'MaxNumberPairwise' operation.", 0), GetValue("MaxNumberPairwise", Vector64float_0.ToString(), 1), GetValue("MaxNumberPairwise", Vector64float_1.ToString(), 2), GetValue("MaxNumberPairwise", apiResult.ToString(), 3));
+
+try {
+MaxNumberPairwiseTest(Vector64float_0, Vector64float_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MaxNumberPairwiseScalarResult = Dummy_MaxNumberPairwiseScalarTest(Vector64float_0);
+apiResult = MaxNumberPairwiseScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 18. MaxNumberPairwiseScalar
+
+`Vector64<float> MaxNumberPairwiseScalar(Vector64<float> value)`
+
+{0}
+
+```csharp
+private Vector64<float> MaxNumberPairwiseScalarTest(Vector64<float> value)
+{{
+  return AdvSimd.Arm64.MaxNumberPairwiseScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<double> MaxNumberPairwiseScalar(Vector128<double> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmaxnms_f32).
+
+Assembly generated:
+
+```armasm", GetValue("MaxNumberPairwiseScalar", "Performs 'MaxNumberPairwiseScalar' operation.", 0), GetValue("MaxNumberPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MaxNumberPairwiseScalar", apiResult.ToString(), 2));
+
+try {
+MaxNumberPairwiseScalarTest(Vector64float_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MaxNumberScalarResult = Dummy_MaxNumberScalarTest(Vector64double_0, Vector64double_1);
 apiResult = MaxNumberScalarResult.ToString();
 } catch (Exception) {
@@ -9868,7 +12657,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 8. MaxNumberScalar
+### 19. MaxNumberScalar
 
 `Vector64<double> MaxNumberScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -9919,7 +12708,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 9. MaxPairwise
+### 20. MaxPairwise
 
 `Vector64<byte> MaxPairwise(Vector64<byte> left, Vector64<byte> right)`
 
@@ -9975,6 +12764,107 @@ MaxPairwiseTest(Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 
 try {
+var MaxPairwiseScalarResult = Dummy_MaxPairwiseScalarTest(Vector64float_0);
+apiResult = MaxPairwiseScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 21. MaxPairwiseScalar
+
+`Vector64<float> MaxPairwiseScalar(Vector64<float> value)`
+
+{0}
+
+```csharp
+private Vector64<float> MaxPairwiseScalarTest(Vector64<float> value)
+{{
+  return AdvSimd.Arm64.MaxPairwiseScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<double> MaxPairwiseScalar(Vector128<double> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmaxs_f32).
+
+Assembly generated:
+
+```armasm", GetValue("MaxPairwiseScalar", "Performs 'MaxPairwiseScalar' operation.", 0), GetValue("MaxPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MaxPairwiseScalar", apiResult.ToString(), 2));
+
+try {
+MaxPairwiseScalarTest(Vector64float_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MaxScalarResult = Dummy_MaxScalarTest(Vector64double_0, Vector64double_1);
+apiResult = MaxScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 22. MaxScalar
+
+`Vector64<double> MaxScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> MaxScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.MaxScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> MaxScalar(Vector64<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmax_f64).
+
+Assembly generated:
+
+```armasm", GetValue("MaxScalar", "Performs 'MaxScalar' operation.", 0), GetValue("MaxScalar", Vector64double_0.ToString(), 1), GetValue("MaxScalar", Vector64double_1.ToString(), 2), GetValue("MaxScalar", apiResult.ToString(), 3));
+
+try {
+MaxScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MinResult = Dummy_MinTest(Vector64byte_0, Vector64byte_1);
 apiResult = MinResult.ToString();
 } catch (Exception) {
@@ -9985,7 +12875,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 10. Min
+### 23. Min
 
 `Vector64<byte> Min(Vector64<byte> left, Vector64<byte> right)`
 
@@ -10041,6 +12931,65 @@ MinTest(Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 
 try {
+var MinAcrossResult = Dummy_MinAcrossTest(Vector64byte_0);
+apiResult = MinAcrossResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 24. MinAcross
+
+`Vector64<byte> MinAcross(Vector64<byte> value)`
+
+{0}
+
+```csharp
+private Vector64<byte> MinAcrossTest(Vector64<byte> value)
+{{
+  return AdvSimd.Arm64.MinAcross(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<short> MinAcross(Vector64<short> value)
+Vector64<sbyte> MinAcross(Vector64<sbyte> value)
+Vector64<ushort> MinAcross(Vector64<ushort> value)
+Vector64<byte> MinAcross(Vector128<byte> value)
+Vector64<short> MinAcross(Vector128<short> value)
+Vector64<int> MinAcross(Vector128<int> value)
+Vector64<sbyte> MinAcross(Vector128<sbyte> value)
+Vector64<float> MinAcross(Vector128<float> value)
+Vector64<ushort> MinAcross(Vector128<ushort> value)
+Vector64<uint> MinAcross(Vector128<uint> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vminv_u8).
+
+Assembly generated:
+
+```armasm", GetValue("MinAcross", "Performs 'MinAcross' operation.", 0), GetValue("MinAcross", Vector64byte_0.ToString(), 1), GetValue("MinAcross", apiResult.ToString(), 2));
+
+try {
+MinAcrossTest(Vector64byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MinNumberResult = Dummy_MinNumberTest(Vector64float_0, Vector64float_1);
 apiResult = MinNumberResult.ToString();
 } catch (Exception) {
@@ -10051,7 +13000,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 11. MinNumber
+### 25. MinNumber
 
 `Vector64<float> MinNumber(Vector64<float> left, Vector64<float> right)`
 
@@ -10095,6 +13044,152 @@ MinNumberTest(Vector64float_0, Vector64float_1);
 // ----------------------------------------------------------------
 
 try {
+var MinNumberAcrossResult = Dummy_MinNumberAcrossTest(Vector128float_0);
+apiResult = MinNumberAcrossResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 26. MinNumberAcross
+
+`Vector64<float> MinNumberAcross(Vector128<float> value)`
+
+{0}
+
+```csharp
+private Vector64<float> MinNumberAcrossTest(Vector128<float> value)
+{{
+  return AdvSimd.Arm64.MinNumberAcross(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vminnmvq_f32).
+
+Assembly generated:
+
+```armasm", GetValue("MinNumberAcross", "Performs 'MinNumberAcross' operation.", 0), GetValue("MinNumberAcross", Vector128float_0.ToString(), 1), GetValue("MinNumberAcross", apiResult.ToString(), 2));
+
+try {
+MinNumberAcrossTest(Vector128float_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MinNumberPairwiseResult = Dummy_MinNumberPairwiseTest(Vector64float_0, Vector64float_1);
+apiResult = MinNumberPairwiseResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 27. MinNumberPairwise
+
+`Vector64<float> MinNumberPairwise(Vector64<float> left, Vector64<float> right)`
+
+{0}
+
+```csharp
+private Vector64<float> MinNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
+{{
+  return AdvSimd.Arm64.MinNumberPairwise(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<double> MinNumberPairwise(Vector128<double> left, Vector128<double> right)
+Vector128<float> MinNumberPairwise(Vector128<float> left, Vector128<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberpairwise?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpminnm_f32).
+
+Assembly generated:
+
+```armasm", GetValue("MinNumberPairwise", "Performs 'MinNumberPairwise' operation.", 0), GetValue("MinNumberPairwise", Vector64float_0.ToString(), 1), GetValue("MinNumberPairwise", Vector64float_1.ToString(), 2), GetValue("MinNumberPairwise", apiResult.ToString(), 3));
+
+try {
+MinNumberPairwiseTest(Vector64float_0, Vector64float_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MinNumberPairwiseScalarResult = Dummy_MinNumberPairwiseScalarTest(Vector64float_0);
+apiResult = MinNumberPairwiseScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 28. MinNumberPairwiseScalar
+
+`Vector64<float> MinNumberPairwiseScalar(Vector64<float> value)`
+
+{0}
+
+```csharp
+private Vector64<float> MinNumberPairwiseScalarTest(Vector64<float> value)
+{{
+  return AdvSimd.Arm64.MinNumberPairwiseScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<double> MinNumberPairwiseScalar(Vector128<double> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpminnms_f32).
+
+Assembly generated:
+
+```armasm", GetValue("MinNumberPairwiseScalar", "Performs 'MinNumberPairwiseScalar' operation.", 0), GetValue("MinNumberPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MinNumberPairwiseScalar", apiResult.ToString(), 2));
+
+try {
+MinNumberPairwiseScalarTest(Vector64float_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MinNumberScalarResult = Dummy_MinNumberScalarTest(Vector64double_0, Vector64double_1);
 apiResult = MinNumberScalarResult.ToString();
 } catch (Exception) {
@@ -10105,7 +13200,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 12. MinNumberScalar
+### 29. MinNumberScalar
 
 `Vector64<double> MinNumberScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -10156,7 +13251,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 13. MinPairwise
+### 30. MinPairwise
 
 `Vector64<byte> MinPairwise(Vector64<byte> left, Vector64<byte> right)`
 
@@ -10212,6 +13307,107 @@ MinPairwiseTest(Vector64byte_0, Vector64byte_1);
 // ----------------------------------------------------------------
 
 try {
+var MinPairwiseScalarResult = Dummy_MinPairwiseScalarTest(Vector64float_0);
+apiResult = MinPairwiseScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 31. MinPairwiseScalar
+
+`Vector64<float> MinPairwiseScalar(Vector64<float> value)`
+
+{0}
+
+```csharp
+private Vector64<float> MinPairwiseScalarTest(Vector64<float> value)
+{{
+  return AdvSimd.Arm64.MinPairwiseScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<double> MinPairwiseScalar(Vector128<double> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmins_f32).
+
+Assembly generated:
+
+```armasm", GetValue("MinPairwiseScalar", "Performs 'MinPairwiseScalar' operation.", 0), GetValue("MinPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MinPairwiseScalar", apiResult.ToString(), 2));
+
+try {
+MinPairwiseScalarTest(Vector64float_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MinScalarResult = Dummy_MinScalarTest(Vector64double_0, Vector64double_1);
+apiResult = MinScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 32. MinScalar
+
+`Vector64<double> MinScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> MinScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.MinScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> MinScalar(Vector64<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmin_f64).
+
+Assembly generated:
+
+```armasm", GetValue("MinScalar", "Performs 'MinScalar' operation.", 0), GetValue("MinScalar", Vector64double_0.ToString(), 1), GetValue("MinScalar", Vector64double_1.ToString(), 2), GetValue("MinScalar", apiResult.ToString(), 3));
+
+try {
+MinScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MultiplyResult = Dummy_MultiplyTest(Vector64byte_0, Vector64byte_1);
 apiResult = MultiplyResult.ToString();
 } catch (Exception) {
@@ -10222,7 +13418,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 14. Multiply
+### 33. Multiply
 
 `Vector64<byte> Multiply(Vector64<byte> left, Vector64<byte> right)`
 
@@ -10288,7 +13484,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 15. MultiplyAdd
+### 34. MultiplyAdd
 
 `Vector64<byte> MultiplyAdd(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)`
 
@@ -10350,7 +13546,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 16. MultiplyAddByScalar
+### 35. MultiplyAddByScalar
 
 `Vector64<short> MultiplyAddByScalar(Vector64<short> addend, Vector64<short> left, Vector64<short> right)`
 
@@ -10408,7 +13604,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 17. MultiplyAddBySelectedScalar
+### 36. MultiplyAddBySelectedScalar
 
 `Vector64<short> MultiplyAddBySelectedScalar(Vector64<short> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10475,7 +13671,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 18. MultiplyByScalar
+### 37. MultiplyByScalar
 
 `Vector64<short> MultiplyByScalar(Vector64<short> left, Vector64<short> right)`
 
@@ -10537,7 +13733,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 19. MultiplyBySelectedScalar
+### 38. MultiplyBySelectedScalar
 
 `Vector64<short> MultiplyBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10610,7 +13806,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 20. MultiplyBySelectedScalarWideningLower
+### 39. MultiplyBySelectedScalarWideningLower
 
 `Vector128<int> MultiplyBySelectedScalarWideningLower(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10668,7 +13864,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 21. MultiplyBySelectedScalarWideningLowerAndAdd
+### 40. MultiplyBySelectedScalarWideningLowerAndAdd
 
 `Vector128<int> MultiplyBySelectedScalarWideningLowerAndAdd(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10727,7 +13923,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 22. MultiplyBySelectedScalarWideningLowerAndSubtract
+### 41. MultiplyBySelectedScalarWideningLowerAndSubtract
 
 `Vector128<int> MultiplyBySelectedScalarWideningLowerAndSubtract(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10786,7 +13982,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 23. MultiplyBySelectedScalarWideningUpper
+### 42. MultiplyBySelectedScalarWideningUpper
 
 `Vector128<int> MultiplyBySelectedScalarWideningUpper(Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10844,7 +14040,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 24. MultiplyBySelectedScalarWideningUpperAndAdd
+### 43. MultiplyBySelectedScalarWideningUpperAndAdd
 
 `Vector128<int> MultiplyBySelectedScalarWideningUpperAndAdd(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10903,7 +14099,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 25. MultiplyBySelectedScalarWideningUpperAndSubtract
+### 44. MultiplyBySelectedScalarWideningUpperAndSubtract
 
 `Vector128<int> MultiplyBySelectedScalarWideningUpperAndSubtract(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -10962,7 +14158,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 26. MultiplyDoublingByScalarSaturateHigh
+### 45. MultiplyDoublingByScalarSaturateHigh
 
 `Vector64<short> MultiplyDoublingByScalarSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
@@ -11003,6 +14199,28 @@ MultiplyDoublingByScalarSaturateHighTest(Vector64short_0, Vector64short_1);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: ARM64 Hardware Intrinsics APIs in .NET - Part 5
+subtitle: Sample code usage, examples and generated assembly code
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [vectorization using .NET APIs](../2020-08-01-Vectorization-APIs) blog, I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrinsic' APIs. In this post I will describe those hardware intrinsic APIs for ARM64 by showing sample code usage along with examples and generated ARM64 code. This will help people in understanding these APIs so they can use them to optimize their .NET code written to target ARM64. Since there are 360 APIs, describing all of them in a single post will be overwhelming. So I have divided these APIs among 8 blogs and will demonstrate 45 APIs in each blog. This is part 5 of that blog series.
+
+Most of the description of these APIs is adapted and referenced from [Arm Architecture Reference Manual Armv8, for Armv8-A architecture profile document](https://developer.arm.com/documentation/ddi0487/fc/). You can also refer to the description of SIMD and Floating-point instructions description at [Arm developer docs page](https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order).
+
+### APIs covered
+
+[MultiplyDoublingBySelectedScalarSaturateHigh](#1-multiplydoublingbyselectedscalarsaturatehigh), [MultiplyDoublingSaturateHigh](#2-multiplydoublingsaturatehigh), [MultiplyDoublingSaturateHighScalar](#3-multiplydoublingsaturatehighscalar), [MultiplyDoublingScalarBySelectedScalarSaturateHigh](#4-multiplydoublingscalarbyselectedscalarsaturatehigh), [MultiplyDoublingWideningAndAddSaturateScalar](#5-multiplydoublingwideningandaddsaturatescalar), [MultiplyDoublingWideningAndSubtractSaturateScalar](#6-multiplydoublingwideningandsubtractsaturatescalar), [MultiplyDoublingWideningLowerAndAddSaturate](#7-multiplydoublingwideninglowerandaddsaturate), [MultiplyDoublingWideningLowerAndSubtractSaturate](#8-multiplydoublingwideninglowerandsubtractsaturate), [MultiplyDoublingWideningLowerByScalarAndAddSaturate](#9-multiplydoublingwideninglowerbyscalarandaddsaturate), [MultiplyDoublingWideningLowerByScalarAndSubtractSaturate](#10-multiplydoublingwideninglowerbyscalarandsubtractsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate](#11-multiplydoublingwideninglowerbyselectedscalarandaddsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate](#12-multiplydoublingwideninglowerbyselectedscalarandsubtractsaturate), [MultiplyDoublingWideningSaturateLower](#13-multiplydoublingwideningsaturatelower), [MultiplyDoublingWideningSaturateLowerByScalar](#14-multiplydoublingwideningsaturatelowerbyscalar), [MultiplyDoublingWideningSaturateLowerBySelectedScalar](#15-multiplydoublingwideningsaturatelowerbyselectedscalar), [MultiplyDoublingWideningSaturateScalar](#16-multiplydoublingwideningsaturatescalar), [MultiplyDoublingWideningSaturateScalarBySelectedScalar](#17-multiplydoublingwideningsaturatescalarbyselectedscalar), [MultiplyDoublingWideningSaturateUpper](#18-multiplydoublingwideningsaturateupper), [MultiplyDoublingWideningSaturateUpperByScalar](#19-multiplydoublingwideningsaturateupperbyscalar), [MultiplyDoublingWideningSaturateUpperBySelectedScalar](#20-multiplydoublingwideningsaturateupperbyselectedscalar), [MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate](#21-multiplydoublingwideningscalarbyselectedscalarandaddsaturate), [MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate](#22-multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate), [MultiplyDoublingWideningUpperAndAddSaturate](#23-multiplydoublingwideningupperandaddsaturate), [MultiplyDoublingWideningUpperAndSubtractSaturate](#24-multiplydoublingwideningupperandsubtractsaturate), [MultiplyDoublingWideningUpperByScalarAndAddSaturate](#25-multiplydoublingwideningupperbyscalarandaddsaturate), [MultiplyDoublingWideningUpperByScalarAndSubtractSaturate](#26-multiplydoublingwideningupperbyscalarandsubtractsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate](#27-multiplydoublingwideningupperbyselectedscalarandaddsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate](#28-multiplydoublingwideningupperbyselectedscalarandsubtractsaturate), [MultiplyExtended](#29-multiplyextended), [MultiplyExtendedByScalar](#30-multiplyextendedbyscalar), [MultiplyExtendedBySelectedScalar](#31-multiplyextendedbyselectedscalar), [MultiplyExtendedScalar](#32-multiplyextendedscalar), [MultiplyExtendedScalarBySelectedScalar](#33-multiplyextendedscalarbyselectedscalar), [MultiplyRoundedDoublingByScalarSaturateHigh](#34-multiplyroundeddoublingbyscalarsaturatehigh), [MultiplyRoundedDoublingBySelectedScalarSaturateHigh](#35-multiplyroundeddoublingbyselectedscalarsaturatehigh), [MultiplyRoundedDoublingSaturateHigh](#36-multiplyroundeddoublingsaturatehigh), [MultiplyRoundedDoublingSaturateHighScalar](#37-multiplyroundeddoublingsaturatehighscalar), [MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh](#38-multiplyroundeddoublingscalarbyselectedscalarsaturatehigh), [MultiplyScalar](#39-multiplyscalar), [MultiplyScalarBySelectedScalar](#40-multiplyscalarbyselectedscalar), [MultiplySubtract](#41-multiplysubtract), [MultiplySubtractByScalar](#42-multiplysubtractbyscalar), [MultiplySubtractBySelectedScalar](#43-multiplysubtractbyselectedscalar), [MultiplyWideningLower](#44-multiplywideninglower), [MultiplyWideningLowerAndAdd](#45-multiplywideninglowerandadd)
+
+
+");
 
 try {
 var MultiplyDoublingBySelectedScalarSaturateHighResult = Dummy_MultiplyDoublingBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
@@ -11012,10 +14230,9 @@ apiResult = MultiplyDoublingBySelectedScalarSaturateHighResult.ToString();
 }
 
 Console.WriteLine(
-@"```
-------------------------------------------------
+@"
 
-### 27. MultiplyDoublingBySelectedScalarSaturateHigh
+### 1. MultiplyDoublingBySelectedScalarSaturateHigh
 
 `Vector64<short> MultiplyDoublingBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11073,7 +14290,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 28. MultiplyDoublingSaturateHigh
+### 2. MultiplyDoublingSaturateHigh
 
 `Vector64<short> MultiplyDoublingSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
@@ -11116,6 +14333,215 @@ MultiplyDoublingSaturateHighTest(Vector64short_0, Vector64short_1);
 // ----------------------------------------------------------------
 
 try {
+var MultiplyDoublingSaturateHighScalarResult = Dummy_MultiplyDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
+apiResult = MultiplyDoublingSaturateHighScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 3. MultiplyDoublingSaturateHighScalar
+
+`Vector64<short> MultiplyDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
+
+{0}
+
+```csharp
+private Vector64<short> MultiplyDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
+{{
+  return AdvSimd.Arm64.MultiplyDoublingSaturateHighScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<int> MultiplyDoublingSaturateHighScalar(Vector64<int> left, Vector64<int> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingsaturatehighscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmulhh_s16).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyDoublingSaturateHighScalar", "Performs 'MultiplyDoublingSaturateHighScalar' operation.", 0), GetValue("MultiplyDoublingSaturateHighScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingSaturateHighScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingSaturateHighScalar", apiResult.ToString(), 3));
+
+try {
+MultiplyDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MultiplyDoublingScalarBySelectedScalarSaturateHighResult = Dummy_MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
+apiResult = MultiplyDoublingScalarBySelectedScalarSaturateHighResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 4. MultiplyDoublingScalarBySelectedScalarSaturateHigh
+
+`Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
+}}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector128<short> right, byte rightIndex)
+Vector64<int> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<int> left, Vector64<int> right, byte rightIndex)
+Vector64<int> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<int> left, Vector128<int> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingscalarbyselectedscalarsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmulhh_lane_s16).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyDoublingScalarBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
+
+try {
+MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MultiplyDoublingWideningAndAddSaturateScalarResult = Dummy_MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
+apiResult = MultiplyDoublingWideningAndAddSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 5. MultiplyDoublingWideningAndAddSaturateScalar
+
+`Vector64<int> MultiplyDoublingWideningAndAddSaturateScalar(Vector64<int> addend, Vector64<short> left, Vector64<short> right)`
+
+{0}
+
+```csharp
+private Vector64<int> MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right)
+{{
+  return AdvSimd.Arm64.MultiplyDoublingWideningAndAddSaturateScalar(addend, left, right);
+}}
+// addend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<long> MultiplyDoublingWideningAndAddSaturateScalar(Vector64<long> addend, Vector64<int> left, Vector64<int> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningandaddsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlalh_s16).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyDoublingWideningAndAddSaturateScalar", "Performs 'MultiplyDoublingWideningAndAddSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", apiResult.ToString(), 4));
+
+try {
+MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MultiplyDoublingWideningAndSubtractSaturateScalarResult = Dummy_MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
+apiResult = MultiplyDoublingWideningAndSubtractSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 6. MultiplyDoublingWideningAndSubtractSaturateScalar
+
+`Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalar(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)`
+
+{0}
+
+```csharp
+private Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)
+{{
+  return AdvSimd.Arm64.MultiplyDoublingWideningAndSubtractSaturateScalar(minuend, left, right);
+}}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<long> MultiplyDoublingWideningAndSubtractSaturateScalar(Vector64<long> minuend, Vector64<int> left, Vector64<int> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningandsubtractsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlslh_s16).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", "Performs 'MultiplyDoublingWideningAndSubtractSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", apiResult.ToString(), 4));
+
+try {
+MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MultiplyDoublingWideningLowerAndAddSaturateResult = Dummy_MultiplyDoublingWideningLowerAndAddSaturateTest(Vector128int_0, Vector64short_0, Vector64short_1);
 apiResult = MultiplyDoublingWideningLowerAndAddSaturateResult.ToString();
 } catch (Exception) {
@@ -11126,7 +14552,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 29. MultiplyDoublingWideningLowerAndAddSaturate
+### 7. MultiplyDoublingWideningLowerAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right)`
 
@@ -11178,7 +14604,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 30. MultiplyDoublingWideningLowerAndSubtractSaturate
+### 8. MultiplyDoublingWideningLowerAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)`
 
@@ -11230,7 +14656,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 31. MultiplyDoublingWideningLowerByScalarAndAddSaturate
+### 9. MultiplyDoublingWideningLowerByScalarAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerByScalarAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right)`
 
@@ -11282,7 +14708,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 32. MultiplyDoublingWideningLowerByScalarAndSubtractSaturate
+### 10. MultiplyDoublingWideningLowerByScalarAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerByScalarAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)`
 
@@ -11334,7 +14760,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 33. MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate
+### 11. MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11389,7 +14815,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 34. MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate
+### 12. MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11444,7 +14870,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 35. MultiplyDoublingWideningSaturateLower
+### 13. MultiplyDoublingWideningSaturateLower
 
 `Vector128<int> MultiplyDoublingWideningSaturateLower(Vector64<short> left, Vector64<short> right)`
 
@@ -11495,7 +14921,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 36. MultiplyDoublingWideningSaturateLowerByScalar
+### 14. MultiplyDoublingWideningSaturateLowerByScalar
 
 `Vector128<int> MultiplyDoublingWideningSaturateLowerByScalar(Vector64<short> left, Vector64<short> right)`
 
@@ -11546,7 +14972,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 37. MultiplyDoublingWideningSaturateLowerBySelectedScalar
+### 15. MultiplyDoublingWideningSaturateLowerBySelectedScalar
 
 `Vector128<int> MultiplyDoublingWideningSaturateLowerBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11590,6 +15016,111 @@ MultiplyDoublingWideningSaturateLowerBySelectedScalarTest(Vector64short_0, Vecto
 // ----------------------------------------------------------------
 
 try {
+var MultiplyDoublingWideningSaturateScalarResult = Dummy_MultiplyDoublingWideningSaturateScalarTest(Vector64short_0, Vector64short_1);
+apiResult = MultiplyDoublingWideningSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 16. MultiplyDoublingWideningSaturateScalar
+
+`Vector64<int> MultiplyDoublingWideningSaturateScalar(Vector64<short> left, Vector64<short> right)`
+
+{0}
+
+```csharp
+private Vector64<int> MultiplyDoublingWideningSaturateScalarTest(Vector64<short> left, Vector64<short> right)
+{{
+  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<long> MultiplyDoublingWideningSaturateScalar(Vector64<int> left, Vector64<int> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmullh_s16).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyDoublingWideningSaturateScalar", "Performs 'MultiplyDoublingWideningSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateScalar", apiResult.ToString(), 3));
+
+try {
+MultiplyDoublingWideningSaturateScalarTest(Vector64short_0, Vector64short_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MultiplyDoublingWideningSaturateScalarBySelectedScalarResult = Dummy_MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
+apiResult = MultiplyDoublingWideningSaturateScalarBySelectedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 17. MultiplyDoublingWideningSaturateScalarBySelectedScalar
+
+`Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, 0);
+}}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<short> left, Vector128<short> right, byte rightIndex)
+Vector64<long> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<int> left, Vector64<int> right, byte rightIndex)
+Vector64<long> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<int> left, Vector128<int> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningsaturatescalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmullh_lane_s16).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateScalarBySelectedScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", apiResult.ToString(), 4));
+
+try {
+MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MultiplyDoublingWideningSaturateUpperResult = Dummy_MultiplyDoublingWideningSaturateUpperTest(Vector128short_0, Vector128short_1);
 apiResult = MultiplyDoublingWideningSaturateUpperResult.ToString();
 } catch (Exception) {
@@ -11600,7 +15131,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 38. MultiplyDoublingWideningSaturateUpper
+### 18. MultiplyDoublingWideningSaturateUpper
 
 `Vector128<int> MultiplyDoublingWideningSaturateUpper(Vector128<short> left, Vector128<short> right)`
 
@@ -11651,7 +15182,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 39. MultiplyDoublingWideningSaturateUpperByScalar
+### 19. MultiplyDoublingWideningSaturateUpperByScalar
 
 `Vector128<int> MultiplyDoublingWideningSaturateUpperByScalar(Vector128<short> left, Vector64<short> right)`
 
@@ -11702,7 +15233,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 40. MultiplyDoublingWideningSaturateUpperBySelectedScalar
+### 20. MultiplyDoublingWideningSaturateUpperBySelectedScalar
 
 `Vector128<int> MultiplyDoublingWideningSaturateUpperBySelectedScalar(Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -11746,6 +15277,116 @@ MultiplyDoublingWideningSaturateUpperBySelectedScalarTest(Vector128short_0, Vect
 // ----------------------------------------------------------------
 
 try {
+var MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateResult = Dummy_MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
+apiResult = MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 21. MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate
+
+`Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, 0);
+}}
+// addend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<int> addend, Vector64<short> left, Vector128<short> right, byte rightIndex)
+Vector64<long> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<long> addend, Vector64<int> left, Vector64<int> right, byte rightIndex)
+Vector64<long> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<long> addend, Vector64<int> left, Vector128<int> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningscalarbyselectedscalarandaddsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlalh_lane_s16).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", apiResult.ToString(), 5));
+
+try {
+MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateResult = Dummy_MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
+apiResult = MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 22. MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate
+
+`Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
+}}
+// minuend = {1}
+// left = {2}
+// right = {3}
+// rightIndex = {4}
+// Result = {5}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<int> minuend, Vector64<short> left, Vector128<short> right, byte rightIndex)
+Vector64<long> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<long> minuend, Vector64<int> left, Vector64<int> right, byte rightIndex)
+Vector64<long> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<long> minuend, Vector64<int> left, Vector128<int> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlslh_lane_s16).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", apiResult.ToString(), 5));
+
+try {
+MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MultiplyDoublingWideningUpperAndAddSaturateResult = Dummy_MultiplyDoublingWideningUpperAndAddSaturateTest(Vector128int_0, Vector128short_0, Vector128short_1);
 apiResult = MultiplyDoublingWideningUpperAndAddSaturateResult.ToString();
 } catch (Exception) {
@@ -11756,7 +15397,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 41. MultiplyDoublingWideningUpperAndAddSaturate
+### 23. MultiplyDoublingWideningUpperAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector128<short> right)`
 
@@ -11808,7 +15449,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 42. MultiplyDoublingWideningUpperAndSubtractSaturate
+### 24. MultiplyDoublingWideningUpperAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector128<short> right)`
 
@@ -11860,7 +15501,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 43. MultiplyDoublingWideningUpperByScalarAndAddSaturate
+### 25. MultiplyDoublingWideningUpperByScalarAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperByScalarAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector64<short> right)`
 
@@ -11912,7 +15553,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 44. MultiplyDoublingWideningUpperByScalarAndSubtractSaturate
+### 26. MultiplyDoublingWideningUpperByScalarAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperByScalarAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector64<short> right)`
 
@@ -11964,7 +15605,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 45. MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate
+### 27. MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -12007,27 +15648,6 @@ MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturateTest(Vector128int_0, 
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 4
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate](#1-multiplydoublingwideningupperbyselectedscalarandsubtractsaturate), [MultiplyRoundedDoublingByScalarSaturateHigh](#2-multiplyroundeddoublingbyscalarsaturatehigh), [MultiplyRoundedDoublingBySelectedScalarSaturateHigh](#3-multiplyroundeddoublingbyselectedscalarsaturatehigh), [MultiplyRoundedDoublingSaturateHigh](#4-multiplyroundeddoublingsaturatehigh), [MultiplyScalar](#5-multiplyscalar), [MultiplyScalarBySelectedScalar](#6-multiplyscalarbyselectedscalar), [MultiplySubtract](#7-multiplysubtract), [MultiplySubtractByScalar](#8-multiplysubtractbyscalar), [MultiplySubtractBySelectedScalar](#9-multiplysubtractbyselectedscalar), [MultiplyWideningLower](#10-multiplywideninglower), [MultiplyWideningLowerAndAdd](#11-multiplywideninglowerandadd), [MultiplyWideningLowerAndSubtract](#12-multiplywideninglowerandsubtract), [MultiplyWideningUpper](#13-multiplywideningupper), [MultiplyWideningUpperAndAdd](#14-multiplywideningupperandadd), [MultiplyWideningUpperAndSubtract](#15-multiplywideningupperandsubtract), [Negate](#16-negate), [NegateSaturate](#17-negatesaturate), [NegateScalar](#18-negatescalar), [Not](#19-not), [Or](#20-or), [OrNot](#21-ornot), [PolynomialMultiply](#22-polynomialmultiply), [PolynomialMultiplyWideningLower](#23-polynomialmultiplywideninglower), [PolynomialMultiplyWideningUpper](#24-polynomialmultiplywideningupper), [PopCount](#25-popcount), [ReciprocalEstimate](#26-reciprocalestimate), [ReciprocalSquareRootEstimate](#27-reciprocalsquarerootestimate), [ReciprocalSquareRootStep](#28-reciprocalsquarerootstep), [ReciprocalStep](#29-reciprocalstep), [ReverseElement16](#30-reverseelement16), [ReverseElement32](#31-reverseelement32), [ReverseElement8](#32-reverseelement8), [RoundAwayFromZero](#33-roundawayfromzero), [RoundAwayFromZeroScalar](#34-roundawayfromzeroscalar), [RoundToNearest](#35-roundtonearest), [RoundToNearestScalar](#36-roundtonearestscalar), [RoundToNegativeInfinity](#37-roundtonegativeinfinity), [RoundToNegativeInfinityScalar](#38-roundtonegativeinfinityscalar), [RoundToPositiveInfinity](#39-roundtopositiveinfinity), [RoundToPositiveInfinityScalar](#40-roundtopositiveinfinityscalar), [RoundToZero](#41-roundtozero), [RoundToZeroScalar](#42-roundtozeroscalar), [ShiftArithmetic](#43-shiftarithmetic), [ShiftArithmeticRounded](#44-shiftarithmeticrounded), [ShiftArithmeticRoundedSaturate](#45-shiftarithmeticroundedsaturate),[...](Part4.md)
-
-
-");
 
 try {
 var MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateResult = Dummy_MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128int_0, Vector128short_0, Vector64short_0, byte_0);
@@ -12037,9 +15657,10 @@ apiResult = MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateResu
 }
 
 Console.WriteLine(
-@"
+@"```
+------------------------------------------------
 
-### 1. MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate
+### 28. MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate
 
 `Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -12084,6 +15705,262 @@ MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturateTest(Vector128in
 // ----------------------------------------------------------------
 
 try {
+var MultiplyExtendedResult = Dummy_MultiplyExtendedTest(Vector64float_0, Vector64float_1);
+apiResult = MultiplyExtendedResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 29. MultiplyExtended
+
+`Vector64<float> MultiplyExtended(Vector64<float> left, Vector64<float> right)`
+
+{0}
+
+```csharp
+private Vector64<float> MultiplyExtendedTest(Vector64<float> left, Vector64<float> right)
+{{
+  return AdvSimd.Arm64.MultiplyExtended(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<double> MultiplyExtended(Vector128<double> left, Vector128<double> right)
+Vector128<float> MultiplyExtended(Vector128<float> left, Vector128<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextended?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulx_f32).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyExtended", "Performs 'MultiplyExtended' operation.", 0), GetValue("MultiplyExtended", Vector64float_0.ToString(), 1), GetValue("MultiplyExtended", Vector64float_1.ToString(), 2), GetValue("MultiplyExtended", apiResult.ToString(), 3));
+
+try {
+MultiplyExtendedTest(Vector64float_0, Vector64float_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MultiplyExtendedByScalarResult = Dummy_MultiplyExtendedByScalarTest(Vector128double_0, Vector64double_0);
+apiResult = MultiplyExtendedByScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 30. MultiplyExtendedByScalar
+
+`Vector128<double> MultiplyExtendedByScalar(Vector128<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector128<double> MultiplyExtendedByScalarTest(Vector128<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.MultiplyExtendedByScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulxq_lane_f64).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyExtendedByScalar", "Performs 'MultiplyExtendedByScalar' operation.", 0), GetValue("MultiplyExtendedByScalar", Vector128double_0.ToString(), 1), GetValue("MultiplyExtendedByScalar", Vector64double_0.ToString(), 2), GetValue("MultiplyExtendedByScalar", apiResult.ToString(), 3));
+
+try {
+MultiplyExtendedByScalarTest(Vector128double_0, Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MultiplyExtendedBySelectedScalarResult = Dummy_MultiplyExtendedBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
+apiResult = MultiplyExtendedBySelectedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 31. MultiplyExtendedBySelectedScalar
+
+`Vector64<float> MultiplyExtendedBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<float> MultiplyExtendedBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, 0);
+}}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> MultiplyExtendedBySelectedScalar(Vector64<float> left, Vector128<float> right, byte rightIndex)
+Vector128<double> MultiplyExtendedBySelectedScalar(Vector128<double> left, Vector128<double> right, byte rightIndex)
+Vector128<float> MultiplyExtendedBySelectedScalar(Vector128<float> left, Vector64<float> right, byte rightIndex)
+Vector128<float> MultiplyExtendedBySelectedScalar(Vector128<float> left, Vector128<float> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulx_lane_f32).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyExtendedBySelectedScalar", "Performs 'MultiplyExtendedBySelectedScalar' operation.", 0), GetValue("MultiplyExtendedBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("MultiplyExtendedBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("MultiplyExtendedBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyExtendedBySelectedScalar", apiResult.ToString(), 4));
+
+try {
+MultiplyExtendedBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MultiplyExtendedScalarResult = Dummy_MultiplyExtendedScalarTest(Vector64double_0, Vector64double_1);
+apiResult = MultiplyExtendedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 32. MultiplyExtendedScalar
+
+`Vector64<double> MultiplyExtendedScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> MultiplyExtendedScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.MultiplyExtendedScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> MultiplyExtendedScalar(Vector64<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulx_f64).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyExtendedScalar", "Performs 'MultiplyExtendedScalar' operation.", 0), GetValue("MultiplyExtendedScalar", Vector64double_0.ToString(), 1), GetValue("MultiplyExtendedScalar", Vector64double_1.ToString(), 2), GetValue("MultiplyExtendedScalar", apiResult.ToString(), 3));
+
+try {
+MultiplyExtendedScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MultiplyExtendedScalarBySelectedScalarResult = Dummy_MultiplyExtendedScalarBySelectedScalarTest(Vector64double_0, Vector128double_0, byte_0);
+apiResult = MultiplyExtendedScalarBySelectedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 33. MultiplyExtendedScalarBySelectedScalar
+
+`Vector64<double> MultiplyExtendedScalarBySelectedScalar(Vector64<double> left, Vector128<double> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<double> MultiplyExtendedScalarBySelectedScalarTest(Vector64<double> left, Vector128<double> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, 0);
+}}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> MultiplyExtendedScalarBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)
+Vector64<float> MultiplyExtendedScalarBySelectedScalar(Vector64<float> left, Vector128<float> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedscalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulxd_laneq_f64).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyExtendedScalarBySelectedScalar", "Performs 'MultiplyExtendedScalarBySelectedScalar' operation.", 0), GetValue("MultiplyExtendedScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("MultiplyExtendedScalarBySelectedScalar", Vector128double_0.ToString(), 2), GetValue("MultiplyExtendedScalarBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyExtendedScalarBySelectedScalar", apiResult.ToString(), 4));
+
+try {
+MultiplyExtendedScalarBySelectedScalarTest(Vector64double_0, Vector128double_0, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MultiplyRoundedDoublingByScalarSaturateHighResult = Dummy_MultiplyRoundedDoublingByScalarSaturateHighTest(Vector64short_0, Vector64short_1);
 apiResult = MultiplyRoundedDoublingByScalarSaturateHighResult.ToString();
 } catch (Exception) {
@@ -12094,7 +15971,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 2. MultiplyRoundedDoublingByScalarSaturateHigh
+### 34. MultiplyRoundedDoublingByScalarSaturateHigh
 
 `Vector64<short> MultiplyRoundedDoublingByScalarSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
@@ -12147,7 +16024,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 3. MultiplyRoundedDoublingBySelectedScalarSaturateHigh
+### 35. MultiplyRoundedDoublingBySelectedScalarSaturateHigh
 
 `Vector64<short> MultiplyRoundedDoublingBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -12205,7 +16082,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 4. MultiplyRoundedDoublingSaturateHigh
+### 36. MultiplyRoundedDoublingSaturateHigh
 
 `Vector64<short> MultiplyRoundedDoublingSaturateHigh(Vector64<short> left, Vector64<short> right)`
 
@@ -12248,6 +16125,111 @@ MultiplyRoundedDoublingSaturateHighTest(Vector64short_0, Vector64short_1);
 // ----------------------------------------------------------------
 
 try {
+var MultiplyRoundedDoublingSaturateHighScalarResult = Dummy_MultiplyRoundedDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
+apiResult = MultiplyRoundedDoublingSaturateHighScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 37. MultiplyRoundedDoublingSaturateHighScalar
+
+`Vector64<short> MultiplyRoundedDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
+
+{0}
+
+```csharp
+private Vector64<short> MultiplyRoundedDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
+{{
+  return AdvSimd.Arm64.MultiplyRoundedDoublingSaturateHighScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<int> MultiplyRoundedDoublingSaturateHighScalar(Vector64<int> left, Vector64<int> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyroundeddoublingsaturatehighscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrdmulhh_s16).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyRoundedDoublingSaturateHighScalar", "Performs 'MultiplyRoundedDoublingSaturateHighScalar' operation.", 0), GetValue("MultiplyRoundedDoublingSaturateHighScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingSaturateHighScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingSaturateHighScalar", apiResult.ToString(), 3));
+
+try {
+MultiplyRoundedDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighResult = Dummy_MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
+apiResult = MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 38. MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh
+
+`Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+
+{0}
+
+```csharp
+private Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
+{{
+  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
+}}
+// left = {1}
+// right = {2}
+// rightIndex = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector128<short> right, byte rightIndex)
+Vector64<int> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<int> left, Vector64<int> right, byte rightIndex)
+Vector64<int> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<int> left, Vector128<int> right, byte rightIndex)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyroundeddoublingscalarbyselectedscalarsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrdmulhh_lane_s16).
+
+Assembly generated:
+
+```armasm", GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
+
+try {
+MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var MultiplyScalarResult = Dummy_MultiplyScalarTest(Vector64double_0, Vector64double_1);
 apiResult = MultiplyScalarResult.ToString();
 } catch (Exception) {
@@ -12258,7 +16240,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 5. MultiplyScalar
+### 39. MultiplyScalar
 
 `Vector64<double> MultiplyScalar(Vector64<double> left, Vector64<double> right)`
 
@@ -12309,7 +16291,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 6. MultiplyScalarBySelectedScalar
+### 40. MultiplyScalarBySelectedScalar
 
 `Vector64<float> MultiplyScalarBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`
 
@@ -12364,7 +16346,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 7. MultiplySubtract
+### 41. MultiplySubtract
 
 `Vector64<byte> MultiplySubtract(Vector64<byte> minuend, Vector64<byte> left, Vector64<byte> right)`
 
@@ -12426,7 +16408,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 8. MultiplySubtractByScalar
+### 42. MultiplySubtractByScalar
 
 `Vector64<short> MultiplySubtractByScalar(Vector64<short> minuend, Vector64<short> left, Vector64<short> right)`
 
@@ -12484,7 +16466,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 9. MultiplySubtractBySelectedScalar
+### 43. MultiplySubtractBySelectedScalar
 
 `Vector64<short> MultiplySubtractBySelectedScalar(Vector64<short> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
 
@@ -12551,7 +16533,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 10. MultiplyWideningLower
+### 44. MultiplyWideningLower
 
 `Vector128<ushort> MultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
@@ -12606,7 +16588,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 11. MultiplyWideningLowerAndAdd
+### 45. MultiplyWideningLowerAndAdd
 
 `Vector128<ushort> MultiplyWideningLowerAndAdd(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)`
 
@@ -12650,6 +16632,28 @@ MultiplyWideningLowerAndAddTest(Vector128ushort_0, Vector64byte_0, Vector64byte_
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: ARM64 Hardware Intrinsics APIs in .NET - Part 6
+subtitle: Sample code usage, examples and generated assembly code
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [vectorization using .NET APIs](../2020-08-01-Vectorization-APIs) blog, I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrinsic' APIs. In this post I will describe those hardware intrinsic APIs for ARM64 by showing sample code usage along with examples and generated ARM64 code. This will help people in understanding these APIs so they can use them to optimize their .NET code written to target ARM64. Since there are 360 APIs, describing all of them in a single post will be overwhelming. So I have divided these APIs among 8 blogs and will demonstrate 45 APIs in each blog. This is part 6 of that blog series.
+
+Most of the description of these APIs is adapted and referenced from [Arm Architecture Reference Manual Armv8, for Armv8-A architecture profile document](https://developer.arm.com/documentation/ddi0487/fc/). You can also refer to the description of SIMD and Floating-point instructions description at [Arm developer docs page](https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order).
+
+### APIs covered
+
+[MultiplyWideningLowerAndSubtract](#1-multiplywideninglowerandsubtract), [MultiplyWideningUpper](#2-multiplywideningupper), [MultiplyWideningUpperAndAdd](#3-multiplywideningupperandadd), [MultiplyWideningUpperAndSubtract](#4-multiplywideningupperandsubtract), [Negate](#5-negate), [NegateSaturate](#6-negatesaturate), [NegateSaturateScalar](#7-negatesaturatescalar), [NegateScalar](#8-negatescalar), [Not](#9-not), [Or](#10-or), [OrNot](#11-ornot), [PolynomialMultiply](#12-polynomialmultiply), [PolynomialMultiplyWideningLower](#13-polynomialmultiplywideninglower), [PolynomialMultiplyWideningUpper](#14-polynomialmultiplywideningupper), [PopCount](#15-popcount), [ReciprocalEstimate](#16-reciprocalestimate), [ReciprocalEstimateScalar](#17-reciprocalestimatescalar), [ReciprocalExponentScalar](#18-reciprocalexponentscalar), [ReciprocalSquareRootEstimate](#19-reciprocalsquarerootestimate), [ReciprocalSquareRootEstimateScalar](#20-reciprocalsquarerootestimatescalar), [ReciprocalSquareRootStep](#21-reciprocalsquarerootstep), [ReciprocalSquareRootStepScalar](#22-reciprocalsquarerootstepscalar), [ReciprocalStep](#23-reciprocalstep), [ReciprocalStepScalar](#24-reciprocalstepscalar), [ReverseElement16](#25-reverseelement16), [ReverseElement32](#26-reverseelement32), [ReverseElement8](#27-reverseelement8), [ReverseElementBits](#28-reverseelementbits), [RoundAwayFromZero](#29-roundawayfromzero), [RoundAwayFromZeroScalar](#30-roundawayfromzeroscalar), [RoundToNearest](#31-roundtonearest), [RoundToNearestScalar](#32-roundtonearestscalar), [RoundToNegativeInfinity](#33-roundtonegativeinfinity), [RoundToNegativeInfinityScalar](#34-roundtonegativeinfinityscalar), [RoundToPositiveInfinity](#35-roundtopositiveinfinity), [RoundToPositiveInfinityScalar](#36-roundtopositiveinfinityscalar), [RoundToZero](#37-roundtozero), [RoundToZeroScalar](#38-roundtozeroscalar), [ShiftArithmetic](#39-shiftarithmetic), [ShiftArithmeticRounded](#40-shiftarithmeticrounded), [ShiftArithmeticRoundedSaturate](#41-shiftarithmeticroundedsaturate), [ShiftArithmeticRoundedSaturateScalar](#42-shiftarithmeticroundedsaturatescalar), [ShiftArithmeticRoundedScalar](#43-shiftarithmeticroundedscalar), [ShiftArithmeticSaturate](#44-shiftarithmeticsaturate), [ShiftArithmeticSaturateScalar](#45-shiftarithmeticsaturatescalar)
+
+
+");
 
 try {
 var MultiplyWideningLowerAndSubtractResult = Dummy_MultiplyWideningLowerAndSubtractTest(Vector128ushort_0, Vector64byte_0, Vector64byte_1);
@@ -12659,10 +16663,9 @@ apiResult = MultiplyWideningLowerAndSubtractResult.ToString();
 }
 
 Console.WriteLine(
-@"```
-------------------------------------------------
+@"
 
-### 12. MultiplyWideningLowerAndSubtract
+### 1. MultiplyWideningLowerAndSubtract
 
 `Vector128<ushort> MultiplyWideningLowerAndSubtract(Vector128<ushort> minuend, Vector64<byte> left, Vector64<byte> right)`
 
@@ -12718,7 +16721,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 13. MultiplyWideningUpper
+### 2. MultiplyWideningUpper
 
 `Vector128<ushort> MultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
@@ -12773,7 +16776,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 14. MultiplyWideningUpperAndAdd
+### 3. MultiplyWideningUpperAndAdd
 
 `Vector128<ushort> MultiplyWideningUpperAndAdd(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)`
 
@@ -12829,7 +16832,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 15. MultiplyWideningUpperAndSubtract
+### 4. MultiplyWideningUpperAndSubtract
 
 `Vector128<ushort> MultiplyWideningUpperAndSubtract(Vector128<ushort> minuend, Vector128<byte> left, Vector128<byte> right)`
 
@@ -12885,7 +16888,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 16. Negate
+### 5. Negate
 
 `Vector64<short> Negate(Vector64<short> value)`
 
@@ -12945,7 +16948,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 17. NegateSaturate
+### 6. NegateSaturate
 
 `Vector64<short> NegateSaturate(Vector64<short> value)`
 
@@ -12992,6 +16995,58 @@ NegateSaturateTest(Vector64short_0);
 // ----------------------------------------------------------------
 
 try {
+var NegateSaturateScalarResult = Dummy_NegateSaturateScalarTest(Vector64short_0);
+apiResult = NegateSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 7. NegateSaturateScalar
+
+`Vector64<short> NegateSaturateScalar(Vector64<short> value)`
+
+{0}
+
+```csharp
+private Vector64<short> NegateSaturateScalarTest(Vector64<short> value)
+{{
+  return AdvSimd.Arm64.NegateSaturateScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<int> NegateSaturateScalar(Vector64<int> value)
+Vector64<long> NegateSaturateScalar(Vector64<long> value)
+Vector64<sbyte> NegateSaturateScalar(Vector64<sbyte> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.negatesaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqnegh_s16).
+
+Assembly generated:
+
+```armasm", GetValue("NegateSaturateScalar", "Performs 'NegateSaturateScalar' operation.", 0), GetValue("NegateSaturateScalar", Vector64short_0.ToString(), 1), GetValue("NegateSaturateScalar", apiResult.ToString(), 2));
+
+try {
+NegateSaturateScalarTest(Vector64short_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var NegateScalarResult = Dummy_NegateScalarTest(Vector64double_0);
 apiResult = NegateScalarResult.ToString();
 } catch (Exception) {
@@ -13002,7 +17057,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 18. NegateScalar
+### 8. NegateScalar
 
 `Vector64<double> NegateScalar(Vector64<double> value)`
 
@@ -13055,7 +17110,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 19. Not
+### 9. Not
 
 `Vector64<byte> Not(Vector64<byte> value)`
 
@@ -13123,7 +17178,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 20. Or
+### 10. Or
 
 `Vector64<byte> Or(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13192,7 +17247,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 21. OrNot
+### 11. OrNot
 
 `Vector64<byte> OrNot(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13261,7 +17316,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 22. PolynomialMultiply
+### 12. PolynomialMultiply
 
 `Vector64<byte> PolynomialMultiply(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13314,7 +17369,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 23. PolynomialMultiplyWideningLower
+### 13. PolynomialMultiplyWideningLower
 
 `Vector128<ushort> PolynomialMultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`
 
@@ -13365,7 +17420,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 24. PolynomialMultiplyWideningUpper
+### 14. PolynomialMultiplyWideningUpper
 
 `Vector128<ushort> PolynomialMultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`
 
@@ -13416,7 +17471,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 25. PopCount
+### 15. PopCount
 
 `Vector64<byte> PopCount(Vector64<byte> value)`
 
@@ -13468,7 +17523,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 26. ReciprocalEstimate
+### 16. ReciprocalEstimate
 
 `Vector64<float> ReciprocalEstimate(Vector64<float> value)`
 
@@ -13513,6 +17568,106 @@ ReciprocalEstimateTest(Vector64float_0);
 // ----------------------------------------------------------------
 
 try {
+var ReciprocalEstimateScalarResult = Dummy_ReciprocalEstimateScalarTest(Vector64double_0);
+apiResult = ReciprocalEstimateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 17. ReciprocalEstimateScalar
+
+`Vector64<double> ReciprocalEstimateScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<double> ReciprocalEstimateScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ReciprocalEstimateScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> ReciprocalEstimateScalar(Vector64<float> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalestimatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecpe_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ReciprocalEstimateScalar", "Performs 'ReciprocalEstimateScalar' operation.", 0), GetValue("ReciprocalEstimateScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalEstimateScalar", apiResult.ToString(), 2));
+
+try {
+ReciprocalEstimateScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ReciprocalExponentScalarResult = Dummy_ReciprocalExponentScalarTest(Vector64double_0);
+apiResult = ReciprocalExponentScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 18. ReciprocalExponentScalar
+
+`Vector64<double> ReciprocalExponentScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<double> ReciprocalExponentScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ReciprocalExponentScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> ReciprocalExponentScalar(Vector64<float> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalexponentscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecpxd_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ReciprocalExponentScalar", "Performs 'ReciprocalExponentScalar' operation.", 0), GetValue("ReciprocalExponentScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalExponentScalar", apiResult.ToString(), 2));
+
+try {
+ReciprocalExponentScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ReciprocalSquareRootEstimateResult = Dummy_ReciprocalSquareRootEstimateTest(Vector64float_0);
 apiResult = ReciprocalSquareRootEstimateResult.ToString();
 } catch (Exception) {
@@ -13523,7 +17678,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 27. ReciprocalSquareRootEstimate
+### 19. ReciprocalSquareRootEstimate
 
 `Vector64<float> ReciprocalSquareRootEstimate(Vector64<float> value)`
 
@@ -13568,6 +17723,56 @@ ReciprocalSquareRootEstimateTest(Vector64float_0);
 // ----------------------------------------------------------------
 
 try {
+var ReciprocalSquareRootEstimateScalarResult = Dummy_ReciprocalSquareRootEstimateScalarTest(Vector64double_0);
+apiResult = ReciprocalSquareRootEstimateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 20. ReciprocalSquareRootEstimateScalar
+
+`Vector64<double> ReciprocalSquareRootEstimateScalar(Vector64<double> value)`
+
+{0}
+
+```csharp
+private Vector64<double> ReciprocalSquareRootEstimateScalarTest(Vector64<double> value)
+{{
+  return AdvSimd.Arm64.ReciprocalSquareRootEstimateScalar(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> ReciprocalSquareRootEstimateScalar(Vector64<float> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootestimatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsqrte_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ReciprocalSquareRootEstimateScalar", "Performs 'ReciprocalSquareRootEstimateScalar' operation.", 0), GetValue("ReciprocalSquareRootEstimateScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalSquareRootEstimateScalar", apiResult.ToString(), 2));
+
+try {
+ReciprocalSquareRootEstimateScalarTest(Vector64double_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ReciprocalSquareRootStepResult = Dummy_ReciprocalSquareRootStepTest(Vector64float_0, Vector64float_1);
 apiResult = ReciprocalSquareRootStepResult.ToString();
 } catch (Exception) {
@@ -13578,7 +17783,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 28. ReciprocalSquareRootStep
+### 21. ReciprocalSquareRootStep
 
 `Vector64<float> ReciprocalSquareRootStep(Vector64<float> left, Vector64<float> right)`
 
@@ -13622,6 +17827,57 @@ ReciprocalSquareRootStepTest(Vector64float_0, Vector64float_1);
 // ----------------------------------------------------------------
 
 try {
+var ReciprocalSquareRootStepScalarResult = Dummy_ReciprocalSquareRootStepScalarTest(Vector64double_0, Vector64double_1);
+apiResult = ReciprocalSquareRootStepScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 22. ReciprocalSquareRootStepScalar
+
+`Vector64<double> ReciprocalSquareRootStepScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> ReciprocalSquareRootStepScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.ReciprocalSquareRootStepScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> ReciprocalSquareRootStepScalar(Vector64<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootstepscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsqrts_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ReciprocalSquareRootStepScalar", "Performs 'ReciprocalSquareRootStepScalar' operation.", 0), GetValue("ReciprocalSquareRootStepScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalSquareRootStepScalar", Vector64double_1.ToString(), 2), GetValue("ReciprocalSquareRootStepScalar", apiResult.ToString(), 3));
+
+try {
+ReciprocalSquareRootStepScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ReciprocalStepResult = Dummy_ReciprocalStepTest(Vector64float_0, Vector64float_1);
 apiResult = ReciprocalStepResult.ToString();
 } catch (Exception) {
@@ -13632,7 +17888,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 29. ReciprocalStep
+### 23. ReciprocalStep
 
 `Vector64<float> ReciprocalStep(Vector64<float> left, Vector64<float> right)`
 
@@ -13676,6 +17932,57 @@ ReciprocalStepTest(Vector64float_0, Vector64float_1);
 // ----------------------------------------------------------------
 
 try {
+var ReciprocalStepScalarResult = Dummy_ReciprocalStepScalarTest(Vector64double_0, Vector64double_1);
+apiResult = ReciprocalStepScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 24. ReciprocalStepScalar
+
+`Vector64<double> ReciprocalStepScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> ReciprocalStepScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.Arm64.ReciprocalStepScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<float> ReciprocalStepScalar(Vector64<float> left, Vector64<float> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalstepscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecps_f64).
+
+Assembly generated:
+
+```armasm", GetValue("ReciprocalStepScalar", "Performs 'ReciprocalStepScalar' operation.", 0), GetValue("ReciprocalStepScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalStepScalar", Vector64double_1.ToString(), 2), GetValue("ReciprocalStepScalar", apiResult.ToString(), 3));
+
+try {
+ReciprocalStepScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ReverseElement16Result = Dummy_ReverseElement16Test(Vector64int_0);
 apiResult = ReverseElement16Result.ToString();
 } catch (Exception) {
@@ -13686,7 +17993,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 30. ReverseElement16
+### 25. ReverseElement16
 
 `Vector64<int> ReverseElement16(Vector64<int> value)`
 
@@ -13742,7 +18049,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 31. ReverseElement32
+### 26. ReverseElement32
 
 `Vector64<long> ReverseElement32(Vector64<long> value)`
 
@@ -13794,7 +18101,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 32. ReverseElement8
+### 27. ReverseElement8
 
 `Vector64<short> ReverseElement8(Vector64<short> value)`
 
@@ -13844,6 +18151,58 @@ ReverseElement8Test(Vector64short_0);
 // ----------------------------------------------------------------
 
 try {
+var ReverseElementBitsResult = Dummy_ReverseElementBitsTest(Vector64byte_0);
+apiResult = ReverseElementBitsResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 28. ReverseElementBits
+
+`Vector64<byte> ReverseElementBits(Vector64<byte> value)`
+
+{0}
+
+```csharp
+private Vector64<byte> ReverseElementBitsTest(Vector64<byte> value)
+{{
+  return AdvSimd.Arm64.ReverseElementBits(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<sbyte> ReverseElementBits(Vector64<sbyte> value)
+Vector128<byte> ReverseElementBits(Vector128<byte> value)
+Vector128<sbyte> ReverseElementBits(Vector128<sbyte> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reverseelementbits?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrbit_u8).
+
+Assembly generated:
+
+```armasm", GetValue("ReverseElementBits", "Performs 'ReverseElementBits' operation.", 0), GetValue("ReverseElementBits", Vector64byte_0.ToString(), 1), GetValue("ReverseElementBits", apiResult.ToString(), 2));
+
+try {
+ReverseElementBitsTest(Vector64byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var RoundAwayFromZeroResult = Dummy_RoundAwayFromZeroTest(Vector64float_0);
 apiResult = RoundAwayFromZeroResult.ToString();
 } catch (Exception) {
@@ -13854,7 +18213,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 33. RoundAwayFromZero
+### 29. RoundAwayFromZero
 
 `Vector64<float> RoundAwayFromZero(Vector64<float> value)`
 
@@ -13907,7 +18266,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 34. RoundAwayFromZeroScalar
+### 30. RoundAwayFromZeroScalar
 
 `Vector64<double> RoundAwayFromZeroScalar(Vector64<double> value)`
 
@@ -13957,7 +18316,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 35. RoundToNearest
+### 31. RoundToNearest
 
 `Vector64<float> RoundToNearest(Vector64<float> value)`
 
@@ -14010,7 +18369,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 36. RoundToNearestScalar
+### 32. RoundToNearestScalar
 
 `Vector64<double> RoundToNearestScalar(Vector64<double> value)`
 
@@ -14060,7 +18419,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 37. RoundToNegativeInfinity
+### 33. RoundToNegativeInfinity
 
 `Vector64<float> RoundToNegativeInfinity(Vector64<float> value)`
 
@@ -14113,7 +18472,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 38. RoundToNegativeInfinityScalar
+### 34. RoundToNegativeInfinityScalar
 
 `Vector64<double> RoundToNegativeInfinityScalar(Vector64<double> value)`
 
@@ -14163,7 +18522,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 39. RoundToPositiveInfinity
+### 35. RoundToPositiveInfinity
 
 `Vector64<float> RoundToPositiveInfinity(Vector64<float> value)`
 
@@ -14216,7 +18575,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 40. RoundToPositiveInfinityScalar
+### 36. RoundToPositiveInfinityScalar
 
 `Vector64<double> RoundToPositiveInfinityScalar(Vector64<double> value)`
 
@@ -14266,7 +18625,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 41. RoundToZero
+### 37. RoundToZero
 
 `Vector64<float> RoundToZero(Vector64<float> value)`
 
@@ -14319,7 +18678,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 42. RoundToZeroScalar
+### 38. RoundToZeroScalar
 
 `Vector64<double> RoundToZeroScalar(Vector64<double> value)`
 
@@ -14369,7 +18728,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 43. ShiftArithmetic
+### 39. ShiftArithmetic
 
 `Vector64<short> ShiftArithmetic(Vector64<short> value, Vector64<short> count)`
 
@@ -14425,7 +18784,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 44. ShiftArithmeticRounded
+### 40. ShiftArithmeticRounded
 
 `Vector64<short> ShiftArithmeticRounded(Vector64<short> value, Vector64<short> count)`
 
@@ -14481,7 +18840,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 45. ShiftArithmeticRoundedSaturate
+### 41. ShiftArithmeticRoundedSaturate
 
 `Vector64<short> ShiftArithmeticRoundedSaturate(Vector64<short> value, Vector64<short> count)`
 
@@ -14525,27 +18884,6 @@ ShiftArithmeticRoundedSaturateTest(Vector64short_0, Vector64short_1);
 }
 
 // ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 5
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[ShiftArithmeticRoundedSaturateScalar](#1-shiftarithmeticroundedsaturatescalar), [ShiftArithmeticRoundedScalar](#2-shiftarithmeticroundedscalar), [ShiftArithmeticSaturate](#3-shiftarithmeticsaturate), [ShiftArithmeticSaturateScalar](#4-shiftarithmeticsaturatescalar), [ShiftArithmeticScalar](#5-shiftarithmeticscalar), [ShiftLeftAndInsert](#6-shiftleftandinsert), [ShiftLeftAndInsertScalar](#7-shiftleftandinsertscalar), [ShiftLeftLogical](#8-shiftleftlogical), [ShiftLeftLogicalSaturate](#9-shiftleftlogicalsaturate), [ShiftLeftLogicalSaturateScalar](#10-shiftleftlogicalsaturatescalar), [ShiftLeftLogicalSaturateUnsigned](#11-shiftleftlogicalsaturateunsigned), [ShiftLeftLogicalSaturateUnsignedScalar](#12-shiftleftlogicalsaturateunsignedscalar), [ShiftLeftLogicalScalar](#13-shiftleftlogicalscalar), [ShiftLeftLogicalWideningLower](#14-shiftleftlogicalwideninglower), [ShiftLeftLogicalWideningUpper](#15-shiftleftlogicalwideningupper), [ShiftLogical](#16-shiftlogical), [ShiftLogicalRounded](#17-shiftlogicalrounded), [ShiftLogicalRoundedSaturate](#18-shiftlogicalroundedsaturate), [ShiftLogicalRoundedSaturateScalar](#19-shiftlogicalroundedsaturatescalar), [ShiftLogicalRoundedScalar](#20-shiftlogicalroundedscalar), [ShiftLogicalSaturate](#21-shiftlogicalsaturate), [ShiftLogicalSaturateScalar](#22-shiftlogicalsaturatescalar), [ShiftLogicalScalar](#23-shiftlogicalscalar), [ShiftRightAndInsert](#24-shiftrightandinsert), [ShiftRightAndInsertScalar](#25-shiftrightandinsertscalar), [ShiftRightArithmetic](#26-shiftrightarithmetic), [ShiftRightArithmeticAdd](#27-shiftrightarithmeticadd), [ShiftRightArithmeticAddScalar](#28-shiftrightarithmeticaddscalar), [ShiftRightArithmeticNarrowingSaturateLower](#29-shiftrightarithmeticnarrowingsaturatelower), [ShiftRightArithmeticNarrowingSaturateUnsignedLower](#30-shiftrightarithmeticnarrowingsaturateunsignedlower), [ShiftRightArithmeticNarrowingSaturateUnsignedUpper](#31-shiftrightarithmeticnarrowingsaturateunsignedupper), [ShiftRightArithmeticNarrowingSaturateUpper](#32-shiftrightarithmeticnarrowingsaturateupper), [ShiftRightArithmeticRounded](#33-shiftrightarithmeticrounded), [ShiftRightArithmeticRoundedAdd](#34-shiftrightarithmeticroundedadd), [ShiftRightArithmeticRoundedAddScalar](#35-shiftrightarithmeticroundedaddscalar), [ShiftRightArithmeticRoundedNarrowingSaturateLower](#36-shiftrightarithmeticroundednarrowingsaturatelower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower](#37-shiftrightarithmeticroundednarrowingsaturateunsignedlower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper](#38-shiftrightarithmeticroundednarrowingsaturateunsignedupper), [ShiftRightArithmeticRoundedNarrowingSaturateUpper](#39-shiftrightarithmeticroundednarrowingsaturateupper), [ShiftRightArithmeticRoundedScalar](#40-shiftrightarithmeticroundedscalar), [ShiftRightArithmeticScalar](#41-shiftrightarithmeticscalar), [ShiftRightLogical](#42-shiftrightlogical), [ShiftRightLogicalAdd](#43-shiftrightlogicaladd), [ShiftRightLogicalAddScalar](#44-shiftrightlogicaladdscalar), [ShiftRightLogicalNarrowingLower](#45-shiftrightlogicalnarrowinglower),[...](Part5.md)
-
-
-");
 
 try {
 var ShiftArithmeticRoundedSaturateScalarResult = Dummy_ShiftArithmeticRoundedSaturateScalarTest(Vector64long_0, Vector64long_1);
@@ -14555,9 +18893,10 @@ apiResult = ShiftArithmeticRoundedSaturateScalarResult.ToString();
 }
 
 Console.WriteLine(
-@"
+@"```
+------------------------------------------------
 
-### 1. ShiftArithmeticRoundedSaturateScalar
+### 42. ShiftArithmeticRoundedSaturateScalar
 
 `Vector64<long> ShiftArithmeticRoundedSaturateScalar(Vector64<long> value, Vector64<long> count)`
 
@@ -14610,7 +18949,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 2. ShiftArithmeticRoundedScalar
+### 43. ShiftArithmeticRoundedScalar
 
 `Vector64<long> ShiftArithmeticRoundedScalar(Vector64<long> value, Vector64<long> count)`
 
@@ -14655,7 +18994,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 3. ShiftArithmeticSaturate
+### 44. ShiftArithmeticSaturate
 
 `Vector64<short> ShiftArithmeticSaturate(Vector64<short> value, Vector64<short> count)`
 
@@ -14711,7 +19050,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 4. ShiftArithmeticSaturateScalar
+### 45. ShiftArithmeticSaturateScalar
 
 `Vector64<long> ShiftArithmeticSaturateScalar(Vector64<long> value, Vector64<long> count)`
 
@@ -14752,6 +19091,28 @@ ShiftArithmeticSaturateScalarTest(Vector64long_0, Vector64long_1);
 }
 
 // ----------------------------------------------------------------
+Console.WriteLine(
+@"```
+
+START---END
+layout: post
+title: ARM64 Hardware Intrinsics APIs in .NET - Part 7
+subtitle: Sample code usage, examples and generated assembly code
+tags: [work, arm64, intrinsics]
+---
+
+### Introduction
+
+In my [vectorization using .NET APIs](../2020-08-01-Vectorization-APIs) blog, I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrinsic' APIs. In this post I will describe those hardware intrinsic APIs for ARM64 by showing sample code usage along with examples and generated ARM64 code. This will help people in understanding these APIs so they can use them to optimize their .NET code written to target ARM64. Since there are 360 APIs, describing all of them in a single post will be overwhelming. So I have divided these APIs among 8 blogs and will demonstrate 45 APIs in each blog. This is part 7 of that blog series.
+
+Most of the description of these APIs is adapted and referenced from [Arm Architecture Reference Manual Armv8, for Armv8-A architecture profile document](https://developer.arm.com/documentation/ddi0487/fc/). You can also refer to the description of SIMD and Floating-point instructions description at [Arm developer docs page](https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order).
+
+### APIs covered
+
+[ShiftArithmeticScalar](#1-shiftarithmeticscalar), [ShiftLeftAndInsert](#2-shiftleftandinsert), [ShiftLeftAndInsertScalar](#3-shiftleftandinsertscalar), [ShiftLeftLogical](#4-shiftleftlogical), [ShiftLeftLogicalSaturate](#5-shiftleftlogicalsaturate), [ShiftLeftLogicalSaturateScalar](#6-shiftleftlogicalsaturatescalar), [ShiftLeftLogicalSaturateUnsigned](#7-shiftleftlogicalsaturateunsigned), [ShiftLeftLogicalSaturateUnsignedScalar](#8-shiftleftlogicalsaturateunsignedscalar), [ShiftLeftLogicalScalar](#9-shiftleftlogicalscalar), [ShiftLeftLogicalWideningLower](#10-shiftleftlogicalwideninglower), [ShiftLeftLogicalWideningUpper](#11-shiftleftlogicalwideningupper), [ShiftLogical](#12-shiftlogical), [ShiftLogicalRounded](#13-shiftlogicalrounded), [ShiftLogicalRoundedSaturate](#14-shiftlogicalroundedsaturate), [ShiftLogicalRoundedSaturateScalar](#15-shiftlogicalroundedsaturatescalar), [ShiftLogicalRoundedScalar](#16-shiftlogicalroundedscalar), [ShiftLogicalSaturate](#17-shiftlogicalsaturate), [ShiftLogicalSaturateScalar](#18-shiftlogicalsaturatescalar), [ShiftLogicalScalar](#19-shiftlogicalscalar), [ShiftRightAndInsert](#20-shiftrightandinsert), [ShiftRightAndInsertScalar](#21-shiftrightandinsertscalar), [ShiftRightArithmetic](#22-shiftrightarithmetic), [ShiftRightArithmeticAdd](#23-shiftrightarithmeticadd), [ShiftRightArithmeticAddScalar](#24-shiftrightarithmeticaddscalar), [ShiftRightArithmeticNarrowingSaturateLower](#25-shiftrightarithmeticnarrowingsaturatelower), [ShiftRightArithmeticNarrowingSaturateScalar](#26-shiftrightarithmeticnarrowingsaturatescalar), [ShiftRightArithmeticNarrowingSaturateUnsignedLower](#27-shiftrightarithmeticnarrowingsaturateunsignedlower), [ShiftRightArithmeticNarrowingSaturateUnsignedScalar](#28-shiftrightarithmeticnarrowingsaturateunsignedscalar), [ShiftRightArithmeticNarrowingSaturateUnsignedUpper](#29-shiftrightarithmeticnarrowingsaturateunsignedupper), [ShiftRightArithmeticNarrowingSaturateUpper](#30-shiftrightarithmeticnarrowingsaturateupper), [ShiftRightArithmeticRounded](#31-shiftrightarithmeticrounded), [ShiftRightArithmeticRoundedAdd](#32-shiftrightarithmeticroundedadd), [ShiftRightArithmeticRoundedAddScalar](#33-shiftrightarithmeticroundedaddscalar), [ShiftRightArithmeticRoundedNarrowingSaturateLower](#34-shiftrightarithmeticroundednarrowingsaturatelower), [ShiftRightArithmeticRoundedNarrowingSaturateScalar](#35-shiftrightarithmeticroundednarrowingsaturatescalar), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower](#36-shiftrightarithmeticroundednarrowingsaturateunsignedlower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar](#37-shiftrightarithmeticroundednarrowingsaturateunsignedscalar), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper](#38-shiftrightarithmeticroundednarrowingsaturateunsignedupper), [ShiftRightArithmeticRoundedNarrowingSaturateUpper](#39-shiftrightarithmeticroundednarrowingsaturateupper), [ShiftRightArithmeticRoundedScalar](#40-shiftrightarithmeticroundedscalar), [ShiftRightArithmeticScalar](#41-shiftrightarithmeticscalar), [ShiftRightLogical](#42-shiftrightlogical), [ShiftRightLogicalAdd](#43-shiftrightlogicaladd), [ShiftRightLogicalAddScalar](#44-shiftrightlogicaladdscalar), [ShiftRightLogicalNarrowingLower](#45-shiftrightlogicalnarrowinglower)
+
+
+");
 
 try {
 var ShiftArithmeticScalarResult = Dummy_ShiftArithmeticScalarTest(Vector64long_0, Vector64long_1);
@@ -14761,10 +19122,9 @@ apiResult = ShiftArithmeticScalarResult.ToString();
 }
 
 Console.WriteLine(
-@"```
-------------------------------------------------
+@"
 
-### 5. ShiftArithmeticScalar
+### 1. ShiftArithmeticScalar
 
 `Vector64<long> ShiftArithmeticScalar(Vector64<long> value, Vector64<long> count)`
 
@@ -14809,7 +19169,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 6. ShiftLeftAndInsert
+### 2. ShiftLeftAndInsert
 
 `Vector64<byte> ShiftLeftAndInsert(Vector64<byte> left, Vector64<byte> right, byte shift)`
 
@@ -14873,7 +19233,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 7. ShiftLeftAndInsertScalar
+### 3. ShiftLeftAndInsertScalar
 
 `Vector64<long> ShiftLeftAndInsertScalar(Vector64<long> left, Vector64<long> right, byte shift)`
 
@@ -14925,7 +19285,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 8. ShiftLeftLogical
+### 4. ShiftLeftLogical
 
 `Vector64<byte> ShiftLeftLogical(Vector64<byte> value, byte count)`
 
@@ -14987,7 +19347,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 9. ShiftLeftLogicalSaturate
+### 5. ShiftLeftLogicalSaturate
 
 `Vector64<byte> ShiftLeftLogicalSaturate(Vector64<byte> value, byte count)`
 
@@ -15050,7 +19410,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 10. ShiftLeftLogicalSaturateScalar
+### 6. ShiftLeftLogicalSaturateScalar
 
 `Vector64<long> ShiftLeftLogicalSaturateScalar(Vector64<long> value, byte count)`
 
@@ -15109,7 +19469,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 11. ShiftLeftLogicalSaturateUnsigned
+### 7. ShiftLeftLogicalSaturateUnsigned
 
 `Vector64<ushort> ShiftLeftLogicalSaturateUnsigned(Vector64<short> value, byte count)`
 
@@ -15165,7 +19525,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 12. ShiftLeftLogicalSaturateUnsignedScalar
+### 8. ShiftLeftLogicalSaturateUnsignedScalar
 
 `Vector64<ulong> ShiftLeftLogicalSaturateUnsignedScalar(Vector64<long> value, byte count)`
 
@@ -15218,7 +19578,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 13. ShiftLeftLogicalScalar
+### 9. ShiftLeftLogicalScalar
 
 `Vector64<long> ShiftLeftLogicalScalar(Vector64<long> value, byte count)`
 
@@ -15269,7 +19629,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 14. ShiftLeftLogicalWideningLower
+### 10. ShiftLeftLogicalWideningLower
 
 `Vector128<ushort> ShiftLeftLogicalWideningLower(Vector64<byte> value, byte count)`
 
@@ -15324,7 +19684,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 15. ShiftLeftLogicalWideningUpper
+### 11. ShiftLeftLogicalWideningUpper
 
 `Vector128<ushort> ShiftLeftLogicalWideningUpper(Vector128<byte> value, byte count)`
 
@@ -15379,7 +19739,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 16. ShiftLogical
+### 12. ShiftLogical
 
 `Vector64<byte> ShiftLogical(Vector64<byte> value, Vector64<sbyte> count)`
 
@@ -15442,7 +19802,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 17. ShiftLogicalRounded
+### 13. ShiftLogicalRounded
 
 `Vector64<byte> ShiftLogicalRounded(Vector64<byte> value, Vector64<sbyte> count)`
 
@@ -15505,7 +19865,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 18. ShiftLogicalRoundedSaturate
+### 14. ShiftLogicalRoundedSaturate
 
 `Vector64<byte> ShiftLogicalRoundedSaturate(Vector64<byte> value, Vector64<sbyte> count)`
 
@@ -15568,7 +19928,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 19. ShiftLogicalRoundedSaturateScalar
+### 15. ShiftLogicalRoundedSaturateScalar
 
 `Vector64<long> ShiftLogicalRoundedSaturateScalar(Vector64<long> value, Vector64<long> count)`
 
@@ -15627,7 +19987,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 20. ShiftLogicalRoundedScalar
+### 16. ShiftLogicalRoundedScalar
 
 `Vector64<long> ShiftLogicalRoundedScalar(Vector64<long> value, Vector64<long> count)`
 
@@ -15678,7 +20038,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 21. ShiftLogicalSaturate
+### 17. ShiftLogicalSaturate
 
 `Vector64<byte> ShiftLogicalSaturate(Vector64<byte> value, Vector64<sbyte> count)`
 
@@ -15741,7 +20101,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 22. ShiftLogicalSaturateScalar
+### 18. ShiftLogicalSaturateScalar
 
 `Vector64<long> ShiftLogicalSaturateScalar(Vector64<long> value, Vector64<long> count)`
 
@@ -15800,7 +20160,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 23. ShiftLogicalScalar
+### 19. ShiftLogicalScalar
 
 `Vector64<long> ShiftLogicalScalar(Vector64<long> value, Vector64<long> count)`
 
@@ -15851,7 +20211,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 24. ShiftRightAndInsert
+### 20. ShiftRightAndInsert
 
 `Vector64<byte> ShiftRightAndInsert(Vector64<byte> left, Vector64<byte> right, byte shift)`
 
@@ -15915,7 +20275,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 25. ShiftRightAndInsertScalar
+### 21. ShiftRightAndInsertScalar
 
 `Vector64<long> ShiftRightAndInsertScalar(Vector64<long> left, Vector64<long> right, byte shift)`
 
@@ -15967,7 +20327,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 26. ShiftRightArithmetic
+### 22. ShiftRightArithmetic
 
 `Vector64<short> ShiftRightArithmetic(Vector64<short> value, byte count)`
 
@@ -16023,7 +20383,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 27. ShiftRightArithmeticAdd
+### 23. ShiftRightArithmeticAdd
 
 `Vector64<short> ShiftRightArithmeticAdd(Vector64<short> addend, Vector64<short> value, byte count)`
 
@@ -16080,7 +20440,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 28. ShiftRightArithmeticAddScalar
+### 24. ShiftRightArithmeticAddScalar
 
 `Vector64<long> ShiftRightArithmeticAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
@@ -16126,7 +20486,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 29. ShiftRightArithmeticNarrowingSaturateLower
+### 25. ShiftRightArithmeticNarrowingSaturateLower
 
 `Vector64<short> ShiftRightArithmeticNarrowingSaturateLower(Vector128<int> value, byte count)`
 
@@ -16168,6 +20528,58 @@ ShiftRightArithmeticNarrowingSaturateLowerTest(Vector128int_0, byte_0);
 // ----------------------------------------------------------------
 
 try {
+var ShiftRightArithmeticNarrowingSaturateScalarResult = Dummy_ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64int_0, byte_0);
+apiResult = ShiftRightArithmeticNarrowingSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 26. ShiftRightArithmeticNarrowingSaturateScalar
+
+`Vector64<short> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<int> value, byte count)`
+
+{0}
+
+```csharp
+private Vector64<short> ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
+{{
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 1);
+}}
+// value = {1}
+// count = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<int> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<long> value, byte count)
+Vector64<sbyte> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<short> value, byte count)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticnarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrns_n_s32).
+
+Assembly generated:
+
+```armasm", GetValue("ShiftRightArithmeticNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", Vector64int_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", apiResult.ToString(), 3));
+
+try {
+ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64int_0, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ShiftRightArithmeticNarrowingSaturateUnsignedLowerResult = Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0);
 apiResult = ShiftRightArithmeticNarrowingSaturateUnsignedLowerResult.ToString();
 } catch (Exception) {
@@ -16178,7 +20590,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 30. ShiftRightArithmeticNarrowingSaturateUnsignedLower
+### 27. ShiftRightArithmeticNarrowingSaturateUnsignedLower
 
 `Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedLower(Vector128<short> value, byte count)`
 
@@ -16220,6 +20632,58 @@ ShiftRightArithmeticNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0)
 // ----------------------------------------------------------------
 
 try {
+var ShiftRightArithmeticNarrowingSaturateUnsignedScalarResult = Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
+apiResult = ShiftRightArithmeticNarrowingSaturateUnsignedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 28. ShiftRightArithmeticNarrowingSaturateUnsignedScalar
+
+`Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
+
+{0}
+
+```csharp
+private Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
+{{
+  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 1);
+}}
+// value = {1}
+// count = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<ushort> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<int> value, byte count)
+Vector64<uint> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<long> value, byte count)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticnarrowingsaturateunsignedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrunh_n_s16).
+
+Assembly generated:
+
+```armasm", GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", apiResult.ToString(), 3));
+
+try {
+ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ShiftRightArithmeticNarrowingSaturateUnsignedUpperResult = Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedUpperTest(Vector64byte_0, Vector128short_0, byte_0);
 apiResult = ShiftRightArithmeticNarrowingSaturateUnsignedUpperResult.ToString();
 } catch (Exception) {
@@ -16230,7 +20694,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 31. ShiftRightArithmeticNarrowingSaturateUnsignedUpper
+### 29. ShiftRightArithmeticNarrowingSaturateUnsignedUpper
 
 `Vector128<byte> ShiftRightArithmeticNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`
 
@@ -16283,7 +20747,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 32. ShiftRightArithmeticNarrowingSaturateUpper
+### 30. ShiftRightArithmeticNarrowingSaturateUpper
 
 `Vector128<short> ShiftRightArithmeticNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`
 
@@ -16336,7 +20800,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 33. ShiftRightArithmeticRounded
+### 31. ShiftRightArithmeticRounded
 
 `Vector64<short> ShiftRightArithmeticRounded(Vector64<short> value, byte count)`
 
@@ -16392,7 +20856,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 34. ShiftRightArithmeticRoundedAdd
+### 32. ShiftRightArithmeticRoundedAdd
 
 `Vector64<short> ShiftRightArithmeticRoundedAdd(Vector64<short> addend, Vector64<short> value, byte count)`
 
@@ -16449,7 +20913,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 35. ShiftRightArithmeticRoundedAddScalar
+### 33. ShiftRightArithmeticRoundedAddScalar
 
 `Vector64<long> ShiftRightArithmeticRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
@@ -16495,7 +20959,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 36. ShiftRightArithmeticRoundedNarrowingSaturateLower
+### 34. ShiftRightArithmeticRoundedNarrowingSaturateLower
 
 `Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateLower(Vector128<int> value, byte count)`
 
@@ -16537,6 +21001,58 @@ ShiftRightArithmeticRoundedNarrowingSaturateLowerTest(Vector128int_0, byte_0);
 // ----------------------------------------------------------------
 
 try {
+var ShiftRightArithmeticRoundedNarrowingSaturateScalarResult = Dummy_ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64int_0, byte_0);
+apiResult = ShiftRightArithmeticRoundedNarrowingSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 35. ShiftRightArithmeticRoundedNarrowingSaturateScalar
+
+`Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<int> value, byte count)`
+
+{0}
+
+```csharp
+private Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
+{{
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 1);
+}}
+// value = {1}
+// count = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<int> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<long> value, byte count)
+Vector64<sbyte> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<short> value, byte count)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticroundednarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrns_n_s32).
+
+Assembly generated:
+
+```armasm", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", Vector64int_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", apiResult.ToString(), 3));
+
+try {
+ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64int_0, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerResult = Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0);
 apiResult = ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerResult.ToString();
 } catch (Exception) {
@@ -16547,7 +21063,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 37. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower
+### 36. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower
 
 `Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(Vector128<short> value, byte count)`
 
@@ -16581,6 +21097,58 @@ Assembly generated:
 
 try {
 ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLowerTest(Vector128short_0, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarResult = Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
+apiResult = ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 37. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar
+
+`Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
+
+{0}
+
+```csharp
+private Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
+{{
+  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 1);
+}}
+// value = {1}
+// count = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<ushort> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<int> value, byte count)
+Vector64<uint> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<long> value, byte count)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticroundednarrowingsaturateunsignedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrunh_n_s16).
+
+Assembly generated:
+
+```armasm", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", apiResult.ToString(), 3));
+
+try {
+ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -17022,19 +21590,20 @@ Console.WriteLine(
 
 START---END
 layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 6
-subtitle: With examples
+title: ARM64 Hardware Intrinsics APIs in .NET - Part 8
+subtitle: Sample code usage, examples and generated assembly code
 tags: [work, arm64, intrinsics]
 ---
 
 ### Introduction
 
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
+In my [vectorization using .NET APIs](../2020-08-01-Vectorization-APIs) blog, I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrinsic' APIs. In this post I will describe those hardware intrinsic APIs for ARM64 by showing sample code usage along with examples and generated ARM64 code. This will help people in understanding these APIs so they can use them to optimize their .NET code written to target ARM64. Since there are 360 APIs, describing all of them in a single post will be overwhelming. So I have divided these APIs among 8 blogs and will demonstrate 45 APIs in each blog. This is part 8 of that blog series.
 
+Most of the description of these APIs is adapted and referenced from [Arm Architecture Reference Manual Armv8, for Armv8-A architecture profile document](https://developer.arm.com/documentation/ddi0487/fc/). You can also refer to the description of SIMD and Floating-point instructions description at [Arm developer docs page](https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order).
 
-### API list
+### APIs covered
 
-[ShiftRightLogicalNarrowingSaturateLower](#1-shiftrightlogicalnarrowingsaturatelower), [ShiftRightLogicalNarrowingSaturateUpper](#2-shiftrightlogicalnarrowingsaturateupper), [ShiftRightLogicalNarrowingUpper](#3-shiftrightlogicalnarrowingupper), [ShiftRightLogicalRounded](#4-shiftrightlogicalrounded), [ShiftRightLogicalRoundedAdd](#5-shiftrightlogicalroundedadd), [ShiftRightLogicalRoundedAddScalar](#6-shiftrightlogicalroundedaddscalar), [ShiftRightLogicalRoundedNarrowingLower](#7-shiftrightlogicalroundednarrowinglower), [ShiftRightLogicalRoundedNarrowingSaturateLower](#8-shiftrightlogicalroundednarrowingsaturatelower), [ShiftRightLogicalRoundedNarrowingSaturateUpper](#9-shiftrightlogicalroundednarrowingsaturateupper), [ShiftRightLogicalRoundedNarrowingUpper](#10-shiftrightlogicalroundednarrowingupper), [ShiftRightLogicalRoundedScalar](#11-shiftrightlogicalroundedscalar), [ShiftRightLogicalScalar](#12-shiftrightlogicalscalar), [SignExtendWideningLower](#13-signextendwideninglower), [SignExtendWideningUpper](#14-signextendwideningupper), [SqrtScalar](#15-sqrtscalar), [Store](#16-store), [StoreSelectedScalar](#17-storeselectedscalar), [Subtract](#18-subtract), [SubtractHighNarrowingLower](#19-subtracthighnarrowinglower), [SubtractHighNarrowingUpper](#20-subtracthighnarrowingupper), [SubtractRoundedHighNarrowingLower](#21-subtractroundedhighnarrowinglower), [SubtractRoundedHighNarrowingUpper](#22-subtractroundedhighnarrowingupper), [SubtractSaturate](#23-subtractsaturate), [SubtractSaturateScalar](#24-subtractsaturatescalar), [SubtractScalar](#25-subtractscalar), [SubtractWideningLower](#26-subtractwideninglower), [SubtractWideningUpper](#27-subtractwideningupper), [VectorTableLookup](#28-vectortablelookup), [VectorTableLookupExtension](#29-vectortablelookupextension), [Xor](#30-xor), [ZeroExtendWideningLower](#31-zeroextendwideninglower), [ZeroExtendWideningUpper](#32-zeroextendwideningupper), [AbsSaturateScalar](#33-abssaturatescalar), [AbsoluteCompareGreaterThanScalar](#34-absolutecomparegreaterthanscalar), [AbsoluteCompareGreaterThanOrEqualScalar](#35-absolutecomparegreaterthanorequalscalar), [AbsoluteCompareLessThanScalar](#36-absolutecomparelessthanscalar), [AbsoluteCompareLessThanOrEqualScalar](#37-absolutecomparelessthanorequalscalar), [AbsoluteDifferenceScalar](#38-absolutedifferencescalar), [AddAcross](#39-addacross), [AddAcrossWidening](#40-addacrosswidening), [AddPairwiseScalar](#41-addpairwisescalar), [CompareEqualScalar](#42-compareequalscalar), [CompareGreaterThanScalar](#43-comparegreaterthanscalar), [CompareGreaterThanOrEqualScalar](#44-comparegreaterthanorequalscalar), [CompareLessThanScalar](#45-comparelessthanscalar),[...](Part6.md)
+[ShiftRightLogicalNarrowingSaturateLower](#1-shiftrightlogicalnarrowingsaturatelower), [ShiftRightLogicalNarrowingSaturateScalar](#2-shiftrightlogicalnarrowingsaturatescalar), [ShiftRightLogicalNarrowingSaturateUpper](#3-shiftrightlogicalnarrowingsaturateupper), [ShiftRightLogicalNarrowingUpper](#4-shiftrightlogicalnarrowingupper), [ShiftRightLogicalRounded](#5-shiftrightlogicalrounded), [ShiftRightLogicalRoundedAdd](#6-shiftrightlogicalroundedadd), [ShiftRightLogicalRoundedAddScalar](#7-shiftrightlogicalroundedaddscalar), [ShiftRightLogicalRoundedNarrowingLower](#8-shiftrightlogicalroundednarrowinglower), [ShiftRightLogicalRoundedNarrowingSaturateLower](#9-shiftrightlogicalroundednarrowingsaturatelower), [ShiftRightLogicalRoundedNarrowingSaturateScalar](#10-shiftrightlogicalroundednarrowingsaturatescalar), [ShiftRightLogicalRoundedNarrowingSaturateUpper](#11-shiftrightlogicalroundednarrowingsaturateupper), [ShiftRightLogicalRoundedNarrowingUpper](#12-shiftrightlogicalroundednarrowingupper), [ShiftRightLogicalRoundedScalar](#13-shiftrightlogicalroundedscalar), [ShiftRightLogicalScalar](#14-shiftrightlogicalscalar), [SignExtendWideningLower](#15-signextendwideninglower), [SignExtendWideningUpper](#16-signextendwideningupper), [Sqrt](#17-sqrt), [SqrtScalar](#18-sqrtscalar), [Store](#19-store), [StorePair](#20-storepair), [StorePairNonTemporal](#21-storepairnontemporal), [StorePairScalar](#22-storepairscalar), [StorePairScalarNonTemporal](#23-storepairscalarnontemporal), [StoreSelectedScalar](#24-storeselectedscalar), [Subtract](#25-subtract), [SubtractHighNarrowingLower](#26-subtracthighnarrowinglower), [SubtractHighNarrowingUpper](#27-subtracthighnarrowingupper), [SubtractRoundedHighNarrowingLower](#28-subtractroundedhighnarrowinglower), [SubtractRoundedHighNarrowingUpper](#29-subtractroundedhighnarrowingupper), [SubtractSaturate](#30-subtractsaturate), [SubtractSaturateScalar](#31-subtractsaturatescalar), [SubtractScalar](#32-subtractscalar), [SubtractWideningLower](#33-subtractwideninglower), [SubtractWideningUpper](#34-subtractwideningupper), [TransposeEven](#35-transposeeven), [TransposeOdd](#36-transposeodd), [UnzipEven](#37-unzipeven), [UnzipOdd](#38-unzipodd), [VectorTableLookup](#39-vectortablelookup), [VectorTableLookupExtension](#40-vectortablelookupextension), [Xor](#41-xor), [ZeroExtendWideningLower](#42-zeroextendwideninglower), [ZeroExtendWideningUpper](#43-zeroextendwideningupper), [ZipHigh](#44-ziphigh), [ZipLow](#45-ziplow)
 
 
 ");
@@ -17094,6 +21663,61 @@ ShiftRightLogicalNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
 // ----------------------------------------------------------------
 
 try {
+var ShiftRightLogicalNarrowingSaturateScalarResult = Dummy_ShiftRightLogicalNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
+apiResult = ShiftRightLogicalNarrowingSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 2. ShiftRightLogicalNarrowingSaturateScalar
+
+`Vector64<byte> ShiftRightLogicalNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
+
+{0}
+
+```csharp
+private Vector64<byte> ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
+{{
+  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 1);
+}}
+// value = {1}
+// count = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<short> ShiftRightLogicalNarrowingSaturateScalar(Vector64<int> value, byte count)
+Vector64<int> ShiftRightLogicalNarrowingSaturateScalar(Vector64<long> value, byte count)
+Vector64<sbyte> ShiftRightLogicalNarrowingSaturateScalar(Vector64<short> value, byte count)
+Vector64<ushort> ShiftRightLogicalNarrowingSaturateScalar(Vector64<uint> value, byte count)
+Vector64<uint> ShiftRightLogicalNarrowingSaturateScalar(Vector64<ulong> value, byte count)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightlogicalnarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrnh_n_u16).
+
+Assembly generated:
+
+```armasm", GetValue("ShiftRightLogicalNarrowingSaturateScalar", "Performs 'ShiftRightLogicalNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightLogicalNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingSaturateScalar", apiResult.ToString(), 3));
+
+try {
+ShiftRightLogicalNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ShiftRightLogicalNarrowingSaturateUpperResult = Dummy_ShiftRightLogicalNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
 apiResult = ShiftRightLogicalNarrowingSaturateUpperResult.ToString();
 } catch (Exception) {
@@ -17104,7 +21728,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 2. ShiftRightLogicalNarrowingSaturateUpper
+### 3. ShiftRightLogicalNarrowingSaturateUpper
 
 `Vector128<byte> ShiftRightLogicalNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -17160,7 +21784,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 3. ShiftRightLogicalNarrowingUpper
+### 4. ShiftRightLogicalNarrowingUpper
 
 `Vector128<byte> ShiftRightLogicalNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -17216,7 +21840,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 4. ShiftRightLogicalRounded
+### 5. ShiftRightLogicalRounded
 
 `Vector64<byte> ShiftRightLogicalRounded(Vector64<byte> value, byte count)`
 
@@ -17279,7 +21903,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 5. ShiftRightLogicalRoundedAdd
+### 6. ShiftRightLogicalRoundedAdd
 
 `Vector64<byte> ShiftRightLogicalRoundedAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`
 
@@ -17343,7 +21967,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 6. ShiftRightLogicalRoundedAddScalar
+### 7. ShiftRightLogicalRoundedAddScalar
 
 `Vector64<long> ShiftRightLogicalRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
 
@@ -17395,7 +22019,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 7. ShiftRightLogicalRoundedNarrowingLower
+### 8. ShiftRightLogicalRoundedNarrowingLower
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingLower(Vector128<ushort> value, byte count)`
 
@@ -17450,7 +22074,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 8. ShiftRightLogicalRoundedNarrowingSaturateLower
+### 9. ShiftRightLogicalRoundedNarrowingSaturateLower
 
 `Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateLower(Vector128<ushort> value, byte count)`
 
@@ -17495,6 +22119,61 @@ ShiftRightLogicalRoundedNarrowingSaturateLowerTest(Vector128ushort_0, byte_0);
 // ----------------------------------------------------------------
 
 try {
+var ShiftRightLogicalRoundedNarrowingSaturateScalarResult = Dummy_ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
+apiResult = ShiftRightLogicalRoundedNarrowingSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 10. ShiftRightLogicalRoundedNarrowingSaturateScalar
+
+`Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
+
+{0}
+
+```csharp
+private Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
+{{
+  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 1);
+}}
+// value = {1}
+// count = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<short> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<int> value, byte count)
+Vector64<int> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<long> value, byte count)
+Vector64<sbyte> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<short> value, byte count)
+Vector64<ushort> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<uint> value, byte count)
+Vector64<uint> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<ulong> value, byte count)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightlogicalroundednarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrnh_n_u16).
+
+Assembly generated:
+
+```armasm", GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", apiResult.ToString(), 3));
+
+try {
+ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var ShiftRightLogicalRoundedNarrowingSaturateUpperResult = Dummy_ShiftRightLogicalRoundedNarrowingSaturateUpperTest(Vector64byte_0, Vector128ushort_0, byte_0);
 apiResult = ShiftRightLogicalRoundedNarrowingSaturateUpperResult.ToString();
 } catch (Exception) {
@@ -17505,7 +22184,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 9. ShiftRightLogicalRoundedNarrowingSaturateUpper
+### 11. ShiftRightLogicalRoundedNarrowingSaturateUpper
 
 `Vector128<byte> ShiftRightLogicalRoundedNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -17561,7 +22240,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 10. ShiftRightLogicalRoundedNarrowingUpper
+### 12. ShiftRightLogicalRoundedNarrowingUpper
 
 `Vector128<byte> ShiftRightLogicalRoundedNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
 
@@ -17617,7 +22296,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 11. ShiftRightLogicalRoundedScalar
+### 13. ShiftRightLogicalRoundedScalar
 
 `Vector64<long> ShiftRightLogicalRoundedScalar(Vector64<long> value, byte count)`
 
@@ -17668,7 +22347,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 12. ShiftRightLogicalScalar
+### 14. ShiftRightLogicalScalar
 
 `Vector64<long> ShiftRightLogicalScalar(Vector64<long> value, byte count)`
 
@@ -17719,7 +22398,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 13. SignExtendWideningLower
+### 15. SignExtendWideningLower
 
 `Vector128<int> SignExtendWideningLower(Vector64<short> value)`
 
@@ -17770,7 +22449,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 14. SignExtendWideningUpper
+### 16. SignExtendWideningUpper
 
 `Vector128<int> SignExtendWideningUpper(Vector128<short> value)`
 
@@ -17811,6 +22490,57 @@ SignExtendWideningUpperTest(Vector128short_0);
 // ----------------------------------------------------------------
 
 try {
+var SqrtResult = Dummy_SqrtTest(Vector64float_0);
+apiResult = SqrtResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 17. Sqrt
+
+`Vector64<float> Sqrt(Vector64<float> value)`
+
+{0}
+
+```csharp
+private Vector64<float> SqrtTest(Vector64<float> value)
+{{
+  return AdvSimd.Arm64.Sqrt(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<double> Sqrt(Vector128<double> value)
+Vector128<float> Sqrt(Vector128<float> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.sqrt?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsqrt_f32).
+
+Assembly generated:
+
+```armasm", GetValue("Sqrt", "Performs 'Sqrt' operation.", 0), GetValue("Sqrt", Vector64float_0.ToString(), 1), GetValue("Sqrt", apiResult.ToString(), 2));
+
+try {
+SqrtTest(Vector64float_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
 var SqrtScalarResult = Dummy_SqrtScalarTest(Vector64double_0);
 apiResult = SqrtScalarResult.ToString();
 } catch (Exception) {
@@ -17821,7 +22551,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 15. SqrtScalar
+### 18. SqrtScalar
 
 `Vector64<double> SqrtScalar(Vector64<double> value)`
 
@@ -17873,7 +22603,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 16. Store
+### 19. Store
 
 `void Store(byte* address, Vector64<byte> source)`
 
@@ -17934,5620 +22664,6 @@ fixed (byte* bytePtr_0 = byteArray)
 {
 
 try {
-Dummy_StoreSelectedScalarTest(bytePtr_0, Vector64byte_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 17. StoreSelectedScalar
-
-`void StoreSelectedScalar(byte* address, Vector64<byte> value, byte index)`
-
-{0}
-
-```csharp
-private void StoreSelectedScalarTest(byte* address, Vector64<byte> value, byte index)
-{{
-  AdvSimd.StoreSelectedScalar(address, value, 3);
-}}
-// address = {1}
-// value = {2}
-// index = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-void StoreSelectedScalar(short* address, Vector64<short> value, byte index)
-void StoreSelectedScalar(int* address, Vector64<int> value, byte index)
-void StoreSelectedScalar(sbyte* address, Vector64<sbyte> value, byte index)
-void StoreSelectedScalar(float* address, Vector64<float> value, byte index)
-void StoreSelectedScalar(ushort* address, Vector64<ushort> value, byte index)
-void StoreSelectedScalar(uint* address, Vector64<uint> value, byte index)
-void StoreSelectedScalar(byte* address, Vector128<byte> value, byte index)
-void StoreSelectedScalar(double* address, Vector128<double> value, byte index)
-void StoreSelectedScalar(short* address, Vector128<short> value, byte index)
-void StoreSelectedScalar(int* address, Vector128<int> value, byte index)
-void StoreSelectedScalar(long* address, Vector128<long> value, byte index)
-void StoreSelectedScalar(sbyte* address, Vector128<sbyte> value, byte index)
-void StoreSelectedScalar(float* address, Vector128<float> value, byte index)
-void StoreSelectedScalar(ushort* address, Vector128<ushort> value, byte index)
-void StoreSelectedScalar(uint* address, Vector128<uint> value, byte index)
-void StoreSelectedScalar(ulong* address, Vector128<ulong> value, byte index)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.storeselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vst1_lane_u8).
-
-Assembly generated:
-
-```armasm", GetValue("StoreSelectedScalar", "Performs 'StoreSelectedScalar' operation.", 0), GetValue("StoreSelectedScalar", "<address>".ToString(), 1), GetValue("StoreSelectedScalar", Vector64byte_0.ToString(), 2), GetValue("StoreSelectedScalar", byte_0.ToString(), 3));
-
-try {
-StoreSelectedScalarTest(bytePtr_0, Vector64byte_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-}
-// ----------------------------------------------------------------
-
-try {
-var SubtractResult = Dummy_SubtractTest(Vector64byte_0, Vector64byte_1);
-apiResult = SubtractResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 18. Subtract
-
-`Vector64<byte> Subtract(Vector64<byte> left, Vector64<byte> right)`
-
-{0}
-
-```csharp
-private Vector64<byte> SubtractTest(Vector64<byte> left, Vector64<byte> right)
-{{
-  return AdvSimd.Subtract(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<short> Subtract(Vector64<short> left, Vector64<short> right)
-Vector64<int> Subtract(Vector64<int> left, Vector64<int> right)
-Vector64<sbyte> Subtract(Vector64<sbyte> left, Vector64<sbyte> right)
-Vector64<float> Subtract(Vector64<float> left, Vector64<float> right)
-Vector64<ushort> Subtract(Vector64<ushort> left, Vector64<ushort> right)
-Vector64<uint> Subtract(Vector64<uint> left, Vector64<uint> right)
-Vector128<byte> Subtract(Vector128<byte> left, Vector128<byte> right)
-Vector128<short> Subtract(Vector128<short> left, Vector128<short> right)
-Vector128<int> Subtract(Vector128<int> left, Vector128<int> right)
-Vector128<long> Subtract(Vector128<long> left, Vector128<long> right)
-Vector128<sbyte> Subtract(Vector128<sbyte> left, Vector128<sbyte> right)
-Vector128<float> Subtract(Vector128<float> left, Vector128<float> right)
-Vector128<ushort> Subtract(Vector128<ushort> left, Vector128<ushort> right)
-Vector128<uint> Subtract(Vector128<uint> left, Vector128<uint> right)
-Vector128<ulong> Subtract(Vector128<ulong> left, Vector128<ulong> right)
-
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<double> Subtract(Vector128<double> left, Vector128<double> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtract?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.subtract?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsub_u8).
-
-Assembly generated:
-
-```armasm", GetValue("Subtract", "Performs 'Subtract' operation.", 0), GetValue("Subtract", Vector64byte_0.ToString(), 1), GetValue("Subtract", Vector64byte_1.ToString(), 2), GetValue("Subtract", apiResult.ToString(), 3));
-
-try {
-SubtractTest(Vector64byte_0, Vector64byte_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var SubtractHighNarrowingLowerResult = Dummy_SubtractHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
-apiResult = SubtractHighNarrowingLowerResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 19. SubtractHighNarrowingLower
-
-`Vector64<byte> SubtractHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
-
-{0}
-
-```csharp
-private Vector64<byte> SubtractHighNarrowingLowerTest(Vector128<ushort> left, Vector128<ushort> right)
-{{
-  return AdvSimd.SubtractHighNarrowingLower(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<short> SubtractHighNarrowingLower(Vector128<int> left, Vector128<int> right)
-Vector64<int> SubtractHighNarrowingLower(Vector128<long> left, Vector128<long> right)
-Vector64<sbyte> SubtractHighNarrowingLower(Vector128<short> left, Vector128<short> right)
-Vector64<ushort> SubtractHighNarrowingLower(Vector128<uint> left, Vector128<uint> right)
-Vector64<uint> SubtractHighNarrowingLower(Vector128<ulong> left, Vector128<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtracthighnarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubhn_u16).
-
-Assembly generated:
-
-```armasm", GetValue("SubtractHighNarrowingLower", "Performs 'SubtractHighNarrowingLower' operation.", 0), GetValue("SubtractHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("SubtractHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("SubtractHighNarrowingLower", apiResult.ToString(), 3));
-
-try {
-SubtractHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var SubtractHighNarrowingUpperResult = Dummy_SubtractHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
-apiResult = SubtractHighNarrowingUpperResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 20. SubtractHighNarrowingUpper
-
-`Vector128<byte> SubtractHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
-
-{0}
-
-```csharp
-private Vector128<byte> SubtractHighNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)
-{{
-  return AdvSimd.SubtractHighNarrowingUpper(lower, left, right);
-}}
-// lower = {1}
-// left = {2}
-// right = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector128<short> SubtractHighNarrowingUpper(Vector64<short> lower, Vector128<int> left, Vector128<int> right)
-Vector128<int> SubtractHighNarrowingUpper(Vector64<int> lower, Vector128<long> left, Vector128<long> right)
-Vector128<sbyte> SubtractHighNarrowingUpper(Vector64<sbyte> lower, Vector128<short> left, Vector128<short> right)
-Vector128<ushort> SubtractHighNarrowingUpper(Vector64<ushort> lower, Vector128<uint> left, Vector128<uint> right)
-Vector128<uint> SubtractHighNarrowingUpper(Vector64<uint> lower, Vector128<ulong> left, Vector128<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtracthighnarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubhn_high_u16).
-
-Assembly generated:
-
-```armasm", GetValue("SubtractHighNarrowingUpper", "Performs 'SubtractHighNarrowingUpper' operation.", 0), GetValue("SubtractHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("SubtractHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("SubtractHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("SubtractHighNarrowingUpper", apiResult.ToString(), 4));
-
-try {
-SubtractHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var SubtractRoundedHighNarrowingLowerResult = Dummy_SubtractRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
-apiResult = SubtractRoundedHighNarrowingLowerResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 21. SubtractRoundedHighNarrowingLower
-
-`Vector64<byte> SubtractRoundedHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
-
-{0}
-
-```csharp
-private Vector64<byte> SubtractRoundedHighNarrowingLowerTest(Vector128<ushort> left, Vector128<ushort> right)
-{{
-  return AdvSimd.SubtractRoundedHighNarrowingLower(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<short> SubtractRoundedHighNarrowingLower(Vector128<int> left, Vector128<int> right)
-Vector64<int> SubtractRoundedHighNarrowingLower(Vector128<long> left, Vector128<long> right)
-Vector64<sbyte> SubtractRoundedHighNarrowingLower(Vector128<short> left, Vector128<short> right)
-Vector64<ushort> SubtractRoundedHighNarrowingLower(Vector128<uint> left, Vector128<uint> right)
-Vector64<uint> SubtractRoundedHighNarrowingLower(Vector128<ulong> left, Vector128<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractroundedhighnarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsubhn_u16).
-
-Assembly generated:
-
-```armasm", GetValue("SubtractRoundedHighNarrowingLower", "Performs 'SubtractRoundedHighNarrowingLower' operation.", 0), GetValue("SubtractRoundedHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("SubtractRoundedHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("SubtractRoundedHighNarrowingLower", apiResult.ToString(), 3));
-
-try {
-SubtractRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var SubtractRoundedHighNarrowingUpperResult = Dummy_SubtractRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
-apiResult = SubtractRoundedHighNarrowingUpperResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 22. SubtractRoundedHighNarrowingUpper
-
-`Vector128<byte> SubtractRoundedHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
-
-{0}
-
-```csharp
-private Vector128<byte> SubtractRoundedHighNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)
-{{
-  return AdvSimd.SubtractRoundedHighNarrowingUpper(lower, left, right);
-}}
-// lower = {1}
-// left = {2}
-// right = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector128<short> SubtractRoundedHighNarrowingUpper(Vector64<short> lower, Vector128<int> left, Vector128<int> right)
-Vector128<int> SubtractRoundedHighNarrowingUpper(Vector64<int> lower, Vector128<long> left, Vector128<long> right)
-Vector128<sbyte> SubtractRoundedHighNarrowingUpper(Vector64<sbyte> lower, Vector128<short> left, Vector128<short> right)
-Vector128<ushort> SubtractRoundedHighNarrowingUpper(Vector64<ushort> lower, Vector128<uint> left, Vector128<uint> right)
-Vector128<uint> SubtractRoundedHighNarrowingUpper(Vector64<uint> lower, Vector128<ulong> left, Vector128<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractroundedhighnarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsubhn_high_u16).
-
-Assembly generated:
-
-```armasm", GetValue("SubtractRoundedHighNarrowingUpper", "Performs 'SubtractRoundedHighNarrowingUpper' operation.", 0), GetValue("SubtractRoundedHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("SubtractRoundedHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("SubtractRoundedHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("SubtractRoundedHighNarrowingUpper", apiResult.ToString(), 4));
-
-try {
-SubtractRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var SubtractSaturateResult = Dummy_SubtractSaturateTest(Vector64byte_0, Vector64byte_1);
-apiResult = SubtractSaturateResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 23. SubtractSaturate
-
-`Vector64<byte> SubtractSaturate(Vector64<byte> left, Vector64<byte> right)`
-
-{0}
-
-```csharp
-private Vector64<byte> SubtractSaturateTest(Vector64<byte> left, Vector64<byte> right)
-{{
-  return AdvSimd.SubtractSaturate(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<short> SubtractSaturate(Vector64<short> left, Vector64<short> right)
-Vector64<int> SubtractSaturate(Vector64<int> left, Vector64<int> right)
-Vector64<sbyte> SubtractSaturate(Vector64<sbyte> left, Vector64<sbyte> right)
-Vector64<ushort> SubtractSaturate(Vector64<ushort> left, Vector64<ushort> right)
-Vector64<uint> SubtractSaturate(Vector64<uint> left, Vector64<uint> right)
-Vector128<byte> SubtractSaturate(Vector128<byte> left, Vector128<byte> right)
-Vector128<short> SubtractSaturate(Vector128<short> left, Vector128<short> right)
-Vector128<int> SubtractSaturate(Vector128<int> left, Vector128<int> right)
-Vector128<long> SubtractSaturate(Vector128<long> left, Vector128<long> right)
-Vector128<sbyte> SubtractSaturate(Vector128<sbyte> left, Vector128<sbyte> right)
-Vector128<ushort> SubtractSaturate(Vector128<ushort> left, Vector128<ushort> right)
-Vector128<uint> SubtractSaturate(Vector128<uint> left, Vector128<uint> right)
-Vector128<ulong> SubtractSaturate(Vector128<ulong> left, Vector128<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqsub_u8).
-
-Assembly generated:
-
-```armasm", GetValue("SubtractSaturate", "Performs 'SubtractSaturate' operation.", 0), GetValue("SubtractSaturate", Vector64byte_0.ToString(), 1), GetValue("SubtractSaturate", Vector64byte_1.ToString(), 2), GetValue("SubtractSaturate", apiResult.ToString(), 3));
-
-try {
-SubtractSaturateTest(Vector64byte_0, Vector64byte_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var SubtractSaturateScalarResult = Dummy_SubtractSaturateScalarTest(Vector64long_0, Vector64long_1);
-apiResult = SubtractSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 24. SubtractSaturateScalar
-
-`Vector64<long> SubtractSaturateScalar(Vector64<long> left, Vector64<long> right)`
-
-{0}
-
-```csharp
-private Vector64<long> SubtractSaturateScalarTest(Vector64<long> left, Vector64<long> right)
-{{
-  return AdvSimd.SubtractSaturateScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<ulong> SubtractSaturateScalar(Vector64<ulong> left, Vector64<ulong> right)
-
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<byte> SubtractSaturateScalar(Vector64<byte> left, Vector64<byte> right)
-Vector64<short> SubtractSaturateScalar(Vector64<short> left, Vector64<short> right)
-Vector64<int> SubtractSaturateScalar(Vector64<int> left, Vector64<int> right)
-Vector64<sbyte> SubtractSaturateScalar(Vector64<sbyte> left, Vector64<sbyte> right)
-Vector64<ushort> SubtractSaturateScalar(Vector64<ushort> left, Vector64<ushort> right)
-Vector64<uint> SubtractSaturateScalar(Vector64<uint> left, Vector64<uint> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.subtractsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqsub_s64).
-
-Assembly generated:
-
-```armasm", GetValue("SubtractSaturateScalar", "Performs 'SubtractSaturateScalar' operation.", 0), GetValue("SubtractSaturateScalar", Vector64long_0.ToString(), 1), GetValue("SubtractSaturateScalar", Vector64long_1.ToString(), 2), GetValue("SubtractSaturateScalar", apiResult.ToString(), 3));
-
-try {
-SubtractSaturateScalarTest(Vector64long_0, Vector64long_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var SubtractScalarResult = Dummy_SubtractScalarTest(Vector64double_0, Vector64double_1);
-apiResult = SubtractScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 25. SubtractScalar
-
-`Vector64<double> SubtractScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> SubtractScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.SubtractScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<long> SubtractScalar(Vector64<long> left, Vector64<long> right)
-Vector64<float> SubtractScalar(Vector64<float> left, Vector64<float> right)
-Vector64<ulong> SubtractScalar(Vector64<ulong> left, Vector64<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsub_f64).
-
-Assembly generated:
-
-```armasm", GetValue("SubtractScalar", "Performs 'SubtractScalar' operation.", 0), GetValue("SubtractScalar", Vector64double_0.ToString(), 1), GetValue("SubtractScalar", Vector64double_1.ToString(), 2), GetValue("SubtractScalar", apiResult.ToString(), 3));
-
-try {
-SubtractScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var SubtractWideningLowerResult = Dummy_SubtractWideningLowerTest(Vector64byte_0, Vector64byte_1);
-apiResult = SubtractWideningLowerResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 26. SubtractWideningLower
-
-`Vector128<ushort> SubtractWideningLower(Vector64<byte> left, Vector64<byte> right)`
-
-{0}
-
-```csharp
-private Vector128<ushort> SubtractWideningLowerTest(Vector64<byte> left, Vector64<byte> right)
-{{
-  return AdvSimd.SubtractWideningLower(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector128<int> SubtractWideningLower(Vector64<short> left, Vector64<short> right)
-Vector128<long> SubtractWideningLower(Vector64<int> left, Vector64<int> right)
-Vector128<short> SubtractWideningLower(Vector64<sbyte> left, Vector64<sbyte> right)
-Vector128<uint> SubtractWideningLower(Vector64<ushort> left, Vector64<ushort> right)
-Vector128<ulong> SubtractWideningLower(Vector64<uint> left, Vector64<uint> right)
-Vector128<short> SubtractWideningLower(Vector128<short> left, Vector64<sbyte> right)
-Vector128<int> SubtractWideningLower(Vector128<int> left, Vector64<short> right)
-Vector128<long> SubtractWideningLower(Vector128<long> left, Vector64<int> right)
-Vector128<ushort> SubtractWideningLower(Vector128<ushort> left, Vector64<byte> right)
-Vector128<uint> SubtractWideningLower(Vector128<uint> left, Vector64<ushort> right)
-Vector128<ulong> SubtractWideningLower(Vector128<ulong> left, Vector64<uint> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractwideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubl_u8).
-
-Assembly generated:
-
-```armasm", GetValue("SubtractWideningLower", "Performs 'SubtractWideningLower' operation.", 0), GetValue("SubtractWideningLower", Vector64byte_0.ToString(), 1), GetValue("SubtractWideningLower", Vector64byte_1.ToString(), 2), GetValue("SubtractWideningLower", apiResult.ToString(), 3));
-
-try {
-SubtractWideningLowerTest(Vector64byte_0, Vector64byte_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var SubtractWideningUpperResult = Dummy_SubtractWideningUpperTest(Vector128byte_0, Vector128byte_1);
-apiResult = SubtractWideningUpperResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 27. SubtractWideningUpper
-
-`Vector128<ushort> SubtractWideningUpper(Vector128<byte> left, Vector128<byte> right)`
-
-{0}
-
-```csharp
-private Vector128<ushort> SubtractWideningUpperTest(Vector128<byte> left, Vector128<byte> right)
-{{
-  return AdvSimd.SubtractWideningUpper(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector128<int> SubtractWideningUpper(Vector128<short> left, Vector128<short> right)
-Vector128<short> SubtractWideningUpper(Vector128<short> left, Vector128<sbyte> right)
-Vector128<int> SubtractWideningUpper(Vector128<int> left, Vector128<short> right)
-Vector128<long> SubtractWideningUpper(Vector128<int> left, Vector128<int> right)
-Vector128<long> SubtractWideningUpper(Vector128<long> left, Vector128<int> right)
-Vector128<short> SubtractWideningUpper(Vector128<sbyte> left, Vector128<sbyte> right)
-Vector128<ushort> SubtractWideningUpper(Vector128<ushort> left, Vector128<byte> right)
-Vector128<uint> SubtractWideningUpper(Vector128<ushort> left, Vector128<ushort> right)
-Vector128<uint> SubtractWideningUpper(Vector128<uint> left, Vector128<ushort> right)
-Vector128<ulong> SubtractWideningUpper(Vector128<uint> left, Vector128<uint> right)
-Vector128<ulong> SubtractWideningUpper(Vector128<ulong> left, Vector128<uint> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractwideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubl_high_u8).
-
-Assembly generated:
-
-```armasm", GetValue("SubtractWideningUpper", "Performs 'SubtractWideningUpper' operation.", 0), GetValue("SubtractWideningUpper", Vector128byte_0.ToString(), 1), GetValue("SubtractWideningUpper", Vector128byte_1.ToString(), 2), GetValue("SubtractWideningUpper", apiResult.ToString(), 3));
-
-try {
-SubtractWideningUpperTest(Vector128byte_0, Vector128byte_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var VectorTableLookupResult = Dummy_VectorTableLookupTest(Vector128byte_0, Vector64byte_0);
-apiResult = VectorTableLookupResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 28. VectorTableLookup
-
-`Vector64<byte> VectorTableLookup(Vector128<byte> table, Vector64<byte> byteIndexes)`
-
-{0}
-
-```csharp
-private Vector64<byte> VectorTableLookupTest(Vector128<byte> table, Vector64<byte> byteIndexes)
-{{
-  return AdvSimd.VectorTableLookup(table, byteIndexes);
-}}
-// table = {1}
-// byteIndexes = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<sbyte> VectorTableLookup(Vector128<sbyte> table, Vector64<sbyte> byteIndexes)
-
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<byte> VectorTableLookup(Vector128<byte> table, Vector128<byte> byteIndexes)
-Vector128<sbyte> VectorTableLookup(Vector128<sbyte> table, Vector128<sbyte> byteIndexes)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.vectortablelookup?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.vectortablelookup?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqvtbl1_u8).
-
-Assembly generated:
-
-```armasm", GetValue("VectorTableLookup", "Performs 'VectorTableLookup' operation.", 0), GetValue("VectorTableLookup", Vector128byte_0.ToString(), 1), GetValue("VectorTableLookup", Vector64byte_0.ToString(), 2), GetValue("VectorTableLookup", apiResult.ToString(), 3));
-
-try {
-VectorTableLookupTest(Vector128byte_0, Vector64byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var VectorTableLookupExtensionResult = Dummy_VectorTableLookupExtensionTest(Vector64byte_0, Vector128byte_0, Vector64byte_1);
-apiResult = VectorTableLookupExtensionResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 29. VectorTableLookupExtension
-
-`Vector64<byte> VectorTableLookupExtension(Vector64<byte> defaultValues, Vector128<byte> table, Vector64<byte> byteIndexes)`
-
-{0}
-
-```csharp
-private Vector64<byte> VectorTableLookupExtensionTest(Vector64<byte> defaultValues, Vector128<byte> table, Vector64<byte> byteIndexes)
-{{
-  return AdvSimd.VectorTableLookupExtension(defaultValues, table, byteIndexes);
-}}
-// defaultValues = {1}
-// table = {2}
-// byteIndexes = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<sbyte> VectorTableLookupExtension(Vector64<sbyte> defaultValues, Vector128<sbyte> table, Vector64<sbyte> byteIndexes)
-
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<byte> VectorTableLookupExtension(Vector128<byte> defaultValues, Vector128<byte> table, Vector128<byte> byteIndexes)
-Vector128<sbyte> VectorTableLookupExtension(Vector128<sbyte> defaultValues, Vector128<sbyte> table, Vector128<sbyte> byteIndexes)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.vectortablelookupextension?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.vectortablelookupextension?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqvtbx1_u8).
-
-Assembly generated:
-
-```armasm", GetValue("VectorTableLookupExtension", "Performs 'VectorTableLookupExtension' operation.", 0), GetValue("VectorTableLookupExtension", Vector64byte_0.ToString(), 1), GetValue("VectorTableLookupExtension", Vector128byte_0.ToString(), 2), GetValue("VectorTableLookupExtension", Vector64byte_1.ToString(), 3), GetValue("VectorTableLookupExtension", apiResult.ToString(), 4));
-
-try {
-VectorTableLookupExtensionTest(Vector64byte_0, Vector128byte_0, Vector64byte_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var XorResult = Dummy_XorTest(Vector64byte_0, Vector64byte_1);
-apiResult = XorResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 30. Xor
-
-`Vector64<byte> Xor(Vector64<byte> left, Vector64<byte> right)`
-
-{0}
-
-```csharp
-private Vector64<byte> XorTest(Vector64<byte> left, Vector64<byte> right)
-{{
-  return AdvSimd.Xor(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector64<double> Xor(Vector64<double> left, Vector64<double> right)
-Vector64<short> Xor(Vector64<short> left, Vector64<short> right)
-Vector64<int> Xor(Vector64<int> left, Vector64<int> right)
-Vector64<long> Xor(Vector64<long> left, Vector64<long> right)
-Vector64<sbyte> Xor(Vector64<sbyte> left, Vector64<sbyte> right)
-Vector64<float> Xor(Vector64<float> left, Vector64<float> right)
-Vector64<ushort> Xor(Vector64<ushort> left, Vector64<ushort> right)
-Vector64<uint> Xor(Vector64<uint> left, Vector64<uint> right)
-Vector64<ulong> Xor(Vector64<ulong> left, Vector64<ulong> right)
-Vector128<byte> Xor(Vector128<byte> left, Vector128<byte> right)
-Vector128<double> Xor(Vector128<double> left, Vector128<double> right)
-Vector128<short> Xor(Vector128<short> left, Vector128<short> right)
-Vector128<int> Xor(Vector128<int> left, Vector128<int> right)
-Vector128<long> Xor(Vector128<long> left, Vector128<long> right)
-Vector128<sbyte> Xor(Vector128<sbyte> left, Vector128<sbyte> right)
-Vector128<float> Xor(Vector128<float> left, Vector128<float> right)
-Vector128<ushort> Xor(Vector128<ushort> left, Vector128<ushort> right)
-Vector128<uint> Xor(Vector128<uint> left, Vector128<uint> right)
-Vector128<ulong> Xor(Vector128<ulong> left, Vector128<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.xor?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=veor_u8).
-
-Assembly generated:
-
-```armasm", GetValue("Xor", "Performs 'Xor' operation.", 0), GetValue("Xor", Vector64byte_0.ToString(), 1), GetValue("Xor", Vector64byte_1.ToString(), 2), GetValue("Xor", apiResult.ToString(), 3));
-
-try {
-XorTest(Vector64byte_0, Vector64byte_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ZeroExtendWideningLowerResult = Dummy_ZeroExtendWideningLowerTest(Vector64byte_0);
-apiResult = ZeroExtendWideningLowerResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 31. ZeroExtendWideningLower
-
-`Vector128<ushort> ZeroExtendWideningLower(Vector64<byte> value)`
-
-{0}
-
-```csharp
-private Vector128<ushort> ZeroExtendWideningLowerTest(Vector64<byte> value)
-{{
-  return AdvSimd.ZeroExtendWideningLower(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector128<int> ZeroExtendWideningLower(Vector64<short> value)
-Vector128<long> ZeroExtendWideningLower(Vector64<int> value)
-Vector128<short> ZeroExtendWideningLower(Vector64<sbyte> value)
-Vector128<uint> ZeroExtendWideningLower(Vector64<ushort> value)
-Vector128<ulong> ZeroExtendWideningLower(Vector64<uint> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.zeroextendwideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmovl_u8).
-
-Assembly generated:
-
-```armasm", GetValue("ZeroExtendWideningLower", "Performs 'ZeroExtendWideningLower' operation.", 0), GetValue("ZeroExtendWideningLower", Vector64byte_0.ToString(), 1), GetValue("ZeroExtendWideningLower", apiResult.ToString(), 2));
-
-try {
-ZeroExtendWideningLowerTest(Vector64byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ZeroExtendWideningUpperResult = Dummy_ZeroExtendWideningUpperTest(Vector128byte_0);
-apiResult = ZeroExtendWideningUpperResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 32. ZeroExtendWideningUpper
-
-`Vector128<ushort> ZeroExtendWideningUpper(Vector128<byte> value)`
-
-{0}
-
-```csharp
-private Vector128<ushort> ZeroExtendWideningUpperTest(Vector128<byte> value)
-{{
-  return AdvSimd.ZeroExtendWideningUpper(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd
-Vector128<int> ZeroExtendWideningUpper(Vector128<short> value)
-Vector128<long> ZeroExtendWideningUpper(Vector128<int> value)
-Vector128<short> ZeroExtendWideningUpper(Vector128<sbyte> value)
-Vector128<uint> ZeroExtendWideningUpper(Vector128<ushort> value)
-Vector128<ulong> ZeroExtendWideningUpper(Vector128<uint> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.zeroextendwideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmovl_high_u8).
-
-Assembly generated:
-
-```armasm", GetValue("ZeroExtendWideningUpper", "Performs 'ZeroExtendWideningUpper' operation.", 0), GetValue("ZeroExtendWideningUpper", Vector128byte_0.ToString(), 1), GetValue("ZeroExtendWideningUpper", apiResult.ToString(), 2));
-
-try {
-ZeroExtendWideningUpperTest(Vector128byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var AbsSaturateScalarResult = Dummy_AbsSaturateScalarTest(Vector64short_0);
-apiResult = AbsSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 33. AbsSaturateScalar
-
-`Vector64<short> AbsSaturateScalar(Vector64<short> value)`
-
-{0}
-
-```csharp
-private Vector64<short> AbsSaturateScalarTest(Vector64<short> value)
-{{
-  return AdvSimd.Arm64.AbsSaturateScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<int> AbsSaturateScalar(Vector64<int> value)
-Vector64<long> AbsSaturateScalar(Vector64<long> value)
-Vector64<sbyte> AbsSaturateScalar(Vector64<sbyte> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.abssaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqabsh_s16).
-
-Assembly generated:
-
-```armasm", GetValue("AbsSaturateScalar", "Performs 'AbsSaturateScalar' operation.", 0), GetValue("AbsSaturateScalar", Vector64short_0.ToString(), 1), GetValue("AbsSaturateScalar", apiResult.ToString(), 2));
-
-try {
-AbsSaturateScalarTest(Vector64short_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var AbsoluteCompareGreaterThanScalarResult = Dummy_AbsoluteCompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
-apiResult = AbsoluteCompareGreaterThanScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 34. AbsoluteCompareGreaterThanScalar
-
-`Vector64<double> AbsoluteCompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> AbsoluteCompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.AbsoluteCompareGreaterThanScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> AbsoluteCompareGreaterThanScalar(Vector64<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcagt_f64).
-
-Assembly generated:
-
-```armasm", GetValue("AbsoluteCompareGreaterThanScalar", "Performs 'AbsoluteCompareGreaterThanScalar' operation.", 0), GetValue("AbsoluteCompareGreaterThanScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThanScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThanScalar", apiResult.ToString(), 3));
-
-try {
-AbsoluteCompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var AbsoluteCompareGreaterThanOrEqualScalarResult = Dummy_AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
-apiResult = AbsoluteCompareGreaterThanOrEqualScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 35. AbsoluteCompareGreaterThanOrEqualScalar
-
-`Vector64<double> AbsoluteCompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.AbsoluteCompareGreaterThanOrEqualScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> AbsoluteCompareGreaterThanOrEqualScalar(Vector64<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparegreaterthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcage_f64).
-
-Assembly generated:
-
-```armasm", GetValue("AbsoluteCompareGreaterThanOrEqualScalar", "Performs 'AbsoluteCompareGreaterThanOrEqualScalar' operation.", 0), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareGreaterThanOrEqualScalar", apiResult.ToString(), 3));
-
-try {
-AbsoluteCompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var AbsoluteCompareLessThanScalarResult = Dummy_AbsoluteCompareLessThanScalarTest(Vector64double_0, Vector64double_1);
-apiResult = AbsoluteCompareLessThanScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 36. AbsoluteCompareLessThanScalar
-
-`Vector64<double> AbsoluteCompareLessThanScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> AbsoluteCompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.AbsoluteCompareLessThanScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> AbsoluteCompareLessThanScalar(Vector64<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcalt_f64).
-
-Assembly generated:
-
-```armasm", GetValue("AbsoluteCompareLessThanScalar", "Performs 'AbsoluteCompareLessThanScalar' operation.", 0), GetValue("AbsoluteCompareLessThanScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareLessThanScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareLessThanScalar", apiResult.ToString(), 3));
-
-try {
-AbsoluteCompareLessThanScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var AbsoluteCompareLessThanOrEqualScalarResult = Dummy_AbsoluteCompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
-apiResult = AbsoluteCompareLessThanOrEqualScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 37. AbsoluteCompareLessThanOrEqualScalar
-
-`Vector64<double> AbsoluteCompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> AbsoluteCompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.AbsoluteCompareLessThanOrEqualScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> AbsoluteCompareLessThanOrEqualScalar(Vector64<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutecomparelessthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcale_f64).
-
-Assembly generated:
-
-```armasm", GetValue("AbsoluteCompareLessThanOrEqualScalar", "Performs 'AbsoluteCompareLessThanOrEqualScalar' operation.", 0), GetValue("AbsoluteCompareLessThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteCompareLessThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteCompareLessThanOrEqualScalar", apiResult.ToString(), 3));
-
-try {
-AbsoluteCompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var AbsoluteDifferenceScalarResult = Dummy_AbsoluteDifferenceScalarTest(Vector64double_0, Vector64double_1);
-apiResult = AbsoluteDifferenceScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 38. AbsoluteDifferenceScalar
-
-`Vector64<double> AbsoluteDifferenceScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> AbsoluteDifferenceScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.AbsoluteDifferenceScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> AbsoluteDifferenceScalar(Vector64<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.absolutedifferencescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vabd_f64).
-
-Assembly generated:
-
-```armasm", GetValue("AbsoluteDifferenceScalar", "Performs 'AbsoluteDifferenceScalar' operation.", 0), GetValue("AbsoluteDifferenceScalar", Vector64double_0.ToString(), 1), GetValue("AbsoluteDifferenceScalar", Vector64double_1.ToString(), 2), GetValue("AbsoluteDifferenceScalar", apiResult.ToString(), 3));
-
-try {
-AbsoluteDifferenceScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var AddAcrossResult = Dummy_AddAcrossTest(Vector64byte_0);
-apiResult = AddAcrossResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 39. AddAcross
-
-`Vector64<byte> AddAcross(Vector64<byte> value)`
-
-{0}
-
-```csharp
-private Vector64<byte> AddAcrossTest(Vector64<byte> value)
-{{
-  return AdvSimd.Arm64.AddAcross(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<short> AddAcross(Vector64<short> value)
-Vector64<sbyte> AddAcross(Vector64<sbyte> value)
-Vector64<ushort> AddAcross(Vector64<ushort> value)
-Vector64<byte> AddAcross(Vector128<byte> value)
-Vector64<short> AddAcross(Vector128<short> value)
-Vector64<int> AddAcross(Vector128<int> value)
-Vector64<sbyte> AddAcross(Vector128<sbyte> value)
-Vector64<ushort> AddAcross(Vector128<ushort> value)
-Vector64<uint> AddAcross(Vector128<uint> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaddv_u8).
-
-Assembly generated:
-
-```armasm", GetValue("AddAcross", "Performs 'AddAcross' operation.", 0), GetValue("AddAcross", Vector64byte_0.ToString(), 1), GetValue("AddAcross", apiResult.ToString(), 2));
-
-try {
-AddAcrossTest(Vector64byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var AddAcrossWideningResult = Dummy_AddAcrossWideningTest(Vector64byte_0);
-apiResult = AddAcrossWideningResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 40. AddAcrossWidening
-
-`Vector64<ushort> AddAcrossWidening(Vector64<byte> value)`
-
-{0}
-
-```csharp
-private Vector64<ushort> AddAcrossWideningTest(Vector64<byte> value)
-{{
-  return AdvSimd.Arm64.AddAcrossWidening(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<int> AddAcrossWidening(Vector64<short> value)
-Vector64<short> AddAcrossWidening(Vector64<sbyte> value)
-Vector64<uint> AddAcrossWidening(Vector64<ushort> value)
-Vector64<ushort> AddAcrossWidening(Vector128<byte> value)
-Vector64<int> AddAcrossWidening(Vector128<short> value)
-Vector64<long> AddAcrossWidening(Vector128<int> value)
-Vector64<short> AddAcrossWidening(Vector128<sbyte> value)
-Vector64<uint> AddAcrossWidening(Vector128<ushort> value)
-Vector64<ulong> AddAcrossWidening(Vector128<uint> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addacrosswidening?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vaddlv_u8).
-
-Assembly generated:
-
-```armasm", GetValue("AddAcrossWidening", "Performs 'AddAcrossWidening' operation.", 0), GetValue("AddAcrossWidening", Vector64byte_0.ToString(), 1), GetValue("AddAcrossWidening", apiResult.ToString(), 2));
-
-try {
-AddAcrossWideningTest(Vector64byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var AddPairwiseScalarResult = Dummy_AddPairwiseScalarTest(Vector64float_0);
-apiResult = AddPairwiseScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 41. AddPairwiseScalar
-
-`Vector64<float> AddPairwiseScalar(Vector64<float> value)`
-
-{0}
-
-```csharp
-private Vector64<float> AddPairwiseScalarTest(Vector64<float> value)
-{{
-  return AdvSimd.Arm64.AddPairwiseScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<double> AddPairwiseScalar(Vector128<double> value)
-Vector64<long> AddPairwiseScalar(Vector128<long> value)
-Vector64<ulong> AddPairwiseScalar(Vector128<ulong> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.addpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpadds_f32).
-
-Assembly generated:
-
-```armasm", GetValue("AddPairwiseScalar", "Performs 'AddPairwiseScalar' operation.", 0), GetValue("AddPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("AddPairwiseScalar", apiResult.ToString(), 2));
-
-try {
-AddPairwiseScalarTest(Vector64float_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var CompareEqualScalarResult = Dummy_CompareEqualScalarTest(Vector64double_0, Vector64double_1);
-apiResult = CompareEqualScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 42. CompareEqualScalar
-
-`Vector64<double> CompareEqualScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> CompareEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.CompareEqualScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<long> CompareEqualScalar(Vector64<long> left, Vector64<long> right)
-Vector64<float> CompareEqualScalar(Vector64<float> left, Vector64<float> right)
-Vector64<ulong> CompareEqualScalar(Vector64<ulong> left, Vector64<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.compareequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vceq_f64).
-
-Assembly generated:
-
-```armasm", GetValue("CompareEqualScalar", "Performs 'CompareEqualScalar' operation.", 0), GetValue("CompareEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareEqualScalar", apiResult.ToString(), 3));
-
-try {
-CompareEqualScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var CompareGreaterThanScalarResult = Dummy_CompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
-apiResult = CompareGreaterThanScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 43. CompareGreaterThanScalar
-
-`Vector64<double> CompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> CompareGreaterThanScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.CompareGreaterThanScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<long> CompareGreaterThanScalar(Vector64<long> left, Vector64<long> right)
-Vector64<float> CompareGreaterThanScalar(Vector64<float> left, Vector64<float> right)
-Vector64<ulong> CompareGreaterThanScalar(Vector64<ulong> left, Vector64<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcgt_f64).
-
-Assembly generated:
-
-```armasm", GetValue("CompareGreaterThanScalar", "Performs 'CompareGreaterThanScalar' operation.", 0), GetValue("CompareGreaterThanScalar", Vector64double_0.ToString(), 1), GetValue("CompareGreaterThanScalar", Vector64double_1.ToString(), 2), GetValue("CompareGreaterThanScalar", apiResult.ToString(), 3));
-
-try {
-CompareGreaterThanScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var CompareGreaterThanOrEqualScalarResult = Dummy_CompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
-apiResult = CompareGreaterThanOrEqualScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 44. CompareGreaterThanOrEqualScalar
-
-`Vector64<double> CompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> CompareGreaterThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.CompareGreaterThanOrEqualScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<long> CompareGreaterThanOrEqualScalar(Vector64<long> left, Vector64<long> right)
-Vector64<float> CompareGreaterThanOrEqualScalar(Vector64<float> left, Vector64<float> right)
-Vector64<ulong> CompareGreaterThanOrEqualScalar(Vector64<ulong> left, Vector64<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparegreaterthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcge_f64).
-
-Assembly generated:
-
-```armasm", GetValue("CompareGreaterThanOrEqualScalar", "Performs 'CompareGreaterThanOrEqualScalar' operation.", 0), GetValue("CompareGreaterThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareGreaterThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareGreaterThanOrEqualScalar", apiResult.ToString(), 3));
-
-try {
-CompareGreaterThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var CompareLessThanScalarResult = Dummy_CompareLessThanScalarTest(Vector64double_0, Vector64double_1);
-apiResult = CompareLessThanScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 45. CompareLessThanScalar
-
-`Vector64<double> CompareLessThanScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> CompareLessThanScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.CompareLessThanScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<long> CompareLessThanScalar(Vector64<long> left, Vector64<long> right)
-Vector64<float> CompareLessThanScalar(Vector64<float> left, Vector64<float> right)
-Vector64<ulong> CompareLessThanScalar(Vector64<ulong> left, Vector64<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthanscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vclt_f64).
-
-Assembly generated:
-
-```armasm", GetValue("CompareLessThanScalar", "Performs 'CompareLessThanScalar' operation.", 0), GetValue("CompareLessThanScalar", Vector64double_0.ToString(), 1), GetValue("CompareLessThanScalar", Vector64double_1.ToString(), 2), GetValue("CompareLessThanScalar", apiResult.ToString(), 3));
-
-try {
-CompareLessThanScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 7
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[CompareLessThanOrEqualScalar](#1-comparelessthanorequalscalar), [CompareTestScalar](#2-comparetestscalar), [ConvertToDouble](#3-converttodouble), [ConvertToDoubleScalar](#4-converttodoublescalar), [ConvertToDoubleUpper](#5-converttodoubleupper), [ConvertToInt64RoundAwayFromZero](#6-converttoint64roundawayfromzero), [ConvertToInt64RoundAwayFromZeroScalar](#7-converttoint64roundawayfromzeroscalar), [ConvertToInt64RoundToEven](#8-converttoint64roundtoeven), [ConvertToInt64RoundToEvenScalar](#9-converttoint64roundtoevenscalar), [ConvertToInt64RoundToNegativeInfinity](#10-converttoint64roundtonegativeinfinity), [ConvertToInt64RoundToNegativeInfinityScalar](#11-converttoint64roundtonegativeinfinityscalar), [ConvertToInt64RoundToPositiveInfinity](#12-converttoint64roundtopositiveinfinity), [ConvertToInt64RoundToPositiveInfinityScalar](#13-converttoint64roundtopositiveinfinityscalar), [ConvertToInt64RoundToZero](#14-converttoint64roundtozero), [ConvertToInt64RoundToZeroScalar](#15-converttoint64roundtozeroscalar), [ConvertToSingleLower](#16-converttosinglelower), [ConvertToSingleRoundToOddLower](#17-converttosingleroundtooddlower), [ConvertToSingleRoundToOddUpper](#18-converttosingleroundtooddupper), [ConvertToSingleUpper](#19-converttosingleupper), [ConvertToUInt64RoundAwayFromZero](#20-converttouint64roundawayfromzero), [ConvertToUInt64RoundAwayFromZeroScalar](#21-converttouint64roundawayfromzeroscalar), [ConvertToUInt64RoundToEven](#22-converttouint64roundtoeven), [ConvertToUInt64RoundToEvenScalar](#23-converttouint64roundtoevenscalar), [ConvertToUInt64RoundToNegativeInfinity](#24-converttouint64roundtonegativeinfinity), [ConvertToUInt64RoundToNegativeInfinityScalar](#25-converttouint64roundtonegativeinfinityscalar), [ConvertToUInt64RoundToPositiveInfinity](#26-converttouint64roundtopositiveinfinity), [ConvertToUInt64RoundToPositiveInfinityScalar](#27-converttouint64roundtopositiveinfinityscalar), [ConvertToUInt64RoundToZero](#28-converttouint64roundtozero), [ConvertToUInt64RoundToZeroScalar](#29-converttouint64roundtozeroscalar), [Divide](#30-divide), [ExtractNarrowingSaturateScalar](#31-extractnarrowingsaturatescalar), [ExtractNarrowingSaturateUnsignedScalar](#32-extractnarrowingsaturateunsignedscalar), [FusedMultiplyAddByScalar](#33-fusedmultiplyaddbyscalar), [FusedMultiplyAddBySelectedScalar](#34-fusedmultiplyaddbyselectedscalar), [FusedMultiplyAddScalarBySelectedScalar](#35-fusedmultiplyaddscalarbyselectedscalar), [FusedMultiplySubtractByScalar](#36-fusedmultiplysubtractbyscalar), [FusedMultiplySubtractBySelectedScalar](#37-fusedmultiplysubtractbyselectedscalar), [FusedMultiplySubtractScalarBySelectedScalar](#38-fusedmultiplysubtractscalarbyselectedscalar), [InsertSelectedScalar](#39-insertselectedscalar), [MaxAcross](#40-maxacross), [MaxNumberAcross](#41-maxnumberacross), [MaxNumberPairwise](#42-maxnumberpairwise), [MaxNumberPairwiseScalar](#43-maxnumberpairwisescalar), [MaxPairwiseScalar](#44-maxpairwisescalar), [MaxScalar](#45-maxscalar),[...](Part7.md)
-
-
-");
-
-try {
-var CompareLessThanOrEqualScalarResult = Dummy_CompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
-apiResult = CompareLessThanOrEqualScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"
-
-### 1. CompareLessThanOrEqualScalar
-
-`Vector64<double> CompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> CompareLessThanOrEqualScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.CompareLessThanOrEqualScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<long> CompareLessThanOrEqualScalar(Vector64<long> left, Vector64<long> right)
-Vector64<float> CompareLessThanOrEqualScalar(Vector64<float> left, Vector64<float> right)
-Vector64<ulong> CompareLessThanOrEqualScalar(Vector64<ulong> left, Vector64<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparelessthanorequalscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcle_f64).
-
-Assembly generated:
-
-```armasm", GetValue("CompareLessThanOrEqualScalar", "Performs 'CompareLessThanOrEqualScalar' operation.", 0), GetValue("CompareLessThanOrEqualScalar", Vector64double_0.ToString(), 1), GetValue("CompareLessThanOrEqualScalar", Vector64double_1.ToString(), 2), GetValue("CompareLessThanOrEqualScalar", apiResult.ToString(), 3));
-
-try {
-CompareLessThanOrEqualScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var CompareTestScalarResult = Dummy_CompareTestScalarTest(Vector64double_0, Vector64double_1);
-apiResult = CompareTestScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 2. CompareTestScalar
-
-`Vector64<double> CompareTestScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> CompareTestScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.CompareTestScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<long> CompareTestScalar(Vector64<long> left, Vector64<long> right)
-Vector64<ulong> CompareTestScalar(Vector64<ulong> left, Vector64<ulong> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.comparetestscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vtst_f64).
-
-Assembly generated:
-
-```armasm", GetValue("CompareTestScalar", "Performs 'CompareTestScalar' operation.", 0), GetValue("CompareTestScalar", Vector64double_0.ToString(), 1), GetValue("CompareTestScalar", Vector64double_1.ToString(), 2), GetValue("CompareTestScalar", apiResult.ToString(), 3));
-
-try {
-CompareTestScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToDoubleResult = Dummy_ConvertToDoubleTest(Vector64float_0);
-apiResult = ConvertToDoubleResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 3. ConvertToDouble
-
-`Vector128<double> ConvertToDouble(Vector64<float> value)`
-
-{0}
-
-```csharp
-private Vector128<double> ConvertToDoubleTest(Vector64<float> value)
-{{
-  return AdvSimd.Arm64.ConvertToDouble(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<double> ConvertToDouble(Vector128<long> value)
-Vector128<double> ConvertToDouble(Vector128<ulong> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodouble?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_f64_f32).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToDouble", "Performs 'ConvertToDouble' operation.", 0), GetValue("ConvertToDouble", Vector64float_0.ToString(), 1), GetValue("ConvertToDouble", apiResult.ToString(), 2));
-
-try {
-ConvertToDoubleTest(Vector64float_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToDoubleScalarResult = Dummy_ConvertToDoubleScalarTest(Vector64long_0);
-apiResult = ConvertToDoubleScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 4. ConvertToDoubleScalar
-
-`Vector64<double> ConvertToDoubleScalar(Vector64<long> value)`
-
-{0}
-
-```csharp
-private Vector64<double> ConvertToDoubleScalarTest(Vector64<long> value)
-{{
-  return AdvSimd.Arm64.ConvertToDoubleScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<double> ConvertToDoubleScalar(Vector64<ulong> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodoublescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_f64_s64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToDoubleScalar", "Performs 'ConvertToDoubleScalar' operation.", 0), GetValue("ConvertToDoubleScalar", Vector64long_0.ToString(), 1), GetValue("ConvertToDoubleScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToDoubleScalarTest(Vector64long_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToDoubleUpperResult = Dummy_ConvertToDoubleUpperTest(Vector128float_0);
-apiResult = ConvertToDoubleUpperResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 5. ConvertToDoubleUpper
-
-`Vector128<double> ConvertToDoubleUpper(Vector128<float> value)`
-
-{0}
-
-```csharp
-private Vector128<double> ConvertToDoubleUpperTest(Vector128<float> value)
-{{
-  return AdvSimd.Arm64.ConvertToDoubleUpper(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttodoubleupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_high_f64_f32).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToDoubleUpper", "Performs 'ConvertToDoubleUpper' operation.", 0), GetValue("ConvertToDoubleUpper", Vector128float_0.ToString(), 1), GetValue("ConvertToDoubleUpper", apiResult.ToString(), 2));
-
-try {
-ConvertToDoubleUpperTest(Vector128float_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToInt64RoundAwayFromZeroResult = Dummy_ConvertToInt64RoundAwayFromZeroTest(Vector128double_0);
-apiResult = ConvertToInt64RoundAwayFromZeroResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 6. ConvertToInt64RoundAwayFromZero
-
-`Vector128<long> ConvertToInt64RoundAwayFromZero(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<long> ConvertToInt64RoundAwayFromZeroTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZero(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundawayfromzero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtaq_s64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToInt64RoundAwayFromZero", "Performs 'ConvertToInt64RoundAwayFromZero' operation.", 0), GetValue("ConvertToInt64RoundAwayFromZero", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundAwayFromZero", apiResult.ToString(), 2));
-
-try {
-ConvertToInt64RoundAwayFromZeroTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToInt64RoundAwayFromZeroScalarResult = Dummy_ConvertToInt64RoundAwayFromZeroScalarTest(Vector64double_0);
-apiResult = ConvertToInt64RoundAwayFromZeroScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 7. ConvertToInt64RoundAwayFromZeroScalar
-
-`Vector64<long> ConvertToInt64RoundAwayFromZeroScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<long> ConvertToInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToInt64RoundAwayFromZeroScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundawayfromzeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvta_s64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToInt64RoundAwayFromZeroScalar", "Performs 'ConvertToInt64RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToInt64RoundAwayFromZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundAwayFromZeroScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToInt64RoundAwayFromZeroScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToInt64RoundToEvenResult = Dummy_ConvertToInt64RoundToEvenTest(Vector128double_0);
-apiResult = ConvertToInt64RoundToEvenResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 8. ConvertToInt64RoundToEven
-
-`Vector128<long> ConvertToInt64RoundToEven(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<long> ConvertToInt64RoundToEvenTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToInt64RoundToEven(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtoeven?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtnq_s64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToInt64RoundToEven", "Performs 'ConvertToInt64RoundToEven' operation.", 0), GetValue("ConvertToInt64RoundToEven", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToEven", apiResult.ToString(), 2));
-
-try {
-ConvertToInt64RoundToEvenTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToInt64RoundToEvenScalarResult = Dummy_ConvertToInt64RoundToEvenScalarTest(Vector64double_0);
-apiResult = ConvertToInt64RoundToEvenScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 9. ConvertToInt64RoundToEvenScalar
-
-`Vector64<long> ConvertToInt64RoundToEvenScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<long> ConvertToInt64RoundToEvenScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToInt64RoundToEvenScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtoevenscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtn_s64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToInt64RoundToEvenScalar", "Performs 'ConvertToInt64RoundToEvenScalar' operation.", 0), GetValue("ConvertToInt64RoundToEvenScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToEvenScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToInt64RoundToEvenScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToInt64RoundToNegativeInfinityResult = Dummy_ConvertToInt64RoundToNegativeInfinityTest(Vector128double_0);
-apiResult = ConvertToInt64RoundToNegativeInfinityResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 10. ConvertToInt64RoundToNegativeInfinity
-
-`Vector128<long> ConvertToInt64RoundToNegativeInfinity(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<long> ConvertToInt64RoundToNegativeInfinityTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinity(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtonegativeinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtmq_s64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToInt64RoundToNegativeInfinity", "Performs 'ConvertToInt64RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToInt64RoundToNegativeInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToNegativeInfinity", apiResult.ToString(), 2));
-
-try {
-ConvertToInt64RoundToNegativeInfinityTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToInt64RoundToNegativeInfinityScalarResult = Dummy_ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
-apiResult = ConvertToInt64RoundToNegativeInfinityScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 11. ConvertToInt64RoundToNegativeInfinityScalar
-
-`Vector64<long> ConvertToInt64RoundToNegativeInfinityScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<long> ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToInt64RoundToNegativeInfinityScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtonegativeinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtm_s64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToInt64RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToInt64RoundToNegativeInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToInt64RoundToPositiveInfinityResult = Dummy_ConvertToInt64RoundToPositiveInfinityTest(Vector128double_0);
-apiResult = ConvertToInt64RoundToPositiveInfinityResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 12. ConvertToInt64RoundToPositiveInfinity
-
-`Vector128<long> ConvertToInt64RoundToPositiveInfinity(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<long> ConvertToInt64RoundToPositiveInfinityTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinity(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtopositiveinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtpq_s64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToInt64RoundToPositiveInfinity", "Performs 'ConvertToInt64RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToInt64RoundToPositiveInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToPositiveInfinity", apiResult.ToString(), 2));
-
-try {
-ConvertToInt64RoundToPositiveInfinityTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToInt64RoundToPositiveInfinityScalarResult = Dummy_ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
-apiResult = ConvertToInt64RoundToPositiveInfinityScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 13. ConvertToInt64RoundToPositiveInfinityScalar
-
-`Vector64<long> ConvertToInt64RoundToPositiveInfinityScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<long> ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToInt64RoundToPositiveInfinityScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtopositiveinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtp_s64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToInt64RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToInt64RoundToPositiveInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToInt64RoundToZeroResult = Dummy_ConvertToInt64RoundToZeroTest(Vector128double_0);
-apiResult = ConvertToInt64RoundToZeroResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 14. ConvertToInt64RoundToZero
-
-`Vector128<long> ConvertToInt64RoundToZero(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<long> ConvertToInt64RoundToZeroTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToInt64RoundToZero(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtozero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtq_s64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToInt64RoundToZero", "Performs 'ConvertToInt64RoundToZero' operation.", 0), GetValue("ConvertToInt64RoundToZero", Vector128double_0.ToString(), 1), GetValue("ConvertToInt64RoundToZero", apiResult.ToString(), 2));
-
-try {
-ConvertToInt64RoundToZeroTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToInt64RoundToZeroScalarResult = Dummy_ConvertToInt64RoundToZeroScalarTest(Vector64double_0);
-apiResult = ConvertToInt64RoundToZeroScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 15. ConvertToInt64RoundToZeroScalar
-
-`Vector64<long> ConvertToInt64RoundToZeroScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<long> ConvertToInt64RoundToZeroScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToInt64RoundToZeroScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttoint64roundtozeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_s64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToInt64RoundToZeroScalar", "Performs 'ConvertToInt64RoundToZeroScalar' operation.", 0), GetValue("ConvertToInt64RoundToZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToInt64RoundToZeroScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToInt64RoundToZeroScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToSingleLowerResult = Dummy_ConvertToSingleLowerTest(Vector128double_0);
-apiResult = ConvertToSingleLowerResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 16. ConvertToSingleLower
-
-`Vector64<float> ConvertToSingleLower(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector64<float> ConvertToSingleLowerTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToSingleLower(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosinglelower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_f32_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToSingleLower", "Performs 'ConvertToSingleLower' operation.", 0), GetValue("ConvertToSingleLower", Vector128double_0.ToString(), 1), GetValue("ConvertToSingleLower", apiResult.ToString(), 2));
-
-try {
-ConvertToSingleLowerTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToSingleRoundToOddLowerResult = Dummy_ConvertToSingleRoundToOddLowerTest(Vector128double_0);
-apiResult = ConvertToSingleRoundToOddLowerResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 17. ConvertToSingleRoundToOddLower
-
-`Vector64<float> ConvertToSingleRoundToOddLower(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector64<float> ConvertToSingleRoundToOddLowerTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToSingleRoundToOddLower(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleroundtooddlower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtx_f32_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToSingleRoundToOddLower", "Performs 'ConvertToSingleRoundToOddLower' operation.", 0), GetValue("ConvertToSingleRoundToOddLower", Vector128double_0.ToString(), 1), GetValue("ConvertToSingleRoundToOddLower", apiResult.ToString(), 2));
-
-try {
-ConvertToSingleRoundToOddLowerTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToSingleRoundToOddUpperResult = Dummy_ConvertToSingleRoundToOddUpperTest(Vector64float_0, Vector128double_0);
-apiResult = ConvertToSingleRoundToOddUpperResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 18. ConvertToSingleRoundToOddUpper
-
-`Vector128<float> ConvertToSingleRoundToOddUpper(Vector64<float> lower, Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<float> ConvertToSingleRoundToOddUpperTest(Vector64<float> lower, Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToSingleRoundToOddUpper(lower, value);
-}}
-// lower = {1}
-// value = {2}
-// Result = {3}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleroundtooddupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtx_high_f32_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToSingleRoundToOddUpper", "Performs 'ConvertToSingleRoundToOddUpper' operation.", 0), GetValue("ConvertToSingleRoundToOddUpper", Vector64float_0.ToString(), 1), GetValue("ConvertToSingleRoundToOddUpper", Vector128double_0.ToString(), 2), GetValue("ConvertToSingleRoundToOddUpper", apiResult.ToString(), 3));
-
-try {
-ConvertToSingleRoundToOddUpperTest(Vector64float_0, Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToSingleUpperResult = Dummy_ConvertToSingleUpperTest(Vector64float_0, Vector128double_0);
-apiResult = ConvertToSingleUpperResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 19. ConvertToSingleUpper
-
-`Vector128<float> ConvertToSingleUpper(Vector64<float> lower, Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<float> ConvertToSingleUpperTest(Vector64<float> lower, Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToSingleUpper(lower, value);
-}}
-// lower = {1}
-// value = {2}
-// Result = {3}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttosingleupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_high_f32_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToSingleUpper", "Performs 'ConvertToSingleUpper' operation.", 0), GetValue("ConvertToSingleUpper", Vector64float_0.ToString(), 1), GetValue("ConvertToSingleUpper", Vector128double_0.ToString(), 2), GetValue("ConvertToSingleUpper", apiResult.ToString(), 3));
-
-try {
-ConvertToSingleUpperTest(Vector64float_0, Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToUInt64RoundAwayFromZeroResult = Dummy_ConvertToUInt64RoundAwayFromZeroTest(Vector128double_0);
-apiResult = ConvertToUInt64RoundAwayFromZeroResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 20. ConvertToUInt64RoundAwayFromZero
-
-`Vector128<ulong> ConvertToUInt64RoundAwayFromZero(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<ulong> ConvertToUInt64RoundAwayFromZeroTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZero(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundawayfromzero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtaq_u64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToUInt64RoundAwayFromZero", "Performs 'ConvertToUInt64RoundAwayFromZero' operation.", 0), GetValue("ConvertToUInt64RoundAwayFromZero", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundAwayFromZero", apiResult.ToString(), 2));
-
-try {
-ConvertToUInt64RoundAwayFromZeroTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToUInt64RoundAwayFromZeroScalarResult = Dummy_ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64double_0);
-apiResult = ConvertToUInt64RoundAwayFromZeroScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 21. ConvertToUInt64RoundAwayFromZeroScalar
-
-`Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToUInt64RoundAwayFromZeroScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundawayfromzeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvta_u64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToUInt64RoundAwayFromZeroScalar", "Performs 'ConvertToUInt64RoundAwayFromZeroScalar' operation.", 0), GetValue("ConvertToUInt64RoundAwayFromZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundAwayFromZeroScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToUInt64RoundAwayFromZeroScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToUInt64RoundToEvenResult = Dummy_ConvertToUInt64RoundToEvenTest(Vector128double_0);
-apiResult = ConvertToUInt64RoundToEvenResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 22. ConvertToUInt64RoundToEven
-
-`Vector128<ulong> ConvertToUInt64RoundToEven(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<ulong> ConvertToUInt64RoundToEvenTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToEven(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtoeven?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtnq_u64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToUInt64RoundToEven", "Performs 'ConvertToUInt64RoundToEven' operation.", 0), GetValue("ConvertToUInt64RoundToEven", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToEven", apiResult.ToString(), 2));
-
-try {
-ConvertToUInt64RoundToEvenTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToUInt64RoundToEvenScalarResult = Dummy_ConvertToUInt64RoundToEvenScalarTest(Vector64double_0);
-apiResult = ConvertToUInt64RoundToEvenScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 23. ConvertToUInt64RoundToEvenScalar
-
-`Vector64<ulong> ConvertToUInt64RoundToEvenScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<ulong> ConvertToUInt64RoundToEvenScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToEvenScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtoevenscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtn_u64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToUInt64RoundToEvenScalar", "Performs 'ConvertToUInt64RoundToEvenScalar' operation.", 0), GetValue("ConvertToUInt64RoundToEvenScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToEvenScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToUInt64RoundToEvenScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToUInt64RoundToNegativeInfinityResult = Dummy_ConvertToUInt64RoundToNegativeInfinityTest(Vector128double_0);
-apiResult = ConvertToUInt64RoundToNegativeInfinityResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 24. ConvertToUInt64RoundToNegativeInfinity
-
-`Vector128<ulong> ConvertToUInt64RoundToNegativeInfinity(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<ulong> ConvertToUInt64RoundToNegativeInfinityTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinity(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtonegativeinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtmq_u64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToUInt64RoundToNegativeInfinity", "Performs 'ConvertToUInt64RoundToNegativeInfinity' operation.", 0), GetValue("ConvertToUInt64RoundToNegativeInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToNegativeInfinity", apiResult.ToString(), 2));
-
-try {
-ConvertToUInt64RoundToNegativeInfinityTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToUInt64RoundToNegativeInfinityScalarResult = Dummy_ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
-apiResult = ConvertToUInt64RoundToNegativeInfinityScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 25. ConvertToUInt64RoundToNegativeInfinityScalar
-
-`Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToNegativeInfinityScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtonegativeinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtm_u64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", "Performs 'ConvertToUInt64RoundToNegativeInfinityScalar' operation.", 0), GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToNegativeInfinityScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToUInt64RoundToNegativeInfinityScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToUInt64RoundToPositiveInfinityResult = Dummy_ConvertToUInt64RoundToPositiveInfinityTest(Vector128double_0);
-apiResult = ConvertToUInt64RoundToPositiveInfinityResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 26. ConvertToUInt64RoundToPositiveInfinity
-
-`Vector128<ulong> ConvertToUInt64RoundToPositiveInfinity(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<ulong> ConvertToUInt64RoundToPositiveInfinityTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinity(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtopositiveinfinity?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtpq_u64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToUInt64RoundToPositiveInfinity", "Performs 'ConvertToUInt64RoundToPositiveInfinity' operation.", 0), GetValue("ConvertToUInt64RoundToPositiveInfinity", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToPositiveInfinity", apiResult.ToString(), 2));
-
-try {
-ConvertToUInt64RoundToPositiveInfinityTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToUInt64RoundToPositiveInfinityScalarResult = Dummy_ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
-apiResult = ConvertToUInt64RoundToPositiveInfinityScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 27. ConvertToUInt64RoundToPositiveInfinityScalar
-
-`Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToPositiveInfinityScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtopositiveinfinityscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtp_u64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", "Performs 'ConvertToUInt64RoundToPositiveInfinityScalar' operation.", 0), GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToPositiveInfinityScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToUInt64RoundToPositiveInfinityScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToUInt64RoundToZeroResult = Dummy_ConvertToUInt64RoundToZeroTest(Vector128double_0);
-apiResult = ConvertToUInt64RoundToZeroResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 28. ConvertToUInt64RoundToZero
-
-`Vector128<ulong> ConvertToUInt64RoundToZero(Vector128<double> value)`
-
-{0}
-
-```csharp
-private Vector128<ulong> ConvertToUInt64RoundToZeroTest(Vector128<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToZero(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtozero?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvtq_u64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToUInt64RoundToZero", "Performs 'ConvertToUInt64RoundToZero' operation.", 0), GetValue("ConvertToUInt64RoundToZero", Vector128double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToZero", apiResult.ToString(), 2));
-
-try {
-ConvertToUInt64RoundToZeroTest(Vector128double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ConvertToUInt64RoundToZeroScalarResult = Dummy_ConvertToUInt64RoundToZeroScalarTest(Vector64double_0);
-apiResult = ConvertToUInt64RoundToZeroScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 29. ConvertToUInt64RoundToZeroScalar
-
-`Vector64<ulong> ConvertToUInt64RoundToZeroScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<ulong> ConvertToUInt64RoundToZeroScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ConvertToUInt64RoundToZeroScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.converttouint64roundtozeroscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcvt_u64_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ConvertToUInt64RoundToZeroScalar", "Performs 'ConvertToUInt64RoundToZeroScalar' operation.", 0), GetValue("ConvertToUInt64RoundToZeroScalar", Vector64double_0.ToString(), 1), GetValue("ConvertToUInt64RoundToZeroScalar", apiResult.ToString(), 2));
-
-try {
-ConvertToUInt64RoundToZeroScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var DivideResult = Dummy_DivideTest(Vector64float_0, Vector64float_1);
-apiResult = DivideResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 30. Divide
-
-`Vector64<float> Divide(Vector64<float> left, Vector64<float> right)`
-
-{0}
-
-```csharp
-private Vector64<float> DivideTest(Vector64<float> left, Vector64<float> right)
-{{
-  return AdvSimd.Arm64.Divide(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<double> Divide(Vector128<double> left, Vector128<double> right)
-Vector128<float> Divide(Vector128<float> left, Vector128<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.divide?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vdiv_f32).
-
-Assembly generated:
-
-```armasm", GetValue("Divide", "Performs 'Divide' operation.", 0), GetValue("Divide", Vector64float_0.ToString(), 1), GetValue("Divide", Vector64float_1.ToString(), 2), GetValue("Divide", apiResult.ToString(), 3));
-
-try {
-DivideTest(Vector64float_0, Vector64float_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ExtractNarrowingSaturateScalarResult = Dummy_ExtractNarrowingSaturateScalarTest(Vector64ushort_0);
-apiResult = ExtractNarrowingSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 31. ExtractNarrowingSaturateScalar
-
-`Vector64<byte> ExtractNarrowingSaturateScalar(Vector64<ushort> value)`
-
-{0}
-
-```csharp
-private Vector64<byte> ExtractNarrowingSaturateScalarTest(Vector64<ushort> value)
-{{
-  return AdvSimd.Arm64.ExtractNarrowingSaturateScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<short> ExtractNarrowingSaturateScalar(Vector64<int> value)
-Vector64<int> ExtractNarrowingSaturateScalar(Vector64<long> value)
-Vector64<sbyte> ExtractNarrowingSaturateScalar(Vector64<short> value)
-Vector64<ushort> ExtractNarrowingSaturateScalar(Vector64<uint> value)
-Vector64<uint> ExtractNarrowingSaturateScalar(Vector64<ulong> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.extractnarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqmovnh_u16).
-
-Assembly generated:
-
-```armasm", GetValue("ExtractNarrowingSaturateScalar", "Performs 'ExtractNarrowingSaturateScalar' operation.", 0), GetValue("ExtractNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ExtractNarrowingSaturateScalar", apiResult.ToString(), 2));
-
-try {
-ExtractNarrowingSaturateScalarTest(Vector64ushort_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ExtractNarrowingSaturateUnsignedScalarResult = Dummy_ExtractNarrowingSaturateUnsignedScalarTest(Vector64short_0);
-apiResult = ExtractNarrowingSaturateUnsignedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 32. ExtractNarrowingSaturateUnsignedScalar
-
-`Vector64<byte> ExtractNarrowingSaturateUnsignedScalar(Vector64<short> value)`
-
-{0}
-
-```csharp
-private Vector64<byte> ExtractNarrowingSaturateUnsignedScalarTest(Vector64<short> value)
-{{
-  return AdvSimd.Arm64.ExtractNarrowingSaturateUnsignedScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<ushort> ExtractNarrowingSaturateUnsignedScalar(Vector64<int> value)
-Vector64<uint> ExtractNarrowingSaturateUnsignedScalar(Vector64<long> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.extractnarrowingsaturateunsignedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqmovunh_s16).
-
-Assembly generated:
-
-```armasm", GetValue("ExtractNarrowingSaturateUnsignedScalar", "Performs 'ExtractNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ExtractNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ExtractNarrowingSaturateUnsignedScalar", apiResult.ToString(), 2));
-
-try {
-ExtractNarrowingSaturateUnsignedScalarTest(Vector64short_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var FusedMultiplyAddByScalarResult = Dummy_FusedMultiplyAddByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
-apiResult = FusedMultiplyAddByScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 33. FusedMultiplyAddByScalar
-
-`Vector64<float> FusedMultiplyAddByScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right)`
-
-{0}
-
-```csharp
-private Vector64<float> FusedMultiplyAddByScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right)
-{{
-  return AdvSimd.Arm64.FusedMultiplyAddByScalar(addend, left, right);
-}}
-// addend = {1}
-// left = {2}
-// right = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<double> FusedMultiplyAddByScalar(Vector128<double> addend, Vector128<double> left, Vector64<double> right)
-Vector128<float> FusedMultiplyAddByScalar(Vector128<float> addend, Vector128<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfma_n_f32).
-
-Assembly generated:
-
-```armasm", GetValue("FusedMultiplyAddByScalar", "Performs 'FusedMultiplyAddByScalar' operation.", 0), GetValue("FusedMultiplyAddByScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplyAddByScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplyAddByScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplyAddByScalar", apiResult.ToString(), 4));
-
-try {
-FusedMultiplyAddByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var FusedMultiplyAddBySelectedScalarResult = Dummy_FusedMultiplyAddBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
-apiResult = FusedMultiplyAddBySelectedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 34. FusedMultiplyAddBySelectedScalar
-
-`Vector64<float> FusedMultiplyAddBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<float> FusedMultiplyAddBySelectedScalarTest(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.FusedMultiplyAddBySelectedScalar(addend, left, right, 0);
-}}
-// addend = {1}
-// left = {2}
-// right = {3}
-// rightIndex = {4}
-// Result = {5}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> FusedMultiplyAddBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector128<float> right, byte rightIndex)
-Vector128<double> FusedMultiplyAddBySelectedScalar(Vector128<double> addend, Vector128<double> left, Vector128<double> right, byte rightIndex)
-Vector128<float> FusedMultiplyAddBySelectedScalar(Vector128<float> addend, Vector128<float> left, Vector64<float> right, byte rightIndex)
-Vector128<float> FusedMultiplyAddBySelectedScalar(Vector128<float> addend, Vector128<float> left, Vector128<float> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfma_lane_f32).
-
-Assembly generated:
-
-```armasm", GetValue("FusedMultiplyAddBySelectedScalar", "Performs 'FusedMultiplyAddBySelectedScalar' operation.", 0), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplyAddBySelectedScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplyAddBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplyAddBySelectedScalar", apiResult.ToString(), 5));
-
-try {
-FusedMultiplyAddBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var FusedMultiplyAddScalarBySelectedScalarResult = Dummy_FusedMultiplyAddScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
-apiResult = FusedMultiplyAddScalarBySelectedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 35. FusedMultiplyAddScalarBySelectedScalar
-
-`Vector64<double> FusedMultiplyAddScalarBySelectedScalar(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<double> FusedMultiplyAddScalarBySelectedScalarTest(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.FusedMultiplyAddScalarBySelectedScalar(addend, left, right, 0);
-}}
-// addend = {1}
-// left = {2}
-// right = {3}
-// rightIndex = {4}
-// Result = {5}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> FusedMultiplyAddScalarBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)
-Vector64<float> FusedMultiplyAddScalarBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector128<float> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplyaddscalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfmad_laneq_f64).
-
-Assembly generated:
-
-```armasm", GetValue("FusedMultiplyAddScalarBySelectedScalar", "Performs 'FusedMultiplyAddScalarBySelectedScalar' operation.", 0), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplyAddScalarBySelectedScalar", Vector128double_0.ToString(), 3), GetValue("FusedMultiplyAddScalarBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplyAddScalarBySelectedScalar", apiResult.ToString(), 5));
-
-try {
-FusedMultiplyAddScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var FusedMultiplySubtractByScalarResult = Dummy_FusedMultiplySubtractByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
-apiResult = FusedMultiplySubtractByScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 36. FusedMultiplySubtractByScalar
-
-`Vector64<float> FusedMultiplySubtractByScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`
-
-{0}
-
-```csharp
-private Vector64<float> FusedMultiplySubtractByScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)
-{{
-  return AdvSimd.Arm64.FusedMultiplySubtractByScalar(minuend, left, right);
-}}
-// minuend = {1}
-// left = {2}
-// right = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<double> FusedMultiplySubtractByScalar(Vector128<double> minuend, Vector128<double> left, Vector64<double> right)
-Vector128<float> FusedMultiplySubtractByScalar(Vector128<float> minuend, Vector128<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfms_n_f32).
-
-Assembly generated:
-
-```armasm", GetValue("FusedMultiplySubtractByScalar", "Performs 'FusedMultiplySubtractByScalar' operation.", 0), GetValue("FusedMultiplySubtractByScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplySubtractByScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplySubtractByScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplySubtractByScalar", apiResult.ToString(), 4));
-
-try {
-FusedMultiplySubtractByScalarTest(Vector64float_0, Vector64float_1, Vector64float_2);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var FusedMultiplySubtractBySelectedScalarResult = Dummy_FusedMultiplySubtractBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
-apiResult = FusedMultiplySubtractBySelectedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 37. FusedMultiplySubtractBySelectedScalar
-
-`Vector64<float> FusedMultiplySubtractBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<float> FusedMultiplySubtractBySelectedScalarTest(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.FusedMultiplySubtractBySelectedScalar(minuend, left, right, 0);
-}}
-// minuend = {1}
-// left = {2}
-// right = {3}
-// rightIndex = {4}
-// Result = {5}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> FusedMultiplySubtractBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector128<float> right, byte rightIndex)
-Vector128<double> FusedMultiplySubtractBySelectedScalar(Vector128<double> minuend, Vector128<double> left, Vector128<double> right, byte rightIndex)
-Vector128<float> FusedMultiplySubtractBySelectedScalar(Vector128<float> minuend, Vector128<float> left, Vector64<float> right, byte rightIndex)
-Vector128<float> FusedMultiplySubtractBySelectedScalar(Vector128<float> minuend, Vector128<float> left, Vector128<float> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfms_lane_f32).
-
-Assembly generated:
-
-```armasm", GetValue("FusedMultiplySubtractBySelectedScalar", "Performs 'FusedMultiplySubtractBySelectedScalar' operation.", 0), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("FusedMultiplySubtractBySelectedScalar", Vector64float_2.ToString(), 3), GetValue("FusedMultiplySubtractBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplySubtractBySelectedScalar", apiResult.ToString(), 5));
-
-try {
-FusedMultiplySubtractBySelectedScalarTest(Vector64float_0, Vector64float_1, Vector64float_2, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var FusedMultiplySubtractScalarBySelectedScalarResult = Dummy_FusedMultiplySubtractScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
-apiResult = FusedMultiplySubtractScalarBySelectedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 38. FusedMultiplySubtractScalarBySelectedScalar
-
-`Vector64<double> FusedMultiplySubtractScalarBySelectedScalar(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<double> FusedMultiplySubtractScalarBySelectedScalarTest(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.FusedMultiplySubtractScalarBySelectedScalar(minuend, left, right, 0);
-}}
-// minuend = {1}
-// left = {2}
-// right = {3}
-// rightIndex = {4}
-// Result = {5}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> FusedMultiplySubtractScalarBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)
-Vector64<float> FusedMultiplySubtractScalarBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector128<float> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.fusedmultiplysubtractscalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vfmsd_laneq_f64).
-
-Assembly generated:
-
-```armasm", GetValue("FusedMultiplySubtractScalarBySelectedScalar", "Performs 'FusedMultiplySubtractScalarBySelectedScalar' operation.", 0), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector64double_1.ToString(), 2), GetValue("FusedMultiplySubtractScalarBySelectedScalar", Vector128double_0.ToString(), 3), GetValue("FusedMultiplySubtractScalarBySelectedScalar", byte_0.ToString(), 4), GetValue("FusedMultiplySubtractScalarBySelectedScalar", apiResult.ToString(), 5));
-
-try {
-FusedMultiplySubtractScalarBySelectedScalarTest(Vector64double_0, Vector64double_1, Vector128double_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var InsertSelectedScalarResult = Dummy_InsertSelectedScalarTest(Vector64byte_0, byte_0, Vector64byte_1, byte_1);
-apiResult = InsertSelectedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 39. InsertSelectedScalar
-
-`Vector64<byte> InsertSelectedScalar(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)`
-
-{0}
-
-```csharp
-private Vector64<byte> InsertSelectedScalarTest(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
-{{
-  return AdvSimd.Arm64.InsertSelectedScalar(result, 0, value, 1);
-}}
-// result = {1}
-// resultIndex = {2}
-// value = {3}
-// valueIndex = {4}
-// Result = {5}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<byte> InsertSelectedScalar(Vector64<byte> result, byte resultIndex, Vector128<byte> value, byte valueIndex)
-Vector64<short> InsertSelectedScalar(Vector64<short> result, byte resultIndex, Vector64<short> value, byte valueIndex)
-Vector64<short> InsertSelectedScalar(Vector64<short> result, byte resultIndex, Vector128<short> value, byte valueIndex)
-Vector64<int> InsertSelectedScalar(Vector64<int> result, byte resultIndex, Vector64<int> value, byte valueIndex)
-Vector64<int> InsertSelectedScalar(Vector64<int> result, byte resultIndex, Vector128<int> value, byte valueIndex)
-Vector64<sbyte> InsertSelectedScalar(Vector64<sbyte> result, byte resultIndex, Vector64<sbyte> value, byte valueIndex)
-Vector64<sbyte> InsertSelectedScalar(Vector64<sbyte> result, byte resultIndex, Vector128<sbyte> value, byte valueIndex)
-Vector64<float> InsertSelectedScalar(Vector64<float> result, byte resultIndex, Vector64<float> value, byte valueIndex)
-Vector64<float> InsertSelectedScalar(Vector64<float> result, byte resultIndex, Vector128<float> value, byte valueIndex)
-Vector64<ushort> InsertSelectedScalar(Vector64<ushort> result, byte resultIndex, Vector64<ushort> value, byte valueIndex)
-Vector64<ushort> InsertSelectedScalar(Vector64<ushort> result, byte resultIndex, Vector128<ushort> value, byte valueIndex)
-Vector64<uint> InsertSelectedScalar(Vector64<uint> result, byte resultIndex, Vector64<uint> value, byte valueIndex)
-Vector64<uint> InsertSelectedScalar(Vector64<uint> result, byte resultIndex, Vector128<uint> value, byte valueIndex)
-Vector128<byte> InsertSelectedScalar(Vector128<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)
-Vector128<byte> InsertSelectedScalar(Vector128<byte> result, byte resultIndex, Vector128<byte> value, byte valueIndex)
-Vector128<double> InsertSelectedScalar(Vector128<double> result, byte resultIndex, Vector128<double> value, byte valueIndex)
-Vector128<short> InsertSelectedScalar(Vector128<short> result, byte resultIndex, Vector64<short> value, byte valueIndex)
-Vector128<short> InsertSelectedScalar(Vector128<short> result, byte resultIndex, Vector128<short> value, byte valueIndex)
-Vector128<int> InsertSelectedScalar(Vector128<int> result, byte resultIndex, Vector64<int> value, byte valueIndex)
-Vector128<int> InsertSelectedScalar(Vector128<int> result, byte resultIndex, Vector128<int> value, byte valueIndex)
-Vector128<long> InsertSelectedScalar(Vector128<long> result, byte resultIndex, Vector128<long> value, byte valueIndex)
-Vector128<sbyte> InsertSelectedScalar(Vector128<sbyte> result, byte resultIndex, Vector64<sbyte> value, byte valueIndex)
-Vector128<sbyte> InsertSelectedScalar(Vector128<sbyte> result, byte resultIndex, Vector128<sbyte> value, byte valueIndex)
-Vector128<float> InsertSelectedScalar(Vector128<float> result, byte resultIndex, Vector64<float> value, byte valueIndex)
-Vector128<float> InsertSelectedScalar(Vector128<float> result, byte resultIndex, Vector128<float> value, byte valueIndex)
-Vector128<ushort> InsertSelectedScalar(Vector128<ushort> result, byte resultIndex, Vector64<ushort> value, byte valueIndex)
-Vector128<ushort> InsertSelectedScalar(Vector128<ushort> result, byte resultIndex, Vector128<ushort> value, byte valueIndex)
-Vector128<uint> InsertSelectedScalar(Vector128<uint> result, byte resultIndex, Vector64<uint> value, byte valueIndex)
-Vector128<uint> InsertSelectedScalar(Vector128<uint> result, byte resultIndex, Vector128<uint> value, byte valueIndex)
-Vector128<ulong> InsertSelectedScalar(Vector128<ulong> result, byte resultIndex, Vector128<ulong> value, byte valueIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.insertselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vcopy_lane_u8).
-
-Assembly generated:
-
-```armasm", GetValue("InsertSelectedScalar", "Performs 'InsertSelectedScalar' operation.", 0), GetValue("InsertSelectedScalar", Vector64byte_0.ToString(), 1), GetValue("InsertSelectedScalar", byte_0.ToString(), 2), GetValue("InsertSelectedScalar", Vector64byte_1.ToString(), 3), GetValue("InsertSelectedScalar", byte_1.ToString(), 4), GetValue("InsertSelectedScalar", apiResult.ToString(), 5));
-
-try {
-InsertSelectedScalarTest(Vector64byte_0, byte_0, Vector64byte_1, byte_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MaxAcrossResult = Dummy_MaxAcrossTest(Vector64byte_0);
-apiResult = MaxAcrossResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 40. MaxAcross
-
-`Vector64<byte> MaxAcross(Vector64<byte> value)`
-
-{0}
-
-```csharp
-private Vector64<byte> MaxAcrossTest(Vector64<byte> value)
-{{
-  return AdvSimd.Arm64.MaxAcross(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<short> MaxAcross(Vector64<short> value)
-Vector64<sbyte> MaxAcross(Vector64<sbyte> value)
-Vector64<ushort> MaxAcross(Vector64<ushort> value)
-Vector64<byte> MaxAcross(Vector128<byte> value)
-Vector64<short> MaxAcross(Vector128<short> value)
-Vector64<int> MaxAcross(Vector128<int> value)
-Vector64<sbyte> MaxAcross(Vector128<sbyte> value)
-Vector64<float> MaxAcross(Vector128<float> value)
-Vector64<ushort> MaxAcross(Vector128<ushort> value)
-Vector64<uint> MaxAcross(Vector128<uint> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmaxv_u8).
-
-Assembly generated:
-
-```armasm", GetValue("MaxAcross", "Performs 'MaxAcross' operation.", 0), GetValue("MaxAcross", Vector64byte_0.ToString(), 1), GetValue("MaxAcross", apiResult.ToString(), 2));
-
-try {
-MaxAcrossTest(Vector64byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MaxNumberAcrossResult = Dummy_MaxNumberAcrossTest(Vector128float_0);
-apiResult = MaxNumberAcrossResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 41. MaxNumberAcross
-
-`Vector64<float> MaxNumberAcross(Vector128<float> value)`
-
-{0}
-
-```csharp
-private Vector64<float> MaxNumberAcrossTest(Vector128<float> value)
-{{
-  return AdvSimd.Arm64.MaxNumberAcross(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmaxnmvq_f32).
-
-Assembly generated:
-
-```armasm", GetValue("MaxNumberAcross", "Performs 'MaxNumberAcross' operation.", 0), GetValue("MaxNumberAcross", Vector128float_0.ToString(), 1), GetValue("MaxNumberAcross", apiResult.ToString(), 2));
-
-try {
-MaxNumberAcrossTest(Vector128float_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MaxNumberPairwiseResult = Dummy_MaxNumberPairwiseTest(Vector64float_0, Vector64float_1);
-apiResult = MaxNumberPairwiseResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 42. MaxNumberPairwise
-
-`Vector64<float> MaxNumberPairwise(Vector64<float> left, Vector64<float> right)`
-
-{0}
-
-```csharp
-private Vector64<float> MaxNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
-{{
-  return AdvSimd.Arm64.MaxNumberPairwise(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<double> MaxNumberPairwise(Vector128<double> left, Vector128<double> right)
-Vector128<float> MaxNumberPairwise(Vector128<float> left, Vector128<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberpairwise?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmaxnm_f32).
-
-Assembly generated:
-
-```armasm", GetValue("MaxNumberPairwise", "Performs 'MaxNumberPairwise' operation.", 0), GetValue("MaxNumberPairwise", Vector64float_0.ToString(), 1), GetValue("MaxNumberPairwise", Vector64float_1.ToString(), 2), GetValue("MaxNumberPairwise", apiResult.ToString(), 3));
-
-try {
-MaxNumberPairwiseTest(Vector64float_0, Vector64float_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MaxNumberPairwiseScalarResult = Dummy_MaxNumberPairwiseScalarTest(Vector64float_0);
-apiResult = MaxNumberPairwiseScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 43. MaxNumberPairwiseScalar
-
-`Vector64<float> MaxNumberPairwiseScalar(Vector64<float> value)`
-
-{0}
-
-```csharp
-private Vector64<float> MaxNumberPairwiseScalarTest(Vector64<float> value)
-{{
-  return AdvSimd.Arm64.MaxNumberPairwiseScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<double> MaxNumberPairwiseScalar(Vector128<double> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxnumberpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmaxnms_f32).
-
-Assembly generated:
-
-```armasm", GetValue("MaxNumberPairwiseScalar", "Performs 'MaxNumberPairwiseScalar' operation.", 0), GetValue("MaxNumberPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MaxNumberPairwiseScalar", apiResult.ToString(), 2));
-
-try {
-MaxNumberPairwiseScalarTest(Vector64float_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MaxPairwiseScalarResult = Dummy_MaxPairwiseScalarTest(Vector64float_0);
-apiResult = MaxPairwiseScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 44. MaxPairwiseScalar
-
-`Vector64<float> MaxPairwiseScalar(Vector64<float> value)`
-
-{0}
-
-```csharp
-private Vector64<float> MaxPairwiseScalarTest(Vector64<float> value)
-{{
-  return AdvSimd.Arm64.MaxPairwiseScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<double> MaxPairwiseScalar(Vector128<double> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmaxs_f32).
-
-Assembly generated:
-
-```armasm", GetValue("MaxPairwiseScalar", "Performs 'MaxPairwiseScalar' operation.", 0), GetValue("MaxPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MaxPairwiseScalar", apiResult.ToString(), 2));
-
-try {
-MaxPairwiseScalarTest(Vector64float_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MaxScalarResult = Dummy_MaxScalarTest(Vector64double_0, Vector64double_1);
-apiResult = MaxScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 45. MaxScalar
-
-`Vector64<double> MaxScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> MaxScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.MaxScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> MaxScalar(Vector64<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.maxscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmax_f64).
-
-Assembly generated:
-
-```armasm", GetValue("MaxScalar", "Performs 'MaxScalar' operation.", 0), GetValue("MaxScalar", Vector64double_0.ToString(), 1), GetValue("MaxScalar", Vector64double_1.ToString(), 2), GetValue("MaxScalar", apiResult.ToString(), 3));
-
-try {
-MaxScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-Console.WriteLine(
-@"```
-
-START---END
-layout: post
-title: Hardware Intrinsics APIs for ARM64 - Part 8
-subtitle: With examples
-tags: [work, arm64, intrinsics]
----
-
-### Introduction
-
-In my [last post](../2019-01-01-Vectorization-APIs), I describe SIMD datatypes `Vector64<T>` and `Vector128<T>` that operates on 'hardware intrisic' APIs. In this post I will describe the intrinsic APIs for ARM64 and how you can use them to optimize your code if you are writing a .NET API targetting ARM64. This is 3 post series TODO.
-
-
-### API list
-
-[MinAcross](#1-minacross), [MinNumberAcross](#2-minnumberacross), [MinNumberPairwise](#3-minnumberpairwise), [MinNumberPairwiseScalar](#4-minnumberpairwisescalar), [MinPairwiseScalar](#5-minpairwisescalar), [MinScalar](#6-minscalar), [MultiplyDoublingSaturateHighScalar](#7-multiplydoublingsaturatehighscalar), [MultiplyDoublingScalarBySelectedScalarSaturateHigh](#8-multiplydoublingscalarbyselectedscalarsaturatehigh), [MultiplyDoublingWideningAndAddSaturateScalar](#9-multiplydoublingwideningandaddsaturatescalar), [MultiplyDoublingWideningAndSubtractSaturateScalar](#10-multiplydoublingwideningandsubtractsaturatescalar), [MultiplyDoublingWideningSaturateScalar](#11-multiplydoublingwideningsaturatescalar), [MultiplyDoublingWideningSaturateScalarBySelectedScalar](#12-multiplydoublingwideningsaturatescalarbyselectedscalar), [MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate](#13-multiplydoublingwideningscalarbyselectedscalarandaddsaturate), [MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate](#14-multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate), [MultiplyExtended](#15-multiplyextended), [MultiplyExtendedByScalar](#16-multiplyextendedbyscalar), [MultiplyExtendedBySelectedScalar](#17-multiplyextendedbyselectedscalar), [MultiplyExtendedScalar](#18-multiplyextendedscalar), [MultiplyExtendedScalarBySelectedScalar](#19-multiplyextendedscalarbyselectedscalar), [MultiplyRoundedDoublingSaturateHighScalar](#20-multiplyroundeddoublingsaturatehighscalar), [MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh](#21-multiplyroundeddoublingscalarbyselectedscalarsaturatehigh), [NegateSaturateScalar](#22-negatesaturatescalar), [ReciprocalEstimateScalar](#23-reciprocalestimatescalar), [ReciprocalExponentScalar](#24-reciprocalexponentscalar), [ReciprocalSquareRootEstimateScalar](#25-reciprocalsquarerootestimatescalar), [ReciprocalSquareRootStepScalar](#26-reciprocalsquarerootstepscalar), [ReciprocalStepScalar](#27-reciprocalstepscalar), [ShiftRightArithmeticNarrowingSaturateScalar](#28-shiftrightarithmeticnarrowingsaturatescalar), [ShiftRightArithmeticNarrowingSaturateUnsignedScalar](#29-shiftrightarithmeticnarrowingsaturateunsignedscalar), [ShiftRightArithmeticRoundedNarrowingSaturateScalar](#30-shiftrightarithmeticroundednarrowingsaturatescalar), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar](#31-shiftrightarithmeticroundednarrowingsaturateunsignedscalar), [ShiftRightLogicalNarrowingSaturateScalar](#32-shiftrightlogicalnarrowingsaturatescalar), [ShiftRightLogicalRoundedNarrowingSaturateScalar](#33-shiftrightlogicalroundednarrowingsaturatescalar), [Sqrt](#34-sqrt), [StorePair](#35-storepair), [StorePairNonTemporal](#36-storepairnontemporal), [StorePairScalar](#37-storepairscalar), [StorePairScalarNonTemporal](#38-storepairscalarnontemporal), [ReverseElementBits](#39-reverseelementbits), [TransposeEven](#40-transposeeven), [TransposeOdd](#41-transposeodd), [UnzipEven](#42-unzipeven), [UnzipOdd](#43-unzipodd), [ZipHigh](#44-ziphigh), [ZipLow](#45-ziplow),[...](Part8.md)
-
-
-");
-
-try {
-var MinAcrossResult = Dummy_MinAcrossTest(Vector64byte_0);
-apiResult = MinAcrossResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"
-
-### 1. MinAcross
-
-`Vector64<byte> MinAcross(Vector64<byte> value)`
-
-{0}
-
-```csharp
-private Vector64<byte> MinAcrossTest(Vector64<byte> value)
-{{
-  return AdvSimd.Arm64.MinAcross(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<short> MinAcross(Vector64<short> value)
-Vector64<sbyte> MinAcross(Vector64<sbyte> value)
-Vector64<ushort> MinAcross(Vector64<ushort> value)
-Vector64<byte> MinAcross(Vector128<byte> value)
-Vector64<short> MinAcross(Vector128<short> value)
-Vector64<int> MinAcross(Vector128<int> value)
-Vector64<sbyte> MinAcross(Vector128<sbyte> value)
-Vector64<float> MinAcross(Vector128<float> value)
-Vector64<ushort> MinAcross(Vector128<ushort> value)
-Vector64<uint> MinAcross(Vector128<uint> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vminv_u8).
-
-Assembly generated:
-
-```armasm", GetValue("MinAcross", "Performs 'MinAcross' operation.", 0), GetValue("MinAcross", Vector64byte_0.ToString(), 1), GetValue("MinAcross", apiResult.ToString(), 2));
-
-try {
-MinAcrossTest(Vector64byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MinNumberAcrossResult = Dummy_MinNumberAcrossTest(Vector128float_0);
-apiResult = MinNumberAcrossResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 2. MinNumberAcross
-
-`Vector64<float> MinNumberAcross(Vector128<float> value)`
-
-{0}
-
-```csharp
-private Vector64<float> MinNumberAcrossTest(Vector128<float> value)
-{{
-  return AdvSimd.Arm64.MinNumberAcross(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberacross?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vminnmvq_f32).
-
-Assembly generated:
-
-```armasm", GetValue("MinNumberAcross", "Performs 'MinNumberAcross' operation.", 0), GetValue("MinNumberAcross", Vector128float_0.ToString(), 1), GetValue("MinNumberAcross", apiResult.ToString(), 2));
-
-try {
-MinNumberAcrossTest(Vector128float_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MinNumberPairwiseResult = Dummy_MinNumberPairwiseTest(Vector64float_0, Vector64float_1);
-apiResult = MinNumberPairwiseResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 3. MinNumberPairwise
-
-`Vector64<float> MinNumberPairwise(Vector64<float> left, Vector64<float> right)`
-
-{0}
-
-```csharp
-private Vector64<float> MinNumberPairwiseTest(Vector64<float> left, Vector64<float> right)
-{{
-  return AdvSimd.Arm64.MinNumberPairwise(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<double> MinNumberPairwise(Vector128<double> left, Vector128<double> right)
-Vector128<float> MinNumberPairwise(Vector128<float> left, Vector128<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberpairwise?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpminnm_f32).
-
-Assembly generated:
-
-```armasm", GetValue("MinNumberPairwise", "Performs 'MinNumberPairwise' operation.", 0), GetValue("MinNumberPairwise", Vector64float_0.ToString(), 1), GetValue("MinNumberPairwise", Vector64float_1.ToString(), 2), GetValue("MinNumberPairwise", apiResult.ToString(), 3));
-
-try {
-MinNumberPairwiseTest(Vector64float_0, Vector64float_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MinNumberPairwiseScalarResult = Dummy_MinNumberPairwiseScalarTest(Vector64float_0);
-apiResult = MinNumberPairwiseScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 4. MinNumberPairwiseScalar
-
-`Vector64<float> MinNumberPairwiseScalar(Vector64<float> value)`
-
-{0}
-
-```csharp
-private Vector64<float> MinNumberPairwiseScalarTest(Vector64<float> value)
-{{
-  return AdvSimd.Arm64.MinNumberPairwiseScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<double> MinNumberPairwiseScalar(Vector128<double> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minnumberpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpminnms_f32).
-
-Assembly generated:
-
-```armasm", GetValue("MinNumberPairwiseScalar", "Performs 'MinNumberPairwiseScalar' operation.", 0), GetValue("MinNumberPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MinNumberPairwiseScalar", apiResult.ToString(), 2));
-
-try {
-MinNumberPairwiseScalarTest(Vector64float_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MinPairwiseScalarResult = Dummy_MinPairwiseScalarTest(Vector64float_0);
-apiResult = MinPairwiseScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 5. MinPairwiseScalar
-
-`Vector64<float> MinPairwiseScalar(Vector64<float> value)`
-
-{0}
-
-```csharp
-private Vector64<float> MinPairwiseScalarTest(Vector64<float> value)
-{{
-  return AdvSimd.Arm64.MinPairwiseScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<double> MinPairwiseScalar(Vector128<double> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minpairwisescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vpmins_f32).
-
-Assembly generated:
-
-```armasm", GetValue("MinPairwiseScalar", "Performs 'MinPairwiseScalar' operation.", 0), GetValue("MinPairwiseScalar", Vector64float_0.ToString(), 1), GetValue("MinPairwiseScalar", apiResult.ToString(), 2));
-
-try {
-MinPairwiseScalarTest(Vector64float_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MinScalarResult = Dummy_MinScalarTest(Vector64double_0, Vector64double_1);
-apiResult = MinScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 6. MinScalar
-
-`Vector64<double> MinScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> MinScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.MinScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> MinScalar(Vector64<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.minscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmin_f64).
-
-Assembly generated:
-
-```armasm", GetValue("MinScalar", "Performs 'MinScalar' operation.", 0), GetValue("MinScalar", Vector64double_0.ToString(), 1), GetValue("MinScalar", Vector64double_1.ToString(), 2), GetValue("MinScalar", apiResult.ToString(), 3));
-
-try {
-MinScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyDoublingSaturateHighScalarResult = Dummy_MultiplyDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
-apiResult = MultiplyDoublingSaturateHighScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 7. MultiplyDoublingSaturateHighScalar
-
-`Vector64<short> MultiplyDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
-
-{0}
-
-```csharp
-private Vector64<short> MultiplyDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
-{{
-  return AdvSimd.Arm64.MultiplyDoublingSaturateHighScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<int> MultiplyDoublingSaturateHighScalar(Vector64<int> left, Vector64<int> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingsaturatehighscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmulhh_s16).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyDoublingSaturateHighScalar", "Performs 'MultiplyDoublingSaturateHighScalar' operation.", 0), GetValue("MultiplyDoublingSaturateHighScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingSaturateHighScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingSaturateHighScalar", apiResult.ToString(), 3));
-
-try {
-MultiplyDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyDoublingScalarBySelectedScalarSaturateHighResult = Dummy_MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
-apiResult = MultiplyDoublingScalarBySelectedScalarSaturateHighResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 8. MultiplyDoublingScalarBySelectedScalarSaturateHigh
-
-`Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.MultiplyDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
-}}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector128<short> right, byte rightIndex)
-Vector64<int> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<int> left, Vector64<int> right, byte rightIndex)
-Vector64<int> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<int> left, Vector128<int> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingscalarbyselectedscalarsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmulhh_lane_s16).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyDoublingScalarBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyDoublingScalarBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
-
-try {
-MultiplyDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyDoublingWideningAndAddSaturateScalarResult = Dummy_MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
-apiResult = MultiplyDoublingWideningAndAddSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 9. MultiplyDoublingWideningAndAddSaturateScalar
-
-`Vector64<int> MultiplyDoublingWideningAndAddSaturateScalar(Vector64<int> addend, Vector64<short> left, Vector64<short> right)`
-
-{0}
-
-```csharp
-private Vector64<int> MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right)
-{{
-  return AdvSimd.Arm64.MultiplyDoublingWideningAndAddSaturateScalar(addend, left, right);
-}}
-// addend = {1}
-// left = {2}
-// right = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<long> MultiplyDoublingWideningAndAddSaturateScalar(Vector64<long> addend, Vector64<int> left, Vector64<int> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningandaddsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlalh_s16).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyDoublingWideningAndAddSaturateScalar", "Performs 'MultiplyDoublingWideningAndAddSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningAndAddSaturateScalar", apiResult.ToString(), 4));
-
-try {
-MultiplyDoublingWideningAndAddSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyDoublingWideningAndSubtractSaturateScalarResult = Dummy_MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
-apiResult = MultiplyDoublingWideningAndSubtractSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 10. MultiplyDoublingWideningAndSubtractSaturateScalar
-
-`Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalar(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)`
-
-{0}
-
-```csharp
-private Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)
-{{
-  return AdvSimd.Arm64.MultiplyDoublingWideningAndSubtractSaturateScalar(minuend, left, right);
-}}
-// minuend = {1}
-// left = {2}
-// right = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<long> MultiplyDoublingWideningAndSubtractSaturateScalar(Vector64<long> minuend, Vector64<int> left, Vector64<int> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningandsubtractsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlslh_s16).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", "Performs 'MultiplyDoublingWideningAndSubtractSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningAndSubtractSaturateScalar", apiResult.ToString(), 4));
-
-try {
-MultiplyDoublingWideningAndSubtractSaturateScalarTest(Vector64int_0, Vector64short_0, Vector64short_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyDoublingWideningSaturateScalarResult = Dummy_MultiplyDoublingWideningSaturateScalarTest(Vector64short_0, Vector64short_1);
-apiResult = MultiplyDoublingWideningSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 11. MultiplyDoublingWideningSaturateScalar
-
-`Vector64<int> MultiplyDoublingWideningSaturateScalar(Vector64<short> left, Vector64<short> right)`
-
-{0}
-
-```csharp
-private Vector64<int> MultiplyDoublingWideningSaturateScalarTest(Vector64<short> left, Vector64<short> right)
-{{
-  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<long> MultiplyDoublingWideningSaturateScalar(Vector64<int> left, Vector64<int> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmullh_s16).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyDoublingWideningSaturateScalar", "Performs 'MultiplyDoublingWideningSaturateScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateScalar", apiResult.ToString(), 3));
-
-try {
-MultiplyDoublingWideningSaturateScalarTest(Vector64short_0, Vector64short_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyDoublingWideningSaturateScalarBySelectedScalarResult = Dummy_MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
-apiResult = MultiplyDoublingWideningSaturateScalarBySelectedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 12. MultiplyDoublingWideningSaturateScalarBySelectedScalar
-
-`Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.MultiplyDoublingWideningSaturateScalarBySelectedScalar(left, right, 0);
-}}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<short> left, Vector128<short> right, byte rightIndex)
-Vector64<long> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<int> left, Vector64<int> right, byte rightIndex)
-Vector64<long> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<int> left, Vector128<int> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningsaturatescalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmullh_lane_s16).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", "Performs 'MultiplyDoublingWideningSaturateScalarBySelectedScalar' operation.", 0), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyDoublingWideningSaturateScalarBySelectedScalar", apiResult.ToString(), 4));
-
-try {
-MultiplyDoublingWideningSaturateScalarBySelectedScalarTest(Vector64short_0, Vector64short_1, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateResult = Dummy_MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
-apiResult = MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 13. MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate
-
-`Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(addend, left, right, 0);
-}}
-// addend = {1}
-// left = {2}
-// right = {3}
-// rightIndex = {4}
-// Result = {5}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<int> addend, Vector64<short> left, Vector128<short> right, byte rightIndex)
-Vector64<long> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<long> addend, Vector64<int> left, Vector64<int> right, byte rightIndex)
-Vector64<long> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<long> addend, Vector64<int> left, Vector128<int> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningscalarbyselectedscalarandaddsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlalh_lane_s16).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate' operation.", 0), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate", apiResult.ToString(), 5));
-
-try {
-MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateResult = Dummy_MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
-apiResult = MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 14. MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate
-
-`Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(minuend, left, right, 0);
-}}
-// minuend = {1}
-// left = {2}
-// right = {3}
-// rightIndex = {4}
-// Result = {5}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<int> minuend, Vector64<short> left, Vector128<short> right, byte rightIndex)
-Vector64<long> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<long> minuend, Vector64<int> left, Vector64<int> right, byte rightIndex)
-Vector64<long> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<long> minuend, Vector64<int> left, Vector128<int> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqdmlslh_lane_s16).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", "Performs 'MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate' operation.", 0), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64int_0.ToString(), 1), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64short_0.ToString(), 2), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", Vector64short_1.ToString(), 3), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", byte_0.ToString(), 4), GetValue("MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate", apiResult.ToString(), 5));
-
-try {
-MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturateTest(Vector64int_0, Vector64short_0, Vector64short_1, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyExtendedResult = Dummy_MultiplyExtendedTest(Vector64float_0, Vector64float_1);
-apiResult = MultiplyExtendedResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 15. MultiplyExtended
-
-`Vector64<float> MultiplyExtended(Vector64<float> left, Vector64<float> right)`
-
-{0}
-
-```csharp
-private Vector64<float> MultiplyExtendedTest(Vector64<float> left, Vector64<float> right)
-{{
-  return AdvSimd.Arm64.MultiplyExtended(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<double> MultiplyExtended(Vector128<double> left, Vector128<double> right)
-Vector128<float> MultiplyExtended(Vector128<float> left, Vector128<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextended?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulx_f32).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyExtended", "Performs 'MultiplyExtended' operation.", 0), GetValue("MultiplyExtended", Vector64float_0.ToString(), 1), GetValue("MultiplyExtended", Vector64float_1.ToString(), 2), GetValue("MultiplyExtended", apiResult.ToString(), 3));
-
-try {
-MultiplyExtendedTest(Vector64float_0, Vector64float_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyExtendedByScalarResult = Dummy_MultiplyExtendedByScalarTest(Vector128double_0, Vector64double_0);
-apiResult = MultiplyExtendedByScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 16. MultiplyExtendedByScalar
-
-`Vector128<double> MultiplyExtendedByScalar(Vector128<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector128<double> MultiplyExtendedByScalarTest(Vector128<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.MultiplyExtendedByScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedbyscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulxq_lane_f64).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyExtendedByScalar", "Performs 'MultiplyExtendedByScalar' operation.", 0), GetValue("MultiplyExtendedByScalar", Vector128double_0.ToString(), 1), GetValue("MultiplyExtendedByScalar", Vector64double_0.ToString(), 2), GetValue("MultiplyExtendedByScalar", apiResult.ToString(), 3));
-
-try {
-MultiplyExtendedByScalarTest(Vector128double_0, Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyExtendedBySelectedScalarResult = Dummy_MultiplyExtendedBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
-apiResult = MultiplyExtendedBySelectedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 17. MultiplyExtendedBySelectedScalar
-
-`Vector64<float> MultiplyExtendedBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<float> MultiplyExtendedBySelectedScalarTest(Vector64<float> left, Vector64<float> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.MultiplyExtendedBySelectedScalar(left, right, 0);
-}}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> MultiplyExtendedBySelectedScalar(Vector64<float> left, Vector128<float> right, byte rightIndex)
-Vector128<double> MultiplyExtendedBySelectedScalar(Vector128<double> left, Vector128<double> right, byte rightIndex)
-Vector128<float> MultiplyExtendedBySelectedScalar(Vector128<float> left, Vector64<float> right, byte rightIndex)
-Vector128<float> MultiplyExtendedBySelectedScalar(Vector128<float> left, Vector128<float> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulx_lane_f32).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyExtendedBySelectedScalar", "Performs 'MultiplyExtendedBySelectedScalar' operation.", 0), GetValue("MultiplyExtendedBySelectedScalar", Vector64float_0.ToString(), 1), GetValue("MultiplyExtendedBySelectedScalar", Vector64float_1.ToString(), 2), GetValue("MultiplyExtendedBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyExtendedBySelectedScalar", apiResult.ToString(), 4));
-
-try {
-MultiplyExtendedBySelectedScalarTest(Vector64float_0, Vector64float_1, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyExtendedScalarResult = Dummy_MultiplyExtendedScalarTest(Vector64double_0, Vector64double_1);
-apiResult = MultiplyExtendedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 18. MultiplyExtendedScalar
-
-`Vector64<double> MultiplyExtendedScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> MultiplyExtendedScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.MultiplyExtendedScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> MultiplyExtendedScalar(Vector64<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulx_f64).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyExtendedScalar", "Performs 'MultiplyExtendedScalar' operation.", 0), GetValue("MultiplyExtendedScalar", Vector64double_0.ToString(), 1), GetValue("MultiplyExtendedScalar", Vector64double_1.ToString(), 2), GetValue("MultiplyExtendedScalar", apiResult.ToString(), 3));
-
-try {
-MultiplyExtendedScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyExtendedScalarBySelectedScalarResult = Dummy_MultiplyExtendedScalarBySelectedScalarTest(Vector64double_0, Vector128double_0, byte_0);
-apiResult = MultiplyExtendedScalarBySelectedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 19. MultiplyExtendedScalarBySelectedScalar
-
-`Vector64<double> MultiplyExtendedScalarBySelectedScalar(Vector64<double> left, Vector128<double> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<double> MultiplyExtendedScalarBySelectedScalarTest(Vector64<double> left, Vector128<double> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.MultiplyExtendedScalarBySelectedScalar(left, right, 0);
-}}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> MultiplyExtendedScalarBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)
-Vector64<float> MultiplyExtendedScalarBySelectedScalar(Vector64<float> left, Vector128<float> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyextendedscalarbyselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmulxd_laneq_f64).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyExtendedScalarBySelectedScalar", "Performs 'MultiplyExtendedScalarBySelectedScalar' operation.", 0), GetValue("MultiplyExtendedScalarBySelectedScalar", Vector64double_0.ToString(), 1), GetValue("MultiplyExtendedScalarBySelectedScalar", Vector128double_0.ToString(), 2), GetValue("MultiplyExtendedScalarBySelectedScalar", byte_0.ToString(), 3), GetValue("MultiplyExtendedScalarBySelectedScalar", apiResult.ToString(), 4));
-
-try {
-MultiplyExtendedScalarBySelectedScalarTest(Vector64double_0, Vector128double_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyRoundedDoublingSaturateHighScalarResult = Dummy_MultiplyRoundedDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
-apiResult = MultiplyRoundedDoublingSaturateHighScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 20. MultiplyRoundedDoublingSaturateHighScalar
-
-`Vector64<short> MultiplyRoundedDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
-
-{0}
-
-```csharp
-private Vector64<short> MultiplyRoundedDoublingSaturateHighScalarTest(Vector64<short> left, Vector64<short> right)
-{{
-  return AdvSimd.Arm64.MultiplyRoundedDoublingSaturateHighScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<int> MultiplyRoundedDoublingSaturateHighScalar(Vector64<int> left, Vector64<int> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyroundeddoublingsaturatehighscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrdmulhh_s16).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyRoundedDoublingSaturateHighScalar", "Performs 'MultiplyRoundedDoublingSaturateHighScalar' operation.", 0), GetValue("MultiplyRoundedDoublingSaturateHighScalar", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingSaturateHighScalar", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingSaturateHighScalar", apiResult.ToString(), 3));
-
-try {
-MultiplyRoundedDoublingSaturateHighScalarTest(Vector64short_0, Vector64short_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighResult = Dummy_MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
-apiResult = MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 21. MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh
-
-`Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
-
-{0}
-
-```csharp
-private Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64<short> left, Vector64<short> right, byte rightIndex)
-{{
-  return AdvSimd.Arm64.MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(left, right, 0);
-}}
-// left = {1}
-// right = {2}
-// rightIndex = {3}
-// Result = {4}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector128<short> right, byte rightIndex)
-Vector64<int> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<int> left, Vector64<int> right, byte rightIndex)
-Vector64<int> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<int> left, Vector128<int> right, byte rightIndex)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.multiplyroundeddoublingscalarbyselectedscalarsaturatehigh?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrdmulhh_lane_s16).
-
-Assembly generated:
-
-```armasm", GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", "Performs 'MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh' operation.", 0), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", Vector64short_0.ToString(), 1), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", Vector64short_1.ToString(), 2), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", byte_0.ToString(), 3), GetValue("MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh", apiResult.ToString(), 4));
-
-try {
-MultiplyRoundedDoublingScalarBySelectedScalarSaturateHighTest(Vector64short_0, Vector64short_1, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var NegateSaturateScalarResult = Dummy_NegateSaturateScalarTest(Vector64short_0);
-apiResult = NegateSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 22. NegateSaturateScalar
-
-`Vector64<short> NegateSaturateScalar(Vector64<short> value)`
-
-{0}
-
-```csharp
-private Vector64<short> NegateSaturateScalarTest(Vector64<short> value)
-{{
-  return AdvSimd.Arm64.NegateSaturateScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<int> NegateSaturateScalar(Vector64<int> value)
-Vector64<long> NegateSaturateScalar(Vector64<long> value)
-Vector64<sbyte> NegateSaturateScalar(Vector64<sbyte> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.negatesaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqnegh_s16).
-
-Assembly generated:
-
-```armasm", GetValue("NegateSaturateScalar", "Performs 'NegateSaturateScalar' operation.", 0), GetValue("NegateSaturateScalar", Vector64short_0.ToString(), 1), GetValue("NegateSaturateScalar", apiResult.ToString(), 2));
-
-try {
-NegateSaturateScalarTest(Vector64short_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ReciprocalEstimateScalarResult = Dummy_ReciprocalEstimateScalarTest(Vector64double_0);
-apiResult = ReciprocalEstimateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 23. ReciprocalEstimateScalar
-
-`Vector64<double> ReciprocalEstimateScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<double> ReciprocalEstimateScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ReciprocalEstimateScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> ReciprocalEstimateScalar(Vector64<float> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalestimatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecpe_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ReciprocalEstimateScalar", "Performs 'ReciprocalEstimateScalar' operation.", 0), GetValue("ReciprocalEstimateScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalEstimateScalar", apiResult.ToString(), 2));
-
-try {
-ReciprocalEstimateScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ReciprocalExponentScalarResult = Dummy_ReciprocalExponentScalarTest(Vector64double_0);
-apiResult = ReciprocalExponentScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 24. ReciprocalExponentScalar
-
-`Vector64<double> ReciprocalExponentScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<double> ReciprocalExponentScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ReciprocalExponentScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> ReciprocalExponentScalar(Vector64<float> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalexponentscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecpxd_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ReciprocalExponentScalar", "Performs 'ReciprocalExponentScalar' operation.", 0), GetValue("ReciprocalExponentScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalExponentScalar", apiResult.ToString(), 2));
-
-try {
-ReciprocalExponentScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ReciprocalSquareRootEstimateScalarResult = Dummy_ReciprocalSquareRootEstimateScalarTest(Vector64double_0);
-apiResult = ReciprocalSquareRootEstimateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 25. ReciprocalSquareRootEstimateScalar
-
-`Vector64<double> ReciprocalSquareRootEstimateScalar(Vector64<double> value)`
-
-{0}
-
-```csharp
-private Vector64<double> ReciprocalSquareRootEstimateScalarTest(Vector64<double> value)
-{{
-  return AdvSimd.Arm64.ReciprocalSquareRootEstimateScalar(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> ReciprocalSquareRootEstimateScalar(Vector64<float> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootestimatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsqrte_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ReciprocalSquareRootEstimateScalar", "Performs 'ReciprocalSquareRootEstimateScalar' operation.", 0), GetValue("ReciprocalSquareRootEstimateScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalSquareRootEstimateScalar", apiResult.ToString(), 2));
-
-try {
-ReciprocalSquareRootEstimateScalarTest(Vector64double_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ReciprocalSquareRootStepScalarResult = Dummy_ReciprocalSquareRootStepScalarTest(Vector64double_0, Vector64double_1);
-apiResult = ReciprocalSquareRootStepScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 26. ReciprocalSquareRootStepScalar
-
-`Vector64<double> ReciprocalSquareRootStepScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> ReciprocalSquareRootStepScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.ReciprocalSquareRootStepScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> ReciprocalSquareRootStepScalar(Vector64<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalsquarerootstepscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsqrts_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ReciprocalSquareRootStepScalar", "Performs 'ReciprocalSquareRootStepScalar' operation.", 0), GetValue("ReciprocalSquareRootStepScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalSquareRootStepScalar", Vector64double_1.ToString(), 2), GetValue("ReciprocalSquareRootStepScalar", apiResult.ToString(), 3));
-
-try {
-ReciprocalSquareRootStepScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ReciprocalStepScalarResult = Dummy_ReciprocalStepScalarTest(Vector64double_0, Vector64double_1);
-apiResult = ReciprocalStepScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 27. ReciprocalStepScalar
-
-`Vector64<double> ReciprocalStepScalar(Vector64<double> left, Vector64<double> right)`
-
-{0}
-
-```csharp
-private Vector64<double> ReciprocalStepScalarTest(Vector64<double> left, Vector64<double> right)
-{{
-  return AdvSimd.Arm64.ReciprocalStepScalar(left, right);
-}}
-// left = {1}
-// right = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<float> ReciprocalStepScalar(Vector64<float> left, Vector64<float> right)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reciprocalstepscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrecps_f64).
-
-Assembly generated:
-
-```armasm", GetValue("ReciprocalStepScalar", "Performs 'ReciprocalStepScalar' operation.", 0), GetValue("ReciprocalStepScalar", Vector64double_0.ToString(), 1), GetValue("ReciprocalStepScalar", Vector64double_1.ToString(), 2), GetValue("ReciprocalStepScalar", apiResult.ToString(), 3));
-
-try {
-ReciprocalStepScalarTest(Vector64double_0, Vector64double_1);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ShiftRightArithmeticNarrowingSaturateScalarResult = Dummy_ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64int_0, byte_0);
-apiResult = ShiftRightArithmeticNarrowingSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 28. ShiftRightArithmeticNarrowingSaturateScalar
-
-`Vector64<short> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<int> value, byte count)`
-
-{0}
-
-```csharp
-private Vector64<short> ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64<int> value, byte count)
-{{
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateScalar(value, 1);
-}}
-// value = {1}
-// count = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<int> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<long> value, byte count)
-Vector64<sbyte> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<short> value, byte count)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticnarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrns_n_s32).
-
-Assembly generated:
-
-```armasm", GetValue("ShiftRightArithmeticNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", Vector64int_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateScalar", apiResult.ToString(), 3));
-
-try {
-ShiftRightArithmeticNarrowingSaturateScalarTest(Vector64int_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ShiftRightArithmeticNarrowingSaturateUnsignedScalarResult = Dummy_ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
-apiResult = ShiftRightArithmeticNarrowingSaturateUnsignedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 29. ShiftRightArithmeticNarrowingSaturateUnsignedScalar
-
-`Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
-
-{0}
-
-```csharp
-private Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
-{{
-  return AdvSimd.Arm64.ShiftRightArithmeticNarrowingSaturateUnsignedScalar(value, 1);
-}}
-// value = {1}
-// count = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<ushort> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<int> value, byte count)
-Vector64<uint> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<long> value, byte count)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticnarrowingsaturateunsignedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrunh_n_s16).
-
-Assembly generated:
-
-```armasm", GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticNarrowingSaturateUnsignedScalar", apiResult.ToString(), 3));
-
-try {
-ShiftRightArithmeticNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ShiftRightArithmeticRoundedNarrowingSaturateScalarResult = Dummy_ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64int_0, byte_0);
-apiResult = ShiftRightArithmeticRoundedNarrowingSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 30. ShiftRightArithmeticRoundedNarrowingSaturateScalar
-
-`Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<int> value, byte count)`
-
-{0}
-
-```csharp
-private Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64<int> value, byte count)
-{{
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateScalar(value, 1);
-}}
-// value = {1}
-// count = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<int> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<long> value, byte count)
-Vector64<sbyte> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<short> value, byte count)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticroundednarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrns_n_s32).
-
-Assembly generated:
-
-```armasm", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", Vector64int_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateScalar", apiResult.ToString(), 3));
-
-try {
-ShiftRightArithmeticRoundedNarrowingSaturateScalarTest(Vector64int_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarResult = Dummy_ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
-apiResult = ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 31. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar
-
-`Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
-
-{0}
-
-```csharp
-private Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64<short> value, byte count)
-{{
-  return AdvSimd.Arm64.ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(value, 1);
-}}
-// value = {1}
-// count = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<ushort> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<int> value, byte count)
-Vector64<uint> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<long> value, byte count)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightarithmeticroundednarrowingsaturateunsignedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrunh_n_s16).
-
-Assembly generated:
-
-```armasm", GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", "Performs 'ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar' operation.", 0), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", Vector64short_0.ToString(), 1), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", byte_0.ToString(), 2), GetValue("ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar", apiResult.ToString(), 3));
-
-try {
-ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalarTest(Vector64short_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ShiftRightLogicalNarrowingSaturateScalarResult = Dummy_ShiftRightLogicalNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
-apiResult = ShiftRightLogicalNarrowingSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 32. ShiftRightLogicalNarrowingSaturateScalar
-
-`Vector64<byte> ShiftRightLogicalNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
-
-{0}
-
-```csharp
-private Vector64<byte> ShiftRightLogicalNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
-{{
-  return AdvSimd.Arm64.ShiftRightLogicalNarrowingSaturateScalar(value, 1);
-}}
-// value = {1}
-// count = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<short> ShiftRightLogicalNarrowingSaturateScalar(Vector64<int> value, byte count)
-Vector64<int> ShiftRightLogicalNarrowingSaturateScalar(Vector64<long> value, byte count)
-Vector64<sbyte> ShiftRightLogicalNarrowingSaturateScalar(Vector64<short> value, byte count)
-Vector64<ushort> ShiftRightLogicalNarrowingSaturateScalar(Vector64<uint> value, byte count)
-Vector64<uint> ShiftRightLogicalNarrowingSaturateScalar(Vector64<ulong> value, byte count)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightlogicalnarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqshrnh_n_u16).
-
-Assembly generated:
-
-```armasm", GetValue("ShiftRightLogicalNarrowingSaturateScalar", "Performs 'ShiftRightLogicalNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightLogicalNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ShiftRightLogicalNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalNarrowingSaturateScalar", apiResult.ToString(), 3));
-
-try {
-ShiftRightLogicalNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var ShiftRightLogicalRoundedNarrowingSaturateScalarResult = Dummy_ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
-apiResult = ShiftRightLogicalRoundedNarrowingSaturateScalarResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 33. ShiftRightLogicalRoundedNarrowingSaturateScalar
-
-`Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
-
-{0}
-
-```csharp
-private Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64<ushort> value, byte count)
-{{
-  return AdvSimd.Arm64.ShiftRightLogicalRoundedNarrowingSaturateScalar(value, 1);
-}}
-// value = {1}
-// count = {2}
-// Result = {3}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<short> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<int> value, byte count)
-Vector64<int> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<long> value, byte count)
-Vector64<sbyte> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<short> value, byte count)
-Vector64<ushort> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<uint> value, byte count)
-Vector64<uint> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<ulong> value, byte count)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.shiftrightlogicalroundednarrowingsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqrshrnh_n_u16).
-
-Assembly generated:
-
-```armasm", GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", "Performs 'ShiftRightLogicalRoundedNarrowingSaturateScalar' operation.", 0), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", Vector64ushort_0.ToString(), 1), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", byte_0.ToString(), 2), GetValue("ShiftRightLogicalRoundedNarrowingSaturateScalar", apiResult.ToString(), 3));
-
-try {
-ShiftRightLogicalRoundedNarrowingSaturateScalarTest(Vector64ushort_0, byte_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-
-try {
-var SqrtResult = Dummy_SqrtTest(Vector64float_0);
-apiResult = SqrtResult.ToString();
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-Console.WriteLine(
-@"```
-------------------------------------------------
-
-### 34. Sqrt
-
-`Vector64<float> Sqrt(Vector64<float> value)`
-
-{0}
-
-```csharp
-private Vector64<float> SqrtTest(Vector64<float> value)
-{{
-  return AdvSimd.Arm64.Sqrt(value);
-}}
-// value = {1}
-// Result = {2}
-
-```
-
-Similar APIs that operate on different sizes:
-
-```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector128<double> Sqrt(Vector128<double> value)
-Vector128<float> Sqrt(Vector128<float> value)
-```
-
-
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.sqrt?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsqrt_f32).
-
-Assembly generated:
-
-```armasm", GetValue("Sqrt", "Performs 'Sqrt' operation.", 0), GetValue("Sqrt", Vector64float_0.ToString(), 1), GetValue("Sqrt", apiResult.ToString(), 2));
-
-try {
-SqrtTest(Vector64float_0);
-
-} catch (Exception) {
-   apiResult = "TODO";
-}
-
-// ----------------------------------------------------------------
-fixed (byte* bytePtr_0 = byteArray)
-{
-
-try {
 Dummy_StorePairTest(bytePtr_0, Vector64byte_0, Vector64byte_1);
 
 } catch (Exception) {
@@ -23558,7 +22674,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 35. StorePair
+### 20. StorePair
 
 `void StorePair(byte* address, Vector64<byte> value1, Vector64<byte> value2)`
 
@@ -23630,7 +22746,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 36. StorePairNonTemporal
+### 21. StorePairNonTemporal
 
 `void StorePairNonTemporal(byte* address, Vector64<byte> value1, Vector64<byte> value2)`
 
@@ -23702,7 +22818,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 37. StorePairScalar
+### 22. StorePairScalar
 
 `void StorePairScalar(int* address, Vector64<int> value1, Vector64<int> value2)`
 
@@ -23757,7 +22873,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 38. StorePairScalarNonTemporal
+### 23. StorePairScalarNonTemporal
 
 `void StorePairScalarNonTemporal(int* address, Vector64<int> value1, Vector64<int> value2)`
 
@@ -23798,10 +22914,12 @@ StorePairScalarNonTemporalTest(intPtr_0, Vector64int_0, Vector64int_1);
 
 }
 // ----------------------------------------------------------------
+fixed (byte* bytePtr_0 = byteArray)
+{
 
 try {
-var ReverseElementBitsResult = Dummy_ReverseElementBitsTest(Vector64byte_0);
-apiResult = ReverseElementBitsResult.ToString();
+Dummy_StoreSelectedScalarTest(bytePtr_0, Vector64byte_0, byte_0);
+
 } catch (Exception) {
    apiResult = "TODO";
 }
@@ -23810,40 +22928,642 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 39. ReverseElementBits
+### 24. StoreSelectedScalar
 
-`Vector64<byte> ReverseElementBits(Vector64<byte> value)`
+`void StoreSelectedScalar(byte* address, Vector64<byte> value, byte index)`
 
 {0}
 
 ```csharp
-private Vector64<byte> ReverseElementBitsTest(Vector64<byte> value)
+private void StoreSelectedScalarTest(byte* address, Vector64<byte> value, byte index)
 {{
-  return AdvSimd.Arm64.ReverseElementBits(value);
+  AdvSimd.StoreSelectedScalar(address, value, 3);
 }}
-// value = {1}
-// Result = {2}
+// address = {1}
+// value = {2}
+// index = {3}
 
 ```
 
 Similar APIs that operate on different sizes:
 
 ```csharp
-// class System.Runtime.Intrinisics.AdvSimd.Arm64
-Vector64<sbyte> ReverseElementBits(Vector64<sbyte> value)
-Vector128<byte> ReverseElementBits(Vector128<byte> value)
-Vector128<sbyte> ReverseElementBits(Vector128<sbyte> value)
+// class System.Runtime.Intrinisics.AdvSimd
+void StoreSelectedScalar(short* address, Vector64<short> value, byte index)
+void StoreSelectedScalar(int* address, Vector64<int> value, byte index)
+void StoreSelectedScalar(sbyte* address, Vector64<sbyte> value, byte index)
+void StoreSelectedScalar(float* address, Vector64<float> value, byte index)
+void StoreSelectedScalar(ushort* address, Vector64<ushort> value, byte index)
+void StoreSelectedScalar(uint* address, Vector64<uint> value, byte index)
+void StoreSelectedScalar(byte* address, Vector128<byte> value, byte index)
+void StoreSelectedScalar(double* address, Vector128<double> value, byte index)
+void StoreSelectedScalar(short* address, Vector128<short> value, byte index)
+void StoreSelectedScalar(int* address, Vector128<int> value, byte index)
+void StoreSelectedScalar(long* address, Vector128<long> value, byte index)
+void StoreSelectedScalar(sbyte* address, Vector128<sbyte> value, byte index)
+void StoreSelectedScalar(float* address, Vector128<float> value, byte index)
+void StoreSelectedScalar(ushort* address, Vector128<ushort> value, byte index)
+void StoreSelectedScalar(uint* address, Vector128<uint> value, byte index)
+void StoreSelectedScalar(ulong* address, Vector128<ulong> value, byte index)
 ```
 
 
-See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.reverseelementbits?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrbit_u8).
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.storeselectedscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vst1_lane_u8).
 
 Assembly generated:
 
-```armasm", GetValue("ReverseElementBits", "Performs 'ReverseElementBits' operation.", 0), GetValue("ReverseElementBits", Vector64byte_0.ToString(), 1), GetValue("ReverseElementBits", apiResult.ToString(), 2));
+```armasm", GetValue("StoreSelectedScalar", "Performs 'StoreSelectedScalar' operation.", 0), GetValue("StoreSelectedScalar", "<address>".ToString(), 1), GetValue("StoreSelectedScalar", Vector64byte_0.ToString(), 2), GetValue("StoreSelectedScalar", byte_0.ToString(), 3));
 
 try {
-ReverseElementBitsTest(Vector64byte_0);
+StoreSelectedScalarTest(bytePtr_0, Vector64byte_0, byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+}
+// ----------------------------------------------------------------
+
+try {
+var SubtractResult = Dummy_SubtractTest(Vector64byte_0, Vector64byte_1);
+apiResult = SubtractResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 25. Subtract
+
+`Vector64<byte> Subtract(Vector64<byte> left, Vector64<byte> right)`
+
+{0}
+
+```csharp
+private Vector64<byte> SubtractTest(Vector64<byte> left, Vector64<byte> right)
+{{
+  return AdvSimd.Subtract(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<short> Subtract(Vector64<short> left, Vector64<short> right)
+Vector64<int> Subtract(Vector64<int> left, Vector64<int> right)
+Vector64<sbyte> Subtract(Vector64<sbyte> left, Vector64<sbyte> right)
+Vector64<float> Subtract(Vector64<float> left, Vector64<float> right)
+Vector64<ushort> Subtract(Vector64<ushort> left, Vector64<ushort> right)
+Vector64<uint> Subtract(Vector64<uint> left, Vector64<uint> right)
+Vector128<byte> Subtract(Vector128<byte> left, Vector128<byte> right)
+Vector128<short> Subtract(Vector128<short> left, Vector128<short> right)
+Vector128<int> Subtract(Vector128<int> left, Vector128<int> right)
+Vector128<long> Subtract(Vector128<long> left, Vector128<long> right)
+Vector128<sbyte> Subtract(Vector128<sbyte> left, Vector128<sbyte> right)
+Vector128<float> Subtract(Vector128<float> left, Vector128<float> right)
+Vector128<ushort> Subtract(Vector128<ushort> left, Vector128<ushort> right)
+Vector128<uint> Subtract(Vector128<uint> left, Vector128<uint> right)
+Vector128<ulong> Subtract(Vector128<ulong> left, Vector128<ulong> right)
+
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<double> Subtract(Vector128<double> left, Vector128<double> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtract?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.subtract?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsub_u8).
+
+Assembly generated:
+
+```armasm", GetValue("Subtract", "Performs 'Subtract' operation.", 0), GetValue("Subtract", Vector64byte_0.ToString(), 1), GetValue("Subtract", Vector64byte_1.ToString(), 2), GetValue("Subtract", apiResult.ToString(), 3));
+
+try {
+SubtractTest(Vector64byte_0, Vector64byte_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var SubtractHighNarrowingLowerResult = Dummy_SubtractHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
+apiResult = SubtractHighNarrowingLowerResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 26. SubtractHighNarrowingLower
+
+`Vector64<byte> SubtractHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
+
+{0}
+
+```csharp
+private Vector64<byte> SubtractHighNarrowingLowerTest(Vector128<ushort> left, Vector128<ushort> right)
+{{
+  return AdvSimd.SubtractHighNarrowingLower(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<short> SubtractHighNarrowingLower(Vector128<int> left, Vector128<int> right)
+Vector64<int> SubtractHighNarrowingLower(Vector128<long> left, Vector128<long> right)
+Vector64<sbyte> SubtractHighNarrowingLower(Vector128<short> left, Vector128<short> right)
+Vector64<ushort> SubtractHighNarrowingLower(Vector128<uint> left, Vector128<uint> right)
+Vector64<uint> SubtractHighNarrowingLower(Vector128<ulong> left, Vector128<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtracthighnarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubhn_u16).
+
+Assembly generated:
+
+```armasm", GetValue("SubtractHighNarrowingLower", "Performs 'SubtractHighNarrowingLower' operation.", 0), GetValue("SubtractHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("SubtractHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("SubtractHighNarrowingLower", apiResult.ToString(), 3));
+
+try {
+SubtractHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var SubtractHighNarrowingUpperResult = Dummy_SubtractHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
+apiResult = SubtractHighNarrowingUpperResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 27. SubtractHighNarrowingUpper
+
+`Vector128<byte> SubtractHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
+
+{0}
+
+```csharp
+private Vector128<byte> SubtractHighNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)
+{{
+  return AdvSimd.SubtractHighNarrowingUpper(lower, left, right);
+}}
+// lower = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector128<short> SubtractHighNarrowingUpper(Vector64<short> lower, Vector128<int> left, Vector128<int> right)
+Vector128<int> SubtractHighNarrowingUpper(Vector64<int> lower, Vector128<long> left, Vector128<long> right)
+Vector128<sbyte> SubtractHighNarrowingUpper(Vector64<sbyte> lower, Vector128<short> left, Vector128<short> right)
+Vector128<ushort> SubtractHighNarrowingUpper(Vector64<ushort> lower, Vector128<uint> left, Vector128<uint> right)
+Vector128<uint> SubtractHighNarrowingUpper(Vector64<uint> lower, Vector128<ulong> left, Vector128<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtracthighnarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubhn_high_u16).
+
+Assembly generated:
+
+```armasm", GetValue("SubtractHighNarrowingUpper", "Performs 'SubtractHighNarrowingUpper' operation.", 0), GetValue("SubtractHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("SubtractHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("SubtractHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("SubtractHighNarrowingUpper", apiResult.ToString(), 4));
+
+try {
+SubtractHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var SubtractRoundedHighNarrowingLowerResult = Dummy_SubtractRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
+apiResult = SubtractRoundedHighNarrowingLowerResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 28. SubtractRoundedHighNarrowingLower
+
+`Vector64<byte> SubtractRoundedHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
+
+{0}
+
+```csharp
+private Vector64<byte> SubtractRoundedHighNarrowingLowerTest(Vector128<ushort> left, Vector128<ushort> right)
+{{
+  return AdvSimd.SubtractRoundedHighNarrowingLower(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<short> SubtractRoundedHighNarrowingLower(Vector128<int> left, Vector128<int> right)
+Vector64<int> SubtractRoundedHighNarrowingLower(Vector128<long> left, Vector128<long> right)
+Vector64<sbyte> SubtractRoundedHighNarrowingLower(Vector128<short> left, Vector128<short> right)
+Vector64<ushort> SubtractRoundedHighNarrowingLower(Vector128<uint> left, Vector128<uint> right)
+Vector64<uint> SubtractRoundedHighNarrowingLower(Vector128<ulong> left, Vector128<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractroundedhighnarrowinglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsubhn_u16).
+
+Assembly generated:
+
+```armasm", GetValue("SubtractRoundedHighNarrowingLower", "Performs 'SubtractRoundedHighNarrowingLower' operation.", 0), GetValue("SubtractRoundedHighNarrowingLower", Vector128ushort_0.ToString(), 1), GetValue("SubtractRoundedHighNarrowingLower", Vector128ushort_1.ToString(), 2), GetValue("SubtractRoundedHighNarrowingLower", apiResult.ToString(), 3));
+
+try {
+SubtractRoundedHighNarrowingLowerTest(Vector128ushort_0, Vector128ushort_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var SubtractRoundedHighNarrowingUpperResult = Dummy_SubtractRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
+apiResult = SubtractRoundedHighNarrowingUpperResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 29. SubtractRoundedHighNarrowingUpper
+
+`Vector128<byte> SubtractRoundedHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
+
+{0}
+
+```csharp
+private Vector128<byte> SubtractRoundedHighNarrowingUpperTest(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)
+{{
+  return AdvSimd.SubtractRoundedHighNarrowingUpper(lower, left, right);
+}}
+// lower = {1}
+// left = {2}
+// right = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector128<short> SubtractRoundedHighNarrowingUpper(Vector64<short> lower, Vector128<int> left, Vector128<int> right)
+Vector128<int> SubtractRoundedHighNarrowingUpper(Vector64<int> lower, Vector128<long> left, Vector128<long> right)
+Vector128<sbyte> SubtractRoundedHighNarrowingUpper(Vector64<sbyte> lower, Vector128<short> left, Vector128<short> right)
+Vector128<ushort> SubtractRoundedHighNarrowingUpper(Vector64<ushort> lower, Vector128<uint> left, Vector128<uint> right)
+Vector128<uint> SubtractRoundedHighNarrowingUpper(Vector64<uint> lower, Vector128<ulong> left, Vector128<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractroundedhighnarrowingupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vrsubhn_high_u16).
+
+Assembly generated:
+
+```armasm", GetValue("SubtractRoundedHighNarrowingUpper", "Performs 'SubtractRoundedHighNarrowingUpper' operation.", 0), GetValue("SubtractRoundedHighNarrowingUpper", Vector64byte_0.ToString(), 1), GetValue("SubtractRoundedHighNarrowingUpper", Vector128ushort_0.ToString(), 2), GetValue("SubtractRoundedHighNarrowingUpper", Vector128ushort_1.ToString(), 3), GetValue("SubtractRoundedHighNarrowingUpper", apiResult.ToString(), 4));
+
+try {
+SubtractRoundedHighNarrowingUpperTest(Vector64byte_0, Vector128ushort_0, Vector128ushort_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var SubtractSaturateResult = Dummy_SubtractSaturateTest(Vector64byte_0, Vector64byte_1);
+apiResult = SubtractSaturateResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 30. SubtractSaturate
+
+`Vector64<byte> SubtractSaturate(Vector64<byte> left, Vector64<byte> right)`
+
+{0}
+
+```csharp
+private Vector64<byte> SubtractSaturateTest(Vector64<byte> left, Vector64<byte> right)
+{{
+  return AdvSimd.SubtractSaturate(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<short> SubtractSaturate(Vector64<short> left, Vector64<short> right)
+Vector64<int> SubtractSaturate(Vector64<int> left, Vector64<int> right)
+Vector64<sbyte> SubtractSaturate(Vector64<sbyte> left, Vector64<sbyte> right)
+Vector64<ushort> SubtractSaturate(Vector64<ushort> left, Vector64<ushort> right)
+Vector64<uint> SubtractSaturate(Vector64<uint> left, Vector64<uint> right)
+Vector128<byte> SubtractSaturate(Vector128<byte> left, Vector128<byte> right)
+Vector128<short> SubtractSaturate(Vector128<short> left, Vector128<short> right)
+Vector128<int> SubtractSaturate(Vector128<int> left, Vector128<int> right)
+Vector128<long> SubtractSaturate(Vector128<long> left, Vector128<long> right)
+Vector128<sbyte> SubtractSaturate(Vector128<sbyte> left, Vector128<sbyte> right)
+Vector128<ushort> SubtractSaturate(Vector128<ushort> left, Vector128<ushort> right)
+Vector128<uint> SubtractSaturate(Vector128<uint> left, Vector128<uint> right)
+Vector128<ulong> SubtractSaturate(Vector128<ulong> left, Vector128<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractsaturate?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqsub_u8).
+
+Assembly generated:
+
+```armasm", GetValue("SubtractSaturate", "Performs 'SubtractSaturate' operation.", 0), GetValue("SubtractSaturate", Vector64byte_0.ToString(), 1), GetValue("SubtractSaturate", Vector64byte_1.ToString(), 2), GetValue("SubtractSaturate", apiResult.ToString(), 3));
+
+try {
+SubtractSaturateTest(Vector64byte_0, Vector64byte_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var SubtractSaturateScalarResult = Dummy_SubtractSaturateScalarTest(Vector64long_0, Vector64long_1);
+apiResult = SubtractSaturateScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 31. SubtractSaturateScalar
+
+`Vector64<long> SubtractSaturateScalar(Vector64<long> left, Vector64<long> right)`
+
+{0}
+
+```csharp
+private Vector64<long> SubtractSaturateScalarTest(Vector64<long> left, Vector64<long> right)
+{{
+  return AdvSimd.SubtractSaturateScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<ulong> SubtractSaturateScalar(Vector64<ulong> left, Vector64<ulong> right)
+
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector64<byte> SubtractSaturateScalar(Vector64<byte> left, Vector64<byte> right)
+Vector64<short> SubtractSaturateScalar(Vector64<short> left, Vector64<short> right)
+Vector64<int> SubtractSaturateScalar(Vector64<int> left, Vector64<int> right)
+Vector64<sbyte> SubtractSaturateScalar(Vector64<sbyte> left, Vector64<sbyte> right)
+Vector64<ushort> SubtractSaturateScalar(Vector64<ushort> left, Vector64<ushort> right)
+Vector64<uint> SubtractSaturateScalar(Vector64<uint> left, Vector64<uint> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractsaturatescalar?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.subtractsaturatescalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqsub_s64).
+
+Assembly generated:
+
+```armasm", GetValue("SubtractSaturateScalar", "Performs 'SubtractSaturateScalar' operation.", 0), GetValue("SubtractSaturateScalar", Vector64long_0.ToString(), 1), GetValue("SubtractSaturateScalar", Vector64long_1.ToString(), 2), GetValue("SubtractSaturateScalar", apiResult.ToString(), 3));
+
+try {
+SubtractSaturateScalarTest(Vector64long_0, Vector64long_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var SubtractScalarResult = Dummy_SubtractScalarTest(Vector64double_0, Vector64double_1);
+apiResult = SubtractScalarResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 32. SubtractScalar
+
+`Vector64<double> SubtractScalar(Vector64<double> left, Vector64<double> right)`
+
+{0}
+
+```csharp
+private Vector64<double> SubtractScalarTest(Vector64<double> left, Vector64<double> right)
+{{
+  return AdvSimd.SubtractScalar(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<long> SubtractScalar(Vector64<long> left, Vector64<long> right)
+Vector64<float> SubtractScalar(Vector64<float> left, Vector64<float> right)
+Vector64<ulong> SubtractScalar(Vector64<ulong> left, Vector64<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractscalar?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsub_f64).
+
+Assembly generated:
+
+```armasm", GetValue("SubtractScalar", "Performs 'SubtractScalar' operation.", 0), GetValue("SubtractScalar", Vector64double_0.ToString(), 1), GetValue("SubtractScalar", Vector64double_1.ToString(), 2), GetValue("SubtractScalar", apiResult.ToString(), 3));
+
+try {
+SubtractScalarTest(Vector64double_0, Vector64double_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var SubtractWideningLowerResult = Dummy_SubtractWideningLowerTest(Vector64byte_0, Vector64byte_1);
+apiResult = SubtractWideningLowerResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 33. SubtractWideningLower
+
+`Vector128<ushort> SubtractWideningLower(Vector64<byte> left, Vector64<byte> right)`
+
+{0}
+
+```csharp
+private Vector128<ushort> SubtractWideningLowerTest(Vector64<byte> left, Vector64<byte> right)
+{{
+  return AdvSimd.SubtractWideningLower(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector128<int> SubtractWideningLower(Vector64<short> left, Vector64<short> right)
+Vector128<long> SubtractWideningLower(Vector64<int> left, Vector64<int> right)
+Vector128<short> SubtractWideningLower(Vector64<sbyte> left, Vector64<sbyte> right)
+Vector128<uint> SubtractWideningLower(Vector64<ushort> left, Vector64<ushort> right)
+Vector128<ulong> SubtractWideningLower(Vector64<uint> left, Vector64<uint> right)
+Vector128<short> SubtractWideningLower(Vector128<short> left, Vector64<sbyte> right)
+Vector128<int> SubtractWideningLower(Vector128<int> left, Vector64<short> right)
+Vector128<long> SubtractWideningLower(Vector128<long> left, Vector64<int> right)
+Vector128<ushort> SubtractWideningLower(Vector128<ushort> left, Vector64<byte> right)
+Vector128<uint> SubtractWideningLower(Vector128<uint> left, Vector64<ushort> right)
+Vector128<ulong> SubtractWideningLower(Vector128<ulong> left, Vector64<uint> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractwideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubl_u8).
+
+Assembly generated:
+
+```armasm", GetValue("SubtractWideningLower", "Performs 'SubtractWideningLower' operation.", 0), GetValue("SubtractWideningLower", Vector64byte_0.ToString(), 1), GetValue("SubtractWideningLower", Vector64byte_1.ToString(), 2), GetValue("SubtractWideningLower", apiResult.ToString(), 3));
+
+try {
+SubtractWideningLowerTest(Vector64byte_0, Vector64byte_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var SubtractWideningUpperResult = Dummy_SubtractWideningUpperTest(Vector128byte_0, Vector128byte_1);
+apiResult = SubtractWideningUpperResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 34. SubtractWideningUpper
+
+`Vector128<ushort> SubtractWideningUpper(Vector128<byte> left, Vector128<byte> right)`
+
+{0}
+
+```csharp
+private Vector128<ushort> SubtractWideningUpperTest(Vector128<byte> left, Vector128<byte> right)
+{{
+  return AdvSimd.SubtractWideningUpper(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector128<int> SubtractWideningUpper(Vector128<short> left, Vector128<short> right)
+Vector128<short> SubtractWideningUpper(Vector128<short> left, Vector128<sbyte> right)
+Vector128<int> SubtractWideningUpper(Vector128<int> left, Vector128<short> right)
+Vector128<long> SubtractWideningUpper(Vector128<int> left, Vector128<int> right)
+Vector128<long> SubtractWideningUpper(Vector128<long> left, Vector128<int> right)
+Vector128<short> SubtractWideningUpper(Vector128<sbyte> left, Vector128<sbyte> right)
+Vector128<ushort> SubtractWideningUpper(Vector128<ushort> left, Vector128<byte> right)
+Vector128<uint> SubtractWideningUpper(Vector128<ushort> left, Vector128<ushort> right)
+Vector128<uint> SubtractWideningUpper(Vector128<uint> left, Vector128<ushort> right)
+Vector128<ulong> SubtractWideningUpper(Vector128<uint> left, Vector128<uint> right)
+Vector128<ulong> SubtractWideningUpper(Vector128<ulong> left, Vector128<uint> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.subtractwideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vsubl_high_u8).
+
+Assembly generated:
+
+```armasm", GetValue("SubtractWideningUpper", "Performs 'SubtractWideningUpper' operation.", 0), GetValue("SubtractWideningUpper", Vector128byte_0.ToString(), 1), GetValue("SubtractWideningUpper", Vector128byte_1.ToString(), 2), GetValue("SubtractWideningUpper", apiResult.ToString(), 3));
+
+try {
+SubtractWideningUpperTest(Vector128byte_0, Vector128byte_1);
 
 } catch (Exception) {
    apiResult = "TODO";
@@ -23862,7 +23582,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 40. TransposeEven
+### 35. TransposeEven
 
 `Vector64<byte> TransposeEven(Vector64<byte> left, Vector64<byte> right)`
 
@@ -23928,7 +23648,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 41. TransposeOdd
+### 36. TransposeOdd
 
 `Vector64<byte> TransposeOdd(Vector64<byte> left, Vector64<byte> right)`
 
@@ -23994,7 +23714,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 42. UnzipEven
+### 37. UnzipEven
 
 `Vector64<byte> UnzipEven(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24060,7 +23780,7 @@ Console.WriteLine(
 @"```
 ------------------------------------------------
 
-### 43. UnzipOdd
+### 38. UnzipOdd
 
 `Vector64<byte> UnzipOdd(Vector64<byte> left, Vector64<byte> right)`
 
@@ -24108,6 +23828,294 @@ Assembly generated:
 
 try {
 UnzipOddTest(Vector64byte_0, Vector64byte_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var VectorTableLookupResult = Dummy_VectorTableLookupTest(Vector128byte_0, Vector64byte_0);
+apiResult = VectorTableLookupResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 39. VectorTableLookup
+
+`Vector64<byte> VectorTableLookup(Vector128<byte> table, Vector64<byte> byteIndexes)`
+
+{0}
+
+```csharp
+private Vector64<byte> VectorTableLookupTest(Vector128<byte> table, Vector64<byte> byteIndexes)
+{{
+  return AdvSimd.VectorTableLookup(table, byteIndexes);
+}}
+// table = {1}
+// byteIndexes = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<sbyte> VectorTableLookup(Vector128<sbyte> table, Vector64<sbyte> byteIndexes)
+
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<byte> VectorTableLookup(Vector128<byte> table, Vector128<byte> byteIndexes)
+Vector128<sbyte> VectorTableLookup(Vector128<sbyte> table, Vector128<sbyte> byteIndexes)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.vectortablelookup?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.vectortablelookup?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqvtbl1_u8).
+
+Assembly generated:
+
+```armasm", GetValue("VectorTableLookup", "Performs 'VectorTableLookup' operation.", 0), GetValue("VectorTableLookup", Vector128byte_0.ToString(), 1), GetValue("VectorTableLookup", Vector64byte_0.ToString(), 2), GetValue("VectorTableLookup", apiResult.ToString(), 3));
+
+try {
+VectorTableLookupTest(Vector128byte_0, Vector64byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var VectorTableLookupExtensionResult = Dummy_VectorTableLookupExtensionTest(Vector64byte_0, Vector128byte_0, Vector64byte_1);
+apiResult = VectorTableLookupExtensionResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 40. VectorTableLookupExtension
+
+`Vector64<byte> VectorTableLookupExtension(Vector64<byte> defaultValues, Vector128<byte> table, Vector64<byte> byteIndexes)`
+
+{0}
+
+```csharp
+private Vector64<byte> VectorTableLookupExtensionTest(Vector64<byte> defaultValues, Vector128<byte> table, Vector64<byte> byteIndexes)
+{{
+  return AdvSimd.VectorTableLookupExtension(defaultValues, table, byteIndexes);
+}}
+// defaultValues = {1}
+// table = {2}
+// byteIndexes = {3}
+// Result = {4}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<sbyte> VectorTableLookupExtension(Vector64<sbyte> defaultValues, Vector128<sbyte> table, Vector64<sbyte> byteIndexes)
+
+// class System.Runtime.Intrinisics.AdvSimd.Arm64
+Vector128<byte> VectorTableLookupExtension(Vector128<byte> defaultValues, Vector128<byte> table, Vector128<byte> byteIndexes)
+Vector128<sbyte> VectorTableLookupExtension(Vector128<sbyte> defaultValues, Vector128<sbyte> table, Vector128<sbyte> byteIndexes)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.vectortablelookupextension?view=net-5.0) and [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.arm64.vectortablelookupextension?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vqvtbx1_u8).
+
+Assembly generated:
+
+```armasm", GetValue("VectorTableLookupExtension", "Performs 'VectorTableLookupExtension' operation.", 0), GetValue("VectorTableLookupExtension", Vector64byte_0.ToString(), 1), GetValue("VectorTableLookupExtension", Vector128byte_0.ToString(), 2), GetValue("VectorTableLookupExtension", Vector64byte_1.ToString(), 3), GetValue("VectorTableLookupExtension", apiResult.ToString(), 4));
+
+try {
+VectorTableLookupExtensionTest(Vector64byte_0, Vector128byte_0, Vector64byte_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var XorResult = Dummy_XorTest(Vector64byte_0, Vector64byte_1);
+apiResult = XorResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 41. Xor
+
+`Vector64<byte> Xor(Vector64<byte> left, Vector64<byte> right)`
+
+{0}
+
+```csharp
+private Vector64<byte> XorTest(Vector64<byte> left, Vector64<byte> right)
+{{
+  return AdvSimd.Xor(left, right);
+}}
+// left = {1}
+// right = {2}
+// Result = {3}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector64<double> Xor(Vector64<double> left, Vector64<double> right)
+Vector64<short> Xor(Vector64<short> left, Vector64<short> right)
+Vector64<int> Xor(Vector64<int> left, Vector64<int> right)
+Vector64<long> Xor(Vector64<long> left, Vector64<long> right)
+Vector64<sbyte> Xor(Vector64<sbyte> left, Vector64<sbyte> right)
+Vector64<float> Xor(Vector64<float> left, Vector64<float> right)
+Vector64<ushort> Xor(Vector64<ushort> left, Vector64<ushort> right)
+Vector64<uint> Xor(Vector64<uint> left, Vector64<uint> right)
+Vector64<ulong> Xor(Vector64<ulong> left, Vector64<ulong> right)
+Vector128<byte> Xor(Vector128<byte> left, Vector128<byte> right)
+Vector128<double> Xor(Vector128<double> left, Vector128<double> right)
+Vector128<short> Xor(Vector128<short> left, Vector128<short> right)
+Vector128<int> Xor(Vector128<int> left, Vector128<int> right)
+Vector128<long> Xor(Vector128<long> left, Vector128<long> right)
+Vector128<sbyte> Xor(Vector128<sbyte> left, Vector128<sbyte> right)
+Vector128<float> Xor(Vector128<float> left, Vector128<float> right)
+Vector128<ushort> Xor(Vector128<ushort> left, Vector128<ushort> right)
+Vector128<uint> Xor(Vector128<uint> left, Vector128<uint> right)
+Vector128<ulong> Xor(Vector128<ulong> left, Vector128<ulong> right)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.xor?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=veor_u8).
+
+Assembly generated:
+
+```armasm", GetValue("Xor", "Performs 'Xor' operation.", 0), GetValue("Xor", Vector64byte_0.ToString(), 1), GetValue("Xor", Vector64byte_1.ToString(), 2), GetValue("Xor", apiResult.ToString(), 3));
+
+try {
+XorTest(Vector64byte_0, Vector64byte_1);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ZeroExtendWideningLowerResult = Dummy_ZeroExtendWideningLowerTest(Vector64byte_0);
+apiResult = ZeroExtendWideningLowerResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 42. ZeroExtendWideningLower
+
+`Vector128<ushort> ZeroExtendWideningLower(Vector64<byte> value)`
+
+{0}
+
+```csharp
+private Vector128<ushort> ZeroExtendWideningLowerTest(Vector64<byte> value)
+{{
+  return AdvSimd.ZeroExtendWideningLower(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector128<int> ZeroExtendWideningLower(Vector64<short> value)
+Vector128<long> ZeroExtendWideningLower(Vector64<int> value)
+Vector128<short> ZeroExtendWideningLower(Vector64<sbyte> value)
+Vector128<uint> ZeroExtendWideningLower(Vector64<ushort> value)
+Vector128<ulong> ZeroExtendWideningLower(Vector64<uint> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.zeroextendwideninglower?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmovl_u8).
+
+Assembly generated:
+
+```armasm", GetValue("ZeroExtendWideningLower", "Performs 'ZeroExtendWideningLower' operation.", 0), GetValue("ZeroExtendWideningLower", Vector64byte_0.ToString(), 1), GetValue("ZeroExtendWideningLower", apiResult.ToString(), 2));
+
+try {
+ZeroExtendWideningLowerTest(Vector64byte_0);
+
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+// ----------------------------------------------------------------
+
+try {
+var ZeroExtendWideningUpperResult = Dummy_ZeroExtendWideningUpperTest(Vector128byte_0);
+apiResult = ZeroExtendWideningUpperResult.ToString();
+} catch (Exception) {
+   apiResult = "TODO";
+}
+
+Console.WriteLine(
+@"```
+------------------------------------------------
+
+### 43. ZeroExtendWideningUpper
+
+`Vector128<ushort> ZeroExtendWideningUpper(Vector128<byte> value)`
+
+{0}
+
+```csharp
+private Vector128<ushort> ZeroExtendWideningUpperTest(Vector128<byte> value)
+{{
+  return AdvSimd.ZeroExtendWideningUpper(value);
+}}
+// value = {1}
+// Result = {2}
+
+```
+
+Similar APIs that operate on different sizes:
+
+```csharp
+// class System.Runtime.Intrinisics.AdvSimd
+Vector128<int> ZeroExtendWideningUpper(Vector128<short> value)
+Vector128<long> ZeroExtendWideningUpper(Vector128<int> value)
+Vector128<short> ZeroExtendWideningUpper(Vector128<sbyte> value)
+Vector128<uint> ZeroExtendWideningUpper(Vector128<ushort> value)
+Vector128<ulong> ZeroExtendWideningUpper(Vector128<uint> value)
+```
+
+
+See Microsoft docs [here](https://docs.microsoft.com/en-us/dotNet/api/system.runtime.intrinsics.arm.advsimd.zeroextendwideningupper?view=net-5.0), ARM docs [here](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics?search=vmovl_high_u8).
+
+Assembly generated:
+
+```armasm", GetValue("ZeroExtendWideningUpper", "Performs 'ZeroExtendWideningUpper' operation.", 0), GetValue("ZeroExtendWideningUpper", Vector128byte_0.ToString(), 1), GetValue("ZeroExtendWideningUpper", apiResult.ToString(), 2));
+
+try {
+ZeroExtendWideningUpperTest(Vector128byte_0);
 
 } catch (Exception) {
    apiResult = "TODO";

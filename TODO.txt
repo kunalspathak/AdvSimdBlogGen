@@ -1,4 +1,3 @@
-- Sort method names from ARM/ARM64
 DONE - Double check the method parameter `rightIndex` from more-asms.txt
 - Tabular index with 8 columns containing 45 rows?
 - Add link to formatting: https://github.com/kunalspathak/runtime/tree/formatting-blog
