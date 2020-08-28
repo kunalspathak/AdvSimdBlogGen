@@ -4389,7 +4389,7 @@ Console.WriteLine(
 
 ### 1. Abs
 
-`Vector64<ushort> Abs(Vector64<short> value)`
+__`Vector64<ushort> Abs(Vector64<short> value)`__
 
 {0}
 
@@ -4449,7 +4449,7 @@ Console.WriteLine(
 
 ### 2. AbsoluteCompareGreaterThan
 
-`Vector64<float> AbsoluteCompareGreaterThan(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> AbsoluteCompareGreaterThan(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -4503,7 +4503,7 @@ Console.WriteLine(
 
 ### 3. AbsoluteCompareGreaterThanOrEqual
 
-`Vector64<float> AbsoluteCompareGreaterThanOrEqual(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> AbsoluteCompareGreaterThanOrEqual(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -4557,7 +4557,7 @@ Console.WriteLine(
 
 ### 4. AbsoluteCompareGreaterThanOrEqualScalar
 
-`Vector64<double> AbsoluteCompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> AbsoluteCompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -4608,7 +4608,7 @@ Console.WriteLine(
 
 ### 5. AbsoluteCompareGreaterThanScalar
 
-`Vector64<double> AbsoluteCompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> AbsoluteCompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -4659,7 +4659,7 @@ Console.WriteLine(
 
 ### 6. AbsoluteCompareLessThan
 
-`Vector64<float> AbsoluteCompareLessThan(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> AbsoluteCompareLessThan(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -4713,7 +4713,7 @@ Console.WriteLine(
 
 ### 7. AbsoluteCompareLessThanOrEqual
 
-`Vector64<float> AbsoluteCompareLessThanOrEqual(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> AbsoluteCompareLessThanOrEqual(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -4767,7 +4767,7 @@ Console.WriteLine(
 
 ### 8. AbsoluteCompareLessThanOrEqualScalar
 
-`Vector64<double> AbsoluteCompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> AbsoluteCompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -4818,7 +4818,7 @@ Console.WriteLine(
 
 ### 9. AbsoluteCompareLessThanScalar
 
-`Vector64<double> AbsoluteCompareLessThanScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> AbsoluteCompareLessThanScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -4869,7 +4869,7 @@ Console.WriteLine(
 
 ### 10. AbsoluteDifference
 
-`Vector64<byte> AbsoluteDifference(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> AbsoluteDifference(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -4935,7 +4935,7 @@ Console.WriteLine(
 
 ### 11. AbsoluteDifferenceAdd
 
-`Vector64<byte> AbsoluteDifferenceAdd(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> AbsoluteDifferenceAdd(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -4997,7 +4997,7 @@ Console.WriteLine(
 
 ### 12. AbsoluteDifferenceScalar
 
-`Vector64<double> AbsoluteDifferenceScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> AbsoluteDifferenceScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -5048,7 +5048,7 @@ Console.WriteLine(
 
 ### 13. AbsoluteDifferenceWideningLower
 
-`Vector128<ushort> AbsoluteDifferenceWideningLower(Vector64<byte> left, Vector64<byte> right)`
+__`Vector128<ushort> AbsoluteDifferenceWideningLower(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -5103,7 +5103,7 @@ Console.WriteLine(
 
 ### 14. AbsoluteDifferenceWideningLowerAndAdd
 
-`Vector128<ushort> AbsoluteDifferenceWideningLowerAndAdd(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)`
+__`Vector128<ushort> AbsoluteDifferenceWideningLowerAndAdd(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -5159,7 +5159,7 @@ Console.WriteLine(
 
 ### 15. AbsoluteDifferenceWideningUpper
 
-`Vector128<ushort> AbsoluteDifferenceWideningUpper(Vector128<byte> left, Vector128<byte> right)`
+__`Vector128<ushort> AbsoluteDifferenceWideningUpper(Vector128<byte> left, Vector128<byte> right)`__
 
 {0}
 
@@ -5214,7 +5214,7 @@ Console.WriteLine(
 
 ### 16. AbsoluteDifferenceWideningUpperAndAdd
 
-`Vector128<ushort> AbsoluteDifferenceWideningUpperAndAdd(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)`
+__`Vector128<ushort> AbsoluteDifferenceWideningUpperAndAdd(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)`__
 
 {0}
 
@@ -5270,7 +5270,7 @@ Console.WriteLine(
 
 ### 17. AbsSaturate
 
-`Vector64<short> AbsSaturate(Vector64<short> value)`
+__`Vector64<short> AbsSaturate(Vector64<short> value)`__
 
 {0}
 
@@ -5327,7 +5327,7 @@ Console.WriteLine(
 
 ### 18. AbsSaturateScalar
 
-`Vector64<short> AbsSaturateScalar(Vector64<short> value)`
+__`Vector64<short> AbsSaturateScalar(Vector64<short> value)`__
 
 {0}
 
@@ -5379,7 +5379,7 @@ Console.WriteLine(
 
 ### 19. AbsScalar
 
-`Vector64<double> AbsScalar(Vector64<double> value)`
+__`Vector64<double> AbsScalar(Vector64<double> value)`__
 
 {0}
 
@@ -5432,7 +5432,7 @@ Console.WriteLine(
 
 ### 20. Add
 
-`Vector64<byte> Add(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> Add(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -5500,7 +5500,7 @@ Console.WriteLine(
 
 ### 21. AddAcross
 
-`Vector64<byte> AddAcross(Vector64<byte> value)`
+__`Vector64<byte> AddAcross(Vector64<byte> value)`__
 
 {0}
 
@@ -5558,7 +5558,7 @@ Console.WriteLine(
 
 ### 22. AddAcrossWidening
 
-`Vector64<ushort> AddAcrossWidening(Vector64<byte> value)`
+__`Vector64<ushort> AddAcrossWidening(Vector64<byte> value)`__
 
 {0}
 
@@ -5616,7 +5616,7 @@ Console.WriteLine(
 
 ### 23. AddHighNarrowingLower
 
-`Vector64<byte> AddHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
+__`Vector64<byte> AddHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`__
 
 {0}
 
@@ -5671,7 +5671,7 @@ Console.WriteLine(
 
 ### 24. AddHighNarrowingUpper
 
-`Vector128<byte> AddHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
+__`Vector128<byte> AddHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`__
 
 {0}
 
@@ -5727,7 +5727,7 @@ Console.WriteLine(
 
 ### 25. AddPairwise
 
-`Vector64<byte> AddPairwise(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> AddPairwise(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -5795,7 +5795,7 @@ Console.WriteLine(
 
 ### 26. AddPairwiseScalar
 
-`Vector64<float> AddPairwiseScalar(Vector64<float> value)`
+__`Vector64<float> AddPairwiseScalar(Vector64<float> value)`__
 
 {0}
 
@@ -5847,7 +5847,7 @@ Console.WriteLine(
 
 ### 27. AddPairwiseWidening
 
-`Vector64<ushort> AddPairwiseWidening(Vector64<byte> value)`
+__`Vector64<ushort> AddPairwiseWidening(Vector64<byte> value)`__
 
 {0}
 
@@ -5905,7 +5905,7 @@ Console.WriteLine(
 
 ### 28. AddPairwiseWideningAndAdd
 
-`Vector64<ushort> AddPairwiseWideningAndAdd(Vector64<ushort> addend, Vector64<byte> value)`
+__`Vector64<ushort> AddPairwiseWideningAndAdd(Vector64<ushort> addend, Vector64<byte> value)`__
 
 {0}
 
@@ -5964,7 +5964,7 @@ Console.WriteLine(
 
 ### 29. AddPairwiseWideningAndAddScalar
 
-`Vector64<long> AddPairwiseWideningAndAddScalar(Vector64<long> addend, Vector64<int> value)`
+__`Vector64<long> AddPairwiseWideningAndAddScalar(Vector64<long> addend, Vector64<int> value)`__
 
 {0}
 
@@ -6015,7 +6015,7 @@ Console.WriteLine(
 
 ### 30. AddPairwiseWideningScalar
 
-`Vector64<long> AddPairwiseWideningScalar(Vector64<int> value)`
+__`Vector64<long> AddPairwiseWideningScalar(Vector64<int> value)`__
 
 {0}
 
@@ -6065,7 +6065,7 @@ Console.WriteLine(
 
 ### 31. AddRoundedHighNarrowingLower
 
-`Vector64<byte> AddRoundedHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
+__`Vector64<byte> AddRoundedHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`__
 
 {0}
 
@@ -6120,7 +6120,7 @@ Console.WriteLine(
 
 ### 32. AddRoundedHighNarrowingUpper
 
-`Vector128<byte> AddRoundedHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
+__`Vector128<byte> AddRoundedHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`__
 
 {0}
 
@@ -6176,7 +6176,7 @@ Console.WriteLine(
 
 ### 33. AddSaturate
 
-`Vector64<byte> AddSaturate(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> AddSaturate(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -6255,7 +6255,7 @@ Console.WriteLine(
 
 ### 34. AddSaturateScalar
 
-`Vector64<long> AddSaturateScalar(Vector64<long> left, Vector64<long> right)`
+__`Vector64<long> AddSaturateScalar(Vector64<long> left, Vector64<long> right)`__
 
 {0}
 
@@ -6322,7 +6322,7 @@ Console.WriteLine(
 
 ### 35. AddScalar
 
-`Vector64<double> AddScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> AddScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -6375,7 +6375,7 @@ Console.WriteLine(
 
 ### 36. AddWideningLower
 
-`Vector128<ushort> AddWideningLower(Vector64<byte> left, Vector64<byte> right)`
+__`Vector128<ushort> AddWideningLower(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -6436,7 +6436,7 @@ Console.WriteLine(
 
 ### 37. AddWideningUpper
 
-`Vector128<ushort> AddWideningUpper(Vector128<byte> left, Vector128<byte> right)`
+__`Vector128<ushort> AddWideningUpper(Vector128<byte> left, Vector128<byte> right)`__
 
 {0}
 
@@ -6497,7 +6497,7 @@ Console.WriteLine(
 
 ### 38. And
 
-`Vector64<byte> And(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> And(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -6566,7 +6566,7 @@ Console.WriteLine(
 
 ### 39. BitwiseClear
 
-`Vector64<byte> BitwiseClear(Vector64<byte> value, Vector64<byte> mask)`
+__`Vector64<byte> BitwiseClear(Vector64<byte> value, Vector64<byte> mask)`__
 
 {0}
 
@@ -6635,7 +6635,7 @@ Console.WriteLine(
 
 ### 40. BitwiseSelect
 
-`Vector64<byte> BitwiseSelect(Vector64<byte> select, Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> BitwiseSelect(Vector64<byte> select, Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -6705,7 +6705,7 @@ Console.WriteLine(
 
 ### 41. Ceiling
 
-`Vector64<float> Ceiling(Vector64<float> value)`
+__`Vector64<float> Ceiling(Vector64<float> value)`__
 
 {0}
 
@@ -6758,7 +6758,7 @@ Console.WriteLine(
 
 ### 42. CeilingScalar
 
-`Vector64<double> CeilingScalar(Vector64<double> value)`
+__`Vector64<double> CeilingScalar(Vector64<double> value)`__
 
 {0}
 
@@ -6808,7 +6808,7 @@ Console.WriteLine(
 
 ### 43. CompareEqual
 
-`Vector64<byte> CompareEqual(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> CompareEqual(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -6876,7 +6876,7 @@ Console.WriteLine(
 
 ### 44. CompareEqualScalar
 
-`Vector64<double> CompareEqualScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> CompareEqualScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -6929,7 +6929,7 @@ Console.WriteLine(
 
 ### 45. CompareGreaterThan
 
-`Vector64<byte> CompareGreaterThan(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> CompareGreaterThan(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -7042,7 +7042,7 @@ Console.WriteLine(
 
 ### 1. CompareGreaterThanOrEqual
 
-`Vector64<byte> CompareGreaterThanOrEqual(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> CompareGreaterThanOrEqual(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -7110,7 +7110,7 @@ Console.WriteLine(
 
 ### 2. CompareGreaterThanOrEqualScalar
 
-`Vector64<double> CompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> CompareGreaterThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -7163,7 +7163,7 @@ Console.WriteLine(
 
 ### 3. CompareGreaterThanScalar
 
-`Vector64<double> CompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> CompareGreaterThanScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -7216,7 +7216,7 @@ Console.WriteLine(
 
 ### 4. CompareLessThan
 
-`Vector64<byte> CompareLessThan(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> CompareLessThan(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -7284,7 +7284,7 @@ Console.WriteLine(
 
 ### 5. CompareLessThanOrEqual
 
-`Vector64<byte> CompareLessThanOrEqual(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> CompareLessThanOrEqual(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -7352,7 +7352,7 @@ Console.WriteLine(
 
 ### 6. CompareLessThanOrEqualScalar
 
-`Vector64<double> CompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> CompareLessThanOrEqualScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -7405,7 +7405,7 @@ Console.WriteLine(
 
 ### 7. CompareLessThanScalar
 
-`Vector64<double> CompareLessThanScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> CompareLessThanScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -7458,7 +7458,7 @@ Console.WriteLine(
 
 ### 8. CompareTest
 
-`Vector64<byte> CompareTest(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> CompareTest(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -7526,7 +7526,7 @@ Console.WriteLine(
 
 ### 9. CompareTestScalar
 
-`Vector64<double> CompareTestScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> CompareTestScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -7578,7 +7578,7 @@ Console.WriteLine(
 
 ### 10. ConvertToDouble
 
-`Vector128<double> ConvertToDouble(Vector64<float> value)`
+__`Vector128<double> ConvertToDouble(Vector64<float> value)`__
 
 {0}
 
@@ -7629,7 +7629,7 @@ Console.WriteLine(
 
 ### 11. ConvertToDoubleScalar
 
-`Vector64<double> ConvertToDoubleScalar(Vector64<long> value)`
+__`Vector64<double> ConvertToDoubleScalar(Vector64<long> value)`__
 
 {0}
 
@@ -7679,7 +7679,7 @@ Console.WriteLine(
 
 ### 12. ConvertToDoubleUpper
 
-`Vector128<double> ConvertToDoubleUpper(Vector128<float> value)`
+__`Vector128<double> ConvertToDoubleUpper(Vector128<float> value)`__
 
 {0}
 
@@ -7723,7 +7723,7 @@ Console.WriteLine(
 
 ### 13. ConvertToInt32RoundAwayFromZero
 
-`Vector64<int> ConvertToInt32RoundAwayFromZero(Vector64<float> value)`
+__`Vector64<int> ConvertToInt32RoundAwayFromZero(Vector64<float> value)`__
 
 {0}
 
@@ -7773,7 +7773,7 @@ Console.WriteLine(
 
 ### 14. ConvertToInt32RoundAwayFromZeroScalar
 
-`Vector64<int> ConvertToInt32RoundAwayFromZeroScalar(Vector64<float> value)`
+__`Vector64<int> ConvertToInt32RoundAwayFromZeroScalar(Vector64<float> value)`__
 
 {0}
 
@@ -7817,7 +7817,7 @@ Console.WriteLine(
 
 ### 15. ConvertToInt32RoundToEven
 
-`Vector64<int> ConvertToInt32RoundToEven(Vector64<float> value)`
+__`Vector64<int> ConvertToInt32RoundToEven(Vector64<float> value)`__
 
 {0}
 
@@ -7867,7 +7867,7 @@ Console.WriteLine(
 
 ### 16. ConvertToInt32RoundToEvenScalar
 
-`Vector64<int> ConvertToInt32RoundToEvenScalar(Vector64<float> value)`
+__`Vector64<int> ConvertToInt32RoundToEvenScalar(Vector64<float> value)`__
 
 {0}
 
@@ -7911,7 +7911,7 @@ Console.WriteLine(
 
 ### 17. ConvertToInt32RoundToNegativeInfinity
 
-`Vector64<int> ConvertToInt32RoundToNegativeInfinity(Vector64<float> value)`
+__`Vector64<int> ConvertToInt32RoundToNegativeInfinity(Vector64<float> value)`__
 
 {0}
 
@@ -7961,7 +7961,7 @@ Console.WriteLine(
 
 ### 18. ConvertToInt32RoundToNegativeInfinityScalar
 
-`Vector64<int> ConvertToInt32RoundToNegativeInfinityScalar(Vector64<float> value)`
+__`Vector64<int> ConvertToInt32RoundToNegativeInfinityScalar(Vector64<float> value)`__
 
 {0}
 
@@ -8005,7 +8005,7 @@ Console.WriteLine(
 
 ### 19. ConvertToInt32RoundToPositiveInfinity
 
-`Vector64<int> ConvertToInt32RoundToPositiveInfinity(Vector64<float> value)`
+__`Vector64<int> ConvertToInt32RoundToPositiveInfinity(Vector64<float> value)`__
 
 {0}
 
@@ -8055,7 +8055,7 @@ Console.WriteLine(
 
 ### 20. ConvertToInt32RoundToPositiveInfinityScalar
 
-`Vector64<int> ConvertToInt32RoundToPositiveInfinityScalar(Vector64<float> value)`
+__`Vector64<int> ConvertToInt32RoundToPositiveInfinityScalar(Vector64<float> value)`__
 
 {0}
 
@@ -8099,7 +8099,7 @@ Console.WriteLine(
 
 ### 21. ConvertToInt32RoundToZero
 
-`Vector64<int> ConvertToInt32RoundToZero(Vector64<float> value)`
+__`Vector64<int> ConvertToInt32RoundToZero(Vector64<float> value)`__
 
 {0}
 
@@ -8149,7 +8149,7 @@ Console.WriteLine(
 
 ### 22. ConvertToInt32RoundToZeroScalar
 
-`Vector64<int> ConvertToInt32RoundToZeroScalar(Vector64<float> value)`
+__`Vector64<int> ConvertToInt32RoundToZeroScalar(Vector64<float> value)`__
 
 {0}
 
@@ -8193,7 +8193,7 @@ Console.WriteLine(
 
 ### 23. ConvertToInt64RoundAwayFromZero
 
-`Vector128<long> ConvertToInt64RoundAwayFromZero(Vector128<double> value)`
+__`Vector128<long> ConvertToInt64RoundAwayFromZero(Vector128<double> value)`__
 
 {0}
 
@@ -8237,7 +8237,7 @@ Console.WriteLine(
 
 ### 24. ConvertToInt64RoundAwayFromZeroScalar
 
-`Vector64<long> ConvertToInt64RoundAwayFromZeroScalar(Vector64<double> value)`
+__`Vector64<long> ConvertToInt64RoundAwayFromZeroScalar(Vector64<double> value)`__
 
 {0}
 
@@ -8281,7 +8281,7 @@ Console.WriteLine(
 
 ### 25. ConvertToInt64RoundToEven
 
-`Vector128<long> ConvertToInt64RoundToEven(Vector128<double> value)`
+__`Vector128<long> ConvertToInt64RoundToEven(Vector128<double> value)`__
 
 {0}
 
@@ -8325,7 +8325,7 @@ Console.WriteLine(
 
 ### 26. ConvertToInt64RoundToEvenScalar
 
-`Vector64<long> ConvertToInt64RoundToEvenScalar(Vector64<double> value)`
+__`Vector64<long> ConvertToInt64RoundToEvenScalar(Vector64<double> value)`__
 
 {0}
 
@@ -8369,7 +8369,7 @@ Console.WriteLine(
 
 ### 27. ConvertToInt64RoundToNegativeInfinity
 
-`Vector128<long> ConvertToInt64RoundToNegativeInfinity(Vector128<double> value)`
+__`Vector128<long> ConvertToInt64RoundToNegativeInfinity(Vector128<double> value)`__
 
 {0}
 
@@ -8413,7 +8413,7 @@ Console.WriteLine(
 
 ### 28. ConvertToInt64RoundToNegativeInfinityScalar
 
-`Vector64<long> ConvertToInt64RoundToNegativeInfinityScalar(Vector64<double> value)`
+__`Vector64<long> ConvertToInt64RoundToNegativeInfinityScalar(Vector64<double> value)`__
 
 {0}
 
@@ -8457,7 +8457,7 @@ Console.WriteLine(
 
 ### 29. ConvertToInt64RoundToPositiveInfinity
 
-`Vector128<long> ConvertToInt64RoundToPositiveInfinity(Vector128<double> value)`
+__`Vector128<long> ConvertToInt64RoundToPositiveInfinity(Vector128<double> value)`__
 
 {0}
 
@@ -8501,7 +8501,7 @@ Console.WriteLine(
 
 ### 30. ConvertToInt64RoundToPositiveInfinityScalar
 
-`Vector64<long> ConvertToInt64RoundToPositiveInfinityScalar(Vector64<double> value)`
+__`Vector64<long> ConvertToInt64RoundToPositiveInfinityScalar(Vector64<double> value)`__
 
 {0}
 
@@ -8545,7 +8545,7 @@ Console.WriteLine(
 
 ### 31. ConvertToInt64RoundToZero
 
-`Vector128<long> ConvertToInt64RoundToZero(Vector128<double> value)`
+__`Vector128<long> ConvertToInt64RoundToZero(Vector128<double> value)`__
 
 {0}
 
@@ -8589,7 +8589,7 @@ Console.WriteLine(
 
 ### 32. ConvertToInt64RoundToZeroScalar
 
-`Vector64<long> ConvertToInt64RoundToZeroScalar(Vector64<double> value)`
+__`Vector64<long> ConvertToInt64RoundToZeroScalar(Vector64<double> value)`__
 
 {0}
 
@@ -8633,7 +8633,7 @@ Console.WriteLine(
 
 ### 33. ConvertToSingle
 
-`Vector64<float> ConvertToSingle(Vector64<int> value)`
+__`Vector64<float> ConvertToSingle(Vector64<int> value)`__
 
 {0}
 
@@ -8685,7 +8685,7 @@ Console.WriteLine(
 
 ### 34. ConvertToSingleLower
 
-`Vector64<float> ConvertToSingleLower(Vector128<double> value)`
+__`Vector64<float> ConvertToSingleLower(Vector128<double> value)`__
 
 {0}
 
@@ -8729,7 +8729,7 @@ Console.WriteLine(
 
 ### 35. ConvertToSingleRoundToOddLower
 
-`Vector64<float> ConvertToSingleRoundToOddLower(Vector128<double> value)`
+__`Vector64<float> ConvertToSingleRoundToOddLower(Vector128<double> value)`__
 
 {0}
 
@@ -8773,7 +8773,7 @@ Console.WriteLine(
 
 ### 36. ConvertToSingleRoundToOddUpper
 
-`Vector128<float> ConvertToSingleRoundToOddUpper(Vector64<float> lower, Vector128<double> value)`
+__`Vector128<float> ConvertToSingleRoundToOddUpper(Vector64<float> lower, Vector128<double> value)`__
 
 {0}
 
@@ -8818,7 +8818,7 @@ Console.WriteLine(
 
 ### 37. ConvertToSingleScalar
 
-`Vector64<float> ConvertToSingleScalar(Vector64<int> value)`
+__`Vector64<float> ConvertToSingleScalar(Vector64<int> value)`__
 
 {0}
 
@@ -8868,7 +8868,7 @@ Console.WriteLine(
 
 ### 38. ConvertToSingleUpper
 
-`Vector128<float> ConvertToSingleUpper(Vector64<float> lower, Vector128<double> value)`
+__`Vector128<float> ConvertToSingleUpper(Vector64<float> lower, Vector128<double> value)`__
 
 {0}
 
@@ -8913,7 +8913,7 @@ Console.WriteLine(
 
 ### 39. ConvertToUInt32RoundAwayFromZero
 
-`Vector64<uint> ConvertToUInt32RoundAwayFromZero(Vector64<float> value)`
+__`Vector64<uint> ConvertToUInt32RoundAwayFromZero(Vector64<float> value)`__
 
 {0}
 
@@ -8963,7 +8963,7 @@ Console.WriteLine(
 
 ### 40. ConvertToUInt32RoundAwayFromZeroScalar
 
-`Vector64<uint> ConvertToUInt32RoundAwayFromZeroScalar(Vector64<float> value)`
+__`Vector64<uint> ConvertToUInt32RoundAwayFromZeroScalar(Vector64<float> value)`__
 
 {0}
 
@@ -9007,7 +9007,7 @@ Console.WriteLine(
 
 ### 41. ConvertToUInt32RoundToEven
 
-`Vector64<uint> ConvertToUInt32RoundToEven(Vector64<float> value)`
+__`Vector64<uint> ConvertToUInt32RoundToEven(Vector64<float> value)`__
 
 {0}
 
@@ -9057,7 +9057,7 @@ Console.WriteLine(
 
 ### 42. ConvertToUInt32RoundToEvenScalar
 
-`Vector64<uint> ConvertToUInt32RoundToEvenScalar(Vector64<float> value)`
+__`Vector64<uint> ConvertToUInt32RoundToEvenScalar(Vector64<float> value)`__
 
 {0}
 
@@ -9101,7 +9101,7 @@ Console.WriteLine(
 
 ### 43. ConvertToUInt32RoundToNegativeInfinity
 
-`Vector64<uint> ConvertToUInt32RoundToNegativeInfinity(Vector64<float> value)`
+__`Vector64<uint> ConvertToUInt32RoundToNegativeInfinity(Vector64<float> value)`__
 
 {0}
 
@@ -9151,7 +9151,7 @@ Console.WriteLine(
 
 ### 44. ConvertToUInt32RoundToNegativeInfinityScalar
 
-`Vector64<uint> ConvertToUInt32RoundToNegativeInfinityScalar(Vector64<float> value)`
+__`Vector64<uint> ConvertToUInt32RoundToNegativeInfinityScalar(Vector64<float> value)`__
 
 {0}
 
@@ -9195,7 +9195,7 @@ Console.WriteLine(
 
 ### 45. ConvertToUInt32RoundToPositiveInfinity
 
-`Vector64<uint> ConvertToUInt32RoundToPositiveInfinity(Vector64<float> value)`
+__`Vector64<uint> ConvertToUInt32RoundToPositiveInfinity(Vector64<float> value)`__
 
 {0}
 
@@ -9290,7 +9290,7 @@ Console.WriteLine(
 
 ### 1. ConvertToUInt32RoundToPositiveInfinityScalar
 
-`Vector64<uint> ConvertToUInt32RoundToPositiveInfinityScalar(Vector64<float> value)`
+__`Vector64<uint> ConvertToUInt32RoundToPositiveInfinityScalar(Vector64<float> value)`__
 
 {0}
 
@@ -9334,7 +9334,7 @@ Console.WriteLine(
 
 ### 2. ConvertToUInt32RoundToZero
 
-`Vector64<uint> ConvertToUInt32RoundToZero(Vector64<float> value)`
+__`Vector64<uint> ConvertToUInt32RoundToZero(Vector64<float> value)`__
 
 {0}
 
@@ -9384,7 +9384,7 @@ Console.WriteLine(
 
 ### 3. ConvertToUInt32RoundToZeroScalar
 
-`Vector64<uint> ConvertToUInt32RoundToZeroScalar(Vector64<float> value)`
+__`Vector64<uint> ConvertToUInt32RoundToZeroScalar(Vector64<float> value)`__
 
 {0}
 
@@ -9428,7 +9428,7 @@ Console.WriteLine(
 
 ### 4. ConvertToUInt64RoundAwayFromZero
 
-`Vector128<ulong> ConvertToUInt64RoundAwayFromZero(Vector128<double> value)`
+__`Vector128<ulong> ConvertToUInt64RoundAwayFromZero(Vector128<double> value)`__
 
 {0}
 
@@ -9472,7 +9472,7 @@ Console.WriteLine(
 
 ### 5. ConvertToUInt64RoundAwayFromZeroScalar
 
-`Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalar(Vector64<double> value)`
+__`Vector64<ulong> ConvertToUInt64RoundAwayFromZeroScalar(Vector64<double> value)`__
 
 {0}
 
@@ -9516,7 +9516,7 @@ Console.WriteLine(
 
 ### 6. ConvertToUInt64RoundToEven
 
-`Vector128<ulong> ConvertToUInt64RoundToEven(Vector128<double> value)`
+__`Vector128<ulong> ConvertToUInt64RoundToEven(Vector128<double> value)`__
 
 {0}
 
@@ -9560,7 +9560,7 @@ Console.WriteLine(
 
 ### 7. ConvertToUInt64RoundToEvenScalar
 
-`Vector64<ulong> ConvertToUInt64RoundToEvenScalar(Vector64<double> value)`
+__`Vector64<ulong> ConvertToUInt64RoundToEvenScalar(Vector64<double> value)`__
 
 {0}
 
@@ -9604,7 +9604,7 @@ Console.WriteLine(
 
 ### 8. ConvertToUInt64RoundToNegativeInfinity
 
-`Vector128<ulong> ConvertToUInt64RoundToNegativeInfinity(Vector128<double> value)`
+__`Vector128<ulong> ConvertToUInt64RoundToNegativeInfinity(Vector128<double> value)`__
 
 {0}
 
@@ -9648,7 +9648,7 @@ Console.WriteLine(
 
 ### 9. ConvertToUInt64RoundToNegativeInfinityScalar
 
-`Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalar(Vector64<double> value)`
+__`Vector64<ulong> ConvertToUInt64RoundToNegativeInfinityScalar(Vector64<double> value)`__
 
 {0}
 
@@ -9692,7 +9692,7 @@ Console.WriteLine(
 
 ### 10. ConvertToUInt64RoundToPositiveInfinity
 
-`Vector128<ulong> ConvertToUInt64RoundToPositiveInfinity(Vector128<double> value)`
+__`Vector128<ulong> ConvertToUInt64RoundToPositiveInfinity(Vector128<double> value)`__
 
 {0}
 
@@ -9736,7 +9736,7 @@ Console.WriteLine(
 
 ### 11. ConvertToUInt64RoundToPositiveInfinityScalar
 
-`Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalar(Vector64<double> value)`
+__`Vector64<ulong> ConvertToUInt64RoundToPositiveInfinityScalar(Vector64<double> value)`__
 
 {0}
 
@@ -9780,7 +9780,7 @@ Console.WriteLine(
 
 ### 12. ConvertToUInt64RoundToZero
 
-`Vector128<ulong> ConvertToUInt64RoundToZero(Vector128<double> value)`
+__`Vector128<ulong> ConvertToUInt64RoundToZero(Vector128<double> value)`__
 
 {0}
 
@@ -9824,7 +9824,7 @@ Console.WriteLine(
 
 ### 13. ConvertToUInt64RoundToZeroScalar
 
-`Vector64<ulong> ConvertToUInt64RoundToZeroScalar(Vector64<double> value)`
+__`Vector64<ulong> ConvertToUInt64RoundToZeroScalar(Vector64<double> value)`__
 
 {0}
 
@@ -9868,7 +9868,7 @@ Console.WriteLine(
 
 ### 14. Divide
 
-`Vector64<float> Divide(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> Divide(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -9920,7 +9920,7 @@ Console.WriteLine(
 
 ### 15. DivideScalar
 
-`Vector64<double> DivideScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> DivideScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -9971,7 +9971,7 @@ Console.WriteLine(
 
 ### 16. DuplicateSelectedScalarToVector128
 
-`Vector128<byte> DuplicateSelectedScalarToVector128(Vector64<byte> value, byte index)`
+__`Vector128<byte> DuplicateSelectedScalarToVector128(Vector64<byte> value, byte index)`__
 
 {0}
 
@@ -10039,7 +10039,7 @@ Console.WriteLine(
 
 ### 17. DuplicateSelectedScalarToVector64
 
-`Vector64<byte> DuplicateSelectedScalarToVector64(Vector64<byte> value, byte index)`
+__`Vector64<byte> DuplicateSelectedScalarToVector64(Vector64<byte> value, byte index)`__
 
 {0}
 
@@ -10102,7 +10102,7 @@ Console.WriteLine(
 
 ### 18. DuplicateToVector128
 
-`Vector128<byte> DuplicateToVector128(byte value)`
+__`Vector128<byte> DuplicateToVector128(byte value)`__
 
 {0}
 
@@ -10162,7 +10162,7 @@ Console.WriteLine(
 
 ### 19. DuplicateToVector64
 
-`Vector64<byte> DuplicateToVector64(byte value)`
+__`Vector64<byte> DuplicateToVector64(byte value)`__
 
 {0}
 
@@ -10217,7 +10217,7 @@ Console.WriteLine(
 
 ### 20. Extract
 
-`byte Extract(Vector64<byte> vector, byte index)`
+__`byte Extract(Vector64<byte> vector, byte index)`__
 
 {0}
 
@@ -10283,7 +10283,7 @@ Console.WriteLine(
 
 ### 21. ExtractNarrowingLower
 
-`Vector64<byte> ExtractNarrowingLower(Vector128<ushort> value)`
+__`Vector64<byte> ExtractNarrowingLower(Vector128<ushort> value)`__
 
 {0}
 
@@ -10337,7 +10337,7 @@ Console.WriteLine(
 
 ### 22. ExtractNarrowingSaturateLower
 
-`Vector64<byte> ExtractNarrowingSaturateLower(Vector128<ushort> value)`
+__`Vector64<byte> ExtractNarrowingSaturateLower(Vector128<ushort> value)`__
 
 {0}
 
@@ -10391,7 +10391,7 @@ Console.WriteLine(
 
 ### 23. ExtractNarrowingSaturateScalar
 
-`Vector64<byte> ExtractNarrowingSaturateScalar(Vector64<ushort> value)`
+__`Vector64<byte> ExtractNarrowingSaturateScalar(Vector64<ushort> value)`__
 
 {0}
 
@@ -10445,7 +10445,7 @@ Console.WriteLine(
 
 ### 24. ExtractNarrowingSaturateUnsignedLower
 
-`Vector64<byte> ExtractNarrowingSaturateUnsignedLower(Vector128<short> value)`
+__`Vector64<byte> ExtractNarrowingSaturateUnsignedLower(Vector128<short> value)`__
 
 {0}
 
@@ -10496,7 +10496,7 @@ Console.WriteLine(
 
 ### 25. ExtractNarrowingSaturateUnsignedScalar
 
-`Vector64<byte> ExtractNarrowingSaturateUnsignedScalar(Vector64<short> value)`
+__`Vector64<byte> ExtractNarrowingSaturateUnsignedScalar(Vector64<short> value)`__
 
 {0}
 
@@ -10547,7 +10547,7 @@ Console.WriteLine(
 
 ### 26. ExtractNarrowingSaturateUnsignedUpper
 
-`Vector128<byte> ExtractNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value)`
+__`Vector128<byte> ExtractNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value)`__
 
 {0}
 
@@ -10599,7 +10599,7 @@ Console.WriteLine(
 
 ### 27. ExtractNarrowingSaturateUpper
 
-`Vector128<byte> ExtractNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value)`
+__`Vector128<byte> ExtractNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value)`__
 
 {0}
 
@@ -10654,7 +10654,7 @@ Console.WriteLine(
 
 ### 28. ExtractNarrowingUpper
 
-`Vector128<byte> ExtractNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value)`
+__`Vector128<byte> ExtractNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value)`__
 
 {0}
 
@@ -10709,7 +10709,7 @@ Console.WriteLine(
 
 ### 29. ExtractVector128
 
-`Vector128<byte> ExtractVector128(Vector128<byte> upper, Vector128<byte> lower, byte index)`
+__`Vector128<byte> ExtractVector128(Vector128<byte> upper, Vector128<byte> lower, byte index)`__
 
 {0}
 
@@ -10769,7 +10769,7 @@ Console.WriteLine(
 
 ### 30. ExtractVector64
 
-`Vector64<byte> ExtractVector64(Vector64<byte> upper, Vector64<byte> lower, byte index)`
+__`Vector64<byte> ExtractVector64(Vector64<byte> upper, Vector64<byte> lower, byte index)`__
 
 {0}
 
@@ -10826,7 +10826,7 @@ Console.WriteLine(
 
 ### 31. Floor
 
-`Vector64<float> Floor(Vector64<float> value)`
+__`Vector64<float> Floor(Vector64<float> value)`__
 
 {0}
 
@@ -10879,7 +10879,7 @@ Console.WriteLine(
 
 ### 32. FloorScalar
 
-`Vector64<double> FloorScalar(Vector64<double> value)`
+__`Vector64<double> FloorScalar(Vector64<double> value)`__
 
 {0}
 
@@ -10929,7 +10929,7 @@ Console.WriteLine(
 
 ### 33. FusedAddHalving
 
-`Vector64<byte> FusedAddHalving(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> FusedAddHalving(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -10990,7 +10990,7 @@ Console.WriteLine(
 
 ### 34. FusedAddRoundedHalving
 
-`Vector64<byte> FusedAddRoundedHalving(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> FusedAddRoundedHalving(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -11051,7 +11051,7 @@ Console.WriteLine(
 
 ### 35. FusedMultiplyAdd
 
-`Vector64<float> FusedMultiplyAdd(Vector64<float> addend, Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> FusedMultiplyAdd(Vector64<float> addend, Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -11106,7 +11106,7 @@ Console.WriteLine(
 
 ### 36. FusedMultiplyAddByScalar
 
-`Vector64<float> FusedMultiplyAddByScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> FusedMultiplyAddByScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -11159,7 +11159,7 @@ Console.WriteLine(
 
 ### 37. FusedMultiplyAddBySelectedScalar
 
-`Vector64<float> FusedMultiplyAddBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)`
+__`Vector64<float> FusedMultiplyAddBySelectedScalar(Vector64<float> addend, Vector64<float> left, Vector64<float> right, byte rightIndex)`__
 
 {0}
 
@@ -11215,7 +11215,7 @@ Console.WriteLine(
 
 ### 38. FusedMultiplyAddNegatedScalar
 
-`Vector64<double> FusedMultiplyAddNegatedScalar(Vector64<double> addend, Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> FusedMultiplyAddNegatedScalar(Vector64<double> addend, Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -11267,7 +11267,7 @@ Console.WriteLine(
 
 ### 39. FusedMultiplyAddScalar
 
-`Vector64<double> FusedMultiplyAddScalar(Vector64<double> addend, Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> FusedMultiplyAddScalar(Vector64<double> addend, Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -11319,7 +11319,7 @@ Console.WriteLine(
 
 ### 40. FusedMultiplyAddScalarBySelectedScalar
 
-`Vector64<double> FusedMultiplyAddScalarBySelectedScalar(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)`
+__`Vector64<double> FusedMultiplyAddScalarBySelectedScalar(Vector64<double> addend, Vector64<double> left, Vector128<double> right, byte rightIndex)`__
 
 {0}
 
@@ -11373,7 +11373,7 @@ Console.WriteLine(
 
 ### 41. FusedMultiplySubtract
 
-`Vector64<float> FusedMultiplySubtract(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> FusedMultiplySubtract(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -11428,7 +11428,7 @@ Console.WriteLine(
 
 ### 42. FusedMultiplySubtractByScalar
 
-`Vector64<float> FusedMultiplySubtractByScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> FusedMultiplySubtractByScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -11481,7 +11481,7 @@ Console.WriteLine(
 
 ### 43. FusedMultiplySubtractBySelectedScalar
 
-`Vector64<float> FusedMultiplySubtractBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)`
+__`Vector64<float> FusedMultiplySubtractBySelectedScalar(Vector64<float> minuend, Vector64<float> left, Vector64<float> right, byte rightIndex)`__
 
 {0}
 
@@ -11537,7 +11537,7 @@ Console.WriteLine(
 
 ### 44. FusedMultiplySubtractNegatedScalar
 
-`Vector64<double> FusedMultiplySubtractNegatedScalar(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> FusedMultiplySubtractNegatedScalar(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -11589,7 +11589,7 @@ Console.WriteLine(
 
 ### 45. FusedMultiplySubtractScalar
 
-`Vector64<double> FusedMultiplySubtractScalar(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> FusedMultiplySubtractScalar(Vector64<double> minuend, Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -11686,7 +11686,7 @@ Console.WriteLine(
 
 ### 1. FusedMultiplySubtractScalarBySelectedScalar
 
-`Vector64<double> FusedMultiplySubtractScalarBySelectedScalar(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)`
+__`Vector64<double> FusedMultiplySubtractScalarBySelectedScalar(Vector64<double> minuend, Vector64<double> left, Vector128<double> right, byte rightIndex)`__
 
 {0}
 
@@ -11740,7 +11740,7 @@ Console.WriteLine(
 
 ### 2. FusedSubtractHalving
 
-`Vector64<byte> FusedSubtractHalving(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> FusedSubtractHalving(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -11801,7 +11801,7 @@ Console.WriteLine(
 
 ### 3. Insert
 
-`Vector64<byte> Insert(Vector64<byte> vector, byte index, byte data)`
+__`Vector64<byte> Insert(Vector64<byte> vector, byte index, byte data)`__
 
 {0}
 
@@ -11868,7 +11868,7 @@ Console.WriteLine(
 
 ### 4. InsertScalar
 
-`Vector128<double> InsertScalar(Vector128<double> result, byte resultIndex, Vector64<double> value)`
+__`Vector128<double> InsertScalar(Vector128<double> result, byte resultIndex, Vector64<double> value)`__
 
 {0}
 
@@ -11921,7 +11921,7 @@ Console.WriteLine(
 
 ### 5. InsertSelectedScalar
 
-`Vector64<byte> InsertSelectedScalar(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)`
+__`Vector64<byte> InsertSelectedScalar(Vector64<byte> result, byte resultIndex, Vector64<byte> value, byte valueIndex)`__
 
 {0}
 
@@ -12003,7 +12003,7 @@ Console.WriteLine(
 
 ### 6. LeadingSignCount
 
-`Vector64<short> LeadingSignCount(Vector64<short> value)`
+__`Vector64<short> LeadingSignCount(Vector64<short> value)`__
 
 {0}
 
@@ -12057,7 +12057,7 @@ Console.WriteLine(
 
 ### 7. LeadingZeroCount
 
-`Vector64<byte> LeadingZeroCount(Vector64<byte> value)`
+__`Vector64<byte> LeadingZeroCount(Vector64<byte> value)`__
 
 {0}
 
@@ -12119,7 +12119,7 @@ Console.WriteLine(
 
 ### 8. LoadAndInsertScalar
 
-`Vector64<byte> LoadAndInsertScalar(Vector64<byte> value, byte index, byte* address)`
+__`Vector64<byte> LoadAndInsertScalar(Vector64<byte> value, byte index, byte* address)`__
 
 {0}
 
@@ -12189,7 +12189,7 @@ Console.WriteLine(
 
 ### 9. LoadAndReplicateToVector128
 
-`Vector128<byte> LoadAndReplicateToVector128(byte* address)`
+__`Vector128<byte> LoadAndReplicateToVector128(byte* address)`__
 
 {0}
 
@@ -12252,7 +12252,7 @@ Console.WriteLine(
 
 ### 10. LoadAndReplicateToVector64
 
-`Vector64<byte> LoadAndReplicateToVector64(byte* address)`
+__`Vector64<byte> LoadAndReplicateToVector64(byte* address)`__
 
 {0}
 
@@ -12310,7 +12310,7 @@ Console.WriteLine(
 
 ### 11. LoadVector128
 
-`Vector128<byte> LoadVector128(byte* address)`
+__`Vector128<byte> LoadVector128(byte* address)`__
 
 {0}
 
@@ -12371,7 +12371,7 @@ Console.WriteLine(
 
 ### 12. LoadVector64
 
-`Vector64<byte> LoadVector64(byte* address)`
+__`Vector64<byte> LoadVector64(byte* address)`__
 
 {0}
 
@@ -12430,7 +12430,7 @@ Console.WriteLine(
 
 ### 13. Max
 
-`Vector64<byte> Max(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> Max(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -12496,7 +12496,7 @@ Console.WriteLine(
 
 ### 14. MaxAcross
 
-`Vector64<byte> MaxAcross(Vector64<byte> value)`
+__`Vector64<byte> MaxAcross(Vector64<byte> value)`__
 
 {0}
 
@@ -12555,7 +12555,7 @@ Console.WriteLine(
 
 ### 15. MaxNumber
 
-`Vector64<float> MaxNumber(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> MaxNumber(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -12609,7 +12609,7 @@ Console.WriteLine(
 
 ### 16. MaxNumberAcross
 
-`Vector64<float> MaxNumberAcross(Vector128<float> value)`
+__`Vector64<float> MaxNumberAcross(Vector128<float> value)`__
 
 {0}
 
@@ -12653,7 +12653,7 @@ Console.WriteLine(
 
 ### 17. MaxNumberPairwise
 
-`Vector64<float> MaxNumberPairwise(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> MaxNumberPairwise(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -12705,7 +12705,7 @@ Console.WriteLine(
 
 ### 18. MaxNumberPairwiseScalar
 
-`Vector64<float> MaxNumberPairwiseScalar(Vector64<float> value)`
+__`Vector64<float> MaxNumberPairwiseScalar(Vector64<float> value)`__
 
 {0}
 
@@ -12755,7 +12755,7 @@ Console.WriteLine(
 
 ### 19. MaxNumberScalar
 
-`Vector64<double> MaxNumberScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> MaxNumberScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -12806,7 +12806,7 @@ Console.WriteLine(
 
 ### 20. MaxPairwise
 
-`Vector64<byte> MaxPairwise(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> MaxPairwise(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -12872,7 +12872,7 @@ Console.WriteLine(
 
 ### 21. MaxPairwiseScalar
 
-`Vector64<float> MaxPairwiseScalar(Vector64<float> value)`
+__`Vector64<float> MaxPairwiseScalar(Vector64<float> value)`__
 
 {0}
 
@@ -12922,7 +12922,7 @@ Console.WriteLine(
 
 ### 22. MaxScalar
 
-`Vector64<double> MaxScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> MaxScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -12973,7 +12973,7 @@ Console.WriteLine(
 
 ### 23. Min
 
-`Vector64<byte> Min(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> Min(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -13039,7 +13039,7 @@ Console.WriteLine(
 
 ### 24. MinAcross
 
-`Vector64<byte> MinAcross(Vector64<byte> value)`
+__`Vector64<byte> MinAcross(Vector64<byte> value)`__
 
 {0}
 
@@ -13098,7 +13098,7 @@ Console.WriteLine(
 
 ### 25. MinNumber
 
-`Vector64<float> MinNumber(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> MinNumber(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -13152,7 +13152,7 @@ Console.WriteLine(
 
 ### 26. MinNumberAcross
 
-`Vector64<float> MinNumberAcross(Vector128<float> value)`
+__`Vector64<float> MinNumberAcross(Vector128<float> value)`__
 
 {0}
 
@@ -13196,7 +13196,7 @@ Console.WriteLine(
 
 ### 27. MinNumberPairwise
 
-`Vector64<float> MinNumberPairwise(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> MinNumberPairwise(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -13248,7 +13248,7 @@ Console.WriteLine(
 
 ### 28. MinNumberPairwiseScalar
 
-`Vector64<float> MinNumberPairwiseScalar(Vector64<float> value)`
+__`Vector64<float> MinNumberPairwiseScalar(Vector64<float> value)`__
 
 {0}
 
@@ -13298,7 +13298,7 @@ Console.WriteLine(
 
 ### 29. MinNumberScalar
 
-`Vector64<double> MinNumberScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> MinNumberScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -13349,7 +13349,7 @@ Console.WriteLine(
 
 ### 30. MinPairwise
 
-`Vector64<byte> MinPairwise(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> MinPairwise(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -13415,7 +13415,7 @@ Console.WriteLine(
 
 ### 31. MinPairwiseScalar
 
-`Vector64<float> MinPairwiseScalar(Vector64<float> value)`
+__`Vector64<float> MinPairwiseScalar(Vector64<float> value)`__
 
 {0}
 
@@ -13465,7 +13465,7 @@ Console.WriteLine(
 
 ### 32. MinScalar
 
-`Vector64<double> MinScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> MinScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -13516,7 +13516,7 @@ Console.WriteLine(
 
 ### 33. Multiply
 
-`Vector64<byte> Multiply(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> Multiply(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -13582,7 +13582,7 @@ Console.WriteLine(
 
 ### 34. MultiplyAdd
 
-`Vector64<byte> MultiplyAdd(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> MultiplyAdd(Vector64<byte> addend, Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -13644,7 +13644,7 @@ Console.WriteLine(
 
 ### 35. MultiplyAddByScalar
 
-`Vector64<short> MultiplyAddByScalar(Vector64<short> addend, Vector64<short> left, Vector64<short> right)`
+__`Vector64<short> MultiplyAddByScalar(Vector64<short> addend, Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -13702,7 +13702,7 @@ Console.WriteLine(
 
 ### 36. MultiplyAddBySelectedScalar
 
-`Vector64<short> MultiplyAddBySelectedScalar(Vector64<short> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector64<short> MultiplyAddBySelectedScalar(Vector64<short> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -13769,7 +13769,7 @@ Console.WriteLine(
 
 ### 37. MultiplyByScalar
 
-`Vector64<short> MultiplyByScalar(Vector64<short> left, Vector64<short> right)`
+__`Vector64<short> MultiplyByScalar(Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -13831,7 +13831,7 @@ Console.WriteLine(
 
 ### 38. MultiplyBySelectedScalar
 
-`Vector64<short> MultiplyBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector64<short> MultiplyBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -13904,7 +13904,7 @@ Console.WriteLine(
 
 ### 39. MultiplyBySelectedScalarWideningLower
 
-`Vector128<int> MultiplyBySelectedScalarWideningLower(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyBySelectedScalarWideningLower(Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -13962,7 +13962,7 @@ Console.WriteLine(
 
 ### 40. MultiplyBySelectedScalarWideningLowerAndAdd
 
-`Vector128<int> MultiplyBySelectedScalarWideningLowerAndAdd(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyBySelectedScalarWideningLowerAndAdd(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -14021,7 +14021,7 @@ Console.WriteLine(
 
 ### 41. MultiplyBySelectedScalarWideningLowerAndSubtract
 
-`Vector128<int> MultiplyBySelectedScalarWideningLowerAndSubtract(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyBySelectedScalarWideningLowerAndSubtract(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -14080,7 +14080,7 @@ Console.WriteLine(
 
 ### 42. MultiplyBySelectedScalarWideningUpper
 
-`Vector128<int> MultiplyBySelectedScalarWideningUpper(Vector128<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyBySelectedScalarWideningUpper(Vector128<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -14138,7 +14138,7 @@ Console.WriteLine(
 
 ### 43. MultiplyBySelectedScalarWideningUpperAndAdd
 
-`Vector128<int> MultiplyBySelectedScalarWideningUpperAndAdd(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyBySelectedScalarWideningUpperAndAdd(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -14197,7 +14197,7 @@ Console.WriteLine(
 
 ### 44. MultiplyBySelectedScalarWideningUpperAndSubtract
 
-`Vector128<int> MultiplyBySelectedScalarWideningUpperAndSubtract(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyBySelectedScalarWideningUpperAndSubtract(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -14256,7 +14256,7 @@ Console.WriteLine(
 
 ### 45. MultiplyDoublingByScalarSaturateHigh
 
-`Vector64<short> MultiplyDoublingByScalarSaturateHigh(Vector64<short> left, Vector64<short> right)`
+__`Vector64<short> MultiplyDoublingByScalarSaturateHigh(Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -14354,7 +14354,7 @@ Console.WriteLine(
 
 ### 1. MultiplyDoublingBySelectedScalarSaturateHigh
 
-`Vector64<short> MultiplyDoublingBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector64<short> MultiplyDoublingBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -14412,7 +14412,7 @@ Console.WriteLine(
 
 ### 2. MultiplyDoublingSaturateHigh
 
-`Vector64<short> MultiplyDoublingSaturateHigh(Vector64<short> left, Vector64<short> right)`
+__`Vector64<short> MultiplyDoublingSaturateHigh(Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -14465,7 +14465,7 @@ Console.WriteLine(
 
 ### 3. MultiplyDoublingSaturateHighScalar
 
-`Vector64<short> MultiplyDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
+__`Vector64<short> MultiplyDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -14516,7 +14516,7 @@ Console.WriteLine(
 
 ### 4. MultiplyDoublingScalarBySelectedScalarSaturateHigh
 
-`Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector64<short> MultiplyDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -14570,7 +14570,7 @@ Console.WriteLine(
 
 ### 5. MultiplyDoublingWideningAndAddSaturateScalar
 
-`Vector64<int> MultiplyDoublingWideningAndAddSaturateScalar(Vector64<int> addend, Vector64<short> left, Vector64<short> right)`
+__`Vector64<int> MultiplyDoublingWideningAndAddSaturateScalar(Vector64<int> addend, Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -14622,7 +14622,7 @@ Console.WriteLine(
 
 ### 6. MultiplyDoublingWideningAndSubtractSaturateScalar
 
-`Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalar(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)`
+__`Vector64<int> MultiplyDoublingWideningAndSubtractSaturateScalar(Vector64<int> minuend, Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -14674,7 +14674,7 @@ Console.WriteLine(
 
 ### 7. MultiplyDoublingWideningLowerAndAddSaturate
 
-`Vector128<int> MultiplyDoublingWideningLowerAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right)`
+__`Vector128<int> MultiplyDoublingWideningLowerAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -14726,7 +14726,7 @@ Console.WriteLine(
 
 ### 8. MultiplyDoublingWideningLowerAndSubtractSaturate
 
-`Vector128<int> MultiplyDoublingWideningLowerAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)`
+__`Vector128<int> MultiplyDoublingWideningLowerAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -14778,7 +14778,7 @@ Console.WriteLine(
 
 ### 9. MultiplyDoublingWideningLowerByScalarAndAddSaturate
 
-`Vector128<int> MultiplyDoublingWideningLowerByScalarAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right)`
+__`Vector128<int> MultiplyDoublingWideningLowerByScalarAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -14830,7 +14830,7 @@ Console.WriteLine(
 
 ### 10. MultiplyDoublingWideningLowerByScalarAndSubtractSaturate
 
-`Vector128<int> MultiplyDoublingWideningLowerByScalarAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)`
+__`Vector128<int> MultiplyDoublingWideningLowerByScalarAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -14882,7 +14882,7 @@ Console.WriteLine(
 
 ### 11. MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate
 
-`Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate(Vector128<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -14937,7 +14937,7 @@ Console.WriteLine(
 
 ### 12. MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate
 
-`Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate(Vector128<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -14992,7 +14992,7 @@ Console.WriteLine(
 
 ### 13. MultiplyDoublingWideningSaturateLower
 
-`Vector128<int> MultiplyDoublingWideningSaturateLower(Vector64<short> left, Vector64<short> right)`
+__`Vector128<int> MultiplyDoublingWideningSaturateLower(Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -15043,7 +15043,7 @@ Console.WriteLine(
 
 ### 14. MultiplyDoublingWideningSaturateLowerByScalar
 
-`Vector128<int> MultiplyDoublingWideningSaturateLowerByScalar(Vector64<short> left, Vector64<short> right)`
+__`Vector128<int> MultiplyDoublingWideningSaturateLowerByScalar(Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -15094,7 +15094,7 @@ Console.WriteLine(
 
 ### 15. MultiplyDoublingWideningSaturateLowerBySelectedScalar
 
-`Vector128<int> MultiplyDoublingWideningSaturateLowerBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyDoublingWideningSaturateLowerBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -15148,7 +15148,7 @@ Console.WriteLine(
 
 ### 16. MultiplyDoublingWideningSaturateScalar
 
-`Vector64<int> MultiplyDoublingWideningSaturateScalar(Vector64<short> left, Vector64<short> right)`
+__`Vector64<int> MultiplyDoublingWideningSaturateScalar(Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -15199,7 +15199,7 @@ Console.WriteLine(
 
 ### 17. MultiplyDoublingWideningSaturateScalarBySelectedScalar
 
-`Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector64<int> MultiplyDoublingWideningSaturateScalarBySelectedScalar(Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -15253,7 +15253,7 @@ Console.WriteLine(
 
 ### 18. MultiplyDoublingWideningSaturateUpper
 
-`Vector128<int> MultiplyDoublingWideningSaturateUpper(Vector128<short> left, Vector128<short> right)`
+__`Vector128<int> MultiplyDoublingWideningSaturateUpper(Vector128<short> left, Vector128<short> right)`__
 
 {0}
 
@@ -15304,7 +15304,7 @@ Console.WriteLine(
 
 ### 19. MultiplyDoublingWideningSaturateUpperByScalar
 
-`Vector128<int> MultiplyDoublingWideningSaturateUpperByScalar(Vector128<short> left, Vector64<short> right)`
+__`Vector128<int> MultiplyDoublingWideningSaturateUpperByScalar(Vector128<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -15355,7 +15355,7 @@ Console.WriteLine(
 
 ### 20. MultiplyDoublingWideningSaturateUpperBySelectedScalar
 
-`Vector128<int> MultiplyDoublingWideningSaturateUpperBySelectedScalar(Vector128<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyDoublingWideningSaturateUpperBySelectedScalar(Vector128<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -15409,7 +15409,7 @@ Console.WriteLine(
 
 ### 21. MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate
 
-`Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate(Vector64<int> addend, Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -15464,7 +15464,7 @@ Console.WriteLine(
 
 ### 22. MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate
 
-`Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector64<int> MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate(Vector64<int> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -15519,7 +15519,7 @@ Console.WriteLine(
 
 ### 23. MultiplyDoublingWideningUpperAndAddSaturate
 
-`Vector128<int> MultiplyDoublingWideningUpperAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector128<short> right)`
+__`Vector128<int> MultiplyDoublingWideningUpperAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector128<short> right)`__
 
 {0}
 
@@ -15571,7 +15571,7 @@ Console.WriteLine(
 
 ### 24. MultiplyDoublingWideningUpperAndSubtractSaturate
 
-`Vector128<int> MultiplyDoublingWideningUpperAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector128<short> right)`
+__`Vector128<int> MultiplyDoublingWideningUpperAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector128<short> right)`__
 
 {0}
 
@@ -15623,7 +15623,7 @@ Console.WriteLine(
 
 ### 25. MultiplyDoublingWideningUpperByScalarAndAddSaturate
 
-`Vector128<int> MultiplyDoublingWideningUpperByScalarAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector64<short> right)`
+__`Vector128<int> MultiplyDoublingWideningUpperByScalarAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -15675,7 +15675,7 @@ Console.WriteLine(
 
 ### 26. MultiplyDoublingWideningUpperByScalarAndSubtractSaturate
 
-`Vector128<int> MultiplyDoublingWideningUpperByScalarAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector64<short> right)`
+__`Vector128<int> MultiplyDoublingWideningUpperByScalarAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -15727,7 +15727,7 @@ Console.WriteLine(
 
 ### 27. MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate
 
-`Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate(Vector128<int> addend, Vector128<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -15782,7 +15782,7 @@ Console.WriteLine(
 
 ### 28. MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate
 
-`Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector128<int> MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate(Vector128<int> minuend, Vector128<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -15837,7 +15837,7 @@ Console.WriteLine(
 
 ### 29. MultiplyExtended
 
-`Vector64<float> MultiplyExtended(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> MultiplyExtended(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -15889,7 +15889,7 @@ Console.WriteLine(
 
 ### 30. MultiplyExtendedByScalar
 
-`Vector128<double> MultiplyExtendedByScalar(Vector128<double> left, Vector64<double> right)`
+__`Vector128<double> MultiplyExtendedByScalar(Vector128<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -15934,7 +15934,7 @@ Console.WriteLine(
 
 ### 31. MultiplyExtendedBySelectedScalar
 
-`Vector64<float> MultiplyExtendedBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`
+__`Vector64<float> MultiplyExtendedBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`__
 
 {0}
 
@@ -15989,7 +15989,7 @@ Console.WriteLine(
 
 ### 32. MultiplyExtendedScalar
 
-`Vector64<double> MultiplyExtendedScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> MultiplyExtendedScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -16040,7 +16040,7 @@ Console.WriteLine(
 
 ### 33. MultiplyExtendedScalarBySelectedScalar
 
-`Vector64<double> MultiplyExtendedScalarBySelectedScalar(Vector64<double> left, Vector128<double> right, byte rightIndex)`
+__`Vector64<double> MultiplyExtendedScalarBySelectedScalar(Vector64<double> left, Vector128<double> right, byte rightIndex)`__
 
 {0}
 
@@ -16093,7 +16093,7 @@ Console.WriteLine(
 
 ### 34. MultiplyRoundedDoublingByScalarSaturateHigh
 
-`Vector64<short> MultiplyRoundedDoublingByScalarSaturateHigh(Vector64<short> left, Vector64<short> right)`
+__`Vector64<short> MultiplyRoundedDoublingByScalarSaturateHigh(Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -16146,7 +16146,7 @@ Console.WriteLine(
 
 ### 35. MultiplyRoundedDoublingBySelectedScalarSaturateHigh
 
-`Vector64<short> MultiplyRoundedDoublingBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector64<short> MultiplyRoundedDoublingBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -16204,7 +16204,7 @@ Console.WriteLine(
 
 ### 36. MultiplyRoundedDoublingSaturateHigh
 
-`Vector64<short> MultiplyRoundedDoublingSaturateHigh(Vector64<short> left, Vector64<short> right)`
+__`Vector64<short> MultiplyRoundedDoublingSaturateHigh(Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -16257,7 +16257,7 @@ Console.WriteLine(
 
 ### 37. MultiplyRoundedDoublingSaturateHighScalar
 
-`Vector64<short> MultiplyRoundedDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`
+__`Vector64<short> MultiplyRoundedDoublingSaturateHighScalar(Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -16308,7 +16308,7 @@ Console.WriteLine(
 
 ### 38. MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh
 
-`Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector64<short> MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh(Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -16362,7 +16362,7 @@ Console.WriteLine(
 
 ### 39. MultiplyScalar
 
-`Vector64<double> MultiplyScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> MultiplyScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -16413,7 +16413,7 @@ Console.WriteLine(
 
 ### 40. MultiplyScalarBySelectedScalar
 
-`Vector64<float> MultiplyScalarBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`
+__`Vector64<float> MultiplyScalarBySelectedScalar(Vector64<float> left, Vector64<float> right, byte rightIndex)`__
 
 {0}
 
@@ -16468,7 +16468,7 @@ Console.WriteLine(
 
 ### 41. MultiplySubtract
 
-`Vector64<byte> MultiplySubtract(Vector64<byte> minuend, Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> MultiplySubtract(Vector64<byte> minuend, Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -16530,7 +16530,7 @@ Console.WriteLine(
 
 ### 42. MultiplySubtractByScalar
 
-`Vector64<short> MultiplySubtractByScalar(Vector64<short> minuend, Vector64<short> left, Vector64<short> right)`
+__`Vector64<short> MultiplySubtractByScalar(Vector64<short> minuend, Vector64<short> left, Vector64<short> right)`__
 
 {0}
 
@@ -16588,7 +16588,7 @@ Console.WriteLine(
 
 ### 43. MultiplySubtractBySelectedScalar
 
-`Vector64<short> MultiplySubtractBySelectedScalar(Vector64<short> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`
+__`Vector64<short> MultiplySubtractBySelectedScalar(Vector64<short> minuend, Vector64<short> left, Vector64<short> right, byte rightIndex)`__
 
 {0}
 
@@ -16655,7 +16655,7 @@ Console.WriteLine(
 
 ### 44. MultiplyWideningLower
 
-`Vector128<ushort> MultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`
+__`Vector128<ushort> MultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -16710,7 +16710,7 @@ Console.WriteLine(
 
 ### 45. MultiplyWideningLowerAndAdd
 
-`Vector128<ushort> MultiplyWideningLowerAndAdd(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)`
+__`Vector128<ushort> MultiplyWideningLowerAndAdd(Vector128<ushort> addend, Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -16811,7 +16811,7 @@ Console.WriteLine(
 
 ### 1. MultiplyWideningLowerAndSubtract
 
-`Vector128<ushort> MultiplyWideningLowerAndSubtract(Vector128<ushort> minuend, Vector64<byte> left, Vector64<byte> right)`
+__`Vector128<ushort> MultiplyWideningLowerAndSubtract(Vector128<ushort> minuend, Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -16867,7 +16867,7 @@ Console.WriteLine(
 
 ### 2. MultiplyWideningUpper
 
-`Vector128<ushort> MultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`
+__`Vector128<ushort> MultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`__
 
 {0}
 
@@ -16922,7 +16922,7 @@ Console.WriteLine(
 
 ### 3. MultiplyWideningUpperAndAdd
 
-`Vector128<ushort> MultiplyWideningUpperAndAdd(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)`
+__`Vector128<ushort> MultiplyWideningUpperAndAdd(Vector128<ushort> addend, Vector128<byte> left, Vector128<byte> right)`__
 
 {0}
 
@@ -16978,7 +16978,7 @@ Console.WriteLine(
 
 ### 4. MultiplyWideningUpperAndSubtract
 
-`Vector128<ushort> MultiplyWideningUpperAndSubtract(Vector128<ushort> minuend, Vector128<byte> left, Vector128<byte> right)`
+__`Vector128<ushort> MultiplyWideningUpperAndSubtract(Vector128<ushort> minuend, Vector128<byte> left, Vector128<byte> right)`__
 
 {0}
 
@@ -17034,7 +17034,7 @@ Console.WriteLine(
 
 ### 5. Negate
 
-`Vector64<short> Negate(Vector64<short> value)`
+__`Vector64<short> Negate(Vector64<short> value)`__
 
 {0}
 
@@ -17094,7 +17094,7 @@ Console.WriteLine(
 
 ### 6. NegateSaturate
 
-`Vector64<short> NegateSaturate(Vector64<short> value)`
+__`Vector64<short> NegateSaturate(Vector64<short> value)`__
 
 {0}
 
@@ -17151,7 +17151,7 @@ Console.WriteLine(
 
 ### 7. NegateSaturateScalar
 
-`Vector64<short> NegateSaturateScalar(Vector64<short> value)`
+__`Vector64<short> NegateSaturateScalar(Vector64<short> value)`__
 
 {0}
 
@@ -17203,7 +17203,7 @@ Console.WriteLine(
 
 ### 8. NegateScalar
 
-`Vector64<double> NegateScalar(Vector64<double> value)`
+__`Vector64<double> NegateScalar(Vector64<double> value)`__
 
 {0}
 
@@ -17256,7 +17256,7 @@ Console.WriteLine(
 
 ### 9. Not
 
-`Vector64<byte> Not(Vector64<byte> value)`
+__`Vector64<byte> Not(Vector64<byte> value)`__
 
 {0}
 
@@ -17324,7 +17324,7 @@ Console.WriteLine(
 
 ### 10. Or
 
-`Vector64<byte> Or(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> Or(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -17393,7 +17393,7 @@ Console.WriteLine(
 
 ### 11. OrNot
 
-`Vector64<byte> OrNot(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> OrNot(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -17462,7 +17462,7 @@ Console.WriteLine(
 
 ### 12. PolynomialMultiply
 
-`Vector64<byte> PolynomialMultiply(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> PolynomialMultiply(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -17515,7 +17515,7 @@ Console.WriteLine(
 
 ### 13. PolynomialMultiplyWideningLower
 
-`Vector128<ushort> PolynomialMultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`
+__`Vector128<ushort> PolynomialMultiplyWideningLower(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -17566,7 +17566,7 @@ Console.WriteLine(
 
 ### 14. PolynomialMultiplyWideningUpper
 
-`Vector128<ushort> PolynomialMultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`
+__`Vector128<ushort> PolynomialMultiplyWideningUpper(Vector128<byte> left, Vector128<byte> right)`__
 
 {0}
 
@@ -17617,7 +17617,7 @@ Console.WriteLine(
 
 ### 15. PopCount
 
-`Vector64<byte> PopCount(Vector64<byte> value)`
+__`Vector64<byte> PopCount(Vector64<byte> value)`__
 
 {0}
 
@@ -17669,7 +17669,7 @@ Console.WriteLine(
 
 ### 16. ReciprocalEstimate
 
-`Vector64<float> ReciprocalEstimate(Vector64<float> value)`
+__`Vector64<float> ReciprocalEstimate(Vector64<float> value)`__
 
 {0}
 
@@ -17724,7 +17724,7 @@ Console.WriteLine(
 
 ### 17. ReciprocalEstimateScalar
 
-`Vector64<double> ReciprocalEstimateScalar(Vector64<double> value)`
+__`Vector64<double> ReciprocalEstimateScalar(Vector64<double> value)`__
 
 {0}
 
@@ -17774,7 +17774,7 @@ Console.WriteLine(
 
 ### 18. ReciprocalExponentScalar
 
-`Vector64<double> ReciprocalExponentScalar(Vector64<double> value)`
+__`Vector64<double> ReciprocalExponentScalar(Vector64<double> value)`__
 
 {0}
 
@@ -17824,7 +17824,7 @@ Console.WriteLine(
 
 ### 19. ReciprocalSquareRootEstimate
 
-`Vector64<float> ReciprocalSquareRootEstimate(Vector64<float> value)`
+__`Vector64<float> ReciprocalSquareRootEstimate(Vector64<float> value)`__
 
 {0}
 
@@ -17879,7 +17879,7 @@ Console.WriteLine(
 
 ### 20. ReciprocalSquareRootEstimateScalar
 
-`Vector64<double> ReciprocalSquareRootEstimateScalar(Vector64<double> value)`
+__`Vector64<double> ReciprocalSquareRootEstimateScalar(Vector64<double> value)`__
 
 {0}
 
@@ -17929,7 +17929,7 @@ Console.WriteLine(
 
 ### 21. ReciprocalSquareRootStep
 
-`Vector64<float> ReciprocalSquareRootStep(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> ReciprocalSquareRootStep(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -17983,7 +17983,7 @@ Console.WriteLine(
 
 ### 22. ReciprocalSquareRootStepScalar
 
-`Vector64<double> ReciprocalSquareRootStepScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> ReciprocalSquareRootStepScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -18034,7 +18034,7 @@ Console.WriteLine(
 
 ### 23. ReciprocalStep
 
-`Vector64<float> ReciprocalStep(Vector64<float> left, Vector64<float> right)`
+__`Vector64<float> ReciprocalStep(Vector64<float> left, Vector64<float> right)`__
 
 {0}
 
@@ -18088,7 +18088,7 @@ Console.WriteLine(
 
 ### 24. ReciprocalStepScalar
 
-`Vector64<double> ReciprocalStepScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> ReciprocalStepScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -18139,7 +18139,7 @@ Console.WriteLine(
 
 ### 25. ReverseElement16
 
-`Vector64<int> ReverseElement16(Vector64<int> value)`
+__`Vector64<int> ReverseElement16(Vector64<int> value)`__
 
 {0}
 
@@ -18195,7 +18195,7 @@ Console.WriteLine(
 
 ### 26. ReverseElement32
 
-`Vector64<long> ReverseElement32(Vector64<long> value)`
+__`Vector64<long> ReverseElement32(Vector64<long> value)`__
 
 {0}
 
@@ -18247,7 +18247,7 @@ Console.WriteLine(
 
 ### 27. ReverseElement8
 
-`Vector64<short> ReverseElement8(Vector64<short> value)`
+__`Vector64<short> ReverseElement8(Vector64<short> value)`__
 
 {0}
 
@@ -18307,7 +18307,7 @@ Console.WriteLine(
 
 ### 28. ReverseElementBits
 
-`Vector64<byte> ReverseElementBits(Vector64<byte> value)`
+__`Vector64<byte> ReverseElementBits(Vector64<byte> value)`__
 
 {0}
 
@@ -18359,7 +18359,7 @@ Console.WriteLine(
 
 ### 29. RoundAwayFromZero
 
-`Vector64<float> RoundAwayFromZero(Vector64<float> value)`
+__`Vector64<float> RoundAwayFromZero(Vector64<float> value)`__
 
 {0}
 
@@ -18412,7 +18412,7 @@ Console.WriteLine(
 
 ### 30. RoundAwayFromZeroScalar
 
-`Vector64<double> RoundAwayFromZeroScalar(Vector64<double> value)`
+__`Vector64<double> RoundAwayFromZeroScalar(Vector64<double> value)`__
 
 {0}
 
@@ -18462,7 +18462,7 @@ Console.WriteLine(
 
 ### 31. RoundToNearest
 
-`Vector64<float> RoundToNearest(Vector64<float> value)`
+__`Vector64<float> RoundToNearest(Vector64<float> value)`__
 
 {0}
 
@@ -18515,7 +18515,7 @@ Console.WriteLine(
 
 ### 32. RoundToNearestScalar
 
-`Vector64<double> RoundToNearestScalar(Vector64<double> value)`
+__`Vector64<double> RoundToNearestScalar(Vector64<double> value)`__
 
 {0}
 
@@ -18565,7 +18565,7 @@ Console.WriteLine(
 
 ### 33. RoundToNegativeInfinity
 
-`Vector64<float> RoundToNegativeInfinity(Vector64<float> value)`
+__`Vector64<float> RoundToNegativeInfinity(Vector64<float> value)`__
 
 {0}
 
@@ -18618,7 +18618,7 @@ Console.WriteLine(
 
 ### 34. RoundToNegativeInfinityScalar
 
-`Vector64<double> RoundToNegativeInfinityScalar(Vector64<double> value)`
+__`Vector64<double> RoundToNegativeInfinityScalar(Vector64<double> value)`__
 
 {0}
 
@@ -18668,7 +18668,7 @@ Console.WriteLine(
 
 ### 35. RoundToPositiveInfinity
 
-`Vector64<float> RoundToPositiveInfinity(Vector64<float> value)`
+__`Vector64<float> RoundToPositiveInfinity(Vector64<float> value)`__
 
 {0}
 
@@ -18721,7 +18721,7 @@ Console.WriteLine(
 
 ### 36. RoundToPositiveInfinityScalar
 
-`Vector64<double> RoundToPositiveInfinityScalar(Vector64<double> value)`
+__`Vector64<double> RoundToPositiveInfinityScalar(Vector64<double> value)`__
 
 {0}
 
@@ -18771,7 +18771,7 @@ Console.WriteLine(
 
 ### 37. RoundToZero
 
-`Vector64<float> RoundToZero(Vector64<float> value)`
+__`Vector64<float> RoundToZero(Vector64<float> value)`__
 
 {0}
 
@@ -18824,7 +18824,7 @@ Console.WriteLine(
 
 ### 38. RoundToZeroScalar
 
-`Vector64<double> RoundToZeroScalar(Vector64<double> value)`
+__`Vector64<double> RoundToZeroScalar(Vector64<double> value)`__
 
 {0}
 
@@ -18874,7 +18874,7 @@ Console.WriteLine(
 
 ### 39. ShiftArithmetic
 
-`Vector64<short> ShiftArithmetic(Vector64<short> value, Vector64<short> count)`
+__`Vector64<short> ShiftArithmetic(Vector64<short> value, Vector64<short> count)`__
 
 {0}
 
@@ -18930,7 +18930,7 @@ Console.WriteLine(
 
 ### 40. ShiftArithmeticRounded
 
-`Vector64<short> ShiftArithmeticRounded(Vector64<short> value, Vector64<short> count)`
+__`Vector64<short> ShiftArithmeticRounded(Vector64<short> value, Vector64<short> count)`__
 
 {0}
 
@@ -18986,7 +18986,7 @@ Console.WriteLine(
 
 ### 41. ShiftArithmeticRoundedSaturate
 
-`Vector64<short> ShiftArithmeticRoundedSaturate(Vector64<short> value, Vector64<short> count)`
+__`Vector64<short> ShiftArithmeticRoundedSaturate(Vector64<short> value, Vector64<short> count)`__
 
 {0}
 
@@ -19042,7 +19042,7 @@ Console.WriteLine(
 
 ### 42. ShiftArithmeticRoundedSaturateScalar
 
-`Vector64<long> ShiftArithmeticRoundedSaturateScalar(Vector64<long> value, Vector64<long> count)`
+__`Vector64<long> ShiftArithmeticRoundedSaturateScalar(Vector64<long> value, Vector64<long> count)`__
 
 {0}
 
@@ -19095,7 +19095,7 @@ Console.WriteLine(
 
 ### 43. ShiftArithmeticRoundedScalar
 
-`Vector64<long> ShiftArithmeticRoundedScalar(Vector64<long> value, Vector64<long> count)`
+__`Vector64<long> ShiftArithmeticRoundedScalar(Vector64<long> value, Vector64<long> count)`__
 
 {0}
 
@@ -19140,7 +19140,7 @@ Console.WriteLine(
 
 ### 44. ShiftArithmeticSaturate
 
-`Vector64<short> ShiftArithmeticSaturate(Vector64<short> value, Vector64<short> count)`
+__`Vector64<short> ShiftArithmeticSaturate(Vector64<short> value, Vector64<short> count)`__
 
 {0}
 
@@ -19196,7 +19196,7 @@ Console.WriteLine(
 
 ### 45. ShiftArithmeticSaturateScalar
 
-`Vector64<long> ShiftArithmeticSaturateScalar(Vector64<long> value, Vector64<long> count)`
+__`Vector64<long> ShiftArithmeticSaturateScalar(Vector64<long> value, Vector64<long> count)`__
 
 {0}
 
@@ -19294,7 +19294,7 @@ Console.WriteLine(
 
 ### 1. ShiftArithmeticScalar
 
-`Vector64<long> ShiftArithmeticScalar(Vector64<long> value, Vector64<long> count)`
+__`Vector64<long> ShiftArithmeticScalar(Vector64<long> value, Vector64<long> count)`__
 
 {0}
 
@@ -19339,7 +19339,7 @@ Console.WriteLine(
 
 ### 2. ShiftLeftAndInsert
 
-`Vector64<byte> ShiftLeftAndInsert(Vector64<byte> left, Vector64<byte> right, byte shift)`
+__`Vector64<byte> ShiftLeftAndInsert(Vector64<byte> left, Vector64<byte> right, byte shift)`__
 
 {0}
 
@@ -19403,7 +19403,7 @@ Console.WriteLine(
 
 ### 3. ShiftLeftAndInsertScalar
 
-`Vector64<long> ShiftLeftAndInsertScalar(Vector64<long> left, Vector64<long> right, byte shift)`
+__`Vector64<long> ShiftLeftAndInsertScalar(Vector64<long> left, Vector64<long> right, byte shift)`__
 
 {0}
 
@@ -19455,7 +19455,7 @@ Console.WriteLine(
 
 ### 4. ShiftLeftLogical
 
-`Vector64<byte> ShiftLeftLogical(Vector64<byte> value, byte count)`
+__`Vector64<byte> ShiftLeftLogical(Vector64<byte> value, byte count)`__
 
 {0}
 
@@ -19517,7 +19517,7 @@ Console.WriteLine(
 
 ### 5. ShiftLeftLogicalSaturate
 
-`Vector64<byte> ShiftLeftLogicalSaturate(Vector64<byte> value, byte count)`
+__`Vector64<byte> ShiftLeftLogicalSaturate(Vector64<byte> value, byte count)`__
 
 {0}
 
@@ -19580,7 +19580,7 @@ Console.WriteLine(
 
 ### 6. ShiftLeftLogicalSaturateScalar
 
-`Vector64<long> ShiftLeftLogicalSaturateScalar(Vector64<long> value, byte count)`
+__`Vector64<long> ShiftLeftLogicalSaturateScalar(Vector64<long> value, byte count)`__
 
 {0}
 
@@ -19639,7 +19639,7 @@ Console.WriteLine(
 
 ### 7. ShiftLeftLogicalSaturateUnsigned
 
-`Vector64<ushort> ShiftLeftLogicalSaturateUnsigned(Vector64<short> value, byte count)`
+__`Vector64<ushort> ShiftLeftLogicalSaturateUnsigned(Vector64<short> value, byte count)`__
 
 {0}
 
@@ -19695,7 +19695,7 @@ Console.WriteLine(
 
 ### 8. ShiftLeftLogicalSaturateUnsignedScalar
 
-`Vector64<ulong> ShiftLeftLogicalSaturateUnsignedScalar(Vector64<long> value, byte count)`
+__`Vector64<ulong> ShiftLeftLogicalSaturateUnsignedScalar(Vector64<long> value, byte count)`__
 
 {0}
 
@@ -19748,7 +19748,7 @@ Console.WriteLine(
 
 ### 9. ShiftLeftLogicalScalar
 
-`Vector64<long> ShiftLeftLogicalScalar(Vector64<long> value, byte count)`
+__`Vector64<long> ShiftLeftLogicalScalar(Vector64<long> value, byte count)`__
 
 {0}
 
@@ -19799,7 +19799,7 @@ Console.WriteLine(
 
 ### 10. ShiftLeftLogicalWideningLower
 
-`Vector128<ushort> ShiftLeftLogicalWideningLower(Vector64<byte> value, byte count)`
+__`Vector128<ushort> ShiftLeftLogicalWideningLower(Vector64<byte> value, byte count)`__
 
 {0}
 
@@ -19854,7 +19854,7 @@ Console.WriteLine(
 
 ### 11. ShiftLeftLogicalWideningUpper
 
-`Vector128<ushort> ShiftLeftLogicalWideningUpper(Vector128<byte> value, byte count)`
+__`Vector128<ushort> ShiftLeftLogicalWideningUpper(Vector128<byte> value, byte count)`__
 
 {0}
 
@@ -19909,7 +19909,7 @@ Console.WriteLine(
 
 ### 12. ShiftLogical
 
-`Vector64<byte> ShiftLogical(Vector64<byte> value, Vector64<sbyte> count)`
+__`Vector64<byte> ShiftLogical(Vector64<byte> value, Vector64<sbyte> count)`__
 
 {0}
 
@@ -19972,7 +19972,7 @@ Console.WriteLine(
 
 ### 13. ShiftLogicalRounded
 
-`Vector64<byte> ShiftLogicalRounded(Vector64<byte> value, Vector64<sbyte> count)`
+__`Vector64<byte> ShiftLogicalRounded(Vector64<byte> value, Vector64<sbyte> count)`__
 
 {0}
 
@@ -20035,7 +20035,7 @@ Console.WriteLine(
 
 ### 14. ShiftLogicalRoundedSaturate
 
-`Vector64<byte> ShiftLogicalRoundedSaturate(Vector64<byte> value, Vector64<sbyte> count)`
+__`Vector64<byte> ShiftLogicalRoundedSaturate(Vector64<byte> value, Vector64<sbyte> count)`__
 
 {0}
 
@@ -20098,7 +20098,7 @@ Console.WriteLine(
 
 ### 15. ShiftLogicalRoundedSaturateScalar
 
-`Vector64<long> ShiftLogicalRoundedSaturateScalar(Vector64<long> value, Vector64<long> count)`
+__`Vector64<long> ShiftLogicalRoundedSaturateScalar(Vector64<long> value, Vector64<long> count)`__
 
 {0}
 
@@ -20157,7 +20157,7 @@ Console.WriteLine(
 
 ### 16. ShiftLogicalRoundedScalar
 
-`Vector64<long> ShiftLogicalRoundedScalar(Vector64<long> value, Vector64<long> count)`
+__`Vector64<long> ShiftLogicalRoundedScalar(Vector64<long> value, Vector64<long> count)`__
 
 {0}
 
@@ -20208,7 +20208,7 @@ Console.WriteLine(
 
 ### 17. ShiftLogicalSaturate
 
-`Vector64<byte> ShiftLogicalSaturate(Vector64<byte> value, Vector64<sbyte> count)`
+__`Vector64<byte> ShiftLogicalSaturate(Vector64<byte> value, Vector64<sbyte> count)`__
 
 {0}
 
@@ -20271,7 +20271,7 @@ Console.WriteLine(
 
 ### 18. ShiftLogicalSaturateScalar
 
-`Vector64<long> ShiftLogicalSaturateScalar(Vector64<long> value, Vector64<long> count)`
+__`Vector64<long> ShiftLogicalSaturateScalar(Vector64<long> value, Vector64<long> count)`__
 
 {0}
 
@@ -20330,7 +20330,7 @@ Console.WriteLine(
 
 ### 19. ShiftLogicalScalar
 
-`Vector64<long> ShiftLogicalScalar(Vector64<long> value, Vector64<long> count)`
+__`Vector64<long> ShiftLogicalScalar(Vector64<long> value, Vector64<long> count)`__
 
 {0}
 
@@ -20381,7 +20381,7 @@ Console.WriteLine(
 
 ### 20. ShiftRightAndInsert
 
-`Vector64<byte> ShiftRightAndInsert(Vector64<byte> left, Vector64<byte> right, byte shift)`
+__`Vector64<byte> ShiftRightAndInsert(Vector64<byte> left, Vector64<byte> right, byte shift)`__
 
 {0}
 
@@ -20445,7 +20445,7 @@ Console.WriteLine(
 
 ### 21. ShiftRightAndInsertScalar
 
-`Vector64<long> ShiftRightAndInsertScalar(Vector64<long> left, Vector64<long> right, byte shift)`
+__`Vector64<long> ShiftRightAndInsertScalar(Vector64<long> left, Vector64<long> right, byte shift)`__
 
 {0}
 
@@ -20497,7 +20497,7 @@ Console.WriteLine(
 
 ### 22. ShiftRightArithmetic
 
-`Vector64<short> ShiftRightArithmetic(Vector64<short> value, byte count)`
+__`Vector64<short> ShiftRightArithmetic(Vector64<short> value, byte count)`__
 
 {0}
 
@@ -20553,7 +20553,7 @@ Console.WriteLine(
 
 ### 23. ShiftRightArithmeticAdd
 
-`Vector64<short> ShiftRightArithmeticAdd(Vector64<short> addend, Vector64<short> value, byte count)`
+__`Vector64<short> ShiftRightArithmeticAdd(Vector64<short> addend, Vector64<short> value, byte count)`__
 
 {0}
 
@@ -20610,7 +20610,7 @@ Console.WriteLine(
 
 ### 24. ShiftRightArithmeticAddScalar
 
-`Vector64<long> ShiftRightArithmeticAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
+__`Vector64<long> ShiftRightArithmeticAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`__
 
 {0}
 
@@ -20656,7 +20656,7 @@ Console.WriteLine(
 
 ### 25. ShiftRightArithmeticNarrowingSaturateLower
 
-`Vector64<short> ShiftRightArithmeticNarrowingSaturateLower(Vector128<int> value, byte count)`
+__`Vector64<short> ShiftRightArithmeticNarrowingSaturateLower(Vector128<int> value, byte count)`__
 
 {0}
 
@@ -20708,7 +20708,7 @@ Console.WriteLine(
 
 ### 26. ShiftRightArithmeticNarrowingSaturateScalar
 
-`Vector64<short> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<int> value, byte count)`
+__`Vector64<short> ShiftRightArithmeticNarrowingSaturateScalar(Vector64<int> value, byte count)`__
 
 {0}
 
@@ -20760,7 +20760,7 @@ Console.WriteLine(
 
 ### 27. ShiftRightArithmeticNarrowingSaturateUnsignedLower
 
-`Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedLower(Vector128<short> value, byte count)`
+__`Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedLower(Vector128<short> value, byte count)`__
 
 {0}
 
@@ -20812,7 +20812,7 @@ Console.WriteLine(
 
 ### 28. ShiftRightArithmeticNarrowingSaturateUnsignedScalar
 
-`Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
+__`Vector64<byte> ShiftRightArithmeticNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`__
 
 {0}
 
@@ -20864,7 +20864,7 @@ Console.WriteLine(
 
 ### 29. ShiftRightArithmeticNarrowingSaturateUnsignedUpper
 
-`Vector128<byte> ShiftRightArithmeticNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`
+__`Vector128<byte> ShiftRightArithmeticNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`__
 
 {0}
 
@@ -20917,7 +20917,7 @@ Console.WriteLine(
 
 ### 30. ShiftRightArithmeticNarrowingSaturateUpper
 
-`Vector128<short> ShiftRightArithmeticNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`
+__`Vector128<short> ShiftRightArithmeticNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`__
 
 {0}
 
@@ -20970,7 +20970,7 @@ Console.WriteLine(
 
 ### 31. ShiftRightArithmeticRounded
 
-`Vector64<short> ShiftRightArithmeticRounded(Vector64<short> value, byte count)`
+__`Vector64<short> ShiftRightArithmeticRounded(Vector64<short> value, byte count)`__
 
 {0}
 
@@ -21026,7 +21026,7 @@ Console.WriteLine(
 
 ### 32. ShiftRightArithmeticRoundedAdd
 
-`Vector64<short> ShiftRightArithmeticRoundedAdd(Vector64<short> addend, Vector64<short> value, byte count)`
+__`Vector64<short> ShiftRightArithmeticRoundedAdd(Vector64<short> addend, Vector64<short> value, byte count)`__
 
 {0}
 
@@ -21083,7 +21083,7 @@ Console.WriteLine(
 
 ### 33. ShiftRightArithmeticRoundedAddScalar
 
-`Vector64<long> ShiftRightArithmeticRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
+__`Vector64<long> ShiftRightArithmeticRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`__
 
 {0}
 
@@ -21129,7 +21129,7 @@ Console.WriteLine(
 
 ### 34. ShiftRightArithmeticRoundedNarrowingSaturateLower
 
-`Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateLower(Vector128<int> value, byte count)`
+__`Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateLower(Vector128<int> value, byte count)`__
 
 {0}
 
@@ -21181,7 +21181,7 @@ Console.WriteLine(
 
 ### 35. ShiftRightArithmeticRoundedNarrowingSaturateScalar
 
-`Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<int> value, byte count)`
+__`Vector64<short> ShiftRightArithmeticRoundedNarrowingSaturateScalar(Vector64<int> value, byte count)`__
 
 {0}
 
@@ -21233,7 +21233,7 @@ Console.WriteLine(
 
 ### 36. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower
 
-`Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(Vector128<short> value, byte count)`
+__`Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower(Vector128<short> value, byte count)`__
 
 {0}
 
@@ -21285,7 +21285,7 @@ Console.WriteLine(
 
 ### 37. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar
 
-`Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`
+__`Vector64<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar(Vector64<short> value, byte count)`__
 
 {0}
 
@@ -21337,7 +21337,7 @@ Console.WriteLine(
 
 ### 38. ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper
 
-`Vector128<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`
+__`Vector128<byte> ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper(Vector64<byte> lower, Vector128<short> value, byte count)`__
 
 {0}
 
@@ -21390,7 +21390,7 @@ Console.WriteLine(
 
 ### 39. ShiftRightArithmeticRoundedNarrowingSaturateUpper
 
-`Vector128<short> ShiftRightArithmeticRoundedNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`
+__`Vector128<short> ShiftRightArithmeticRoundedNarrowingSaturateUpper(Vector64<short> lower, Vector128<int> value, byte count)`__
 
 {0}
 
@@ -21443,7 +21443,7 @@ Console.WriteLine(
 
 ### 40. ShiftRightArithmeticRoundedScalar
 
-`Vector64<long> ShiftRightArithmeticRoundedScalar(Vector64<long> value, byte count)`
+__`Vector64<long> ShiftRightArithmeticRoundedScalar(Vector64<long> value, byte count)`__
 
 {0}
 
@@ -21488,7 +21488,7 @@ Console.WriteLine(
 
 ### 41. ShiftRightArithmeticScalar
 
-`Vector64<long> ShiftRightArithmeticScalar(Vector64<long> value, byte count)`
+__`Vector64<long> ShiftRightArithmeticScalar(Vector64<long> value, byte count)`__
 
 {0}
 
@@ -21533,7 +21533,7 @@ Console.WriteLine(
 
 ### 42. ShiftRightLogical
 
-`Vector64<byte> ShiftRightLogical(Vector64<byte> value, byte count)`
+__`Vector64<byte> ShiftRightLogical(Vector64<byte> value, byte count)`__
 
 {0}
 
@@ -21596,7 +21596,7 @@ Console.WriteLine(
 
 ### 43. ShiftRightLogicalAdd
 
-`Vector64<byte> ShiftRightLogicalAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`
+__`Vector64<byte> ShiftRightLogicalAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`__
 
 {0}
 
@@ -21660,7 +21660,7 @@ Console.WriteLine(
 
 ### 44. ShiftRightLogicalAddScalar
 
-`Vector64<long> ShiftRightLogicalAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
+__`Vector64<long> ShiftRightLogicalAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`__
 
 {0}
 
@@ -21712,7 +21712,7 @@ Console.WriteLine(
 
 ### 45. ShiftRightLogicalNarrowingLower
 
-`Vector64<byte> ShiftRightLogicalNarrowingLower(Vector128<ushort> value, byte count)`
+__`Vector64<byte> ShiftRightLogicalNarrowingLower(Vector128<ushort> value, byte count)`__
 
 {0}
 
@@ -21812,7 +21812,7 @@ Console.WriteLine(
 
 ### 1. ShiftRightLogicalNarrowingSaturateLower
 
-`Vector64<byte> ShiftRightLogicalNarrowingSaturateLower(Vector128<ushort> value, byte count)`
+__`Vector64<byte> ShiftRightLogicalNarrowingSaturateLower(Vector128<ushort> value, byte count)`__
 
 {0}
 
@@ -21867,7 +21867,7 @@ Console.WriteLine(
 
 ### 2. ShiftRightLogicalNarrowingSaturateScalar
 
-`Vector64<byte> ShiftRightLogicalNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
+__`Vector64<byte> ShiftRightLogicalNarrowingSaturateScalar(Vector64<ushort> value, byte count)`__
 
 {0}
 
@@ -21922,7 +21922,7 @@ Console.WriteLine(
 
 ### 3. ShiftRightLogicalNarrowingSaturateUpper
 
-`Vector128<byte> ShiftRightLogicalNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
+__`Vector128<byte> ShiftRightLogicalNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`__
 
 {0}
 
@@ -21978,7 +21978,7 @@ Console.WriteLine(
 
 ### 4. ShiftRightLogicalNarrowingUpper
 
-`Vector128<byte> ShiftRightLogicalNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
+__`Vector128<byte> ShiftRightLogicalNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`__
 
 {0}
 
@@ -22034,7 +22034,7 @@ Console.WriteLine(
 
 ### 5. ShiftRightLogicalRounded
 
-`Vector64<byte> ShiftRightLogicalRounded(Vector64<byte> value, byte count)`
+__`Vector64<byte> ShiftRightLogicalRounded(Vector64<byte> value, byte count)`__
 
 {0}
 
@@ -22097,7 +22097,7 @@ Console.WriteLine(
 
 ### 6. ShiftRightLogicalRoundedAdd
 
-`Vector64<byte> ShiftRightLogicalRoundedAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`
+__`Vector64<byte> ShiftRightLogicalRoundedAdd(Vector64<byte> addend, Vector64<byte> value, byte count)`__
 
 {0}
 
@@ -22161,7 +22161,7 @@ Console.WriteLine(
 
 ### 7. ShiftRightLogicalRoundedAddScalar
 
-`Vector64<long> ShiftRightLogicalRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`
+__`Vector64<long> ShiftRightLogicalRoundedAddScalar(Vector64<long> addend, Vector64<long> value, byte count)`__
 
 {0}
 
@@ -22213,7 +22213,7 @@ Console.WriteLine(
 
 ### 8. ShiftRightLogicalRoundedNarrowingLower
 
-`Vector64<byte> ShiftRightLogicalRoundedNarrowingLower(Vector128<ushort> value, byte count)`
+__`Vector64<byte> ShiftRightLogicalRoundedNarrowingLower(Vector128<ushort> value, byte count)`__
 
 {0}
 
@@ -22268,7 +22268,7 @@ Console.WriteLine(
 
 ### 9. ShiftRightLogicalRoundedNarrowingSaturateLower
 
-`Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateLower(Vector128<ushort> value, byte count)`
+__`Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateLower(Vector128<ushort> value, byte count)`__
 
 {0}
 
@@ -22323,7 +22323,7 @@ Console.WriteLine(
 
 ### 10. ShiftRightLogicalRoundedNarrowingSaturateScalar
 
-`Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<ushort> value, byte count)`
+__`Vector64<byte> ShiftRightLogicalRoundedNarrowingSaturateScalar(Vector64<ushort> value, byte count)`__
 
 {0}
 
@@ -22378,7 +22378,7 @@ Console.WriteLine(
 
 ### 11. ShiftRightLogicalRoundedNarrowingSaturateUpper
 
-`Vector128<byte> ShiftRightLogicalRoundedNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
+__`Vector128<byte> ShiftRightLogicalRoundedNarrowingSaturateUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`__
 
 {0}
 
@@ -22434,7 +22434,7 @@ Console.WriteLine(
 
 ### 12. ShiftRightLogicalRoundedNarrowingUpper
 
-`Vector128<byte> ShiftRightLogicalRoundedNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`
+__`Vector128<byte> ShiftRightLogicalRoundedNarrowingUpper(Vector64<byte> lower, Vector128<ushort> value, byte count)`__
 
 {0}
 
@@ -22490,7 +22490,7 @@ Console.WriteLine(
 
 ### 13. ShiftRightLogicalRoundedScalar
 
-`Vector64<long> ShiftRightLogicalRoundedScalar(Vector64<long> value, byte count)`
+__`Vector64<long> ShiftRightLogicalRoundedScalar(Vector64<long> value, byte count)`__
 
 {0}
 
@@ -22541,7 +22541,7 @@ Console.WriteLine(
 
 ### 14. ShiftRightLogicalScalar
 
-`Vector64<long> ShiftRightLogicalScalar(Vector64<long> value, byte count)`
+__`Vector64<long> ShiftRightLogicalScalar(Vector64<long> value, byte count)`__
 
 {0}
 
@@ -22592,7 +22592,7 @@ Console.WriteLine(
 
 ### 15. SignExtendWideningLower
 
-`Vector128<int> SignExtendWideningLower(Vector64<short> value)`
+__`Vector128<int> SignExtendWideningLower(Vector64<short> value)`__
 
 {0}
 
@@ -22643,7 +22643,7 @@ Console.WriteLine(
 
 ### 16. SignExtendWideningUpper
 
-`Vector128<int> SignExtendWideningUpper(Vector128<short> value)`
+__`Vector128<int> SignExtendWideningUpper(Vector128<short> value)`__
 
 {0}
 
@@ -22694,7 +22694,7 @@ Console.WriteLine(
 
 ### 17. Sqrt
 
-`Vector64<float> Sqrt(Vector64<float> value)`
+__`Vector64<float> Sqrt(Vector64<float> value)`__
 
 {0}
 
@@ -22745,7 +22745,7 @@ Console.WriteLine(
 
 ### 18. SqrtScalar
 
-`Vector64<double> SqrtScalar(Vector64<double> value)`
+__`Vector64<double> SqrtScalar(Vector64<double> value)`__
 
 {0}
 
@@ -22797,7 +22797,7 @@ Console.WriteLine(
 
 ### 19. Store
 
-`void Store(byte* address, Vector64<byte> source)`
+__`void Store(byte* address, Vector64<byte> source)`__
 
 {0}
 
@@ -22868,7 +22868,7 @@ Console.WriteLine(
 
 ### 20. StorePair
 
-`void StorePair(byte* address, Vector64<byte> value1, Vector64<byte> value2)`
+__`void StorePair(byte* address, Vector64<byte> value1, Vector64<byte> value2)`__
 
 {0}
 
@@ -22940,7 +22940,7 @@ Console.WriteLine(
 
 ### 21. StorePairNonTemporal
 
-`void StorePairNonTemporal(byte* address, Vector64<byte> value1, Vector64<byte> value2)`
+__`void StorePairNonTemporal(byte* address, Vector64<byte> value1, Vector64<byte> value2)`__
 
 {0}
 
@@ -23012,7 +23012,7 @@ Console.WriteLine(
 
 ### 22. StorePairScalar
 
-`void StorePairScalar(int* address, Vector64<int> value1, Vector64<int> value2)`
+__`void StorePairScalar(int* address, Vector64<int> value1, Vector64<int> value2)`__
 
 {0}
 
@@ -23067,7 +23067,7 @@ Console.WriteLine(
 
 ### 23. StorePairScalarNonTemporal
 
-`void StorePairScalarNonTemporal(int* address, Vector64<int> value1, Vector64<int> value2)`
+__`void StorePairScalarNonTemporal(int* address, Vector64<int> value1, Vector64<int> value2)`__
 
 {0}
 
@@ -23122,7 +23122,7 @@ Console.WriteLine(
 
 ### 24. StoreSelectedScalar
 
-`void StoreSelectedScalar(byte* address, Vector64<byte> value, byte index)`
+__`void StoreSelectedScalar(byte* address, Vector64<byte> value, byte index)`__
 
 {0}
 
@@ -23189,7 +23189,7 @@ Console.WriteLine(
 
 ### 25. Subtract
 
-`Vector64<byte> Subtract(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> Subtract(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -23257,7 +23257,7 @@ Console.WriteLine(
 
 ### 26. SubtractHighNarrowingLower
 
-`Vector64<byte> SubtractHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
+__`Vector64<byte> SubtractHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`__
 
 {0}
 
@@ -23312,7 +23312,7 @@ Console.WriteLine(
 
 ### 27. SubtractHighNarrowingUpper
 
-`Vector128<byte> SubtractHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
+__`Vector128<byte> SubtractHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`__
 
 {0}
 
@@ -23368,7 +23368,7 @@ Console.WriteLine(
 
 ### 28. SubtractRoundedHighNarrowingLower
 
-`Vector64<byte> SubtractRoundedHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`
+__`Vector64<byte> SubtractRoundedHighNarrowingLower(Vector128<ushort> left, Vector128<ushort> right)`__
 
 {0}
 
@@ -23423,7 +23423,7 @@ Console.WriteLine(
 
 ### 29. SubtractRoundedHighNarrowingUpper
 
-`Vector128<byte> SubtractRoundedHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`
+__`Vector128<byte> SubtractRoundedHighNarrowingUpper(Vector64<byte> lower, Vector128<ushort> left, Vector128<ushort> right)`__
 
 {0}
 
@@ -23479,7 +23479,7 @@ Console.WriteLine(
 
 ### 30. SubtractSaturate
 
-`Vector64<byte> SubtractSaturate(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> SubtractSaturate(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -23542,7 +23542,7 @@ Console.WriteLine(
 
 ### 31. SubtractSaturateScalar
 
-`Vector64<long> SubtractSaturateScalar(Vector64<long> left, Vector64<long> right)`
+__`Vector64<long> SubtractSaturateScalar(Vector64<long> left, Vector64<long> right)`__
 
 {0}
 
@@ -23601,7 +23601,7 @@ Console.WriteLine(
 
 ### 32. SubtractScalar
 
-`Vector64<double> SubtractScalar(Vector64<double> left, Vector64<double> right)`
+__`Vector64<double> SubtractScalar(Vector64<double> left, Vector64<double> right)`__
 
 {0}
 
@@ -23654,7 +23654,7 @@ Console.WriteLine(
 
 ### 33. SubtractWideningLower
 
-`Vector128<ushort> SubtractWideningLower(Vector64<byte> left, Vector64<byte> right)`
+__`Vector128<ushort> SubtractWideningLower(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -23715,7 +23715,7 @@ Console.WriteLine(
 
 ### 34. SubtractWideningUpper
 
-`Vector128<ushort> SubtractWideningUpper(Vector128<byte> left, Vector128<byte> right)`
+__`Vector128<ushort> SubtractWideningUpper(Vector128<byte> left, Vector128<byte> right)`__
 
 {0}
 
@@ -23776,7 +23776,7 @@ Console.WriteLine(
 
 ### 35. TransposeEven
 
-`Vector64<byte> TransposeEven(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> TransposeEven(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -23842,7 +23842,7 @@ Console.WriteLine(
 
 ### 36. TransposeOdd
 
-`Vector64<byte> TransposeOdd(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> TransposeOdd(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -23908,7 +23908,7 @@ Console.WriteLine(
 
 ### 37. UnzipEven
 
-`Vector64<byte> UnzipEven(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> UnzipEven(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -23974,7 +23974,7 @@ Console.WriteLine(
 
 ### 38. UnzipOdd
 
-`Vector64<byte> UnzipOdd(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> UnzipOdd(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -24040,7 +24040,7 @@ Console.WriteLine(
 
 ### 39. VectorTableLookup
 
-`Vector64<byte> VectorTableLookup(Vector128<byte> table, Vector64<byte> byteIndexes)`
+__`Vector64<byte> VectorTableLookup(Vector128<byte> table, Vector64<byte> byteIndexes)`__
 
 {0}
 
@@ -24095,7 +24095,7 @@ Console.WriteLine(
 
 ### 40. VectorTableLookupExtension
 
-`Vector64<byte> VectorTableLookupExtension(Vector64<byte> defaultValues, Vector128<byte> table, Vector64<byte> byteIndexes)`
+__`Vector64<byte> VectorTableLookupExtension(Vector64<byte> defaultValues, Vector128<byte> table, Vector64<byte> byteIndexes)`__
 
 {0}
 
@@ -24151,7 +24151,7 @@ Console.WriteLine(
 
 ### 41. Xor
 
-`Vector64<byte> Xor(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> Xor(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -24220,7 +24220,7 @@ Console.WriteLine(
 
 ### 42. ZeroExtendWideningLower
 
-`Vector128<ushort> ZeroExtendWideningLower(Vector64<byte> value)`
+__`Vector128<ushort> ZeroExtendWideningLower(Vector64<byte> value)`__
 
 {0}
 
@@ -24274,7 +24274,7 @@ Console.WriteLine(
 
 ### 43. ZeroExtendWideningUpper
 
-`Vector128<ushort> ZeroExtendWideningUpper(Vector128<byte> value)`
+__`Vector128<ushort> ZeroExtendWideningUpper(Vector128<byte> value)`__
 
 {0}
 
@@ -24328,7 +24328,7 @@ Console.WriteLine(
 
 ### 44. ZipHigh
 
-`Vector64<byte> ZipHigh(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> ZipHigh(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
@@ -24394,7 +24394,7 @@ Console.WriteLine(
 
 ### 45. ZipLow
 
-`Vector64<byte> ZipLow(Vector64<byte> left, Vector64<byte> right)`
+__`Vector64<byte> ZipLow(Vector64<byte> left, Vector64<byte> right)`__
 
 {0}
 
