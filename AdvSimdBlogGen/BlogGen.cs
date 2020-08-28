@@ -22,7 +22,7 @@ namespace AdvSimdBlogGen
         private static StringBuilder jitAsmBuilder = new StringBuilder();
         private static HashSet<string> uniqueArgs = new HashSet<string>();
         private static List<string> tocBuilder = new List<string>();
-        private static Dictionary<string, string> globalTocBuilder = new Dictionary<string, string>();
+        private static Dictionary<string, List<string>> globalTocBuilder = new Dictionary<string, List<string>>();
         private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>, string>>> advSimdMethods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>, string>>>();
         private static Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>, string>>> arm64Methods = new Dictionary<string, List<Tuple<string, SeparatedSyntaxList<ParameterSyntax>, string>>>();
         private static bool shouldGenerateCsv = false;
@@ -135,9 +135,8 @@ namespace AdvSimdBlogGen
                 GenerateCodeForMethod(method.Item1, method.Item2);
             }
 
-            string toc = string.Join(", ", tocBuilder);
             // update previous value
-            globalTocBuilder.Add($"PART-{sectionCount - 1}-TOC", toc);
+            globalTocBuilder.Add($"PART-{sectionCount - 1}-TOC", tocBuilder);
         }
 
         /// <summary>
@@ -171,7 +170,8 @@ namespace AdvSimdBlogGen
             string classContents = string.Format(classTemplate, methodDefBuilder.ToString(), methodCallBuilder.ToString());
             foreach (var tocContents in globalTocBuilder)
             {
-                classContents = classContents.Replace(tocContents.Key, tocContents.Value);
+                //TODO: Have a flag to control this
+                classContents = classContents.Replace(tocContents.Key, string.Join(", ", tocContents.Value));
             }
             File.WriteAllText(fileName, classContents.ToString());
         }
@@ -182,14 +182,13 @@ namespace AdvSimdBlogGen
             {
                 count = 1;
                 string placeHolder = $"PART-{sectionCount}-TOC";
-                string toc = string.Join(", ", tocBuilder);
                 if (sectionCount > 1)
                 {
                     // update previous value. Skip adding for 1st because no toc by that time.
-                    globalTocBuilder.Add($"PART-{sectionCount - 1}-TOC", toc);
+                    globalTocBuilder.Add($"PART-{sectionCount - 1}-TOC", tocBuilder);
                 }
                 methodCallBuilder.AppendLine(string.Format(header, sectionCount++, placeHolder));
-                tocBuilder.Clear();
+                tocBuilder = new List<string>();
             }
             var details = isForAdvSimd ? advSimdMethods[methodName].First() : arm64Methods[methodName].First();
             string signature = details.Item1;
