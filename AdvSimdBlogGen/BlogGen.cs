@@ -29,6 +29,15 @@ namespace AdvSimdBlogGen
         private static bool shouldReadFromCsv = true;
         private static int apisPerBlog = 45;
 
+        public enum TocType
+        {
+            CommaSeparated,
+            Tabular,
+            None
+        };
+        private static TocType blogTocType = TocType.Tabular;
+        private static int columnCountForTabularToc = 2;
+
         public static void Main(string[] args)
         {
             string dirName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -170,8 +179,44 @@ namespace AdvSimdBlogGen
             string classContents = string.Format(classTemplate, methodDefBuilder.ToString(), methodCallBuilder.ToString());
             foreach (var tocContents in globalTocBuilder)
             {
-                //TODO: Have a flag to control this
-                classContents = classContents.Replace(tocContents.Key, string.Join(", ", tocContents.Value));
+                string perBlogToc = string.Empty;
+                List<string> allApiNames = tocContents.Value;
+                if (blogTocType == TocType.Tabular)
+                {
+                    var columns = new List<List<string>>();
+                    StringBuilder tabularTocBuilder = new StringBuilder();
+                    // Fill up the list with blank entries to make column entries equal
+                    while (allApiNames.Count % columnCountForTabularToc != 0)
+                    {
+                        allApiNames.Add(string.Empty);
+                    }
+                    int rowCount = allApiNames.Count / columnCountForTabularToc;
+
+
+                    tabularTocBuilder.AppendLine("| " + string.Join(" | ", Enumerable.Range(1, columnCountForTabularToc).Select(num => $"---")) + " |");
+                    for (int i = 0; i < allApiNames.Count; i += rowCount)
+                    {
+                        columns.Add(allApiNames.GetRange(i, Math.Min(rowCount, allApiNames.Count - i)));
+                    }
+
+                    List<string> perRowEntry;
+                    for (int row = 0; row < rowCount; row++)
+                    {
+                        perRowEntry = new List<string>();
+                        for (int col = 0; col < columns.Count; col++)
+                        {
+                            perRowEntry.Add(columns[col][row]);
+                        }
+                        tabularTocBuilder.AppendLine("| " + string.Join(" | ", perRowEntry) + " |");
+                    }
+                    perBlogToc = tabularTocBuilder.ToString();
+                }
+                else if (blogTocType == TocType.CommaSeparated)
+                {
+                    perBlogToc = string.Join(", ", allApiNames);
+                }
+
+                classContents = classContents.Replace(tocContents.Key, perBlogToc);
             }
             File.WriteAllText(fileName, classContents.ToString());
         }

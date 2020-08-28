@@ -29,7 +29,7 @@ Most of the description of these APIs is adapted and referenced from [Arm Archit
 
 {1}
 
-
+<p/>
 "");";
 
         private static string classTemplate =

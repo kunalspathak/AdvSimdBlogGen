@@ -4348,9 +4348,33 @@ Most of the description of these APIs is adapted and referenced from [Arm Archit
 
 ### APIs covered
 
-[Abs](#1-abs), [AbsoluteCompareGreaterThan](#2-absolutecomparegreaterthan), [AbsoluteCompareGreaterThanOrEqual](#3-absolutecomparegreaterthanorequal), [AbsoluteCompareGreaterThanOrEqualScalar](#4-absolutecomparegreaterthanorequalscalar), [AbsoluteCompareGreaterThanScalar](#5-absolutecomparegreaterthanscalar), [AbsoluteCompareLessThan](#6-absolutecomparelessthan), [AbsoluteCompareLessThanOrEqual](#7-absolutecomparelessthanorequal), [AbsoluteCompareLessThanOrEqualScalar](#8-absolutecomparelessthanorequalscalar), [AbsoluteCompareLessThanScalar](#9-absolutecomparelessthanscalar), [AbsoluteDifference](#10-absolutedifference), [AbsoluteDifferenceAdd](#11-absolutedifferenceadd), [AbsoluteDifferenceScalar](#12-absolutedifferencescalar), [AbsoluteDifferenceWideningLower](#13-absolutedifferencewideninglower), [AbsoluteDifferenceWideningLowerAndAdd](#14-absolutedifferencewideninglowerandadd), [AbsoluteDifferenceWideningUpper](#15-absolutedifferencewideningupper), [AbsoluteDifferenceWideningUpperAndAdd](#16-absolutedifferencewideningupperandadd), [AbsSaturate](#17-abssaturate), [AbsSaturateScalar](#18-abssaturatescalar), [AbsScalar](#19-absscalar), [Add](#20-add), [AddAcross](#21-addacross), [AddAcrossWidening](#22-addacrosswidening), [AddHighNarrowingLower](#23-addhighnarrowinglower), [AddHighNarrowingUpper](#24-addhighnarrowingupper), [AddPairwise](#25-addpairwise), [AddPairwiseScalar](#26-addpairwisescalar), [AddPairwiseWidening](#27-addpairwisewidening), [AddPairwiseWideningAndAdd](#28-addpairwisewideningandadd), [AddPairwiseWideningAndAddScalar](#29-addpairwisewideningandaddscalar), [AddPairwiseWideningScalar](#30-addpairwisewideningscalar), [AddRoundedHighNarrowingLower](#31-addroundedhighnarrowinglower), [AddRoundedHighNarrowingUpper](#32-addroundedhighnarrowingupper), [AddSaturate](#33-addsaturate), [AddSaturateScalar](#34-addsaturatescalar), [AddScalar](#35-addscalar), [AddWideningLower](#36-addwideninglower), [AddWideningUpper](#37-addwideningupper), [And](#38-and), [BitwiseClear](#39-bitwiseclear), [BitwiseSelect](#40-bitwiseselect), [Ceiling](#41-ceiling), [CeilingScalar](#42-ceilingscalar), [CompareEqual](#43-compareequal), [CompareEqualScalar](#44-compareequalscalar), [CompareGreaterThan](#45-comparegreaterthan)
+| --- | --- |
+| [Abs](#1-abs) | [AddHighNarrowingUpper](#24-addhighnarrowingupper) |
+| [AbsoluteCompareGreaterThan](#2-absolutecomparegreaterthan) | [AddPairwise](#25-addpairwise) |
+| [AbsoluteCompareGreaterThanOrEqual](#3-absolutecomparegreaterthanorequal) | [AddPairwiseScalar](#26-addpairwisescalar) |
+| [AbsoluteCompareGreaterThanOrEqualScalar](#4-absolutecomparegreaterthanorequalscalar) | [AddPairwiseWidening](#27-addpairwisewidening) |
+| [AbsoluteCompareGreaterThanScalar](#5-absolutecomparegreaterthanscalar) | [AddPairwiseWideningAndAdd](#28-addpairwisewideningandadd) |
+| [AbsoluteCompareLessThan](#6-absolutecomparelessthan) | [AddPairwiseWideningAndAddScalar](#29-addpairwisewideningandaddscalar) |
+| [AbsoluteCompareLessThanOrEqual](#7-absolutecomparelessthanorequal) | [AddPairwiseWideningScalar](#30-addpairwisewideningscalar) |
+| [AbsoluteCompareLessThanOrEqualScalar](#8-absolutecomparelessthanorequalscalar) | [AddRoundedHighNarrowingLower](#31-addroundedhighnarrowinglower) |
+| [AbsoluteCompareLessThanScalar](#9-absolutecomparelessthanscalar) | [AddRoundedHighNarrowingUpper](#32-addroundedhighnarrowingupper) |
+| [AbsoluteDifference](#10-absolutedifference) | [AddSaturate](#33-addsaturate) |
+| [AbsoluteDifferenceAdd](#11-absolutedifferenceadd) | [AddSaturateScalar](#34-addsaturatescalar) |
+| [AbsoluteDifferenceScalar](#12-absolutedifferencescalar) | [AddScalar](#35-addscalar) |
+| [AbsoluteDifferenceWideningLower](#13-absolutedifferencewideninglower) | [AddWideningLower](#36-addwideninglower) |
+| [AbsoluteDifferenceWideningLowerAndAdd](#14-absolutedifferencewideninglowerandadd) | [AddWideningUpper](#37-addwideningupper) |
+| [AbsoluteDifferenceWideningUpper](#15-absolutedifferencewideningupper) | [And](#38-and) |
+| [AbsoluteDifferenceWideningUpperAndAdd](#16-absolutedifferencewideningupperandadd) | [BitwiseClear](#39-bitwiseclear) |
+| [AbsSaturate](#17-abssaturate) | [BitwiseSelect](#40-bitwiseselect) |
+| [AbsSaturateScalar](#18-abssaturatescalar) | [Ceiling](#41-ceiling) |
+| [AbsScalar](#19-absscalar) | [CeilingScalar](#42-ceilingscalar) |
+| [Add](#20-add) | [CompareEqual](#43-compareequal) |
+| [AddAcross](#21-addacross) | [CompareEqualScalar](#44-compareequalscalar) |
+| [AddAcrossWidening](#22-addacrosswidening) | [CompareGreaterThan](#45-comparegreaterthan) |
+| [AddHighNarrowingLower](#23-addhighnarrowinglower) |  |
 
 
+<p/>
 ");
 
 try {
@@ -6977,9 +7001,33 @@ Most of the description of these APIs is adapted and referenced from [Arm Archit
 
 ### APIs covered
 
-[CompareGreaterThanOrEqual](#1-comparegreaterthanorequal), [CompareGreaterThanOrEqualScalar](#2-comparegreaterthanorequalscalar), [CompareGreaterThanScalar](#3-comparegreaterthanscalar), [CompareLessThan](#4-comparelessthan), [CompareLessThanOrEqual](#5-comparelessthanorequal), [CompareLessThanOrEqualScalar](#6-comparelessthanorequalscalar), [CompareLessThanScalar](#7-comparelessthanscalar), [CompareTest](#8-comparetest), [CompareTestScalar](#9-comparetestscalar), [ConvertToDouble](#10-converttodouble), [ConvertToDoubleScalar](#11-converttodoublescalar), [ConvertToDoubleUpper](#12-converttodoubleupper), [ConvertToInt32RoundAwayFromZero](#13-converttoint32roundawayfromzero), [ConvertToInt32RoundAwayFromZeroScalar](#14-converttoint32roundawayfromzeroscalar), [ConvertToInt32RoundToEven](#15-converttoint32roundtoeven), [ConvertToInt32RoundToEvenScalar](#16-converttoint32roundtoevenscalar), [ConvertToInt32RoundToNegativeInfinity](#17-converttoint32roundtonegativeinfinity), [ConvertToInt32RoundToNegativeInfinityScalar](#18-converttoint32roundtonegativeinfinityscalar), [ConvertToInt32RoundToPositiveInfinity](#19-converttoint32roundtopositiveinfinity), [ConvertToInt32RoundToPositiveInfinityScalar](#20-converttoint32roundtopositiveinfinityscalar), [ConvertToInt32RoundToZero](#21-converttoint32roundtozero), [ConvertToInt32RoundToZeroScalar](#22-converttoint32roundtozeroscalar), [ConvertToInt64RoundAwayFromZero](#23-converttoint64roundawayfromzero), [ConvertToInt64RoundAwayFromZeroScalar](#24-converttoint64roundawayfromzeroscalar), [ConvertToInt64RoundToEven](#25-converttoint64roundtoeven), [ConvertToInt64RoundToEvenScalar](#26-converttoint64roundtoevenscalar), [ConvertToInt64RoundToNegativeInfinity](#27-converttoint64roundtonegativeinfinity), [ConvertToInt64RoundToNegativeInfinityScalar](#28-converttoint64roundtonegativeinfinityscalar), [ConvertToInt64RoundToPositiveInfinity](#29-converttoint64roundtopositiveinfinity), [ConvertToInt64RoundToPositiveInfinityScalar](#30-converttoint64roundtopositiveinfinityscalar), [ConvertToInt64RoundToZero](#31-converttoint64roundtozero), [ConvertToInt64RoundToZeroScalar](#32-converttoint64roundtozeroscalar), [ConvertToSingle](#33-converttosingle), [ConvertToSingleLower](#34-converttosinglelower), [ConvertToSingleRoundToOddLower](#35-converttosingleroundtooddlower), [ConvertToSingleRoundToOddUpper](#36-converttosingleroundtooddupper), [ConvertToSingleScalar](#37-converttosinglescalar), [ConvertToSingleUpper](#38-converttosingleupper), [ConvertToUInt32RoundAwayFromZero](#39-converttouint32roundawayfromzero), [ConvertToUInt32RoundAwayFromZeroScalar](#40-converttouint32roundawayfromzeroscalar), [ConvertToUInt32RoundToEven](#41-converttouint32roundtoeven), [ConvertToUInt32RoundToEvenScalar](#42-converttouint32roundtoevenscalar), [ConvertToUInt32RoundToNegativeInfinity](#43-converttouint32roundtonegativeinfinity), [ConvertToUInt32RoundToNegativeInfinityScalar](#44-converttouint32roundtonegativeinfinityscalar), [ConvertToUInt32RoundToPositiveInfinity](#45-converttouint32roundtopositiveinfinity)
+| --- | --- |
+| [CompareGreaterThanOrEqual](#1-comparegreaterthanorequal) | [ConvertToInt64RoundAwayFromZeroScalar](#24-converttoint64roundawayfromzeroscalar) |
+| [CompareGreaterThanOrEqualScalar](#2-comparegreaterthanorequalscalar) | [ConvertToInt64RoundToEven](#25-converttoint64roundtoeven) |
+| [CompareGreaterThanScalar](#3-comparegreaterthanscalar) | [ConvertToInt64RoundToEvenScalar](#26-converttoint64roundtoevenscalar) |
+| [CompareLessThan](#4-comparelessthan) | [ConvertToInt64RoundToNegativeInfinity](#27-converttoint64roundtonegativeinfinity) |
+| [CompareLessThanOrEqual](#5-comparelessthanorequal) | [ConvertToInt64RoundToNegativeInfinityScalar](#28-converttoint64roundtonegativeinfinityscalar) |
+| [CompareLessThanOrEqualScalar](#6-comparelessthanorequalscalar) | [ConvertToInt64RoundToPositiveInfinity](#29-converttoint64roundtopositiveinfinity) |
+| [CompareLessThanScalar](#7-comparelessthanscalar) | [ConvertToInt64RoundToPositiveInfinityScalar](#30-converttoint64roundtopositiveinfinityscalar) |
+| [CompareTest](#8-comparetest) | [ConvertToInt64RoundToZero](#31-converttoint64roundtozero) |
+| [CompareTestScalar](#9-comparetestscalar) | [ConvertToInt64RoundToZeroScalar](#32-converttoint64roundtozeroscalar) |
+| [ConvertToDouble](#10-converttodouble) | [ConvertToSingle](#33-converttosingle) |
+| [ConvertToDoubleScalar](#11-converttodoublescalar) | [ConvertToSingleLower](#34-converttosinglelower) |
+| [ConvertToDoubleUpper](#12-converttodoubleupper) | [ConvertToSingleRoundToOddLower](#35-converttosingleroundtooddlower) |
+| [ConvertToInt32RoundAwayFromZero](#13-converttoint32roundawayfromzero) | [ConvertToSingleRoundToOddUpper](#36-converttosingleroundtooddupper) |
+| [ConvertToInt32RoundAwayFromZeroScalar](#14-converttoint32roundawayfromzeroscalar) | [ConvertToSingleScalar](#37-converttosinglescalar) |
+| [ConvertToInt32RoundToEven](#15-converttoint32roundtoeven) | [ConvertToSingleUpper](#38-converttosingleupper) |
+| [ConvertToInt32RoundToEvenScalar](#16-converttoint32roundtoevenscalar) | [ConvertToUInt32RoundAwayFromZero](#39-converttouint32roundawayfromzero) |
+| [ConvertToInt32RoundToNegativeInfinity](#17-converttoint32roundtonegativeinfinity) | [ConvertToUInt32RoundAwayFromZeroScalar](#40-converttouint32roundawayfromzeroscalar) |
+| [ConvertToInt32RoundToNegativeInfinityScalar](#18-converttoint32roundtonegativeinfinityscalar) | [ConvertToUInt32RoundToEven](#41-converttouint32roundtoeven) |
+| [ConvertToInt32RoundToPositiveInfinity](#19-converttoint32roundtopositiveinfinity) | [ConvertToUInt32RoundToEvenScalar](#42-converttouint32roundtoevenscalar) |
+| [ConvertToInt32RoundToPositiveInfinityScalar](#20-converttoint32roundtopositiveinfinityscalar) | [ConvertToUInt32RoundToNegativeInfinity](#43-converttouint32roundtonegativeinfinity) |
+| [ConvertToInt32RoundToZero](#21-converttoint32roundtozero) | [ConvertToUInt32RoundToNegativeInfinityScalar](#44-converttouint32roundtonegativeinfinityscalar) |
+| [ConvertToInt32RoundToZeroScalar](#22-converttoint32roundtozeroscalar) | [ConvertToUInt32RoundToPositiveInfinity](#45-converttouint32roundtopositiveinfinity) |
+| [ConvertToInt64RoundAwayFromZero](#23-converttoint64roundawayfromzero) |  |
 
 
+<p/>
 ");
 
 try {
@@ -9201,9 +9249,33 @@ Most of the description of these APIs is adapted and referenced from [Arm Archit
 
 ### APIs covered
 
-[ConvertToUInt32RoundToPositiveInfinityScalar](#1-converttouint32roundtopositiveinfinityscalar), [ConvertToUInt32RoundToZero](#2-converttouint32roundtozero), [ConvertToUInt32RoundToZeroScalar](#3-converttouint32roundtozeroscalar), [ConvertToUInt64RoundAwayFromZero](#4-converttouint64roundawayfromzero), [ConvertToUInt64RoundAwayFromZeroScalar](#5-converttouint64roundawayfromzeroscalar), [ConvertToUInt64RoundToEven](#6-converttouint64roundtoeven), [ConvertToUInt64RoundToEvenScalar](#7-converttouint64roundtoevenscalar), [ConvertToUInt64RoundToNegativeInfinity](#8-converttouint64roundtonegativeinfinity), [ConvertToUInt64RoundToNegativeInfinityScalar](#9-converttouint64roundtonegativeinfinityscalar), [ConvertToUInt64RoundToPositiveInfinity](#10-converttouint64roundtopositiveinfinity), [ConvertToUInt64RoundToPositiveInfinityScalar](#11-converttouint64roundtopositiveinfinityscalar), [ConvertToUInt64RoundToZero](#12-converttouint64roundtozero), [ConvertToUInt64RoundToZeroScalar](#13-converttouint64roundtozeroscalar), [Divide](#14-divide), [DivideScalar](#15-dividescalar), [DuplicateSelectedScalarToVector128](#16-duplicateselectedscalartovector128), [DuplicateSelectedScalarToVector64](#17-duplicateselectedscalartovector64), [DuplicateToVector128](#18-duplicatetovector128), [DuplicateToVector64](#19-duplicatetovector64), [Extract](#20-extract), [ExtractNarrowingLower](#21-extractnarrowinglower), [ExtractNarrowingSaturateLower](#22-extractnarrowingsaturatelower), [ExtractNarrowingSaturateScalar](#23-extractnarrowingsaturatescalar), [ExtractNarrowingSaturateUnsignedLower](#24-extractnarrowingsaturateunsignedlower), [ExtractNarrowingSaturateUnsignedScalar](#25-extractnarrowingsaturateunsignedscalar), [ExtractNarrowingSaturateUnsignedUpper](#26-extractnarrowingsaturateunsignedupper), [ExtractNarrowingSaturateUpper](#27-extractnarrowingsaturateupper), [ExtractNarrowingUpper](#28-extractnarrowingupper), [ExtractVector128](#29-extractvector128), [ExtractVector64](#30-extractvector64), [Floor](#31-floor), [FloorScalar](#32-floorscalar), [FusedAddHalving](#33-fusedaddhalving), [FusedAddRoundedHalving](#34-fusedaddroundedhalving), [FusedMultiplyAdd](#35-fusedmultiplyadd), [FusedMultiplyAddByScalar](#36-fusedmultiplyaddbyscalar), [FusedMultiplyAddBySelectedScalar](#37-fusedmultiplyaddbyselectedscalar), [FusedMultiplyAddNegatedScalar](#38-fusedmultiplyaddnegatedscalar), [FusedMultiplyAddScalar](#39-fusedmultiplyaddscalar), [FusedMultiplyAddScalarBySelectedScalar](#40-fusedmultiplyaddscalarbyselectedscalar), [FusedMultiplySubtract](#41-fusedmultiplysubtract), [FusedMultiplySubtractByScalar](#42-fusedmultiplysubtractbyscalar), [FusedMultiplySubtractBySelectedScalar](#43-fusedmultiplysubtractbyselectedscalar), [FusedMultiplySubtractNegatedScalar](#44-fusedmultiplysubtractnegatedscalar), [FusedMultiplySubtractScalar](#45-fusedmultiplysubtractscalar)
+| --- | --- |
+| [ConvertToUInt32RoundToPositiveInfinityScalar](#1-converttouint32roundtopositiveinfinityscalar) | [ExtractNarrowingSaturateUnsignedLower](#24-extractnarrowingsaturateunsignedlower) |
+| [ConvertToUInt32RoundToZero](#2-converttouint32roundtozero) | [ExtractNarrowingSaturateUnsignedScalar](#25-extractnarrowingsaturateunsignedscalar) |
+| [ConvertToUInt32RoundToZeroScalar](#3-converttouint32roundtozeroscalar) | [ExtractNarrowingSaturateUnsignedUpper](#26-extractnarrowingsaturateunsignedupper) |
+| [ConvertToUInt64RoundAwayFromZero](#4-converttouint64roundawayfromzero) | [ExtractNarrowingSaturateUpper](#27-extractnarrowingsaturateupper) |
+| [ConvertToUInt64RoundAwayFromZeroScalar](#5-converttouint64roundawayfromzeroscalar) | [ExtractNarrowingUpper](#28-extractnarrowingupper) |
+| [ConvertToUInt64RoundToEven](#6-converttouint64roundtoeven) | [ExtractVector128](#29-extractvector128) |
+| [ConvertToUInt64RoundToEvenScalar](#7-converttouint64roundtoevenscalar) | [ExtractVector64](#30-extractvector64) |
+| [ConvertToUInt64RoundToNegativeInfinity](#8-converttouint64roundtonegativeinfinity) | [Floor](#31-floor) |
+| [ConvertToUInt64RoundToNegativeInfinityScalar](#9-converttouint64roundtonegativeinfinityscalar) | [FloorScalar](#32-floorscalar) |
+| [ConvertToUInt64RoundToPositiveInfinity](#10-converttouint64roundtopositiveinfinity) | [FusedAddHalving](#33-fusedaddhalving) |
+| [ConvertToUInt64RoundToPositiveInfinityScalar](#11-converttouint64roundtopositiveinfinityscalar) | [FusedAddRoundedHalving](#34-fusedaddroundedhalving) |
+| [ConvertToUInt64RoundToZero](#12-converttouint64roundtozero) | [FusedMultiplyAdd](#35-fusedmultiplyadd) |
+| [ConvertToUInt64RoundToZeroScalar](#13-converttouint64roundtozeroscalar) | [FusedMultiplyAddByScalar](#36-fusedmultiplyaddbyscalar) |
+| [Divide](#14-divide) | [FusedMultiplyAddBySelectedScalar](#37-fusedmultiplyaddbyselectedscalar) |
+| [DivideScalar](#15-dividescalar) | [FusedMultiplyAddNegatedScalar](#38-fusedmultiplyaddnegatedscalar) |
+| [DuplicateSelectedScalarToVector128](#16-duplicateselectedscalartovector128) | [FusedMultiplyAddScalar](#39-fusedmultiplyaddscalar) |
+| [DuplicateSelectedScalarToVector64](#17-duplicateselectedscalartovector64) | [FusedMultiplyAddScalarBySelectedScalar](#40-fusedmultiplyaddscalarbyselectedscalar) |
+| [DuplicateToVector128](#18-duplicatetovector128) | [FusedMultiplySubtract](#41-fusedmultiplysubtract) |
+| [DuplicateToVector64](#19-duplicatetovector64) | [FusedMultiplySubtractByScalar](#42-fusedmultiplysubtractbyscalar) |
+| [Extract](#20-extract) | [FusedMultiplySubtractBySelectedScalar](#43-fusedmultiplysubtractbyselectedscalar) |
+| [ExtractNarrowingLower](#21-extractnarrowinglower) | [FusedMultiplySubtractNegatedScalar](#44-fusedmultiplysubtractnegatedscalar) |
+| [ExtractNarrowingSaturateLower](#22-extractnarrowingsaturatelower) | [FusedMultiplySubtractScalar](#45-fusedmultiplysubtractscalar) |
+| [ExtractNarrowingSaturateScalar](#23-extractnarrowingsaturatescalar) |  |
 
 
+<p/>
 ");
 
 try {
@@ -11573,9 +11645,33 @@ Most of the description of these APIs is adapted and referenced from [Arm Archit
 
 ### APIs covered
 
-[FusedMultiplySubtractScalarBySelectedScalar](#1-fusedmultiplysubtractscalarbyselectedscalar), [FusedSubtractHalving](#2-fusedsubtracthalving), [Insert](#3-insert), [InsertScalar](#4-insertscalar), [InsertSelectedScalar](#5-insertselectedscalar), [LeadingSignCount](#6-leadingsigncount), [LeadingZeroCount](#7-leadingzerocount), [LoadAndInsertScalar](#8-loadandinsertscalar), [LoadAndReplicateToVector128](#9-loadandreplicatetovector128), [LoadAndReplicateToVector64](#10-loadandreplicatetovector64), [LoadVector128](#11-loadvector128), [LoadVector64](#12-loadvector64), [Max](#13-max), [MaxAcross](#14-maxacross), [MaxNumber](#15-maxnumber), [MaxNumberAcross](#16-maxnumberacross), [MaxNumberPairwise](#17-maxnumberpairwise), [MaxNumberPairwiseScalar](#18-maxnumberpairwisescalar), [MaxNumberScalar](#19-maxnumberscalar), [MaxPairwise](#20-maxpairwise), [MaxPairwiseScalar](#21-maxpairwisescalar), [MaxScalar](#22-maxscalar), [Min](#23-min), [MinAcross](#24-minacross), [MinNumber](#25-minnumber), [MinNumberAcross](#26-minnumberacross), [MinNumberPairwise](#27-minnumberpairwise), [MinNumberPairwiseScalar](#28-minnumberpairwisescalar), [MinNumberScalar](#29-minnumberscalar), [MinPairwise](#30-minpairwise), [MinPairwiseScalar](#31-minpairwisescalar), [MinScalar](#32-minscalar), [Multiply](#33-multiply), [MultiplyAdd](#34-multiplyadd), [MultiplyAddByScalar](#35-multiplyaddbyscalar), [MultiplyAddBySelectedScalar](#36-multiplyaddbyselectedscalar), [MultiplyByScalar](#37-multiplybyscalar), [MultiplyBySelectedScalar](#38-multiplybyselectedscalar), [MultiplyBySelectedScalarWideningLower](#39-multiplybyselectedscalarwideninglower), [MultiplyBySelectedScalarWideningLowerAndAdd](#40-multiplybyselectedscalarwideninglowerandadd), [MultiplyBySelectedScalarWideningLowerAndSubtract](#41-multiplybyselectedscalarwideninglowerandsubtract), [MultiplyBySelectedScalarWideningUpper](#42-multiplybyselectedscalarwideningupper), [MultiplyBySelectedScalarWideningUpperAndAdd](#43-multiplybyselectedscalarwideningupperandadd), [MultiplyBySelectedScalarWideningUpperAndSubtract](#44-multiplybyselectedscalarwideningupperandsubtract), [MultiplyDoublingByScalarSaturateHigh](#45-multiplydoublingbyscalarsaturatehigh)
+| --- | --- |
+| [FusedMultiplySubtractScalarBySelectedScalar](#1-fusedmultiplysubtractscalarbyselectedscalar) | [MinAcross](#24-minacross) |
+| [FusedSubtractHalving](#2-fusedsubtracthalving) | [MinNumber](#25-minnumber) |
+| [Insert](#3-insert) | [MinNumberAcross](#26-minnumberacross) |
+| [InsertScalar](#4-insertscalar) | [MinNumberPairwise](#27-minnumberpairwise) |
+| [InsertSelectedScalar](#5-insertselectedscalar) | [MinNumberPairwiseScalar](#28-minnumberpairwisescalar) |
+| [LeadingSignCount](#6-leadingsigncount) | [MinNumberScalar](#29-minnumberscalar) |
+| [LeadingZeroCount](#7-leadingzerocount) | [MinPairwise](#30-minpairwise) |
+| [LoadAndInsertScalar](#8-loadandinsertscalar) | [MinPairwiseScalar](#31-minpairwisescalar) |
+| [LoadAndReplicateToVector128](#9-loadandreplicatetovector128) | [MinScalar](#32-minscalar) |
+| [LoadAndReplicateToVector64](#10-loadandreplicatetovector64) | [Multiply](#33-multiply) |
+| [LoadVector128](#11-loadvector128) | [MultiplyAdd](#34-multiplyadd) |
+| [LoadVector64](#12-loadvector64) | [MultiplyAddByScalar](#35-multiplyaddbyscalar) |
+| [Max](#13-max) | [MultiplyAddBySelectedScalar](#36-multiplyaddbyselectedscalar) |
+| [MaxAcross](#14-maxacross) | [MultiplyByScalar](#37-multiplybyscalar) |
+| [MaxNumber](#15-maxnumber) | [MultiplyBySelectedScalar](#38-multiplybyselectedscalar) |
+| [MaxNumberAcross](#16-maxnumberacross) | [MultiplyBySelectedScalarWideningLower](#39-multiplybyselectedscalarwideninglower) |
+| [MaxNumberPairwise](#17-maxnumberpairwise) | [MultiplyBySelectedScalarWideningLowerAndAdd](#40-multiplybyselectedscalarwideninglowerandadd) |
+| [MaxNumberPairwiseScalar](#18-maxnumberpairwisescalar) | [MultiplyBySelectedScalarWideningLowerAndSubtract](#41-multiplybyselectedscalarwideninglowerandsubtract) |
+| [MaxNumberScalar](#19-maxnumberscalar) | [MultiplyBySelectedScalarWideningUpper](#42-multiplybyselectedscalarwideningupper) |
+| [MaxPairwise](#20-maxpairwise) | [MultiplyBySelectedScalarWideningUpperAndAdd](#43-multiplybyselectedscalarwideningupperandadd) |
+| [MaxPairwiseScalar](#21-maxpairwisescalar) | [MultiplyBySelectedScalarWideningUpperAndSubtract](#44-multiplybyselectedscalarwideningupperandsubtract) |
+| [MaxScalar](#22-maxscalar) | [MultiplyDoublingByScalarSaturateHigh](#45-multiplydoublingbyscalarsaturatehigh) |
+| [Min](#23-min) |  |
 
 
+<p/>
 ");
 
 try {
@@ -14217,9 +14313,33 @@ Most of the description of these APIs is adapted and referenced from [Arm Archit
 
 ### APIs covered
 
-[MultiplyDoublingBySelectedScalarSaturateHigh](#1-multiplydoublingbyselectedscalarsaturatehigh), [MultiplyDoublingSaturateHigh](#2-multiplydoublingsaturatehigh), [MultiplyDoublingSaturateHighScalar](#3-multiplydoublingsaturatehighscalar), [MultiplyDoublingScalarBySelectedScalarSaturateHigh](#4-multiplydoublingscalarbyselectedscalarsaturatehigh), [MultiplyDoublingWideningAndAddSaturateScalar](#5-multiplydoublingwideningandaddsaturatescalar), [MultiplyDoublingWideningAndSubtractSaturateScalar](#6-multiplydoublingwideningandsubtractsaturatescalar), [MultiplyDoublingWideningLowerAndAddSaturate](#7-multiplydoublingwideninglowerandaddsaturate), [MultiplyDoublingWideningLowerAndSubtractSaturate](#8-multiplydoublingwideninglowerandsubtractsaturate), [MultiplyDoublingWideningLowerByScalarAndAddSaturate](#9-multiplydoublingwideninglowerbyscalarandaddsaturate), [MultiplyDoublingWideningLowerByScalarAndSubtractSaturate](#10-multiplydoublingwideninglowerbyscalarandsubtractsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate](#11-multiplydoublingwideninglowerbyselectedscalarandaddsaturate), [MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate](#12-multiplydoublingwideninglowerbyselectedscalarandsubtractsaturate), [MultiplyDoublingWideningSaturateLower](#13-multiplydoublingwideningsaturatelower), [MultiplyDoublingWideningSaturateLowerByScalar](#14-multiplydoublingwideningsaturatelowerbyscalar), [MultiplyDoublingWideningSaturateLowerBySelectedScalar](#15-multiplydoublingwideningsaturatelowerbyselectedscalar), [MultiplyDoublingWideningSaturateScalar](#16-multiplydoublingwideningsaturatescalar), [MultiplyDoublingWideningSaturateScalarBySelectedScalar](#17-multiplydoublingwideningsaturatescalarbyselectedscalar), [MultiplyDoublingWideningSaturateUpper](#18-multiplydoublingwideningsaturateupper), [MultiplyDoublingWideningSaturateUpperByScalar](#19-multiplydoublingwideningsaturateupperbyscalar), [MultiplyDoublingWideningSaturateUpperBySelectedScalar](#20-multiplydoublingwideningsaturateupperbyselectedscalar), [MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate](#21-multiplydoublingwideningscalarbyselectedscalarandaddsaturate), [MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate](#22-multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate), [MultiplyDoublingWideningUpperAndAddSaturate](#23-multiplydoublingwideningupperandaddsaturate), [MultiplyDoublingWideningUpperAndSubtractSaturate](#24-multiplydoublingwideningupperandsubtractsaturate), [MultiplyDoublingWideningUpperByScalarAndAddSaturate](#25-multiplydoublingwideningupperbyscalarandaddsaturate), [MultiplyDoublingWideningUpperByScalarAndSubtractSaturate](#26-multiplydoublingwideningupperbyscalarandsubtractsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate](#27-multiplydoublingwideningupperbyselectedscalarandaddsaturate), [MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate](#28-multiplydoublingwideningupperbyselectedscalarandsubtractsaturate), [MultiplyExtended](#29-multiplyextended), [MultiplyExtendedByScalar](#30-multiplyextendedbyscalar), [MultiplyExtendedBySelectedScalar](#31-multiplyextendedbyselectedscalar), [MultiplyExtendedScalar](#32-multiplyextendedscalar), [MultiplyExtendedScalarBySelectedScalar](#33-multiplyextendedscalarbyselectedscalar), [MultiplyRoundedDoublingByScalarSaturateHigh](#34-multiplyroundeddoublingbyscalarsaturatehigh), [MultiplyRoundedDoublingBySelectedScalarSaturateHigh](#35-multiplyroundeddoublingbyselectedscalarsaturatehigh), [MultiplyRoundedDoublingSaturateHigh](#36-multiplyroundeddoublingsaturatehigh), [MultiplyRoundedDoublingSaturateHighScalar](#37-multiplyroundeddoublingsaturatehighscalar), [MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh](#38-multiplyroundeddoublingscalarbyselectedscalarsaturatehigh), [MultiplyScalar](#39-multiplyscalar), [MultiplyScalarBySelectedScalar](#40-multiplyscalarbyselectedscalar), [MultiplySubtract](#41-multiplysubtract), [MultiplySubtractByScalar](#42-multiplysubtractbyscalar), [MultiplySubtractBySelectedScalar](#43-multiplysubtractbyselectedscalar), [MultiplyWideningLower](#44-multiplywideninglower), [MultiplyWideningLowerAndAdd](#45-multiplywideninglowerandadd)
+| --- | --- |
+| [MultiplyDoublingBySelectedScalarSaturateHigh](#1-multiplydoublingbyselectedscalarsaturatehigh) | [MultiplyDoublingWideningUpperAndSubtractSaturate](#24-multiplydoublingwideningupperandsubtractsaturate) |
+| [MultiplyDoublingSaturateHigh](#2-multiplydoublingsaturatehigh) | [MultiplyDoublingWideningUpperByScalarAndAddSaturate](#25-multiplydoublingwideningupperbyscalarandaddsaturate) |
+| [MultiplyDoublingSaturateHighScalar](#3-multiplydoublingsaturatehighscalar) | [MultiplyDoublingWideningUpperByScalarAndSubtractSaturate](#26-multiplydoublingwideningupperbyscalarandsubtractsaturate) |
+| [MultiplyDoublingScalarBySelectedScalarSaturateHigh](#4-multiplydoublingscalarbyselectedscalarsaturatehigh) | [MultiplyDoublingWideningUpperBySelectedScalarAndAddSaturate](#27-multiplydoublingwideningupperbyselectedscalarandaddsaturate) |
+| [MultiplyDoublingWideningAndAddSaturateScalar](#5-multiplydoublingwideningandaddsaturatescalar) | [MultiplyDoublingWideningUpperBySelectedScalarAndSubtractSaturate](#28-multiplydoublingwideningupperbyselectedscalarandsubtractsaturate) |
+| [MultiplyDoublingWideningAndSubtractSaturateScalar](#6-multiplydoublingwideningandsubtractsaturatescalar) | [MultiplyExtended](#29-multiplyextended) |
+| [MultiplyDoublingWideningLowerAndAddSaturate](#7-multiplydoublingwideninglowerandaddsaturate) | [MultiplyExtendedByScalar](#30-multiplyextendedbyscalar) |
+| [MultiplyDoublingWideningLowerAndSubtractSaturate](#8-multiplydoublingwideninglowerandsubtractsaturate) | [MultiplyExtendedBySelectedScalar](#31-multiplyextendedbyselectedscalar) |
+| [MultiplyDoublingWideningLowerByScalarAndAddSaturate](#9-multiplydoublingwideninglowerbyscalarandaddsaturate) | [MultiplyExtendedScalar](#32-multiplyextendedscalar) |
+| [MultiplyDoublingWideningLowerByScalarAndSubtractSaturate](#10-multiplydoublingwideninglowerbyscalarandsubtractsaturate) | [MultiplyExtendedScalarBySelectedScalar](#33-multiplyextendedscalarbyselectedscalar) |
+| [MultiplyDoublingWideningLowerBySelectedScalarAndAddSaturate](#11-multiplydoublingwideninglowerbyselectedscalarandaddsaturate) | [MultiplyRoundedDoublingByScalarSaturateHigh](#34-multiplyroundeddoublingbyscalarsaturatehigh) |
+| [MultiplyDoublingWideningLowerBySelectedScalarAndSubtractSaturate](#12-multiplydoublingwideninglowerbyselectedscalarandsubtractsaturate) | [MultiplyRoundedDoublingBySelectedScalarSaturateHigh](#35-multiplyroundeddoublingbyselectedscalarsaturatehigh) |
+| [MultiplyDoublingWideningSaturateLower](#13-multiplydoublingwideningsaturatelower) | [MultiplyRoundedDoublingSaturateHigh](#36-multiplyroundeddoublingsaturatehigh) |
+| [MultiplyDoublingWideningSaturateLowerByScalar](#14-multiplydoublingwideningsaturatelowerbyscalar) | [MultiplyRoundedDoublingSaturateHighScalar](#37-multiplyroundeddoublingsaturatehighscalar) |
+| [MultiplyDoublingWideningSaturateLowerBySelectedScalar](#15-multiplydoublingwideningsaturatelowerbyselectedscalar) | [MultiplyRoundedDoublingScalarBySelectedScalarSaturateHigh](#38-multiplyroundeddoublingscalarbyselectedscalarsaturatehigh) |
+| [MultiplyDoublingWideningSaturateScalar](#16-multiplydoublingwideningsaturatescalar) | [MultiplyScalar](#39-multiplyscalar) |
+| [MultiplyDoublingWideningSaturateScalarBySelectedScalar](#17-multiplydoublingwideningsaturatescalarbyselectedscalar) | [MultiplyScalarBySelectedScalar](#40-multiplyscalarbyselectedscalar) |
+| [MultiplyDoublingWideningSaturateUpper](#18-multiplydoublingwideningsaturateupper) | [MultiplySubtract](#41-multiplysubtract) |
+| [MultiplyDoublingWideningSaturateUpperByScalar](#19-multiplydoublingwideningsaturateupperbyscalar) | [MultiplySubtractByScalar](#42-multiplysubtractbyscalar) |
+| [MultiplyDoublingWideningSaturateUpperBySelectedScalar](#20-multiplydoublingwideningsaturateupperbyselectedscalar) | [MultiplySubtractBySelectedScalar](#43-multiplysubtractbyselectedscalar) |
+| [MultiplyDoublingWideningScalarBySelectedScalarAndAddSaturate](#21-multiplydoublingwideningscalarbyselectedscalarandaddsaturate) | [MultiplyWideningLower](#44-multiplywideninglower) |
+| [MultiplyDoublingWideningScalarBySelectedScalarAndSubtractSaturate](#22-multiplydoublingwideningscalarbyselectedscalarandsubtractsaturate) | [MultiplyWideningLowerAndAdd](#45-multiplywideninglowerandadd) |
+| [MultiplyDoublingWideningUpperAndAddSaturate](#23-multiplydoublingwideningupperandaddsaturate) |  |
 
 
+<p/>
 ");
 
 try {
@@ -16650,9 +16770,33 @@ Most of the description of these APIs is adapted and referenced from [Arm Archit
 
 ### APIs covered
 
-[MultiplyWideningLowerAndSubtract](#1-multiplywideninglowerandsubtract), [MultiplyWideningUpper](#2-multiplywideningupper), [MultiplyWideningUpperAndAdd](#3-multiplywideningupperandadd), [MultiplyWideningUpperAndSubtract](#4-multiplywideningupperandsubtract), [Negate](#5-negate), [NegateSaturate](#6-negatesaturate), [NegateSaturateScalar](#7-negatesaturatescalar), [NegateScalar](#8-negatescalar), [Not](#9-not), [Or](#10-or), [OrNot](#11-ornot), [PolynomialMultiply](#12-polynomialmultiply), [PolynomialMultiplyWideningLower](#13-polynomialmultiplywideninglower), [PolynomialMultiplyWideningUpper](#14-polynomialmultiplywideningupper), [PopCount](#15-popcount), [ReciprocalEstimate](#16-reciprocalestimate), [ReciprocalEstimateScalar](#17-reciprocalestimatescalar), [ReciprocalExponentScalar](#18-reciprocalexponentscalar), [ReciprocalSquareRootEstimate](#19-reciprocalsquarerootestimate), [ReciprocalSquareRootEstimateScalar](#20-reciprocalsquarerootestimatescalar), [ReciprocalSquareRootStep](#21-reciprocalsquarerootstep), [ReciprocalSquareRootStepScalar](#22-reciprocalsquarerootstepscalar), [ReciprocalStep](#23-reciprocalstep), [ReciprocalStepScalar](#24-reciprocalstepscalar), [ReverseElement16](#25-reverseelement16), [ReverseElement32](#26-reverseelement32), [ReverseElement8](#27-reverseelement8), [ReverseElementBits](#28-reverseelementbits), [RoundAwayFromZero](#29-roundawayfromzero), [RoundAwayFromZeroScalar](#30-roundawayfromzeroscalar), [RoundToNearest](#31-roundtonearest), [RoundToNearestScalar](#32-roundtonearestscalar), [RoundToNegativeInfinity](#33-roundtonegativeinfinity), [RoundToNegativeInfinityScalar](#34-roundtonegativeinfinityscalar), [RoundToPositiveInfinity](#35-roundtopositiveinfinity), [RoundToPositiveInfinityScalar](#36-roundtopositiveinfinityscalar), [RoundToZero](#37-roundtozero), [RoundToZeroScalar](#38-roundtozeroscalar), [ShiftArithmetic](#39-shiftarithmetic), [ShiftArithmeticRounded](#40-shiftarithmeticrounded), [ShiftArithmeticRoundedSaturate](#41-shiftarithmeticroundedsaturate), [ShiftArithmeticRoundedSaturateScalar](#42-shiftarithmeticroundedsaturatescalar), [ShiftArithmeticRoundedScalar](#43-shiftarithmeticroundedscalar), [ShiftArithmeticSaturate](#44-shiftarithmeticsaturate), [ShiftArithmeticSaturateScalar](#45-shiftarithmeticsaturatescalar)
+| --- | --- |
+| [MultiplyWideningLowerAndSubtract](#1-multiplywideninglowerandsubtract) | [ReciprocalStepScalar](#24-reciprocalstepscalar) |
+| [MultiplyWideningUpper](#2-multiplywideningupper) | [ReverseElement16](#25-reverseelement16) |
+| [MultiplyWideningUpperAndAdd](#3-multiplywideningupperandadd) | [ReverseElement32](#26-reverseelement32) |
+| [MultiplyWideningUpperAndSubtract](#4-multiplywideningupperandsubtract) | [ReverseElement8](#27-reverseelement8) |
+| [Negate](#5-negate) | [ReverseElementBits](#28-reverseelementbits) |
+| [NegateSaturate](#6-negatesaturate) | [RoundAwayFromZero](#29-roundawayfromzero) |
+| [NegateSaturateScalar](#7-negatesaturatescalar) | [RoundAwayFromZeroScalar](#30-roundawayfromzeroscalar) |
+| [NegateScalar](#8-negatescalar) | [RoundToNearest](#31-roundtonearest) |
+| [Not](#9-not) | [RoundToNearestScalar](#32-roundtonearestscalar) |
+| [Or](#10-or) | [RoundToNegativeInfinity](#33-roundtonegativeinfinity) |
+| [OrNot](#11-ornot) | [RoundToNegativeInfinityScalar](#34-roundtonegativeinfinityscalar) |
+| [PolynomialMultiply](#12-polynomialmultiply) | [RoundToPositiveInfinity](#35-roundtopositiveinfinity) |
+| [PolynomialMultiplyWideningLower](#13-polynomialmultiplywideninglower) | [RoundToPositiveInfinityScalar](#36-roundtopositiveinfinityscalar) |
+| [PolynomialMultiplyWideningUpper](#14-polynomialmultiplywideningupper) | [RoundToZero](#37-roundtozero) |
+| [PopCount](#15-popcount) | [RoundToZeroScalar](#38-roundtozeroscalar) |
+| [ReciprocalEstimate](#16-reciprocalestimate) | [ShiftArithmetic](#39-shiftarithmetic) |
+| [ReciprocalEstimateScalar](#17-reciprocalestimatescalar) | [ShiftArithmeticRounded](#40-shiftarithmeticrounded) |
+| [ReciprocalExponentScalar](#18-reciprocalexponentscalar) | [ShiftArithmeticRoundedSaturate](#41-shiftarithmeticroundedsaturate) |
+| [ReciprocalSquareRootEstimate](#19-reciprocalsquarerootestimate) | [ShiftArithmeticRoundedSaturateScalar](#42-shiftarithmeticroundedsaturatescalar) |
+| [ReciprocalSquareRootEstimateScalar](#20-reciprocalsquarerootestimatescalar) | [ShiftArithmeticRoundedScalar](#43-shiftarithmeticroundedscalar) |
+| [ReciprocalSquareRootStep](#21-reciprocalsquarerootstep) | [ShiftArithmeticSaturate](#44-shiftarithmeticsaturate) |
+| [ReciprocalSquareRootStepScalar](#22-reciprocalsquarerootstepscalar) | [ShiftArithmeticSaturateScalar](#45-shiftarithmeticsaturatescalar) |
+| [ReciprocalStep](#23-reciprocalstep) |  |
 
 
+<p/>
 ");
 
 try {
@@ -19109,9 +19253,33 @@ Most of the description of these APIs is adapted and referenced from [Arm Archit
 
 ### APIs covered
 
-[ShiftArithmeticScalar](#1-shiftarithmeticscalar), [ShiftLeftAndInsert](#2-shiftleftandinsert), [ShiftLeftAndInsertScalar](#3-shiftleftandinsertscalar), [ShiftLeftLogical](#4-shiftleftlogical), [ShiftLeftLogicalSaturate](#5-shiftleftlogicalsaturate), [ShiftLeftLogicalSaturateScalar](#6-shiftleftlogicalsaturatescalar), [ShiftLeftLogicalSaturateUnsigned](#7-shiftleftlogicalsaturateunsigned), [ShiftLeftLogicalSaturateUnsignedScalar](#8-shiftleftlogicalsaturateunsignedscalar), [ShiftLeftLogicalScalar](#9-shiftleftlogicalscalar), [ShiftLeftLogicalWideningLower](#10-shiftleftlogicalwideninglower), [ShiftLeftLogicalWideningUpper](#11-shiftleftlogicalwideningupper), [ShiftLogical](#12-shiftlogical), [ShiftLogicalRounded](#13-shiftlogicalrounded), [ShiftLogicalRoundedSaturate](#14-shiftlogicalroundedsaturate), [ShiftLogicalRoundedSaturateScalar](#15-shiftlogicalroundedsaturatescalar), [ShiftLogicalRoundedScalar](#16-shiftlogicalroundedscalar), [ShiftLogicalSaturate](#17-shiftlogicalsaturate), [ShiftLogicalSaturateScalar](#18-shiftlogicalsaturatescalar), [ShiftLogicalScalar](#19-shiftlogicalscalar), [ShiftRightAndInsert](#20-shiftrightandinsert), [ShiftRightAndInsertScalar](#21-shiftrightandinsertscalar), [ShiftRightArithmetic](#22-shiftrightarithmetic), [ShiftRightArithmeticAdd](#23-shiftrightarithmeticadd), [ShiftRightArithmeticAddScalar](#24-shiftrightarithmeticaddscalar), [ShiftRightArithmeticNarrowingSaturateLower](#25-shiftrightarithmeticnarrowingsaturatelower), [ShiftRightArithmeticNarrowingSaturateScalar](#26-shiftrightarithmeticnarrowingsaturatescalar), [ShiftRightArithmeticNarrowingSaturateUnsignedLower](#27-shiftrightarithmeticnarrowingsaturateunsignedlower), [ShiftRightArithmeticNarrowingSaturateUnsignedScalar](#28-shiftrightarithmeticnarrowingsaturateunsignedscalar), [ShiftRightArithmeticNarrowingSaturateUnsignedUpper](#29-shiftrightarithmeticnarrowingsaturateunsignedupper), [ShiftRightArithmeticNarrowingSaturateUpper](#30-shiftrightarithmeticnarrowingsaturateupper), [ShiftRightArithmeticRounded](#31-shiftrightarithmeticrounded), [ShiftRightArithmeticRoundedAdd](#32-shiftrightarithmeticroundedadd), [ShiftRightArithmeticRoundedAddScalar](#33-shiftrightarithmeticroundedaddscalar), [ShiftRightArithmeticRoundedNarrowingSaturateLower](#34-shiftrightarithmeticroundednarrowingsaturatelower), [ShiftRightArithmeticRoundedNarrowingSaturateScalar](#35-shiftrightarithmeticroundednarrowingsaturatescalar), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower](#36-shiftrightarithmeticroundednarrowingsaturateunsignedlower), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar](#37-shiftrightarithmeticroundednarrowingsaturateunsignedscalar), [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper](#38-shiftrightarithmeticroundednarrowingsaturateunsignedupper), [ShiftRightArithmeticRoundedNarrowingSaturateUpper](#39-shiftrightarithmeticroundednarrowingsaturateupper), [ShiftRightArithmeticRoundedScalar](#40-shiftrightarithmeticroundedscalar), [ShiftRightArithmeticScalar](#41-shiftrightarithmeticscalar), [ShiftRightLogical](#42-shiftrightlogical), [ShiftRightLogicalAdd](#43-shiftrightlogicaladd), [ShiftRightLogicalAddScalar](#44-shiftrightlogicaladdscalar), [ShiftRightLogicalNarrowingLower](#45-shiftrightlogicalnarrowinglower)
+| --- | --- |
+| [ShiftArithmeticScalar](#1-shiftarithmeticscalar) | [ShiftRightArithmeticAddScalar](#24-shiftrightarithmeticaddscalar) |
+| [ShiftLeftAndInsert](#2-shiftleftandinsert) | [ShiftRightArithmeticNarrowingSaturateLower](#25-shiftrightarithmeticnarrowingsaturatelower) |
+| [ShiftLeftAndInsertScalar](#3-shiftleftandinsertscalar) | [ShiftRightArithmeticNarrowingSaturateScalar](#26-shiftrightarithmeticnarrowingsaturatescalar) |
+| [ShiftLeftLogical](#4-shiftleftlogical) | [ShiftRightArithmeticNarrowingSaturateUnsignedLower](#27-shiftrightarithmeticnarrowingsaturateunsignedlower) |
+| [ShiftLeftLogicalSaturate](#5-shiftleftlogicalsaturate) | [ShiftRightArithmeticNarrowingSaturateUnsignedScalar](#28-shiftrightarithmeticnarrowingsaturateunsignedscalar) |
+| [ShiftLeftLogicalSaturateScalar](#6-shiftleftlogicalsaturatescalar) | [ShiftRightArithmeticNarrowingSaturateUnsignedUpper](#29-shiftrightarithmeticnarrowingsaturateunsignedupper) |
+| [ShiftLeftLogicalSaturateUnsigned](#7-shiftleftlogicalsaturateunsigned) | [ShiftRightArithmeticNarrowingSaturateUpper](#30-shiftrightarithmeticnarrowingsaturateupper) |
+| [ShiftLeftLogicalSaturateUnsignedScalar](#8-shiftleftlogicalsaturateunsignedscalar) | [ShiftRightArithmeticRounded](#31-shiftrightarithmeticrounded) |
+| [ShiftLeftLogicalScalar](#9-shiftleftlogicalscalar) | [ShiftRightArithmeticRoundedAdd](#32-shiftrightarithmeticroundedadd) |
+| [ShiftLeftLogicalWideningLower](#10-shiftleftlogicalwideninglower) | [ShiftRightArithmeticRoundedAddScalar](#33-shiftrightarithmeticroundedaddscalar) |
+| [ShiftLeftLogicalWideningUpper](#11-shiftleftlogicalwideningupper) | [ShiftRightArithmeticRoundedNarrowingSaturateLower](#34-shiftrightarithmeticroundednarrowingsaturatelower) |
+| [ShiftLogical](#12-shiftlogical) | [ShiftRightArithmeticRoundedNarrowingSaturateScalar](#35-shiftrightarithmeticroundednarrowingsaturatescalar) |
+| [ShiftLogicalRounded](#13-shiftlogicalrounded) | [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedLower](#36-shiftrightarithmeticroundednarrowingsaturateunsignedlower) |
+| [ShiftLogicalRoundedSaturate](#14-shiftlogicalroundedsaturate) | [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedScalar](#37-shiftrightarithmeticroundednarrowingsaturateunsignedscalar) |
+| [ShiftLogicalRoundedSaturateScalar](#15-shiftlogicalroundedsaturatescalar) | [ShiftRightArithmeticRoundedNarrowingSaturateUnsignedUpper](#38-shiftrightarithmeticroundednarrowingsaturateunsignedupper) |
+| [ShiftLogicalRoundedScalar](#16-shiftlogicalroundedscalar) | [ShiftRightArithmeticRoundedNarrowingSaturateUpper](#39-shiftrightarithmeticroundednarrowingsaturateupper) |
+| [ShiftLogicalSaturate](#17-shiftlogicalsaturate) | [ShiftRightArithmeticRoundedScalar](#40-shiftrightarithmeticroundedscalar) |
+| [ShiftLogicalSaturateScalar](#18-shiftlogicalsaturatescalar) | [ShiftRightArithmeticScalar](#41-shiftrightarithmeticscalar) |
+| [ShiftLogicalScalar](#19-shiftlogicalscalar) | [ShiftRightLogical](#42-shiftrightlogical) |
+| [ShiftRightAndInsert](#20-shiftrightandinsert) | [ShiftRightLogicalAdd](#43-shiftrightlogicaladd) |
+| [ShiftRightAndInsertScalar](#21-shiftrightandinsertscalar) | [ShiftRightLogicalAddScalar](#44-shiftrightlogicaladdscalar) |
+| [ShiftRightArithmetic](#22-shiftrightarithmetic) | [ShiftRightLogicalNarrowingLower](#45-shiftrightlogicalnarrowinglower) |
+| [ShiftRightArithmeticAdd](#23-shiftrightarithmeticadd) |  |
 
 
+<p/>
 ");
 
 try {
@@ -21603,9 +21771,33 @@ Most of the description of these APIs is adapted and referenced from [Arm Archit
 
 ### APIs covered
 
-[ShiftRightLogicalNarrowingSaturateLower](#1-shiftrightlogicalnarrowingsaturatelower), [ShiftRightLogicalNarrowingSaturateScalar](#2-shiftrightlogicalnarrowingsaturatescalar), [ShiftRightLogicalNarrowingSaturateUpper](#3-shiftrightlogicalnarrowingsaturateupper), [ShiftRightLogicalNarrowingUpper](#4-shiftrightlogicalnarrowingupper), [ShiftRightLogicalRounded](#5-shiftrightlogicalrounded), [ShiftRightLogicalRoundedAdd](#6-shiftrightlogicalroundedadd), [ShiftRightLogicalRoundedAddScalar](#7-shiftrightlogicalroundedaddscalar), [ShiftRightLogicalRoundedNarrowingLower](#8-shiftrightlogicalroundednarrowinglower), [ShiftRightLogicalRoundedNarrowingSaturateLower](#9-shiftrightlogicalroundednarrowingsaturatelower), [ShiftRightLogicalRoundedNarrowingSaturateScalar](#10-shiftrightlogicalroundednarrowingsaturatescalar), [ShiftRightLogicalRoundedNarrowingSaturateUpper](#11-shiftrightlogicalroundednarrowingsaturateupper), [ShiftRightLogicalRoundedNarrowingUpper](#12-shiftrightlogicalroundednarrowingupper), [ShiftRightLogicalRoundedScalar](#13-shiftrightlogicalroundedscalar), [ShiftRightLogicalScalar](#14-shiftrightlogicalscalar), [SignExtendWideningLower](#15-signextendwideninglower), [SignExtendWideningUpper](#16-signextendwideningupper), [Sqrt](#17-sqrt), [SqrtScalar](#18-sqrtscalar), [Store](#19-store), [StorePair](#20-storepair), [StorePairNonTemporal](#21-storepairnontemporal), [StorePairScalar](#22-storepairscalar), [StorePairScalarNonTemporal](#23-storepairscalarnontemporal), [StoreSelectedScalar](#24-storeselectedscalar), [Subtract](#25-subtract), [SubtractHighNarrowingLower](#26-subtracthighnarrowinglower), [SubtractHighNarrowingUpper](#27-subtracthighnarrowingupper), [SubtractRoundedHighNarrowingLower](#28-subtractroundedhighnarrowinglower), [SubtractRoundedHighNarrowingUpper](#29-subtractroundedhighnarrowingupper), [SubtractSaturate](#30-subtractsaturate), [SubtractSaturateScalar](#31-subtractsaturatescalar), [SubtractScalar](#32-subtractscalar), [SubtractWideningLower](#33-subtractwideninglower), [SubtractWideningUpper](#34-subtractwideningupper), [TransposeEven](#35-transposeeven), [TransposeOdd](#36-transposeodd), [UnzipEven](#37-unzipeven), [UnzipOdd](#38-unzipodd), [VectorTableLookup](#39-vectortablelookup), [VectorTableLookupExtension](#40-vectortablelookupextension), [Xor](#41-xor), [ZeroExtendWideningLower](#42-zeroextendwideninglower), [ZeroExtendWideningUpper](#43-zeroextendwideningupper), [ZipHigh](#44-ziphigh), [ZipLow](#45-ziplow)
+| --- | --- |
+| [ShiftRightLogicalNarrowingSaturateLower](#1-shiftrightlogicalnarrowingsaturatelower) | [StoreSelectedScalar](#24-storeselectedscalar) |
+| [ShiftRightLogicalNarrowingSaturateScalar](#2-shiftrightlogicalnarrowingsaturatescalar) | [Subtract](#25-subtract) |
+| [ShiftRightLogicalNarrowingSaturateUpper](#3-shiftrightlogicalnarrowingsaturateupper) | [SubtractHighNarrowingLower](#26-subtracthighnarrowinglower) |
+| [ShiftRightLogicalNarrowingUpper](#4-shiftrightlogicalnarrowingupper) | [SubtractHighNarrowingUpper](#27-subtracthighnarrowingupper) |
+| [ShiftRightLogicalRounded](#5-shiftrightlogicalrounded) | [SubtractRoundedHighNarrowingLower](#28-subtractroundedhighnarrowinglower) |
+| [ShiftRightLogicalRoundedAdd](#6-shiftrightlogicalroundedadd) | [SubtractRoundedHighNarrowingUpper](#29-subtractroundedhighnarrowingupper) |
+| [ShiftRightLogicalRoundedAddScalar](#7-shiftrightlogicalroundedaddscalar) | [SubtractSaturate](#30-subtractsaturate) |
+| [ShiftRightLogicalRoundedNarrowingLower](#8-shiftrightlogicalroundednarrowinglower) | [SubtractSaturateScalar](#31-subtractsaturatescalar) |
+| [ShiftRightLogicalRoundedNarrowingSaturateLower](#9-shiftrightlogicalroundednarrowingsaturatelower) | [SubtractScalar](#32-subtractscalar) |
+| [ShiftRightLogicalRoundedNarrowingSaturateScalar](#10-shiftrightlogicalroundednarrowingsaturatescalar) | [SubtractWideningLower](#33-subtractwideninglower) |
+| [ShiftRightLogicalRoundedNarrowingSaturateUpper](#11-shiftrightlogicalroundednarrowingsaturateupper) | [SubtractWideningUpper](#34-subtractwideningupper) |
+| [ShiftRightLogicalRoundedNarrowingUpper](#12-shiftrightlogicalroundednarrowingupper) | [TransposeEven](#35-transposeeven) |
+| [ShiftRightLogicalRoundedScalar](#13-shiftrightlogicalroundedscalar) | [TransposeOdd](#36-transposeodd) |
+| [ShiftRightLogicalScalar](#14-shiftrightlogicalscalar) | [UnzipEven](#37-unzipeven) |
+| [SignExtendWideningLower](#15-signextendwideninglower) | [UnzipOdd](#38-unzipodd) |
+| [SignExtendWideningUpper](#16-signextendwideningupper) | [VectorTableLookup](#39-vectortablelookup) |
+| [Sqrt](#17-sqrt) | [VectorTableLookupExtension](#40-vectortablelookupextension) |
+| [SqrtScalar](#18-sqrtscalar) | [Xor](#41-xor) |
+| [Store](#19-store) | [ZeroExtendWideningLower](#42-zeroextendwideninglower) |
+| [StorePair](#20-storepair) | [ZeroExtendWideningUpper](#43-zeroextendwideningupper) |
+| [StorePairNonTemporal](#21-storepairnontemporal) | [ZipHigh](#44-ziphigh) |
+| [StorePairScalar](#22-storepairscalar) | [ZipLow](#45-ziplow) |
+| [StorePairScalarNonTemporal](#23-storepairscalarnontemporal) |  |
 
 
+<p/>
 ");
 
 try {
