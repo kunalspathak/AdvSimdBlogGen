@@ -60,4 +60,46 @@ public partial class AdvSimdMethods
         }
         return defaultValue;
     }
+
+    /// <summary>
+    ///  One time method to update the method description.
+    /// </summary>
+    internal static void ReplaceLinesInCsv()
+    {
+        Dictionary<string, string> replacements = new Dictionary<string, string>()
+            {
+                { "This instruction", "This method" },
+                { "places the results in a vector, and writes the vector to the destination SIMD&FP register.", "places the results in a vector, and returns that vector." },
+                { "and writes the result to the destination SIMD&FP register.", "and returns the result." },
+                { "and writes the result to the SIMD&FP destination register.", "and returns the result." },
+                { "and writes the vector to the destination SIMD&FP register vector.", "and returns the result." },
+                { "and  writes the vector to the destination SIMD&FP register.", "and returns the result." },
+                { "and writes the result to the general-purpose destination register.", "and returns the result." },
+                { "in the destination SIMD&FP register to one", "in the result vector to one" },
+                { "in the destination SIMD&FP register to zero", "in the result vector to zero" },
+                { "in the  destination SIMD&FP register to zero.", "in the result vector to zero." },
+                { " to the destination SIMD&FP register.", " to the result vector." },
+                { "and writes the vector to the destination SIMD&FP register.", "and returns the result." },
+                { " in this instruction ", " in this method " },
+                { "; Lcl frame size = 0", string.Empty },
+                { "; Assembly listing for method ", "; " },
+            };
+
+        string data_csv = @"data.csv";
+        StringBuilder modifiedCsvBuilder = new StringBuilder();
+        string[] csvLines = File.ReadAllLines(data_csv);
+        foreach (string csvLine in csvLines)
+        {
+            string blogLine = csvLine;
+            foreach (var pair in replacements)
+            {
+                if (blogLine.Contains(pair.Key, StringComparison.InvariantCulture))
+                {
+                    blogLine = csvLine.Replace(pair.Key, pair.Value);
+                }
+            }
+            modifiedCsvBuilder.AppendLine(blogLine);
+        }
+        File.WriteAllText(data_csv, modifiedCsvBuilder.ToString());
+    }
 }

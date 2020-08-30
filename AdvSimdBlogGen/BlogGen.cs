@@ -51,6 +51,10 @@ namespace AdvSimdBlogGen
             PrintVarsAndMethodNames();
         }
 
+        /// <summary>
+        ///     Split the generated .md file in multiple .md files such that each .md file
+        ///     contains <see cref="apisPerBlog"/> APIs.
+        /// </summary>
         internal static void SplitGeneratedBlog()
         {
             List<string> linesToIgnore = new List<string>()
@@ -60,25 +64,6 @@ namespace AdvSimdBlogGen
                 "; fp based frame",
                 "; partially interruptible",
                 "; Final local variable assignments"
-            };
-            Dictionary<string, string> replacements = new Dictionary<string, string>()
-            {
-                { "This instruction", "This method" },
-                { "places the results in a vector, and writes the vector to the destination SIMD&FP register.", "places the results in a vector, and returns that vector." },
-                { "and writes the result to the destination SIMD&FP register.", "and returns the result." },
-                { "and writes the result to the SIMD&FP destination register.", "and returns the result." },
-                { "and writes the vector to the destination SIMD&FP register vector.", "and returns the result." },
-                { "and  writes the vector to the destination SIMD&FP register.", "and returns the result." },
-                { "and writes the result to the general-purpose destination register.", "and returns the result." },
-                { "in the destination SIMD&FP register to one", "in the result vector to one" },
-                { "in the destination SIMD&FP register to zero", "in the result vector to zero" },
-                { "in the  destination SIMD&FP register to zero.", "in the result vector to zero." },
-                { " to the destination SIMD&FP register.", " to the result vector." },
-                { "and writes the vector to the destination SIMD&FP register.", "and returns the result." },
-                { " in this instruction ", " in this method " },
-                { "; Lcl frame size = 0", string.Empty },
-                { "; Assembly listing for method ", "; " },
-
             };
 
             string dirName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -95,13 +80,6 @@ namespace AdvSimdBlogGen
                 if (linesToIgnore.Contains(blogLine))
                 {
                     continue;
-                }
-                foreach (var pair in replacements)
-                {
-                    if (blogLine.Contains(pair.Key, StringComparison.InvariantCulture))
-                    {
-                        blogLine = blogLine.Replace(pair.Key, pair.Value);
-                    }
                 }
 
                 if ("START---END" == blogLine)
@@ -124,16 +102,24 @@ namespace AdvSimdBlogGen
             }
         }
 
+        /// <summary>
+        ///     Print value of COMPlus_JitDisasm to set to print the JIT disassembly code
+        ///     when the generated C# code executes.
+        /// </summary>
         internal static void PrintVarsAndMethodNames()
         {
-            foreach (string uniqueArg in uniqueArgs)
-            {
-                Console.WriteLine("var " + uniqueArg + " = Vector128.Create(1);");
-            }
+            //foreach (string uniqueArg in uniqueArgs)
+            //{
+            //    Console.WriteLine("var " + uniqueArg + " = Vector128.Create(1);");
+            //}
 
             Console.WriteLine("set COMPlus_JitDisasm=" + jitAsmBuilder.ToString());
+            Console.WriteLine("set COMPlus_JitDiffableDasm=1");
         }
 
+        /// <summary>
+        ///     Generate C# code that generates blog contents
+        /// </summary>
         internal static void GenerateBlogContents()
         {
             var allSortedMethodNames = AllIntrinsicApis().ToList().OrderBy(api => api.Item1).ToList();
@@ -172,6 +158,10 @@ namespace AdvSimdBlogGen
             }
         }
 
+        /// <summary>
+        ///     Write the generated C# to a file including the required "Table of Contents"
+        /// </summary>
+        /// <param name="fileName"></param>
         private static void WriteGeneratedCodeToFile(string fileName)
         {
             string classContents = string.Format(classTemplate, methodDefBuilder.ToString(), methodCallBuilder.ToString());
@@ -219,6 +209,12 @@ namespace AdvSimdBlogGen
             File.WriteAllText(fileName, classContents.ToString());
         }
 
+        /// <summary>
+        ///     Generate C# code for <paramref name="methodName"/> that will generate the blog content
+        ///     for <paramref name="methodName"/>.
+        /// </summary>
+        /// <param name="methodName"></param>
+        /// <param name="isForAdvSimd"></param>
         private static void GenerateCodeForMethod(string methodName, bool isForAdvSimd)
         {
             if (((count - 1) % apisPerBlog) == 0)
@@ -448,6 +444,9 @@ namespace AdvSimdBlogGen
             count++;
         }
 
+        /// <summary>
+        ///     Roslyn to read "AdvSimd.cs" file to extract methods and group them by name.
+        /// </summary>
         internal static void PopulateMethods()
         {
             // https://github.com/dotnet/runtime/blob/master/src/libraries/System.Private.CoreLib/src/System/Runtime/Intrinsics/Arm/AdvSimd.cs
