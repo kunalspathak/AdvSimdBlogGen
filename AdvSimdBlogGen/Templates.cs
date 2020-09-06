@@ -25,6 +25,8 @@ In my [vectorization using .NET APIs](../2020-08-01-Vectorization-APIs) blog, I 
 
 Most of the description of these APIs is adapted and referenced from [Arm Architecture Reference Manual Armv8, for Armv8-A architecture profile document](https://developer.arm.com/documentation/ddi0487/fc/). You can also refer to the description of SIMD and Floating-point instructions description at [Arm developer docs page](https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order).
 
+The blog page is [programmatically generated](../2020-09-12-Automating-Blog-Generation) and might contain mistakes. If you find any mistake, please leave a comment and I will address it.
+
 ### APIs covered
 
 {1}
